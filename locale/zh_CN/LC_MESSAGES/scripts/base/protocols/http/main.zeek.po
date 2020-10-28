@@ -1,0 +1,729 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:4
+msgid "base/protocols/http/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:7
+msgid ""
+"Implements base functionality for HTTP analysis.  The logging model is to"
+" log request/response pairs and all relevant metadata together in a "
+"single record."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:11
+msgid "HTTP"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:12
+msgid ""
+":doc:`base/frameworks/tunnels </scripts/base/frameworks/tunnels/index>`, "
+":doc:`base/protocols/conn/removal-hooks.zeek "
+"</scripts/base/protocols/conn/removal-hooks.zeek>`, "
+":doc:`base/utils/files.zeek </scripts/base/utils/files.zeek>`, "
+":doc:`base/utils/numbers.zeek </scripts/base/utils/numbers.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:15
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:17
+#: ../../scripts/base/protocols/http/main.zeek.rst:68
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:19
+msgid ""
+":zeek:id:`HTTP::default_capture_password`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:19
+#: ../../scripts/base/protocols/http/main.zeek.rst:75
+msgid "This setting changes if passwords used in Basic-Auth are captured or not."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:21
+msgid ":zeek:id:`HTTP::http_methods`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:21
+msgid "A list of HTTP methods."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:22
+msgid ":zeek:id:`HTTP::proxy_headers`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:22
+#: ../../scripts/base/protocols/http/main.zeek.rst:133
+msgid "A list of HTTP headers typically used to indicate proxied requests."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:26
+#: ../../scripts/base/protocols/http/main.zeek.rst:136
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:28
+msgid ":zeek:type:`HTTP::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:28
+#: ../../scripts/base/protocols/http/main.zeek.rst:302
+msgid "The record type which contains the fields of the HTTP log."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:29
+msgid ":zeek:type:`HTTP::State`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:29
+#: ../../scripts/base/protocols/http/main.zeek.rst:322
+msgid ""
+"Structure to maintain state for an HTTP connection with multiple requests"
+" and responses."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:31
+msgid ":zeek:type:`HTTP::Tags`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:31
+#: ../../scripts/base/protocols/http/main.zeek.rst:357
+msgid "Indicate a type of attack or compromise in the record to be logged."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:35
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:37
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:39
+msgid ":zeek:enum:`HTTP::LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:40
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:42
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:44
+msgid "http: :zeek:type:`HTTP::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:46
+msgid "http_state: :zeek:type:`HTTP::State` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:47
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:51
+#: ../../scripts/base/protocols/http/main.zeek.rst:360
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:53
+msgid ":zeek:id:`HTTP::log_http`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:53
+#: ../../scripts/base/protocols/http/main.zeek.rst:365
+msgid ""
+"Event that can be handled to access the HTTP record as it is sent on to "
+"the logging framework."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:58
+#: ../../scripts/base/protocols/http/main.zeek.rst:369
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:60
+msgid ":zeek:id:`HTTP::finalize_http`: :zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:60
+msgid "HTTP finalization hook."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:61
+msgid ":zeek:id:`HTTP::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:66
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:71
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:72
+#: ../../scripts/base/protocols/http/main.zeek.rst:81
+#: ../../scripts/base/protocols/http/main.zeek.rst:117
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:73
+msgid "``F``"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:80
+#: ../../scripts/base/protocols/http/main.zeek.rst:116
+msgid ":zeek:type:`set` [:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:110
+msgid ""
+"A list of HTTP methods. Other methods will generate a weird. Note that "
+"the HTTP analyzer will only accept methods consisting solely of letters "
+"``[A-Za-z]``."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:139
+#: ../../scripts/base/protocols/http/main.zeek.rst:306
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:142
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:142
+msgid "Timestamp for when the request happened."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:145
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:145
+msgid "Unique ID for the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:148
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:148
+msgid "The connection's 4-tuple of endpoint addresses/ports."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:152
+msgid "trans_depth: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:151
+msgid ""
+"Represents the pipelined depth into the connection of this "
+"request/response transaction."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:155
+msgid "method: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:155
+msgid "Verb used in the HTTP request (GET, POST, HEAD, etc.)."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:158
+msgid "host: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:158
+msgid "Value of the HOST header."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:161
+msgid "uri: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:161
+msgid "URI used in the request."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:166
+msgid "referrer: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:164
+msgid ""
+"Value of the \"referer\" header.  The comment is deliberately misspelled "
+"like the standard declares, but the name used here is \"referrer\" "
+"spelled correctly."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:169
+msgid "version: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:169
+msgid "Value of the version portion of the request."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:172
+msgid "user_agent: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:172
+msgid "Value of the User-Agent header from the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:175
+msgid "origin: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:175
+msgid "Value of the Origin header from the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:179
+msgid ""
+"request_body_len: :zeek:type:`count` :zeek:attr:`&log` "
+":zeek:attr:`&default` = ``0`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:178
+msgid "Actual uncompressed content size of the data transferred from the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:183
+msgid ""
+"response_body_len: :zeek:type:`count` :zeek:attr:`&log` "
+":zeek:attr:`&default` = ``0`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:182
+msgid "Actual uncompressed content size of the data transferred from the server."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:186
+msgid "status_code: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:186
+msgid "Status code returned by the server."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:189
+msgid "status_msg: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:189
+msgid "Status message returned by the server."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:192
+msgid "info_code: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:192
+msgid "Last seen 1xx informational reply code returned by the server."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:195
+msgid "info_msg: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:195
+msgid "Last seen 1xx informational reply message returned by the server."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:199
+msgid "tags: :zeek:type:`set` [:zeek:type:`HTTP::Tags`] :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:198
+msgid ""
+"A set of indicators of various attributes discovered and related to a "
+"particular request/response pair."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:202
+msgid "username: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:202
+msgid "Username if basic-auth is performed for the request."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:205
+msgid "password: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:205
+msgid "Password if basic-auth is performed for the request."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:208
+msgid ""
+"capture_password: :zeek:type:`bool` :zeek:attr:`&default` = "
+":zeek:see:`HTTP::default_capture_password` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:208
+msgid "Determines if the password will be captured for this request."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:211
+msgid ""
+"proxied: :zeek:type:`set` [:zeek:type:`string`] :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:211
+msgid "All of the headers that may indicate if the request was proxied."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:215
+msgid ""
+"range_request: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:214
+msgid "Indicates if this request can assume 206 partial content in response."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:221
+msgid ""
+"orig_fuids: :zeek:type:`vector` of :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:218
+#: ../../scripts/base/protocols/http/main.zeek.rst:224
+#: ../../scripts/base/protocols/http/main.zeek.rst:230
+#: ../../scripts/base/protocols/http/main.zeek.rst:236
+#: ../../scripts/base/protocols/http/main.zeek.rst:242
+#: ../../scripts/base/protocols/http/main.zeek.rst:248
+#: ../../scripts/base/protocols/http/main.zeek.rst:254
+#: ../../scripts/base/protocols/http/main.zeek.rst:259
+#: ../../scripts/base/protocols/http/main.zeek.rst:265
+msgid "(present if :doc:`/scripts/base/protocols/http/entities.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:220
+msgid ""
+"An ordered vector of file unique IDs. Limited to "
+":zeek:see:`HTTP::max_files_orig` entries."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:227
+msgid ""
+"orig_filenames: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:226
+msgid ""
+"An ordered vector of filenames from the client. Limited to "
+":zeek:see:`HTTP::max_files_orig` entries."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:233
+msgid ""
+"orig_mime_types: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:232
+msgid ""
+"An ordered vector of mime types. Limited to "
+":zeek:see:`HTTP::max_files_orig` entries."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:239
+msgid ""
+"resp_fuids: :zeek:type:`vector` of :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:238
+msgid ""
+"An ordered vector of file unique IDs. Limited to "
+":zeek:see:`HTTP::max_files_resp` entries."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:245
+msgid ""
+"resp_filenames: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:244
+msgid ""
+"An ordered vector of filenames from the server. Limited to "
+":zeek:see:`HTTP::max_files_resp` entries."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:251
+msgid ""
+"resp_mime_types: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:250
+msgid ""
+"An ordered vector of mime types. Limited to "
+":zeek:see:`HTTP::max_files_resp` entries."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:256
+msgid "current_entity: :zeek:type:`HTTP::Entity` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:256
+msgid "The current entity."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:262
+msgid ""
+"orig_mime_depth: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:261
+msgid "Current number of MIME entities in the HTTP request message body."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:268
+msgid ""
+"resp_mime_depth: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:267
+msgid "Current number of MIME entities in the HTTP response message body."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:274
+msgid ""
+"client_header_names: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:271
+#: ../../scripts/base/protocols/http/main.zeek.rst:277
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/http/header-names.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:273
+msgid ""
+"The vector of HTTP header names sent by the client.  No header values are"
+" included here, just the header names."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:280
+msgid ""
+"server_header_names: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:279
+msgid ""
+"The vector of HTTP header names sent by the server.  No header values are"
+" included here, just the header names."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:285
+msgid ""
+"omniture: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:283
+#: ../../scripts/base/protocols/http/main.zeek.rst:288
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/http/software-browser-"
+"plugins.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:285
+msgid "Indicates if the server is an omniture advertising server."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:290
+msgid "flash_version: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:290
+msgid "The unparsed Flash version, if detected."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:295
+msgid ""
+"cookie_vars: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:293
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/http/var-extraction-"
+"cookies.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:295
+msgid "Variable names extracted from all cookies."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:300
+msgid ""
+"uri_vars: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:298
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/http/var-extraction-uri.zeek`"
+" is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:300
+msgid "Variable names from the URI."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:309
+msgid ""
+"pending: :zeek:type:`table` [:zeek:type:`count`] of "
+":zeek:type:`HTTP::Info`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:309
+msgid "Pending requests."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:312
+msgid ""
+"current_request: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:312
+msgid "Current request in the pending queue."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:315
+msgid ""
+"current_response: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:315
+msgid "Current response in the pending queue."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:320
+msgid ""
+"trans_depth: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:318
+msgid ""
+"Track the current deepest transaction. This is meant to cope with missing"
+" requests and responses."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:327
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:331
+msgid "Placeholder."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:335
+#: ../../scripts/base/protocols/http/main.zeek.rst:342
+#: ../../scripts/base/protocols/http/main.zeek.rst:351
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/http/detect-sqli.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:338
+msgid "Indicator of a URI based SQL injection attack."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:345
+msgid ""
+"Indicator of client body based SQL injection attack.  This is typically "
+"the body content of a POST request. Not implemented yet."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:354
+msgid "Indicator of a cookie based SQL injection attack. Not implemented yet."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:363
+msgid ":zeek:type:`event` (rec: :zeek:type:`HTTP::Info`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:372
+msgid ":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:374
+msgid ""
+"HTTP finalization hook.  Remaining HTTP info may get logged when it's "
+"called."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/main.zeek.rst:378
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

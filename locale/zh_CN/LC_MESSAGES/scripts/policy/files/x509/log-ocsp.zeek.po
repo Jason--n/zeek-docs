@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:4
+msgid "policy/files/x509/log-ocsp.zeek"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:7
+msgid "Enable logging of OCSP responses."
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:9
+msgid "OCSP"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:14
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:44
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:16
+msgid ":zeek:type:`OCSP::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:16
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:82
+msgid "The record type which contains the fields of the OCSP log."
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:20
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:22
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:24
+msgid ":zeek:enum:`OCSP::LOG`"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:28
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:85
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:30
+msgid ":zeek:id:`OCSP::log_ocsp`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:30
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:90
+msgid ""
+"Event that can be handled to access the OCSP record as it is sent to the "
+"logging framework."
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:35
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:94
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:37
+msgid ":zeek:id:`OCSP::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:42
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:47
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:50
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:50
+msgid "Time when the OCSP reply was encountered."
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:53
+msgid "id: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:53
+msgid "File id of the OCSP reply."
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:56
+msgid "hashAlgorithm: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:56
+msgid "Hash algorithm used to generate issuerNameHash and issuerKeyHash."
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:59
+msgid "issuerNameHash: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:59
+msgid "Hash of the issuer's distingueshed name."
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:62
+msgid "issuerKeyHash: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:62
+msgid "Hash of the issuer's public key."
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:65
+msgid "serialNumber: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:65
+msgid "Serial number of the affected certificate."
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:68
+msgid "certStatus: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:68
+msgid "Status of the affected certificate."
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:71
+msgid "revoketime: :zeek:type:`time` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:71
+msgid "Time at which the certificate was revoked."
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:74
+msgid "revokereason: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:74
+msgid "Reason for which the certificate was revoked."
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:77
+msgid "thisUpdate: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:77
+msgid "The time at which the status being shows is known to have been correct."
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:80
+msgid "nextUpdate: :zeek:type:`time` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:80
+msgid ""
+"The latest time at which new information about the status of the "
+"certificate will be available."
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:88
+msgid ":zeek:type:`event` (rec: :zeek:type:`OCSP::Info`)"
+msgstr ""
+
+#: ../../scripts/policy/files/x509/log-ocsp.zeek.rst:97
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

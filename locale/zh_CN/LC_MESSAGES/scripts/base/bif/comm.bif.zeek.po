@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:4
+msgid "base/bif/comm.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:8
+msgid "Functions and events regarding broker communication mechanisms."
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst
+msgid "Namespaces"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:10
+msgid "Broker, GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:15
+#: ../../scripts/base/bif/comm.bif.zeek.rst:38
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:17
+msgid ":zeek:id:`Broker::error`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:17
+#: ../../scripts/base/bif/comm.bif.zeek.rst:43
+msgid "Generated when an error occurs in the Broker sub-system."
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:18
+msgid ":zeek:id:`Broker::peer_added`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:18
+#: ../../scripts/base/bif/comm.bif.zeek.rst:49
+msgid "Generated when a new peering has been established."
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:19
+msgid ":zeek:id:`Broker::peer_lost`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:19
+#: ../../scripts/base/bif/comm.bif.zeek.rst:55
+msgid "Generated when an existing peering has been lost."
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:20
+msgid ":zeek:id:`Broker::peer_removed`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:20
+#: ../../scripts/base/bif/comm.bif.zeek.rst:61
+msgid "Generated when an existing peer has been removed."
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:21
+msgid ":zeek:id:`Broker::status`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:21
+#: ../../scripts/base/bif/comm.bif.zeek.rst:67
+msgid "Generated when something changes in the Broker sub-system."
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:25
+#: ../../scripts/base/bif/comm.bif.zeek.rst:70
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:27
+msgid ":zeek:id:`Broker::__listen`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:28
+msgid ":zeek:id:`Broker::__node_id`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:29
+msgid ":zeek:id:`Broker::__peer`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:30
+msgid ":zeek:id:`Broker::__peers`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:31
+msgid ":zeek:id:`Broker::__unpeer`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:36
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:41
+msgid ""
+":zeek:type:`event` (code: :zeek:type:`Broker::ErrorCode`, msg: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:47
+#: ../../scripts/base/bif/comm.bif.zeek.rst:53
+#: ../../scripts/base/bif/comm.bif.zeek.rst:59
+#: ../../scripts/base/bif/comm.bif.zeek.rst:65
+msgid ""
+":zeek:type:`event` (endpoint: :zeek:type:`Broker::EndpointInfo`, msg: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:73
+msgid ""
+":zeek:type:`function` (a: :zeek:type:`string`, p: :zeek:type:`port`) : "
+":zeek:type:`port`"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:78
+msgid ":zeek:type:`function` () : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:83
+msgid ""
+":zeek:type:`function` (a: :zeek:type:`string`, p: :zeek:type:`port`, "
+"retry: :zeek:type:`interval`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:88
+msgid ":zeek:type:`function` () : :zeek:type:`Broker::PeerInfos`"
+msgstr ""
+
+#: ../../scripts/base/bif/comm.bif.zeek.rst:93
+msgid ""
+":zeek:type:`function` (a: :zeek:type:`string`, p: :zeek:type:`port`) : "
+":zeek:type:`bool`"
+msgstr ""
+

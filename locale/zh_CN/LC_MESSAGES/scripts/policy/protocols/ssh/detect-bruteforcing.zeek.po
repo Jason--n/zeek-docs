@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:4
+msgid "policy/protocols/ssh/detect-bruteforcing.zeek"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:7
+msgid ""
+"Detect hosts which are doing password guessing attacks and/or password "
+"bruteforcing over SSH."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:10
+msgid "SSH"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:11
+msgid ""
+":doc:`base/frameworks/intel </scripts/base/frameworks/intel/index>`, "
+":doc:`base/frameworks/notice </scripts/base/frameworks/notice/index>`, "
+":doc:`base/frameworks/sumstats "
+"</scripts/base/frameworks/sumstats/index>`, :doc:`base/protocols/ssh "
+"</scripts/base/protocols/ssh/index>`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:16
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:50
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:18
+msgid ""
+":zeek:id:`SSH::guessing_timeout`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:18
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:57
+msgid ""
+"The amount of time to remember presumed non-successful logins to build a "
+"model of a password guesser."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:20
+msgid ":zeek:id:`SSH::ignore_guessers`: :zeek:type:`table` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:20
+msgid ""
+"This value can be used to exclude hosts or entire networks from being "
+"tracked as potential \"guessers\"."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:22
+msgid ""
+":zeek:id:`SSH::password_guesses_limit`: :zeek:type:`double` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:22
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:76
+msgid ""
+"The number of failed SSH connections before a host is designated as "
+"guessing passwords."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:27
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:29
+msgid ":zeek:type:`Intel::Where`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:31
+msgid ""
+":zeek:enum:`SSH::SUCCESSFUL_LOGIN`: An indicator of the login for the "
+"intel framework."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:33
+msgid ":zeek:type:`Notice::Type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:35
+msgid ""
+":zeek:enum:`SSH::Login_By_Password_Guesser`: Indicates that a host "
+"previously identified as a \"password guesser\" has now had a successful "
+"login attempt."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:40
+msgid ""
+":zeek:enum:`SSH::Password_Guessing`: Indicates that a host has been "
+"identified as crossing the :zeek:id:`SSH::password_guesses_limit` "
+"threshold with failed logins."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:48
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:53
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:54
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:63
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:73
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:55
+msgid "``30.0 mins``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:62
+msgid ":zeek:type:`table` [:zeek:type:`subnet`] of :zeek:type:`subnet`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:64
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:66
+msgid ""
+"This value can be used to exclude hosts or entire networks from being "
+"tracked as potential \"guessers\". The index represents client subnets "
+"and the yield value represents server subnets."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:72
+msgid ":zeek:type:`double`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/detect-bruteforcing.zeek.rst:74
+msgid "``30.0``"
+msgstr ""
+

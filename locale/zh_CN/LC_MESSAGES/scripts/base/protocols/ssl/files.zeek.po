@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:4
+msgid "base/protocols/ssl/files.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:8
+msgid "SSL"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:9
+msgid ""
+":doc:`base/files/x509 </scripts/base/files/x509/index>`, "
+":doc:`base/frameworks/files </scripts/base/frameworks/files/index>`, "
+":doc:`base/protocols/ssl/main.zeek "
+"</scripts/base/protocols/ssl/main.zeek>`, :doc:`base/utils/conn-ids.zeek "
+"</scripts/base/utils/conn-ids.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:14
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:16
+msgid ":zeek:type:`SSL::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:18
+msgid ":zeek:type:`SSL::Info`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:22
+msgid ""
+"cert_chain: :zeek:type:`vector` of :zeek:type:`Files::Info` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:21
+msgid ""
+"Chain of certificates offered by the server to validate its complete "
+"signing chain."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:26
+msgid ""
+"cert_chain_fuids: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:25
+msgid ""
+"An ordered vector of all certificate file unique IDs for the certificates"
+" offered by the server."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:30
+msgid ""
+"client_cert_chain: :zeek:type:`vector` of :zeek:type:`Files::Info` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:29
+msgid ""
+"Chain of certificates offered by the client to validate its complete "
+"signing chain."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:34
+msgid ""
+"client_cert_chain_fuids: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:33
+msgid ""
+"An ordered vector of all certificate file unique IDs for the certificates"
+" offered by the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:37
+msgid "subject: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:37
+msgid "Subject of the X.509 certificate offered by the server."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:41
+msgid "issuer: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:40
+msgid "Subject of the signer of the X.509 certificate offered by the server."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:44
+msgid ""
+"client_subject: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:44
+msgid "Subject of the X.509 certificate offered by the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:48
+msgid ""
+"client_issuer: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:47
+msgid "Subject of the signer of the X.509 certificate offered by the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:51
+msgid ""
+"server_depth: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:51
+msgid "Current number of certificates seen from either side."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:53
+msgid ""
+"client_depth: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:57
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:67
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:59
+msgid ":zeek:id:`SSL::describe_file`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:59
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:72
+msgid "Default file describer for SSL."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:60
+msgid ":zeek:id:`SSL::get_file_handle`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:60
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:78
+msgid "Default file handle provider for SSL."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:65
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:70
+msgid ":zeek:type:`function` (f: :zeek:type:`fa_file`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/files.zeek.rst:76
+msgid ""
+":zeek:type:`function` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`) : :zeek:type:`string`"
+msgstr ""
+

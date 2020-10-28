@@ -1,0 +1,523 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/zeekygen/example.zeek.rst:4
+msgid "zeekygen/example.zeek"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:7
+msgid ""
+"This is an example script that demonstrates Zeekygen-style documentation."
+"  It generally will make most sense when viewing the script's raw source "
+"code and comparing to the HTML-rendered version."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:12
+msgid ""
+"Comments in the from ``##!`` are meant to summarize the script's purpose."
+"  They are transferred directly in to the generated `reStructuredText "
+"<http://docutils.sourceforge.net/rst.html>`_ (reST) document associated "
+"with the script."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:17
+msgid "You can embed directives and roles within ``##``-stylized comments."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:19
+msgid ""
+"There's also a custom role to reference any identifier node in the Zeek "
+"Sphinx domain that's good for \"see alsos\", e.g."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:22
+msgid ""
+"See also: :zeek:see:`ZeekygenExample::a_var`, "
+":zeek:see:`ZeekygenExample::ONE`, :zeek:see:`SSH::Info`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:25
+msgid "And a custom directive does the equivalent references:"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:29
+msgid "ZeekygenExample"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:30
+msgid ""
+":doc:`base/frameworks/notice </scripts/base/frameworks/notice/index>`, "
+":doc:`base/protocols/http </scripts/base/protocols/http/index>`, "
+":doc:`policy/frameworks/software/vulnerable.zeek "
+"</scripts/policy/frameworks/software/vulnerable.zeek>`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:33
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:35
+#: ../../scripts/zeekygen/example.zeek.rst:111
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:37
+msgid ""
+":zeek:id:`ZeekygenExample::an_option`: :zeek:type:`set` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:37
+msgid "Add documentation for \"an_option\" here."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:38
+msgid ""
+":zeek:id:`ZeekygenExample::option_with_init`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:38
+msgid "Default initialization will be generated automatically."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:42
+#: ../../scripts/zeekygen/example.zeek.rst:131
+msgid "State Variables"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:44
+msgid ":zeek:id:`ZeekygenExample::a_var`: :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:44
+msgid "Put some documentation for \"a_var\" here."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:45
+msgid ":zeek:id:`ZeekygenExample::summary_test`: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:45
+msgid "The first sentence for a particular identifier's summary text ends here."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:46
+msgid ":zeek:id:`ZeekygenExample::var_without_explicit_type`: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:46
+#: ../../scripts/zeekygen/example.zeek.rst:153
+msgid "Types are inferred, that information is self-documenting."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:50
+#: ../../scripts/zeekygen/example.zeek.rst:156
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:52
+msgid ""
+":zeek:type:`ZeekygenExample::ComplexRecord`: :zeek:type:`record` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:52
+#: ../../scripts/zeekygen/example.zeek.rst:176
+msgid "General documentation for a type \"ComplexRecord\" goes here."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:53
+msgid ":zeek:type:`ZeekygenExample::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:53
+msgid "An example record to be used with a logging stream."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:54
+#: ../../scripts/zeekygen/example.zeek.rst:79
+msgid ":zeek:type:`ZeekygenExample::SimpleEnum`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:54
+msgid "Documentation for the \"SimpleEnum\" type goes here."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:55
+#: ../../scripts/zeekygen/example.zeek.rst:87
+msgid ":zeek:type:`ZeekygenExample::SimpleRecord`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:55
+msgid "General documentation for a type \"SimpleRecord\" goes here."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:59
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:61
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:63
+msgid ":zeek:enum:`ZeekygenExample::LOG`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:64
+msgid ":zeek:type:`Notice::Type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:66
+msgid ""
+":zeek:enum:`ZeekygenExample::Zeekygen_Four`: Omitting comments is fine, "
+"and so is mixing ``##`` and ``##<``, but it's probably best to use only "
+"one style consistently."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:70
+msgid ""
+":zeek:enum:`ZeekygenExample::Zeekygen_One`: Any number of this type of "
+"comment will document \"Zeekygen_One\"."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:74
+msgid ":zeek:enum:`ZeekygenExample::Zeekygen_Three`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:76
+msgid ""
+":zeek:enum:`ZeekygenExample::Zeekygen_Two`: Any number of this type of "
+"comment will document \"ZEEKYGEN_TWO\"."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:79
+msgid ""
+"Document the \"SimpleEnum\" redef here with any special info regarding "
+"the *redef* itself."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:82
+msgid ":zeek:enum:`ZeekygenExample::FIVE`: Also \"FIVE\"."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:85
+msgid ":zeek:enum:`ZeekygenExample::FOUR`: And some documentation for \"FOUR\"."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:87
+msgid "Document the record extension *redef* itself here."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:89
+msgid ":zeek:type:`ZeekygenExample::SimpleRecord`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:91
+#: ../../scripts/zeekygen/example.zeek.rst:232
+msgid "field_ext: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:92
+msgid "Document the extending field like this."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:96
+#: ../../scripts/zeekygen/example.zeek.rst:239
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:98
+msgid ":zeek:id:`ZeekygenExample::an_event`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:98
+msgid "Summarize \"an_event\" here."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:102
+#: ../../scripts/zeekygen/example.zeek.rst:255
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:104
+msgid ":zeek:id:`ZeekygenExample::a_function`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:104
+msgid "Summarize purpose of \"a_function\" here."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:109
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:114
+msgid ""
+":zeek:type:`set` [:zeek:type:`addr`, :zeek:type:`addr`, "
+":zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:115
+#: ../../scripts/zeekygen/example.zeek.rst:124
+#: ../../scripts/zeekygen/example.zeek.rst:174
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:116
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:118
+msgid ""
+"Add documentation for \"an_option\" here. The type/attribute information "
+"is all generated automatically."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:123
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:125
+msgid "``10.0 msecs``"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:127
+msgid ""
+"Default initialization will be generated automatically. More docs can be "
+"added here."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:134
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:136
+msgid ""
+"Put some documentation for \"a_var\" here.  Any global/non-const that "
+"isn't a function/event/hook is classified as a \"state variable\" in the "
+"generated docs."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:142
+#: ../../scripts/zeekygen/example.zeek.rst:150
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:144
+msgid ""
+"The first sentence for a particular identifier's summary text ends here. "
+"And this second sentence doesn't show in the short description provided "
+"by the table of all identifiers declared by this script."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:151
+msgid "``\"this works\"``"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:159
+#: ../../scripts/zeekygen/example.zeek.rst:180
+#: ../../scripts/zeekygen/example.zeek.rst:222
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:162
+#: ../../scripts/zeekygen/example.zeek.rst:225
+msgid "field1: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:162
+#: ../../scripts/zeekygen/example.zeek.rst:225
+msgid "Counts something."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:165
+#: ../../scripts/zeekygen/example.zeek.rst:228
+msgid "field2: :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:165
+#: ../../scripts/zeekygen/example.zeek.rst:228
+msgid "Toggles something."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:170
+msgid "field3: :zeek:type:`ZeekygenExample::SimpleRecord`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:168
+msgid ""
+"Zeekygen automatically tracks types and cross-references are "
+"automatically inserted in to generated docs."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:172
+msgid ""
+"msg: :zeek:type:`string` :zeek:attr:`&default` = ``\"blah\"`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:173
+msgid "Attributes are self-documenting."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:182
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:184
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:186
+msgid "status: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:188
+msgid ""
+"An example record to be used with a logging stream. Nothing special about"
+" it.  If another script redefs this type to add fields, the generated "
+"documentation will show all original fields plus the extensions and the "
+"scripts which contributed to it (provided they are also @load'ed)."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:196
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:200
+msgid ""
+"Documentation for particular enum values is added like this. And can also"
+" span multiple lines."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:205
+msgid "Or this style is valid to document the preceding enum value."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:211
+msgid "And some documentation for \"FOUR\"."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:215
+msgid "Also \"FIVE\"."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:217
+msgid ""
+"Documentation for the \"SimpleEnum\" type goes here. It can span multiple"
+" lines."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:231
+msgid "Document the extending field like this. Or here, like this."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:234
+msgid ""
+"General documentation for a type \"SimpleRecord\" goes here. The way "
+"fields can be documented is similar to what's already seen for enums."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:242
+msgid ":zeek:type:`event` (name: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:244
+msgid "Summarize \"an_event\" here. Give more details about \"an_event\" here."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:247
+msgid ""
+"ZeekygenExample::a_function should not be confused as a parameter in the "
+"generated docs, but it also doesn't generate a cross-reference link.  Use"
+" the see role instead: :zeek:see:`ZeekygenExample::a_function`."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst
+msgid "name"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:252
+msgid "Describe the argument here."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:258
+msgid ""
+":zeek:type:`function` (tag: :zeek:type:`string`, msg: "
+":zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:260
+msgid ""
+"Summarize purpose of \"a_function\" here. Give more details about "
+"\"a_function\" here. Separating the documentation of the params/return "
+"values with empty comments is optional, but improves readability of "
+"script."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst
+msgid "tag"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:266
+msgid "Function arguments can be described like this."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst
+msgid "msg"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:270
+msgid "Another param."
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/zeekygen/example.zeek.rst:273
+msgid "Describe the return type here."
+msgstr ""
+

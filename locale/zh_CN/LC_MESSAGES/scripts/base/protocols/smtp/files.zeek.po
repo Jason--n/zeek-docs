@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:4
+msgid "base/protocols/smtp/files.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:8
+msgid "SMTP"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:9
+msgid ""
+":doc:`base/frameworks/files </scripts/base/frameworks/files/index>`, "
+":doc:`base/protocols/smtp/entities.zeek "
+"</scripts/base/protocols/smtp/entities.zeek>`, "
+":doc:`base/protocols/smtp/main.zeek "
+"</scripts/base/protocols/smtp/main.zeek>`, :doc:`base/utils/conn-ids.zeek"
+" </scripts/base/utils/conn-ids.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:14
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:16
+msgid ":zeek:type:`SMTP::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:18
+msgid ":zeek:type:`SMTP::Info`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:21
+msgid ""
+"fuids: :zeek:type:`vector` of :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&default` = ``[]`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:21
+msgid "An ordered vector of file unique IDs seen attached to the message."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:26
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:36
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:28
+msgid ":zeek:id:`SMTP::describe_file`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:28
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:41
+msgid "Default file describer for SMTP."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:29
+msgid ":zeek:id:`SMTP::get_file_handle`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:29
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:47
+msgid "Default file handle provider for SMTP."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:34
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:39
+msgid ":zeek:type:`function` (f: :zeek:type:`fa_file`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/files.zeek.rst:45
+msgid ""
+":zeek:type:`function` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`) : :zeek:type:`string`"
+msgstr ""
+

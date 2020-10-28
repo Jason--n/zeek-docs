@@ -1,0 +1,446 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_X509.functions.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:33
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:15
+msgid ":zeek:id:`sct_verify`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:15
+msgid ""
+"Verifies a Signed Certificate Timestamp as used for Certificate "
+"Transparency."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:16
+msgid ":zeek:id:`x509_from_der`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:72
+msgid "Constructs an opaque of X509 from a der-formatted string."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:17
+msgid ":zeek:id:`x509_get_certificate_string`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:17
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:85
+msgid "Returns the string form of a certificate."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:18
+msgid ":zeek:id:`x509_issuer_name_hash`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:18
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:105
+msgid "Get the hash of the issuer's distinguished name."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:19
+msgid ":zeek:id:`x509_ocsp_verify`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:19
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:125
+msgid "Verifies an OCSP reply."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:20
+msgid ":zeek:id:`x509_parse`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:20
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:151
+msgid "Parses a certificate into an X509::Certificate structure."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:21
+msgid ":zeek:id:`x509_set_certificate_cache`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:21
+msgid "This function can be used to set up certificate caching."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:22
+msgid ":zeek:id:`x509_set_certificate_cache_hit_callback`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:22
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:191
+msgid ""
+"This function sets up the callback that is called when an entry is "
+"matched against the table set by :zeek:id:`x509_set_certificate_cache`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:24
+msgid ":zeek:id:`x509_spki_hash`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:24
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:209
+msgid "Get the hash of the Subject Public Key Information of the certificate."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:25
+msgid ":zeek:id:`x509_subject_name_hash`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:25
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:229
+msgid "Get the hash of the subject's distinguished name."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:26
+msgid ":zeek:id:`x509_verify`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:26
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:249
+msgid "Verifies a certificate."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:31
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:36
+msgid ""
+":zeek:type:`function` (cert: :zeek:type:`opaque` of x509, logid: "
+":zeek:type:`string`, log_key: :zeek:type:`string`, signature: "
+":zeek:type:`string`, timestamp: :zeek:type:`count`, hash_algorithm: "
+":zeek:type:`count`, issuer_key_hash: :zeek:type:`string` "
+":zeek:attr:`&default` = ``\"\"`` :zeek:attr:`&optional`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:38
+msgid ""
+"Verifies a Signed Certificate Timestamp as used for Certificate "
+"Transparency. See RFC6962 for more details."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "cert"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:42
+msgid "Certificate against which the SCT should be validated."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "logid"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:45
+msgid "Log id of the SCT."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "log_key"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:48
+msgid "Public key of the Log that issued the SCT proof."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "timestamp"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:51
+msgid "Timestamp at which the proof was generated."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "hash_algorithm"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:54
+msgid "Hash algorithm that was used for the SCT proof."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "issuer_key_hash"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:57
+msgid ""
+"The SHA-256 hash of the certificate issuer's public key. This only has to"
+" be provided if the SCT was encountered in an X.509 certificate "
+"extension; in that case, it is necessary for validation."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:62
+msgid "T if the validation could be performed succesfully, F otherwhise."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:70
+msgid ""
+":zeek:type:`function` (der: :zeek:type:`string`) : :zeek:type:`opaque` of"
+" x509"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "Note"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:75
+msgid "this function is mostly meant for testing purposes"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:83
+msgid ""
+":zeek:type:`function` (cert: :zeek:type:`opaque` of x509, pem: "
+":zeek:type:`bool` :zeek:attr:`&default` = ``F`` :zeek:attr:`&optional`) :"
+" :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:88
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:108
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:154
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:212
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:232
+msgid "The X509 certificate opaque handle."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "pem"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:91
+msgid ""
+"A boolean that specifies if the certificate is returned in pem-form "
+"(true), or as the raw ASN1 encoded binary (false)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:96
+msgid "X509 certificate as a string."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:103
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:207
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:227
+msgid ""
+":zeek:type:`function` (cert: :zeek:type:`opaque` of x509, hash_alg: "
+":zeek:type:`count`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "hash_alg"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:111
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:215
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:235
+msgid "the hash algorithm to use, according to the IANA mapping at"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:113
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:217
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:237
+msgid ""
+":https://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml"
+"#tls-parameters-18"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:116
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:220
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:240
+msgid "The hash as a string."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:123
+msgid ""
+":zeek:type:`function` (certs: :zeek:type:`x509_opaque_vector`, "
+"ocsp_reply: :zeek:type:`string`, root_certs: "
+":zeek:type:`table_string_of_string`, verify_time: :zeek:type:`time` "
+":zeek:attr:`&default` = ``0.0`` :zeek:attr:`&optional`) : "
+":zeek:type:`X509::Result`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "certs"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:128
+msgid "Specifies the certificate chain to use. Server certificate first."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "ocsp_reply"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:131
+msgid "the ocsp reply to validate."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "root_certs"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:134
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:257
+msgid "A list of root certificates to validate the certificate chain."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "verify_time"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:137
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:260
+msgid "Time for the validity check of the certificates."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:140
+msgid ""
+"A record of type X509::Result containing the result code of the verify "
+"operation."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:149
+msgid ""
+":zeek:type:`function` (cert: :zeek:type:`opaque` of x509) : "
+":zeek:type:`X509::Certificate`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:157
+msgid "A X509::Certificate structure."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:165
+msgid ""
+":zeek:type:`function` (tbl: :zeek:type:`string_any_table`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:167
+msgid ""
+"This function can be used to set up certificate caching. It has to be "
+"passed a table[string] which can contain any type."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:170
+msgid ""
+"After this is set up, for each certificate encountered, the X509 analyzer"
+" will check if the entry tbl[sha256 of certificate] is set. If this is "
+"the case, the X509 analyzer will skip all further processing, and instead"
+" just call the callback that is set with"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:174
+msgid ":zeek:id:`x509_set_certificate_cache_hit_callback`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "tbl"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:177
+msgid "Table to use as the certificate cache."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:180
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:198
+msgid "Always returns true."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:182
+msgid ""
+"The base scripts use this function to set up certificate caching. You "
+"should only change the cache table if you are sure you will not conflict "
+"with the base scripts."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:189
+msgid ""
+":zeek:type:`function` (f: :zeek:type:`string_any_file_hook`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst
+msgid "f"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:195
+msgid ""
+"The callback that will be called when encountering a certificate in the "
+"cache table."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:200
+msgid ""
+"The base scripts use this function to set up certificate caching. You "
+"should only change the callback function if you are sure you will not "
+"conflict with the base scripts."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:247
+msgid ""
+":zeek:type:`function` (certs: :zeek:type:`x509_opaque_vector`, "
+"root_certs: :zeek:type:`table_string_of_string`, verify_time: "
+":zeek:type:`time` :zeek:attr:`&default` = ``0.0`` :zeek:attr:`&optional`)"
+" : :zeek:type:`X509::Result`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:252
+msgid ""
+"Specifies a certificate chain that is being used to validate the given "
+"certificate against the root store given in *root_certs*. The host "
+"certificate has to be at index 0."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.functions.bif.zeek.rst:263
+msgid ""
+"A record of type X509::Result containing the result code of the verify "
+"operation. In case of success also returns the full certificate chain."
+msgstr ""
+

@@ -1,0 +1,250 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_GTPv1.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:29
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:15
+msgid ":zeek:id:`gtpv1_create_pdp_ctx_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:34
+msgid "Generated for GTPv1-C Create PDP Context Request messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:16
+msgid ":zeek:id:`gtpv1_create_pdp_ctx_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:49
+msgid "Generated for GTPv1-C Create PDP Context Response messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:17
+msgid ":zeek:id:`gtpv1_delete_pdp_ctx_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:17
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:64
+msgid "Generated for GTPv1-C Delete PDP Context Request messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:18
+msgid ":zeek:id:`gtpv1_delete_pdp_ctx_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:18
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:79
+msgid "Generated for GTPv1-C Delete PDP Context Response messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:19
+msgid ":zeek:id:`gtpv1_g_pdu_packet`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:19
+msgid "Generated for GTPv1 G-PDU packets."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:20
+msgid ":zeek:id:`gtpv1_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:20
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:113
+msgid "Generated for any GTP message with a GTPv1 header."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:21
+msgid ":zeek:id:`gtpv1_update_pdp_ctx_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:21
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:125
+msgid "Generated for GTPv1-C Update PDP Context Request messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:22
+msgid ":zeek:id:`gtpv1_update_pdp_ctx_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:22
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:140
+msgid "Generated for GTPv1-C Update PDP Context Response messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:27
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:32
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`gtpv1_hdr`, elements: "
+":zeek:type:`gtp_create_pdp_ctx_request_elements`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:37
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:52
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:67
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:82
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:116
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:128
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:143
+msgid "The connection over which the message is sent."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst
+msgid "hdr"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:40
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:55
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:70
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:85
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:119
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:131
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:146
+msgid "The GTPv1 header."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst
+msgid "elements"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:43
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:58
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:73
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:88
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:134
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:149
+msgid "The set of Information Elements comprising the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:47
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`gtpv1_hdr`, elements: "
+":zeek:type:`gtp_create_pdp_ctx_response_elements`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:62
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`gtpv1_hdr`, elements: "
+":zeek:type:`gtp_delete_pdp_ctx_request_elements`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:77
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`gtpv1_hdr`, elements: "
+":zeek:type:`gtp_delete_pdp_ctx_response_elements`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:92
+msgid ""
+":zeek:type:`event` (outer: :zeek:type:`connection`, inner_gtp: "
+":zeek:type:`gtpv1_hdr`, inner_ip: :zeek:type:`pkt_hdr`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:94
+msgid ""
+"Generated for GTPv1 G-PDU packets.  That is, packets with a UDP payload "
+"that includes a GTP header followed by an IPv4 or IPv6 packet."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst
+msgid "outer"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:98
+msgid "The GTP outer tunnel connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst
+msgid "inner_gtp"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:101
+msgid "The GTP header."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst
+msgid "inner_ip"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:104
+msgid "The inner IP and transport layer packet headers."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:106
+msgid ""
+"Since this event may be raised on a per-packet basis, handling it may "
+"become particularly expensive for real-time analysis."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:111
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`gtpv1_hdr`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:123
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`gtpv1_hdr`, elements: "
+":zeek:type:`gtp_update_pdp_ctx_request_elements`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_GTPv1.events.bif.zeek.rst:138
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`gtpv1_hdr`, elements: "
+":zeek:type:`gtp_update_pdp_ctx_response_elements`)"
+msgstr ""
+

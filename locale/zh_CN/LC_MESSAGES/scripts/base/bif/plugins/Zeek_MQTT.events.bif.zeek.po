@@ -1,0 +1,324 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_MQTT.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:35
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:15
+msgid ":zeek:id:`mqtt_connack`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:40
+msgid "Generated for MQTT acknowledge connection messages"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:16
+msgid ":zeek:id:`mqtt_connect`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:52
+msgid "Generated for MQTT \"client requests a connection\" messages"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:17
+msgid ":zeek:id:`mqtt_disconnect`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:17
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:64
+msgid ""
+"Generated for MQTT disconnect messages sent by the client when it is "
+"diconnecting cleanly."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:18
+msgid ":zeek:id:`mqtt_pingreq`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:18
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:73
+msgid "Generated for MQTT ping requests sent by the client."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:19
+msgid ":zeek:id:`mqtt_pingresp`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:19
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:82
+msgid "Generated for MQTT ping responses sent by the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:20
+msgid ":zeek:id:`mqtt_puback`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:20
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:91
+msgid "Generated for MQTT publish acknowledgement messages"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:21
+msgid ":zeek:id:`mqtt_pubcomp`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:21
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:106
+msgid ""
+"Generated for MQTT publish complete messages (QoS 2 publish received, "
+"part 3)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:22
+msgid ":zeek:id:`mqtt_publish`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:22
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:121
+msgid "Generated for MQTT publish messages"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:23
+msgid ":zeek:id:`mqtt_pubrec`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:23
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:136
+msgid ""
+"Generated for MQTT publish received messages (QoS 2 publish received, "
+"part 1)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:24
+msgid ":zeek:id:`mqtt_pubrel`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:24
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:151
+msgid ""
+"Generated for MQTT publish release messages (QoS 2 publish received, part"
+" 2)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:25
+msgid ":zeek:id:`mqtt_suback`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:25
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:26
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:166
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:181
+msgid "Generated for MQTT subscribe messages"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:26
+msgid ":zeek:id:`mqtt_subscribe`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:27
+msgid ":zeek:id:`mqtt_unsuback`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:27
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:202
+msgid "Generated for MQTT unsubscribe acknowledgements sent by the server"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:28
+msgid ":zeek:id:`mqtt_unsubscribe`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:28
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:214
+msgid "Generated for MQTT unsubscribe messages sent by the client"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:33
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:38
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, msg: "
+":zeek:type:`MQTT::ConnectAckMsg`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:43
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:55
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:67
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:76
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:85
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:94
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:109
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:124
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:139
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:154
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:169
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:184
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:205
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:217
+msgid "The connection"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst
+msgid "msg"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:46
+msgid "MQTT connect ack message fields."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:50
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, msg: "
+":zeek:type:`MQTT::ConnectMsg`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:58
+msgid "MQTT connect message fields."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:62
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:71
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:80
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:89
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:104
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:134
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:149
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, msg_id: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:97
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:112
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:127
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:142
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:157
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:172
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:187
+msgid "Direction in which the message was sent"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst
+msgid "msg_id"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:100
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:115
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:145
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:160
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:175
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:190
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:208
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:220
+msgid "The id value for the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:119
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, msg_id: :zeek:type:`count`, msg: "
+":zeek:type:`MQTT::PublishMsg`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:130
+msgid "The MQTT publish message record."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:164
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, msg_id: "
+":zeek:type:`count`, granted_qos: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:179
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, msg_id: "
+":zeek:type:`count`, topics: :zeek:type:`string_vec`, requested_qos: "
+":zeek:type:`index_vec`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst
+msgid "topics"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:193
+msgid "The topics being subscribed to"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst
+msgid "requested_qos"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:196
+msgid "The desired QoS option associated with each topic."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:200
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, msg_id: "
+":zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:212
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, msg_id: "
+":zeek:type:`count`, topics: :zeek:type:`string_vec`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MQTT.events.bif.zeek.rst:223
+msgid "The topics being unsubscribed from"
+msgstr ""
+

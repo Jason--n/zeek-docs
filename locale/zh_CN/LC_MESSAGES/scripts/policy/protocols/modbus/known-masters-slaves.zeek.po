@@ -1,0 +1,192 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:4
+msgid "policy/protocols/modbus/known-masters-slaves.zeek"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:7
+msgid "Script for tracking known Modbus masters and slaves."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:9
+msgid "Todo"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:9
+msgid ""
+"This script needs a lot of work.  What might be more interesting is to "
+"track master/slave relationships based on commands sent and successful "
+"(non-exception) responses."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:13
+msgid "Known"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:14
+msgid ":doc:`base/protocols/modbus </scripts/base/protocols/modbus/index>`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:17
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:19
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:56
+msgid "State Variables"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:21
+msgid ""
+":zeek:id:`Known::modbus_nodes`: :zeek:type:`set` "
+":zeek:attr:`&create_expire` = ``1.0 day`` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:21
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:63
+msgid "The Modbus nodes being tracked."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:25
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:66
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:27
+msgid ":zeek:type:`Known::ModbusDeviceType`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:28
+msgid ":zeek:type:`Known::ModbusInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:32
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:34
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:36
+msgid ":zeek:enum:`Known::MODBUS_LOG`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:40
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:91
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:42
+msgid ":zeek:id:`Known::log_known_modbus`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:42
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:96
+msgid ""
+"Event that can be handled to access the loggable record as it is sent on "
+"to the logging framework."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:47
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:100
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:49
+msgid ":zeek:id:`Known::log_policy_modbus`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:54
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:59
+msgid ":zeek:type:`set` [:zeek:type:`addr`, :zeek:type:`Known::ModbusDeviceType`]"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:60
+msgid ":zeek:attr:`&create_expire` = ``1.0 day`` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:61
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:69
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:78
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:81
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:81
+msgid "The time the device was discovered."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:84
+msgid "host: :zeek:type:`addr` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:84
+msgid "The IP address of the host."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:86
+msgid "device_type: :zeek:type:`Known::ModbusDeviceType` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:87
+msgid "The type of device being tracked."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:94
+msgid ":zeek:type:`event` (rec: :zeek:type:`Known::ModbusInfo`)"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/known-masters-slaves.zeek.rst:103
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

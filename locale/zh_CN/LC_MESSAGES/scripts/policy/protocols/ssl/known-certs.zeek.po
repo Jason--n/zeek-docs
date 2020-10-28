@@ -1,0 +1,389 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:4
+msgid "policy/protocols/ssl/known-certs.zeek"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:7
+msgid ""
+"Log information about certificates while attempting to avoid duplicate "
+"logging."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:10
+msgid "Known"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:11
+msgid ""
+":doc:`base/files/x509 </scripts/base/files/x509/index>`, "
+":doc:`base/frameworks/cluster </scripts/base/frameworks/cluster/index>`, "
+":doc:`base/protocols/ssl </scripts/base/protocols/ssl/index>`, "
+":doc:`base/utils/directions-and-hosts.zeek </scripts/base/utils"
+"/directions-and-hosts.zeek>`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:16
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:71
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:18
+msgid ""
+":zeek:id:`Known::cert_store_expiry`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:18
+msgid "The expiry interval of new entries in :zeek:see:`Known::cert_store`."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:19
+msgid ""
+":zeek:id:`Known::cert_store_timeout`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:19
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:87
+msgid ""
+"The timeout interval to use for operations against "
+":zeek:see:`Known::cert_store`."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:21
+msgid ":zeek:id:`Known::cert_tracking`: :zeek:type:`Host` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:21
+msgid "The certificates whose existence should be logged and tracked."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:25
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:106
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:27
+msgid ":zeek:id:`Known::cert_store_name`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:27
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:113
+msgid "The Broker topic name to use for :zeek:see:`Known::cert_store`."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:28
+msgid ":zeek:id:`Known::use_cert_store`: :zeek:type:`bool` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:28
+msgid "Toggles between different implementations of this script."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:32
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:127
+msgid "State Variables"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:34
+msgid ":zeek:id:`Known::cert_store`: :zeek:type:`Cluster::StoreInfo`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:34
+msgid "Holds the set of all known certificates."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:35
+msgid ""
+":zeek:id:`Known::certs`: :zeek:type:`set` :zeek:attr:`&create_expire` = "
+"``1.0 day`` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:35
+msgid ""
+"The set of all known certificates to store for preventing duplicate "
+"logging."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:40
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:167
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:42
+msgid ":zeek:type:`Known::AddrCertHashPair`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:43
+msgid ":zeek:type:`Known::CertsInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:47
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:49
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:51
+msgid ":zeek:enum:`Known::CERTS_LOG`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:55
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:202
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:57
+msgid ":zeek:id:`Known::log_known_certs`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:57
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:207
+msgid ""
+"Event that can be handled to access the loggable record as it is sent on "
+"to the logging framework."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:62
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:211
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:64
+msgid ":zeek:id:`Known::log_policy_certs`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:69
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:74
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:83
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:75
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:84
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:93
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:110
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:118
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:76
+msgid "``1.0 day``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:78
+msgid ""
+"The expiry interval of new entries in :zeek:see:`Known::cert_store`. This"
+" also changes the interval at which certs get logged."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:85
+msgid "``15.0 secs``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:92
+msgid ":zeek:type:`Host`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:94
+msgid "``LOCAL_HOSTS``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst
+msgid "Redefinition"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:95
+msgid "from :doc:`/scripts/policy/tuning/track-all-assets.zeek`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:97
+msgid "``=``::"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:102
+msgid ""
+"The certificates whose existence should be logged and tracked. Choices "
+"are: LOCAL_HOSTS, REMOTE_HOSTS, ALL_HOSTS, NO_HOSTS."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:109
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:111
+msgid "``\"zeek/known/certs\"``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:117
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:119
+msgid "``T``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:121
+msgid ""
+"Toggles between different implementations of this script. When true, use "
+"a Broker data store, else use a regular Zeek set with keys uniformly "
+"distributed over proxy nodes in cluster operation."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:130
+msgid ":zeek:type:`Cluster::StoreInfo`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:148
+msgid ""
+"Holds the set of all known certificates.  Keys in the store are of type "
+":zeek:type:`Known::AddrCertHashPair` and their associated value is always"
+" the boolean value of \"true\"."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:154
+msgid ":zeek:type:`set` [:zeek:type:`addr`, :zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:155
+msgid ":zeek:attr:`&create_expire` = ``1.0 day`` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:156
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:158
+msgid ""
+"The set of all known certificates to store for preventing duplicate "
+"logging. It can also be used from other scripts to inspect if a "
+"certificate has been seen in use. The string value in the set is for "
+"storing the DER formatted certificate' SHA1 hash."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:163
+msgid ""
+"In cluster operation, this set is uniformly distributed across proxy "
+"nodes."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:170
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:179
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:172
+msgid "host: :zeek:type:`addr`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:174
+msgid "hash: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:182
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:182
+msgid "The timestamp when the certificate was detected."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:185
+msgid "host: :zeek:type:`addr` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:185
+msgid "The address that offered the certificate."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:189
+msgid "port_num: :zeek:type:`port` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:188
+msgid ""
+"If the certificate was handed out by a server, this is the port that the "
+"server was listening on."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:192
+msgid "subject: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:192
+msgid "Certificate subject."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:195
+msgid ""
+"issuer_subject: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:195
+msgid "Certificate issuer subject."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:197
+msgid "serial: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:198
+msgid "Serial number for the certificate."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:205
+msgid ":zeek:type:`event` (rec: :zeek:type:`Known::CertsInfo`)"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/known-certs.zeek.rst:214
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

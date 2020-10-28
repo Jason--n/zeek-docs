@@ -1,0 +1,384 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:4
+msgid "base/frameworks/netcontrol/plugins/openflow.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:7
+msgid "OpenFlow plugin for the NetControl framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:9
+msgid "NetControl"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:10
+msgid ""
+":doc:`base/frameworks/netcontrol/main.zeek "
+"</scripts/base/frameworks/netcontrol/main.zeek>`, "
+":doc:`base/frameworks/netcontrol/plugin.zeek "
+"</scripts/base/frameworks/netcontrol/plugin.zeek>`, "
+":doc:`base/frameworks/openflow </scripts/base/frameworks/openflow/index>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:15
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:53
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:17
+msgid ""
+":zeek:id:`NetControl::openflow_flow_timeout`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:17
+msgid "The time interval after we consider a flow timed out."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:18
+msgid ""
+":zeek:id:`NetControl::openflow_message_timeout`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:18
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:70
+msgid ""
+"The time interval after which an openflow message is considered to be "
+"timed out and we delete it from our internal tracking."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:23
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:74
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:25
+msgid ":zeek:type:`NetControl::OfConfig`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:25
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:139
+msgid ""
+"This record specifies the configuration that is passed to "
+":zeek:see:`NetControl::create_openflow`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:26
+msgid ":zeek:type:`NetControl::OfTable`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:30
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:32
+msgid ":zeek:type:`NetControl::PluginState`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:34
+msgid ":zeek:type:`NetControl::PluginState`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:37
+msgid "of_controller: :zeek:type:`OpenFlow::Controller` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:37
+msgid "OpenFlow controller for NetControl OpenFlow plugin."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:39
+msgid "of_config: :zeek:type:`NetControl::OfConfig` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:40
+msgid "OpenFlow configuration record that is passed on initialization."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:44
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:159
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:46
+msgid ":zeek:id:`NetControl::create_openflow`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:46
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:164
+msgid "Instantiates an openflow plugin for the NetControl framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:51
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:56
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:66
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:57
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:67
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:58
+msgid "``1.0 day``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:60
+msgid ""
+"The time interval after we consider a flow timed out. This should be "
+"fairly high (or even disabled) if you expect a lot of long flows. "
+"However, one also will have state buildup for quite a while if keeping "
+"this around..."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:68
+msgid "``20.0 secs``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:77
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:143
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:80
+msgid ""
+"monitor: :zeek:type:`bool` :zeek:attr:`&default` = ``T`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:80
+msgid "Accept rules that target the monitor path."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:83
+msgid ""
+"forward: :zeek:type:`bool` :zeek:attr:`&default` = ``T`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:83
+msgid "Accept rules that target the forward path."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:86
+msgid ""
+"idle_timeout: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:86
+msgid "Default OpenFlow idle timeout."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:89
+msgid "table_id: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:89
+msgid "Default OpenFlow table ID."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:92
+msgid ""
+"priority_offset: :zeek:type:`int` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:92
+msgid ""
+"Add this to all rule priorities. Can be useful if you want the openflow "
+"priorities be offset from the netcontrol priorities without having to "
+"write a filter function."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:104
+msgid ""
+"check_pred: :zeek:type:`function` (p: "
+":zeek:type:`NetControl::PluginState`, r: :zeek:type:`NetControl::Rule`) :"
+" :zeek:type:`bool` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:103
+msgid "bool &optional"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:95
+msgid "Predicate that is called on rule insertion or removal."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst
+msgid "p"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:98
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:112
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:128
+msgid "Current plugin state."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst
+msgid "r"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:101
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:115
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:131
+msgid "The rule to be inserted or removed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:104
+msgid "T if the rule can be handled by the current backend, F otherwise."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:121
+msgid ""
+"match_pred: :zeek:type:`function` (p: "
+":zeek:type:`NetControl::PluginState`, e: :zeek:type:`NetControl::Entity`,"
+" m: :zeek:type:`vector` of :zeek:type:`OpenFlow::ofp_match`) : "
+":zeek:type:`vector` of :zeek:type:`OpenFlow::ofp_match` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:120
+msgid "vector of OpenFlow::ofp_match &optional"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:107
+msgid ""
+"This predicate is called each time an OpenFlow match record is created. "
+"The predicate can modify the match structure before it is sent on to the "
+"device."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst
+msgid "m"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:118
+msgid "The openflow match structures that were generated for this rules."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:121
+msgid ""
+"The modified OpenFlow match structures that will be used in place of the "
+"structures passed in m."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:137
+msgid ""
+"flow_mod_pred: :zeek:type:`function` (p: "
+":zeek:type:`NetControl::PluginState`, r: :zeek:type:`NetControl::Rule`, "
+"m: :zeek:type:`OpenFlow::ofp_flow_mod`) : "
+":zeek:type:`OpenFlow::ofp_flow_mod` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:136
+msgid "OpenFlow::ofp_flow_mod &optional"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:124
+msgid ""
+"This predicate is called before a FlowMod message is sent to the OpenFlow"
+" device. It can modify the FlowMod message before it is passed on."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:134
+msgid "The OpenFlow FlowMod message."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:137
+msgid "The modified FlowMod message that is used in lieu of m."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:145
+msgid "p: :zeek:type:`NetControl::PluginState`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:147
+msgid "r: :zeek:type:`NetControl::Rule`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:149
+msgid "c: :zeek:type:`count` :zeek:attr:`&default` = ``0`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:151
+msgid ""
+"packet_count: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:153
+msgid ""
+"byte_count: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:155
+msgid ""
+"duration_sec: :zeek:type:`double` :zeek:attr:`&default` = ``0.0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/openflow.zeek.rst:162
+msgid ""
+":zeek:type:`function` (controller: :zeek:type:`OpenFlow::Controller`, "
+"config: :zeek:type:`NetControl::OfConfig` :zeek:attr:`&default` = ``[]`` "
+":zeek:attr:`&optional`) : :zeek:type:`NetControl::PluginState`"
+msgstr ""
+

@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/utils/backtrace.zeek.rst:4
+msgid "base/utils/backtrace.zeek"
+msgstr ""
+
+#: ../../scripts/base/utils/backtrace.zeek.rst:9
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/utils/backtrace.zeek.rst:11
+#: ../../scripts/base/utils/backtrace.zeek.rst:20
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/utils/backtrace.zeek.rst:13
+msgid ":zeek:id:`print_backtrace`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/backtrace.zeek.rst:13
+#: ../../scripts/base/utils/backtrace.zeek.rst:25
+msgid "Prints a Zeek function call stack."
+msgstr ""
+
+#: ../../scripts/base/utils/backtrace.zeek.rst:18
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/utils/backtrace.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/utils/backtrace.zeek.rst:23
+msgid ""
+":zeek:type:`function` (show_args: :zeek:type:`bool` :zeek:attr:`&default`"
+" = ``F`` :zeek:attr:`&optional`, one_line: :zeek:type:`bool` "
+":zeek:attr:`&default` = ``F`` :zeek:attr:`&optional`, one_line_delim: "
+":zeek:type:`string` :zeek:attr:`&default` = ``\"|\"`` "
+":zeek:attr:`&optional`, skip: :zeek:type:`count` :zeek:attr:`&default` = "
+"``1`` :zeek:attr:`&optional`, to_file: :zeek:type:`file` "
+":zeek:attr:`&default` = ``file \"/dev/stdout\" of string`` "
+":zeek:attr:`&optional`) : :zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/utils/backtrace.zeek.rst
+msgid "show_args"
+msgstr ""
+
+#: ../../scripts/base/utils/backtrace.zeek.rst:28
+msgid "whether to print function argument names/types/values."
+msgstr ""
+
+#: ../../scripts/base/utils/backtrace.zeek.rst
+msgid "one_line"
+msgstr ""
+
+#: ../../scripts/base/utils/backtrace.zeek.rst:31
+msgid "whether to print the stack in a single line or multiple."
+msgstr ""
+
+#: ../../scripts/base/utils/backtrace.zeek.rst
+msgid "one_line_delim"
+msgstr ""
+
+#: ../../scripts/base/utils/backtrace.zeek.rst:34
+msgid "delimiter between stack elements if printing to one line."
+msgstr ""
+
+#: ../../scripts/base/utils/backtrace.zeek.rst
+msgid "skip"
+msgstr ""
+
+#: ../../scripts/base/utils/backtrace.zeek.rst:37
+msgid ""
+"the number of call stack elements to skip past, starting from zero, with "
+"that being the call to this function."
+msgstr ""
+
+#: ../../scripts/base/utils/backtrace.zeek.rst
+msgid "to_file"
+msgstr ""
+
+#: ../../scripts/base/utils/backtrace.zeek.rst:41
+msgid "the file to which the call stack will be printed."
+msgstr ""
+

@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/integration/barnyard2/index.rst:4
+msgid "Package: policy/integration/barnyard2"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/index.rst:6
+msgid "Integration with Barnyard2."
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/index.rst:8
+msgid ":doc:`/scripts/policy/integration/barnyard2/__load__.zeek`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/index.rst:11
+msgid ":doc:`/scripts/policy/integration/barnyard2/types.zeek`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/index.rst:13
+msgid ""
+"This file is separate from the base script so that dependencies can be "
+"loaded in the correct order."
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/index.rst:16
+msgid ":doc:`/scripts/policy/integration/barnyard2/main.zeek`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/index.rst:18
+msgid ""
+"This script lets Barnyard2 integrate with Zeek.  It receives alerts from "
+"Barnyard2 and logs them.  In the future it will do more correlation and "
+"derive new notices from the alerts."
+msgstr ""
+

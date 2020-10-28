@@ -1,0 +1,290 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_SMTP.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:26
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:15
+msgid ":zeek:id:`smtp_data`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:15
+msgid "Generated for DATA transmitted on SMTP sessions."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:16
+msgid ":zeek:id:`smtp_reply`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:62
+msgid "Generated for server-side SMTP commands."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:17
+msgid ":zeek:id:`smtp_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:17
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:102
+msgid "Generated for client-side SMTP commands."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:18
+msgid ":zeek:id:`smtp_starttls`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:18
+msgid ""
+"Generated if a connection switched to using TLS using STARTTLS or "
+"X-ANONYMOUSTLS."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:19
+msgid ":zeek:id:`smtp_unexpected`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:19
+msgid "Generated for unexpected activity on SMTP sessions."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:24
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:29
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, data: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:31
+msgid ""
+"Generated for DATA transmitted on SMTP sessions. This event is raised for"
+" subsequent chunks of raw data following the ``DATA`` SMTP command until "
+"the corresponding end marker ``.`` is seen. A handler may want to "
+"reassemble the pieces as they come in if stream-analysis is required."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:36
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:64
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:104
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:151
+msgid ""
+"See `Wikipedia "
+"<http://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol>`__ for more "
+"information about the SMTP protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:40
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:68
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:108
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:139
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:155
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:43
+msgid "True if the sender of the data is the originator of the TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst
+msgid "data"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:47
+msgid ""
+"The raw data. Note that the size of each chunk is undefined and depends "
+"on specifics of the underlying TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:54
+msgid ""
+"This event receives the unprocessed raw data. There is a separate set of "
+"``mime_*`` events that strip out the outer MIME-layer of emails and "
+"provide structured access to their content."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:60
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, code: :zeek:type:`count`, cmd: :zeek:type:`string`, "
+"msg: :zeek:type:`string`, cont_resp: :zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:71
+msgid ""
+"True if the sender of the command is the originator of the TCP "
+"connection. Note that this is not redundant: the SMTP ``TURN`` command "
+"allows client and server to flip roles on established SMTP sessions, and "
+"hence a \"reply\" might still come from the TCP-level originator. In "
+"practice, however, that will rarely happen as TURN is considered insecure"
+" and rarely used."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst
+msgid "code"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:79
+msgid "The reply's numerical code."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst
+msgid "cmd"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:82
+msgid "TODO."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst
+msgid "msg"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:85
+msgid "The reply's textual description."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst
+msgid "cont_resp"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:88
+msgid ""
+"True if the reply line is tagged as being continued to the next line. If "
+"so, further events will be raised and a handler may want to reassemble "
+"the pieces before processing the response any further."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:96
+msgid "Zeek doesn't support the newer ETRN extension yet."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:100
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, command: :zeek:type:`string`, arg: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:111
+msgid ""
+"True if the sender of the command is the originator of the TCP "
+"connection. Note that this is not redundant: the SMTP ``TURN`` command "
+"allows client and server to flip roles on established SMTP sessions, and "
+"hence a \"request\" might still come from the TCP-level responder. In "
+"practice, however, that will rarely happen as TURN is considered insecure"
+" and rarely used."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst
+msgid "command"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:119
+msgid "The request's command, without any arguments."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst
+msgid "arg"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:122
+msgid "The request command's arguments."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:128
+msgid "Zeek does not support the newer ETRN extension yet."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:132
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:134
+msgid ""
+"Generated if a connection switched to using TLS using STARTTLS or "
+"X-ANONYMOUSTLS. After this event no more SMTP events will be raised for "
+"the connection. See the SSL analyzer for related SSL events, which will "
+"now be generated."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:144
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, msg: :zeek:type:`string`, detail: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:146
+msgid ""
+"Generated for unexpected activity on SMTP sessions. The SMTP analyzer "
+"tracks the state of SMTP sessions and reports commands and other activity"
+" with this event that it sees even though it would not expect so at the "
+"current point of the communication."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:158
+msgid ""
+"True if the sender of the unexpected activity is the originator of the "
+"TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:162
+msgid "A descriptive message of what was unexpected."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst
+msgid "detail"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMTP.events.bif.zeek.rst:165
+msgid "The actual SMTP line triggering the event."
+msgstr ""
+

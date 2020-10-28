@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/broker/index.rst:4
+msgid "Package: base/frameworks/broker"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/index.rst:6
+msgid ""
+"The Broker communication framework facilitates connecting to remote Zeek "
+"instances to share state and transfer events."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/index.rst:9
+msgid ":doc:`/scripts/base/frameworks/broker/__load__.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/index.rst:12
+msgid ":doc:`/scripts/base/frameworks/broker/main.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/index.rst:14
+msgid "The Broker-based communication API and its various options."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/index.rst:16
+msgid ":doc:`/scripts/base/frameworks/broker/store.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/index.rst:18
+msgid "The Broker-based data store API and its various options."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/index.rst:20
+msgid ":doc:`/scripts/base/frameworks/broker/log.zeek`"
+msgstr ""
+

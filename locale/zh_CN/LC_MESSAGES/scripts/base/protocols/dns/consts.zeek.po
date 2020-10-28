@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:4
+msgid "base/protocols/dns/consts.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:7
+msgid ""
+"Types, errors, and fields for analyzing DNS data.  A helper file for DNS "
+"analysis scripts."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:10
+msgid "DNS"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:15
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:34
+msgid "Constants"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:17
+msgid ":zeek:id:`DNS::ANY`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:17
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:40
+msgid "A QTYPE value describing a request for all records."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:18
+msgid ":zeek:id:`DNS::EDNS`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:18
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:47
+msgid "An OPT RR TYPE value described by EDNS."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:19
+msgid ":zeek:id:`DNS::PTR`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:19
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:54
+msgid "RR TYPE value for a domain name pointer."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:20
+msgid ""
+":zeek:id:`DNS::algorithms`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:20
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:87
+msgid "Possible values of the algorithms used in DNSKEY, DS and RRSIG records"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:21
+msgid ""
+":zeek:id:`DNS::base_errors`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:21
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:126
+msgid "Errors used for non-TSIG/EDNS types."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:22
+msgid ""
+":zeek:id:`DNS::classes`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:22
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:146
+msgid ""
+"Possible values of the CLASS field in resource records or QCLASS field in"
+" query messages."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:24
+msgid ""
+":zeek:id:`DNS::digests`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:24
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:166
+msgid "Possible digest types used in DNSSEC."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:25
+msgid ""
+":zeek:id:`DNS::edns_zfield`: :zeek:type:`table` :zeek:attr:`&default` = "
+"``\"?\"``"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:25
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:182
+msgid "This deciphers EDNS Z field values."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:26
+msgid ""
+":zeek:id:`DNS::query_types`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:26
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:268
+msgid "Mapping of DNS query type codes to human readable string representation."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:32
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:37
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:44
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:51
+msgid ":zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:38
+msgid "``255``"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:45
+msgid "``41``"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:52
+msgid "``12``"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:58
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:91
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:130
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:151
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:170
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:186
+msgid ":zeek:type:`table` [:zeek:type:`count`] of :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:59
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:92
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:131
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:152
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:187
+msgid ":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/consts.zeek.rst:171
+msgid ":zeek:attr:`&default` = ``\"?\"``"
+msgstr ""
+

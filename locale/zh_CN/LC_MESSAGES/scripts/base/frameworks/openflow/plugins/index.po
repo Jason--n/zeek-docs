@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/openflow/plugins/index.rst:4
+msgid "Package: base/frameworks/openflow/plugins"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/index.rst:6
+msgid "Plugins for the OpenFlow framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/index.rst:8
+msgid ":doc:`/scripts/base/frameworks/openflow/plugins/__load__.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/index.rst:11
+msgid ":doc:`/scripts/base/frameworks/openflow/plugins/ryu.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/index.rst:13
+msgid "OpenFlow plugin for the Ryu controller."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/index.rst:15
+msgid ":doc:`/scripts/base/frameworks/openflow/plugins/log.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/index.rst:17
+msgid ""
+"OpenFlow plugin that outputs flow-modification commands to a Zeek log "
+"file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/index.rst:20
+msgid ":doc:`/scripts/base/frameworks/openflow/plugins/broker.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/index.rst:22
+msgid "OpenFlow plugin for interfacing to controllers via Broker."
+msgstr ""
+

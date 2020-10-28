@@ -1,3 +1,9 @@
+SPHINXOPTS    =
+SPHINXBUILD   = sphinx-build
+SPHINXPROJ    = sphinx-intl
+SOURCEDIR     = .
+BUILDDIR      = build
+
 
 all: html
 
@@ -19,3 +25,8 @@ commit:
 	git add * && git commit -m 'Update generated docs'
 
 .PHONY : all doc builddir clean html livehtml
+
+# Catch-all target: route all unknown targets to Sphinx using the new
+# "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
+%: Makefile
+	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)

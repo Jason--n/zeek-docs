@@ -1,0 +1,751 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_ICMP.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:37
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:15
+msgid ":zeek:id:`icmp_echo_reply`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:44
+msgid "Generated for ICMP *echo reply* messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:16
+msgid ":zeek:id:`icmp_echo_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:79
+msgid "Generated for ICMP *echo request* messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:17
+msgid ":zeek:id:`icmp_error_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:17
+msgid ""
+"Generated for all ICMPv6 error messages that are not handled separately "
+"with dedicated events."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:19
+msgid ":zeek:id:`icmp_neighbor_advertisement`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:19
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:150
+msgid "Generated for ICMP *neighbor advertisement* messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:20
+msgid ":zeek:id:`icmp_neighbor_solicitation`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:20
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:192
+msgid "Generated for ICMP *neighbor solicitation* messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:21
+msgid ":zeek:id:`icmp_packet_too_big`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:21
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:224
+msgid "Generated for ICMPv6 *packet too big* messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:22
+msgid ":zeek:id:`icmp_parameter_problem`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:22
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:261
+msgid "Generated for ICMPv6 *parameter problem* messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:23
+msgid ":zeek:id:`icmp_redirect`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:23
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:298
+msgid "Generated for ICMP *redirect* messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:24
+msgid ":zeek:id:`icmp_router_advertisement`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:24
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:334
+msgid "Generated for ICMP *router advertisement* messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:25
+msgid ":zeek:id:`icmp_router_solicitation`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:25
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:394
+msgid "Generated for ICMP *router solicitation* messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:26
+msgid ":zeek:id:`icmp_sent`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:26
+msgid ""
+"Generated for all ICMP messages that are not handled separately with "
+"dedicated ICMP events."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:28
+msgid ":zeek:id:`icmp_sent_payload`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:28
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:451
+msgid "The same as :zeek:see:`icmp_sent` except containing the ICMP payload."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:29
+msgid ":zeek:id:`icmp_time_exceeded`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:29
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:475
+msgid "Generated for ICMP *time exceeded* messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:30
+msgid ":zeek:id:`icmp_unreachable`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:30
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:512
+msgid "Generated for ICMP *destination unreachable* messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:35
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:40
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:75
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn` :zeek:attr:`&deprecated` = ``\"Remove in v4.1\"``,"
+" info: :zeek:type:`icmp_info`, id: :zeek:type:`count`, seq: "
+":zeek:type:`count`, payload: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:41
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:76
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`icmp_info`, id: :zeek:type:`count`, seq: :zeek:type:`count`, "
+"payload: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:42
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:77
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn`, id: :zeek:type:`count`, seq: :zeek:type:`count`, "
+"payload: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:46
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:81
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:152
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:194
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:300
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:336
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:396
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:428
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:477
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:514
+msgid ""
+"See `Wikipedia "
+"<http://en.wikipedia.org/wiki/Internet_Control_Message_Protocol>`__ for "
+"more information about the ICMP protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:51
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:86
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:124
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:157
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:199
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:231
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:268
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:305
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:341
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:401
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:433
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:454
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:482
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:519
+msgid "The connection record for the corresponding ICMP flow."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "icmp"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:54
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:58
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:89
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:93
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:127
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:131
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:160
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:164
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:202
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:206
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:234
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:238
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:271
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:275
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:308
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:312
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:344
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:348
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:404
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:408
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:436
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:440
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:457
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:461
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:485
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:489
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:522
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:526
+msgid ""
+"Additional ICMP-specific information augmenting the standard connection "
+"record *c*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "info"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "id"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:62
+msgid "The *echo reply* identifier."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "seq"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:65
+msgid "The *echo reply* sequence number."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "payload"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:68
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:103
+msgid ""
+"The message-specific data of the packet payload, i.e., everything after "
+"the first 8 bytes of the ICMP header."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:97
+msgid "The *echo request* identifier."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:100
+msgid "The *echo request* sequence number."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:110
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:220
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:257
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:471
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:508
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn` :zeek:attr:`&deprecated` = ``\"Remove in v4.1\"``,"
+" info: :zeek:type:`icmp_info`, code: :zeek:type:`count`, context: "
+":zeek:type:`icmp_context`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:111
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:221
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:258
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:472
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:509
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`icmp_info`, code: :zeek:type:`count`, context: "
+":zeek:type:`icmp_context`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:112
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:222
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:259
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:473
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:510
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn`, code: :zeek:type:`count`, context: "
+":zeek:type:`icmp_context`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:114
+msgid ""
+"Generated for all ICMPv6 error messages that are not handled separately "
+"with dedicated events. Zeek's ICMP analyzer handles a number of ICMP "
+"error messages directly with dedicated events. This event acts as a "
+"fallback for those it doesn't."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:119
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:226
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:263
+msgid ""
+"See `Wikipedia <http://en.wikipedia.org/wiki/ICMPv6>`__ for more "
+"information about the ICMPv6 protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "code"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:135
+msgid "The ICMP code of the error message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "context"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:138
+msgid "A record with specifics of the original packet that the message refers to."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:146
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn` :zeek:attr:`&deprecated` = ``\"Remove in v4.1\"``,"
+" info: :zeek:type:`icmp_info`, router: :zeek:type:`bool`, solicited: "
+":zeek:type:`bool`, override: :zeek:type:`bool`, tgt: :zeek:type:`addr`, "
+"options: :zeek:type:`icmp6_nd_options`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:147
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`icmp_info`, router: :zeek:type:`bool`, solicited: "
+":zeek:type:`bool`, override: :zeek:type:`bool`, tgt: :zeek:type:`addr`, "
+"options: :zeek:type:`icmp6_nd_options`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:148
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn`, router: :zeek:type:`bool`, solicited: "
+":zeek:type:`bool`, override: :zeek:type:`bool`, tgt: :zeek:type:`addr`, "
+"options: :zeek:type:`icmp6_nd_options`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "router"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:168
+msgid "Flag indicating the sender is a router."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "solicited"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:171
+msgid "Flag indicating advertisement is in response to a solicitation."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "override"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:174
+msgid "Flag indicating advertisement should override existing caches."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "tgt"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:177
+msgid ""
+"the Target Address in the soliciting message or the address whose link-"
+"layer address has changed for unsolicited adverts."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "options"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:181
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:213
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:323
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:383
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:412
+msgid "Any Neighbor Discovery options included with message (:rfc:`4861`)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:188
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn` :zeek:attr:`&deprecated` = ``\"Remove in v4.1\"``,"
+" info: :zeek:type:`icmp_info`, tgt: :zeek:type:`addr`, options: "
+":zeek:type:`icmp6_nd_options`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:189
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`icmp_info`, tgt: :zeek:type:`addr`, options: "
+":zeek:type:`icmp6_nd_options`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:190
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn`, tgt: :zeek:type:`addr`, options: "
+":zeek:type:`icmp6_nd_options`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:210
+msgid "The IP address of the target of the solicitation."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:242
+msgid "The ICMP code of the *too big* message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:245
+msgid ""
+"A record with specifics of the original packet that the message refers "
+"to. *Too big* messages should include the original IP header from the "
+"packet that triggered them, and Zeek parses that into the *context* "
+"structure. Note that if the *too big* includes only a partial IP header "
+"for some reason, no fields of *context* will be filled out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:279
+msgid "The ICMP code of the *parameter problem* message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:282
+msgid ""
+"A record with specifics of the original packet that the message refers "
+"to. *Parameter problem* messages should include the original IP header "
+"from the packet that triggered them, and Zeek parses that into the "
+"*context* structure. Note that if the *parameter problem* includes only a"
+" partial IP header for some reason, no fields of *context* will be filled"
+" out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:294
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn` :zeek:attr:`&deprecated` = ``\"Remove in v4.1\"``,"
+" info: :zeek:type:`icmp_info`, tgt: :zeek:type:`addr`, dest: "
+":zeek:type:`addr`, options: :zeek:type:`icmp6_nd_options`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:295
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`icmp_info`, tgt: :zeek:type:`addr`, dest: :zeek:type:`addr`, "
+"options: :zeek:type:`icmp6_nd_options`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:296
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn`, tgt: :zeek:type:`addr`, dest: :zeek:type:`addr`, "
+"options: :zeek:type:`icmp6_nd_options`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:316
+msgid ""
+"The address that is supposed to be a better first hop to use for ICMP "
+"Destination Address."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "dest"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:320
+msgid "The address of the destination which is redirected to the target."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:330
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn` :zeek:attr:`&deprecated` = ``\"Remove in v4.1\"``,"
+" info: :zeek:type:`icmp_info`, cur_hop_limit: :zeek:type:`count`, "
+"managed: :zeek:type:`bool`, other: :zeek:type:`bool`, home_agent: "
+":zeek:type:`bool`, pref: :zeek:type:`count`, proxy: :zeek:type:`bool`, "
+"rsv: :zeek:type:`count`, router_lifetime: :zeek:type:`interval`, "
+"reachable_time: :zeek:type:`interval`, retrans_timer: "
+":zeek:type:`interval`, options: :zeek:type:`icmp6_nd_options`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:331
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`icmp_info`, cur_hop_limit: :zeek:type:`count`, managed: "
+":zeek:type:`bool`, other: :zeek:type:`bool`, home_agent: "
+":zeek:type:`bool`, pref: :zeek:type:`count`, proxy: :zeek:type:`bool`, "
+"rsv: :zeek:type:`count`, router_lifetime: :zeek:type:`interval`, "
+"reachable_time: :zeek:type:`interval`, retrans_timer: "
+":zeek:type:`interval`, options: :zeek:type:`icmp6_nd_options`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:332
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn`, cur_hop_limit: :zeek:type:`count`, managed: "
+":zeek:type:`bool`, other: :zeek:type:`bool`, home_agent: "
+":zeek:type:`bool`, pref: :zeek:type:`count`, proxy: :zeek:type:`bool`, "
+"rsv: :zeek:type:`count`, router_lifetime: :zeek:type:`interval`, "
+"reachable_time: :zeek:type:`interval`, retrans_timer: "
+":zeek:type:`interval`, options: :zeek:type:`icmp6_nd_options`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "cur_hop_limit"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:352
+msgid ""
+"The default value that should be placed in Hop Count field for outgoing "
+"IP packets."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "managed"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:356
+msgid "Managed address configuration flag, :rfc:`4861`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "other"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:359
+msgid "Other stateful configuration flag, :rfc:`4861`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "home_agent"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:362
+msgid "Mobile IPv6 home agent flag, :rfc:`3775`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "pref"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:365
+msgid "Router selection preferences, :rfc:`4191`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "proxy"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:368
+msgid "Neighbor discovery proxy flag, :rfc:`4389`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "rsv"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:371
+msgid "Remaining two reserved bits of router advertisement flags."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "router_lifetime"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:374
+msgid "How long this router should be used as a default router."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "reachable_time"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:377
+msgid "How long a neighbor should be considered reachable."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst
+msgid "retrans_timer"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:380
+msgid "How long a host should wait before retransmitting."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:390
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn` :zeek:attr:`&deprecated` = ``\"Remove in v4.1\"``,"
+" info: :zeek:type:`icmp_info`, options: :zeek:type:`icmp6_nd_options`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:391
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`icmp_info`, options: :zeek:type:`icmp6_nd_options`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:392
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn`, options: :zeek:type:`icmp6_nd_options`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:419
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn` :zeek:attr:`&deprecated` = ``\"Remove in v4.1\"``,"
+" info: :zeek:type:`icmp_info`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:420
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`icmp_info`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:421
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:423
+msgid ""
+"Generated for all ICMP messages that are not handled separately with "
+"dedicated ICMP events. Zeek's ICMP analyzer handles a number of ICMP "
+"messages directly with dedicated events. This event acts as a fallback "
+"for those it doesn't."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:447
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn` :zeek:attr:`&deprecated` = ``\"Remove in v4.1\"``,"
+" info: :zeek:type:`icmp_info`, payload: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:448
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`icmp_info`, payload: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:449
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, icmp: "
+":zeek:type:`icmp_conn`, payload: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:465
+msgid "The payload of the ICMP message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:493
+msgid "The ICMP code of the *exceeded* message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:496
+msgid ""
+"A record with specifics of the original packet that the message refers "
+"to. *Unreachable* messages should include the original IP header from the"
+" packet that triggered them, and Zeek parses that into the *context* "
+"structure. Note that if the *exceeded* includes only a partial IP header "
+"for some reason, no fields of *context* will be filled out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:530
+msgid "The ICMP code of the *unreachable* message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ICMP.events.bif.zeek.rst:533
+msgid ""
+"A record with specifics of the original packet that the message refers "
+"to. *Unreachable* messages should include the original IP header from the"
+" packet that triggered them, and Zeek parses that into the *context* "
+"structure. Note that if the *unreachable* includes only a partial IP "
+"header for some reason, no fields of *context* will be filled out."
+msgstr ""
+

@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../components/index.rst:4
+msgid "Subcomponents"
+msgstr ""
+
+#: ../../components/index.rst:6
+msgid ""
+"To find documentation for the various subcomponents of Zeek, see their "
+"respective GitHub repositories or documentation:"
+msgstr ""
+
+#: ../../components/index.rst:9
+msgid "`BinPAC <https://github.com/zeek/binpac>`__ - A protocol parser generator"
+msgstr ""
+
+#: ../../components/index.rst:11
+msgid ""
+"`ZeekControl <https://github.com/zeek/zeekctl>`__ - Interactive Zeek "
+"management shell"
+msgstr ""
+
+#: ../../components/index.rst:13
+msgid ""
+"`Zeek-Aux <https://github.com/zeek/zeek-aux>`__ - Small auxiliary tools "
+"for Zeek"
+msgstr ""
+
+#: ../../components/index.rst:15
+msgid "`BTest <https://github.com/zeek/btest>`__ - A system testing framework"
+msgstr ""
+
+#: ../../components/index.rst:17
+msgid ""
+"`Capstats <https://github.com/zeek/capstats>`__ - Command-line packet "
+"statistic tool"
+msgstr ""
+
+#: ../../components/index.rst:19
+msgid ""
+"`PySubnetTree <https://github.com/zeek/pysubnettree>`__ - Python module "
+"for CIDR lookups"
+msgstr ""
+
+#: ../../components/index.rst:21
+msgid ""
+"`trace-summary <https://github.com/zeek/trace-summary>`__ - Script for "
+"generating break-downs of network traffic"
+msgstr ""
+
+#: ../../components/index.rst:23
+msgid ""
+"`Broker <https://github.com/zeek/broker>`__ - Zeek's Messaging Library - "
+"`(Docs) <https://docs.zeek.org/projects/broker>`__"
+msgstr ""
+
+#: ../../components/index.rst:26
+msgid ""
+"`Package Manager <https://github.com/zeek/package-manager>`__ - A package"
+" manager for Zeek - `(Docs) <https://docs.zeek.org/projects/package-"
+"manager>`__"
+msgstr ""
+
+#: ../../components/index.rst:29
+msgid ""
+"`Paraglob <https://github.com/zeek/paraglob>`__ - A pattern matching data"
+" structure for Zeek. - `(Docs) "
+"<https://github.com/zeek/paraglob/blob/master/README.md>`__"
+msgstr ""
+

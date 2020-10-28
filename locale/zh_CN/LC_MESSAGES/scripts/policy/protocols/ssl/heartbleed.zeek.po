@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:4
+msgid "policy/protocols/ssl/heartbleed.zeek"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:7
+msgid "Detect the TLS heartbleed attack. See http://heartbleed.com for more."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:9
+msgid "Heartbleed"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:10
+msgid ""
+":doc:`base/frameworks/notice </scripts/base/frameworks/notice/index>`, "
+":doc:`base/protocols/ssl </scripts/base/protocols/ssl/index>`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:15
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:17
+msgid ":zeek:type:`Notice::Type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:19
+msgid ""
+":zeek:enum:`Heartbleed::SSL_Heartbeat_Attack`: Indicates that a host "
+"performed a heartbleed attack or scan."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:22
+msgid ""
+":zeek:enum:`Heartbleed::SSL_Heartbeat_Attack_Success`: Indicates that a "
+"host performing a heartbleed attack was probably successful."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:25
+msgid ""
+":zeek:enum:`Heartbleed::SSL_Heartbeat_Many_Requests`: Indicates we saw "
+"many heartbeat requests without a reply."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:28
+msgid ""
+":zeek:enum:`Heartbleed::SSL_Heartbeat_Odd_Length`: Indicates we saw "
+"heartbeat requests with odd length."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:30
+msgid ":zeek:type:`SSL::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:32
+msgid ":zeek:type:`SSL::Info`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:34
+msgid ""
+"last_originator_heartbeat_request_size: :zeek:type:`count` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:36
+msgid ""
+"last_responder_heartbeat_request_size: :zeek:type:`count` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:38
+msgid ""
+"originator_heartbeats: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:40
+msgid ""
+"responder_heartbeats: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:42
+msgid ""
+"heartbleed_detected: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:44
+msgid ""
+"enc_appdata_packages: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:46
+msgid ""
+"enc_appdata_bytes: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:47
+msgid ""
+":zeek:id:`SSL::disable_analyzer_after_detection`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/heartbleed.zeek.rst:52
+msgid "Detailed Interface"
+msgstr ""
+

@@ -1,0 +1,302 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:4
+msgid "base/frameworks/supervisor/control.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:7
+msgid ""
+"The Zeek process supervision (remote) control API.  This defines a Broker"
+" topic prefix and events that can be used to control an external Zeek "
+"supervisor process. This API was introduced in Zeek 3.1.0 and considered "
+"unstable until 4.0.0. That is, it may change in various incompatible ways"
+" without warning or deprecation until the stable 4.0.0 release."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:13
+msgid "SupervisorControl"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:14
+msgid ""
+":doc:`base/frameworks/supervisor/api.zeek "
+"</scripts/base/frameworks/supervisor/api.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:17
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:19
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:48
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:21
+msgid ""
+":zeek:id:`SupervisorControl::topic_prefix`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:21
+msgid ""
+"The Broker topic prefix to use when subscribing to Supervisor API "
+"requests and when publishing Supervisor API responses."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:26
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:61
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:28
+msgid ":zeek:id:`SupervisorControl::create_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:28
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:66
+msgid "Send a request to a remote Supervisor process to create a node."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:29
+msgid ":zeek:id:`SupervisorControl::create_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:29
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:78
+msgid ""
+"Handle a response from a Supervisor process that received "
+":zeek:see:`SupervisorControl::create_request`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:31
+msgid ":zeek:id:`SupervisorControl::destroy_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:31
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:92
+msgid "Send a request to a remote Supervisor process to destroy a node."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:32
+msgid ":zeek:id:`SupervisorControl::destroy_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:32
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:105
+msgid ""
+"Handle a response from a Supervisor process that received "
+":zeek:see:`SupervisorControl::destroy_request`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:34
+msgid ":zeek:id:`SupervisorControl::restart_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:34
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:119
+msgid "Send a request to a remote Supervisor process to restart a node."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:35
+msgid ":zeek:id:`SupervisorControl::restart_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:35
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:132
+msgid ""
+"Handle a response from a Supervisor process that received "
+":zeek:see:`SupervisorControl::restart_request`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:37
+msgid ":zeek:id:`SupervisorControl::status_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:37
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:146
+msgid "Send a request to a remote Supervisor process to retrieve node status."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:38
+msgid ":zeek:id:`SupervisorControl::status_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:38
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:159
+msgid ""
+"Handle a response from a Supervisor process that received "
+":zeek:see:`SupervisorControl::status_request`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:40
+msgid ":zeek:id:`SupervisorControl::stop_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:40
+msgid ""
+"Send a request to a remote Supervisor to stop and shutdown its process "
+"tree."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:46
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:51
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:52
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:53
+msgid "``\"zeek/supervisor\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:55
+msgid ""
+"The Broker topic prefix to use when subscribing to Supervisor API "
+"requests and when publishing Supervisor API responses.  If you are "
+"publishing Supervisor requests, this is also the prefix string to use for"
+" their topic names."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:64
+msgid ""
+":zeek:type:`event` (reqid: :zeek:type:`string`, node: "
+":zeek:type:`Supervisor::NodeConfig`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst
+msgid "reqid"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:69
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:95
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:122
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:149
+msgid "an arbitrary string that will be directly echoed in the response"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst
+msgid "node"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:72
+msgid "the desired configuration for the new supervised node process."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:76
+msgid ""
+":zeek:type:`event` (reqid: :zeek:type:`string`, result: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:82
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:109
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:136
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:163
+msgid "an arbitrary string matching the value in the original request."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst
+msgid "result"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:85
+msgid "the return value of the remote call to :zeek:see:`Supervisor::create`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:90
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:117
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:144
+msgid ":zeek:type:`event` (reqid: :zeek:type:`string`, node: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:98
+msgid "the name of the node to destory or empty string to mean \"all nodes\"."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:103
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:130
+msgid ":zeek:type:`event` (reqid: :zeek:type:`string`, result: :zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:112
+msgid "the return value of the remote call to :zeek:see:`Supervisor::destroy`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:125
+msgid "the name of the node to restart or empty string to mean \"all nodes\"."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:139
+msgid "the return value of the remote call to :zeek:see:`Supervisor::restart`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:152
+msgid ""
+"the name of the node to get status of or empty string to mean \"all "
+"nodes\"."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:157
+msgid ""
+":zeek:type:`event` (reqid: :zeek:type:`string`, result: "
+":zeek:type:`Supervisor::Status`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:166
+msgid "the return value of the remote call to :zeek:see:`Supervisor::status`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:171
+msgid ":zeek:type:`event` ()"
+msgstr ""
+
+#: ../../scripts/base/frameworks/supervisor/control.zeek.rst:173
+msgid ""
+"Send a request to a remote Supervisor to stop and shutdown its process "
+"tree.  There is no response to this message as the Supervisor simply "
+"terminates on receipt."
+msgstr ""
+

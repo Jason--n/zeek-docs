@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:4
+msgid "base/protocols/ftp/utils-commands.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:8
+msgid "FTP"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:13
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:31
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:15
+msgid ":zeek:id:`FTP::cmd_reply_code`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:15
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:369
+msgid "Possible response codes for a wide variety of FTP commands."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:19
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:372
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:21
+msgid ":zeek:type:`FTP::CmdArg`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:22
+msgid ":zeek:type:`FTP::PendingCmds`: :zeek:type:`table`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:22
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:394
+msgid ""
+"Structure for tracking pending commands in the event that the client "
+"sends a large number of commands before the server has a chance to reply."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:29
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:34
+msgid ":zeek:type:`set` [:zeek:type:`string`, :zeek:type:`count`]"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:35
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:375
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:378
+msgid "ts: :zeek:type:`time`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:378
+msgid "Time when the command was sent."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:381
+msgid ""
+"cmd: :zeek:type:`string` :zeek:attr:`&default` = ``\"<unknown>\"`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:381
+msgid "Command."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:384
+msgid ""
+"arg: :zeek:type:`string` :zeek:attr:`&default` = ``\"\"`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:384
+msgid "Argument for the command if one was given."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:386
+msgid ""
+"seq: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:387
+msgid "Counter to track how many commands have been executed."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/utils-commands.zeek.rst:392
+msgid ":zeek:type:`table` [:zeek:type:`count`] of :zeek:type:`FTP::CmdArg`"
+msgstr ""
+

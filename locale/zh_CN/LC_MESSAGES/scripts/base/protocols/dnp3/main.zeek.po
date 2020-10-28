@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:4
+msgid "base/protocols/dnp3/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:7
+msgid "A very basic DNP3 analysis script that just logs requests and replies."
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:9
+msgid "DNP3"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:10
+msgid ""
+":doc:`base/protocols/conn/removal-hooks.zeek "
+"</scripts/base/protocols/conn/removal-hooks.zeek>`, "
+":doc:`base/protocols/dnp3/consts.zeek "
+"</scripts/base/protocols/dnp3/consts.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:15
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:52
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:17
+msgid ":zeek:type:`DNP3::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:21
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:23
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:25
+msgid ":zeek:enum:`DNP3::LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:26
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:28
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:30
+msgid "dnp3: :zeek:type:`DNP3::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:31
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:35
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:77
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:37
+msgid ":zeek:id:`DNP3::log_dnp3`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:37
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:82
+msgid ""
+"Event that can be handled to access the DNP3 record as it is sent on to "
+"the logging framework."
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:42
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:86
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:44
+msgid ":zeek:id:`DNP3::finalize_dnp3`: :zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:44
+msgid "DNP3 finalization hook."
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:45
+msgid ":zeek:id:`DNP3::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:50
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:55
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:58
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:58
+msgid "Time of the request."
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:61
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:61
+msgid "Unique identifier for the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:64
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:64
+msgid "Identifier for the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:67
+msgid "fc_request: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:67
+msgid "The name of the function message in the request."
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:70
+msgid "fc_reply: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:70
+msgid "The name of the function message in the reply."
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:72
+msgid "iin: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:73
+msgid "The response's \"internal indication number\"."
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:80
+msgid ":zeek:type:`event` (rec: :zeek:type:`DNP3::Info`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:89
+msgid ":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:91
+msgid ""
+"DNP3 finalization hook.  Remaining DNP3 info may get logged when it's "
+"called."
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/main.zeek.rst:95
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst:4
+msgid "base/protocols/conn/polling.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst:7
+msgid ""
+"Implements a generic way to poll connections looking for certain features"
+" (e.g. monitor bytes transferred).  The specific feature of a connection "
+"to look for, the polling interval, and the code to execute if the feature"
+" is found are all controlled by user-defined callback functions."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst:12
+msgid "ConnPolling"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst:15
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst:17
+#: ../../scripts/base/protocols/conn/polling.zeek.rst:26
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst:19
+msgid ":zeek:id:`ConnPolling::watch`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst:19
+#: ../../scripts/base/protocols/conn/polling.zeek.rst:31
+msgid "Starts monitoring a given connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst:24
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst:29
+msgid ""
+":zeek:type:`function` (c: :zeek:type:`connection`, callback: "
+":zeek:type:`function` (c: :zeek:type:`connection`, cnt: "
+":zeek:type:`count`) : :zeek:type:`interval`, cnt: :zeek:type:`count`, i: "
+":zeek:type:`interval`) : :zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst:34
+msgid "The connection to watch."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst
+msgid "callback"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst:37
+msgid ""
+"A callback function that takes as arguments the monitored *connection*, "
+"and counter *cnt* that increments each time the callback is called.  It "
+"returns an interval indicating how long in the future to schedule an "
+"event which will call the callback.  A negative return interval causes "
+"polling to stop."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst
+msgid "cnt"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst:45
+msgid "The initial value of a counter which gets passed to *callback*."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst
+msgid "i"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/polling.zeek.rst:48
+msgid ""
+"The initial interval at which to schedule the next callback. May be "
+"``0secs`` to poll right away."
+msgstr ""
+

@@ -1,0 +1,694 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_Modbus.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:50
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:15
+msgid ":zeek:id:`modbus_exception`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:55
+msgid "Generated for any Modbus exception message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:16
+msgid ":zeek:id:`modbus_mask_write_register_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:17
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:70
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:91
+msgid "Generated for a Modbus mask write register request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:17
+msgid ":zeek:id:`modbus_mask_write_register_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:18
+msgid ":zeek:id:`modbus_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:18
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:112
+msgid ""
+"Generated for any Modbus message regardless if the particular function is"
+" further supported or not."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:20
+msgid ":zeek:id:`modbus_read_coils_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:20
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:128
+msgid "Generated for a Modbus read coils request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:21
+msgid ":zeek:id:`modbus_read_coils_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:21
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:146
+msgid "Generated for a Modbus read coils response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:22
+msgid ":zeek:id:`modbus_read_discrete_inputs_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:22
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:161
+msgid "Generated for a Modbus read discrete inputs request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:23
+msgid ":zeek:id:`modbus_read_discrete_inputs_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:23
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:179
+msgid "Generated for a Modbus read discrete inputs response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:24
+msgid ":zeek:id:`modbus_read_fifo_queue_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:24
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:194
+msgid "Generated for a Modbus read FIFO queue request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:25
+msgid ":zeek:id:`modbus_read_fifo_queue_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:25
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:209
+msgid "Generated for a Modbus read FIFO queue response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:26
+msgid ":zeek:id:`modbus_read_file_record_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:26
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:224
+msgid "Generated for a Modbus read file record request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:27
+msgid ":zeek:id:`modbus_read_file_record_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:27
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:239
+msgid "Generated for a Modbus read file record response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:28
+msgid ":zeek:id:`modbus_read_holding_registers_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:28
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:254
+msgid "Generated for a Modbus read holding registers request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:29
+msgid ":zeek:id:`modbus_read_holding_registers_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:29
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:272
+msgid "Generated for a Modbus read holding registers response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:30
+msgid ":zeek:id:`modbus_read_input_registers_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:30
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:287
+msgid "Generated for a Modbus read input registers request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:31
+msgid ":zeek:id:`modbus_read_input_registers_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:31
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:305
+msgid "Generated for a Modbus read input registers response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:32
+msgid ""
+":zeek:id:`modbus_read_write_multiple_registers_request`: "
+":zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:32
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:320
+msgid "Generated for a Modbus read/write multiple registers request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:33
+msgid ""
+":zeek:id:`modbus_read_write_multiple_registers_response`: "
+":zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:33
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:344
+msgid "Generated for a Modbus read/write multiple registers response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:34
+msgid ":zeek:id:`modbus_write_file_record_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:34
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:360
+msgid "Generated for a Modbus write file record request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:35
+msgid ":zeek:id:`modbus_write_file_record_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:35
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:375
+msgid "Generated for a Modbus write file record response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:36
+msgid ":zeek:id:`modbus_write_multiple_coils_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:36
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:390
+msgid "Generated for a Modbus write multiple coils request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:37
+msgid ":zeek:id:`modbus_write_multiple_coils_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:37
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:408
+msgid "Generated for a Modbus write multiple coils response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:38
+msgid ":zeek:id:`modbus_write_multiple_registers_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:38
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:426
+msgid "Generated for a Modbus write multiple registers request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:39
+msgid ":zeek:id:`modbus_write_multiple_registers_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:39
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:444
+msgid "Generated for a Modbus write multiple registers response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:40
+msgid ":zeek:id:`modbus_write_single_coil_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:40
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:462
+msgid "Generated for a Modbus write single coil request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:41
+msgid ":zeek:id:`modbus_write_single_coil_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:41
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:480
+msgid "Generated for a Modbus write single coil response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:42
+msgid ":zeek:id:`modbus_write_single_register_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:42
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:498
+msgid "Generated for a Modbus write single register request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:43
+msgid ":zeek:id:`modbus_write_single_register_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:43
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:516
+msgid "Generated for a Modbus write single register response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:48
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:53
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, headers: "
+":zeek:type:`ModbusHeaders`, code: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:58
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:73
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:94
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:116
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:131
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:149
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:164
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:182
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:197
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:212
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:227
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:242
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:257
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:275
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:290
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:308
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:323
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:347
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:363
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:378
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:393
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:411
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:429
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:447
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:465
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:483
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:501
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:519
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "headers"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:61
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:76
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:97
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:119
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:134
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:152
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:167
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:185
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:200
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:215
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:230
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:245
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:260
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:278
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:293
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:311
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:326
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:350
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:366
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:381
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:396
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:414
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:432
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:450
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:468
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:486
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:504
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:522
+msgid "The headers for the modbus function."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "code"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:64
+msgid "The exception code."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:68
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:89
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, headers: "
+":zeek:type:`ModbusHeaders`, address: :zeek:type:`count`, and_mask: "
+":zeek:type:`count`, or_mask: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "address"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:79
+msgid "The memory address of the register where the masks should be applied."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "and_mask"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:82
+msgid "The value of the logical AND mask to apply to the register."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "or_mask"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:85
+msgid "The value of the logical OR mask to apply to the register."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:100
+msgid "The memory address of the register where the masks were applied."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:103
+msgid "The value of the logical AND mask applied register."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:106
+msgid "The value of the logical OR mask applied to the register."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:110
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, headers: "
+":zeek:type:`ModbusHeaders`, is_orig: :zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:122
+msgid "True if the event is raised for the originator side."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:126
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:159
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:252
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:285
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:406
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:442
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, headers: "
+":zeek:type:`ModbusHeaders`, start_address: :zeek:type:`count`, quantity: "
+":zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "start_address"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:137
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:170
+msgid "The memory address of the first coil to be read."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "quantity"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:140
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:173
+msgid "The number of coils to be read."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:144
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:177
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, headers: "
+":zeek:type:`ModbusHeaders`, coils: :zeek:type:`ModbusCoils`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "coils"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:155
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:188
+msgid "The coil values returned from the device."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:192
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, headers: "
+":zeek:type:`ModbusHeaders`, start_address: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:203
+msgid "The address of the FIFO queue to read."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:207
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, headers: "
+":zeek:type:`ModbusHeaders`, fifos: :zeek:type:`ModbusRegisters`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "fifos"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:218
+msgid "The register values read from the FIFO queue on the device."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:222
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:237
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:358
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:373
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, headers: "
+":zeek:type:`ModbusHeaders`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:263
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:296
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:329
+msgid "The memory address of the first register to be read."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:266
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:299
+msgid "The number of registers to be read."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:270
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:303
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, headers: "
+":zeek:type:`ModbusHeaders`, registers: :zeek:type:`ModbusRegisters`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "registers"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:281
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:314
+msgid "The register values returned from the device."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:318
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, headers: "
+":zeek:type:`ModbusHeaders`, read_start_address: :zeek:type:`count`, "
+"read_quantity: :zeek:type:`count`, write_start_address: "
+":zeek:type:`count`, write_registers: :zeek:type:`ModbusRegisters`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "read_start_address"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "read_quantity"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:332
+msgid "The number of registers to read."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "write_start_address"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:335
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:435
+msgid "The memory address of the first register to be written."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "write_registers"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:338
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:438
+msgid "The values to be written to the registers."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:342
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, headers: "
+":zeek:type:`ModbusHeaders`, written_registers: "
+":zeek:type:`ModbusRegisters`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "written_registers"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:353
+msgid "The register values read from the registers specified in the request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:388
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, headers: "
+":zeek:type:`ModbusHeaders`, start_address: :zeek:type:`count`, coils: "
+":zeek:type:`ModbusCoils`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:399
+msgid "The memory address of the first coil to be written."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:402
+msgid "The values to be written to the coils."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:417
+msgid "The memory address of the first coil that was written."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:420
+msgid "The quantity of coils that were written."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:424
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, headers: "
+":zeek:type:`ModbusHeaders`, start_address: :zeek:type:`count`, registers:"
+" :zeek:type:`ModbusRegisters`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:453
+msgid "The memory address of the first register that was written."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:456
+msgid "The quantity of registers that were written."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:460
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:478
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, headers: "
+":zeek:type:`ModbusHeaders`, address: :zeek:type:`count`, value: "
+":zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:471
+msgid "The memory address of the coil to be written."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst
+msgid "value"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:474
+msgid "The value to be written to the coil."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:489
+msgid "The memory address of the coil that was written."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:492
+msgid "The value that was written to the coil."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:496
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:514
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, headers: "
+":zeek:type:`ModbusHeaders`, address: :zeek:type:`count`, value: "
+":zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:507
+msgid "The memory address of the register to be written."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:510
+msgid "The value to be written to the register."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:525
+msgid "The memory address of the register that was written."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Modbus.events.bif.zeek.rst:528
+msgid "The value that was written to the register."
+msgstr ""
+

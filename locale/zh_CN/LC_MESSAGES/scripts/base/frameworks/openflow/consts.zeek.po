@@ -1,0 +1,764 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:4
+msgid "base/frameworks/openflow/consts.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:7
+msgid "Constants used by the OpenFlow framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:9
+msgid "OpenFlow"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:14
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:90
+msgid "Constants"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:16
+msgid ":zeek:id:`OpenFlow::ETH_APPLETALK`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:17
+msgid ":zeek:id:`OpenFlow::ETH_APPLETALK_ARP`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:18
+msgid ":zeek:id:`OpenFlow::ETH_ARP`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:19
+msgid ":zeek:id:`OpenFlow::ETH_EAP_OVER_LAN`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:20
+msgid ":zeek:id:`OpenFlow::ETH_ETHER_FLOW_CONTROL`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:21
+msgid ":zeek:id:`OpenFlow::ETH_IPX`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:22
+msgid ":zeek:id:`OpenFlow::ETH_IPX_OLD`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:23
+msgid ":zeek:id:`OpenFlow::ETH_IPv4`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:24
+msgid ":zeek:id:`OpenFlow::ETH_IPv6`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:25
+msgid ":zeek:id:`OpenFlow::ETH_JUMBO_FRAMES`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:26
+msgid ":zeek:id:`OpenFlow::ETH_MAC_SECURITY`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:27
+msgid ":zeek:id:`OpenFlow::ETH_MPLS_MULTICAST`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:28
+msgid ":zeek:id:`OpenFlow::ETH_MPLS_UNICAST`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:29
+msgid ":zeek:id:`OpenFlow::ETH_PPPOE_DISCOVERY`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:30
+msgid ":zeek:id:`OpenFlow::ETH_PPPOE_SESSION`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:31
+msgid ":zeek:id:`OpenFlow::ETH_PROVIDER_BRIDING`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:32
+msgid ":zeek:id:`OpenFlow::ETH_QINQ`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:33
+msgid ":zeek:id:`OpenFlow::ETH_RARP`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:34
+msgid ":zeek:id:`OpenFlow::ETH_VLAN`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:35
+msgid ":zeek:id:`OpenFlow::ETH_WOL`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:36
+msgid ":zeek:id:`OpenFlow::INVALID_COOKIE`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:36
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:216
+msgid ""
+"Return value for a cookie from a flow which is not added, modified or "
+"deleted from the Zeek openflow framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:39
+msgid ":zeek:id:`OpenFlow::IP_CBT`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:40
+msgid ":zeek:id:`OpenFlow::IP_EGP`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:41
+msgid ":zeek:id:`OpenFlow::IP_ETHERIP`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:42
+msgid ":zeek:id:`OpenFlow::IP_FC`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:43
+msgid ":zeek:id:`OpenFlow::IP_GGP`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:44
+msgid ":zeek:id:`OpenFlow::IP_GRE`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:45
+msgid ":zeek:id:`OpenFlow::IP_HOPOPT`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:46
+msgid ":zeek:id:`OpenFlow::IP_ICMP`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:47
+msgid ":zeek:id:`OpenFlow::IP_IGMP`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:48
+msgid ":zeek:id:`OpenFlow::IP_IGP`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:49
+msgid ":zeek:id:`OpenFlow::IP_IPIP`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:50
+msgid ":zeek:id:`OpenFlow::IP_IPv6`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:51
+msgid ":zeek:id:`OpenFlow::IP_ISIS`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:52
+msgid ":zeek:id:`OpenFlow::IP_L2TP`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:53
+msgid ":zeek:id:`OpenFlow::IP_MPLS`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:54
+msgid ":zeek:id:`OpenFlow::IP_MTP`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:55
+msgid ":zeek:id:`OpenFlow::IP_OSPF`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:56
+msgid ":zeek:id:`OpenFlow::IP_RDP`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:57
+msgid ":zeek:id:`OpenFlow::IP_RSVP`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:58
+msgid ":zeek:id:`OpenFlow::IP_ST`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:59
+msgid ":zeek:id:`OpenFlow::IP_TCP`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:60
+msgid ":zeek:id:`OpenFlow::IP_UDP`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:61
+msgid ":zeek:id:`OpenFlow::OFPFF_CHECK_OVERLAP`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:61
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:357
+msgid "Check for overlapping entries first."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:62
+msgid ":zeek:id:`OpenFlow::OFPFF_EMERG`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:62
+msgid "Remark this is for emergency."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:63
+msgid ":zeek:id:`OpenFlow::OFPFF_SEND_FLOW_REM`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:63
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:373
+msgid "Send flow removed message when flow expires or is deleted."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:65
+msgid ":zeek:id:`OpenFlow::OFPP_ALL`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:65
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:381
+msgid "All physical ports except input port."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:66
+msgid ":zeek:id:`OpenFlow::OFPP_ANY`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:66
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:388
+msgid "Wildcard port used only for flow mod (delete) and flow stats requests."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:67
+msgid ":zeek:id:`OpenFlow::OFPP_CONTROLLER`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:67
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:395
+msgid "Send to controller."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:68
+msgid ":zeek:id:`OpenFlow::OFPP_FLOOD`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:68
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:402
+msgid "All physical ports except input port and those disabled by STP."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:70
+msgid ":zeek:id:`OpenFlow::OFPP_IN_PORT`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:70
+msgid "Send the packet out the input port."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:71
+msgid ":zeek:id:`OpenFlow::OFPP_LOCAL`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:71
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:419
+msgid "Local openflow \"port\"."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:72
+msgid ":zeek:id:`OpenFlow::OFPP_NORMAL`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:72
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:426
+msgid "Process with normal L2/L3 switching."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:73
+msgid ":zeek:id:`OpenFlow::OFPP_TABLE`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:73
+msgid "Perform actions in flow table."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:74
+msgid ":zeek:id:`OpenFlow::OFPTT_ALL`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:75
+msgid ":zeek:id:`OpenFlow::OFP_NO_BUFFER`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:79
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:450
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:81
+msgid ":zeek:type:`OpenFlow::ofp_action_type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:81
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:507
+msgid "Openflow action_type definitions."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:82
+msgid ":zeek:type:`OpenFlow::ofp_config_flags`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:82
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:531
+msgid "Openflow config flag definitions."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:83
+msgid ":zeek:type:`OpenFlow::ofp_flow_mod_command`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:83
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:559
+msgid "Openflow flow_mod_command definitions."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:88
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:93
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:99
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:105
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:111
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:117
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:123
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:129
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:135
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:141
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:147
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:153
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:159
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:165
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:171
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:177
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:183
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:189
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:195
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:201
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:207
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:213
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:222
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:228
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:234
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:240
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:246
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:252
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:258
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:264
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:270
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:276
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:282
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:288
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:294
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:300
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:306
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:312
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:318
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:324
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:330
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:336
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:342
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:348
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:354
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:361
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:370
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:378
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:385
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:392
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:399
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:407
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:416
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:423
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:430
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:439
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:445
+msgid ":zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:94
+msgid "``32923``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:100
+msgid "``33011``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:106
+msgid "``2054``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:112
+msgid "``34958``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:118
+msgid "``34824``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:124
+msgid "``33080``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:130
+msgid "``33079``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:136
+msgid "``2048``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:142
+msgid "``34525``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:148
+msgid "``34928``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:154
+msgid "``35045``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:160
+msgid "``34888``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:166
+msgid "``34887``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:172
+msgid "``34915``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:178
+msgid "``34916``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:184
+msgid "``34984``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:190
+msgid "``37120``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:196
+msgid "``32821``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:202
+msgid "``33024``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:208
+msgid "``2114``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:214
+msgid "``18446744073709551615``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:223
+msgid "``7``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:229
+msgid "``8``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:235
+msgid "``97``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:241
+msgid "``133``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:247
+msgid "``3``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:253
+msgid "``47``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:259
+msgid "``0``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:265
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:371
+msgid "``1``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:271
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:355
+msgid "``2``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:277
+msgid "``9``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:283
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:362
+msgid "``4``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:289
+msgid "``41``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:295
+msgid "``124``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:301
+msgid "``115``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:307
+msgid "``137``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:313
+msgid "``92``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:319
+msgid "``89``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:325
+msgid "``27``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:331
+msgid "``46``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:337
+msgid "``5``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:343
+msgid "``6``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:349
+msgid "``17``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:364
+msgid ""
+"Remark this is for emergency. Flows added with this are only used when "
+"the controller is disconnected."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:379
+msgid "``4294967292``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:386
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:446
+msgid "``4294967295``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:393
+msgid "``4294967293``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:400
+msgid "``4294967291``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:408
+msgid "``4294967288``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:410
+msgid ""
+"Send the packet out the input port. This virual port must be explicitly "
+"used in order to send back out of the input port."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:417
+msgid "``4294967294``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:424
+msgid "``4294967290``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:431
+msgid "``4294967289``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:433
+msgid ""
+"Perform actions in flow table. NB: This can only be the destination port "
+"for packet-out messages."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:440
+msgid "``255``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:453
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:515
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:537
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:457
+msgid "Output to switch port."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:461
+msgid "Set the 802.1q VLAN id."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:465
+msgid "Set the 802.1q priority."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:469
+msgid "Strip the 802.1q header."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:473
+msgid "Ethernet source address."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:477
+msgid "Ethernet destination address."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:481
+msgid "IP source address."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:485
+msgid "IP destination address."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:489
+msgid "IP ToS (DSCP field, 6 bits)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:493
+msgid "TCP/UDP source port."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:497
+msgid "TCP/UDP destination port."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:501
+msgid "Output to queue."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:505
+msgid "Vendor specific."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:509
+msgid ""
+"The openflow action type defines what actions openflow can take to modify"
+" a packet"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:519
+msgid "No special handling for fragments."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:523
+msgid "Drop fragments."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:527
+msgid "Reassemble (only if OFPC_IP_REASM set)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:533
+msgid "TODO: describe"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:541
+msgid "New flow."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:545
+msgid "Modify all matching flows."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:549
+msgid "Modify entry strictly matching wildcards."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:553
+msgid "Delete all matching flows."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:557
+msgid "Strictly matching wildcards and priority."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/consts.zeek.rst:561
+msgid "The openflow flow_mod_command describes of what kind an action is."
+msgstr ""
+

@@ -1,0 +1,1404 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:4
+msgid "base/bif/strings.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:7
+msgid ""
+"Definitions of built-in functions related to string processing and "
+"manipulation."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:10
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:15
+#: ../../scripts/base/bif/strings.bif.zeek.rst:87
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:17
+msgid ":zeek:id:`clean`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:17
+#: ../../scripts/base/bif/strings.bif.zeek.rst:22
+#: ../../scripts/base/bif/strings.bif.zeek.rst:77
+msgid "Replaces non-printable characters in a string with escaped sequences."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:18
+msgid ":zeek:id:`count_substr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:18
+#: ../../scripts/base/bif/strings.bif.zeek.rst:113
+msgid "Returns the number of times a substring occurs within a string"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:19
+msgid ":zeek:id:`edit`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:19
+msgid ""
+"Returns an edited version of a string that applies a special \"backspace "
+"character\" (usually ``\\x08`` for backspace or ``\\x7f`` for DEL)."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:21
+msgid ":zeek:id:`ends_with`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:21
+#: ../../scripts/base/bif/strings.bif.zeek.rst:154
+msgid "Returns whether a string ends with a substring."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:22
+msgid ":zeek:id:`escape_string`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:23
+msgid ":zeek:id:`find_all`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:23
+#: ../../scripts/base/bif/strings.bif.zeek.rst:24
+#: ../../scripts/base/bif/strings.bif.zeek.rst:181
+msgid "Finds all occurrences of a pattern in a string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:24
+msgid ":zeek:id:`find_all_ordered`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:25
+msgid ":zeek:id:`find_last`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:25
+msgid "Finds the last occurrence of a pattern in a string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:26
+msgid ":zeek:id:`find_str`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:26
+msgid "Finds a string within another string, starting from the beginning."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:27
+msgid ":zeek:id:`gsub`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:27
+#: ../../scripts/base/bif/strings.bif.zeek.rst:262
+msgid ""
+"Substitutes a given replacement string for all occurrences of a pattern "
+"in a given string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:29
+msgid ":zeek:id:`hexdump`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:29
+msgid "Returns a hex dump for given input data."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:30
+msgid ":zeek:id:`is_alnum`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:30
+#: ../../scripts/base/bif/strings.bif.zeek.rst:302
+msgid "Returns whether an entire string is alphanumeric characters"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:31
+msgid ":zeek:id:`is_alpha`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:31
+#: ../../scripts/base/bif/strings.bif.zeek.rst:309
+msgid "Returns whether an entire string is alphabetic characters."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:32
+msgid ":zeek:id:`is_ascii`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:32
+#: ../../scripts/base/bif/strings.bif.zeek.rst:316
+msgid "Determines whether a given string contains only ASCII characters."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:33
+msgid ":zeek:id:`is_num`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:33
+#: ../../scripts/base/bif/strings.bif.zeek.rst:331
+msgid "Returns whether an entire string consists only of digits."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:34
+msgid ":zeek:id:`join_string_vec`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:34
+#: ../../scripts/base/bif/strings.bif.zeek.rst:338
+msgid ""
+"Joins all values in the given vector of strings with a separator placed "
+"between each element."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:36
+msgid ":zeek:id:`levenshtein_distance`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:36
+msgid "Calculates the Levenshtein distance between the two strings."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:37
+msgid ":zeek:id:`ljust`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:37
+#: ../../scripts/base/bif/strings.bif.zeek.rst:375
+msgid ""
+"Returns a left-justified version of the string, padded to a specific "
+"length with a specified character."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:39
+msgid ":zeek:id:`lstrip`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:39
+#: ../../scripts/base/bif/strings.bif.zeek.rst:397
+msgid ""
+"Removes all combinations of characters in the *chars* argument starting "
+"at the beginning of the string until first mismatch."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:41
+msgid ":zeek:id:`remove_prefix`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:41
+#: ../../scripts/base/bif/strings.bif.zeek.rst:417
+msgid ""
+"Similar to lstrip(), except does the removal repeatedly if the pattern "
+"repeats at the start of the string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:42
+msgid ":zeek:id:`remove_suffix`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:42
+#: ../../scripts/base/bif/strings.bif.zeek.rst:423
+msgid ""
+"Similar to rstrip(), except does the removal repeatedly if the pattern "
+"repeats at the end of the string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:43
+msgid ":zeek:id:`reverse`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:43
+#: ../../scripts/base/bif/strings.bif.zeek.rst:429
+msgid "Returns a reversed copy of the string"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:44
+msgid ":zeek:id:`rfind_str`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:44
+#: ../../scripts/base/bif/strings.bif.zeek.rst:442
+msgid ""
+"The same as :zeek:see:`find_str`, but returns the highest index matching "
+"the substring instead of the smallest."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:46
+msgid ":zeek:id:`rjust`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:46
+#: ../../scripts/base/bif/strings.bif.zeek.rst:464
+msgid ""
+"Returns a right-justified version of the string, padded to a specific "
+"length with a specified character."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:48
+msgid ":zeek:id:`rstrip`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:48
+#: ../../scripts/base/bif/strings.bif.zeek.rst:486
+msgid ""
+"Removes all combinations of characters in the *chars* argument starting "
+"at the end of the string until first mismatch."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:50
+msgid ":zeek:id:`safe_shell_quote`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:50
+msgid ""
+"Takes a string and escapes characters that would allow execution of "
+"commands at the shell level."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:52
+msgid ":zeek:id:`split_string`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:52
+#: ../../scripts/base/bif/strings.bif.zeek.rst:55
+#: ../../scripts/base/bif/strings.bif.zeek.rst:527
+msgid "Splits a string into an array of strings according to a pattern."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:53
+msgid ":zeek:id:`split_string1`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:53
+msgid ""
+"Splits a string *once* into a two-element array of strings according to a"
+" pattern."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:55
+msgid ":zeek:id:`split_string_all`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:56
+msgid ":zeek:id:`split_string_n`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:56
+msgid ""
+"Splits a string a given number of times into an array of strings "
+"according to a pattern."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:58
+msgid ":zeek:id:`starts_with`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:58
+#: ../../scripts/base/bif/strings.bif.zeek.rst:622
+msgid "Returns whether a string starts with a substring."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:59
+msgid ":zeek:id:`str_smith_waterman`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:59
+msgid "Uses the Smith-Waterman algorithm to find similar/overlapping substrings."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:60
+msgid ""
+":zeek:id:`str_split`: :zeek:type:`function` :zeek:attr:`&deprecated` = "
+"*...*"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:60
+#: ../../scripts/base/bif/strings.bif.zeek.rst:62
+#: ../../scripts/base/bif/strings.bif.zeek.rst:649
+msgid ""
+"Splits a string into substrings with the help of an index vector of "
+"cutting points."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:62
+msgid ":zeek:id:`str_split_indices`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:64
+msgid ":zeek:id:`strcmp`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:64
+#: ../../scripts/base/bif/strings.bif.zeek.rst:686
+msgid "Lexicographically compares two strings."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:65
+msgid ":zeek:id:`string_cat`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:65
+msgid "Concatenates all arguments into a single string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:66
+msgid ":zeek:id:`string_fill`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:66
+#: ../../scripts/base/bif/strings.bif.zeek.rst:716
+msgid ""
+"Generates a string of a given size and fills it with repetitions of a "
+"source string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:68
+msgid ":zeek:id:`string_to_ascii_hex`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:68
+#: ../../scripts/base/bif/strings.bif.zeek.rst:732
+msgid "Returns an ASCII hexadecimal representation of a string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:69
+msgid ":zeek:id:`strip`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:69
+#: ../../scripts/base/bif/strings.bif.zeek.rst:745
+msgid "Strips whitespace at both ends of a string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:70
+msgid ":zeek:id:`strstr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:70
+#: ../../scripts/base/bif/strings.bif.zeek.rst:759
+msgid "Locates the first occurrence of one string in another."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:71
+msgid ":zeek:id:`sub`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:71
+#: ../../scripts/base/bif/strings.bif.zeek.rst:777
+msgid ""
+"Substitutes a given replacement string for the first occurrence of a "
+"pattern in a given string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:73
+msgid ":zeek:id:`sub_bytes`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:73
+#: ../../scripts/base/bif/strings.bif.zeek.rst:799
+msgid "Get a substring from a string, given a starting position and length."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:74
+msgid ":zeek:id:`subst_string`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:74
+#: ../../scripts/base/bif/strings.bif.zeek.rst:818
+msgid "Substitutes each (non-overlapping) appearance of a string in another."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:75
+msgid ":zeek:id:`swap_case`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:75
+msgid "Swaps the case of every alphabetic character in a string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:76
+msgid ":zeek:id:`to_lower`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:76
+#: ../../scripts/base/bif/strings.bif.zeek.rst:851
+msgid ""
+"Replaces all uppercase letters in a string with their lowercase "
+"counterpart."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:77
+msgid ":zeek:id:`to_string_literal`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:78
+msgid ":zeek:id:`to_title`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:78
+msgid "Converts a string to Title Case."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:79
+msgid ":zeek:id:`to_upper`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:79
+#: ../../scripts/base/bif/strings.bif.zeek.rst:900
+msgid ""
+"Replaces all lowercase letters in a string with their uppercase "
+"counterpart."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:80
+msgid ":zeek:id:`zfill`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:80
+msgid "Returns a copy of a string filled on the left side with zeroes."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:85
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:90
+#: ../../scripts/base/bif/strings.bif.zeek.rst:427
+#: ../../scripts/base/bif/strings.bif.zeek.rst:743
+#: ../../scripts/base/bif/strings.bif.zeek.rst:836
+#: ../../scripts/base/bif/strings.bif.zeek.rst:849
+#: ../../scripts/base/bif/strings.bif.zeek.rst:865
+#: ../../scripts/base/bif/strings.bif.zeek.rst:884
+#: ../../scripts/base/bif/strings.bif.zeek.rst:898
+msgid ":zeek:type:`function` (str: :zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:92
+#: ../../scripts/base/bif/strings.bif.zeek.rst:161
+#: ../../scripts/base/bif/strings.bif.zeek.rst:867
+msgid ""
+"Replaces non-printable characters in a string with escaped sequences. The"
+" mappings are:"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:95
+#: ../../scripts/base/bif/strings.bif.zeek.rst:164
+#: ../../scripts/base/bif/strings.bif.zeek.rst:870
+msgid "values not in *[32, 126]* to ``\\xXX``"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:97
+msgid "If the string does not yet have a trailing NUL, one is added internally."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:99
+msgid ""
+"In contrast to :zeek:id:`escape_string`, this encoding is *not* fully "
+"reversible.`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "str"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:102
+#: ../../scripts/base/bif/strings.bif.zeek.rst:170
+#: ../../scripts/base/bif/strings.bif.zeek.rst:511
+#: ../../scripts/base/bif/strings.bif.zeek.rst:875
+msgid "The string to escape."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:105
+#: ../../scripts/base/bif/strings.bif.zeek.rst:173
+#: ../../scripts/base/bif/strings.bif.zeek.rst:878
+msgid "The escaped string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:111
+msgid ""
+":zeek:type:`function` (str: :zeek:type:`string`, sub: "
+":zeek:type:`string`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:116
+#: ../../scripts/base/bif/strings.bif.zeek.rst:243
+#: ../../scripts/base/bif/strings.bif.zeek.rst:446
+msgid "The string to search in."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "substr"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:118
+#: ../../scripts/base/bif/strings.bif.zeek.rst:245
+#: ../../scripts/base/bif/strings.bif.zeek.rst:448
+msgid "The string to search for."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:121
+msgid "The number of times the substring occurred."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:126
+msgid ""
+":zeek:type:`function` (arg_s: :zeek:type:`string`, arg_edit_char: "
+":zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:128
+msgid ""
+"Returns an edited version of a string that applies a special \"backspace "
+"character\" (usually ``\\x08`` for backspace or ``\\x7f`` for DEL). For "
+"example, ``edit(\"hello there\", \"e\")`` returns ``\"llo t\"``."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "arg_s"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:133
+msgid "The string to edit."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "arg_edit_char"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:136
+msgid ""
+"A string of exactly one character that represents the \"backspace "
+"character\". If it is longer than one character Zeek generates a run-time"
+" error and uses the first character in the string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:142
+msgid ""
+"An edited version of *arg_s* where *arg_edit_char* triggers the deletion "
+"of the last character."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:152
+#: ../../scripts/base/bif/strings.bif.zeek.rst:620
+msgid ""
+":zeek:type:`function` (str: :zeek:type:`string`, sub: "
+":zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:159
+#: ../../scripts/base/bif/strings.bif.zeek.rst:730
+msgid ":zeek:type:`function` (s: :zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:165
+#: ../../scripts/base/bif/strings.bif.zeek.rst:871
+msgid "``\\`` to ``\\\\``"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:167
+msgid "In contrast to :zeek:id:`clean`, this encoding is fully reversible.`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:179
+msgid ""
+":zeek:type:`function` (str: :zeek:type:`string`, re: "
+":zeek:type:`pattern`) : :zeek:type:`string_set`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:184
+#: ../../scripts/base/bif/strings.bif.zeek.rst:203
+#: ../../scripts/base/bif/strings.bif.zeek.rst:223
+msgid "The string to inspect."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "re"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:187
+#: ../../scripts/base/bif/strings.bif.zeek.rst:206
+#: ../../scripts/base/bif/strings.bif.zeek.rst:226
+msgid "The pattern to look for in *str*."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:190
+msgid "The set of strings in *str* that match *re*, or the empty set."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:196
+#: ../../scripts/base/bif/strings.bif.zeek.rst:525
+#: ../../scripts/base/bif/strings.bif.zeek.rst:544
+#: ../../scripts/base/bif/strings.bif.zeek.rst:567
+msgid ""
+":zeek:type:`function` (str: :zeek:type:`string`, re: "
+":zeek:type:`pattern`) : :zeek:type:`string_vec`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:198
+msgid ""
+"Finds all occurrences of a pattern in a string.  The order in which "
+"occurrences are found is preverved and the return value may contain "
+"duplicate elements."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:209
+msgid "All strings in *str* that match *re*, or an empty vector."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:215
+msgid ""
+":zeek:type:`function` (str: :zeek:type:`string`, re: "
+":zeek:type:`pattern`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:217
+msgid ""
+"Finds the last occurrence of a pattern in a string. This function returns"
+" the match that starts at the largest index in the string, which is not "
+"necessarily the longest match.  For example, a pattern of ``/.*/`` will "
+"return the final character in the string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:229
+msgid "The last string in *str* that matches *re*, or the empty string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:235
+#: ../../scripts/base/bif/strings.bif.zeek.rst:440
+msgid ""
+":zeek:type:`function` (str: :zeek:type:`string`, sub: "
+":zeek:type:`string`, start: :zeek:type:`count` :zeek:attr:`&default` = "
+"``0`` :zeek:attr:`&optional`, end: :zeek:type:`int` :zeek:attr:`&default`"
+" = ``-1`` :zeek:attr:`&optional`) : :zeek:type:`int`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:237
+msgid ""
+"Finds a string within another string, starting from the beginning. This "
+"works by taking a substring within the provided indexes and searching for"
+" the sub argument. This means that ranges shorter than the string in the "
+"sub argument will always return a failure."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "start"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:247
+#: ../../scripts/base/bif/strings.bif.zeek.rst:450
+msgid "An optional position for the start of the substring."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "end"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:249
+msgid ""
+"An optional position for the end of the substring. A value less than zero"
+" (such as the default -1) means a search until the end of the string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:254
+#: ../../scripts/base/bif/strings.bif.zeek.rst:456
+msgid ""
+"The position of the substring. Returns -1 if the string wasn't found. "
+"Prints an error if the starting position is after the ending position."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:260
+#: ../../scripts/base/bif/strings.bif.zeek.rst:775
+msgid ""
+":zeek:type:`function` (str: :zeek:type:`string`, re: "
+":zeek:type:`pattern`, repl: :zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:266
+#: ../../scripts/base/bif/strings.bif.zeek.rst:781
+msgid "The string to perform the substitution in."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:269
+#: ../../scripts/base/bif/strings.bif.zeek.rst:784
+msgid "The pattern being replaced with *repl*."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "repl"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:272
+#: ../../scripts/base/bif/strings.bif.zeek.rst:787
+msgid "The string that replaces *re*."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:275
+msgid "A copy of *str* with all occurrences of *re* replaced with *repl*."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:281
+msgid ""
+":zeek:type:`function` (data_str: :zeek:type:`string`) : "
+":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:283
+msgid ""
+"Returns a hex dump for given input data. The hex dump renders 16 bytes "
+"per line, with hex on the left and ASCII (where printable) on the right."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "data_str"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:288
+msgid "The string to dump in hex format."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:291
+msgid "The hex dump of the given string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:295
+msgid "Based on Netdude's hex editor code."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:300
+#: ../../scripts/base/bif/strings.bif.zeek.rst:307
+#: ../../scripts/base/bif/strings.bif.zeek.rst:314
+#: ../../scripts/base/bif/strings.bif.zeek.rst:329
+msgid ":zeek:type:`function` (str: :zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:319
+msgid "The string to examine."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:322
+msgid "False if any byte value of *str* is greater than 127, and true otherwise."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:336
+msgid ""
+":zeek:type:`function` (vec: :zeek:type:`string_vec`, sep: "
+":zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "sep"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:342
+msgid "The separator to place between each element."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "vec"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:345
+msgid "The :zeek:type:`string_vec` (``vector of string``)."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:348
+msgid ""
+"The concatenation of all elements in *vec*, with *sep* placed between "
+"each element."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:356
+msgid ""
+":zeek:type:`function` (s1: :zeek:type:`string`, s2: :zeek:type:`string`) "
+": :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:358
+msgid ""
+"Calculates the Levenshtein distance between the two strings. See "
+"`Wikipedia <http://en.wikipedia.org/wiki/Levenshtein_distance>`__ for "
+"more information."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "s1"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:362
+#: ../../scripts/base/bif/strings.bif.zeek.rst:633
+#: ../../scripts/base/bif/strings.bif.zeek.rst:689
+msgid "The first string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "s2"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:365
+#: ../../scripts/base/bif/strings.bif.zeek.rst:636
+#: ../../scripts/base/bif/strings.bif.zeek.rst:692
+msgid "The second string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:368
+msgid "The Levenshtein distance of two strings as a count."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:373
+#: ../../scripts/base/bif/strings.bif.zeek.rst:462
+msgid ""
+":zeek:type:`function` (str: :zeek:type:`string`, width: "
+":zeek:type:`count`, fill: :zeek:type:`string` :zeek:attr:`&default` = "
+"``\" \"`` :zeek:attr:`&optional`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:379
+msgid "The string to left-justify."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "count"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:381
+#: ../../scripts/base/bif/strings.bif.zeek.rst:470
+msgid ""
+"The length of the returned string. If this value is less than or equal to"
+" the length of str, a copy of str is returned."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "fill"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:384
+#: ../../scripts/base/bif/strings.bif.zeek.rst:473
+msgid ""
+"The character used to fill in any extra characters in the resulting "
+"string. If a string longer than one character is passed, an error is "
+"reported. This defaults to the space character."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:389
+msgid ""
+"A left-justified version of a string, padded with characters to a "
+"specific length."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:395
+#: ../../scripts/base/bif/strings.bif.zeek.rst:484
+msgid ""
+":zeek:type:`function` (str: :zeek:type:`string`, chars: "
+":zeek:type:`string` :zeek:attr:`&default` = ``\" "
+"\\x09\\x0a\\x0d\\x0b\\x0c\"`` :zeek:attr:`&optional`) : "
+":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:401
+#: ../../scripts/base/bif/strings.bif.zeek.rst:490
+msgid "The string to strip characters from."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "chars"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:404
+#: ../../scripts/base/bif/strings.bif.zeek.rst:493
+msgid ""
+"A string consisting of the characters to be removed. Defaults to all "
+"whitespace characters."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:408
+msgid "A copy of *str* with the characters in *chars* removed from the beginning."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:415
+#: ../../scripts/base/bif/strings.bif.zeek.rst:421
+msgid ""
+":zeek:type:`function` (str: :zeek:type:`string`, sub: "
+":zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:432
+msgid "The string to reverse."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:435
+msgid "A reversed copy of *str*"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:452
+msgid ""
+"An optional position for the end of the substring. A value less than zero"
+" (such as the default -1) means a search from the end of the string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:468
+msgid "The string to right-justify."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:478
+msgid ""
+"A right-justified version of a string, padded with characters to a "
+"specific length."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:497
+msgid "A copy of *str* with the characters in *chars* removed from the end."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:504
+msgid ":zeek:type:`function` (source: :zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:506
+msgid ""
+"Takes a string and escapes characters that would allow execution of "
+"commands at the shell level. Must be used before including strings in "
+":zeek:id:`system` or similar calls."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "source"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:514
+msgid ""
+"A shell-escaped version of *source*.  Specifically, this backslash-"
+"escapes characters whose literal value is not otherwise preserved by "
+"enclosure in double-quotes (dollar-sign, backquote, backslash, and "
+"double-quote itself), and then encloses that backslash-escaped string in "
+"double-quotes to ultimately preserve the literal value of all input "
+"characters."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:530
+#: ../../scripts/base/bif/strings.bif.zeek.rst:552
+#: ../../scripts/base/bif/strings.bif.zeek.rst:576
+#: ../../scripts/base/bif/strings.bif.zeek.rst:598
+#: ../../scripts/base/bif/strings.bif.zeek.rst:653
+#: ../../scripts/base/bif/strings.bif.zeek.rst:672
+msgid "The string to split."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:533
+#: ../../scripts/base/bif/strings.bif.zeek.rst:579
+#: ../../scripts/base/bif/strings.bif.zeek.rst:601
+msgid "The pattern describing the element separator in *str*."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:536
+msgid ""
+"An array of strings where each element corresponds to a substring in "
+"*str* separated by *re*."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:546
+msgid ""
+"Splits a string *once* into a two-element array of strings according to a"
+" pattern. This function is the same as :zeek:id:`split_string`, but *str*"
+" is only split once (if possible) at the earliest position and an array "
+"of two strings is returned."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:555
+msgid "The pattern describing the separator to split *str* in two pieces."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:558
+msgid ""
+"An array of strings with two elements in which the first represents the "
+"substring in *str* up to the first occurence of *re*, and the second "
+"everything after *re*. An array of one string is returned when *s* cannot"
+" be split."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:569
+msgid ""
+"Splits a string into an array of strings according to a pattern. This "
+"function is the same as :zeek:id:`split_string`, except that the "
+"separators are returned as well. For example, ``split_string_all(\"a-b--"
+"cd\", /(\\-)+/)`` returns ``{\"a\", \"-\", \"b\", \"--\", \"cd\"}``: odd-"
+"indexed elements do match the pattern and even-indexed ones do not."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:582
+msgid ""
+"An array of strings where each two successive elements correspond to a "
+"substring in *str* of the part not matching *re* (even-indexed) and the "
+"part that matches *re* (odd-indexed)."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:590
+msgid ""
+":zeek:type:`function` (str: :zeek:type:`string`, re: "
+":zeek:type:`pattern`, incl_sep: :zeek:type:`bool`, max_num_sep: "
+":zeek:type:`count`) : :zeek:type:`string_vec`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:592
+msgid ""
+"Splits a string a given number of times into an array of strings "
+"according to a pattern. This function is similar to "
+":zeek:id:`split_string1` and :zeek:id:`split_string_all`, but with "
+"customizable behavior with respect to including separators in the result "
+"and the number of times to split."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "incl_sep"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:604
+msgid ""
+"A flag indicating whether to include the separator matches in the result "
+"(as in :zeek:id:`split_string_all`)."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "max_num_sep"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:608
+msgid "The number of times to split *str*."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:611
+msgid ""
+"An array of strings where, if *incl_sep* is true, each two successive "
+"elements correspond to a substring in *str* of the part not matching *re*"
+" (even-indexed) and the part that matches *re* (odd-indexed)."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:627
+msgid ""
+":zeek:type:`function` (s1: :zeek:type:`string`, s2: :zeek:type:`string`, "
+"params: :zeek:type:`sw_params`) : :zeek:type:`sw_substring_vec`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:629
+#, python-format
+msgid ""
+"Uses the Smith-Waterman algorithm to find similar/overlapping substrings."
+" See `Wikipedia "
+"<http://en.wikipedia.org/wiki/Smith%E2%80%93Waterman_algorithm>`__."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "params"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:639
+msgid "Parameters for the Smith-Waterman algorithm."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:642
+msgid "The result of the Smith-Waterman algorithm calculation."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:646
+#: ../../scripts/base/bif/strings.bif.zeek.rst:665
+msgid ""
+":zeek:type:`function` (s: :zeek:type:`string`, idx: "
+":zeek:type:`index_vec`) : :zeek:type:`string_vec`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:647
+msgid ":zeek:attr:`&deprecated` = *\"Remove in v4.1. Use str_split_indices.\"*"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "s"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "idx"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:656
+msgid "The index vector (``vector of count``) with the cutting points."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:659
+msgid "A one-indexed vector of strings."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:667
+msgid ""
+"Splits a string into substrings with the help of an index vector of "
+"cutting points. This differs from str_split() in that it does not return "
+"an empty element at the beginning of the result."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:675
+msgid "The index vector (``vector of count``) with the cutting points"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:678
+msgid "A zero-indexed vector of strings."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:684
+msgid ""
+":zeek:type:`function` (s1: :zeek:type:`string`, s2: :zeek:type:`string`) "
+": :zeek:type:`int`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:695
+msgid ""
+"An integer greater than, equal to, or less than 0 according as *s1* is "
+"greater than, equal to, or less than *s2*."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:700
+msgid ":zeek:type:`function` (...) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:702
+msgid ""
+"Concatenates all arguments into a single string. The function takes a "
+"variable number of arguments of type string and stitches them together."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:706
+msgid "The concatenation of all (string) arguments."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:714
+msgid ""
+":zeek:type:`function` (len: :zeek:type:`int`, source: "
+":zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "len"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:720
+msgid "The length of the output string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:723
+msgid "The string to concatenate repeatedly until *len* has been reached."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:726
+msgid "A string of length *len* filled with *source*."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:735
+msgid "The string to convert to hex."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:738
+msgid ""
+"A copy of *s* where each byte is replaced with the corresponding hex "
+"nibble."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:748
+msgid "The string to strip the whitespace from."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:751
+msgid "A copy of *str* with leading and trailing whitespace removed."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:757
+msgid ""
+":zeek:type:`function` (big: :zeek:type:`string`, little: "
+":zeek:type:`string`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "big"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:762
+msgid "The string to look in."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "little"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:765
+msgid "The (smaller) string to find inside *big*."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:768
+msgid "The location of *little* in *big*, or 0 if *little* is not found in *big*."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:790
+msgid "A copy of *str* with the first occurence of *re* replaced with *repl*."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:797
+msgid ""
+":zeek:type:`function` (s: :zeek:type:`string`, start: :zeek:type:`count`,"
+" n: :zeek:type:`int`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:802
+msgid "The string to obtain a substring from."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:805
+msgid ""
+"The starting position of the substring in *s*, where 1 is the first "
+"character. As a special case, 0 also represents the first character."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "n"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:809
+msgid "The number of characters to extract, beginning at *start*."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:812
+msgid "A substring of *s* of length *n* from position *start*."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:816
+msgid ""
+":zeek:type:`function` (s: :zeek:type:`string`, from: :zeek:type:`string`,"
+" to: :zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:821
+msgid "The string in which to perform the substitution."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "from"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:824
+msgid "The string to look for which is replaced with *to*."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst
+msgid "to"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:827
+msgid "The string that replaces all occurrences of *from* in *s*."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:830
+msgid "A copy of *s* where each occurrence of *from* is replaced with *to*."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:838
+msgid ""
+"Swaps the case of every alphabetic character in a string. For example, "
+"the string \"aBc\" be returned as \"AbC\"."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:841
+msgid "The string to swap cases in."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:844
+msgid "A copy of the str with the case of each character swapped."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:854
+msgid "The string to convert to lowercase letters."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:857
+msgid ""
+"A copy of the given string with the uppercase letters (as indicated by "
+"``isascii`` and ``isupper``) folded to lowercase (via ``tolower``)."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:872
+msgid "``'`` and ``\"\"`` to ``\\'`` and ``\\\"``, respectively."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:886
+msgid ""
+"Converts a string to Title Case. This changes the first character of each"
+" sequence of non-space characters in the string to be capitalized. See "
+"https://docs.python.org/2/library/stdtypes.html#str.title for more info."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:890
+msgid "The string to convert."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:893
+msgid "A title-cased version of the string."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:903
+msgid "The string to convert to uppercase letters."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:906
+msgid ""
+"A copy of the given string with the lowercase letters (as indicated by "
+"``isascii`` and ``islower``) folded to uppercase (via ``toupper``)."
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:914
+msgid ""
+":zeek:type:`function` (str: :zeek:type:`string`, width: "
+":zeek:type:`count`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/strings.bif.zeek.rst:916
+msgid ""
+"Returns a copy of a string filled on the left side with zeroes. This is "
+"effectively rjust(str, width, \"0\")."
+msgstr ""
+

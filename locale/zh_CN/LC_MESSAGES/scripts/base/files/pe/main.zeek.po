@@ -1,0 +1,290 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/files/pe/main.zeek.rst:4
+msgid "base/files/pe/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:8
+msgid "PE"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:9
+msgid ":doc:`base/files/pe/consts.zeek </scripts/base/files/pe/consts.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:14
+#: ../../scripts/base/files/pe/main.zeek.rst:49
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:16
+msgid ":zeek:type:`PE::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:20
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:22
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:24
+msgid ":zeek:enum:`PE::LOG`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:25
+msgid ":zeek:type:`fa_file`: :zeek:type:`record` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:27
+msgid ":zeek:type:`fa_file`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:29
+msgid "pe: :zeek:type:`PE::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:33
+#: ../../scripts/base/files/pe/main.zeek.rst:107
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:35
+msgid ":zeek:id:`PE::log_pe`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:35
+#: ../../scripts/base/files/pe/main.zeek.rst:112
+msgid "Event for accessing logged records."
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:39
+#: ../../scripts/base/files/pe/main.zeek.rst:115
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:41
+msgid ":zeek:id:`PE::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:42
+msgid ":zeek:id:`PE::set_file`: :zeek:type:`hook`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:42
+#: ../../scripts/base/files/pe/main.zeek.rst:125
+msgid "A hook that gets called when we first see a PE file."
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:47
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:52
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:55
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:55
+msgid "Current timestamp."
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:58
+msgid "id: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:58
+msgid "File id of this portable executable file."
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:61
+msgid "machine: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:61
+msgid "The target machine that the file was compiled for."
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:64
+msgid "compile_ts: :zeek:type:`time` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:64
+msgid "The time that the file was created at."
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:67
+msgid "os: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:67
+msgid "The required operating system."
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:70
+msgid "subsystem: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:70
+msgid "The subsystem that is required to run this file."
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:73
+msgid ""
+"is_exe: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = ``T``"
+" :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:73
+msgid "Is the file an executable, or just an object file?"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:76
+msgid ""
+"is_64bit: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = "
+"``T`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:76
+msgid "Is the file a 64-bit executable?"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:79
+msgid ""
+"uses_aslr: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = "
+"``F`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:79
+msgid "Does the file support Address Space Layout Randomization?"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:82
+msgid ""
+"uses_dep: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = "
+"``F`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:82
+msgid "Does the file support Data Execution Prevention?"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:85
+msgid ""
+"uses_code_integrity: :zeek:type:`bool` :zeek:attr:`&log` "
+":zeek:attr:`&default` = ``F`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:85
+msgid "Does the file enforce code integrity checks?"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:88
+msgid ""
+"uses_seh: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = "
+"``T`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:88
+msgid "Does the file use structured exception handing?"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:91
+msgid ""
+"has_import_table: :zeek:type:`bool` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:91
+msgid "Does the file have an import table?"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:94
+msgid ""
+"has_export_table: :zeek:type:`bool` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:94
+msgid "Does the file have an export table?"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:97
+msgid "has_cert_table: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:97
+msgid "Does the file have an attribute certificate table?"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:100
+msgid "has_debug_data: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:100
+msgid "Does the file have a debug table?"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:102
+msgid ""
+"section_names: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:103
+msgid "The names of the sections, in order."
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:110
+msgid ":zeek:type:`event` (rec: :zeek:type:`PE::Info`)"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:118
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/main.zeek.rst:123
+msgid ":zeek:type:`hook` (f: :zeek:type:`fa_file`) : :zeek:type:`bool`"
+msgstr ""
+

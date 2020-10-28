@@ -1,0 +1,592 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:4
+msgid "base/frameworks/openflow/types.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:7
+msgid "Types used by the OpenFlow framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:9
+msgid "OpenFlow"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:10
+msgid ""
+":doc:`base/frameworks/openflow/consts.zeek "
+"</scripts/base/frameworks/openflow/consts.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:15
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:29
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:17
+msgid ":zeek:type:`OpenFlow::Controller`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:17
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:55
+msgid "Controller record representing an openflow controller."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:18
+msgid ""
+":zeek:type:`OpenFlow::ControllerState`: :zeek:type:`record` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:18
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:35
+msgid "Controller related state."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:19
+msgid ":zeek:type:`OpenFlow::Plugin`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:19
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:148
+msgid "Available openflow plugins."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:20
+msgid ""
+":zeek:type:`OpenFlow::ofp_flow_action`: :zeek:type:`record` "
+":zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:20
+msgid "The actions that can be taken in a flow."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:21
+msgid ":zeek:type:`OpenFlow::ofp_flow_mod`: :zeek:type:`record` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:21
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:227
+msgid "Openflow flow_mod definition, describing the action to perform."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:22
+msgid ":zeek:type:`OpenFlow::ofp_match`: :zeek:type:`record` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:22
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:258
+msgid "Openflow match definition."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:27
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:32
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:59
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:152
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:193
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:231
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:35
+msgid "state: :zeek:type:`OpenFlow::ControllerState`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:38
+msgid "supports_flow_removed: :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:38
+msgid "Does the controller support the flow_removed event?"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:41
+msgid ""
+"describe: :zeek:type:`function` (state: "
+":zeek:type:`OpenFlow::ControllerState`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:40
+msgid "string"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:41
+msgid "Function that describes the controller. Has to be implemented."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:44
+msgid ""
+"init: :zeek:type:`function` (state: "
+":zeek:type:`OpenFlow::ControllerState`) : :zeek:type:`void` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:43
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:46
+msgid "void &optional"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:44
+msgid ""
+"One-time initialization function. If defined, controller_init_done has to"
+" be called once initialization finishes."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:47
+msgid ""
+"destroy: :zeek:type:`function` (state: "
+":zeek:type:`OpenFlow::ControllerState`) : :zeek:type:`void` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:47
+msgid "One-time destruction function."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:50
+msgid ""
+"flow_mod: :zeek:type:`function` (state: "
+":zeek:type:`OpenFlow::ControllerState`, match: "
+":zeek:type:`OpenFlow::ofp_match`, flow_mod: "
+":zeek:type:`OpenFlow::ofp_flow_mod`) : :zeek:type:`bool` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:49
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:52
+msgid "bool &optional"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:50
+msgid "flow_mod function."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:53
+msgid ""
+"flow_clear: :zeek:type:`function` (state: "
+":zeek:type:`OpenFlow::ControllerState`) : :zeek:type:`bool` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:53
+msgid "flow_clear function."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:62
+msgid "_plugin: :zeek:type:`OpenFlow::Plugin` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:62
+msgid "Internally set to the type of plugin used."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:65
+msgid "_name: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:65
+msgid "Internally set to the unique name of the controller."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:68
+msgid ""
+"_activated: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:68
+msgid "Internally set to true once the controller is activated."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:73
+msgid "ryu_host: :zeek:type:`addr` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:71
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:76
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:81
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:86
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:135
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/openflow/plugins/ryu.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:73
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:103
+msgid "Controller ip."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:78
+msgid "ryu_port: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:78
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:108
+msgid "Controller listen port."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:83
+msgid "ryu_dpid: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:83
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:93
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:113
+msgid "OpenFlow switch datapath id."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:88
+msgid ""
+"ryu_debug: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:88
+msgid "Enable debug mode - output JSON to stdout; do not perform actions."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:93
+msgid "log_dpid: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:91
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:96
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:140
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/openflow/plugins/log.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:98
+msgid "log_success_event: :zeek:type:`bool` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:98
+msgid "Raise or do not raise success event."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:103
+msgid "broker_host: :zeek:type:`addr` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:101
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:106
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:111
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:116
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:145
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/openflow/plugins/broker.zeek` "
+"is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:108
+msgid "broker_port: :zeek:type:`port` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:113
+msgid "broker_dpid: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:117
+msgid "broker_topic: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:118
+msgid "Topic to send events for this controller to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:119
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:121
+msgid "Controller related state. Can be redefined by plugins to add state."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:127
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:131
+msgid "Internal placeholder plugin."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:155
+msgid ""
+"out_ports: :zeek:type:`vector` of :zeek:type:`count` "
+":zeek:attr:`&default` = ``[]`` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:155
+msgid "Output ports to send data to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:158
+msgid "vlan_vid: :zeek:type:`count` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:158
+msgid "Set vlan vid to this value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:161
+msgid "vlan_pcp: :zeek:type:`count` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:161
+msgid "Set vlan priority to this value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:164
+msgid ""
+"vlan_strip: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:164
+msgid "Strip vlan tag."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:167
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:235
+msgid "dl_src: :zeek:type:`string` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:167
+msgid "Set ethernet source address."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:170
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:237
+msgid "dl_dst: :zeek:type:`string` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:170
+msgid "Set ethernet destination address."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:173
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:245
+msgid "nw_tos: :zeek:type:`count` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:173
+msgid "Set ip tos to this value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:176
+msgid "nw_src: :zeek:type:`addr` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:176
+msgid "Set source to this ip."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:179
+msgid "nw_dst: :zeek:type:`addr` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:179
+msgid "Set destination to this ip."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:182
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:253
+msgid "tp_src: :zeek:type:`count` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:182
+msgid "Set tcp/udp source port."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:184
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:255
+msgid "tp_dst: :zeek:type:`count` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:185
+msgid "Set tcp/udp destination port."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:186
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:225
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:256
+msgid ":zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:188
+msgid ""
+"The actions that can be taken in a flow. (Separate record to make "
+"ofp_flow_mod less crowded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:196
+msgid "cookie: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:196
+msgid "Opaque controller-issued identifier."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:200
+msgid "table_id: :zeek:type:`count` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:199
+msgid ""
+"Table to put the flow in. OFPTT_ALL can be used for delete, to delete "
+"flows from all matching tables."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:203
+msgid "command: :zeek:type:`OpenFlow::ofp_flow_mod_command` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:203
+msgid "One of OFPFC_*."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:206
+msgid ""
+"idle_timeout: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:206
+msgid "Idle time before discarding (seconds)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:209
+msgid ""
+"hard_timeout: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:209
+msgid "Max time before discarding (seconds)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:212
+msgid ""
+"priority: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:212
+msgid "Priority level of flow entry."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:216
+msgid "out_port: :zeek:type:`count` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:215
+msgid ""
+"For OFPFC_DELETE* commands, require matching entried to include this as "
+"an output port/group. OFPP_ANY/OFPG_ANY means no restrictions."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:218
+msgid "out_group: :zeek:type:`count` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:221
+msgid ""
+"flags: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:221
+msgid "Bitmap of the OFPFF_* flags"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:223
+msgid ""
+"actions: :zeek:type:`OpenFlow::ofp_flow_action` :zeek:attr:`&default` = "
+"*[out_ports=[], vlan_vid=<uninitialized>, vlan_pcp=<uninitialized>, "
+"vlan_strip=F, dl_src=<uninitialized>, dl_dst=<uninitialized>, "
+"nw_tos=<uninitialized>, nw_src=<uninitialized>, nw_dst=<uninitialized>, "
+"tp_src=<uninitialized>, tp_dst=<uninitialized>]* :zeek:attr:`&optional` "
+":zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:224
+msgid "Actions to take on match"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:233
+msgid "in_port: :zeek:type:`count` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:239
+msgid "dl_vlan: :zeek:type:`count` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:241
+msgid "dl_vlan_pcp: :zeek:type:`count` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:243
+msgid "dl_type: :zeek:type:`count` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:247
+msgid "nw_proto: :zeek:type:`count` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:249
+msgid "nw_src: :zeek:type:`subnet` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:251
+msgid "nw_dst: :zeek:type:`subnet` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/types.zeek.rst:260
+msgid ""
+"The openflow match record describes which packets match to a specific "
+"rule in a flow table."
+msgstr ""
+

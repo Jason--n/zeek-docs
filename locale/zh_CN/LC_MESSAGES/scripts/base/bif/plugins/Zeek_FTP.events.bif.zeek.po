@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_FTP.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:23
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:15
+msgid ":zeek:id:`ftp_reply`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:28
+msgid "Generated for server-side FTP replies."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:16
+msgid ":zeek:id:`ftp_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:55
+msgid "Generated for client-side FTP commands."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:21
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:26
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, code: :zeek:type:`count`,"
+" msg: :zeek:type:`string`, cont_resp: :zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:30
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:57
+msgid ""
+"See `Wikipedia <http://en.wikipedia.org/wiki/File_Transfer_Protocol>`__ "
+"for more information about the FTP protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:34
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:61
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst
+msgid "code"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:37
+msgid "The numerical response code the server responded with."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst
+msgid "msg"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:40
+msgid "The textual message of the response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst
+msgid "cont_resp"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:43
+msgid ""
+"True if the reply line is tagged as being continued to the next line. If "
+"so, further events will be raised and a handler may want to reassemble "
+"the pieces before processing the response any further."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:53
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, command: "
+":zeek:type:`string`, arg: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst
+msgid "command"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:64
+msgid "The FTP command issued by the client (without any arguments)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst
+msgid "arg"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek.rst:67
+msgid "The arguments going with the command."
+msgstr ""
+

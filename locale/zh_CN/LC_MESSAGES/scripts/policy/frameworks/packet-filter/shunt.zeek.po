@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:4
+msgid "policy/frameworks/packet-filter/shunt.zeek"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:8
+msgid "PacketFilter"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:9
+msgid ""
+":doc:`base/frameworks/notice </scripts/base/frameworks/notice/index>`, "
+":doc:`base/frameworks/packet-filter </scripts/base/frameworks/packet-"
+"filter/index>`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:14
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:53
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:16
+msgid ""
+":zeek:id:`PacketFilter::max_bpf_shunts`: :zeek:type:`count` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:16
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:60
+msgid "The maximum number of BPF based shunts that Zeek is allowed to perform."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:20
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:22
+msgid ":zeek:type:`Notice::Type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:24
+msgid ""
+":zeek:enum:`PacketFilter::Cannot_BPF_Shunt_Conn`: Limitations in BPF make"
+" shunting some connections with BPF impossible."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:28
+msgid ""
+":zeek:enum:`PacketFilter::No_More_Conn_Shunts_Available`: Indicative that"
+" :zeek:id:`PacketFilter::max_bpf_shunts` connections are already being "
+"shunted with BPF filters and no more are allowed."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:35
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:63
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:37
+msgid ":zeek:id:`PacketFilter::current_shunted_conns`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:37
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:68
+msgid "Retrieve the currently shunted connections."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:38
+msgid ":zeek:id:`PacketFilter::current_shunted_host_pairs`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:38
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:74
+msgid "Retrieve the currently shunted host pairs."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:39
+msgid ":zeek:id:`PacketFilter::force_unshunt_host_pair`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:39
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:80
+msgid ""
+"Performs the same function as the "
+":zeek:id:`PacketFilter::unshunt_host_pair` function, but it forces an "
+"immediate filter update."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:41
+msgid ":zeek:id:`PacketFilter::shunt_conn`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:41
+msgid ""
+"Call this function to use BPF to shunt a connection (to prevent the data "
+"packets from reaching Zeek)."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:43
+msgid ":zeek:id:`PacketFilter::shunt_host_pair`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:43
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:96
+msgid ""
+"This function will use a BPF expression to shunt traffic between the two "
+"hosts given in the `conn_id` so that the traffic is never exposed to "
+"Zeek's traffic processing."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:46
+msgid ":zeek:id:`PacketFilter::unshunt_host_pair`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:46
+msgid "Remove shunting for a host pair given as a `conn_id`."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:51
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:56
+msgid ":zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:57
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:58
+msgid "``100``"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:66
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:72
+msgid ":zeek:type:`function` () : :zeek:type:`set` [:zeek:type:`conn_id`]"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:78
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:85
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:94
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:102
+msgid ":zeek:type:`function` (id: :zeek:type:`conn_id`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:87
+msgid ""
+"Call this function to use BPF to shunt a connection (to prevent the data "
+"packets from reaching Zeek).  For TCP connections, control packets are "
+"still allowed through so that Zeek can continue logging the connection "
+"and it can stop shunting once the connection ends."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/packet-filter/shunt.zeek.rst:104
+msgid ""
+"Remove shunting for a host pair given as a `conn_id`.  The filter is not "
+"immediately removed.  It waits for the occasional filter update done by "
+"the `PacketFilter` framework."
+msgstr ""
+

@@ -1,0 +1,415 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:4
+msgid "base/frameworks/cluster/pools.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:7
+msgid ""
+"Defines an interface for managing pools of cluster nodes.  Pools are a "
+"useful way to distribute work or data among nodes within a cluster."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:10
+msgid "Cluster"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:11
+msgid ""
+":doc:`base/frameworks/cluster/main.zeek "
+"</scripts/base/frameworks/cluster/main.zeek>`, "
+":doc:`base/utils/hash_hrw.zeek </scripts/base/utils/hash_hrw.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:16
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:49
+msgid "State Variables"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:18
+msgid ":zeek:id:`Cluster::logger_pool`: :zeek:type:`Cluster::Pool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:18
+msgid "A pool containing all the logger nodes of a cluster."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:19
+msgid ""
+":zeek:id:`Cluster::logger_pool_spec`: :zeek:type:`Cluster::PoolSpec` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:19
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:93
+msgid "The specification for :zeek:see:`Cluster::logger_pool`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:20
+msgid ":zeek:id:`Cluster::proxy_pool`: :zeek:type:`Cluster::Pool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:20
+msgid "A pool containing all the proxy nodes of a cluster."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:21
+msgid ""
+":zeek:id:`Cluster::proxy_pool_spec`: :zeek:type:`Cluster::PoolSpec` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:21
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:138
+msgid "The specification for :zeek:see:`Cluster::proxy_pool`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:22
+msgid ":zeek:id:`Cluster::worker_pool`: :zeek:type:`Cluster::Pool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:22
+msgid "A pool containing all the worker nodes of a cluster."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:23
+msgid ""
+":zeek:id:`Cluster::worker_pool_spec`: :zeek:type:`Cluster::PoolSpec` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:23
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:183
+msgid "The specification for :zeek:see:`Cluster::worker_pool`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:27
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:186
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:29
+msgid ":zeek:type:`Cluster::PoolNode`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:29
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:204
+msgid "Store state of a cluster within the context of a work pool."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:30
+msgid ":zeek:type:`Cluster::PoolNodeTable`: :zeek:type:`table`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:31
+msgid ":zeek:type:`Cluster::PoolSpec`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:31
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:232
+msgid "A pool specification."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:32
+msgid ":zeek:type:`Cluster::RoundRobinTable`: :zeek:type:`table`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:36
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:240
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:38
+msgid ":zeek:id:`Cluster::hrw_topic`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:38
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:245
+msgid ""
+"Retrieve the topic associated with the node mapped via Rendezvous hash of"
+" an arbitrary key."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:40
+msgid ":zeek:id:`Cluster::register_pool`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:40
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:263
+msgid "Registers and initializes a pool."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:41
+msgid ":zeek:id:`Cluster::rr_log_topic`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:41
+msgid "Distributes log message topics among logger nodes via round-robin."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:42
+msgid ":zeek:id:`Cluster::rr_topic`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:42
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:279
+msgid "Retrieve the topic associated with the node in a round-robin fashion."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:47
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:52
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:97
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:142
+msgid ":zeek:type:`Cluster::Pool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:73
+msgid ""
+"A pool containing all the logger nodes of a cluster. The pool's node "
+"membership/availability is automatically maintained by the cluster "
+"framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:79
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:124
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:169
+msgid ":zeek:type:`Cluster::PoolSpec`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:80
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:125
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:170
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:118
+msgid ""
+"A pool containing all the proxy nodes of a cluster. The pool's node "
+"membership/availability is automatically maintained by the cluster "
+"framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:163
+msgid ""
+"A pool containing all the worker nodes of a cluster. The pool's node "
+"membership/availability is automatically maintained by the cluster "
+"framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:189
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:213
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:192
+msgid "name: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:192
+msgid "The node name (e.g. \"manager\")."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:196
+msgid "alias: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:195
+msgid ""
+"An alias of *name* used to prevent hashing collisions when creating "
+"*site_id*."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:199
+msgid "site_id: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:199
+msgid "A 32-bit unique identifier for the pool node, derived from name/alias."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:202
+msgid ""
+"alive: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:202
+msgid "Whether the node is currently alive and can receive work."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:208
+msgid ":zeek:type:`table` [:zeek:type:`string`] of :zeek:type:`Cluster::PoolNode`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:216
+msgid ""
+"topic: :zeek:type:`string` :zeek:attr:`&default` = ``\"\"`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:216
+msgid "A topic string that can be used to reach all nodes within a pool."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:219
+msgid ""
+"node_type: :zeek:type:`Cluster::NodeType` :zeek:attr:`&default` = "
+"``Cluster::PROXY`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:219
+msgid "The type of nodes that are contained within the pool."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:225
+msgid "max_nodes: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:222
+msgid ""
+"The maximum number of nodes that may belong to the pool. If not set, then"
+" all available nodes will be added to the pool, else the cluster "
+"framework will automatically limit the pool membership according to the "
+"threshhold."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:230
+msgid ""
+"exclusive: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:228
+msgid ""
+"Whether the pool requires exclusive access to nodes.  If true, then "
+"*max_nodes* nodes will not be assigned to any other pool. When using this"
+" flag, *max_nodes* must also be set."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:236
+msgid ":zeek:type:`table` [:zeek:type:`string`] of :zeek:type:`int`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:243
+msgid ""
+":zeek:type:`function` (pool: :zeek:type:`Cluster::Pool`, key: "
+":zeek:type:`any`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst
+msgid "pool"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:249
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:282
+msgid "the pool of nodes to consider."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst
+msgid "key"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:252
+msgid ""
+"data used for input to the hashing function that will uniformly "
+"distribute keys among available nodes."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:256
+msgid ""
+"a topic string associated with a cluster node that is alive or an empty "
+"string if nothing is alive."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:261
+msgid ""
+":zeek:type:`function` (spec: :zeek:type:`Cluster::PoolSpec`) : "
+":zeek:type:`Cluster::Pool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:267
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`Log::ID`, path: "
+":zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:269
+msgid ""
+"Distributes log message topics among logger nodes via round-robin. This "
+"will be automatically assigned to :zeek:see:`Broker::log_topic` if "
+":zeek:see:`Cluster::enable_round_robin_logging` is enabled. If no logger "
+"nodes are active, then this will return the value of "
+":zeek:see:`Broker::default_log_topic`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:277
+msgid ""
+":zeek:type:`function` (pool: :zeek:type:`Cluster::Pool`, key: "
+":zeek:type:`string` :zeek:attr:`&default` = ``\"\"`` "
+":zeek:attr:`&optional`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:285
+msgid ""
+"an arbitrary string to identify the purpose for which you're requesting "
+"the topic.  e.g. consider using a name-spaced key like "
+"\"Intel::cluster_rr_key\" if you need to guarantee that a group of "
+"messages get distributed in a well-defined pattern without other messages"
+" being interleaved within the round-robin. Usually sharing the default "
+"key is fine for load-balancing purposes."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/pools.zeek.rst:294
+msgid ""
+"a topic string associated with a cluster node that is alive, or an empty "
+"string if nothing is alive."
+msgstr ""
+

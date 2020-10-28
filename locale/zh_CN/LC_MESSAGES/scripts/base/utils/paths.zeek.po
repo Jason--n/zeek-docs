@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/utils/paths.zeek.rst:4
+msgid "base/utils/paths.zeek"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:6
+msgid "Functions to parse and manipulate UNIX style paths and directories."
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:10
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:12
+#: ../../scripts/base/utils/paths.zeek.rst:30
+msgid "Constants"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:14
+msgid ":zeek:id:`absolute_path_pat`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:18
+#: ../../scripts/base/utils/paths.zeek.rst:43
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:20
+msgid ":zeek:id:`build_path`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:20
+#: ../../scripts/base/utils/paths.zeek.rst:48
+msgid "Constructs a path to a file given a directory and a file name."
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:21
+msgid ":zeek:id:`build_path_compressed`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:21
+msgid "Returns a compressed path to a file given a directory and file name."
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:22
+msgid ":zeek:id:`extract_path`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:22
+#: ../../scripts/base/utils/paths.zeek.rst:71
+msgid ""
+"Given an arbitrary string, extracts a single, absolute path (directory "
+"with filename)."
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:28
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:33
+msgid ":zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:46
+#: ../../scripts/base/utils/paths.zeek.rst:62
+msgid ""
+":zeek:type:`function` (dir: :zeek:type:`string`, file_name: "
+":zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst
+msgid "dir"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:51
+msgid "the directory in which the file lives."
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst
+msgid "file_name"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:54
+msgid "the name of the file."
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:57
+msgid ""
+"the concatenation of the directory path and file name, or just the file "
+"name if it's already an absolute path."
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:64
+msgid ""
+"Returns a compressed path to a file given a directory and file name. See "
+":zeek:id:`build_path` and :zeek:id:`compress_path`."
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:69
+msgid ":zeek:type:`function` (input: :zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:74
+msgid "Todo"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:74
+msgid "Make this work on Window's style directories."
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst
+msgid "input"
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:77
+msgid "a string that may contain an absolute path."
+msgstr ""
+
+#: ../../scripts/base/utils/paths.zeek.rst:80
+msgid "the first absolute path found in input string, else an empty string."
+msgstr ""
+

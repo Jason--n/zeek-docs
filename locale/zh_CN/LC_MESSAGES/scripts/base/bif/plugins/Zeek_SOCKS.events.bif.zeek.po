@@ -1,0 +1,198 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_SOCKS.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:25
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:15
+msgid ":zeek:id:`socks_login_userpass_reply`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:30
+msgid ""
+"Generated when a SOCKS server replies to a username/password login "
+"attempt."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:16
+msgid ":zeek:id:`socks_login_userpass_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:42
+msgid "Generated when a SOCKS client performs username and password based login."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:17
+msgid ":zeek:id:`socks_reply`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:17
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:57
+msgid "Generated when a SOCKS reply is analyzed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:18
+msgid ":zeek:id:`socks_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:18
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:78
+msgid "Generated when a SOCKS request is analyzed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:23
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:28
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`, code: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:33
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:45
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:60
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:81
+msgid "The parent connection of the proxy."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst
+msgid "code"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:36
+msgid "The response code for the attempted login."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:40
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, user: "
+":zeek:type:`string`, password: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst
+msgid "user"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:48
+msgid "The given username."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst
+msgid "password"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:51
+msgid "The given password."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:55
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, version: "
+":zeek:type:`count`, reply: :zeek:type:`count`, sa: "
+":zeek:type:`SOCKS::Address`, p: :zeek:type:`port`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst
+msgid "version"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:63
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:84
+msgid "The version of SOCKS this message used."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst
+msgid "reply"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:66
+msgid "The status reply from the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst
+msgid "sa"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:69
+msgid "The address that the server sent the traffic to."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst
+msgid "p"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:72
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:93
+msgid "The destination port for the proxied traffic."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:76
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, version: "
+":zeek:type:`count`, request_type: :zeek:type:`count`, sa: "
+":zeek:type:`SOCKS::Address`, p: :zeek:type:`port`, user: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst
+msgid "request_type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:87
+msgid "The type of the request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:90
+msgid "Address that the tunneled traffic should be sent to."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SOCKS.events.bif.zeek.rst:96
+msgid ""
+"Username given for the SOCKS connection.  This is not yet implemented for"
+" SOCKSv5."
+msgstr ""
+

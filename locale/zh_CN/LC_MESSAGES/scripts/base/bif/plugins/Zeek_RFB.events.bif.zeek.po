@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_RFB.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:27
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:15
+msgid ":zeek:id:`rfb_auth_result`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:32
+msgid "Generated for RFB event authentication result message"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:16
+msgid ":zeek:id:`rfb_authentication_type`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:44
+msgid "Generated for RFB event authentication mechanism selection"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:17
+msgid ":zeek:id:`rfb_client_version`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:17
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:56
+msgid "Generated for RFB event client banner message"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:18
+msgid ":zeek:id:`rfb_server_parameters`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:18
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:68
+msgid "Generated for RFB event server parameter message"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:19
+msgid ":zeek:id:`rfb_server_version`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:19
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:86
+msgid "Generated for RFB event server banner message"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:20
+msgid ":zeek:id:`rfb_share_flag`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:20
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:98
+msgid "Generated for RFB event share flag messages"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:25
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:30
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`, result: :zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:35
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:47
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:59
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:71
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:89
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:101
+msgid "The connection record for the underlying transport-layer session/flow."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst
+msgid "result"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:38
+msgid "whether or not authentication was succesful"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:42
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, authtype: "
+":zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst
+msgid "authtype"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:50
+msgid "the value of the chosen authentication mechanism"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:54
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:84
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, major_version: "
+":zeek:type:`string`, minor_version: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst
+msgid "version"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:62
+msgid "of the client's rfb library"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:66
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, name: "
+":zeek:type:`string`, width: :zeek:type:`count`, height: "
+":zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst
+msgid "name"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:74
+msgid "name of the shared screen"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst
+msgid "width"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:77
+msgid "width of the shared screen"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst
+msgid "height"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:80
+msgid "height of the shared screen"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:92
+msgid "of the server's rfb library"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:96
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`, flag: :zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst
+msgid "flag"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RFB.events.bif.zeek.rst:104
+msgid "whether or not the share flag was set"
+msgstr ""
+

@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:25
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:15
+msgid ":zeek:id:`smb1_echo_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:15
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 1 requests of type *echo*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:17
+msgid ":zeek:id:`smb1_echo_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:17
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 1 responses of type *echo*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:23
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:28
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, echo_count: "
+":zeek:type:`count`, data: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:30
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 1 requests of type *echo*. This is sent by"
+" the client to test the transport layer connection with the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:34
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:57
+msgid "For more information, see MS-CIFS:2.2.4.39"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:37
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:60
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst
+msgid "hdr"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:40
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:63
+msgid ""
+"The parsed header of the :abbr:`SMB (Server Message Block)` version 1 "
+"message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst
+msgid "echo_count"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:43
+msgid "The number of times the server should echo the data back."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst
+msgid "data"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:46
+msgid "The data for the server to echo."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:52
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, seq_num: "
+":zeek:type:`count`, data: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:54
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 1 responses of type *echo*. This is the "
+"server response to the *echo* request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst
+msgid "seq_num"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:66
+msgid "The sequence number of this echo reply."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek.rst:69
+msgid "The data echoed back from the client."
+msgstr ""
+

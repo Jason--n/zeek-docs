@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:4
+msgid "base/frameworks/input/readers/benchmark.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:7
+msgid "Interface for the benchmark input reader."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:9
+msgid "InputBenchmark"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:14
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:28
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:16
+msgid ""
+":zeek:id:`InputBenchmark::addfactor`: :zeek:type:`count` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:16
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:35
+msgid "Addition factor for each heartbeat."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:17
+msgid ""
+":zeek:id:`InputBenchmark::autospread`: :zeek:type:`double` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:17
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:43
+msgid "Spreading where usleep = 1000000 / autospread * num_lines"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:18
+msgid ":zeek:id:`InputBenchmark::factor`: :zeek:type:`double` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:18
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:51
+msgid "Multiplication factor for each second."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:19
+msgid ":zeek:id:`InputBenchmark::spread`: :zeek:type:`count` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:19
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:59
+msgid "Spread factor between lines."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:20
+msgid ""
+":zeek:id:`InputBenchmark::stopspreadat`: :zeek:type:`count` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:20
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:67
+msgid "Stop spreading at x lines per heartbeat."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:21
+msgid ""
+":zeek:id:`InputBenchmark::timedspread`: :zeek:type:`double` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:21
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:75
+msgid "1 -> enable timed spreading."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:26
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:31
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:55
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:63
+msgid ":zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:32
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:40
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:48
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:56
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:64
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:72
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:33
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:57
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:65
+msgid "``0``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:39
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:47
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:71
+msgid ":zeek:type:`double`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:41
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:73
+msgid "``0.0``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/benchmark.zeek.rst:49
+msgid "``1.0``"
+msgstr ""
+

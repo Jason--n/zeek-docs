@@ -1,0 +1,327 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/utils/queue.zeek.rst:4
+msgid "base/utils/queue.zeek"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:7
+msgid "A FIFO queue."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:9
+msgid "Queue"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:14
+#: ../../scripts/base/utils/queue.zeek.rst:56
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:16
+#: ../../scripts/base/utils/queue.zeek.rst:23
+msgid ":zeek:type:`Queue::Queue`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:16
+#: ../../scripts/base/utils/queue.zeek.rst:73
+msgid "The internal data structure for the queue."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:17
+msgid ":zeek:type:`Queue::Settings`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:17
+#: ../../scripts/base/utils/queue.zeek.rst:84
+msgid "Settings for initializing the queue."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:21
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:25
+msgid ":zeek:type:`Queue::Queue`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:27
+#: ../../scripts/base/utils/queue.zeek.rst:61
+msgid ""
+"initialized: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:29
+#: ../../scripts/base/utils/queue.zeek.rst:63
+msgid ""
+"vals: :zeek:type:`table` [:zeek:type:`count`] of :zeek:type:`any` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:31
+#: ../../scripts/base/utils/queue.zeek.rst:65
+msgid "settings: :zeek:type:`Queue::Settings` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:33
+#: ../../scripts/base/utils/queue.zeek.rst:67
+msgid ""
+"top: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:35
+#: ../../scripts/base/utils/queue.zeek.rst:69
+msgid ""
+"bottom: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:37
+#: ../../scripts/base/utils/queue.zeek.rst:71
+msgid ""
+"size: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:41
+#: ../../scripts/base/utils/queue.zeek.rst:87
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:43
+msgid ":zeek:id:`Queue::get`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:43
+#: ../../scripts/base/utils/queue.zeek.rst:92
+msgid "Get a value from the end of a queue."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:44
+msgid ":zeek:id:`Queue::get_vector`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:44
+#: ../../scripts/base/utils/queue.zeek.rst:104
+msgid "Get the contents of the queue as a vector."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:45
+msgid ":zeek:id:`Queue::init`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:45
+#: ../../scripts/base/utils/queue.zeek.rst:117
+msgid "Initialize a queue record structure."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:46
+msgid ":zeek:id:`Queue::len`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:46
+#: ../../scripts/base/utils/queue.zeek.rst:129
+msgid "Get the number of items in a queue."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:47
+msgid ":zeek:id:`Queue::merge`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:47
+msgid "Merge two queues together."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:48
+msgid ":zeek:id:`Queue::peek`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:48
+#: ../../scripts/base/utils/queue.zeek.rst:158
+msgid "Peek at the value at the end of the queue without removing it."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:49
+msgid ":zeek:id:`Queue::put`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:49
+#: ../../scripts/base/utils/queue.zeek.rst:170
+msgid "Put a value onto the beginning of a queue."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:54
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:59
+#: ../../scripts/base/utils/queue.zeek.rst:77
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:82
+msgid "max_len: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:80
+msgid ""
+"If a maximum length is set for the queue it will maintain itself at that "
+"maximum length automatically."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:90
+#: ../../scripts/base/utils/queue.zeek.rst:156
+msgid ":zeek:type:`function` (q: :zeek:type:`Queue::Queue`) : :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst
+msgid "q"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:95
+#: ../../scripts/base/utils/queue.zeek.rst:161
+msgid "The queue to get the value from."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:98
+msgid "The value gotten from the queue."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:102
+msgid ""
+":zeek:type:`function` (q: :zeek:type:`Queue::Queue`, ret: "
+":zeek:type:`vector` of :zeek:type:`any`) : :zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:107
+#: ../../scripts/base/utils/queue.zeek.rst:132
+msgid "The queue."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst
+msgid "ret"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:110
+msgid "A vector containing the current contents of the queue as the type of ret."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:115
+msgid ""
+":zeek:type:`function` (s: :zeek:type:`Queue::Settings` "
+":zeek:attr:`&default` = ``[]`` :zeek:attr:`&optional`) : "
+":zeek:type:`Queue::Queue`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst
+msgid "s"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:120
+msgid "A record which configures the queue."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:123
+msgid "An opaque queue record."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:127
+msgid ":zeek:type:`function` (q: :zeek:type:`Queue::Queue`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:135
+msgid "The length of the queue."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:139
+msgid ""
+":zeek:type:`function` (q1: :zeek:type:`Queue::Queue`, q2: "
+":zeek:type:`Queue::Queue`) : :zeek:type:`Queue::Queue`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:141
+msgid ""
+"Merge two queues together.  If any settings are applied to the queues, "
+"the settings from *q1* are used for the new merged queue."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst
+msgid "q1"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:146
+msgid "The first queue.  Settings are taken from here."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst
+msgid "q2"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:149
+msgid "The second queue."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:152
+msgid "A new queue from merging the other two together."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:164
+msgid "The value at the end of the queue."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:168
+msgid ""
+":zeek:type:`function` (q: :zeek:type:`Queue::Queue`, val: "
+":zeek:type:`any`) : :zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:173
+msgid "The queue to put the value into."
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst
+msgid "val"
+msgstr ""
+
+#: ../../scripts/base/utils/queue.zeek.rst:176
+msgid "The value to insert into the queue."
+msgstr ""
+

@@ -1,0 +1,228 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:4
+msgid "base/protocols/ntlm/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:8
+msgid "NTLM"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:9
+msgid ""
+":doc:`base/frameworks/dpd </scripts/base/frameworks/dpd/index>`, "
+":doc:`base/protocols/conn/removal-hooks.zeek "
+"</scripts/base/protocols/conn/removal-hooks.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:14
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:44
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:16
+msgid ":zeek:type:`NTLM::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:20
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:22
+msgid ":zeek:id:`DPD::ignore_violations`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:23
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:25
+msgid ":zeek:enum:`NTLM::LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:26
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:28
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:30
+msgid "ntlm: :zeek:type:`NTLM::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:34
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:85
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:36
+msgid ":zeek:id:`NTLM::finalize_ntlm`: :zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:36
+msgid "NTLM finalization hook."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:37
+msgid ":zeek:id:`NTLM::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:42
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:47
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:50
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:50
+msgid "Timestamp for when the event happened."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:53
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:53
+msgid "Unique ID for the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:56
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:56
+msgid "The connection's 4-tuple of endpoint addresses/ports."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:59
+msgid "username: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:59
+msgid "Username given by the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:62
+msgid "hostname: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:62
+msgid "Hostname given by the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:65
+msgid "domainname: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:65
+msgid "Domainname given by the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:68
+msgid ""
+"server_nb_computer_name: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:68
+msgid "NetBIOS name given by the server in a CHALLENGE."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:71
+msgid ""
+"server_dns_computer_name: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:71
+msgid "DNS name given by the server in a CHALLENGE."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:74
+msgid ""
+"server_tree_name: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:74
+msgid "Tree name given by the server in a CHALLENGE."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:77
+msgid "success: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:77
+msgid "Indicate whether or not the authentication was successful."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:80
+msgid ""
+"done: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:80
+msgid ""
+"Internally used field to indicate if the login attempt has already been "
+"logged."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:88
+msgid ":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:90
+msgid ""
+"NTLM finalization hook.  Remaining NTLM info may get logged when it's "
+"called."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntlm/main.zeek.rst:94
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

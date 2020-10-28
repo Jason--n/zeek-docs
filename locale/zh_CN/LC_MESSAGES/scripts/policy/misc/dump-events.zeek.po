@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:4
+msgid "policy/misc/dump-events.zeek"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:7
+msgid ""
+"This script dumps the events that Zeek raises out to standard output in a"
+" readable form. This is for debugging only and allows to understand "
+"events and their parameters as Zeek processes input. Note that it will "
+"show only events for which a handler is defined."
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:12
+msgid "DumpEvents"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:15
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:17
+#: ../../scripts/policy/misc/dump-events.zeek.rst:33
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:19
+msgid ":zeek:id:`DumpEvents::include`: :zeek:type:`pattern` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:19
+msgid "Only include events matching the given pattern into output."
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:20
+msgid ":zeek:id:`DumpEvents::include_args`: :zeek:type:`bool` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:20
+#: ../../scripts/policy/misc/dump-events.zeek.rst:54
+msgid "If true, include event arguments in output."
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:24
+#: ../../scripts/policy/misc/dump-events.zeek.rst:57
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:26
+msgid ""
+":zeek:id:`DumpEvents::dump_all_events`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:26
+msgid "By default, only events that are handled in a script are dumped."
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:31
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:36
+msgid ":zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:37
+#: ../../scripts/policy/misc/dump-events.zeek.rst:51
+#: ../../scripts/policy/misc/dump-events.zeek.rst:61
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:45
+msgid ""
+"Only include events matching the given pattern into output. By default, "
+"the pattern matches all events."
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:50
+#: ../../scripts/policy/misc/dump-events.zeek.rst:60
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:52
+msgid "``T``"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:62
+msgid "``F``"
+msgstr ""
+
+#: ../../scripts/policy/misc/dump-events.zeek.rst:64
+msgid ""
+"By default, only events that are handled in a script are dumped. Setting "
+"this option to true will cause unhandled events to be dumped too."
+msgstr ""
+

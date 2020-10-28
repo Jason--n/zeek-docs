@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:4
+msgid "base/frameworks/input/readers/config.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:7
+msgid "Interface for the config input reader."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:9
+msgid "InputConfig"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:14
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:31
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:16
+msgid ""
+":zeek:id:`InputConfig::empty_field`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:16
+msgid "String to use for empty fields."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:17
+msgid ""
+":zeek:id:`InputConfig::fail_on_file_problem`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:17
+msgid "Fail on file read problems."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:18
+msgid ""
+":zeek:id:`InputConfig::set_separator`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:18
+msgid "Separator between set and vector elements."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:22
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:72
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:24
+msgid ":zeek:id:`InputConfig::new_value`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:24
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:77
+msgid "Event that is called when a config option is added or changes."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:29
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:34
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:64
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:35
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:45
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:65
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:36
+msgid "``\"\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:38
+msgid ""
+"String to use for empty fields. By default this is the empty string, "
+"meaning that an empty input field will result in an empty set."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:44
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:46
+msgid "``F``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:48
+msgid ""
+"Fail on file read problems. If set to true, the config input reader will "
+"fail when encountering any problems while reading a file different from "
+"invalid lines. Examples of such problems are permission problems, or "
+"missing files. When set to false, these problems will be ignored. This "
+"has an especially big effect for the REREAD mode, which will seamlessly "
+"recover from read errors when a file is only temporarily inaccessible. "
+"For MANUAL or STREAM files, errors will most likely still be fatal since "
+"no automatic re-reading of the file is attempted. Individual readers can "
+"use a different value using the $config table."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:66
+msgid "``\",\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:68
+msgid ""
+"Separator between set and vector elements. Please note that the separator"
+" has to be exactly one character long."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:75
+msgid ""
+":zeek:type:`event` (name: :zeek:type:`string`, source: "
+":zeek:type:`string`, id: :zeek:type:`string`, value: :zeek:type:`any`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:79
+msgid ""
+"Note - this does not track the reason for a change (new, changed), and "
+"also does not track removals. If you need this, combine the event with a "
+"table reader."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst
+msgid "name"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:84
+msgid "Name of the input stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst
+msgid "source"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:87
+msgid "Source of the input stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst
+msgid "id"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:90
+msgid "ID of the configuration option being set."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst
+msgid "value"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/config.zeek.rst:93
+msgid "New value of the configuration option being set."
+msgstr ""
+

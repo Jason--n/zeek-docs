@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/utils/dir.zeek.rst:4
+msgid "base/utils/dir.zeek"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:8
+msgid "Dir"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:9
+msgid ""
+":doc:`base/frameworks/reporter "
+"</scripts/base/frameworks/reporter/index>`, :doc:`base/utils/exec.zeek "
+"</scripts/base/utils/exec.zeek>`, :doc:`base/utils/paths.zeek "
+"</scripts/base/utils/paths.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:14
+#: ../../scripts/base/utils/dir.zeek.rst:31
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:16
+msgid ""
+":zeek:id:`Dir::polling_interval`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:16
+#: ../../scripts/base/utils/dir.zeek.rst:38
+msgid ""
+"The default interval this module checks for files in directories when "
+"using the :zeek:see:`Dir::monitor` function."
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:21
+#: ../../scripts/base/utils/dir.zeek.rst:42
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:23
+msgid ":zeek:id:`Dir::monitor`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:23
+msgid ""
+"Register a directory to monitor with a callback that is called every time"
+" a previously unseen file is seen."
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:29
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:34
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:35
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:36
+msgid "``30.0 secs``"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:45
+msgid ""
+":zeek:type:`function` (dir: :zeek:type:`string`, callback: "
+":zeek:type:`function` (fname: :zeek:type:`string`) : :zeek:type:`void`, "
+"poll_interval: :zeek:type:`interval` :zeek:attr:`&default` = "
+":zeek:see:`Dir::polling_interval` :zeek:attr:`&optional`) : "
+":zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:47
+msgid ""
+"Register a directory to monitor with a callback that is called every time"
+" a previously unseen file is seen.  If a file is deleted and seen to be "
+"gone, then the file is available for being seen again in the future."
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst
+msgid "dir"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:53
+msgid "The directory to monitor for files."
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst
+msgid "callback"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:56
+msgid ""
+"Callback that gets executed with each file name that is found.  Filenames"
+" are provided with the full path."
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst
+msgid "poll_interval"
+msgstr ""
+
+#: ../../scripts/base/utils/dir.zeek.rst:60
+msgid "An interval at which to check for new files."
+msgstr ""
+

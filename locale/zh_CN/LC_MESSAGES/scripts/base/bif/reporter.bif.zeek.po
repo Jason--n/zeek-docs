@@ -1,0 +1,481 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:4
+msgid "base/bif/reporter.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:8
+msgid ""
+"The reporter built-in functions allow for the scripting layer to generate"
+" messages of varying severity.  If no event handlers exist for reporter "
+"messages, the messages are output to stderr. If event handlers do exist, "
+"it's assumed they take care of determining how/where to output the "
+"messages."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:14
+msgid ""
+"See :doc:`/scripts/base/frameworks/reporter/main.zeek` for a convenient "
+"reporter message logging framework."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst
+msgid "Namespaces"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:17
+msgid "GLOBAL, Reporter"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:20
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:22
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:51
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:24
+msgid ":zeek:id:`Reporter::conn_weird`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:24
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:56
+msgid "Generates a \"conn\" weird."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:25
+msgid ":zeek:id:`Reporter::error`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:25
+msgid ""
+"Generates a non-fatal error indicative of a definite problem that should "
+"be addressed."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:27
+msgid ":zeek:id:`Reporter::fatal`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:27
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:89
+msgid "Generates a fatal error on stderr and terminates program execution."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:28
+msgid ":zeek:id:`Reporter::fatal_error_with_core`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:28
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:101
+msgid ""
+"Generates a fatal error on stderr and terminates program execution after "
+"dumping a core file"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:30
+msgid ":zeek:id:`Reporter::file_weird`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:30
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:114
+msgid "Generates a \"file\" weird."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:31
+msgid ":zeek:id:`Reporter::flow_weird`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:31
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:132
+msgid "Generates a \"flow\" weird."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:32
+msgid ":zeek:id:`Reporter::get_weird_sampling_duration`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:32
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:150
+msgid "Gets the current weird sampling duration."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:33
+msgid ":zeek:id:`Reporter::get_weird_sampling_global_list`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:33
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:159
+msgid "Gets the weird sampling global list"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:34
+msgid ":zeek:id:`Reporter::get_weird_sampling_rate`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:34
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:168
+msgid "Gets the current weird sampling rate."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:35
+msgid ":zeek:id:`Reporter::get_weird_sampling_threshold`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:35
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:177
+msgid "Gets the current weird sampling threshold"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:36
+msgid ":zeek:id:`Reporter::get_weird_sampling_whitelist`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:36
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:186
+msgid "Gets the weird sampling whitelist"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:37
+msgid ":zeek:id:`Reporter::info`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:37
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:195
+msgid "Generates an informational message."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:38
+msgid ":zeek:id:`Reporter::net_weird`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:38
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:209
+msgid "Generates a \"net\" weird."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:39
+msgid ":zeek:id:`Reporter::set_weird_sampling_duration`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:39
+msgid "Sets the current weird sampling duration."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:40
+msgid ":zeek:id:`Reporter::set_weird_sampling_global_list`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:40
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:234
+msgid "Sets the weird sampling global list"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:41
+msgid ":zeek:id:`Reporter::set_weird_sampling_rate`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:41
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:246
+msgid "Sets the weird sampling rate."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:42
+msgid ":zeek:id:`Reporter::set_weird_sampling_threshold`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:42
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:258
+msgid "Sets the current weird sampling threshold"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:43
+msgid ":zeek:id:`Reporter::set_weird_sampling_whitelist`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:43
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:270
+msgid "Sets the weird sampling whitelist"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:44
+msgid ":zeek:id:`Reporter::warning`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:44
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:282
+msgid "Generates a message that warns of a potential problem."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:49
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:54
+msgid ""
+":zeek:type:`function` (name: :zeek:type:`string`, c: "
+":zeek:type:`connection`, addl: :zeek:type:`string` :zeek:attr:`&default` "
+"= ``\"\"`` :zeek:attr:`&optional`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst
+msgid "name"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:59
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:117
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:135
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:212
+msgid "the name of the weird."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:62
+msgid "the connection associated with the weird."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst
+msgid "addl"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:65
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:123
+msgid "additional information to accompany the weird."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:68
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:81
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:95
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:108
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:144
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:201
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:215
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:240
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:276
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:288
+msgid "Always true."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:72
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:87
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:99
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:193
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:280
+msgid ":zeek:type:`function` (msg: :zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:74
+msgid ""
+"Generates a non-fatal error indicative of a definite problem that should "
+"be addressed. Program execution does not terminate."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst
+msgid "msg"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:78
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:92
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:105
+msgid "The error message to report."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:112
+msgid ""
+":zeek:type:`function` (name: :zeek:type:`string`, f: "
+":zeek:type:`fa_file`, addl: :zeek:type:`string` :zeek:attr:`&default` = "
+"``\"\"`` :zeek:attr:`&optional`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst
+msgid "f"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:120
+msgid "the file associated with the weird."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:126
+msgid "true if the file was still valid, else false."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:130
+msgid ""
+":zeek:type:`function` (name: :zeek:type:`string`, orig: "
+":zeek:type:`addr`, resp: :zeek:type:`addr`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst
+msgid "orig"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:138
+msgid "the originator host associated with the weird."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst
+msgid "resp"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:141
+msgid "the responder host associated with the weird."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:148
+msgid ":zeek:type:`function` () : :zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:153
+msgid "weird sampling duration."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:157
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:184
+msgid ":zeek:type:`function` () : :zeek:type:`string_set`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:162
+msgid "Current weird sampling global list"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:166
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:175
+msgid ":zeek:type:`function` () : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:171
+msgid "weird sampling rate."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:180
+msgid "current weird sampling threshold."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:189
+msgid "Current weird sampling whitelist"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:198
+msgid "The informational message to report."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:207
+msgid ":zeek:type:`function` (name: :zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:219
+msgid ""
+":zeek:type:`function` (weird_sampling_duration: :zeek:type:`interval`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:221
+msgid ""
+"Sets the current weird sampling duration. Please note that this will not "
+"delete already running timers."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst
+msgid "weird_sampling_duration"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:225
+msgid "New weird sampling duration."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:228
+msgid "always returns True"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:232
+msgid ""
+":zeek:type:`function` (weird_sampling_global_list: "
+":zeek:type:`string_set`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst
+msgid "global_list"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:237
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:249
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:273
+msgid "New weird sampling rate."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:244
+msgid ""
+":zeek:type:`function` (weird_sampling_rate: :zeek:type:`count`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst
+msgid "weird_sampling_rate"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:252
+msgid "Always returns true."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:256
+msgid ""
+":zeek:type:`function` (weird_sampling_threshold: :zeek:type:`count`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst
+msgid "threshold"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:261
+msgid "New weird sampling threshold."
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:264
+msgid "Always returns true;"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:268
+msgid ""
+":zeek:type:`function` (weird_sampling_whitelist: :zeek:type:`string_set`)"
+" : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst
+msgid "whitelist"
+msgstr ""
+
+#: ../../scripts/base/bif/reporter.bif.zeek.rst:285
+msgid "The warning message to report."
+msgstr ""
+

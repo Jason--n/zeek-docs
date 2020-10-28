@@ -1,0 +1,660 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:4
+msgid "policy/frameworks/netcontrol/catch-and-release.zeek"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:7
+msgid "Implementation of catch-and-release functionality for NetControl."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:9
+msgid "NetControl"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:10
+msgid ""
+":doc:`base/frameworks/cluster </scripts/base/frameworks/cluster/index>`, "
+":doc:`base/frameworks/netcontrol "
+"</scripts/base/frameworks/netcontrol/index>`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:15
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:83
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:17
+msgid ""
+":zeek:id:`NetControl::catch_release_warn_blocked_ip_encountered`: "
+":zeek:type:`bool` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:17
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:90
+msgid ""
+"If true, catch and release warns if packets of an IP address are still "
+"seen after it should have been blocked."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:22
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:94
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:24
+msgid ""
+":zeek:id:`NetControl::catch_release_intervals`: :zeek:type:`vector` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:24
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:106
+msgid "Time intervals for which subsequent drops of the same IP take effect."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:26
+msgid ""
+":zeek:id:`NetControl::watch_connections`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:26
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:115
+msgid ""
+"If true, catch_release_seen is called on the connection originator in "
+"new_connection, connection_established, partial_connection, "
+"connection_attempt, connection_rejected, connection_reset and "
+"connection_pending"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:32
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:120
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:34
+msgid ":zeek:type:`NetControl::BlockInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:34
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:143
+msgid ""
+"This record is used for storing information about current blocks that are"
+" part of catch and release."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:36
+msgid ":zeek:type:`NetControl::CatchReleaseActions`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:36
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:180
+msgid ""
+"The enum that contains the different kinds of messages that are logged by"
+" catch and release."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:38
+msgid ":zeek:type:`NetControl::CatchReleaseInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:38
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:220
+msgid "The record type that is used for representing and logging"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:42
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:44
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:46
+msgid ":zeek:enum:`NetControl::CATCH_RELEASE`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:50
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:223
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:52
+msgid ":zeek:id:`NetControl::catch_release_add`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:53
+msgid ":zeek:id:`NetControl::catch_release_block_delete`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:54
+msgid ":zeek:id:`NetControl::catch_release_block_new`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:55
+msgid ":zeek:id:`NetControl::catch_release_delete`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:56
+msgid ":zeek:id:`NetControl::catch_release_encountered`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:57
+msgid ":zeek:id:`NetControl::catch_release_forgotten`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:57
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:253
+msgid ""
+"Event is raised when catch and release cases management of an IP address "
+"because no activity was seen within the watch_until period."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:59
+msgid ":zeek:id:`NetControl::log_netcontrol_catch_release`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:59
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:266
+msgid ""
+"Event that can be handled to access the "
+":zeek:type:`NetControl::CatchReleaseInfo` record as it is sent on to the "
+"logging framework."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:64
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:270
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:66
+msgid ""
+":zeek:id:`NetControl::log_policy_catch_release`: "
+":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:70
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:277
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:72
+msgid ":zeek:id:`NetControl::catch_release_seen`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:72
+msgid ""
+"This function can be called to notify the catch and release script that "
+"activity by an IP address was seen."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:74
+msgid ":zeek:id:`NetControl::drop_address_catch_release`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:74
+msgid "Stops all packets involving an IP address from being forwarded."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:75
+msgid ":zeek:id:`NetControl::get_catch_release_info`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:75
+msgid ""
+"Get the :zeek:see:`NetControl::BlockInfo` record for an address currently"
+" blocked by catch and release."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:76
+msgid ""
+":zeek:id:`NetControl::unblock_address_catch_release`: "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:76
+msgid "Removes an address from being watched with catch and release."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:81
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:86
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:111
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:87
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:98
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:112
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:88
+msgid "``F``"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:97
+msgid ":zeek:type:`vector` of :zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:113
+msgid "``T``"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:123
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:185
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:126
+msgid "block_until: :zeek:type:`time` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:126
+msgid "Absolute time indicating until when a block is inserted using NetControl."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:129
+msgid "watch_until: :zeek:type:`time`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:129
+msgid ""
+"Absolute time indicating until when an IP address is watched to reblock "
+"it."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:132
+msgid ""
+"num_reblocked: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:132
+msgid "Number of times an IP address was reblocked."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:135
+msgid "current_interval: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:135
+msgid "Number indicating at which catch and release interval we currently are."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:138
+msgid "current_block_id: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:138
+msgid "ID of the inserted block, if any."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:141
+msgid "location: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:141
+msgid "User specified string."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:148
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:152
+msgid "Log lines marked with info are purely informational; no action was taken."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:156
+msgid ""
+"A rule for the specified IP address already existed in NetControl "
+"(outside of catch-and-release). Catch and release did not add a new rule,"
+" but is now watching the IP address and will add a new rule after the "
+"current rule expires."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:162
+msgid "A drop was requested by catch and release."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:166
+msgid "An address was successfully blocked by catch and release."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:170
+msgid "An address was unblocked after the timeout expired."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:174
+msgid ""
+"An address was forgotten because it did not reappear within the "
+"`watch_until` interval."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:178
+msgid "A watched IP address was seen again; catch and release will re-block it."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:188
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:188
+msgid "The absolute time indicating when the action for this log-line occured."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:191
+msgid "rule_id: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:191
+msgid "The rule id that this log line refers to."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:194
+msgid "ip: :zeek:type:`addr` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:194
+msgid "The IP address that this line refers to."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:197
+msgid "action: :zeek:type:`NetControl::CatchReleaseActions` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:197
+msgid "The action that was taken in this log-line."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:200
+msgid ""
+"block_interval: :zeek:type:`interval` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:200
+msgid "The current block_interaval (for how long the address is blocked)."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:203
+msgid ""
+"watch_interval: :zeek:type:`interval` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:203
+msgid ""
+"The current watch_interval (for how long the address will be watched and "
+"re-block if it reappears)."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:206
+msgid "blocked_until: :zeek:type:`time` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:206
+msgid "The absolute time until which the address is blocked."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:209
+msgid "watched_until: :zeek:type:`time` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:209
+msgid "The absolute time until which the address will be monitored."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:212
+msgid "num_blocked: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:212
+msgid "Number of times that this address was blocked in the current cycle."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:215
+msgid "location: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:215
+msgid "The user specified location string."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:218
+msgid "message: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:218
+msgid ""
+"Additional informational string by the catch and release framework about "
+"this log-line."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:226
+msgid ":zeek:type:`event` (a: :zeek:type:`addr`, location: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:231
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:246
+msgid ":zeek:type:`event` (a: :zeek:type:`addr`)"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:236
+msgid ""
+":zeek:type:`event` (a: :zeek:type:`addr`, b: "
+":zeek:type:`NetControl::BlockInfo`)"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:241
+msgid ":zeek:type:`event` (a: :zeek:type:`addr`, reason: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:251
+msgid ""
+":zeek:type:`event` (a: :zeek:type:`addr`, bi: "
+":zeek:type:`NetControl::BlockInfo`)"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst
+msgid "a"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:257
+msgid "The address that is no longer being managed."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst
+msgid "bi"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:260
+msgid ""
+"The :zeek:see:`NetControl::BlockInfo` record containing information about"
+" the block."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:264
+msgid ":zeek:type:`event` (rec: :zeek:type:`NetControl::CatchReleaseInfo`)"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:273
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:280
+msgid ":zeek:type:`function` (a: :zeek:type:`addr`) : :zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:282
+msgid ""
+"This function can be called to notify the catch and release script that "
+"activity by an IP address was seen. If the respective IP address is "
+"currently monitored by catch and release and not blocked, the block will "
+"be reinstated. See the documentation of watch_new_connection which events"
+" the catch and release functionality usually monitors for activity."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:288
+msgid "The address that was seen and should be re-dropped if it is being watched."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:292
+msgid ""
+":zeek:type:`function` (a: :zeek:type:`addr`, location: "
+":zeek:type:`string` :zeek:attr:`&default` = ``\"\"`` "
+":zeek:attr:`&optional`) : :zeek:type:`NetControl::BlockInfo`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:294
+msgid ""
+"Stops all packets involving an IP address from being forwarded. This "
+"function uses catch-and-release functionality, where the IP address is "
+"only dropped for a short amount of time that is incremented steadily when"
+" the IP is encountered again."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:299
+msgid ""
+"In cluster mode, this function works on workers as well as the manager. "
+"On managers, the returned :zeek:see:`NetControl::BlockInfo` record will "
+"not contain the block ID, which will be assigned on the manager."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:304
+msgid "The address to be dropped."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst
+msgid "t"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:307
+msgid "How long to drop it, with 0 being indefinitely."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst
+msgid "location"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:310
+msgid "An optional string describing where the drop was triggered."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:313
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:331
+msgid ""
+"The :zeek:see:`NetControl::BlockInfo` record containing information about"
+" the inserted block."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:318
+msgid ""
+":zeek:type:`function` (a: :zeek:type:`addr`) : "
+":zeek:type:`NetControl::BlockInfo`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:320
+msgid ""
+"Get the :zeek:see:`NetControl::BlockInfo` record for an address currently"
+" blocked by catch and release. If the address is unknown to catch and "
+"release, the watch_until time will be set to 0."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:323
+msgid ""
+"In cluster mode, this function works on the manager and workers. On "
+"workers, the data will lag slightly behind the manager; if you add a "
+"block, it will not be instantly available via this function."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:328
+msgid "The address to get information about."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:336
+msgid ""
+":zeek:type:`function` (a: :zeek:type:`addr`, reason: :zeek:type:`string` "
+":zeek:attr:`&default` = ``\"\"`` :zeek:attr:`&optional`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:338
+msgid ""
+"Removes an address from being watched with catch and release. Returns "
+"true if the address was found and removed; returns false if it was "
+"unknown to catch and release."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:341
+msgid ""
+"If the address is currently blocked, and the block was inserted by catch "
+"and release, the block is removed."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:345
+msgid "The address to be unblocked."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst
+msgid "reason"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:348
+msgid "A reason for the unblock."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/netcontrol/catch-and-release.zeek.rst:351
+msgid "True if the address was unblocked."
+msgstr ""
+

@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:4
+msgid "base/frameworks/logging/writers/sqlite.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:7
+msgid ""
+"Interface for the SQLite log writer. Redefinable options are available to"
+" tweak the output format of the SQLite reader."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:10
+msgid ""
+"See :doc:`/frameworks/logging-input-sqlite` for an introduction on how to"
+" use the SQLite log writer."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:13
+msgid ""
+"The SQL writer currently supports one writer-specific filter option via "
+"``config``: setting ``tablename`` sets the name of the table that is used"
+" or created in the SQLite database. An example for this is given in the "
+"introduction mentioned above."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:18
+msgid "LogSQLite"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:21
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:23
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:34
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:25
+msgid ":zeek:id:`LogSQLite::empty_field`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:25
+msgid "String to use for empty fields."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:26
+msgid ""
+":zeek:id:`LogSQLite::set_separator`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:26
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:50
+msgid "Separator between set elements."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:27
+msgid ":zeek:id:`LogSQLite::unset_field`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:27
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:58
+msgid "String to use for an unset &optional field."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:32
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:37
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:46
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:54
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:38
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:47
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:55
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:39
+msgid "``\"(empty)\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:41
+msgid ""
+"String to use for empty fields. This should be different from "
+"*unset_field* to make the output unambiguous."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:48
+msgid "``\",\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/sqlite.zeek.rst:56
+msgid "``\"-\"``"
+msgstr ""
+

@@ -1,0 +1,187 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:4
+msgid "base/protocols/modbus/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:7
+msgid "Base Modbus analysis script."
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:9
+msgid "Modbus"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:10
+msgid ""
+":doc:`base/protocols/modbus/consts.zeek "
+"</scripts/base/protocols/modbus/consts.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:15
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:51
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:17
+msgid ":zeek:type:`Modbus::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:21
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:23
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:25
+msgid ":zeek:enum:`Modbus::LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:26
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:28
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:30
+msgid "modbus: :zeek:type:`Modbus::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:31
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:35
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:77
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:37
+msgid ":zeek:id:`Modbus::log_modbus`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:37
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:82
+msgid ""
+"Event that can be handled to access the Modbus record as it is sent on to"
+" the logging framework."
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:42
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:86
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:44
+msgid ":zeek:id:`Modbus::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:49
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:54
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:57
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:57
+msgid "Time of the request."
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:60
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:60
+msgid "Unique identifier for the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:63
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:63
+msgid "Identifier for the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:66
+msgid "func: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:66
+msgid "The name of the function message that was sent."
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:69
+msgid "exception: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:69
+msgid "The exception if the response was a failure."
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:71
+msgid ""
+"track_address: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:72
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/modbus/track-memmap.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:80
+msgid ":zeek:type:`event` (rec: :zeek:type:`Modbus::Info`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/modbus/main.zeek.rst:89
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

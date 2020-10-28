@@ -1,0 +1,646 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_Login.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:41
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:15
+msgid ":zeek:id:`activating_encryption`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:15
+msgid "Generated for Telnet sessions when encryption is activated."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:16
+msgid ":zeek:id:`authentication_accepted`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:16
+msgid "Generated when a Telnet authentication has been successful."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:17
+msgid ":zeek:id:`authentication_rejected`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:17
+msgid "Generated when a Telnet authentication has been unsuccessful."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:18
+msgid ":zeek:id:`authentication_skipped`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:18
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:124
+msgid ""
+"Generated for Telnet/Rlogin sessions when a pattern match indicates that "
+"no authentication is performed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:20
+msgid ":zeek:id:`bad_option`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:20
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:152
+msgid "Generated for an ill-formed or unrecognized Telnet option."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:21
+msgid ":zeek:id:`bad_option_termination`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:21
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:175
+msgid "Generated for a Telnet option that's incorrectly terminated."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:22
+msgid ":zeek:id:`inconsistent_option`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:22
+msgid "Generated for an inconsistent Telnet option."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:23
+msgid ":zeek:id:`login_confused`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:23
+msgid "Generated when tracking of Telnet/Rlogin authentication failed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:24
+msgid ":zeek:id:`login_confused_text`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:24
+msgid ""
+"Generated after getting confused while tracking a Telnet/Rlogin "
+"authentication dialog."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:26
+msgid ":zeek:id:`login_display`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:26
+msgid "Generated for clients transmitting an X11 DISPLAY in a Telnet session."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:27
+msgid ":zeek:id:`login_failure`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:27
+msgid "Generated for Telnet/Rlogin login failures."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:28
+msgid ":zeek:id:`login_input_line`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:28
+msgid "Generated for lines of input on Telnet/Rlogin sessions."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:29
+msgid ":zeek:id:`login_output_line`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:29
+msgid "Generated for lines of output on Telnet/Rlogin sessions."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:30
+msgid ":zeek:id:`login_prompt`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:30
+msgid "Generated for clients transmitting a terminal prompt in a Telnet session."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:31
+msgid ":zeek:id:`login_success`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:31
+msgid "Generated for successful Telnet/Rlogin logins."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:32
+msgid ":zeek:id:`login_terminal`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:32
+msgid "Generated for clients transmitting a terminal type in a Telnet session."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:33
+msgid ":zeek:id:`rsh_reply`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:33
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:34
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:480
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:514
+msgid "Generated for client side commands on an RSH connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:34
+msgid ":zeek:id:`rsh_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:39
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:44
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:122
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:150
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:173
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:196
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:46
+msgid ""
+"Generated for Telnet sessions when encryption is activated. The Telnet "
+"protocol includes options for negotiating encryption. When such a series "
+"of options is successfully negotiated, the event engine generates this "
+"event."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:50
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:69
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:99
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:127
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:154
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:177
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:206
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:393
+msgid ""
+"See `Wikipedia <http://en.wikipedia.org/wiki/Telnet>`__ for more "
+"information about the Telnet protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:54
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:76
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:106
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:131
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:158
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:181
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:210
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:227
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:260
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:284
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:308
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:349
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:371
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:397
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:421
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:462
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:485
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:519
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:62
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:92
+msgid ":zeek:type:`event` (name: :zeek:type:`string`, c: :zeek:type:`connection`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:64
+msgid ""
+"Generated when a Telnet authentication has been successful. The Telnet "
+"protocol includes options for negotiating authentication. When such an "
+"option is sent from client to server and the server replies that it "
+"accepts the authentication, then the event engine generates this event."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst
+msgid "name"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:73
+msgid "The authenticated name."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:80
+msgid ""
+"This event inspects the corresponding Telnet option while "
+":zeek:id:`login_success` heuristically determines success by watching "
+"session data."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:84
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:114
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:142
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:165
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:188
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:244
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:270
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:292
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:335
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:357
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:379
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:405
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:448
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:470
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:505
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:542
+msgid "Todo"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:84
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:114
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:142
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:165
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:188
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:244
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:270
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:292
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:357
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:379
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:405
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:448
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:470
+msgid ""
+"Zeek's current default configuration does not activate the protocol "
+"analyzer that generates this event; the corresponding script has not yet "
+"been ported. To still enable this event, one needs to add a call to "
+":zeek:see:`Analyzer::register_for_ports` or a DPD payload signature."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:94
+msgid ""
+"Generated when a Telnet authentication has been unsuccessful. The Telnet "
+"protocol includes options for negotiating authentication. When such an "
+"option is sent from client to server and the server replies that it did "
+"not accept the authentication, then the event engine generates this "
+"event."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:103
+msgid "The attempted authentication name."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:110
+msgid ""
+"This event inspects the corresponding Telnet option while "
+":zeek:id:`login_success` heuristically determines failure by watching "
+"session data."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:137
+msgid ""
+"The login analyzer depends on a set of script-level variables that need "
+"to be configured with patterns identifying activity. This configuration "
+"has not yet been ported, and the analyzer is therefore not directly "
+"usable at the moment."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:198
+msgid ""
+"Generated for an inconsistent Telnet option. Telnet options are specified"
+" by the client and server stating which options they are willing to "
+"support vs. which they are not, and then instructing one another which in"
+" fact they should or should not use for the current connection. If the "
+"event engine sees a peer violate either what the other peer has "
+"instructed it to do, or what it itself offered in terms of options in the"
+" past, then the engine generates this event."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:219
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, msg: :zeek:type:`string`,"
+" line: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:221
+msgid ""
+"Generated when tracking of Telnet/Rlogin authentication failed. As Zeek's"
+" *login* analyzer uses a number of heuristics to extract authentication "
+"information, it may become confused. If it can no longer correctly track "
+"the authentication dialog, it raises this event."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst
+msgid "msg"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:230
+msgid ""
+"Gives the particular problem the heuristics detected (for example, "
+"``multiple_login_prompts`` means that the engine saw several login "
+"prompts in a row, without the type-ahead from the client side presumed "
+"necessary to cause them)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst
+msgid "line"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:236
+msgid ""
+"The line of text that caused the heuristics to conclude they were "
+"confused."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:252
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:343
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:365
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`, line: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:254
+msgid ""
+"Generated after getting confused while tracking a Telnet/Rlogin "
+"authentication dialog. The *login* analyzer generates this even for every"
+" line of user input after it has reported :zeek:id:`login_confused` for a"
+" connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:263
+msgid "The line the user typed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:278
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, display: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:280
+msgid ""
+"Generated for clients transmitting an X11 DISPLAY in a Telnet session. "
+"This information is extracted out of environment variables sent as Telnet"
+" options."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst
+msgid "display"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:287
+msgid "The DISPLAY transmitted."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:300
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:413
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, user: "
+":zeek:type:`string`, client_user: :zeek:type:`string`, password: "
+":zeek:type:`string`, line: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:302
+msgid ""
+"Generated for Telnet/Rlogin login failures. The *login* analyzer inspects"
+" Telnet/Rlogin sessions to heuristically extract username and password "
+"information as well as the text returned by the login server. This event "
+"is raised if a login attempt appears to have been unsuccessful."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst
+msgid "user"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:311
+msgid "The user name tried."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst
+msgid "client_user"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:314
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:427
+msgid ""
+"For Telnet connections, this is an empty string, but for Rlogin "
+"connections, it is the client name passed in the initial authentication "
+"information (to check against .rhosts)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst
+msgid "password"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:319
+msgid "The password tried."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:322
+msgid ""
+"The line of text that led the analyzer to conclude that the "
+"authentication had failed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:330
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:443
+msgid ""
+"The login analyzer depends on a set of script-level variables that need "
+"to be configured with patterns identifying login attempts. This "
+"configuration has not yet been ported, and the analyzer is therefore not "
+"directly usable at the moment."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:335
+msgid ""
+"Zeeks's current default configuration does not activate the protocol "
+"analyzer that generates this event; the corresponding script has not yet "
+"been ported. To still enable this event, one needs to add a call to "
+":zeek:see:`Analyzer::register_for_ports` or a DPD payload signature."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:345
+msgid ""
+"Generated for lines of input on Telnet/Rlogin sessions. The line will "
+"have control characters (such as in-band Telnet options) removed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:352
+msgid "The input line."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:367
+msgid ""
+"Generated for lines of output on Telnet/Rlogin sessions. The line will "
+"have control characters (such as in-band Telnet options) removed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:374
+msgid "The ouput line."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:387
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, prompt: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:389
+msgid ""
+"Generated for clients transmitting a terminal prompt in a Telnet session."
+" This information is extracted out of environment variables sent as "
+"Telnet options."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst
+msgid "prompt"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:400
+msgid "The TTYPROMPT transmitted."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:415
+msgid ""
+"Generated for successful Telnet/Rlogin logins. The *login* analyzer "
+"inspects Telnet/Rlogin sessions to heuristically extract username and "
+"password information as well as the text returned by the login server. "
+"This event is raised if a login attempt appears to have been successful."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:424
+msgid "The user name used."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:432
+msgid "The password used."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:435
+msgid ""
+"The line of text that led the analyzer to conclude that the "
+"authentication had succeeded."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:456
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, terminal: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:458
+msgid ""
+"Generated for clients transmitting a terminal type in a Telnet session.  "
+"This information is extracted out of environment variables sent as Telnet"
+" options."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst
+msgid "terminal"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:465
+msgid "The TERM value transmitted."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:478
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, client_user: "
+":zeek:type:`string`, server_user: :zeek:type:`string`, line: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:482
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:516
+msgid "See :rfc:`1258` for more information about the Rlogin/Rsh protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:488
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:522
+msgid "The client-side user name as sent in the initial protocol handshake."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst
+msgid "server_user"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:492
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:526
+msgid "The server-side user name as sent in the initial protocol handshake."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:496
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:530
+msgid "The command line sent in the request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:502
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:539
+msgid ""
+"For historical reasons, these events are separate from the ``login_`` "
+"events. Ideally, they would all be handled uniquely."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:505
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:542
+msgid ""
+"Zeek's current default configuration does not activate the protocol "
+"analyzer that generates this event; the corresponding script has not yet "
+"been ported. To still enable this event, one needs to register a port for"
+" it or add a DPD payload signature."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:512
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, client_user: "
+":zeek:type:`string`, server_user: :zeek:type:`string`, line: "
+":zeek:type:`string`, new_session: :zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst
+msgid "new_session"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Login.events.bif.zeek.rst:533
+msgid "True if this is the first command of the Rsh session."
+msgstr ""
+

@@ -1,0 +1,317 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:4
+msgid "base/frameworks/netcontrol/plugins/acld.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:7
+msgid "Acld plugin for the netcontrol framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:9
+msgid "NetControl"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:10
+msgid ""
+":doc:`base/frameworks/broker </scripts/base/frameworks/broker/index>`, "
+":doc:`base/frameworks/netcontrol/main.zeek "
+"</scripts/base/frameworks/netcontrol/main.zeek>`, "
+":doc:`base/frameworks/netcontrol/plugin.zeek "
+"</scripts/base/frameworks/netcontrol/plugin.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:15
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:61
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:17
+msgid ":zeek:type:`NetControl::AclRule`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:18
+msgid ":zeek:type:`NetControl::AcldConfig`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:22
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:24
+msgid ":zeek:type:`NetControl::PluginState`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:26
+msgid ":zeek:type:`NetControl::PluginState`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:28
+msgid "acld_config: :zeek:type:`NetControl::AcldConfig` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:30
+msgid "acld_id: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:31
+msgid "The ID of this acld instance - for the mapping to PluginStates."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:35
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:108
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:37
+msgid ":zeek:id:`NetControl::acld_add_rule`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:37
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:113
+msgid "Events that are sent from us to Broker."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:38
+msgid ":zeek:id:`NetControl::acld_remove_rule`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:39
+msgid ":zeek:id:`NetControl::acld_rule_added`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:39
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:124
+msgid "Events that are sent from Broker to us."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:40
+msgid ":zeek:id:`NetControl::acld_rule_error`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:41
+msgid ":zeek:id:`NetControl::acld_rule_exists`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:42
+msgid ":zeek:id:`NetControl::acld_rule_removed`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:46
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:142
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:48
+msgid ":zeek:id:`NetControl::acld_rule_policy`: :zeek:type:`hook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:48
+msgid "Hook that is called after a rule is converted to an acld rule."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:52
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:162
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:54
+msgid ":zeek:id:`NetControl::create_acld`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:54
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:167
+msgid "Instantiates the acld plugin."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:59
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:64
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:77
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:66
+msgid "command: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:68
+msgid "cookie: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:70
+msgid "arg: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:72
+msgid "comment: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:80
+msgid "acld_topic: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:80
+msgid "The acld topic to send events to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:83
+msgid "acld_host: :zeek:type:`addr`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:83
+msgid "Broker host to connect to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:86
+msgid "acld_port: :zeek:type:`port`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:86
+msgid "Broker port to connect to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:89
+msgid ""
+"monitor: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:89
+msgid "Do we accept rules for the monitor path? Default false."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:92
+msgid ""
+"forward: :zeek:type:`bool` :zeek:attr:`&default` = ``T`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:92
+msgid "Do we accept rules for the forward path? Default true."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:103
+msgid ""
+"check_pred: :zeek:type:`function` (p: "
+":zeek:type:`NetControl::PluginState`, r: :zeek:type:`NetControl::Rule`) :"
+" :zeek:type:`bool` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:102
+msgid "bool &optional"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:95
+msgid "Predicate that is called on rule insertion or removal."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst
+msgid "p"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:98
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:153
+msgid "Current plugin state."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst
+msgid "r"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:101
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:156
+msgid "The rule to be inserted or removed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:104
+msgid "T if the rule can be handled by the current backend, F otherwise."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:111
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:117
+msgid ""
+":zeek:type:`event` (id: :zeek:type:`count`, r: "
+":zeek:type:`NetControl::Rule`, ar: :zeek:type:`NetControl::AclRule`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:122
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:128
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:133
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:138
+msgid ""
+":zeek:type:`event` (id: :zeek:type:`count`, r: "
+":zeek:type:`NetControl::Rule`, msg: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:145
+msgid ""
+":zeek:type:`hook` (p: :zeek:type:`NetControl::PluginState`, r: "
+":zeek:type:`NetControl::Rule`, ar: :zeek:type:`NetControl::AclRule`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:147
+msgid ""
+"Hook that is called after a rule is converted to an acld rule. The hook "
+"may modify the rule before it is sent to acld. Setting the acld command "
+"to F will cause the rule to be rejected by the plugin."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst
+msgid "ar"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:159
+msgid "The acld rule to be inserted or removed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/acld.zeek.rst:165
+msgid ""
+":zeek:type:`function` (config: :zeek:type:`NetControl::AcldConfig`) : "
+":zeek:type:`NetControl::PluginState`"
+msgstr ""
+

@@ -1,0 +1,194 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_PE.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:26
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:15
+msgid ":zeek:id:`pe_dos_code`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:15
+msgid "A :abbr:`PE (Portable Executable)` file DOS stub was parsed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:16
+msgid ":zeek:id:`pe_dos_header`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:16
+msgid "A :abbr:`PE (Portable Executable)` file DOS header was parsed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:17
+msgid ":zeek:id:`pe_file_header`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:17
+msgid "A :abbr:`PE (Portable Executable)` file file header was parsed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:18
+msgid ":zeek:id:`pe_optional_header`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:18
+msgid "A :abbr:`PE (Portable Executable)` file optional header was parsed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:19
+msgid ":zeek:id:`pe_section_header`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:19
+msgid "A :abbr:`PE (Portable Executable)` file section header was parsed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:24
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:29
+msgid ":zeek:type:`event` (f: :zeek:type:`fa_file`, code: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:31
+msgid ""
+"A :abbr:`PE (Portable Executable)` file DOS stub was parsed. The stub is "
+"a valid application that runs under MS-DOS, by default to inform the user"
+" that the program can't be run in DOS mode."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst
+msgid "f"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:36
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:52
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:69
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:87
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:103
+msgid "The file."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst
+msgid "code"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:39
+msgid "The DOS stub"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:45
+msgid ""
+":zeek:type:`event` (f: :zeek:type:`fa_file`, h: "
+":zeek:type:`PE::DOSHeader`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:47
+msgid ""
+"A :abbr:`PE (Portable Executable)` file DOS header was parsed. This is "
+"the top-level header and contains information like the size of the file, "
+"initial value of registers, etc."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst
+msgid "h"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:55
+msgid "The parsed DOS header information."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:61
+msgid ""
+":zeek:type:`event` (f: :zeek:type:`fa_file`, h: "
+":zeek:type:`PE::FileHeader`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:63
+msgid ""
+"A :abbr:`PE (Portable Executable)` file file header was parsed. This "
+"header contains information like the target machine, the timestamp when "
+"the file was created, the number of sections, and pointers to other parts"
+" of the file."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:72
+msgid "The parsed file header information."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:78
+msgid ""
+":zeek:type:`event` (f: :zeek:type:`fa_file`, h: "
+":zeek:type:`PE::OptionalHeader`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:80
+msgid ""
+"A :abbr:`PE (Portable Executable)` file optional header was parsed. This "
+"header is required for executable files, but not for object files. It "
+"contains information like OS requirements to execute the file, the "
+"original entry point address, and information needed to load the file "
+"into memory."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:90
+msgid "The parsed optional header information."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:96
+msgid ""
+":zeek:type:`event` (f: :zeek:type:`fa_file`, h: "
+":zeek:type:`PE::SectionHeader`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:98
+msgid ""
+"A :abbr:`PE (Portable Executable)` file section header was parsed. This "
+"header contains information like the section name, size, address, and "
+"characteristics."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_PE.events.bif.zeek.rst:106
+msgid "The parsed section header information."
+msgstr ""
+

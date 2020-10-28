@@ -1,0 +1,487 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_SSH.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:47
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:15
+msgid ":zeek:id:`ssh1_server_host_key`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:25
+msgid ""
+"During the :abbr:`SSH (Secure Shell)` key exchange, the server supplies "
+"its public host key."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:17
+msgid ":zeek:id:`ssh2_dh_server_params`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:17
+msgid ""
+"Generated if the connection uses a Diffie-Hellman Group Exchange key "
+"exchange method."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:19
+msgid ":zeek:id:`ssh2_ecc_key`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:19
+msgid ""
+"The :abbr:`ECDH (Elliptic Curve Diffie-Hellman)` and :abbr:`ECMQV "
+"(Elliptic Curve Menezes-Qu-Vanstone)` key exchange algorithms use two "
+"ephemeral key pairs to generate a shared secret."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:23
+msgid ":zeek:id:`ssh2_gss_error`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:23
+msgid ""
+"In the event of a GSS-API error on the server, the server MAY send send "
+"an error message with some additional details."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:25
+msgid ":zeek:id:`ssh2_server_host_key`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:27
+msgid ":zeek:id:`ssh_auth_attempted`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:27
+msgid ""
+"This event is generated when an :abbr:`SSH (Secure Shell)` connection was"
+" determined to have had an authentication attempt."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:29
+msgid ":zeek:id:`ssh_auth_successful`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:29
+msgid ""
+"This event is generated when an :abbr:`SSH (Secure Shell)` connection was"
+" determined to have had a successful authentication."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:32
+msgid ":zeek:id:`ssh_capabilities`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:32
+msgid ""
+"During the initial :abbr:`SSH (Secure Shell)` key exchange, each endpoint"
+" lists the algorithms that it supports, in order of preference."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:35
+msgid ":zeek:id:`ssh_client_version`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:35
+msgid ""
+"An :abbr:`SSH (Secure Shell)` Protocol Version Exchange message from the "
+"client."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:37
+msgid ":zeek:id:`ssh_encrypted_packet`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:37
+msgid ""
+"This event is generated when an :abbr:`SSH (Secure Shell)` encrypted "
+"packet is seen."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:39
+msgid ":zeek:id:`ssh_server_version`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:39
+msgid ""
+"An :abbr:`SSH (Secure Shell)` Protocol Version Exchange message from the "
+"server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:45
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:50
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, p: :zeek:type:`string`, "
+"e: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:52
+msgid ""
+"During the :abbr:`SSH (Secure Shell)` key exchange, the server supplies "
+"its public host key. This event is generated when the appropriate key "
+"exchange message is seen for SSH1."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:57
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:158
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:193
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:217
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:243
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:292
+msgid ""
+"The connection over which the :abbr:`SSH (Secure Shell)` connection took "
+"place."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "p"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:61
+msgid "The prime for the server's public host key."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "e"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:64
+msgid "The exponent for the serer's public host key."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:74
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, p: :zeek:type:`string`, "
+"q: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:76
+msgid ""
+"Generated if the connection uses a Diffie-Hellman Group Exchange key "
+"exchange method. This event contains the server DH parameters, which are "
+"sent in the SSH_MSG_KEY_DH_GEX_GROUP message as defined in "
+":rfc:`4419#section-3`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:82
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:132
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:85
+msgid "The DH prime modulus."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "q"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:88
+msgid "The DH generator."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:98
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, q: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:100
+msgid ""
+"The :abbr:`ECDH (Elliptic Curve Diffie-Hellman)` and :abbr:`ECMQV "
+"(Elliptic Curve Menezes-Qu-Vanstone)` key exchange algorithms use two "
+"ephemeral key pairs to generate a shared secret. This event is generated "
+"when either the client's or server's ephemeral public key is seen. For "
+"more information, see: :rfc:`5656#section-4`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:108
+msgid "The connection"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:111
+msgid "Did this message come from the originator?"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:114
+msgid "The ephemeral public key"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:124
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, major_status: "
+":zeek:type:`count`, minor_status: :zeek:type:`count`, err_msg: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:126
+msgid ""
+"In the event of a GSS-API error on the server, the server MAY send send "
+"an error message with some additional details. This event is generated "
+"when such an error message is seen. For more information, see "
+":rfc:`4462#section-2.1`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "major_status"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:135
+msgid "GSS-API major status code."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "minor_status"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:138
+msgid "GSS-API minor status code."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "err_msg"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:141
+msgid "Detailed human-readable error message"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:151
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`, key: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:153
+msgid ""
+"During the :abbr:`SSH (Secure Shell)` key exchange, the server supplies "
+"its public host key. This event is generated when the appropriate key "
+"exchange message is seen for SSH2."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "key"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:162
+msgid ""
+"The server's public host key. Note that this is the public key itself, "
+"and not just the fingerprint or hash."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:173
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, authenticated: "
+":zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:175
+msgid ""
+"This event is generated when an :abbr:`SSH (Secure Shell)` connection was"
+" determined to have had an authentication attempt. This determination is "
+"based on packet size analysis, and errs on the side of caution - that is,"
+" if there's any doubt about whether or not an authenication attempt "
+"occured, this event is *not* raised."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:182
+msgid ""
+"At this point in the protocol, all we can determine is whether or not the"
+" user is authenticated. We don't know if the particular attempt succeeded"
+" or failed, since some servers require multiple authentications (e.g. "
+"require both a password AND a pubkey), and could return an authentication"
+" failed message which is marked as a partial success."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:189
+msgid ""
+"This event will often be raised multiple times per connection. In almost "
+"all connections, it will be raised once unless"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "authenticated"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:197
+msgid ""
+"This is true if the analyzer detected a successful connection from the "
+"authentication attempt."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:208
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, auth_method_none: "
+":zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:210
+msgid ""
+"This event is generated when an :abbr:`SSH (Secure Shell)` connection was"
+" determined to have had a successful authentication. This determination "
+"is based on packet size analysis, and errs on the side of caution - that "
+"is, if there's any doubt about the authentication success, this event is "
+"*not* raised."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "auth_method_none"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:221
+msgid ""
+"This is true if the analyzer detected a successful connection before any "
+"authentication challenge. The :abbr:`SSH (Secure Shell)` protocol "
+"provides a mechanism for unauthenticated access, which some servers "
+"support."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:234
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, cookie: "
+":zeek:type:`string`, capabilities: :zeek:type:`SSH::Capabilities`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:236
+msgid ""
+"During the initial :abbr:`SSH (Secure Shell)` key exchange, each endpoint"
+" lists the algorithms that it supports, in order of preference. This "
+"event is generated for each endpoint, when the SSH_MSG_KEXINIT message is"
+" seen. See :rfc:`4253#section-7.1` for details."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "cookie"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:247
+msgid "The SSH_MSG_KEXINIT cookie - a random value generated by the sender."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "capabilities"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:251
+msgid ""
+"The list of algorithms and languages that the sender advertises support "
+"for, in order of preference."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:262
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:311
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, version: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:264
+msgid ""
+"An :abbr:`SSH (Secure Shell)` Protocol Version Exchange message from the "
+"client. This contains an identification string that's used for version "
+"identification. See :rfc:`4253#section-4.2` for details."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:270
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:319
+msgid "The connection over which the message was sent."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "version"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:273
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:322
+msgid "The identification string"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:283
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, orig: :zeek:type:`bool`, "
+"len: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:285
+msgid ""
+"This event is generated when an :abbr:`SSH (Secure Shell)` encrypted "
+"packet is seen. This event is not handled by default, but is provided for"
+" heuristic analysis scripts. Note that you have to set "
+":zeek:id:`SSH::disable_analyzer_after_detection` to false to use this "
+"event. This carries a performance penalty."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:296
+msgid "Whether the packet was sent by the originator of the TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst
+msgid "len"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:300
+msgid ""
+"The length of the :abbr:`SSH (Secure Shell)` payload, in bytes. Note that"
+" this ignores reassembly, as this is unknown."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSH.events.bif.zeek.rst:313
+msgid ""
+"An :abbr:`SSH (Secure Shell)` Protocol Version Exchange message from the "
+"server. This contains an identification string that's used for version "
+"identification. See :rfc:`4253#section-4.2` for details."
+msgstr ""
+

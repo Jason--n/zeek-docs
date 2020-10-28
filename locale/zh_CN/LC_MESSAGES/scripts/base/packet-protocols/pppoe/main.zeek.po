@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst:4
+msgid "base/packet-protocols/pppoe/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst:8
+msgid "PacketAnalyzer::PPPOE"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst:13
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst:28
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst:15
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst:21
+msgid ""
+":zeek:id:`PacketAnalyzer::PPPOE::dispatch_map`: "
+":zeek:type:`PacketAnalyzer::DispatchMap` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst:15
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst:41
+msgid "Identifier mappings"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst:19
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst:26
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst:31
+msgid ":zeek:type:`PacketAnalyzer::DispatchMap`"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst:32
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst:33
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst
+msgid "Redefinition"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst:34
+msgid "from :doc:`/scripts/base/packet-protocols/pppoe/main.zeek`"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/pppoe/main.zeek.rst:36
+msgid "``+=``::"
+msgstr ""
+

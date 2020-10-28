@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/ssl/index.rst:4
+msgid "Package: base/protocols/ssl"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/index.rst:6
+msgid ""
+"Support for Secure Sockets Layer (SSL)/Transport Layer Security(TLS) "
+"protocol analysis."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/index.rst:8
+msgid ":doc:`/scripts/base/protocols/ssl/__load__.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/index.rst:11
+msgid ":doc:`/scripts/base/protocols/ssl/consts.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/index.rst:14
+msgid ":doc:`/scripts/base/protocols/ssl/main.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/index.rst:16
+msgid ""
+"Base SSL analysis script.  This script logs information about the SSL/TLS"
+" handshaking and encryption establishment process."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/index.rst:19
+msgid ":doc:`/scripts/base/protocols/ssl/mozilla-ca-list.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/index.rst:22
+msgid ":doc:`/scripts/base/protocols/ssl/ct-list.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/index.rst:25
+msgid ":doc:`/scripts/base/protocols/ssl/files.zeek`"
+msgstr ""
+

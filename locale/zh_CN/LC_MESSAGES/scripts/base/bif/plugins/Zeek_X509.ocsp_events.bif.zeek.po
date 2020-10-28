@@ -1,0 +1,377 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:28
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:15
+msgid ":zeek:id:`ocsp_extension`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:15
+msgid ""
+"This event is raised when an OCSP extension is encountered in an OCSP "
+"response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:16
+msgid ":zeek:id:`ocsp_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:16
+msgid "Event that is raised when encountering an OCSP request, e.g."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:17
+msgid ":zeek:id:`ocsp_request_certificate`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:17
+msgid ""
+"Event that is raised when encountering an OCSP request for a certificate,"
+" e.g."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:19
+msgid ":zeek:id:`ocsp_response_bytes`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:19
+msgid ""
+"This event is raised when encountering an OCSP response that contains "
+"response information."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:20
+msgid ":zeek:id:`ocsp_response_certificate`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:20
+msgid ""
+"This event is raised for each SingleResponse contained in an OCSP "
+"response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:21
+msgid ":zeek:id:`ocsp_response_status`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:21
+msgid "This event is raised when encountering an OCSP reply, e.g."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:26
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:31
+msgid ""
+":zeek:type:`event` (f: :zeek:type:`fa_file`, ext: "
+":zeek:type:`X509::Extension`, global_resp: :zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:33
+msgid ""
+"This event is raised when an OCSP extension is encountered in an OCSP "
+"response. See :rfc:`6960` for more details on OCSP."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "f"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:37
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:60
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:81
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:105
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:138
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:181
+msgid "The file."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "ext"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:40
+msgid "The parsed extension (same format as X.509 extensions)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "global_resp"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:43
+msgid ""
+"T if extension encountered in the global response (in ResponseData), F "
+"when encountered in a SingleResponse."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:52
+msgid ":zeek:type:`event` (f: :zeek:type:`fa_file`, version: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:54
+msgid ""
+"Event that is raised when encountering an OCSP request, e.g. in an HTTP "
+"connection. See :rfc:`6960` for more details."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:57
+msgid "This event is raised exactly once for each OCSP Request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "req"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:63
+msgid "version: the version of the OCSP request. Typically 0 (Version 1)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:71
+msgid ""
+":zeek:type:`event` (f: :zeek:type:`fa_file`, hashAlgorithm: "
+":zeek:type:`string`, issuerNameHash: :zeek:type:`string`, issuerKeyHash: "
+":zeek:type:`string`, serialNumber: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:73
+msgid ""
+"Event that is raised when encountering an OCSP request for a certificate,"
+" e.g. in an HTTP connection. See :rfc:`6960` for more details."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:76
+msgid ""
+"Note that a single OCSP request can contain requests for several "
+"certificates. Thus this event can fire several times for one OCSP "
+"request, each time requesting information for a different (or in theory "
+"even the same) certificate."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "hashAlgorithm"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:84
+msgid "The hash algorithm used for the issuerKeyHash."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "issuerKeyHash"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:87
+msgid "Hash of the issuers public key."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "serialNumber"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:90
+msgid "Serial number of the certificate for which the status is requested."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:98
+msgid ""
+":zeek:type:`event` (f: :zeek:type:`fa_file`, status: :zeek:type:`string`,"
+" version: :zeek:type:`count`, responderId: :zeek:type:`string`, "
+"producedAt: :zeek:type:`time`, signatureAlgorithm: :zeek:type:`string`, "
+"certs: :zeek:type:`x509_opaque_vector`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:100
+msgid ""
+"This event is raised when encountering an OCSP response that contains "
+"response information. An OCSP reply can be encountered, for example, in "
+"an HTTP connection or a TLS extension. See :rfc:`6960` for more details "
+"on OCSP."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "status"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:108
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:184
+msgid ""
+"The status of the OCSP response (e.g. succesful, malformedRequest, "
+"tryLater)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "version"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:111
+msgid "Version of the OCSP response (typically - for version 1)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "responderId"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:114
+msgid ""
+"The id of the OCSP responder; either a public key hash or a distinguished"
+" name."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "producedAt"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:117
+msgid "Time at which the reply was produced."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "signatureAlgorithm"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:120
+msgid "Algorithm used for the OCSP signature."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "certs"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:123
+msgid ""
+"Optional list of certificates that are sent with the OCSP response; these"
+" typically are needed to perform validation of the reply."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:132
+msgid ""
+":zeek:type:`event` (f: :zeek:type:`fa_file`, hashAlgorithm: "
+":zeek:type:`string`, issuerNameHash: :zeek:type:`string`, issuerKeyHash: "
+":zeek:type:`string`, serialNumber: :zeek:type:`string`, certStatus: "
+":zeek:type:`string`, revokeTime: :zeek:type:`time`, revokeReason: "
+":zeek:type:`string`, thisUpdate: :zeek:type:`time`, nextUpdate: "
+":zeek:type:`time`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:134
+msgid ""
+"This event is raised for each SingleResponse contained in an OCSP "
+"response. See :rfc:`6960` for more details on OCSP."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:141
+msgid "The hash algorithm used for issuerNameHash and issuerKeyHash."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "issuerNameHash"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:144
+msgid "Hash of the issuer's distinguished name."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:147
+msgid "Hash of the issuer's public key."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:150
+msgid "Serial number of the affected certificate."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "certStatus"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:153
+msgid "Status of the certificate."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "revokeTime"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:156
+msgid "Time the certificate was revoked, 0 if not revoked."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "revokeTeason"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:159
+msgid ""
+"Reason certificate was revoked; empty string if not revoked or not "
+"specified."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "thisUpdate"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:162
+msgid "Time this response was generated."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst
+msgid "nextUpdate"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:165
+msgid "Time next response will be ready; 0 if not supploed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:173
+msgid ":zeek:type:`event` (f: :zeek:type:`fa_file`, status: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:175
+msgid ""
+"This event is raised when encountering an OCSP reply, e.g. in an HTTP "
+"connection or a TLS extension. See :rfc:`6960` for more details."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek.rst:178
+msgid "This event is raised exactly once for each OCSP reply."
+msgstr ""
+

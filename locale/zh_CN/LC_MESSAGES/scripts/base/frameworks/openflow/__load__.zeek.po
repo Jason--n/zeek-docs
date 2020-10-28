@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/openflow/__load__.zeek.rst:4
+msgid "base/frameworks/openflow/__load__.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/__load__.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/__load__.zeek.rst:7
+msgid ""
+":doc:`base/frameworks/cluster </scripts/base/frameworks/cluster/index>`, "
+":doc:`base/frameworks/openflow/consts.zeek "
+"</scripts/base/frameworks/openflow/consts.zeek>`, "
+":doc:`base/frameworks/openflow/main.zeek "
+"</scripts/base/frameworks/openflow/main.zeek>`, "
+":doc:`base/frameworks/openflow/non-cluster.zeek "
+"</scripts/base/frameworks/openflow/non-cluster.zeek>`, "
+":doc:`base/frameworks/openflow/plugins "
+"</scripts/base/frameworks/openflow/plugins/index>`, "
+":doc:`base/frameworks/openflow/types.zeek "
+"</scripts/base/frameworks/openflow/types.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/__load__.zeek.rst:10
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/__load__.zeek.rst:13
+msgid "Detailed Interface"
+msgstr ""
+

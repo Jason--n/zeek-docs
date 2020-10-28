@@ -1,0 +1,898 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:4
+msgid "base/protocols/ssl/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:7
+msgid ""
+"Base SSL analysis script.  This script logs information about the SSL/TLS"
+" handshaking and encryption establishment process."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:10
+msgid "SSL"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:11
+msgid ""
+":doc:`base/frameworks/notice/weird.zeek "
+"</scripts/base/frameworks/notice/weird.zeek>`, :doc:`base/protocols/conn"
+"/removal-hooks.zeek </scripts/base/protocols/conn/removal-hooks.zeek>`, "
+":doc:`base/protocols/ssl/consts.zeek "
+"</scripts/base/protocols/ssl/consts.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:16
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:84
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:18
+msgid ":zeek:id:`SSL::ct_logs`: :zeek:type:`table` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:18
+msgid "The Certificate Transparency log bundle."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:19
+msgid ""
+":zeek:id:`SSL::disable_analyzer_after_detection`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:19
+msgid ""
+"If true, detach the SSL analyzer from the connection to prevent "
+"continuing to process encrypted traffic."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:24
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:118
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:26
+msgid ":zeek:id:`SSL::root_certs`: :zeek:type:`table` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:26
+msgid "The default root CA bundle."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:30
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:135
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:32
+msgid ":zeek:type:`SSL::CTInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:32
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:155
+msgid ""
+"The record type which contains the field for the Certificate Transparency"
+" log bundle."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:34
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:43
+msgid ":zeek:type:`SSL::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:34
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:381
+msgid "The record type which contains the fields of the SSL log."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:38
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:40
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:42
+msgid ":zeek:enum:`SSL::LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:45
+msgid ":zeek:type:`SSL::Info`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:47
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:234
+msgid ""
+"delay_tokens: :zeek:type:`set` [:zeek:type:`string`] "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:48
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:50
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:52
+msgid "ssl: :zeek:type:`SSL::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:53
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:57
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:384
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:59
+msgid ":zeek:id:`SSL::log_ssl`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:59
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:389
+msgid ""
+"Event that can be handled to access the SSL record as it is sent on to "
+"the logging framework."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:64
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:393
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:66
+msgid ":zeek:id:`SSL::finalize_ssl`: :zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:66
+msgid "SSL finalization hook."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:67
+msgid ":zeek:id:`SSL::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:68
+msgid ":zeek:id:`SSL::ssl_finishing`: :zeek:type:`hook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:72
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:415
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:74
+msgid ":zeek:id:`SSL::delay_log`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:74
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:420
+msgid ""
+"Delays an SSL record for a specific token: the record will not be logged "
+"as long as the token exists or until 15 seconds elapses."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:76
+msgid ":zeek:id:`SSL::undelay_log`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:76
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:427
+msgid ""
+"Undelays an SSL record for a previously inserted token, allowing the "
+"record to be logged."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:82
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:87
+msgid ":zeek:type:`table` [:zeek:type:`string`] of :zeek:type:`SSL::CTInfo`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:88
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:104
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:122
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:89
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:123
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst
+msgid "Redefinition"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:90
+msgid "from :doc:`/scripts/base/protocols/ssl/ct-list.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:92
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:126
+msgid "``+=``::"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:97
+msgid ""
+"The Certificate Transparency log bundle. By default, the ct-list.zeek "
+"script sets this to the current list of known logs. Entries are indexed "
+"by (binary) log-id."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:103
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:105
+msgid "``T``"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:106
+msgid "from :doc:`/scripts/policy/protocols/ssl/heartbleed.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:108
+msgid "``=``::"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:113
+msgid ""
+"If true, detach the SSL analyzer from the connection to prevent "
+"continuing to process encrypted traffic. Helps with performance "
+"(especially with large file transfers)."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:121
+msgid ":zeek:type:`table` [:zeek:type:`string`] of :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:124
+msgid "from :doc:`/scripts/base/protocols/ssl/mozilla-ca-list.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:131
+msgid ""
+"The default root CA bundle.  By default, the mozilla-ca-list.zeek script "
+"sets this to Mozilla's root CA list."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:138
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:160
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:141
+msgid "description: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:141
+msgid "Description of the Log"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:144
+msgid "operator: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:144
+msgid "Operator of the Log"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:147
+msgid "key: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:147
+msgid "Public key of the Log."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:150
+msgid "maximum_merge_delay: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:150
+msgid "Maximum merge delay of the Log"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:153
+msgid "url: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:153
+msgid "URL of the Log"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:163
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:163
+msgid "Time when the SSL connection was first detected."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:166
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:166
+msgid "Unique ID for the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:169
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:169
+msgid "The connection's 4-tuple of endpoint addresses/ports."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:172
+msgid "version_num: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:172
+msgid "Numeric SSL/TLS version that the server chose."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:175
+msgid "version: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:175
+msgid "SSL/TLS version that the server chose."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:178
+msgid "cipher: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:178
+msgid "SSL/TLS cipher suite that the server chose."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:181
+msgid "curve: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:181
+msgid "Elliptic curve the server chose when using ECDH/ECDHE."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:185
+msgid "server_name: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:184
+msgid ""
+"Value of the Server Name Indicator SSL/TLS extension.  It indicates the "
+"server name that the client was requesting."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:189
+msgid "session_id: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:188
+msgid ""
+"Session ID offered by the client for session resumption. Not used for "
+"logging."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:193
+msgid ""
+"resumed: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = "
+"``F`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:192
+msgid ""
+"Flag to indicate if the session was resumed reusing the key material "
+"exchanged in an earlier connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:199
+msgid ""
+"client_ticket_empty_session_seen: :zeek:type:`bool` :zeek:attr:`&default`"
+" = ``F`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:196
+msgid ""
+"Flag to indicate if we saw a non-empty session ticket being sent by the "
+"client using an empty session ID. This value is used to determine if a "
+"session is being resumed. It's not logged."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:204
+msgid ""
+"client_key_exchange_seen: :zeek:type:`bool` :zeek:attr:`&default` = ``F``"
+" :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:202
+msgid ""
+"Flag to indicate if we saw a client key exchange message sent by the "
+"client. This value is used to determine if a session is being resumed. "
+"It's not logged."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:208
+msgid ""
+"server_appdata: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:207
+msgid ""
+"Count to track if the server already sent an application data packet for "
+"TLS 1.3. Used to track when a session was established."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:212
+msgid ""
+"client_appdata: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:211
+msgid ""
+"Flag to track if the client already sent an application data packet for "
+"TLS 1.3. Used to track when a session was established."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:215
+msgid "last_alert: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:215
+msgid "Last alert that was seen during the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:219
+msgid ""
+"next_protocol: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:218
+msgid ""
+"Next protocol the server chose using the application layer next protocol "
+"extension, if present."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:224
+msgid "analyzer_id: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:222
+msgid ""
+"The analyzer ID used for the analyzer instance attached to each "
+"connection.  It is not used for logging since it's a meaningless "
+"arbitrary number."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:228
+msgid ""
+"established: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = "
+"``F`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:227
+msgid ""
+"Flag to indicate if this ssl session has been established successfully, "
+"or if it was aborted during the handshake."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:232
+msgid ""
+"logged: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:231
+msgid ""
+"Flag to indicate if this record already has been logged, to prevent "
+"duplicates."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:240
+msgid ""
+"cert_chain: :zeek:type:`vector` of :zeek:type:`Files::Info` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:237
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:243
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:249
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:255
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:261
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:266
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:272
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:277
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:283
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:289
+msgid "(present if :doc:`/scripts/base/protocols/ssl/files.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:239
+msgid ""
+"Chain of certificates offered by the server to validate its complete "
+"signing chain."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:246
+msgid ""
+"cert_chain_fuids: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:245
+msgid ""
+"An ordered vector of all certificate file unique IDs for the certificates"
+" offered by the server."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:252
+msgid ""
+"client_cert_chain: :zeek:type:`vector` of :zeek:type:`Files::Info` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:251
+msgid ""
+"Chain of certificates offered by the client to validate its complete "
+"signing chain."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:258
+msgid ""
+"client_cert_chain_fuids: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:257
+msgid ""
+"An ordered vector of all certificate file unique IDs for the certificates"
+" offered by the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:263
+msgid "subject: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:263
+msgid "Subject of the X.509 certificate offered by the server."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:269
+msgid "issuer: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:268
+msgid "Subject of the signer of the X.509 certificate offered by the server."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:274
+msgid ""
+"client_subject: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:274
+msgid "Subject of the X.509 certificate offered by the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:280
+msgid ""
+"client_issuer: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:279
+msgid "Subject of the signer of the X.509 certificate offered by the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:286
+msgid ""
+"server_depth: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:285
+msgid ""
+"Current number of certificates seen from either side. Used to create file"
+" handles."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:290
+msgid ""
+"client_depth: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:294
+msgid ""
+"last_originator_heartbeat_request_size: :zeek:type:`count` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:293
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:297
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:301
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:305
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:309
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:313
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:317
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/ssl/heartbleed.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:298
+msgid ""
+"last_responder_heartbeat_request_size: :zeek:type:`count` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:302
+msgid ""
+"originator_heartbeats: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:306
+msgid ""
+"responder_heartbeats: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:310
+msgid ""
+"heartbleed_detected: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:314
+msgid ""
+"enc_appdata_packages: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:318
+msgid ""
+"enc_appdata_bytes: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:323
+msgid ""
+"validation_status: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:321
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:326
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:332
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/ssl/validate-certs.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:323
+msgid "Result of certificate validation for this connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:329
+msgid "validation_code: :zeek:type:`int` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:328
+msgid ""
+"Result of certificate validation for this connection, given as OpenSSL "
+"validation code."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:334
+msgid ""
+"valid_chain: :zeek:type:`vector` of :zeek:type:`opaque` of x509 "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:334
+msgid "Ordered chain of validated certificate, if validation succeeded."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:339
+msgid "ocsp_status: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:337
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:342
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/ssl/validate-ocsp.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:339
+msgid "Result of ocsp validation for this connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:344
+msgid "ocsp_response: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:344
+msgid "ocsp response as string."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:349
+msgid "valid_scts: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:347
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:352
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:357
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:362
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:367
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:372
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/ssl/validate-sct.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:349
+msgid "Number of valid SCTs that were encountered in the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:354
+msgid "invalid_scts: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:354
+msgid ""
+"Number of SCTs that could not be validated that were encountered in the "
+"connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:359
+msgid "valid_ct_logs: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:359
+msgid ""
+"Number of different Logs for which valid SCTs were encountered in the "
+"connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:364
+msgid ""
+"valid_ct_operators: :zeek:type:`count` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:364
+msgid ""
+"Number of different Log operators of which valid SCTs were encountered in"
+" the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:369
+msgid ""
+"valid_ct_operators_list: :zeek:type:`set` [:zeek:type:`string`] "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:369
+msgid "List of operators for which valid SCTs were encountered in the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:374
+msgid ""
+"ct_proofs: :zeek:type:`vector` of :zeek:type:`SSL::SctInfo` "
+":zeek:attr:`&default` = ``[]`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:374
+msgid "Information about all SCTs that were encountered in the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:379
+msgid ""
+"notary: :zeek:type:`CertNotary::Response` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:377
+msgid "(present if :doc:`/scripts/policy/protocols/ssl/notary.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:379
+msgid "A response from the ICSI certificate notary."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:387
+msgid ":zeek:type:`event` (rec: :zeek:type:`SSL::Info`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:396
+msgid ":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:398
+msgid ""
+"SSL finalization hook.  Remaining SSL info may get logged when it's "
+"called. The :zeek:see:`SSL::ssl_finishing` hook may either be called "
+"before this finalization hook for established SSL connections or during "
+"this finalization hook for SSL connections may have info still left to "
+"log."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:406
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:411
+msgid ":zeek:type:`hook` (c: :zeek:type:`connection`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:418
+#: ../../scripts/base/protocols/ssl/main.zeek.rst:425
+msgid ""
+":zeek:type:`function` (info: :zeek:type:`SSL::Info`, token: "
+":zeek:type:`string`) : :zeek:type:`void`"
+msgstr ""
+

@@ -1,0 +1,259 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/misc/version.zeek.rst:4
+msgid "base/misc/version.zeek"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:7
+msgid ""
+"Provide information about the currently running Zeek version. The most "
+"convenient way to access this are the Version::number and Version::info "
+"constants."
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:11
+msgid "Version"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:12
+msgid ""
+":doc:`base/frameworks/reporter "
+"</scripts/base/frameworks/reporter/index>`, :doc:`base/utils/strings.zeek"
+" </scripts/base/utils/strings.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:15
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:17
+#: ../../scripts/base/misc/version.zeek.rst:41
+msgid "Constants"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:19
+msgid ":zeek:id:`Version::info`: :zeek:type:`Version::VersionDescription`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:19
+#: ../../scripts/base/misc/version.zeek.rst:46
+msgid ""
+"`VersionDescription` record pertaining to the currently running version "
+"of Zeek."
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:20
+msgid ":zeek:id:`Version::number`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:20
+msgid ""
+"version number of the currently running version of Zeek as a numeric "
+"representation."
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:24
+#: ../../scripts/base/misc/version.zeek.rst:58
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:26
+msgid ":zeek:type:`Version::VersionDescription`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:26
+#: ../../scripts/base/misc/version.zeek.rst:97
+msgid "A type exactly describing a Zeek version"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:30
+#: ../../scripts/base/misc/version.zeek.rst:100
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:32
+msgid ":zeek:id:`Version::at_least`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:32
+#: ../../scripts/base/misc/version.zeek.rst:105
+msgid ""
+"Test if the current running version of Zeek is greater or equal to the "
+"given version string."
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:34
+msgid ":zeek:id:`Version::parse`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:34
+#: ../../scripts/base/misc/version.zeek.rst:118
+msgid "Parse a given version string."
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:39
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:44
+msgid ":zeek:type:`Version::VersionDescription`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:50
+msgid ":zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:52
+msgid ""
+"version number of the currently running version of Zeek as a numeric "
+"representation. The format of the number is ABBCC with A being the major "
+"version, bb being the minor version (2 digits) and CC being the "
+"patchlevel (2 digits). As an example, Zeek 2.4.1 results in the number "
+"20401"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:61
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:67
+msgid "version_number: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:64
+msgid ""
+"Number representing the version which can be used for easy comparison. "
+"The format of the number is ABBCC with A being the major version, bb "
+"being the minor version (2 digits) and CC being the patchlevel (2 "
+"digits). As an example, Zeek 2.4.1 results in the number 20401."
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:70
+msgid "major: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:70
+msgid "Major version number (e.g. 2 for 2.5)"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:73
+msgid "minor: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:73
+msgid "Minor version number (e.g. 5 for 2.5)"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:76
+msgid "patch: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:76
+msgid "Patch version number (e.g. 0 for 2.5 or 1 for 2.4.1)"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:84
+msgid "commit: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:79
+msgid ""
+"Commit number for development versions, Versions prior to 3.0.0, like "
+"\"2.4-12\", use a post-release commit number (12 commits after the 2.4 "
+"release).  Versions after 3.0.0, like \"3.1.0-dev.37\", use a pre-release"
+" commit number (37 commits into the development cycle for 3.1.0).  For "
+"non-development version this number will be zero."
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:89
+msgid "beta: :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:87
+msgid ""
+"If set to true, the version is a beta build of Zeek.  These versions may "
+"start like \"2.6-beta\" or \"3.0.0-rc\" (the \"rc\" form started being "
+"used for 3.0.0 and later)."
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:92
+msgid "debug: :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:92
+msgid "If set to true, the version is a debug build"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:95
+msgid "version_string: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:95
+msgid "String representation of this version"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:103
+msgid ""
+":zeek:type:`function` (version_string: :zeek:type:`string`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst
+msgid "version_string"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:109
+msgid "Version to check against the current running version."
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:112
+msgid "True if running version greater or equal to the given version."
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:116
+msgid ""
+":zeek:type:`function` (version_string: :zeek:type:`string`) : "
+":zeek:type:`Version::VersionDescription`"
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:121
+msgid "Zeek version string."
+msgstr ""
+
+#: ../../scripts/base/misc/version.zeek.rst:124
+msgid "`VersionDescription` record."
+msgstr ""
+

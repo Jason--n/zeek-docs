@@ -1,0 +1,1135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:4
+msgid "base/frameworks/files/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:7
+msgid ""
+"An interface for driving the analysis of files, possibly independent of "
+"any network protocol over which they're transported."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:10
+msgid "Files"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:11
+msgid ""
+":doc:`base/bif/file_analysis.bif.zeek "
+"</scripts/base/bif/file_analysis.bif.zeek>`, "
+":doc:`base/frameworks/analyzer "
+"</scripts/base/frameworks/analyzer/index>`, :doc:`base/frameworks/logging"
+" </scripts/base/frameworks/logging/index>`, :doc:`base/utils/site.zeek "
+"</scripts/base/utils/site.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:16
+#: ../../scripts/base/frameworks/files/main.zeek.rst:99
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:18
+msgid ""
+":zeek:id:`Files::enable_reassembler`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:18
+#: ../../scripts/base/frameworks/files/main.zeek.rst:106
+msgid "The default setting for file reassembly."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:22
+#: ../../scripts/base/frameworks/files/main.zeek.rst:109
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:24
+msgid ""
+":zeek:id:`Files::analyze_by_mime_type_automatically`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:24
+#: ../../scripts/base/frameworks/files/main.zeek.rst:116
+msgid ""
+"Decide if you want to automatically attached analyzers to files based on "
+"the detected mime type of the file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:26
+msgid ":zeek:id:`Files::disable`: :zeek:type:`table` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:26
+#: ../../scripts/base/frameworks/files/main.zeek.rst:125
+msgid ""
+"A table that can be used to disable file analysis completely for any "
+"files transferred over given network protocol analyzers."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:28
+msgid ""
+":zeek:id:`Files::reassembly_buffer_size`: :zeek:type:`count` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:28
+#: ../../scripts/base/frameworks/files/main.zeek.rst:134
+msgid "The default per-file reassembly buffer size."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:32
+#: ../../scripts/base/frameworks/files/main.zeek.rst:137
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:34
+msgid ":zeek:type:`Files::AnalyzerArgs`: :zeek:type:`record` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:34
+#: ../../scripts/base/frameworks/files/main.zeek.rst:173
+msgid "A structure which parameterizes a type of file analysis."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:35
+msgid ":zeek:type:`Files::Info`: :zeek:type:`record` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:35
+msgid "Contains all metadata related to the analysis of a given file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:36
+msgid ":zeek:type:`Files::ProtoRegistration`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:40
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:42
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:44
+msgid ":zeek:enum:`Files::LOG`: Logging stream for file analysis."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:46
+msgid ":zeek:type:`fa_file`: :zeek:type:`record` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:48
+msgid ":zeek:type:`fa_file`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:50
+msgid "info: :zeek:type:`Files::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:54
+#: ../../scripts/base/frameworks/files/main.zeek.rst:322
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:56
+msgid ":zeek:id:`Files::log_files`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:56
+#: ../../scripts/base/frameworks/files/main.zeek.rst:327
+msgid ""
+"Event that can be handled to access the Info record as it is sent on to "
+"the logging framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:61
+#: ../../scripts/base/frameworks/files/main.zeek.rst:331
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:63
+msgid ":zeek:id:`Files::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:63
+#: ../../scripts/base/frameworks/files/main.zeek.rst:336
+msgid "A default logging policy hook for the stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:67
+#: ../../scripts/base/frameworks/files/main.zeek.rst:339
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:69
+msgid ":zeek:id:`Files::add_analyzer`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:69
+#: ../../scripts/base/frameworks/files/main.zeek.rst:344
+msgid "Adds an analyzer to the analysis of a given file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:70
+msgid ":zeek:id:`Files::all_registered_mime_types`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:70
+#: ../../scripts/base/frameworks/files/main.zeek.rst:364
+msgid ""
+"Returns a table of all MIME-type-to-analyzer mappings currently "
+"registered."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:71
+msgid ":zeek:id:`Files::analyzer_name`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:71
+#: ../../scripts/base/frameworks/files/main.zeek.rst:374
+msgid ""
+"Translates a file analyzer enum value to a string with the analyzer's "
+"name."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:73
+msgid ":zeek:id:`Files::describe`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:73
+msgid "Provides a text description regarding metadata of the file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:74
+msgid ":zeek:id:`Files::disable_reassembly`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:74
+msgid "Disables the file reassembler on this file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:75
+msgid ":zeek:id:`Files::enable_reassembly`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:75
+#: ../../scripts/base/frameworks/files/main.zeek.rst:410
+msgid ""
+"Allows the file reassembler to be used if it's necessary because the file"
+" is transferred out of order."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:77
+msgid ":zeek:id:`Files::file_exists`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:77
+#: ../../scripts/base/frameworks/files/main.zeek.rst:420
+msgid "Lookup to see if a particular file id exists and is still valid."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:78
+msgid ":zeek:id:`Files::lookup_file`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:78
+#: ../../scripts/base/frameworks/files/main.zeek.rst:432
+msgid "Lookup an :zeek:see:`fa_file` record with the file id."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:79
+msgid ":zeek:id:`Files::register_analyzer_add_callback`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:79
+msgid ""
+"Register a callback for file analyzers to use if they need to do some "
+"manipulation when they are being added to a file before the core code "
+"takes over."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:82
+msgid ":zeek:id:`Files::register_for_mime_type`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:82
+msgid "Registers a MIME type for an analyzer."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:83
+msgid ":zeek:id:`Files::register_for_mime_types`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:83
+msgid "Registers a set of MIME types for an analyzer."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:84
+msgid ":zeek:id:`Files::register_protocol`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:84
+msgid "Register callbacks for protocols that work with the Files framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:85
+msgid ":zeek:id:`Files::registered_mime_types`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:85
+#: ../../scripts/base/frameworks/files/main.zeek.rst:511
+msgid ""
+"Returns a set of all MIME types currently registered for a specific "
+"analyzer."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:86
+msgid ":zeek:id:`Files::remove_analyzer`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:86
+#: ../../scripts/base/frameworks/files/main.zeek.rst:523
+msgid "Removes an analyzer from the analysis of a given file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:87
+msgid ":zeek:id:`Files::set_reassembly_buffer_size`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:87
+#: ../../scripts/base/frameworks/files/main.zeek.rst:542
+msgid ""
+"Set the maximum size the reassembly buffer is allowed to grow for the "
+"given file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:89
+msgid ":zeek:id:`Files::set_timeout_interval`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:89
+msgid ""
+"Sets the *timeout_interval* field of :zeek:see:`fa_file`, which is used "
+"to determine the length of inactivity that is allowed for a file before "
+"internal state related to it is cleaned up."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:92
+msgid ":zeek:id:`Files::stop`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:92
+#: ../../scripts/base/frameworks/files/main.zeek.rst:575
+msgid "Stops/ignores any further analysis of a given file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:97
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:102
+#: ../../scripts/base/frameworks/files/main.zeek.rst:112
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:103
+#: ../../scripts/base/frameworks/files/main.zeek.rst:113
+#: ../../scripts/base/frameworks/files/main.zeek.rst:122
+#: ../../scripts/base/frameworks/files/main.zeek.rst:131
+#: ../../scripts/base/frameworks/files/main.zeek.rst:171
+#: ../../scripts/base/frameworks/files/main.zeek.rst:301
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:104
+#: ../../scripts/base/frameworks/files/main.zeek.rst:114
+msgid "``T``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:121
+msgid ":zeek:type:`table` [:zeek:type:`Files::Tag`] of :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:123
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:130
+msgid ":zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:132
+msgid "``524288``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:140
+#: ../../scripts/base/frameworks/files/main.zeek.rst:177
+#: ../../scripts/base/frameworks/files/main.zeek.rst:309
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:146
+msgid ""
+"chunk_event: :zeek:type:`event` (f: :zeek:type:`fa_file`, data: "
+":zeek:type:`string`, off: :zeek:type:`count`) :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:143
+msgid ""
+"An event which will be generated for all new file contents, chunk-wise.  "
+"Used when *tag* (in the :zeek:see:`Files::add_analyzer` function) is "
+":zeek:see:`Files::ANALYZER_DATA_EVENT`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:151
+msgid ""
+"stream_event: :zeek:type:`event` (f: :zeek:type:`fa_file`, data: "
+":zeek:type:`string`) :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:149
+msgid ""
+"An event which will be generated for all new file contents, stream-wise."
+"  Used when *tag* is :zeek:see:`Files::ANALYZER_DATA_EVENT`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:161
+msgid "extract_filename: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:154
+#: ../../scripts/base/frameworks/files/main.zeek.rst:164
+#: ../../scripts/base/frameworks/files/main.zeek.rst:281
+#: ../../scripts/base/frameworks/files/main.zeek.rst:286
+#: ../../scripts/base/frameworks/files/main.zeek.rst:292
+msgid "(present if :doc:`/scripts/base/files/extract/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:156
+msgid ""
+"The local filename to which to write an extracted file. This field is "
+"used in the core by the extraction plugin to know where to write the file"
+" to.  If not specified, then a filename in the format "
+"\"extract-<source>-<id>\" is automatically assigned (using the *source* "
+"and *id* fields of :zeek:see:`fa_file`)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:169
+msgid ""
+"extract_limit: :zeek:type:`count` :zeek:attr:`&default` = "
+":zeek:see:`FileExtract::default_limit` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:166
+msgid ""
+"The maximum allowed file size in bytes of *extract_filename*. Once "
+"reached, a :zeek:see:`file_extraction_limit` event is raised and the "
+"analyzer will be removed unless :zeek:see:`FileExtract::set_limit` is "
+"called to increase the limit.  A value of zero means \"no limit\"."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:180
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:180
+msgid "The time when the file was first seen."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:183
+msgid "fuid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:183
+msgid "An identifier associated with a single file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:188
+msgid ""
+"tx_hosts: :zeek:type:`set` [:zeek:type:`addr`] :zeek:attr:`&default` = "
+"``{  }`` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:186
+msgid ""
+"If this file was transferred over a network connection this should show "
+"the host or hosts that the data sourced from."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:193
+msgid ""
+"rx_hosts: :zeek:type:`set` [:zeek:type:`addr`] :zeek:attr:`&default` = "
+"``{  }`` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:191
+msgid ""
+"If this file was transferred over a network connection this should show "
+"the host or hosts that the data traveled to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:196
+msgid ""
+"conn_uids: :zeek:type:`set` [:zeek:type:`string`] :zeek:attr:`&default` ="
+" ``{  }`` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:196
+msgid "Connection UIDs over which the file was transferred."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:201
+msgid "source: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:199
+msgid ""
+"An identification of the source of the file data.  E.g. it may be a "
+"network protocol over which it was transferred, or a local file path "
+"which was read, or some other input source."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:207
+msgid ""
+"depth: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:204
+msgid ""
+"A value to represent the depth of this file in relation to its source.  "
+"In SMTP, it is the depth of the MIME attachment on the message.  In HTTP,"
+" it is the depth of the request within the TCP connection."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:210
+msgid ""
+"analyzers: :zeek:type:`set` [:zeek:type:`string`] :zeek:attr:`&default` ="
+" ``{  }`` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:210
+msgid "A set of analysis types done during the file analysis."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:217
+msgid "mime_type: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:213
+msgid ""
+"A mime type provided by the strongest file magic signature match against "
+"the *bof_buffer* field of :zeek:see:`fa_file`, or in the cases where no "
+"buffering of the beginning of file occurs, an initial guess of the mime "
+"type based on the first data seen."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:222
+msgid "filename: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:220
+msgid ""
+"A filename for the file if one is available from the source for the file."
+"  These will frequently come from \"Content-Disposition\" headers in "
+"network protocols."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:225
+msgid ""
+"duration: :zeek:type:`interval` :zeek:attr:`&log` :zeek:attr:`&default` ="
+" ``0 secs`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:225
+msgid "The duration the file was analyzed for."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:230
+msgid "local_orig: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:228
+msgid ""
+"If the source of this file is a network connection, this field indicates "
+"if the data originated from the local network or not as determined by the"
+" configured :zeek:see:`Site::local_nets`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:235
+msgid "is_orig: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:233
+msgid ""
+"If the source of this file is a network connection, this field indicates "
+"if the file is being sent by the originator of the connection or the "
+"responder."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:238
+msgid ""
+"seen_bytes: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&default` = "
+"``0`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:238
+msgid "Number of bytes provided to the file analysis engine for the file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:241
+msgid "total_bytes: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:241
+msgid "Total number of bytes that are supposed to comprise the full file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:245
+msgid ""
+"missing_bytes: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&default`"
+" = ``0`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:244
+msgid ""
+"The number of bytes in the file stream that were completely missed during"
+" the process of analysis e.g. due to dropped packets."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:250
+msgid ""
+"overflow_bytes: :zeek:type:`count` :zeek:attr:`&log` "
+":zeek:attr:`&default` = ``0`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:248
+msgid ""
+"The number of bytes in the file stream that were not delivered to stream "
+"file analyzers.  This could be overlapping bytes or bytes that couldn't "
+"be reassembled."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:253
+msgid ""
+"timedout: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = "
+"``F`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:253
+msgid "Whether the file analysis timed out at least once for the file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:257
+msgid "parent_fuid: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:256
+msgid ""
+"Identifier associated with a container file from which this one was "
+"extracted as part of the file analysis."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:262
+msgid "md5: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:260
+#: ../../scripts/base/frameworks/files/main.zeek.rst:265
+#: ../../scripts/base/frameworks/files/main.zeek.rst:270
+msgid "(present if :doc:`/scripts/base/files/hash/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:262
+msgid "An MD5 digest of the file contents."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:267
+msgid "sha1: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:267
+msgid "A SHA1 digest of the file contents."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:272
+msgid "sha256: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:272
+msgid "A SHA256 digest of the file contents."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:278
+msgid "x509: :zeek:type:`X509::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:275
+msgid "(present if :doc:`/scripts/base/files/x509/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:277
+msgid ""
+"Information about X509 certificates. This is used to keep certificate "
+"information until all events have been received."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:283
+msgid "extracted: :zeek:type:`string` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:283
+msgid "Local filename of extracted file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:289
+msgid ""
+"extracted_cutoff: :zeek:type:`bool` :zeek:attr:`&optional` "
+":zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:288
+msgid ""
+"Set to true if the file being extracted was cut off so the whole file was"
+" not logged."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:294
+msgid ""
+"extracted_size: :zeek:type:`count` :zeek:attr:`&optional` "
+":zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:294
+msgid "The number of bytes extracted to disk."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:299
+msgid "entropy: :zeek:type:`double` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:297
+msgid ""
+"(present if :doc:`/scripts/policy/frameworks/files/entropy-test-all-"
+"files.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:299
+msgid ""
+"The information density of the contents of the file, expressed as a "
+"number of bits per character."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:303
+msgid ""
+"Contains all metadata related to the analysis of a given file. For the "
+"most part, fields here are derived from ones of the same name in "
+":zeek:see:`fa_file`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:313
+msgid ""
+"get_file_handle: :zeek:type:`function` (c: :zeek:type:`connection`, "
+"is_orig: :zeek:type:`bool`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:312
+msgid "string"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:312
+msgid ""
+"A callback to generate a file handle on demand when one is needed by the "
+"core."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:317
+msgid ""
+"describe: :zeek:type:`function` (f: :zeek:type:`fa_file`) : "
+":zeek:type:`string` :zeek:attr:`&default` = :zeek:type:`function` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:316
+msgid "string &default = function &optional"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:316
+msgid ""
+"A callback to \"describe\" a file.  In the case of an HTTP transfer the "
+"most obvious description would be the URL. It's like an extremely "
+"compressed version of the normal log."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:325
+msgid ":zeek:type:`event` (rec: :zeek:type:`Files::Info`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:334
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:342
+#: ../../scripts/base/frameworks/files/main.zeek.rst:521
+msgid ""
+":zeek:type:`function` (f: :zeek:type:`fa_file`, tag: "
+":zeek:type:`Files::Tag`, args: :zeek:type:`Files::AnalyzerArgs` "
+":zeek:attr:`&default` = *[chunk_event=<uninitialized>, "
+"stream_event=<uninitialized>, extract_filename=<uninitialized>, "
+"extract_limit=104857600]* :zeek:attr:`&optional`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst
+msgid "f"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:347
+#: ../../scripts/base/frameworks/files/main.zeek.rst:404
+#: ../../scripts/base/frameworks/files/main.zeek.rst:414
+#: ../../scripts/base/frameworks/files/main.zeek.rst:526
+#: ../../scripts/base/frameworks/files/main.zeek.rst:546
+#: ../../scripts/base/frameworks/files/main.zeek.rst:562
+#: ../../scripts/base/frameworks/files/main.zeek.rst:578
+msgid "the file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst
+msgid "tag"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:350
+#: ../../scripts/base/frameworks/files/main.zeek.rst:529
+msgid "the analyzer type."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst
+msgid "args"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:353
+msgid "any parameters the analyzer takes."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:356
+msgid ""
+"true if the analyzer will be added, or false if analysis for the file "
+"isn't currently active or the *args* were invalid for the analyzer type."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:362
+msgid ""
+":zeek:type:`function` () : :zeek:type:`table` [:zeek:type:`Files::Tag`] "
+"of :zeek:type:`set` [:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:367
+msgid "A table mapping each analyzer to the set of MIME types registered for it."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:372
+msgid ":zeek:type:`function` (tag: :zeek:type:`Files::Tag`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:378
+msgid "The analyzer tag."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:381
+msgid "The analyzer name corresponding to the tag."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:385
+msgid ":zeek:type:`function` (f: :zeek:type:`fa_file`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:387
+msgid ""
+"Provides a text description regarding metadata of the file. For example, "
+"with HTTP it would return a URL."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:391
+msgid "The file to be described."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:394
+msgid "a text description regarding metadata of the file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:398
+#: ../../scripts/base/frameworks/files/main.zeek.rst:408
+msgid ":zeek:type:`function` (f: :zeek:type:`fa_file`) : :zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:400
+msgid ""
+"Disables the file reassembler on this file.  If the file is not "
+"transferred out of order this will have no effect."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:418
+msgid ":zeek:type:`function` (fuid: :zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst
+msgid "fuid"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:423
+#: ../../scripts/base/frameworks/files/main.zeek.rst:435
+msgid "the file id."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:426
+msgid "T if the file uid is known."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:430
+msgid ":zeek:type:`function` (fuid: :zeek:type:`string`) : :zeek:type:`fa_file`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:438
+msgid "the associated :zeek:see:`fa_file` record."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:442
+msgid ""
+":zeek:type:`function` (tag: :zeek:type:`Files::Tag`, callback: "
+":zeek:type:`function` (f: :zeek:type:`fa_file`, args: "
+":zeek:type:`Files::AnalyzerArgs`) : :zeek:type:`void`) : "
+":zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:444
+msgid ""
+"Register a callback for file analyzers to use if they need to do some "
+"manipulation when they are being added to a file before the core code "
+"takes over.  This is unlikely to be interesting for users and should only"
+" be called by file analyzer authors but is *not required*."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:450
+msgid "Tag for the file analyzer."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst
+msgid "callback"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:453
+msgid "Function to execute when the given file analyzer is being added."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:457
+msgid ""
+":zeek:type:`function` (tag: :zeek:type:`Files::Tag`, mt: "
+":zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:459
+msgid ""
+"Registers a MIME type for an analyzer. If a future file with this type is"
+" seen, the analyzer will be automatically assigned to parsing it. The "
+"function *adds* to all MIME types already registered, it doesn't replace "
+"them."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:464
+#: ../../scripts/base/frameworks/files/main.zeek.rst:482
+#: ../../scripts/base/frameworks/files/main.zeek.rst:514
+msgid "The tag of the analyzer."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst
+msgid "mt"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:467
+msgid "The MIME type in the form \"foo/bar\" (case-insensitive)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:470
+msgid "True if the MIME type was successfully registered."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:474
+msgid ""
+":zeek:type:`function` (tag: :zeek:type:`Files::Tag`, mime_types: "
+":zeek:type:`set` [:zeek:type:`string`]) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:476
+msgid ""
+"Registers a set of MIME types for an analyzer. If a future connection on "
+"one of these types is seen, the analyzer will be automatically assigned "
+"to parsing it. The function *adds* to all MIME types already registered, "
+"it doesn't replace them."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst
+msgid "mts"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:485
+msgid "The set of MIME types, each in the form \"foo/bar\" (case-insensitive)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:488
+msgid "True if the MIME types were successfully registered."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:492
+msgid ""
+":zeek:type:`function` (tag: :zeek:type:`Analyzer::Tag`, reg: "
+":zeek:type:`Files::ProtoRegistration`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:494
+msgid ""
+"Register callbacks for protocols that work with the Files framework. The "
+"callbacks must uniquely identify a file and each protocol can only have a"
+" single callback registered for it."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:499
+msgid "Tag for the protocol analyzer having a callback being registered."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst
+msgid "reg"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:502
+msgid "A :zeek:see:`Files::ProtoRegistration` record."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:505
+msgid "true if the protocol being registered was not previously registered."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:509
+msgid ""
+":zeek:type:`function` (tag: :zeek:type:`Files::Tag`) : :zeek:type:`set` "
+"[:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:517
+msgid "The set of MIME types."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:532
+msgid "the analyzer (type and args) to remove."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:535
+msgid ""
+"true if the analyzer will be removed, or false if analysis for the file "
+"isn't currently active."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:540
+msgid ""
+":zeek:type:`function` (f: :zeek:type:`fa_file`, max: :zeek:type:`count`) "
+": :zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst
+msgid "max"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:549
+msgid "Maximum allowed size of the reassembly buffer."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:553
+msgid ""
+":zeek:type:`function` (f: :zeek:type:`fa_file`, t: :zeek:type:`interval`)"
+" : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:555
+msgid ""
+"Sets the *timeout_interval* field of :zeek:see:`fa_file`, which is used "
+"to determine the length of inactivity that is allowed for a file before "
+"internal state related to it is cleaned up.  When used within a "
+":zeek:see:`file_timeout` handler, the analysis will delay timing out "
+"again for the period specified by *t*."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst
+msgid "t"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:565
+msgid "the amount of time the file can remain inactive before discarding."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:568
+msgid ""
+"true if the timeout interval was set, or false if analysis for the file "
+"isn't currently active."
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:573
+msgid ":zeek:type:`function` (f: :zeek:type:`fa_file`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/files/main.zeek.rst:581
+msgid ""
+"true if analysis for the given file will be ignored for the rest of its "
+"contents, or false if analysis for the file isn't currently active."
+msgstr ""
+

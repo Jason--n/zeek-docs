@@ -1,0 +1,347 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_KRB.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:37
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:15
+msgid ":zeek:id:`krb_ap_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:15
+msgid ""
+"A Kerberos 5 ``Authentication Header (AP) Request`` as defined in "
+":rfc:`4120`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:17
+msgid ":zeek:id:`krb_ap_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:17
+msgid ""
+"A Kerberos 5 ``Authentication Header (AP) Response`` as defined in "
+":rfc:`4120`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:19
+msgid ":zeek:id:`krb_as_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:19
+msgid ""
+"A Kerberos 5 ``Authentication Server (AS) Request`` as defined in "
+":rfc:`4120`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:21
+msgid ":zeek:id:`krb_as_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:21
+msgid ""
+"A Kerberos 5 ``Authentication Server (AS) Response`` as defined in "
+":rfc:`4120`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:23
+msgid ":zeek:id:`krb_cred`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:23
+msgid "A Kerberos 5 ``Credential Message`` as defined in :rfc:`4120`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:24
+msgid ":zeek:id:`krb_error`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:24
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:150
+msgid "A Kerberos 5 ``Error Message`` as defined in :rfc:`4120`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:25
+msgid ":zeek:id:`krb_priv`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:25
+msgid "A Kerberos 5 ``Private Message`` as defined in :rfc:`4120`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:26
+msgid ":zeek:id:`krb_safe`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:26
+msgid "A Kerberos 5 ``Safe Message`` as defined in :rfc:`4120`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:27
+msgid ":zeek:id:`krb_tgs_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:27
+msgid ""
+"A Kerberos 5 ``Ticket Granting Service (TGS) Request`` as defined in "
+":rfc:`4120`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:29
+msgid ":zeek:id:`krb_tgs_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:29
+msgid ""
+"A Kerberos 5 ``Ticket Granting Service (TGS) Response`` as defined in "
+":rfc:`4120`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:35
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:40
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, ticket: "
+":zeek:type:`KRB::Ticket`, opts: :zeek:type:`KRB::AP_Options`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:42
+msgid ""
+"A Kerberos 5 ``Authentication Header (AP) Request`` as defined in "
+":rfc:`4120`. This message contains authentication information that should"
+" be part of the first message in an authenticated transaction."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:47
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:72
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:91
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:112
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:131
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:152
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:173
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:192
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:217
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:238
+msgid ""
+"See `Wikipedia <http://en.wikipedia.org/wiki/Kerberos_%28protocol%29>`__ "
+"for more information about the Kerberos protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:51
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:76
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:95
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:116
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:135
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:156
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:177
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:196
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:221
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:242
+msgid "The connection over which this Kerberos message was sent."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst
+msgid "ticket"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:54
+msgid "The Kerberos ticket being used for authentication."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst
+msgid "opts"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:57
+msgid "A Kerberos AP options data structure."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:64
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:66
+msgid ""
+"A Kerberos 5 ``Authentication Header (AP) Response`` as defined in "
+":rfc:`4120`. This is used if mutual authentication is desired. All of the"
+" interesting information in here is encrypted, so the event doesn't have "
+"much useful data, but it's provided in case it's important to know that "
+"this message was sent."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:83
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:209
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, msg: "
+":zeek:type:`KRB::KDC_Request`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:85
+msgid ""
+"A Kerberos 5 ``Authentication Server (AS) Request`` as defined in "
+":rfc:`4120`. The AS request contains a username of the client requesting "
+"authentication, and returns an AS reply with an encrypted Ticket Granting"
+" Ticket (TGT) for that user. The TGT can then be used to request further "
+"tickets for other services."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst
+msgid "msg"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:98
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:224
+msgid "A Kerberos KDC request message data structure."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:105
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:231
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, msg: "
+":zeek:type:`KRB::KDC_Response`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:107
+msgid ""
+"A Kerberos 5 ``Authentication Server (AS) Response`` as defined in "
+":rfc:`4120`. Following the AS request for a user, an AS reply contains an"
+" encrypted Ticket Granting Ticket (TGT) for that user. The TGT can then "
+"be used to request further tickets for other services."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:119
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:245
+msgid "A Kerberos KDC reply message data structure."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:126
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, tickets: :zeek:type:`KRB::Ticket_Vector`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:128
+msgid ""
+"A Kerberos 5 ``Credential Message`` as defined in :rfc:`4120`. This is a "
+"private (encrypted) message to forward credentials."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:138
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:180
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:199
+msgid "Whether the originator of the connection sent this message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst
+msgid "tickets"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:141
+msgid "Tickets obtained from the KDC that are being forwarded."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:148
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, msg: "
+":zeek:type:`KRB::Error_Msg`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:159
+msgid "A Kerberos error message data structure."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:166
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:168
+msgid ""
+"A Kerberos 5 ``Private Message`` as defined in :rfc:`4120`. This is a "
+"private (encrypted) application message, so the event doesn't have much "
+"useful data, but it's provided in case it's important to know that this "
+"message was sent."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:187
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, msg: :zeek:type:`KRB::SAFE_Msg`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:189
+msgid ""
+"A Kerberos 5 ``Safe Message`` as defined in :rfc:`4120`. This is a safe "
+"(checksummed) application message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:202
+msgid "A Kerberos SAFE message data structure."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:211
+msgid ""
+"A Kerberos 5 ``Ticket Granting Service (TGS) Request`` as defined in "
+":rfc:`4120`. Following the Authentication Server exchange, if successful,"
+" the client now has a Ticket Granting Ticket (TGT). To authenticate to a "
+"Kerberized service, the client requests a Service Ticket, which will be "
+"returned in the TGS reply."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_KRB.events.bif.zeek.rst:233
+msgid ""
+"A Kerberos 5 ``Ticket Granting Service (TGS) Response`` as defined in "
+":rfc:`4120`. This message returns a Service Ticket to the client, which "
+"is encrypted with the service's long-term key, and which the client can "
+"use to authenticate to that service."
+msgstr ""
+

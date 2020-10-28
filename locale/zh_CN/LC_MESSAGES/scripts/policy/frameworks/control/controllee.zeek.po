@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/frameworks/control/controllee.zeek.rst:4
+msgid "policy/frameworks/control/controllee.zeek"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/control/controllee.zeek.rst:7
+msgid ""
+"The controllee portion of the control framework.  Load this script if "
+"remote runtime control of the Zeek process is desired."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/control/controllee.zeek.rst:10
+msgid ""
+"A controllee only needs to load the controllee script in addition to the "
+"specific analysis scripts desired.  It may also need a node configured as"
+" a controller node in the communications nodes configuration::"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/control/controllee.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/control/controllee.zeek.rst:16
+msgid "Control"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/control/controllee.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/control/controllee.zeek.rst:17
+msgid ""
+":doc:`base/frameworks/broker </scripts/base/frameworks/broker/index>`, "
+":doc:`base/frameworks/control </scripts/base/frameworks/control/index>`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/control/controllee.zeek.rst:20
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/control/controllee.zeek.rst:23
+msgid "Detailed Interface"
+msgstr ""
+

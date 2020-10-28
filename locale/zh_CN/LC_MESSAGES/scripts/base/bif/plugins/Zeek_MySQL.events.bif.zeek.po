@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_MySQL.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:28
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:15
+msgid ":zeek:id:`mysql_command_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:33
+msgid "Generated for a command request from a MySQL client."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:16
+msgid ":zeek:id:`mysql_error`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:53
+msgid "Generated for an unsuccessful MySQL response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:17
+msgid ":zeek:id:`mysql_handshake`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:17
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:73
+msgid ""
+"Generated for a client handshake response packet, which includes the "
+"username the client is attempting to connect as."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:19
+msgid ":zeek:id:`mysql_ok`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:19
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:91
+msgid "Generated for a successful MySQL response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:20
+msgid ":zeek:id:`mysql_result_row`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:20
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:108
+msgid "Generated for each MySQL ResultsetRow response packet."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:21
+msgid ":zeek:id:`mysql_server_version`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:21
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:125
+msgid ""
+"Generated for the initial server handshake packet, which includes the "
+"MySQL server version."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:26
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:31
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, command: "
+":zeek:type:`count`, arg: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:35
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:55
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:76
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:93
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:110
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:127
+msgid ""
+"See the MySQL `documentation <http://dev.mysql.com/doc/internals/en"
+"/client-server-protocol.html>`__ for more information about the MySQL "
+"protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:39
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:59
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:80
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:97
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:114
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:131
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst
+msgid "command"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:42
+msgid "The numerical code of the command issued."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst
+msgid "arg"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:45
+msgid "The argument for the command (empty string if not provided)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:51
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, code: :zeek:type:`count`,"
+" msg: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst
+msgid "code"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:62
+msgid "The error code."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst
+msgid "msg"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:65
+msgid "Any extra details about the error (empty string if not provided)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:71
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, username: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst
+msgid "username"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:83
+msgid "The username supplied by the client"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:89
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, affected_rows: "
+":zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst
+msgid "affected_rows"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:100
+msgid "The number of rows that were affected."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:106
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, row: "
+":zeek:type:`string_vec`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst
+msgid "row"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:117
+msgid "The result row data."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:123
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`, ver: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst
+msgid "ver"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MySQL.events.bif.zeek.rst:134
+msgid "The server version string."
+msgstr ""
+

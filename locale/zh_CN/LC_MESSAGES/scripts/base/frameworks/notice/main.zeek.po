@@ -1,0 +1,1636 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:4
+msgid "base/frameworks/notice/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:8
+msgid ""
+"This is the notice framework which enables Zeek to \"notice\" things "
+"which are odd or potentially bad.  Decisions of the meaning of various "
+"notices need to be done per site because Zeek does not ship with "
+"assumptions about what is bad activity for sites.  More extensive "
+"documentation about using the notice framework can be found in "
+":doc:`/frameworks/notice`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "Namespaces"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:14
+msgid "GLOBAL, Notice"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:15
+msgid ":doc:`base/frameworks/cluster </scripts/base/frameworks/cluster/index>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:18
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:20
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:112
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:22
+msgid ":zeek:id:`Notice::alarmed_types`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:22
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:119
+msgid "Alarmed notice types."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:23
+msgid ""
+":zeek:id:`Notice::default_suppression_interval`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:23
+msgid ""
+"The notice framework is able to do automatic notice suppression by "
+"utilizing the *identifier* field in :zeek:type:`Notice::Info` records."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:25
+msgid ":zeek:id:`Notice::emailed_types`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:25
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:138
+msgid "Emailed notice types."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:26
+msgid ":zeek:id:`Notice::ignored_types`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:26
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:146
+msgid "Ignored notice types."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:27
+msgid ":zeek:id:`Notice::mail_from`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:27
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:154
+msgid "Address that emails will be from."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:28
+msgid ""
+":zeek:id:`Notice::mail_subject_prefix`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:28
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:164
+msgid "Text string prefixed to the subject of all emails sent out."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:29
+msgid ""
+":zeek:id:`Notice::not_suppressed_types`: :zeek:type:`set` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:29
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:175
+msgid "Types that should be suppressed for the default suppression interval."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:30
+msgid ":zeek:id:`Notice::reply_to`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:30
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:183
+msgid "Reply-to address used in outbound email."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:31
+msgid ":zeek:id:`Notice::sendmail`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:31
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:191
+msgid "Local system sendmail program."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:35
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:196
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:37
+msgid ":zeek:id:`Notice::mail_dest`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:37
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:203
+msgid ""
+"Email address to send notices with the :zeek:enum:`Notice::ACTION_EMAIL` "
+"action or to send bulk alarm logs on rotation with "
+":zeek:enum:`Notice::ACTION_ALARM`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:40
+msgid ""
+":zeek:id:`Notice::max_email_delay`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:40
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:215
+msgid "The maximum amount of time a plugin can delay email from being sent."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:41
+msgid ""
+":zeek:id:`Notice::type_suppression_intervals`: :zeek:type:`table` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:41
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:223
+msgid ""
+"This table can be used as a shorthand way to modify suppression intervals"
+" for entire notice types."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:46
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:227
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:48
+msgid ":zeek:type:`Notice::Action`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:48
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:287
+msgid "These are values representing actions that can be taken with notices."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:49
+msgid ":zeek:type:`Notice::ActionSet`: :zeek:type:`set`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:49
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:293
+msgid "Type that represents a set of actions."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:50
+msgid ":zeek:type:`Notice::FileInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:50
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:315
+msgid ""
+"Contains a portion of :zeek:see:`fa_file` that's also contained in "
+":zeek:see:`Notice::Info`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:52
+msgid ":zeek:type:`Notice::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:52
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:455
+msgid "The record type that is used for representing and logging notices."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:53
+msgid ":zeek:type:`Notice::Type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:53
+msgid ""
+"Scripts creating new notices need to redef this enum to add their own "
+"specific notice types which would then get used when they call the "
+":zeek:id:`NOTICE` function."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:59
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:61
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:63
+msgid ":zeek:enum:`Notice::ALARM_LOG`: This is the alarm stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:66
+msgid ":zeek:enum:`Notice::LOG`: This is the primary logging stream for notices."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:71
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:896
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:73
+msgid ":zeek:id:`Notice::begin_suppression`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:73
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:901
+msgid "This event is generated when a notice begins to be suppressed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:74
+msgid ":zeek:id:`Notice::log_notice`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:74
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:919
+msgid ""
+"This event can be handled to access the :zeek:type:`Notice::Info` record "
+"as it is sent on to the logging framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:76
+msgid ":zeek:id:`Notice::manager_begin_suppression`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:76
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:929
+msgid ""
+"This is an internal event that is used to broadcast the begin_suppression"
+" event over a cluster."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:78
+msgid ":zeek:id:`Notice::suppressed`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:78
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:948
+msgid "This event is generated on each occurrence of an event being suppressed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:83
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:956
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:85
+msgid ":zeek:id:`Notice::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:85
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:961
+msgid "Default logging policy hooks for the streams."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:86
+msgid ":zeek:id:`Notice::log_policy_alarm`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:87
+msgid ":zeek:id:`Notice::notice`: :zeek:type:`hook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:87
+msgid ""
+"This is the event that is called as the entry point to the notice "
+"framework by the global :zeek:id:`NOTICE` function."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:89
+msgid ":zeek:id:`Notice::policy`: :zeek:type:`hook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:89
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:985
+msgid "The hook to modify notice handling."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:93
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:988
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:95
+msgid ":zeek:id:`NOTICE`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:96
+msgid ":zeek:id:`Notice::apply_policy`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:96
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:998
+msgid "This is an internal function to populate policy records."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:97
+msgid ":zeek:id:`Notice::create_file_info`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:97
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1004
+msgid "Creates a record containing a subset of a full :zeek:see:`fa_file` record."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:98
+msgid ":zeek:id:`Notice::email_headers`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:98
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1016
+msgid ""
+"Constructs mail headers to which an email body can be appended for "
+"sending with sendmail."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:100
+msgid ":zeek:id:`Notice::email_notice_to`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:100
+msgid "Call this function to send a notice in an email."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:101
+msgid ":zeek:id:`Notice::is_being_suppressed`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:101
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1051
+msgid "A function to determine if an event is supposed to be suppressed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:102
+msgid ":zeek:id:`Notice::log_mailing_postprocessor`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:102
+msgid ""
+"A log postprocessing function that implements emailing the contents of a "
+"log upon rotation to any configured :zeek:id:`Notice::mail_dest`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:104
+msgid ":zeek:id:`Notice::populate_file_info`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:104
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:105
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1074
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1086
+msgid "Populates file-related fields in a notice info record."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:105
+msgid ":zeek:id:`Notice::populate_file_info2`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:110
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:115
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:134
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:142
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:171
+msgid ":zeek:type:`set` [:zeek:type:`Notice::Type`]"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:116
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:124
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:135
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:143
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:151
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:161
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:172
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:180
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:188
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:200
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:212
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:220
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:117
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:136
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:144
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:173
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:221
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:123
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:211
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:125
+msgid "``1.0 hr``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:127
+msgid ""
+"The notice framework is able to do automatic notice suppression by "
+"utilizing the *identifier* field in :zeek:type:`Notice::Info` records. "
+"Set this to \"0secs\" to completely disable automated notice suppression."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:150
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:160
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:179
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:187
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:199
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:152
+msgid "``\"Zeek <zeek@localhost>\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:156
+msgid "Note that this is overridden by the ZeekControl MailFrom option."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:162
+msgid "``\"[Zeek]\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:166
+msgid "Note that this is overridden by the ZeekControl MailSubjectPrefix option."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:181
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:201
+msgid "``\"\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:189
+msgid "``\"/usr/sbin/sendmail\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:193
+msgid "Note that this is overridden by the ZeekControl SendMail option."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:207
+msgid "Note that this is overridden by the ZeekControl MailTo option."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:213
+msgid "``15.0 secs``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:219
+msgid ":zeek:type:`table` [:zeek:type:`Notice::Type`] of :zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:230
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:459
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:234
+msgid "Indicates that there is no action to be taken."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:238
+msgid "Indicates that the notice should be sent to the notice logging stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:243
+msgid ""
+"Indicates that the notice should be sent to the email address(es) "
+"configured in the :zeek:id:`Notice::mail_dest` variable."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:249
+msgid ""
+"Indicates that the notice should be alarmed.  A readable ASCII version is"
+" saved in notice_alarm log, and emailed in bulk to the address(es) "
+"configured in :zeek:id:`Notice::mail_dest`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:255
+msgid ""
+"Indicates that the notice should result in a drop action. The exact "
+"action taken depends on loaded policy scripts; see e.g. "
+":zeek:see:`NetControl::acld_rule_policy`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:261
+msgid ""
+"(present if "
+":doc:`/scripts/base/frameworks/notice/actions/email_admin.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:264
+msgid ""
+"Indicate that the generated email should be addressed to the appropriate "
+"email addresses as found by the :zeek:id:`Site::get_emails` function "
+"based on the relevant address or addresses indicated in the notice."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:271
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/notice/actions/page.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:274
+msgid ""
+"Indicates that the notice should be sent to the pager email address "
+"configured in the :zeek:id:`Notice::mail_page_dest` variable."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:280
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:444
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/notice/actions/add-"
+"geodata.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:283
+msgid ""
+"Indicates that the notice should have geodata added for the \"remote\" "
+"host.  :zeek:id:`Site::local_nets` must be defined in order for this to "
+"work."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:291
+msgid ":zeek:type:`set` [:zeek:type:`Notice::Action`]"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:297
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:320
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:300
+msgid "fuid: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:300
+msgid "File UID."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:304
+msgid "desc: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:303
+msgid "File description from e.g. :zeek:see:`Files::describe`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:307
+msgid "mime: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:307
+msgid "Strongest mime type match for file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:310
+msgid "cid: :zeek:type:`conn_id` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:310
+msgid "Connection tuple over which file is sent."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:313
+msgid "cuid: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:313
+msgid "Connection UID over which file is sent."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:324
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:323
+msgid ""
+"An absolute time indicating when the notice occurred, defaults to the "
+"current network time."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:328
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:327
+msgid ""
+"A connection UID which uniquely identifies the endpoints concerned with "
+"the notice."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:332
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:331
+msgid "A connection 4-tuple identifying the endpoints concerned with the notice."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:337
+msgid "conn: :zeek:type:`connection` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:335
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:340
+msgid ""
+"A shorthand way of giving the uid and id to a notice.  The reference to "
+"the actual connection will be deleted after applying the notice policy."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:342
+msgid "iconn: :zeek:type:`icmp_conn` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:347
+msgid "f: :zeek:type:`fa_file` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:345
+msgid ""
+"A file record if the notice is related to a file.  The reference to the "
+"actual fa_file record will be deleted after applying the notice policy."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:352
+msgid "fuid: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:350
+msgid ""
+"A file unique ID if this notice is related to a file.  If the *f* field "
+"is provided, this will be automatically filled out."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:356
+msgid ""
+"file_mime_type: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:355
+msgid ""
+"A mime type if the notice is related to a file.  If the *f* field is "
+"provided, this will be automatically filled out."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:363
+msgid "file_desc: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:359
+msgid ""
+"Frequently files can be \"described\" to give a bit more context.  This "
+"field will typically be automatically filled out from an fa_file record."
+"  For example, if a notice was related to a file over HTTP, the URL of "
+"the request would be shown."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:367
+msgid ""
+"proto: :zeek:type:`transport_proto` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:366
+msgid ""
+"The transport protocol. Filled automatically when either *conn*, *iconn* "
+"or *p* is specified."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:370
+msgid "note: :zeek:type:`Notice::Type` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:370
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:910
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:939
+msgid "The :zeek:type:`Notice::Type` of the notice."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:373
+msgid "msg: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:373
+msgid "The human readable message for the notice."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:376
+msgid "sub: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:376
+msgid "The human readable sub-message."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:379
+msgid "src: :zeek:type:`addr` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:379
+msgid "Source address, if we don't have a :zeek:type:`conn_id`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:382
+msgid "dst: :zeek:type:`addr` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:382
+msgid "Destination address."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:385
+msgid "p: :zeek:type:`port` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:385
+msgid "Associated port, if we don't have a :zeek:type:`conn_id`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:388
+msgid "n: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:388
+msgid "Associated count, or perhaps a status code."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:391
+msgid "peer_name: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:391
+msgid "Name of remote peer that raised this notice."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:395
+msgid "peer_descr: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:394
+msgid ""
+"Textual description for the peer that raised this notice, including name,"
+" host address and port."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:398
+msgid ""
+"actions: :zeek:type:`Notice::ActionSet` :zeek:attr:`&log` "
+":zeek:attr:`&default` = ``{  }`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:398
+msgid "The actions which have been applied to this notice."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:405
+msgid ""
+"email_body_sections: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:401
+msgid ""
+"By adding chunks of text into this element, other scripts can expand on "
+"notices that are being emailed.  The normal way to add text is to extend "
+"the vector by handling the :zeek:id:`Notice::notice` event and modifying "
+"the notice in place."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:411
+msgid ""
+"email_delay_tokens: :zeek:type:`set` [:zeek:type:`string`] "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:408
+msgid ""
+"Adding a string \"token\" to this set will cause the notice framework's "
+"built-in emailing functionality to delay sending the email until either "
+"the token has been removed or the email has been delayed for "
+":zeek:id:`Notice::max_email_delay`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:437
+msgid "identifier: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:414
+msgid ""
+"This field is to be provided when a notice is generated for the purpose "
+"of deduplicating notices.  The identifier string should be unique for a "
+"single instance of the notice.  This field should be filled out in almost"
+" all cases when generating notices to define when a notice is "
+"conceptually a duplicate of a previous notice."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:421
+msgid ""
+"For example, an SSL certificate that is going to expire soon should "
+"always have the same identifier no matter the client IP address that "
+"connected and resulted in the certificate being exposed.  In this case, "
+"the resp_h, resp_p, and hash of the certificate would be used to create "
+"this value.  The hash of the cert is included because servers can return "
+"multiple certificates on the same port."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:429
+msgid ""
+"Another example might be a host downloading a file which triggered a "
+"notice because the MD5 sum of the file it downloaded was known by some "
+"set of intelligence.  In that case, the orig_h (client) and MD5 sum would"
+" be used in this field to dedup because if the same file is downloaded "
+"over and over again you really only want to know about it a single time."
+"  This makes it possible to send those notices to email without worrying "
+"so much about sending thousands of emails."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:441
+msgid ""
+"suppress_for: :zeek:type:`interval` :zeek:attr:`&log` "
+":zeek:attr:`&default` = :zeek:see:`Notice::default_suppression_interval` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:440
+msgid ""
+"This field indicates the length of time that this unique notice should be"
+" suppressed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:447
+msgid ""
+"remote_location: :zeek:type:`geo_location` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:446
+msgid ""
+"If GeoIP support is built in, notices can have geographic information "
+"attached to them."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:453
+msgid ""
+"dropped: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = "
+"``F`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:450
+msgid ""
+"(present if :doc:`/scripts/policy/frameworks/notice/actions/drop.zeek` is"
+" loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:452
+msgid "Indicate if the $src IP address was dropped and denied network access."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:463
+msgid "Notice reporting a count of how often a notice occurred."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:467
+msgid "(present if :doc:`/scripts/base/frameworks/notice/weird.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:470
+msgid "Generic unusual but notice-worthy weird activity."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:474
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:481
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:490
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:499
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:511
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/signatures/main.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:477
+msgid "Generic notice type for notice-worthy signature matches."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:484
+msgid ""
+"Host has triggered many signatures on the same host.  The number of "
+"signatures is defined by the :zeek:id:`Signatures::vert_scan_thresholds` "
+"variable."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:493
+msgid ""
+"Host has triggered the same signature on multiple hosts as defined by the"
+" :zeek:id:`Signatures::horiz_scan_thresholds` variable."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:502
+msgid ""
+"The same signature has triggered multiple times for a host. The number of"
+" times the signature has been triggered is defined by the "
+":zeek:id:`Signatures::count_thresholds` variable. To generate this "
+"notice, the :zeek:enum:`Signatures::SIG_COUNT_PER_RESP` action must be "
+"set for the signature."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:514
+msgid ""
+"Summarize the number of times a host triggered a signature. The interval "
+"between summaries is defined by the "
+":zeek:id:`Signatures::summary_interval` variable."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:520
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:527
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:534
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/packet-filter/main.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:523
+msgid "This notice is generated if a packet filter cannot be compiled."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:530
+msgid "Generated if a packet filter fails to install."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:537
+msgid "Generated when a notice takes too long to compile."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:541
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/packet-filter/netstats.zeek` "
+"is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:544
+msgid "Indicates packets were dropped by the packet filter."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:548
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:553
+msgid ""
+"(present if :doc:`/scripts/policy/frameworks/dpd/detect-protocols.zeek` "
+"is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:558
+msgid ""
+"(present if :doc:`/scripts/policy/frameworks/intel/do_notice.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:561
+msgid ""
+"This notice is generated when an intelligence indicator is denoted to be "
+"notice-worthy."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:566
+msgid ""
+"(present if :doc:`/scripts/policy/frameworks/files/detect-MHR.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:569
+msgid ""
+"The hash value of a file transferred over HTTP matched in the malware "
+"hash registry."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:574
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:583
+msgid ""
+"(present if :doc:`/scripts/policy/frameworks/packet-filter/shunt.zeek` is"
+" loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:577
+msgid ""
+"Indicative that :zeek:id:`PacketFilter::max_bpf_shunts` connections are "
+"already being shunted with BPF filters and no more are allowed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:586
+msgid ""
+"Limitations in BPF make shunting some connections with BPF impossible.  "
+"This notice encompasses those various cases."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:591
+msgid ""
+"(present if :doc:`/scripts/policy/frameworks/software/version-"
+"changes.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:594
+msgid ""
+"For certain software, a version changing may matter.  In that case, this "
+"notice will be generated.  Software that matters if the version changes "
+"can be configured with the "
+":zeek:id:`Software::interesting_version_changes` variable."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:601
+msgid ""
+"(present if :doc:`/scripts/policy/frameworks/software/vulnerable.zeek` is"
+" loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:604
+msgid "Indicates that a vulnerable version of software was detected."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:608
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:616
+msgid "(present if :doc:`/scripts/policy/misc/capture-loss.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:611
+msgid ""
+"Report if the detected capture loss exceeds the percentage threshold "
+"defined in :zeek:id:`CaptureLoss::too_much_loss`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:619
+msgid ""
+"Report if the traffic seen by a peer within a given watch interval is "
+"less than :zeek:id:`CaptureLoss::minimum_acks`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:624
+msgid ""
+"(present if :doc:`/scripts/policy/misc/detect-traceroute/main.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:627
+msgid ""
+"Indicates that a host was seen running traceroutes.  For more detail "
+"about specific traceroutes that we run, refer to the traceroute.log."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:633
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:644
+msgid "(present if :doc:`/scripts/policy/misc/scan.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:636
+msgid ""
+"Address scans detect that a host appears to be scanning some number of "
+"destinations on a single port. This notice is generated when more than "
+":zeek:id:`Scan::addr_scan_threshold` unique hosts are seen over the "
+"previous :zeek:id:`Scan::addr_scan_interval` time range."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:647
+msgid ""
+"Port scans detect that an attacking host appears to be scanning a single "
+"victim host on several ports.  This notice is generated when an attacking"
+" host attempts to connect to :zeek:id:`Scan::port_scan_threshold` unique "
+"ports on a single host over the previous "
+":zeek:id:`Scan::port_scan_interval` time range."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:656
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:663
+msgid "(present if :doc:`/scripts/policy/protocols/conn/weirds.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:659
+msgid "Possible evasion; usually just chud."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:666
+msgid "Data has sequence hole; perhaps due to filtering."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:670
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/dns/detect-external-"
+"names.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:673
+msgid ""
+"Raised when a non-local name is found to be pointing at a local host.  "
+"The :zeek:id:`Site::local_zones` variable **must** be set appropriately "
+"for this detection."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:679
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/ftp/detect-bruteforcing.zeek`"
+" is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:682
+msgid ""
+"Indicates a host bruteforcing FTP logins by watching for too many "
+"rejected usernames or failed passwords."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:687
+msgid "(present if :doc:`/scripts/policy/protocols/ftp/detect.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:690
+msgid ""
+"Indicates that a successful response to a \"SITE EXEC\" command/arg pair "
+"was seen."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:695
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:703
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/http/detect-sqli.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:698
+msgid "Indicates that a host performing SQL injection attacks was detected."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:706
+msgid ""
+"Indicates that a host was seen to have SQL injection attacks against it."
+"  This is tracked by IP address as opposed to hostname."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:712
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:719
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/smtp/blocklists.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:715
+msgid "An SMTP server sent a reply mentioning an SMTP block list."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:722
+msgid ""
+"The originator's address is seen in the block list error message. This is"
+" useful to detect local hosts sending SPAM with a high positive rate."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:728
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/smtp/detect-suspicious-"
+"orig.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:733
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:742
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/ssh/detect-bruteforcing.zeek`"
+" is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:736
+msgid ""
+"Indicates that a host has been identified as crossing the "
+":zeek:id:`SSH::password_guesses_limit` threshold with failed logins."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:745
+msgid ""
+"Indicates that a host previously identified as a \"password guesser\" has"
+" now had a successful login attempt. This is not currently implemented."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:751
+msgid "(present if :doc:`/scripts/policy/protocols/ssh/geo-data.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:754
+msgid ""
+"If an SSH login is seen to or from a \"watched\" country based on the "
+":zeek:id:`SSH::watched_countries` variable then this notice will be "
+"generated."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:760
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/ssh/interesting-"
+"hostnames.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:763
+msgid ""
+"Generated if a login originates or responds with a host where the reverse"
+" hostname lookup resolves to a name matched by the "
+":zeek:id:`SSH::interesting_hostnames` regular expression."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:769
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:777
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:785
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/ssl/expiring-certs.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:772
+msgid ""
+"Indicates that a certificate's NotValidAfter date has lapsed and the "
+"certificate is now invalid."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:780
+msgid ""
+"Indicates that a certificate is going to expire within "
+":zeek:id:`SSL::notify_when_cert_expiring_in`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:788
+msgid "Indicates that a certificate's NotValidBefore date is future dated."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:793
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:800
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:807
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:814
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/ssl/heartbleed.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:796
+msgid "Indicates that a host performed a heartbleed attack or scan."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:803
+msgid ""
+"Indicates that a host performing a heartbleed attack was probably "
+"successful."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:810
+msgid ""
+"Indicates we saw heartbeat requests with odd length. Probably an attack "
+"or scan."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:817
+msgid ""
+"Indicates we saw many heartbeat requests without a reply. Might be an "
+"attack."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:821
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/ssl/validate-certs.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:824
+msgid ""
+"This notice indicates that the result of validating the certificate along"
+" with its full certificate chain was invalid."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:830
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/ssl/validate-ocsp.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:833
+msgid "This indicates that the OCSP response was not deemed to be valid."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:838
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:845
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:852
+msgid "(present if :doc:`/scripts/policy/protocols/ssl/weak-keys.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:841
+msgid "Indicates that a server is using a potentially unsafe key."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:848
+msgid "Indicates that a server is using a potentially unsafe version"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:855
+msgid "Indicates that a server is using a potentially unsafe cipher"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:859
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:867
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:875
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:880
+msgid "(present if :doc:`/scripts/zeekygen/example.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:862
+msgid "Any number of this type of comment will document \"Zeekygen_One\"."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:870
+msgid "Any number of this type of comment will document \"ZEEKYGEN_TWO\"."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:883
+msgid ""
+"Omitting comments is fine, and so is mixing ``##`` and ``##<``, but it's "
+"probably best to use only one style consistently."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:886
+msgid ""
+"Scripts creating new notices need to redef this enum to add their own "
+"specific notice types which would then get used when they call the "
+":zeek:id:`NOTICE` function.  The convention is to give a general category"
+" along with the specific notice separating words with underscores and "
+"using leading capitals on each word except for abbreviations which are "
+"kept in all capitals. For example, SSH::Password_Guessing is for hosts "
+"that have crossed a threshold of failed SSH logins."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:899
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:927
+msgid ""
+":zeek:type:`event` (ts: :zeek:type:`time`, suppress_for: "
+":zeek:type:`interval`, note: :zeek:type:`Notice::Type`, identifier: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "ts"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:904
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:933
+msgid "time indicating then when the notice to be suppressed occured."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "suppress_for"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:907
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:936
+msgid "length of time that this notice should be suppressed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "note"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "identifier"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:913
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:942
+msgid "The identifier string of the notice that should be suppressed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:917
+msgid ":zeek:type:`event` (rec: :zeek:type:`Notice::Info`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "rec"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:923
+msgid "The record containing notice data before it is logged."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:946
+msgid ":zeek:type:`event` (n: :zeek:type:`Notice::Info`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "n"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:952
+msgid ""
+"The record containing notice data regarding the notice type being "
+"suppressed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:959
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:965
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:970
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:983
+msgid ":zeek:type:`hook` (n: :zeek:type:`Notice::Info`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:972
+msgid ""
+"This is the event that is called as the entry point to the notice "
+"framework by the global :zeek:id:`NOTICE` function. By the time this "
+"event is generated, default values have already been filled out in the "
+":zeek:type:`Notice::Info` record and the notice policy has also been "
+"applied."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:979
+msgid "The record containing notice data."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:991
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:996
+msgid ":zeek:type:`function` (n: :zeek:type:`Notice::Info`) : :zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1002
+msgid ""
+":zeek:type:`function` (f: :zeek:type:`fa_file`) : "
+":zeek:type:`Notice::FileInfo`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "f"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1007
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1077
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1089
+msgid "record containing metadata about a file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1010
+msgid "record containing a subset of fields copied from *f*."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1014
+msgid ""
+":zeek:type:`function` (subject_desc: :zeek:type:`string`, dest: "
+":zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "subject_desc"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1020
+msgid "a subject string to use for the mail."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "dest"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1023
+msgid "recipient string to use for the mail."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1026
+msgid "a string of mail headers to which an email body can be appended."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1031
+msgid ""
+":zeek:type:`function` (n: :zeek:type:`Notice::Info`, dest: "
+":zeek:type:`string`, extend: :zeek:type:`bool`) : :zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1033
+msgid ""
+"Call this function to send a notice in an email.  It is already used by "
+"default with the built in :zeek:enum:`Notice::ACTION_EMAIL` and "
+":zeek:enum:`Notice::ACTION_PAGE` actions."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1038
+msgid "The record of notice data to email."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1041
+msgid "The intended recipient of the notice email."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "extend"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1044
+msgid ""
+"Whether to extend the email using the ``email_body_sections`` field of "
+"*n*."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1049
+msgid ":zeek:type:`function` (n: :zeek:type:`Notice::Info`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1054
+msgid "The record containing the notice in question."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1058
+msgid ""
+":zeek:type:`function` (info: :zeek:type:`Log::RotationInfo`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1060
+msgid ""
+"A log postprocessing function that implements emailing the contents of a "
+"log upon rotation to any configured :zeek:id:`Notice::mail_dest`. The "
+"rotated log is removed upon being sent."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "info"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1065
+msgid "A record containing the rotated log file information."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1068
+msgid "True."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1072
+msgid ""
+":zeek:type:`function` (f: :zeek:type:`fa_file`, n: "
+":zeek:type:`Notice::Info`) : :zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1080
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1092
+msgid "a notice record that needs file-related fields populated."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst:1084
+msgid ""
+":zeek:type:`function` (fi: :zeek:type:`Notice::FileInfo`, n: "
+":zeek:type:`Notice::Info`) : :zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/main.zeek.rst
+msgid "fi"
+msgstr ""
+

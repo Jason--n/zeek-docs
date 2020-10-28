@@ -1,0 +1,368 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:4
+msgid "policy/files/unified2/main.zeek"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:8
+msgid "Unified2"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:9
+msgid ""
+":doc:`base/utils/dir.zeek </scripts/base/utils/dir.zeek>`, "
+":doc:`base/utils/paths.zeek </scripts/base/utils/paths.zeek>`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:14
+#: ../../scripts/policy/files/unified2/main.zeek.rst:62
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:16
+msgid ""
+":zeek:id:`Unified2::classification_config`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:16
+#: ../../scripts/policy/files/unified2/main.zeek.rst:69
+msgid "The classification.config file you would like to use for your alerts."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:17
+msgid ":zeek:id:`Unified2::gen_msg`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:17
+#: ../../scripts/policy/files/unified2/main.zeek.rst:77
+msgid "The gen-msg.map file you would like to use for your alerts."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:18
+msgid ":zeek:id:`Unified2::sid_msg`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:18
+#: ../../scripts/policy/files/unified2/main.zeek.rst:85
+msgid "The sid-msg.map file you would like to use for your alerts."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:19
+msgid ":zeek:id:`Unified2::watch_dir`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:19
+#: ../../scripts/policy/files/unified2/main.zeek.rst:93
+msgid "Directory to watch for Unified2 records."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:20
+msgid ":zeek:id:`Unified2::watch_file`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:20
+#: ../../scripts/policy/files/unified2/main.zeek.rst:101
+msgid "File to watch for Unified2 files."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:24
+#: ../../scripts/policy/files/unified2/main.zeek.rst:104
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:26
+msgid ":zeek:type:`Unified2::Info`: :zeek:type:`record` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:27
+msgid ":zeek:type:`Unified2::PacketID`: :zeek:type:`record` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:31
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:33
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:35
+msgid ":zeek:enum:`Unified2::LOG`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:36
+msgid ":zeek:type:`fa_file`: :zeek:type:`record` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:38
+msgid ":zeek:type:`fa_file`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:40
+msgid ""
+"u2_events: :zeek:type:`table` [:zeek:type:`count`] of "
+":zeek:type:`Unified2::IDSEvent` :zeek:attr:`&optional` "
+":zeek:attr:`&create_expire` = ``5.0 secs`` :zeek:attr:`&expire_func` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:41
+msgid "Recently received IDS events."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:45
+#: ../../scripts/policy/files/unified2/main.zeek.rst:165
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:47
+msgid ":zeek:id:`Unified2::alert`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:47
+#: ../../scripts/policy/files/unified2/main.zeek.rst:170
+msgid "Reconstructed \"alert\" which combines related events and packets."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:49
+msgid ":zeek:id:`Unified2::log_unified2`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:49
+#: ../../scripts/policy/files/unified2/main.zeek.rst:177
+msgid "The event for accessing logged records."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:53
+#: ../../scripts/policy/files/unified2/main.zeek.rst:180
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:55
+msgid ":zeek:id:`Unified2::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:60
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:65
+#: ../../scripts/policy/files/unified2/main.zeek.rst:73
+#: ../../scripts/policy/files/unified2/main.zeek.rst:81
+#: ../../scripts/policy/files/unified2/main.zeek.rst:89
+#: ../../scripts/policy/files/unified2/main.zeek.rst:97
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:66
+#: ../../scripts/policy/files/unified2/main.zeek.rst:74
+#: ../../scripts/policy/files/unified2/main.zeek.rst:82
+#: ../../scripts/policy/files/unified2/main.zeek.rst:90
+#: ../../scripts/policy/files/unified2/main.zeek.rst:98
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:67
+#: ../../scripts/policy/files/unified2/main.zeek.rst:75
+#: ../../scripts/policy/files/unified2/main.zeek.rst:83
+#: ../../scripts/policy/files/unified2/main.zeek.rst:91
+#: ../../scripts/policy/files/unified2/main.zeek.rst:99
+msgid "``\"\"``"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:107
+#: ../../scripts/policy/files/unified2/main.zeek.rst:152
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:110
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:110
+msgid "Timestamp attached to the alert."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:113
+msgid "id: :zeek:type:`Unified2::PacketID` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:113
+msgid "Addresses and ports for the connection."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:116
+msgid "sensor_id: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:116
+msgid "Sensor that originated this event."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:119
+msgid "signature_id: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:119
+msgid "Sig id for this generator."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:122
+msgid "signature: :zeek:type:`string` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:122
+msgid ""
+"A string representation of the *signature_id* field if a sid_msg.map file"
+" was loaded."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:125
+msgid "generator_id: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:125
+msgid "Which generator generated the alert?"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:128
+msgid "generator: :zeek:type:`string` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:128
+msgid ""
+"A string representation of the *generator_id* field if a gen_msg.map file"
+" was loaded."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:131
+msgid "signature_revision: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:131
+msgid "Sig revision for this id."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:134
+msgid "classification_id: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:134
+msgid "Event classification."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:137
+msgid ""
+"classification: :zeek:type:`string` :zeek:attr:`&optional` "
+":zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:137
+msgid "Descriptive classification string."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:140
+msgid "priority_id: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:140
+msgid "Event priority."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:143
+msgid "event_id: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:143
+msgid "Event ID."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:145
+msgid "packet: :zeek:type:`string` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:146
+msgid "Some of the packet data."
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:147
+#: ../../scripts/policy/files/unified2/main.zeek.rst:161
+msgid ":zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:154
+msgid "src_ip: :zeek:type:`addr` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:156
+msgid "src_p: :zeek:type:`port` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:158
+msgid "dst_ip: :zeek:type:`addr` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:160
+msgid "dst_p: :zeek:type:`port` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:168
+msgid ""
+":zeek:type:`event` (f: :zeek:type:`fa_file`, ev: "
+":zeek:type:`Unified2::IDSEvent`, pkt: :zeek:type:`Unified2::Packet`)"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:175
+msgid ":zeek:type:`event` (rec: :zeek:type:`Unified2::Info`)"
+msgstr ""
+
+#: ../../scripts/policy/files/unified2/main.zeek.rst:183
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

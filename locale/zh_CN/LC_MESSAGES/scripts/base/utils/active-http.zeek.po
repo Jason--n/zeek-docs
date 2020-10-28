@@ -1,0 +1,258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/utils/active-http.zeek.rst:4
+msgid "base/utils/active-http.zeek"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:7
+msgid ""
+"A module for performing active HTTP requests and getting the reply at "
+"runtime."
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:10
+msgid "ActiveHTTP"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:11
+msgid ":doc:`base/utils/exec.zeek </scripts/base/utils/exec.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:16
+#: ../../scripts/base/utils/active-http.zeek.rst:40
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:18
+msgid ""
+":zeek:id:`ActiveHTTP::default_max_time`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:18
+#: ../../scripts/base/utils/active-http.zeek.rst:47
+msgid "The default timeout for HTTP requests."
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:19
+msgid ""
+":zeek:id:`ActiveHTTP::default_method`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:19
+#: ../../scripts/base/utils/active-http.zeek.rst:55
+msgid "The default HTTP method/verb to use for requests."
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:23
+#: ../../scripts/base/utils/active-http.zeek.rst:58
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:25
+msgid ":zeek:type:`ActiveHTTP::Request`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:26
+msgid ":zeek:type:`ActiveHTTP::Response`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:30
+#: ../../scripts/base/utils/active-http.zeek.rst:101
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:32
+msgid ":zeek:id:`ActiveHTTP::request`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:32
+msgid ""
+"Perform an HTTP request according to the :zeek:type:`ActiveHTTP::Request`"
+" record."
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:38
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:43
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:44
+#: ../../scripts/base/utils/active-http.zeek.rst:52
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:45
+msgid "``1.0 min``"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:51
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:53
+msgid "``\"GET\"``"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:61
+#: ../../scripts/base/utils/active-http.zeek.rst:85
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:64
+msgid "url: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:64
+msgid "The URL being requested."
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:67
+msgid ""
+"method: :zeek:type:`string` :zeek:attr:`&default` = "
+":zeek:see:`ActiveHTTP::default_method` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:67
+msgid "The HTTP method/verb to use for the request."
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:72
+msgid "client_data: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:70
+msgid ""
+"Data to send to the server in the client body.  Keep in mind that you "
+"will probably need to set the *method* field to \"POST\" or \"PUT\"."
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:75
+msgid ""
+"max_time: :zeek:type:`interval` :zeek:attr:`&default` = "
+":zeek:see:`ActiveHTTP::default_max_time` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:75
+msgid "Timeout for the request."
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:79
+msgid "addl_curl_args: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:78
+msgid ""
+"Additional curl command line arguments.  Be very careful with this option"
+" since shell injection could take place if careful handling of untrusted "
+"data is not applied."
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:88
+msgid "code: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:88
+msgid "Numeric response code from the server."
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:91
+msgid "msg: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:91
+msgid "String response message from the server."
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:94
+msgid "body: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:94
+msgid "Full body of the response."
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:96
+msgid ""
+"headers: :zeek:type:`table` [:zeek:type:`string`] of :zeek:type:`string` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:97
+msgid "All headers returned by the server."
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:104
+msgid ""
+":zeek:type:`function` (req: :zeek:type:`ActiveHTTP::Request`) : "
+":zeek:type:`ActiveHTTP::Response`"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:106
+msgid ""
+"Perform an HTTP request according to the :zeek:type:`ActiveHTTP::Request`"
+" record.  This is an asynchronous function and must be called within a "
+"\"when\" statement."
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst
+msgid "req"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:111
+msgid "A record instance representing all options for an HTTP request."
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/utils/active-http.zeek.rst:114
+msgid "A record with the full response message."
+msgstr ""
+

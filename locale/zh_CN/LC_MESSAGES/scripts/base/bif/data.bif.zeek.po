@@ -1,0 +1,432 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:4
+msgid "base/bif/data.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:8
+msgid "Functions for inspecting and manipulating broker data."
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst
+msgid "Namespaces"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:10
+msgid "Broker, GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:15
+#: ../../scripts/base/bif/data.bif.zeek.rst:73
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:17
+msgid ":zeek:type:`Broker::DataType`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:17
+#: ../../scripts/base/bif/data.bif.zeek.rst:108
+msgid ""
+"Enumerates the possible types that :zeek:see:`Broker::Data` may be in "
+"terms of Zeek data types."
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:22
+#: ../../scripts/base/bif/data.bif.zeek.rst:112
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:24
+msgid ":zeek:id:`Broker::__data`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:25
+msgid ":zeek:id:`Broker::__data_type`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:26
+msgid ""
+":zeek:id:`Broker::__opaque_clone_through_serialization`: "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:27
+msgid ":zeek:id:`Broker::__record_assign`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:28
+msgid ":zeek:id:`Broker::__record_create`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:29
+msgid ":zeek:id:`Broker::__record_iterator`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:30
+msgid ":zeek:id:`Broker::__record_iterator_last`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:31
+msgid ":zeek:id:`Broker::__record_iterator_next`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:32
+msgid ":zeek:id:`Broker::__record_iterator_value`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:33
+msgid ":zeek:id:`Broker::__record_lookup`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:34
+msgid ":zeek:id:`Broker::__record_size`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:35
+msgid ":zeek:id:`Broker::__set_clear`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:36
+msgid ":zeek:id:`Broker::__set_contains`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:37
+msgid ":zeek:id:`Broker::__set_create`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:38
+msgid ":zeek:id:`Broker::__set_insert`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:39
+msgid ":zeek:id:`Broker::__set_iterator`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:40
+msgid ":zeek:id:`Broker::__set_iterator_last`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:41
+msgid ":zeek:id:`Broker::__set_iterator_next`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:42
+msgid ":zeek:id:`Broker::__set_iterator_value`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:43
+msgid ":zeek:id:`Broker::__set_remove`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:44
+msgid ":zeek:id:`Broker::__set_size`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:45
+msgid ":zeek:id:`Broker::__table_clear`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:46
+msgid ":zeek:id:`Broker::__table_contains`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:47
+msgid ":zeek:id:`Broker::__table_create`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:48
+msgid ":zeek:id:`Broker::__table_insert`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:49
+msgid ":zeek:id:`Broker::__table_iterator`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:50
+msgid ":zeek:id:`Broker::__table_iterator_last`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:51
+msgid ":zeek:id:`Broker::__table_iterator_next`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:52
+msgid ":zeek:id:`Broker::__table_iterator_value`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:53
+msgid ":zeek:id:`Broker::__table_lookup`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:54
+msgid ":zeek:id:`Broker::__table_remove`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:55
+msgid ":zeek:id:`Broker::__table_size`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:56
+msgid ":zeek:id:`Broker::__vector_clear`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:57
+msgid ":zeek:id:`Broker::__vector_create`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:58
+msgid ":zeek:id:`Broker::__vector_insert`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:59
+msgid ":zeek:id:`Broker::__vector_iterator`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:60
+msgid ":zeek:id:`Broker::__vector_iterator_last`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:61
+msgid ":zeek:id:`Broker::__vector_iterator_next`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:62
+msgid ":zeek:id:`Broker::__vector_iterator_value`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:63
+msgid ":zeek:id:`Broker::__vector_lookup`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:64
+msgid ":zeek:id:`Broker::__vector_remove`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:65
+msgid ":zeek:id:`Broker::__vector_replace`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:66
+msgid ":zeek:id:`Broker::__vector_size`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:71
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:76
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:115
+msgid ":zeek:type:`function` (d: :zeek:type:`any`) : :zeek:type:`Broker::Data`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:120
+msgid ""
+":zeek:type:`function` (d: :zeek:type:`Broker::Data`) : "
+":zeek:type:`Broker::DataType`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:125
+msgid ":zeek:type:`function` (d: :zeek:type:`any`) : :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:130
+msgid ""
+":zeek:type:`function` (r: :zeek:type:`Broker::Data`, idx: "
+":zeek:type:`count`, d: :zeek:type:`any`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:135
+msgid ":zeek:type:`function` (sz: :zeek:type:`count`) : :zeek:type:`Broker::Data`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:140
+msgid ""
+":zeek:type:`function` (r: :zeek:type:`Broker::Data`) : "
+":zeek:type:`opaque` of Broker::RecordIterator"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:145
+#: ../../scripts/base/bif/data.bif.zeek.rst:150
+msgid ""
+":zeek:type:`function` (it: :zeek:type:`opaque` of Broker::RecordIterator)"
+" : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:155
+msgid ""
+":zeek:type:`function` (it: :zeek:type:`opaque` of Broker::RecordIterator)"
+" : :zeek:type:`Broker::Data`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:160
+msgid ""
+":zeek:type:`function` (r: :zeek:type:`Broker::Data`, idx: "
+":zeek:type:`count`) : :zeek:type:`Broker::Data`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:165
+msgid ":zeek:type:`function` (r: :zeek:type:`Broker::Data`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:170
+msgid ":zeek:type:`function` (s: :zeek:type:`Broker::Data`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:175
+#: ../../scripts/base/bif/data.bif.zeek.rst:185
+#: ../../scripts/base/bif/data.bif.zeek.rst:210
+msgid ""
+":zeek:type:`function` (s: :zeek:type:`Broker::Data`, key: "
+":zeek:type:`any`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:180
+#: ../../scripts/base/bif/data.bif.zeek.rst:230
+#: ../../scripts/base/bif/data.bif.zeek.rst:280
+msgid ":zeek:type:`function` () : :zeek:type:`Broker::Data`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:190
+msgid ""
+":zeek:type:`function` (s: :zeek:type:`Broker::Data`) : "
+":zeek:type:`opaque` of Broker::SetIterator"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:195
+#: ../../scripts/base/bif/data.bif.zeek.rst:200
+msgid ""
+":zeek:type:`function` (it: :zeek:type:`opaque` of Broker::SetIterator) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:205
+msgid ""
+":zeek:type:`function` (it: :zeek:type:`opaque` of Broker::SetIterator) : "
+":zeek:type:`Broker::Data`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:215
+msgid ":zeek:type:`function` (s: :zeek:type:`Broker::Data`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:220
+msgid ":zeek:type:`function` (t: :zeek:type:`Broker::Data`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:225
+msgid ""
+":zeek:type:`function` (t: :zeek:type:`Broker::Data`, key: "
+":zeek:type:`any`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:235
+msgid ""
+":zeek:type:`function` (t: :zeek:type:`Broker::Data`, key: "
+":zeek:type:`any`, val: :zeek:type:`any`) : :zeek:type:`Broker::Data`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:240
+msgid ""
+":zeek:type:`function` (t: :zeek:type:`Broker::Data`) : "
+":zeek:type:`opaque` of Broker::TableIterator"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:245
+#: ../../scripts/base/bif/data.bif.zeek.rst:250
+msgid ""
+":zeek:type:`function` (it: :zeek:type:`opaque` of Broker::TableIterator) "
+": :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:255
+msgid ""
+":zeek:type:`function` (it: :zeek:type:`opaque` of Broker::TableIterator) "
+": :zeek:type:`Broker::TableItem`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:260
+#: ../../scripts/base/bif/data.bif.zeek.rst:265
+msgid ""
+":zeek:type:`function` (t: :zeek:type:`Broker::Data`, key: "
+":zeek:type:`any`) : :zeek:type:`Broker::Data`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:270
+msgid ":zeek:type:`function` (t: :zeek:type:`Broker::Data`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:275
+msgid ":zeek:type:`function` (v: :zeek:type:`Broker::Data`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:285
+msgid ""
+":zeek:type:`function` (v: :zeek:type:`Broker::Data`, idx: "
+":zeek:type:`count`, d: :zeek:type:`any`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:290
+msgid ""
+":zeek:type:`function` (v: :zeek:type:`Broker::Data`) : "
+":zeek:type:`opaque` of Broker::VectorIterator"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:295
+#: ../../scripts/base/bif/data.bif.zeek.rst:300
+msgid ""
+":zeek:type:`function` (it: :zeek:type:`opaque` of Broker::VectorIterator)"
+" : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:305
+msgid ""
+":zeek:type:`function` (it: :zeek:type:`opaque` of Broker::VectorIterator)"
+" : :zeek:type:`Broker::Data`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:310
+#: ../../scripts/base/bif/data.bif.zeek.rst:315
+msgid ""
+":zeek:type:`function` (v: :zeek:type:`Broker::Data`, idx: "
+":zeek:type:`count`) : :zeek:type:`Broker::Data`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:320
+msgid ""
+":zeek:type:`function` (v: :zeek:type:`Broker::Data`, idx: "
+":zeek:type:`count`, d: :zeek:type:`any`) : :zeek:type:`Broker::Data`"
+msgstr ""
+
+#: ../../scripts/base/bif/data.bif.zeek.rst:325
+msgid ":zeek:type:`function` (v: :zeek:type:`Broker::Data`) : :zeek:type:`count`"
+msgstr ""
+

@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:4
+msgid "base/frameworks/config/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:7
+msgid ""
+"The configuration framework provides a way to change Zeek options (as "
+"specified by the \"option\" keyword) at runtime. It also logs runtime "
+"changes to options to config.log."
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:11
+msgid "Config"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:12
+msgid ":doc:`base/frameworks/cluster </scripts/base/frameworks/cluster/index>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:15
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:17
+#: ../../scripts/base/frameworks/config/main.zeek.rst:54
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:19
+msgid ":zeek:type:`Config::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:19
+#: ../../scripts/base/frameworks/config/main.zeek.rst:74
+msgid "Represents the data in config.log."
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:23
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:25
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:25
+msgid "The config logging stream identifier."
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:27
+msgid ":zeek:enum:`Config::LOG`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:31
+#: ../../scripts/base/frameworks/config/main.zeek.rst:77
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:33
+msgid ":zeek:id:`Config::log_config`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:33
+#: ../../scripts/base/frameworks/config/main.zeek.rst:82
+msgid ""
+"Event that can be handled to access the :zeek:type:`Config::Info` record "
+"as it is sent on to the logging framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:38
+#: ../../scripts/base/frameworks/config/main.zeek.rst:86
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:40
+msgid ":zeek:id:`Config::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:40
+#: ../../scripts/base/frameworks/config/main.zeek.rst:91
+msgid "A default logging policy hook for the stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:44
+#: ../../scripts/base/frameworks/config/main.zeek.rst:94
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:46
+msgid ":zeek:id:`Config::set_value`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:46
+msgid ""
+"This function is the config framework layer around the lower-level "
+":zeek:see:`Option::set` call."
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:52
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:57
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:60
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:60
+msgid "Timestamp at which the configuration change occured."
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:63
+msgid "id: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:63
+msgid "ID of the value that was changed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:66
+msgid "old_value: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:66
+msgid "Value before the change."
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:69
+msgid "new_value: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:69
+msgid "Value after the change."
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:72
+msgid "location: :zeek:type:`string` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:72
+msgid "Optional location that triggered the change."
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:80
+msgid ":zeek:type:`event` (rec: :zeek:type:`Config::Info`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:89
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:97
+msgid ""
+":zeek:type:`function` (ID: :zeek:type:`string`, val: :zeek:type:`any`, "
+"location: :zeek:type:`string` :zeek:attr:`&default` = ``\"\"`` "
+":zeek:attr:`&optional`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:99
+msgid ""
+"This function is the config framework layer around the lower-level "
+":zeek:see:`Option::set` call. Config::set_value will set the "
+"configuration value for all nodes in the cluster, no matter where it was "
+"called. Note that :zeek:see:`Option::set` does not distribute "
+"configuration changes to other nodes."
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst
+msgid "ID"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:106
+msgid "The ID of the option to update."
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst
+msgid "val"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:109
+msgid "The new value of the option."
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst
+msgid "location"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:112
+msgid "Optional parameter detailing where this change originated from."
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/config/main.zeek.rst:115
+msgid "true on success, false when an error occurs."
+msgstr ""
+

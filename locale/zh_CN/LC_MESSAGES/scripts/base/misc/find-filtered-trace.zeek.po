@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/misc/find-filtered-trace.zeek.rst:4
+msgid "base/misc/find-filtered-trace.zeek"
+msgstr ""
+
+#: ../../scripts/base/misc/find-filtered-trace.zeek.rst:7
+msgid ""
+"Discovers trace files that contain TCP traffic consisting only of control"
+" packets (e.g. it's been filtered to contain only SYN/FIN/RST packets and"
+" no content).  On finding such a trace, a warning is emitted that "
+"suggests toggling the :zeek:see:`detect_filtered_trace` option may be "
+"desired if the user does not want Zeek to report missing TCP segments."
+msgstr ""
+
+#: ../../scripts/base/misc/find-filtered-trace.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/misc/find-filtered-trace.zeek.rst:14
+msgid "FilteredTraceDetection"
+msgstr ""
+
+#: ../../scripts/base/misc/find-filtered-trace.zeek.rst:17
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/misc/find-filtered-trace.zeek.rst:19
+#: ../../scripts/base/misc/find-filtered-trace.zeek.rst:28
+msgid "State Variables"
+msgstr ""
+
+#: ../../scripts/base/misc/find-filtered-trace.zeek.rst:21
+msgid ""
+":zeek:id:`FilteredTraceDetection::enable`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/misc/find-filtered-trace.zeek.rst:21
+#: ../../scripts/base/misc/find-filtered-trace.zeek.rst:35
+msgid "Flag to enable filtered trace file detection and warning message."
+msgstr ""
+
+#: ../../scripts/base/misc/find-filtered-trace.zeek.rst:26
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/misc/find-filtered-trace.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/misc/find-filtered-trace.zeek.rst:31
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/misc/find-filtered-trace.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/misc/find-filtered-trace.zeek.rst:32
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/misc/find-filtered-trace.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/misc/find-filtered-trace.zeek.rst:33
+msgid "``T``"
+msgstr ""
+

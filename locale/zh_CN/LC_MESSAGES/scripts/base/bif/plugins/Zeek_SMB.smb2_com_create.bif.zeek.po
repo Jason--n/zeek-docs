@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:25
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:15
+msgid ":zeek:id:`smb2_create_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:15
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 requests of type *create*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:17
+msgid ":zeek:id:`smb2_create_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:17
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 responses of type *create*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:23
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:28
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`SMB2::Header`, request: :zeek:type:`SMB2::CreateRequest`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:30
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 requests of type *create*. This is sent "
+"by the client to request either creation of or access to a file."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:34
+msgid "For more information, see MS-SMB2:2.2.13"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:37
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:58
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst
+msgid "hdr"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:40
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:61
+msgid ""
+"The parsed header of the :abbr:`SMB (Server Message Block)` version 2 "
+"message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst
+msgid "request"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:43
+msgid "A record with more information related to the request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:49
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`SMB2::Header`, response: :zeek:type:`SMB2::CreateResponse`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:51
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 responses of type *create*. This is sent"
+" by the server to notify the client of the status of its SMB2 CREATE "
+"request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:55
+msgid "For more information, see MS-SMB2:2.2.14"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst
+msgid "response"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek.rst:64
+msgid "A record with more information related to the response."
+msgstr ""
+

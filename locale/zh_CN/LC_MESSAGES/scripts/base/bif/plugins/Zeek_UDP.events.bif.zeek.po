@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_UDP.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:26
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:15
+msgid ":zeek:id:`udp_contents`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:15
+msgid "Generated for UDP packets to pass on their payload."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:16
+msgid ":zeek:id:`udp_multiple_checksum_errors`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:58
+msgid ""
+"Generated if a UDP flow crosses a checksum-error threshold, per 'C'/'c' "
+"history reporting."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:18
+msgid ":zeek:id:`udp_reply`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:18
+msgid "Generated for each packet sent by a UDP flow's responder."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:19
+msgid ":zeek:id:`udp_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:19
+msgid "Generated for each packet sent by a UDP flow's originator."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:24
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:29
+msgid ""
+":zeek:type:`event` (u: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, contents: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:31
+msgid ""
+"Generated for UDP packets to pass on their payload. As the number of UDP "
+"packets can be very large, this event is normally raised only for those "
+"on ports configured in :zeek:id:`udp_content_delivery_ports_orig` (for "
+"packets sent by the flow's originator) or "
+":zeek:id:`udp_content_delivery_ports_resp` (for packets sent by the "
+"flow's responder). However, delivery can be enabled for all UDP request "
+"and reply packets by setting :zeek:id:`udp_content_deliver_all_orig` or "
+":zeek:id:`udp_content_deliver_all_resp`, respectively. Note that this "
+"event is also raised for all matching UDP packets, including empty ones."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst
+msgid "u"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:42
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:62
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:82
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:95
+msgid "The connection record for the corresponding UDP flow."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:45
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:65
+msgid "True if the event is raised for the originator side."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst
+msgid "contents"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:48
+msgid "TODO."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:56
+msgid ""
+":zeek:type:`event` (u: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, threshold: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst
+msgid "threshold"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:68
+msgid "the threshold that was crossed"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:75
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:88
+msgid ":zeek:type:`event` (u: :zeek:type:`connection`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:77
+msgid ""
+"Generated for each packet sent by a UDP flow's responder. This a "
+"potentially expensive event due to the volume of UDP traffic and should "
+"be used with care."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_UDP.events.bif.zeek.rst:90
+msgid ""
+"Generated for each packet sent by a UDP flow's originator. This a "
+"potentially expensive event due to the volume of UDP traffic and should "
+"be used with care."
+msgstr ""
+

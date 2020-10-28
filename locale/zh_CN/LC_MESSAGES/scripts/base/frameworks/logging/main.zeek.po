@@ -1,0 +1,2001 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:4
+msgid "base/frameworks/logging/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:7
+msgid "The Zeek logging interface."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:9
+msgid ""
+"See :doc:`/frameworks/logging` for an introduction to Zeek's logging "
+"framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:12
+msgid "Log"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:13
+msgid ":doc:`base/bif/logging.bif.zeek </scripts/base/bif/logging.bif.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:16
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:18
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:137
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:20
+msgid ""
+":zeek:id:`Log::default_rotation_dir`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:20
+msgid ""
+"Default rotation directory to use for the *dir* field of "
+":zeek:see:`Log::RotationPath` during calls to "
+":zeek:see:`Log::rotation_format_func`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:26
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:150
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:28
+msgid ""
+":zeek:id:`Log::default_ext_prefix`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:28
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:157
+msgid ""
+"A prefix for extension fields which can be optionally prefixed on all log"
+" lines by setting the `ext_func` field in the log filter."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:31
+msgid ""
+":zeek:id:`Log::default_field_name_map`: :zeek:type:`table` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:31
+msgid ""
+"Default field name mapping for renaming fields in a logging framework "
+"filter."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:33
+msgid ""
+":zeek:id:`Log::default_mail_alarms_interval`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:33
+msgid "Default alarm summary mail interval."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:34
+msgid ""
+":zeek:id:`Log::default_rotation_date_format`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:34
+msgid "Default naming format for timestamps embedded into filenames."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:35
+msgid ""
+":zeek:id:`Log::default_rotation_interval`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:35
+msgid ""
+"Default rotation interval to use for filters that do not specify an "
+"interval."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:37
+msgid ""
+":zeek:id:`Log::default_rotation_postprocessor_cmd`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:37
+msgid "Default shell command to run on rotated files."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:38
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:95
+msgid ""
+":zeek:id:`Log::default_rotation_postprocessors`: :zeek:type:`table` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:38
+msgid "Specifies the default postprocessor function per writer type."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:39
+msgid ":zeek:id:`Log::default_scope_sep`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:39
+msgid ""
+"Default separator for log field scopes when logs are unrolled and "
+"flattened."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:41
+msgid ""
+":zeek:id:`Log::default_writer`: :zeek:type:`Log::Writer` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:41
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:250
+msgid "Default writer to use if a filter does not specify anything else."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:42
+msgid ":zeek:id:`Log::empty_field`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:42
+msgid "Default string to use for empty fields."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:43
+msgid ""
+":zeek:id:`Log::enable_local_logging`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:43
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:268
+msgid "If true, local logging is by default enabled for all filters."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:44
+msgid ""
+":zeek:id:`Log::enable_remote_logging`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:44
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:276
+msgid "If true, remote logging is by default enabled for all filters."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:45
+msgid ":zeek:id:`Log::print_log_path`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:45
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:284
+msgid ""
+"If :zeek:see:`Log::print_to_log` is enabled to write to a print log, this"
+" is the path to which the print Log Stream writes to"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:47
+msgid ""
+":zeek:id:`Log::print_to_log`: :zeek:type:`Log::PrintLogType` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:47
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:293
+msgid "Set configuration for ``print`` statements redirected to logs."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:48
+msgid ":zeek:id:`Log::separator`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:48
+msgid "Default separator to use between fields."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:49
+msgid ":zeek:id:`Log::set_separator`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:49
+msgid "Default separator to use between elements of a set."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:50
+msgid ":zeek:id:`Log::unset_field`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:50
+msgid "Default string to use for an unset &optional field."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:54
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:323
+msgid "Constants"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:56
+msgid ":zeek:id:`Log::no_filter`: :zeek:type:`Log::Filter`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:56
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:357
+msgid "Sentinel value for indicating that a filter was not found when looked up."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:60
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:360
+msgid "State Variables"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:62
+msgid ":zeek:id:`Log::active_streams`: :zeek:type:`table`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:62
+msgid "The streams which are currently active and not disabled."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:66
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:371
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:68
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:87
+msgid ":zeek:type:`Log::Filter`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:68
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:493
+msgid "A filter type describes how to customize logging streams."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:69
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:69
+msgid "Type that defines an ID unique to each log stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:70
+msgid ":zeek:type:`Log::PolicyHook`: :zeek:type:`hook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:70
+msgid "A hook type to implement filtering policy."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:71
+msgid ":zeek:type:`Log::PrintLogInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:71
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:874
+msgid ""
+"If :zeek:see:`Log::print_to_log` is set to redirect, ``print`` statements"
+" will automatically populate log entries with the fields contained in "
+"this record."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:73
+msgid ":zeek:type:`Log::PrintLogType`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:73
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:894
+msgid "Configurations for :zeek:see:`Log::print_to_log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:74
+msgid ":zeek:type:`Log::RotationFmtInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:74
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:918
+msgid ""
+"Information passed into rotation format callback function given by "
+":zeek:see:`Log::rotation_format_func`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:76
+msgid ":zeek:type:`Log::RotationInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:76
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:943
+msgid "Information passed into rotation callback functions."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:77
+msgid ":zeek:type:`Log::RotationPath`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:77
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:967
+msgid ""
+"A log file rotation path specification that's returned by the user-"
+"customizable :zeek:see:`Log::rotation_format_func`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:79
+msgid ":zeek:type:`Log::RotationPostProcessorFunc`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:79
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:974
+msgid "The function type for log rotation post processors."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:80
+msgid ":zeek:type:`Log::Stream`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:80
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1002
+msgid "Type defining the content of a logging stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:81
+msgid ":zeek:type:`Log::Writer`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:85
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:89
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:326
+msgid ":zeek:type:`Log::Filter`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:93
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:491
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1000
+msgid "policy: :zeek:type:`Log::PolicyHook` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:92
+msgid ""
+"Policy hooks can adjust log entry values and veto the writing of a log "
+"entry for the record passed into it."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:99
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1016
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:101
+msgid ":zeek:id:`Log::log_print`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:101
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1021
+msgid "Event for accessing logged print records."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:105
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1024
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:107
+msgid ":zeek:id:`Log::add_default_filter`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:107
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1029
+msgid ""
+"Adds a default :zeek:type:`Log::Filter` record with ``name`` field set as"
+" \"default\" to a given logging stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:109
+msgid ":zeek:id:`Log::add_filter`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:109
+msgid "Adds a custom filter to an existing logging stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:110
+msgid ":zeek:id:`Log::create_stream`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:110
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1070
+msgid "Creates a new logging stream with the default filter."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:111
+msgid ""
+":zeek:id:`Log::default_ext_func`: :zeek:type:`function` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:111
+msgid ""
+"Default log extension function in the case that you would like to apply "
+"the same extensions to all logs."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:113
+msgid ""
+":zeek:id:`Log::default_path_func`: :zeek:type:`function` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:113
+msgid ""
+"Builds the default path values for log filters if not otherwise specified"
+" by a filter."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:115
+msgid ":zeek:id:`Log::disable_stream`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:115
+msgid "Disables a currently enabled logging stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:116
+msgid ":zeek:id:`Log::enable_stream`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:116
+msgid "Enables a previously disabled logging stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:117
+msgid ":zeek:id:`Log::flush`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:117
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1158
+msgid ""
+"Flushes any currently buffered output for all the writers of a given "
+"logging stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:119
+msgid ":zeek:id:`Log::get_filter`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:119
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1176
+msgid "Gets a filter associated with an existing logging stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:120
+msgid ":zeek:id:`Log::get_filter_names`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:120
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1198
+msgid "Gets the names of all filters associated with an existing logging stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:122
+msgid ":zeek:id:`Log::remove_default_filter`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:122
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1215
+msgid ""
+"Removes the :zeek:type:`Log::Filter` with ``name`` field equal to "
+"\"default\"."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:124
+msgid ":zeek:id:`Log::remove_filter`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:124
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1232
+msgid "Removes a filter from an existing logging stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:125
+msgid ":zeek:id:`Log::remove_stream`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:125
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1253
+msgid "Removes a logging stream completely, stopping all the threads."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:126
+msgid ""
+":zeek:id:`Log::rotation_format_func`: :zeek:type:`function` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:126
+msgid "A function that one may use to customize log file rotation paths."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:127
+msgid ":zeek:id:`Log::run_rotation_postprocessor_cmd`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:127
+msgid ""
+"Runs a command given by "
+":zeek:id:`Log::default_rotation_postprocessor_cmd` on a rotated file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:129
+msgid ":zeek:id:`Log::set_buf`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:129
+msgid "Sets the buffering status for all the writers of a given logging stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:130
+msgid ":zeek:id:`Log::write`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:130
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1323
+msgid "Writes a new log line/entry to a logging stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:135
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:140
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:153
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:185
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:206
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:235
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:254
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:280
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:297
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:306
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:315
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:141
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:154
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:164
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:174
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:186
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:195
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:207
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:215
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:236
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:247
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:255
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:265
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:273
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:281
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:290
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:298
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:307
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:316
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1087
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1098
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1266
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:142
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:208
+msgid "``\"\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:144
+msgid ""
+"Default rotation directory to use for the *dir* field of "
+":zeek:see:`Log::RotationPath` during calls to "
+":zeek:see:`Log::rotation_format_func`.  An empty string implies using the"
+" current working directory;"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:155
+msgid "``\"_\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:163
+msgid ":zeek:type:`table` [:zeek:type:`string`] of :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:165
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:216
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:364
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:167
+msgid ""
+"Default field name mapping for renaming fields in a logging framework "
+"filter.  This is typically used to ease integration with external data "
+"storage and analysis systems."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:173
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:194
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:175
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:196
+msgid "``0 secs``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:177
+msgid "Default alarm summary mail interval. Zero disables alarm summary mails."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:180
+msgid "Note that this is overridden by the ZeekControl MailAlarmsInterval option."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:187
+#, python-format
+msgid "``\"%Y-%m-%d-%H-%M-%S\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:189
+msgid ""
+"Default naming format for timestamps embedded into filenames. Uses a "
+"``strftime()`` style."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:198
+msgid ""
+"Default rotation interval to use for filters that do not specify an "
+"interval. Zero disables rotation."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:201
+msgid ""
+"Note that this is overridden by the ZeekControl LogRotationInterval "
+"option."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:210
+msgid "Default shell command to run on rotated files. Empty for none."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:214
+msgid ""
+":zeek:type:`table` [:zeek:type:`Log::Writer`] of :zeek:type:`function` "
+"(info: :zeek:type:`Log::RotationInfo`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "Redefinition"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:217
+msgid "from :doc:`/scripts/base/frameworks/logging/main.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:219
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:225
+msgid "``+=``::"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:223
+msgid "from :doc:`/scripts/base/frameworks/logging/writers/none.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:230
+msgid ""
+"Specifies the default postprocessor function per writer type. Entries in "
+"this table are initialized by each writer type."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:237
+msgid "``\".\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:239
+msgid ""
+"Default separator for log field scopes when logs are unrolled and "
+"flattened.  This will be the string between field name components. For "
+"example, setting this to \"_\" will cause the typical field \"id.orig_h\""
+" to turn into \"id_orig_h\"."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:246
+msgid ":zeek:type:`Log::Writer`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:248
+msgid "``Log::WRITER_ASCII``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:256
+msgid "``\"(empty)\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:258
+msgid ""
+"Default string to use for empty fields. This should be different from "
+"*unset_field* to make the output unambiguous. Individual writers can use "
+"a different value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:264
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:272
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:266
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:274
+msgid "``T``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:282
+msgid "``\"print\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:289
+msgid ":zeek:type:`Log::PrintLogType`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:291
+msgid "``Log::REDIRECT_NONE``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:299
+msgid "``\"\\x09\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:301
+msgid ""
+"Default separator to use between fields. Individual writers can use a "
+"different value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:308
+msgid "``\",\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:310
+msgid ""
+"Default separator to use between elements of a set. Individual writers "
+"can use a different value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:317
+msgid "``\"-\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:319
+msgid ""
+"Default string to use for an unset &optional field. Individual writers "
+"can use a different value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:363
+msgid ":zeek:type:`table` [:zeek:type:`Log::ID`] of :zeek:type:`Log::Stream`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:366
+msgid ""
+"The streams which are currently active and not disabled. This table is "
+"not meant to be modified by users!  Only use it for examining which "
+"streams are active."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:374
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:866
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:898
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:923
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:947
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:978
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:377
+msgid "name: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:377
+msgid "Descriptive name to reference this filter."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:380
+msgid ""
+"writer: :zeek:type:`Log::Writer` :zeek:attr:`&default` = "
+":zeek:see:`Log::default_writer` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:380
+msgid "The logging writer implementation to use."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:391
+msgid ""
+"pred: :zeek:type:`function` (rec: :zeek:type:`any`) : :zeek:type:`bool` "
+":zeek:attr:`&optional` :zeek:attr:`&deprecated` = *\"Remove in 4.1. "
+"PolicyHooks will replace the $pred function.\"*"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:390
+msgid ""
+"bool &optional &deprecated = \"Remove in 4.1. PolicyHooks will replace "
+"the $pred function.\""
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:383
+msgid ""
+"Indicates whether a log entry should be recorded. If not given, all "
+"entries are recorded."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "rec"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:387
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:430
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:853
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1116
+msgid ""
+"An instance of the stream's ``columns`` type with its fields set to the "
+"values to be logged."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:391
+msgid "True if the entry is to be recorded."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:407
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:990
+msgid "path: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:394
+msgid "Output path for recording entries matching this filter."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:397
+msgid ""
+"The specific interpretation of the string is up to the logging writer, "
+"and may for example be the destination file name. Generally, filenames "
+"are expected to be given without any extensions; writers will add "
+"appropriate extensions automatically."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:403
+msgid ""
+"If this path is found to conflict with another filter's for the same "
+"writer type, it is automatically corrected by appending \"-N\", where N "
+"is the smallest integer greater or equal to 2 that allows the corrected "
+"path name to not conflict with another filter's."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:438
+msgid ""
+"path_func: :zeek:type:`function` (id: :zeek:type:`Log::ID`, path: "
+":zeek:type:`string`, rec: :zeek:type:`any`) : :zeek:type:`string` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:437
+msgid "string &optional"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:410
+msgid ""
+"A function returning the output path for recording entries matching this "
+"filter. This is similar to *path* yet allows to compute the string "
+"dynamically. It is ok to return different strings for separate calls, but"
+" be careful: it's easy to flood the disk by returning a new string for "
+"each connection.  Upon adding a filter to a stream, if neither ``path`` "
+"nor ``path_func`` is explicitly set by them, then "
+":zeek:see:`Log::default_path_func` is used."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "id"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:420
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1107
+msgid "The ID associated with the log stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "path"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:423
+msgid ""
+"A suggested path value, which may be either the filter's ``path`` if "
+"defined, else a previous result from the function.  If no ``path`` is "
+"defined for the filter, then the first call to the function will contain "
+"an empty string."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:434
+msgid ""
+"The path to be used for the filter, which will be subject to the same "
+"automatic correction rules as the *path* field of "
+":zeek:type:`Log::Filter` in the case of conflicts with other filters "
+"trying to use the same writer/path pair."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:442
+msgid "include: :zeek:type:`set` [:zeek:type:`string`] :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:441
+msgid "Subset of column names to record. If not given, all columns are recorded."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:446
+msgid "exclude: :zeek:type:`set` [:zeek:type:`string`] :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:445
+msgid ""
+"Subset of column names to exclude from recording. If not given, all "
+"columns are recorded."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:449
+msgid ""
+"log_local: :zeek:type:`bool` :zeek:attr:`&default` = "
+":zeek:see:`Log::enable_local_logging` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:449
+msgid "If true, entries are recorded locally."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:452
+msgid ""
+"log_remote: :zeek:type:`bool` :zeek:attr:`&default` = "
+":zeek:see:`Log::enable_remote_logging` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:452
+msgid "If true, entries are passed on to remote peers."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:456
+msgid ""
+"field_name_map: :zeek:type:`table` [:zeek:type:`string`] of "
+":zeek:type:`string` :zeek:attr:`&default` = "
+":zeek:see:`Log::default_field_name_map` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:455
+msgid ""
+"Field name map to rename fields before the fields are written to the "
+"output."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:460
+msgid ""
+"scope_sep: :zeek:type:`string` :zeek:attr:`&default` = "
+":zeek:see:`Log::default_scope_sep` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:459
+msgid ""
+"A string that is used for unrolling and flattening field names for nested"
+" record types."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:465
+msgid ""
+"ext_prefix: :zeek:type:`string` :zeek:attr:`&default` = "
+":zeek:see:`Log::default_ext_prefix` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:463
+msgid ""
+"Default prefix for all extension fields. It's typically prudent to set "
+"this to something that Zeek's logging framework can't normally write out "
+"in a field name."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:470
+msgid ""
+"ext_func: :zeek:type:`function` (path: :zeek:type:`string`) : "
+":zeek:type:`any` :zeek:attr:`&default` = "
+":zeek:see:`Log::default_ext_func` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:469
+msgid "any &default = Log::default_ext_func &optional"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:468
+msgid ""
+"Function to collect a log extension value.  If not specified, no log "
+"extension will be provided for the log. The return value from the "
+"function *must* be a record."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:473
+msgid ""
+"interv: :zeek:type:`interval` :zeek:attr:`&default` = "
+":zeek:see:`Log::default_rotation_interval` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:473
+msgid "Rotation interval. Zero disables rotation."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:477
+msgid ""
+"postprocessor: :zeek:type:`function` (info: "
+":zeek:type:`Log::RotationInfo`) : :zeek:type:`bool` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:476
+msgid "bool &optional"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:476
+msgid ""
+"Callback function to trigger for rotated files. If not set, the default "
+"comes out of :zeek:id:`Log::default_rotation_postprocessors`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:482
+msgid ""
+"config: :zeek:type:`table` [:zeek:type:`string`] of :zeek:type:`string` "
+":zeek:attr:`&default` = ``{  }`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:480
+msgid ""
+"A key/value table that will be passed on to the writer. Interpretation of"
+" the values is left to the writer, but usually they will be used for "
+"configuration purposes."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:485
+msgid ""
+"Policy hooks can adjust log entry values and veto the writing of a log "
+"entry for the record passed into it. Any hook that breaks from its body "
+"signals that Zeek won't log the entry passed into it."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:490
+msgid ""
+"When no policy hook is defined, the filter inherits the hook from the "
+"stream it's associated with."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:497
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:879
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1006
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:501
+msgid "Dummy place-holder."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:505
+msgid "Print statements that have been redirected to a log stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:509
+msgid "(present if :doc:`/scripts/base/frameworks/broker/log.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:514
+msgid "(present if :doc:`/scripts/base/frameworks/files/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:517
+msgid "Logging stream for file analysis."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:521
+msgid "(present if :doc:`/scripts/base/frameworks/reporter/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:526
+msgid "(present if :doc:`/scripts/base/frameworks/cluster/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:531
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:538
+msgid "(present if :doc:`/scripts/base/frameworks/notice/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:534
+msgid "This is the primary logging stream for notices."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:541
+msgid "This is the alarm stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:545
+msgid "(present if :doc:`/scripts/base/frameworks/notice/weird.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:550
+msgid "(present if :doc:`/scripts/base/frameworks/dpd/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:555
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/signatures/main.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:560
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/packet-filter/main.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:565
+msgid "(present if :doc:`/scripts/base/frameworks/software/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:570
+msgid "(present if :doc:`/scripts/base/frameworks/intel/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:575
+msgid "(present if :doc:`/scripts/base/frameworks/config/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:580
+msgid "(present if :doc:`/scripts/base/frameworks/tunnels/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:585
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/openflow/plugins/log.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:590
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/netcontrol/main.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:595
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/netcontrol/drop.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:600
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/netcontrol/shunt.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:605
+msgid "(present if :doc:`/scripts/base/protocols/conn/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:610
+msgid "(present if :doc:`/scripts/base/protocols/dce-rpc/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:615
+msgid "(present if :doc:`/scripts/base/protocols/dhcp/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:620
+msgid "(present if :doc:`/scripts/base/protocols/dnp3/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:625
+msgid "(present if :doc:`/scripts/base/protocols/dns/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:630
+msgid "(present if :doc:`/scripts/base/protocols/ftp/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:635
+msgid "(present if :doc:`/scripts/base/protocols/ssl/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:640
+msgid "(present if :doc:`/scripts/base/files/x509/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:645
+msgid "(present if :doc:`/scripts/base/protocols/http/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:650
+msgid "(present if :doc:`/scripts/base/protocols/irc/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:655
+msgid "(present if :doc:`/scripts/base/protocols/krb/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:660
+msgid "(present if :doc:`/scripts/base/protocols/modbus/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:665
+msgid "(present if :doc:`/scripts/base/protocols/mysql/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:670
+msgid "(present if :doc:`/scripts/base/protocols/ntlm/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:675
+msgid "(present if :doc:`/scripts/base/protocols/ntp/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:680
+msgid "(present if :doc:`/scripts/base/protocols/radius/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:685
+msgid "(present if :doc:`/scripts/base/protocols/rdp/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:690
+msgid "(present if :doc:`/scripts/base/protocols/rfb/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:695
+msgid "(present if :doc:`/scripts/base/protocols/sip/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:700
+msgid "(present if :doc:`/scripts/base/protocols/snmp/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:705
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:710
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:715
+msgid "(present if :doc:`/scripts/base/protocols/smb/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:720
+msgid "(present if :doc:`/scripts/base/protocols/smtp/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:725
+msgid "(present if :doc:`/scripts/base/protocols/socks/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:730
+msgid "(present if :doc:`/scripts/base/protocols/ssh/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:735
+msgid "(present if :doc:`/scripts/base/protocols/syslog/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:740
+msgid "(present if :doc:`/scripts/base/files/pe/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:745
+msgid ""
+"(present if :doc:`/scripts/policy/frameworks/netcontrol/catch-and-"
+"release.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:750
+msgid "(present if :doc:`/scripts/policy/files/unified2/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:755
+msgid "(present if :doc:`/scripts/policy/files/x509/log-ocsp.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:760
+msgid ""
+"(present if :doc:`/scripts/policy/integration/barnyard2/main.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:765
+msgid "(present if :doc:`/scripts/policy/misc/capture-loss.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:770
+msgid ""
+"(present if :doc:`/scripts/policy/misc/detect-traceroute/main.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:775
+msgid "(present if :doc:`/scripts/policy/misc/loaded-scripts.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:780
+msgid "(present if :doc:`/scripts/policy/misc/stats.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:785
+msgid "(present if :doc:`/scripts/policy/misc/weird-stats.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:790
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/conn/known-hosts.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:795
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/conn/known-services.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:800
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/modbus/known-masters-"
+"slaves.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:805
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/modbus/track-memmap.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:810
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:815
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:820
+msgid "(present if :doc:`/scripts/policy/protocols/mqtt/main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:825
+msgid "(present if :doc:`/scripts/policy/protocols/smb/log-cmds.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:830
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/ssl/known-certs.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:835
+msgid "(present if :doc:`/scripts/zeekygen/example.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:838
+msgid ""
+"Type that defines an ID unique to each log stream. Scripts creating new "
+"log streams need to redef this enum to add their own specific log ID. The"
+" log ID implicitly determines the default name of the generated log file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:845
+msgid ""
+":zeek:type:`hook` (rec: :zeek:type:`any`, id: :zeek:type:`Log::ID`, "
+"filter: :zeek:type:`Log::Filter`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:847
+msgid ""
+"A hook type to implement filtering policy. Hook handlers can veto the "
+"logging of a record or alter it prior to logging. You can pass arbitrary "
+"state into the hook via the filter argument and its config member."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:857
+msgid "The ID associated with the logging stream the filter belongs to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "filter"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:861
+msgid ""
+"The :zeek:type:`Log::Filter` instance that controls the fate of the given"
+" log record."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:869
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:869
+msgid "The network time at which the print statement was executed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:872
+msgid "vals: :zeek:type:`string_vec` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:872
+msgid "Set of strings passed to the print statement."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:883
+msgid "No redirection of ``print`` statements."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:887
+msgid ""
+"Redirection of those ``print`` statements that were being logged to "
+"stdout, leaving behind those set to go to other specific files."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:892
+msgid "Redirection of all ``print`` statements."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:901
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:926
+msgid "writer: :zeek:type:`Log::Writer`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:901
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:926
+msgid "The log writer being used."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:904
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:932
+msgid "path: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:904
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:932
+msgid "Original path value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:907
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:935
+msgid "open: :zeek:type:`time`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:907
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:935
+msgid "Time when opened."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:910
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:938
+msgid "close: :zeek:type:`time`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:910
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:938
+msgid "Time when closed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:913
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:941
+msgid "terminating: :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:913
+msgid "True if rotation occurred due to Zeek shutting down."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:916
+msgid ""
+"postprocessor: :zeek:type:`Log::RotationPostProcessorFunc` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:916
+msgid "The postprocessor function that will be called after rotation."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:929
+msgid "fname: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:929
+msgid "Full name of the rotated file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:941
+msgid "True if rotation occured due to Zeek shutting down."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:955
+msgid ""
+"dir: :zeek:type:`string` :zeek:attr:`&default` = "
+":zeek:see:`Log::default_rotation_dir` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:950
+msgid ""
+"A directory to rotate the log to.  This directory is created just-in-"
+"time, as the log rotation is about to happen.  If it cannot be created, "
+"an error is emitted and the rotation process tries to proceed with "
+"rotation inside the working directory.  When setting this field, beware "
+"that renaming files across file systems will generally fail."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:965
+msgid "file_basename: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:958
+msgid ""
+"A base name to use for the the rotated log.  Log writers may later append"
+" a file extension of their choosing to this user-chosen base (e.g. if "
+"using the default ASCII writer and you want rotated files of the format "
+"\"foo-<date>.log\", then this basename can be set to \"foo-<date>\" and "
+"the \".log\" is added later (there's also generally means of customizing "
+"the file extension, too, like the ``ZEEK_LOG_SUFFIX`` environment "
+"variable or writer-dependent configuration options."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:972
+msgid ""
+":zeek:type:`function` (info: :zeek:type:`Log::RotationInfo`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:981
+msgid "columns: :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:981
+msgid "A record type defining the log's columns."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:986
+msgid "ev: :zeek:type:`any` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:984
+msgid ""
+"Event that will be raised once for each log entry. The event receives a "
+"single same parameter, an instance of type ``columns``."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:989
+msgid ""
+"A path that will be inherited by any filters added to the stream which do"
+" not already specify their own path."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:993
+msgid ""
+"Policy hooks can adjust log records and veto their writing. Any hook "
+"handler that breaks from its body signals that Zeek won't log the entry "
+"passed into it. You can pass arbitrary state into the hook via the filter"
+" instance and its config table."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:999
+msgid ""
+"New Filters created for this stream will inherit this policy hook, unless"
+" they provide their own."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1019
+msgid ":zeek:type:`event` (rec: :zeek:type:`Log::PrintLogInfo`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1027
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1124
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1140
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1156
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1213
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1251
+msgid ":zeek:type:`function` (id: :zeek:type:`Log::ID`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1033
+msgid "The ID associated with a logging stream for which to add a default filter."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1037
+msgid ""
+"The status of a call to :zeek:id:`Log::add_filter` using a default "
+":zeek:type:`Log::Filter` argument with ``name`` field set to \"default\"."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1046
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`Log::ID`, filter: "
+":zeek:type:`Log::Filter`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1048
+msgid ""
+"Adds a custom filter to an existing logging stream.  If a filter with a "
+"matching ``name`` field already exists for the stream, it is removed when"
+" the new filter is successfully added."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1053
+msgid "The ID associated with the logging stream to filter."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1056
+msgid "A record describing the desired logging parameters."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1059
+msgid ""
+"True if the filter was successfully added, false if the filter was not "
+"added or the *filter* argument was not the correct type."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1068
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`Log::ID`, stream: "
+":zeek:type:`Log::Stream`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1073
+msgid "The ID enum to be associated with the new logging stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "stream"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1076
+msgid "A record defining the content that the new stream will log."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1079
+msgid ""
+"True if a new logging stream was successfully created and a default "
+"filter added to it."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1086
+msgid ":zeek:type:`function` (path: :zeek:type:`string`) : :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1089
+msgid ""
+"Default log extension function in the case that you would like to apply "
+"the same extensions to all logs.  The function *must* return a record "
+"with all of the fields to be included in the log. The default function "
+"included here does not return a value, which indicates that no extensions"
+" are added."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1097
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`Log::ID`, path: "
+":zeek:type:`string`, rec: :zeek:type:`any`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1100
+msgid ""
+"Builds the default path values for log filters if not otherwise specified"
+" by a filter. The default implementation uses *id* to derive a name.  "
+"Upon adding a filter to a stream, if neither ``path`` nor ``path_func`` "
+"is explicitly set by them, then this function is used as the "
+"``path_func``."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1110
+msgid ""
+"A suggested path value, which may be either the filter's ``path`` if "
+"defined, else a previous result from the function. If no ``path`` is "
+"defined for the filter, then the first call to the function will contain "
+"an empty string."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1120
+msgid "The path to be used for the filter."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1126
+msgid ""
+"Disables a currently enabled logging stream.  Disabled streams will not "
+"be written to until they are enabled again.  New streams are enabled by "
+"default."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1131
+msgid "The ID associated with the logging stream to disable."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1134
+msgid "True if the stream is now disabled or was already disabled."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1142
+msgid ""
+"Enables a previously disabled logging stream.  Disabled streams will not "
+"be written to until they are enabled again.  New streams are enabled by "
+"default."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1147
+msgid "The ID associated with the logging stream to enable."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1150
+msgid "True if the stream is re-enabled or was not previously disabled."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1162
+msgid "The ID associated with a logging stream for which to flush buffered data."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1166
+msgid ""
+"True if all writers of a log stream were signalled to flush buffered data"
+" or if the logging stream is disabled, false if the logging stream does "
+"not exist."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1174
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`Log::ID`, name: "
+":zeek:type:`string`) : :zeek:type:`Log::Filter`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1179
+msgid ""
+"The ID associated with a logging stream from which to obtain one of its "
+"filters."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "name"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1183
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1239
+msgid ""
+"A string to match against the ``name`` field of a "
+":zeek:type:`Log::Filter` for identification purposes."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1187
+msgid ""
+"A filter attached to the logging stream *id* matching *name* or, if no "
+"matches are found returns the :zeek:id:`Log::no_filter` sentinel value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1196
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`Log::ID`) : :zeek:type:`set` "
+"[:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1202
+msgid "The ID of a logging stream from which to obtain the list of filter names."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1206
+msgid "The set of filter names associated with the stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1208
+msgid "..zeek:see:: Log::remove_filter Log::add_default_filter"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1209
+msgid "Log::remove_default_filter Log::get_filter"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1219
+msgid ""
+"The ID associated with a logging stream from which to remove the default "
+"filter."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1223
+msgid ""
+"The status of a call to :zeek:id:`Log::remove_filter` using \"default\" "
+"as the argument."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1230
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`Log::ID`, name: "
+":zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1235
+msgid "The ID associated with the logging stream from which to remove a filter."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1243
+msgid ""
+"True if the logging stream's filter was removed or if no filter "
+"associated with *name* was found."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1256
+msgid "The ID associated with the logging stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1259
+msgid "True if the stream was successfully removed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1265
+msgid ""
+":zeek:type:`function` (ri: :zeek:type:`Log::RotationFmtInfo`) : "
+":zeek:type:`Log::RotationPath`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1268
+msgid ""
+"A function that one may use to customize log file rotation paths. Note "
+"that the \"fname\" field of the *ri* argument is always an empty string "
+"for the purpose of this function call (i.e. the full file name is not "
+"determined yet)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1275
+msgid ""
+":zeek:type:`function` (info: :zeek:type:`Log::RotationInfo`, npath: "
+":zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1277
+msgid ""
+"Runs a command given by "
+":zeek:id:`Log::default_rotation_postprocessor_cmd` on a rotated file.  "
+"Meant to be called from postprocessor functions that are added to "
+":zeek:id:`Log::default_rotation_postprocessors`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "info"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1282
+msgid "A record holding meta-information about the log being rotated."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "npath"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1285
+msgid ""
+"The new path of the file (after already being rotated/processed by "
+"writer-specific postprocessor as defined in "
+":zeek:id:`Log::default_rotation_postprocessors`)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1290
+msgid ""
+"True when :zeek:id:`Log::default_rotation_postprocessor_cmd` is empty or "
+"the system command given by it has been invoked to postprocess a rotated "
+"log file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1300
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`Log::ID`, buffered: "
+":zeek:type:`bool`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1302
+msgid ""
+"Sets the buffering status for all the writers of a given logging stream. "
+"A given writer implementation may or may not support buffering and if it "
+"doesn't then toggling buffering with this function has no effect."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1307
+msgid ""
+"The ID associated with a logging stream for which to enable/disable "
+"buffering."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "buffered"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1311
+msgid "Whether to enable or disable log buffering."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1314
+msgid ""
+"True if buffering status was set, false if the logging stream does not "
+"exist."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1321
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`Log::ID`, columns: "
+":zeek:type:`any`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1326
+msgid "The ID associated with a logging stream to be written to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst
+msgid "columns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1329
+msgid ""
+"A record value describing the values of each field/column to write to the"
+" log stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/main.zeek.rst:1333
+msgid ""
+"True if the stream was found and no error occurred in writing to it or if"
+" the stream was disabled and nothing was written. False if the stream was"
+" not found, or the *columns* argument did not match what the stream was "
+"initially defined to handle, or one of the stream's filters has an "
+"invalid ``path_func``."
+msgstr ""
+

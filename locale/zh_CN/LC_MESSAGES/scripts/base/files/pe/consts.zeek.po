@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/files/pe/consts.zeek.rst:4
+msgid "base/files/pe/consts.zeek"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst:8
+msgid "PE"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst:13
+#: ../../scripts/base/files/pe/consts.zeek.rst:29
+msgid "Constants"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst:15
+msgid ""
+":zeek:id:`PE::directories`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst:16
+msgid ""
+":zeek:id:`PE::dll_characteristics`: :zeek:type:`table` "
+":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst:17
+msgid ""
+":zeek:id:`PE::file_characteristics`: :zeek:type:`table` "
+":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst:18
+msgid ""
+":zeek:id:`PE::machine_types`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst:19
+msgid ""
+":zeek:id:`PE::os_versions`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst:20
+msgid ""
+":zeek:id:`PE::section_characteristics`: :zeek:type:`table` "
+":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst:21
+msgid ""
+":zeek:id:`PE::section_descs`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst:22
+msgid ""
+":zeek:id:`PE::windows_subsystems`: :zeek:type:`table` "
+":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst:27
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst:32
+#: ../../scripts/base/files/pe/consts.zeek.rst:61
+#: ../../scripts/base/files/pe/consts.zeek.rst:82
+#: ../../scripts/base/files/pe/consts.zeek.rst:110
+#: ../../scripts/base/files/pe/consts.zeek.rst:183
+#: ../../scripts/base/files/pe/consts.zeek.rst:267
+msgid ":zeek:type:`table` [:zeek:type:`count`] of :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst:33
+#: ../../scripts/base/files/pe/consts.zeek.rst:62
+#: ../../scripts/base/files/pe/consts.zeek.rst:83
+#: ../../scripts/base/files/pe/consts.zeek.rst:111
+#: ../../scripts/base/files/pe/consts.zeek.rst:146
+#: ../../scripts/base/files/pe/consts.zeek.rst:184
+#: ../../scripts/base/files/pe/consts.zeek.rst:231
+#: ../../scripts/base/files/pe/consts.zeek.rst:268
+msgid ":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst:145
+msgid ""
+":zeek:type:`table` [:zeek:type:`count`, :zeek:type:`count`] of "
+":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/files/pe/consts.zeek.rst:230
+msgid ":zeek:type:`table` [:zeek:type:`string`] of :zeek:type:`string`"
+msgstr ""
+

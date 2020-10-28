@@ -1,0 +1,449 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:4
+msgid "base/protocols/rdp/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:7
+msgid ""
+"Implements base functionality for RDP analysis. Generates the rdp.log "
+"file."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:9
+msgid "RDP"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:10
+msgid ""
+":doc:`base/protocols/conn/removal-hooks.zeek "
+"</scripts/base/protocols/conn/removal-hooks.zeek>`, "
+":doc:`base/protocols/rdp/consts.zeek "
+"</scripts/base/protocols/rdp/consts.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:15
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:71
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:17
+msgid ""
+":zeek:id:`RDP::disable_analyzer_after_detection`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:17
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:78
+msgid ""
+"If true, detach the RDP analyzer from the connection to prevent "
+"continuing to process encrypted traffic."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:19
+msgid ""
+":zeek:id:`RDP::rdp_check_interval`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:19
+msgid ""
+"The amount of time to monitor an RDP session from when it is first "
+"identified."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:24
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:91
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:26
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:35
+msgid ":zeek:type:`RDP::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:30
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:32
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:34
+msgid ":zeek:enum:`RDP::LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:37
+msgid ":zeek:type:`RDP::Info`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:41
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:164
+msgid "analyzer_id: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:40
+msgid ""
+"The analyzer ID used for the analyzer instance attached to each "
+"connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:43
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:167
+msgid ""
+"done: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:44
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:167
+msgid "Track status of logging RDP connections."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:45
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:47
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:49
+msgid "rdp: :zeek:type:`RDP::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:50
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:54
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:176
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:56
+msgid ":zeek:id:`RDP::log_rdp`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:56
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:181
+msgid ""
+"Event that can be handled to access the rdp record as it is sent on to "
+"the logging framework."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:61
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:185
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:63
+msgid ":zeek:id:`RDP::finalize_rdp`: :zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:63
+msgid "RDP finalization hook."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:64
+msgid ":zeek:id:`RDP::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:69
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:74
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:75
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:84
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:76
+msgid "``F``"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:83
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:85
+msgid "``10.0 secs``"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:87
+msgid ""
+"The amount of time to monitor an RDP session from when it is first "
+"identified. When this interval is reached, the session is logged."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:94
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:97
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:97
+msgid "Timestamp for when the event happened."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:100
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:100
+msgid "Unique ID for the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:103
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:103
+msgid "The connection's 4-tuple of endpoint addresses/ports."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:107
+msgid "cookie: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:106
+msgid "Cookie value used by the client machine. This is typically a username."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:112
+msgid "result: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:110
+msgid ""
+"Status result for the connection.  It's a mix between RDP negotation "
+"failure messages and GCC server create response messages."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:115
+msgid ""
+"security_protocol: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:115
+msgid "Security protocol chosen by the server."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:118
+msgid ""
+"client_channels: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:118
+msgid "The channels requested by the client"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:121
+msgid ""
+"keyboard_layout: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:121
+msgid "Keyboard layout (language) of the client machine."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:124
+msgid "client_build: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:124
+msgid "RDP client version used by the client machine."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:127
+msgid "client_name: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:127
+msgid "Name of the client machine."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:130
+msgid ""
+"client_dig_product_id: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:130
+msgid "Product ID of the client machine."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:133
+msgid "desktop_width: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:133
+msgid "Desktop width of the client machine."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:136
+msgid ""
+"desktop_height: :zeek:type:`count` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:136
+msgid "Desktop height of the client machine."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:140
+msgid ""
+"requested_color_depth: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:139
+msgid "The color depth requested by the client in the high_color_depth field."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:145
+msgid "cert_type: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:143
+msgid ""
+"If the connection is being encrypted with native RDP encryption, this is "
+"the type of cert being used."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:149
+msgid ""
+"cert_count: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&default` = "
+"``0`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:148
+msgid "The number of certs seen.  X.509 can transfer an entire certificate chain."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:153
+msgid "cert_permanent: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:152
+msgid ""
+"Indicates if the provided certificate or certificate chain is permanent "
+"or temporary."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:156
+msgid ""
+"encryption_level: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:156
+msgid "Encryption level of the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:159
+msgid ""
+"encryption_method: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:159
+msgid "Encryption method of the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:162
+msgid ""
+"The analyzer ID used for the analyzer instance attached to each "
+"connection.  It is not used for logging since it's a meaningless "
+"arbitrary number."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:171
+msgid ""
+"ssl: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:170
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/rdp/indicate_ssl.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:172
+msgid "Flag the connection if it was seen over SSL."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:179
+msgid ":zeek:type:`event` (rec: :zeek:type:`RDP::Info`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:188
+msgid ":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:190
+msgid ""
+"RDP finalization hook.  Remaining RDP info may get logged when it's "
+"called."
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/main.zeek.rst:194
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

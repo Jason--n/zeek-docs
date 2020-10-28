@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../frameworks/sumstats.rst:6
+msgid "Summary Statistics"
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:10
+msgid ""
+"Measuring aspects of network traffic is an extremely common task in Zeek."
+" Zeek provides data structures which make this very easy as well in "
+"simplistic cases such as size limited trace file processing. In real-"
+"world deployments though, there are difficulties that arise from "
+"clusterization (many processes sniffing traffic) and unbounded data sets "
+"(traffic never stops). The Summary Statistics (otherwise referred to as "
+"SumStats) framework aims to define a mechanism for consuming unbounded "
+"data sets and making them measurable in practice on large clustered and "
+"non-clustered Zeek deployments."
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:21
+msgid "Overview"
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:23
+msgid ""
+"The Sumstat processing flow is broken into three pieces. Observations, "
+"where some aspect of an event is observed and fed into the Sumstats "
+"framework. Reducers, where observations are collected and measured, "
+"typically by taking some sort of summary statistic measurement like "
+"average or variance (among others). Sumstats, where reducers have an "
+"epoch (time interval) that their measurements are performed over along "
+"with callbacks for monitoring thresholds or viewing the collected and "
+"measured data."
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:32
+msgid "Terminology"
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:34
+msgid "Observation"
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:36
+msgid ""
+"A single point of data. Observations have a few components of their own. "
+"They are part of an arbitrarily named observation stream, they have a key"
+" that is something the observation is about, and the actual observation "
+"itself."
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:41
+msgid "Reducer"
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:43
+msgid ""
+"Calculations are applied to an observation stream here to reduce the full"
+" unbounded set of observations down to a smaller representation. Results "
+"are collected within each reducer per-key so care must be taken to keep "
+"the total number of keys tracked down to a reasonable level."
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:49
+msgid "Sumstat"
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:51
+msgid ""
+"The final definition of a Sumstat where one or more reducers is collected"
+" over an interval, also known as an epoch. Thresholding can be applied "
+"here along with a callback in the event that a threshold is crossed. "
+"Additionally, a callback can be provided to access each result (per-key) "
+"at the end of each epoch."
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:58
+msgid "Examples"
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:60
+msgid ""
+"These examples may seem very simple to an experienced Zeek script "
+"developer and they're intended to look that way. Keep in mind that these "
+"scripts will work on small single process Zeek instances as well as large"
+" many-worker clusters. The complications from dealing with flow based "
+"load balancing can be ignored by developers writing scripts that use "
+"Sumstats due to its built-in cluster transparency."
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:68
+msgid "Printing the number of connections"
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:70
+msgid ""
+"Sumstats provides a simple way of approaching the problem of trying to "
+"count the number of connections over a given time interval.  Here is a "
+"script with inline documentation that does this with the Sumstats "
+"framework:"
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:74
+msgid "sumstats-countconns.zeek"
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:80
+msgid ""
+"When run on a sample PCAP file from the Zeek test suite, the following "
+"output is created:"
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:89
+msgid "Toy scan detection"
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:91
+msgid ""
+"Taking the previous example even further, we can implement a simple "
+"detection to demonstrate the thresholding functionality.  This example is"
+" a toy to demonstrate how thresholding works in Sumstats and is not meant"
+" to be a real-world functional example, that is left to the "
+":doc:`/scripts/policy/misc/scan.zeek` script that is included with Zeek."
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:97
+msgid "sumstats-toy-scan.zeek"
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:103
+msgid ""
+"Let's see if there are any hosts that crossed the threshold in a PCAP "
+"file containing a host running nmap:"
+msgstr ""
+
+#: ../../frameworks/sumstats.rst:111
+msgid "It seems the host running nmap was detected!"
+msgstr ""
+

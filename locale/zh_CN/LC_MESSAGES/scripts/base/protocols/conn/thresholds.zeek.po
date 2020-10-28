@@ -1,0 +1,379 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:4
+msgid "base/protocols/conn/thresholds.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:7
+msgid ""
+"Implements a generic API to throw events when a connection crosses a "
+"fixed threshold of bytes or packets."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:10
+msgid "ConnThreshold"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:15
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:53
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:17
+msgid ":zeek:type:`ConnThreshold::Thresholds`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:21
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:23
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:25
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:27
+msgid "thresholds: :zeek:type:`ConnThreshold::Thresholds` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:31
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:75
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:33
+msgid ":zeek:id:`ConnThreshold::bytes_threshold_crossed`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:33
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:35
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:80
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:113
+msgid "Generated for a connection that crossed a set byte threshold"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:34
+msgid ":zeek:id:`ConnThreshold::duration_threshold_crossed`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:34
+msgid "Generated for a connection that crossed a set duration threshold."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:35
+msgid ":zeek:id:`ConnThreshold::packets_threshold_crossed`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:39
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:125
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:41
+msgid ":zeek:id:`ConnThreshold::delete_bytes_threshold`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:41
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:130
+msgid "Deletes a byte threshold for connection sizes."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:42
+msgid ":zeek:id:`ConnThreshold::delete_duration_threshold`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:42
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:148
+msgid "Deletes a duration threshold for a connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:43
+msgid ":zeek:id:`ConnThreshold::delete_packets_threshold`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:43
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:163
+msgid "Deletes a packet threshold for connection sizes."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:44
+msgid ":zeek:id:`ConnThreshold::set_bytes_threshold`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:44
+msgid ""
+"Sets a byte threshold for connection sizes, adding it to potentially "
+"already existing thresholds."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:45
+msgid ":zeek:id:`ConnThreshold::set_duration_threshold`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:45
+msgid ""
+"Sets a duration threshold for a connection, adding it to potentially "
+"already existing thresholds."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:46
+msgid ":zeek:id:`ConnThreshold::set_packets_threshold`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:46
+msgid ""
+"Sets a packet threshold for connection sizes, adding it to potentially "
+"already existing thresholds."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:51
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:56
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:59
+msgid ""
+"orig_byte: :zeek:type:`set` [:zeek:type:`count`] :zeek:attr:`&default` = "
+"``{  }`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:59
+msgid "current originator byte thresholds we watch for"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:62
+msgid ""
+"resp_byte: :zeek:type:`set` [:zeek:type:`count`] :zeek:attr:`&default` = "
+"``{  }`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:62
+msgid "current responder byte thresholds we watch for"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:65
+msgid ""
+"orig_packet: :zeek:type:`set` [:zeek:type:`count`] :zeek:attr:`&default` "
+"= ``{  }`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:65
+msgid "current originator packet thresholds we watch for"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:68
+msgid ""
+"resp_packet: :zeek:type:`set` [:zeek:type:`count`] :zeek:attr:`&default` "
+"= ``{  }`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:68
+msgid "current responder packet thresholds we watch for"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:70
+msgid ""
+"duration: :zeek:type:`set` [:zeek:type:`interval`] :zeek:attr:`&default` "
+"= ``{  }`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:71
+msgid "current duration thresholds we watch for"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:78
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:111
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, threshold: "
+":zeek:type:`count`, is_orig: :zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:83
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:101
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:116
+msgid "the connection"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst
+msgid "threshold"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:86
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:104
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:119
+msgid "the threshold that was set"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:89
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:107
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:122
+msgid "True if the threshold was crossed by the originator of the connection"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:93
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, threshold: "
+":zeek:type:`interval`, is_orig: :zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:95
+msgid ""
+"Generated for a connection that crossed a set duration threshold. Note "
+"that this event is not raised at the exact moment that a duration "
+"threshold is crossed; instead it is raised when the next packet is seen "
+"after the threshold has been crossed. On a connection that is idle, this "
+"can be raised significantly later."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:128
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:161
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:179
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:214
+msgid ""
+":zeek:type:`function` (c: :zeek:type:`connection`, threshold: "
+":zeek:type:`count`, is_orig: :zeek:type:`bool`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst
+msgid "cid"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:133
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:151
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:166
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:185
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:204
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:220
+msgid "The connection id."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:136
+msgid "Threshold in bytes to remove."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:139
+msgid ""
+"If true, threshold is removed for packets from originator, otherwhise for"
+" packets from responder."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:142
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:157
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:175
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:194
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:210
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:229
+msgid "T on success, F on failure."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:146
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:198
+msgid ""
+":zeek:type:`function` (c: :zeek:type:`connection`, threshold: "
+":zeek:type:`interval`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:154
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:169
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:223
+msgid "Threshold in packets."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:172
+msgid ""
+"If true, threshold is removed for packets from originator, otherwise for "
+"packets from responder."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:181
+msgid ""
+"Sets a byte threshold for connection sizes, adding it to potentially "
+"already existing thresholds. conn_bytes_threshold_crossed will be raised "
+"for each set threshold."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:188
+msgid "Threshold in bytes."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:191
+msgid ""
+"If true, threshold is set for bytes from originator, otherwise for bytes "
+"from responder."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:200
+msgid ""
+"Sets a duration threshold for a connection, adding it to potentially "
+"already existing thresholds. conn_duration_threshold_crossed will be "
+"raised for each set threshold."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:207
+msgid "Threshold in seconds."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:216
+msgid ""
+"Sets a packet threshold for connection sizes, adding it to potentially "
+"already existing thresholds. conn_packets_threshold_crossed will be "
+"raised for each set threshold."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/thresholds.zeek.rst:226
+msgid ""
+"If true, threshold is set for packets from originator, otherwise for "
+"packets from responder."
+msgstr ""
+

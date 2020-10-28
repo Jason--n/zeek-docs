@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:4
+msgid "base/frameworks/input/readers/raw.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:7
+msgid "Interface for the raw input reader."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:9
+msgid "InputRaw"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:14
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:29
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:16
+msgid ""
+":zeek:id:`InputRaw::record_separator`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:16
+msgid "Separator between input records."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:20
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:40
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:22
+msgid ":zeek:id:`InputRaw::process_finished`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:22
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:45
+msgid "Event that is called when a process created by the raw reader exits."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:27
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:32
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:33
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:34
+msgid "``\"\\x0a\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:36
+msgid ""
+"Separator between input records. Please note that the separator has to be"
+" exactly one character long."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:43
+msgid ""
+":zeek:type:`event` (name: :zeek:type:`string`, source: "
+":zeek:type:`string`, exit_code: :zeek:type:`count`, signal_exit: "
+":zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst
+msgid "name"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:48
+msgid "name of the input stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst
+msgid "source"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:50
+msgid "source of the input stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst
+msgid "exit_code"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:52
+msgid ""
+"exit code of the program, or number of the signal that forced the program"
+" to exit."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst
+msgid "signal_exit"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/raw.zeek.rst:55
+msgid ""
+"false when program exited normally, true when program was forced to exit "
+"by a signal."
+msgstr ""
+

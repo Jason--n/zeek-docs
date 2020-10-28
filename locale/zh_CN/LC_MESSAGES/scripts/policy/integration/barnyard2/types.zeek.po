@@ -1,0 +1,187 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:4
+msgid "policy/integration/barnyard2/types.zeek"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:7
+msgid ""
+"This file is separate from the base script so that dependencies can be "
+"loaded in the correct order."
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:10
+msgid "Barnyard2"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:15
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:32
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:17
+msgid ":zeek:type:`Barnyard2::AlertData`: :zeek:type:`record` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:18
+msgid ":zeek:type:`Barnyard2::PacketID`: :zeek:type:`record` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:22
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:81
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:24
+msgid ":zeek:id:`Barnyard2::barnyard_alert`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:24
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:86
+msgid ""
+"This is the event that Barnyard2 instances will send if they're "
+"configured with the bro_alert output plugin."
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:30
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:35
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:68
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:38
+msgid "sensor_id: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:38
+msgid "Sensor that originated this event."
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:41
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:41
+msgid "Timestamp attached to the alert."
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:44
+msgid "signature_id: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:44
+msgid "Sig id for this generator."
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:47
+msgid "generator_id: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:47
+msgid "Which generator generated the alert?"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:50
+msgid "signature_revision: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:50
+msgid "Sig revision for this id."
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:53
+msgid "classification_id: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:53
+msgid "Event classification."
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:56
+msgid "classification: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:56
+msgid "Descriptive classification string."
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:59
+msgid "priority_id: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:59
+msgid "Event priority."
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:61
+msgid "event_id: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:62
+msgid "Event ID."
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:63
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:77
+msgid ":zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:70
+msgid "src_ip: :zeek:type:`addr` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:72
+msgid "src_p: :zeek:type:`port` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:74
+msgid "dst_ip: :zeek:type:`addr` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:76
+msgid "dst_p: :zeek:type:`port` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/barnyard2/types.zeek.rst:84
+msgid ""
+":zeek:type:`event` (id: :zeek:type:`Barnyard2::PacketID`, alert: "
+":zeek:type:`Barnyard2::AlertData`, msg: :zeek:type:`string`, data: "
+":zeek:type:`string`)"
+msgstr ""
+

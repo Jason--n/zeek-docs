@@ -1,0 +1,1204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_RPC.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:65
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:15
+msgid ":zeek:id:`mount_proc_mnt`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:15
+msgid "Generated for MOUNT3 request/reply dialogues of type *mnt*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:16
+msgid ":zeek:id:`mount_proc_not_implemented`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:100
+msgid ""
+"Generated for MOUNT3 request/reply dialogues of a type that Zeek's "
+"MOUNTv3 analyzer does not implement."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:18
+msgid ":zeek:id:`mount_proc_null`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:18
+msgid "Generated for MOUNT3 request/reply dialogues of type *null*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:19
+msgid ":zeek:id:`mount_proc_umnt`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:19
+msgid "Generated for MOUNT3 request/reply dialogues of type *umnt*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:20
+msgid ":zeek:id:`mount_proc_umnt_all`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:20
+msgid "Generated for MOUNT3 request/reply dialogues of type *umnt_all*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:21
+msgid ":zeek:id:`mount_reply_status`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:21
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:199
+msgid ""
+"Generated for each MOUNT3 reply message received, reporting just the "
+"status included."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:23
+msgid ":zeek:id:`nfs_proc_create`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:23
+msgid "Generated for NFSv3 request/reply dialogues of type *create*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:24
+msgid ":zeek:id:`nfs_proc_getattr`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:24
+msgid "Generated for NFSv3 request/reply dialogues of type *getattr*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:25
+msgid ":zeek:id:`nfs_proc_link`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:25
+msgid "Generated for NFSv3 request/reply dialogues of type *link*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:26
+msgid ":zeek:id:`nfs_proc_lookup`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:26
+msgid "Generated for NFSv3 request/reply dialogues of type *lookup*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:27
+msgid ":zeek:id:`nfs_proc_mkdir`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:27
+msgid "Generated for NFSv3 request/reply dialogues of type *mkdir*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:28
+msgid ":zeek:id:`nfs_proc_not_implemented`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:28
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:395
+msgid ""
+"Generated for NFSv3 request/reply dialogues of a type that Zeek's NFSv3 "
+"analyzer does not implement."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:30
+msgid ":zeek:id:`nfs_proc_null`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:30
+msgid "Generated for NFSv3 request/reply dialogues of type *null*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:31
+msgid ":zeek:id:`nfs_proc_read`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:31
+msgid "Generated for NFSv3 request/reply dialogues of type *read*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:32
+msgid ":zeek:id:`nfs_proc_readdir`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:32
+msgid "Generated for NFSv3 request/reply dialogues of type *readdir*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:33
+msgid ":zeek:id:`nfs_proc_readlink`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:33
+msgid "Generated for NFSv3 request/reply dialogues of type *readlink*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:34
+msgid ":zeek:id:`nfs_proc_remove`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:34
+msgid "Generated for NFSv3 request/reply dialogues of type *remove*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:35
+msgid ":zeek:id:`nfs_proc_rename`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:35
+msgid "Generated for NFSv3 request/reply dialogues of type *rename*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:36
+msgid ":zeek:id:`nfs_proc_rmdir`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:36
+msgid "Generated for NFSv3 request/reply dialogues of type *rmdir*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:37
+msgid ":zeek:id:`nfs_proc_sattr`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:37
+msgid "Generated for NFSv3 request/reply dialogues of type *sattr*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:38
+msgid ":zeek:id:`nfs_proc_symlink`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:38
+msgid "Generated for NFSv3 request/reply dialogues of type *symlink*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:39
+msgid ":zeek:id:`nfs_proc_write`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:39
+msgid "Generated for NFSv3 request/reply dialogues of type *write*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:40
+msgid ":zeek:id:`nfs_reply_status`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:40
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:768
+msgid ""
+"Generated for each NFSv3 reply message received, reporting just the "
+"status included."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:42
+msgid ":zeek:id:`pm_attempt_callit`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:42
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:791
+msgid "Generated for failed Portmapper requests of type *callit*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:43
+msgid ":zeek:id:`pm_attempt_dump`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:43
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:822
+msgid "Generated for failed Portmapper requests of type *dump*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:44
+msgid ":zeek:id:`pm_attempt_getport`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:44
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:850
+msgid "Generated for failed Portmapper requests of type *getport*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:45
+msgid ":zeek:id:`pm_attempt_null`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:45
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:880
+msgid "Generated for failed Portmapper requests of type *null*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:46
+msgid ":zeek:id:`pm_attempt_set`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:46
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:908
+msgid "Generated for failed Portmapper requests of type *set*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:47
+msgid ":zeek:id:`pm_attempt_unset`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:47
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:939
+msgid "Generated for failed Portmapper requests of type *unset*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:48
+msgid ":zeek:id:`pm_bad_port`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:48
+msgid ""
+"Generated for Portmapper requests or replies that include an invalid port"
+" number."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:50
+msgid ":zeek:id:`pm_request_callit`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:50
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1000
+msgid "Generated for Portmapper request/reply dialogues of type *callit*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:51
+msgid ":zeek:id:`pm_request_dump`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:51
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1030
+msgid "Generated for Portmapper request/reply dialogues of type *dump*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:52
+msgid ":zeek:id:`pm_request_getport`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:52
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1057
+msgid "Generated for Portmapper request/reply dialogues of type *getport*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:53
+msgid ":zeek:id:`pm_request_null`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:53
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1086
+msgid "Generated for Portmapper requests of type *null*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:54
+msgid ":zeek:id:`pm_request_set`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:54
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1109
+msgid "Generated for Portmapper request/reply dialogues of type *set*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:55
+msgid ":zeek:id:`pm_request_unset`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:55
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1140
+msgid "Generated for Portmapper request/reply dialogues of type *unset*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:56
+msgid ":zeek:id:`rpc_call`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:56
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1171
+msgid "Generated for RPC *call* messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:57
+msgid ":zeek:id:`rpc_dialogue`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:57
+msgid "Generated for RPC request/reply *pairs*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:58
+msgid ":zeek:id:`rpc_reply`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:58
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1254
+msgid "Generated for RPC *reply* messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:63
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:68
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`MOUNT3::info_t`, req: :zeek:type:`MOUNT3::dirmntargs_t`, rep:"
+" :zeek:type:`MOUNT3::mnt_reply_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:70
+msgid ""
+"Generated for MOUNT3 request/reply dialogues of type *mnt*. The event is "
+"generated once we have either seen both the request and its corresponding"
+" reply, or an unanswered request has timed out. MOUNT is a service "
+"running on top of RPC."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:76
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:104
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:130
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:153
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:179
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:229
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:264
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:299
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:334
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:369
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:403
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:433
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:461
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:496
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:531
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:566
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:601
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:636
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:671
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:706
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:741
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:798
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:829
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:857
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:887
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:915
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:946
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:980
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1007
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1037
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1064
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1093
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1116
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1147
+msgid "The RPC connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "info"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:79
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:107
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:133
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:156
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:182
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:232
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:267
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:302
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:337
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:372
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:406
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:436
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:464
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:499
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:534
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:569
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:604
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:639
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:674
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:709
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:744
+msgid "Reports the status of the dialogue, along with some meta information."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "req"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:82
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:159
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:185
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:305
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:340
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:467
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:677
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:712
+msgid "The arguments passed in the request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "rep"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:85
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:238
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:308
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:343
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:378
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:470
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:505
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:540
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:575
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:610
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:645
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:750
+msgid ""
+"The response returned in the reply. The values may not be valid if the "
+"request was unsuccessful."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:91
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:115
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:138
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:164
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:190
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:211
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:246
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:281
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:316
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:351
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:386
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:415
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:443
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:478
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:513
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:548
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:583
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:618
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:653
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:688
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:723
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:759
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:782
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:813
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:841
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:871
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:899
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:930
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:961
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:991
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1021
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1048
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1077
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1100
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1131
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1162
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1197
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1244
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1275
+msgid "Todo"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:91
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:115
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:138
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:164
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:190
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:211
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:246
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:281
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:316
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:351
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:386
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:415
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:443
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:478
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:513
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:548
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:583
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:618
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:653
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:688
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:723
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:759
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:782
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:813
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:841
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:871
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:899
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:930
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:961
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:991
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1021
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1048
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1077
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1100
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1131
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1162
+msgid ""
+"Zeek's current default configuration does not activate the protocol "
+"analyzer that generates this event; the corresponding script has not yet "
+"been ported. To still enable this event, one needs to register a port for"
+" it or add a DPD payload signature."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:98
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`MOUNT3::info_t`, proc: :zeek:type:`MOUNT3::proc_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "proc"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:110
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:409
+msgid "The procedure called that Zeek does not implement."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:122
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`MOUNT3::info_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:124
+msgid ""
+"Generated for MOUNT3 request/reply dialogues of type *null*. The event is"
+" generated once we have either seen both the request and its "
+"corresponding reply, or an unanswered request has timed out. MOUNT is a "
+"service running on top of RPC."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:145
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:171
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`MOUNT3::info_t`, req: :zeek:type:`MOUNT3::dirmntargs_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:147
+msgid ""
+"Generated for MOUNT3 request/reply dialogues of type *umnt*. The event is"
+" generated once we have either seen both the request and its "
+"corresponding reply, or an unanswered request has timed out. MOUNT is a "
+"service running on top of RPC."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:173
+msgid ""
+"Generated for MOUNT3 request/reply dialogues of type *umnt_all*. The "
+"event is generated once we have either seen both the request and its "
+"corresponding reply, or an unanswered request has timed out. MOUNT is a "
+"service running on top of RPC."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:197
+msgid ""
+":zeek:type:`event` (n: :zeek:type:`connection`, info: "
+":zeek:type:`MOUNT3::info_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "n"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:203
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:772
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1177
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1217
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1260
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:206
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:775
+msgid "Reports the status included in the reply."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:218
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:358
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`NFS3::info_t`, req: :zeek:type:`NFS3::diropargs_t`, rep: "
+":zeek:type:`NFS3::newobj_reply_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:220
+msgid ""
+"Generated for NFSv3 request/reply dialogues of type *create*. The event "
+"is generated once we have either seen both the request and its "
+"corresponding reply, or an unanswered request has timed out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:224
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:259
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:294
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:329
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:364
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:398
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:428
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:456
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:491
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:526
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:561
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:596
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:631
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:666
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:701
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:736
+msgid ""
+"NFS is a service running on top of RPC. See `Wikipedia "
+"<http://en.wikipedia.org/wiki/Network_File_System_(protocol)>`__ for more"
+" information about the service."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:235
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:270
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:375
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:502
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:572
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:607
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:642
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:747
+msgid "TODO."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:253
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`NFS3::info_t`, fh: :zeek:type:`string`, attrs: "
+":zeek:type:`NFS3::fattr_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:255
+msgid ""
+"Generated for NFSv3 request/reply dialogues of type *getattr*. The event "
+"is generated once we have either seen both the request and its "
+"corresponding reply, or an unanswered request has timed out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "fh"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "attrs"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:273
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:680
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:715
+msgid ""
+"The attributes returned in the reply. The values may not be valid if the "
+"request was unsuccessful."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:288
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`NFS3::info_t`, req: :zeek:type:`NFS3::linkargs_t`, rep: "
+":zeek:type:`NFS3::link_reply_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:290
+msgid ""
+"Generated for NFSv3 request/reply dialogues of type *link*. The event is "
+"generated once we have either seen both the request and its corresponding"
+" reply, or an unanswered request has timed out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:323
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`NFS3::info_t`, req: :zeek:type:`NFS3::diropargs_t`, rep: "
+":zeek:type:`NFS3::lookup_reply_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:325
+msgid ""
+"Generated for NFSv3 request/reply dialogues of type *lookup*. The event "
+"is generated once we have either seen both the request and its "
+"corresponding reply, or an unanswered request has timed out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:360
+msgid ""
+"Generated for NFSv3 request/reply dialogues of type *mkdir*. The event is"
+" generated once we have either seen both the request and its "
+"corresponding reply, or an unanswered request has timed out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:393
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`NFS3::info_t`, proc: :zeek:type:`NFS3::proc_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:422
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`NFS3::info_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:424
+msgid ""
+"Generated for NFSv3 request/reply dialogues of type *null*. The event is "
+"generated once we have either seen both the request and its corresponding"
+" reply, or an unanswered request has timed out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:450
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`NFS3::info_t`, req: :zeek:type:`NFS3::readargs_t`, rep: "
+":zeek:type:`NFS3::read_reply_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:452
+msgid ""
+"Generated for NFSv3 request/reply dialogues of type *read*. The event is "
+"generated once we have either seen both the request and its corresponding"
+" reply, or an unanswered request has timed out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:485
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`NFS3::info_t`, req: :zeek:type:`NFS3::readdirargs_t`, rep: "
+":zeek:type:`NFS3::readdir_reply_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:487
+msgid ""
+"Generated for NFSv3 request/reply dialogues of type *readdir*. The event "
+"is generated once we have either seen both the request and its "
+"corresponding reply, or an unanswered request has timed out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:520
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`NFS3::info_t`, fh: :zeek:type:`string`, rep: "
+":zeek:type:`NFS3::readlink_reply_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:522
+msgid ""
+"Generated for NFSv3 request/reply dialogues of type *readlink*. The event"
+" is generated once we have either seen both the request and its "
+"corresponding reply, or an unanswered request has timed out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:537
+msgid "The file handle passed in the request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:555
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:625
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`NFS3::info_t`, req: :zeek:type:`NFS3::diropargs_t`, rep: "
+":zeek:type:`NFS3::delobj_reply_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:557
+msgid ""
+"Generated for NFSv3 request/reply dialogues of type *remove*. The event "
+"is generated once we have either seen both the request and its "
+"corresponding reply, or an unanswered request has timed out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:590
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`NFS3::info_t`, req: :zeek:type:`NFS3::renameopargs_t`, rep: "
+":zeek:type:`NFS3::renameobj_reply_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:592
+msgid ""
+"Generated for NFSv3 request/reply dialogues of type *rename*. The event "
+"is generated once we have either seen both the request and its "
+"corresponding reply, or an unanswered request has timed out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:627
+msgid ""
+"Generated for NFSv3 request/reply dialogues of type *rmdir*. The event is"
+" generated once we have either seen both the request and its "
+"corresponding reply, or an unanswered request has timed out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:660
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`NFS3::info_t`, req: :zeek:type:`NFS3::sattrargs_t`, rep: "
+":zeek:type:`NFS3::sattr_reply_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:662
+msgid ""
+"Generated for NFSv3 request/reply dialogues of type *sattr*. The event is"
+" generated once we have either seen both the request and its "
+"corresponding reply, or an unanswered request has timed out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:695
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`NFS3::info_t`, req: :zeek:type:`NFS3::symlinkargs_t`, rep: "
+":zeek:type:`NFS3::newobj_reply_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:697
+msgid ""
+"Generated for NFSv3 request/reply dialogues of type *symlink*. The event "
+"is generated once we have either seen both the request and its "
+"corresponding reply, or an unanswered request has timed out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:730
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, info: "
+":zeek:type:`NFS3::info_t`, req: :zeek:type:`NFS3::writeargs_t`, rep: "
+":zeek:type:`NFS3::write_reply_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:732
+msgid ""
+"Generated for NFSv3 request/reply dialogues of type *write*. The event is"
+" generated once we have either seen both the request and its "
+"corresponding reply, or an unanswered request has timed out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:766
+msgid ""
+":zeek:type:`event` (n: :zeek:type:`connection`, info: "
+":zeek:type:`NFS3::info_t`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:789
+msgid ""
+":zeek:type:`event` (r: :zeek:type:`connection`, status: "
+":zeek:type:`rpc_status`, call: :zeek:type:`pm_callit_request`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:793
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:824
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:852
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:882
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:910
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:941
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:975
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1002
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1032
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1059
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1088
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1111
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1142
+msgid ""
+"Portmapper is a service running on top of RPC. See `Wikipedia "
+"<http://en.wikipedia.org/wiki/Portmap>`__ for more information about the "
+"service."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "r"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "status"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:801
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:832
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:860
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:890
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:918
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:949
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1229
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1266
+msgid ""
+"The status of the reply, which should be one of the index values of "
+":zeek:id:`RPC_status`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "call"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:805
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:864
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:922
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:953
+msgid "The argument to the original request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:820
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:878
+msgid ""
+":zeek:type:`event` (r: :zeek:type:`connection`, status: "
+":zeek:type:`rpc_status`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:848
+msgid ""
+":zeek:type:`event` (r: :zeek:type:`connection`, status: "
+":zeek:type:`rpc_status`, pr: :zeek:type:`pm_port_request`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "pr"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:906
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:937
+msgid ""
+":zeek:type:`event` (r: :zeek:type:`connection`, status: "
+":zeek:type:`rpc_status`, m: :zeek:type:`pm_mapping`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "m"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:968
+msgid ":zeek:type:`event` (r: :zeek:type:`connection`, bad_p: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:970
+msgid ""
+"Generated for Portmapper requests or replies that include an invalid port"
+" number. Since ports are represented by unsigned 4-byte integers, they "
+"can stray outside the allowed range of 0--65535 by being >= 65536. If so,"
+" this event is generated."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "bad_p"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:983
+msgid "The invalid port value."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:998
+msgid ""
+":zeek:type:`event` (r: :zeek:type:`connection`, call: "
+":zeek:type:`pm_callit_request`, p: :zeek:type:`port`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1010
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1067
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1119
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1150
+msgid "The argument to the request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "p"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1013
+msgid "The port value returned by the call."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1028
+msgid ""
+":zeek:type:`event` (r: :zeek:type:`connection`, m: "
+":zeek:type:`pm_mappings`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1040
+msgid "The mappings returned by the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1055
+msgid ""
+":zeek:type:`event` (r: :zeek:type:`connection`, pr: "
+":zeek:type:`pm_port_request`, p: :zeek:type:`port`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1070
+msgid "The port returned by the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1084
+msgid ":zeek:type:`event` (r: :zeek:type:`connection`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1107
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1138
+msgid ""
+":zeek:type:`event` (r: :zeek:type:`connection`, m: "
+":zeek:type:`pm_mapping`, success: :zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "success"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1122
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1153
+msgid ""
+"True if the request was successful, according to the corresponding reply."
+" If no reply was seen, this will be false once the request times out."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1169
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, xid: :zeek:type:`count`, "
+"prog: :zeek:type:`count`, ver: :zeek:type:`count`, proc: "
+":zeek:type:`count`, call_len: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1173
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1213
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1256
+msgid ""
+"See `Wikipedia <http://en.wikipedia.org/wiki/ONC_RPC>`__ for more "
+"information about the ONC RPC protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "xid"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1180
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1263
+msgid "The transaction identifier allowing to match requests with replies."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "prog"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1183
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1220
+msgid "The remote program to call."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "ver"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1186
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1223
+msgid "The version of the remote program to call."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1189
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1226
+msgid "The procedure of the remote program to call."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "call_len"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1192
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1236
+msgid "The size of the *call_body* PDU."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1197
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1244
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1275
+msgid ""
+"Zeek's current default configuration does not activate the protocol "
+"analyzer that generates this event; the corresponding script has not yet "
+"been ported. To still enable this event, one needs to add a call to "
+":zeek:see:`Analyzer::register_for_ports` or a DPD payload signature."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1205
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, prog: :zeek:type:`count`,"
+" ver: :zeek:type:`count`, proc: :zeek:type:`count`, status: "
+":zeek:type:`rpc_status`, start_time: :zeek:type:`time`, call_len: "
+":zeek:type:`count`, reply_len: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1207
+msgid ""
+"Generated for RPC request/reply *pairs*. The RPC analyzer associates "
+"request and reply by their transaction identifiers and raises this event "
+"once both have been seen. If there's not a reply, this event will still "
+"be generated eventually on timeout. In that case, *status* will be set to"
+" :zeek:enum:`RPC_TIMEOUT`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "start_time"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1233
+msgid "The time when the *call* was seen."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst
+msgid "reply_len"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1239
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1270
+msgid "The size of the *reply_body* PDU."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RPC.events.bif.zeek.rst:1252
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, xid: :zeek:type:`count`, "
+"status: :zeek:type:`rpc_status`, reply_len: :zeek:type:`count`)"
+msgstr ""
+

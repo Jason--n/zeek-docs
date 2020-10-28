@@ -1,0 +1,289 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:4
+msgid "policy/protocols/modbus/track-memmap.zeek"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:7
+msgid ""
+"This script tracks the memory map of holding (read/write) registers and "
+"logs changes as they are discovered."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:10
+msgid "Todo"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:10
+msgid "Not all register read and write functions are supported yet."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:12
+msgid "Modbus"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:13
+msgid ""
+":doc:`base/protocols/modbus </scripts/base/protocols/modbus/index>`, "
+":doc:`base/utils/directions-and-hosts.zeek </scripts/base/utils"
+"/directions-and-hosts.zeek>`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:16
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:18
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:67
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:20
+msgid ":zeek:id:`Modbus::track_memmap`: :zeek:type:`Host` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:20
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:74
+msgid "The hosts that should have memory mapping enabled."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:24
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:77
+msgid "State Variables"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:26
+msgid ":zeek:id:`Modbus::device_registers`: :zeek:type:`table`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:26
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:83
+msgid "The memory map of slaves is tracked with this variable."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:30
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:86
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:32
+msgid ":zeek:type:`Modbus::MemmapInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:33
+msgid ":zeek:type:`Modbus::RegisterValue`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:34
+msgid ":zeek:type:`Modbus::Registers`: :zeek:type:`table`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:34
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:127
+msgid "Indexed on the device register value and yielding the register value."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:38
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:40
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:42
+msgid ":zeek:enum:`Modbus::REGISTER_CHANGE_LOG`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:43
+msgid ":zeek:type:`Modbus::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:45
+msgid ":zeek:type:`Modbus::Info`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:47
+msgid ""
+"track_address: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:51
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:130
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:53
+msgid ":zeek:id:`Modbus::changed_register`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:53
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:135
+msgid ""
+"This event is generated every time a register is seen to be different "
+"than it was previously seen to be."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:58
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:139
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:60
+msgid ""
+":zeek:id:`Modbus::log_policy_register_change`: "
+":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:65
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:70
+msgid ":zeek:type:`Host`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:71
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:72
+msgid "``ALL_HOSTS``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:80
+msgid ":zeek:type:`table` [:zeek:type:`addr`] of :zeek:type:`Modbus::Registers`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:81
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:89
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:116
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:92
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:92
+msgid "Timestamp for the detected register change."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:95
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:95
+msgid "Unique ID for the connection."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:98
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:98
+msgid "Connection ID."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:101
+msgid "register: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:101
+msgid "The device memory offset."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:104
+msgid "old_val: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:104
+msgid "The old value stored in the register."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:107
+msgid "new_val: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:107
+msgid "The new value stored in the register."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:110
+msgid "delta: :zeek:type:`interval` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:110
+msgid "The time delta between when the *old_val* and *new_val* were seen."
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:118
+msgid "last_set: :zeek:type:`time`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:120
+msgid "value: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:125
+msgid ""
+":zeek:type:`table` [:zeek:type:`count`] of "
+":zeek:type:`Modbus::RegisterValue`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:133
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, register: "
+":zeek:type:`count`, old_val: :zeek:type:`count`, new_val: "
+":zeek:type:`count`, delta: :zeek:type:`interval`)"
+msgstr ""
+
+#: ../../scripts/policy/protocols/modbus/track-memmap.zeek.rst:142
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

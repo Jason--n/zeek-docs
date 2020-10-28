@@ -1,0 +1,244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:4
+msgid "base/protocols/smb/consts.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst
+msgid "Namespaces"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:10
+msgid "SMB, SMB1, SMB2"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:15
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:53
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:17
+msgid ""
+":zeek:id:`SMB::rpc_sub_cmds`: :zeek:type:`table` :zeek:attr:`&redef` "
+":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:17
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:138
+msgid "The subcommands for RPC endpoints."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:18
+msgid ""
+":zeek:id:`SMB::rpc_uuids`: :zeek:type:`table` :zeek:attr:`&redef` "
+":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:18
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:154
+msgid "The UUIDs used by the various RPC endpoints."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:19
+msgid ""
+":zeek:id:`SMB::srv_cmds`: :zeek:type:`table` :zeek:attr:`&redef` "
+":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:19
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:215
+msgid "Server service sub commands."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:20
+msgid ""
+":zeek:id:`SMB::statuses`: :zeek:type:`table` :zeek:attr:`&redef` "
+":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:21
+msgid ""
+":zeek:id:`SMB::wksta_cmds`: :zeek:type:`table` :zeek:attr:`&redef` "
+":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:21
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:276
+msgid "Workstation service sub commands."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:25
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:279
+msgid "Constants"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:27
+msgid ""
+":zeek:id:`SMB1::commands`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:28
+msgid ""
+":zeek:id:`SMB1::trans2_sub_commands`: :zeek:type:`table` "
+":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:29
+msgid ""
+":zeek:id:`SMB1::trans_sub_commands`: :zeek:type:`table` "
+":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:30
+msgid ""
+":zeek:id:`SMB2::commands`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:31
+msgid ""
+":zeek:id:`SMB2::dialects`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:32
+msgid ""
+":zeek:id:`SMB2::share_types`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:36
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:487
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:38
+msgid ":zeek:type:`SMB::StatusCode`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:39
+msgid ":zeek:type:`SMB::rpc_cmd_table`: :zeek:type:`table`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:43
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:45
+msgid ":zeek:id:`SMB::pipe_filenames`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:45
+msgid "Heuristic detection of named pipes when the pipe mapping isn't seen."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:51
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:56
+msgid ""
+":zeek:type:`table` [:zeek:type:`string`] of "
+":zeek:type:`SMB::rpc_cmd_table`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:57
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:143
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:159
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:220
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:246
+msgid ":zeek:attr:`&redef` :zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:142
+msgid ":zeek:type:`table` [:zeek:type:`string`] of :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:158
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:245
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:282
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:367
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:397
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:421
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:453
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:472
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:499
+msgid ":zeek:type:`table` [:zeek:type:`count`] of :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:219
+msgid ":zeek:type:`table` [:zeek:type:`count`] of :zeek:type:`SMB::StatusCode`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst
+msgid "Redefinition"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:229
+msgid "from :doc:`/scripts/base/protocols/smb/const-dos-error.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:231
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:237
+msgid "``+=``::"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:235
+msgid "from :doc:`/scripts/base/protocols/smb/const-nt-status.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:283
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:368
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:398
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:422
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:454
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:473
+msgid ":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:490
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:492
+msgid "id: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/consts.zeek.rst:494
+msgid "desc: :zeek:type:`string`"
+msgstr ""
+

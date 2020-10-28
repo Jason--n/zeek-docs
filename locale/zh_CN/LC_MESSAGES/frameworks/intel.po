@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../frameworks/intel.rst:4
+msgid "Intelligence Framework"
+msgstr ""
+
+#: ../../frameworks/intel.rst:7
+msgid "Intro"
+msgstr ""
+
+#: ../../frameworks/intel.rst:9
+msgid ""
+"Intelligence data is critical to the process of monitoring for security "
+"purposes.  There is always data which will be discovered through the "
+"incident response process and data which is shared through private "
+"communities.  The goals of Zeek's Intelligence Framework are to consume "
+"that data, make it available for matching, and provide infrastructure "
+"around improving performance, memory utilization, and generally making "
+"all of this easier."
+msgstr ""
+
+#: ../../frameworks/intel.rst:17
+msgid ""
+"Data in the Intelligence Framework is an atomic piece of intelligence "
+"such as an IP address or an e-mail address along with a suite of metadata"
+" about it such as a freeform source field, a freeform descriptive field "
+"and a URL which might lead to more information about the specific item.  "
+"The metadata in the default scripts has been deliberately kept minimal so"
+" that the community can find the appropriate fields that need to be added"
+" by writing scripts which extend the base record using the normal record "
+"extension mechanism."
+msgstr ""
+
+#: ../../frameworks/intel.rst:27
+msgid "Quick Start"
+msgstr ""
+
+#: ../../frameworks/intel.rst:29
+msgid ""
+"Refer to the \"Loading Intelligence\" section below to see the format for"
+" Intelligence Framework text files, then load those text files with this "
+"line in local.zeek::"
+msgstr ""
+
+#: ../../frameworks/intel.rst:35
+msgid "The text files need to reside only on the manager if running in a cluster."
+msgstr ""
+
+#: ../../frameworks/intel.rst:38
+msgid ""
+"Add the following line to local.zeek in order to load the scripts that "
+"send \"seen\" data into the Intelligence Framework to be checked against "
+"the loaded intelligence data::"
+msgstr ""
+
+#: ../../frameworks/intel.rst:44
+msgid "Intelligence data matches will be logged to the intel.log file."
+msgstr ""
+
+#: ../../frameworks/intel.rst:47
+msgid "Architecture"
+msgstr ""
+
+#: ../../frameworks/intel.rst:49
+msgid ""
+"The Intelligence Framework can be thought of as containing three separate"
+" portions.  The first part is how intelligence is loaded, followed by the"
+" mechanism for indicating to the intelligence framework that a piece of "
+"data which needs to be checked has been seen, and thirdly the part where "
+"a positive match has been discovered."
+msgstr ""
+
+#: ../../frameworks/intel.rst:56
+msgid "Loading Intelligence"
+msgstr ""
+
+#: ../../frameworks/intel.rst:58
+msgid ""
+"Intelligence data can only be loaded through plain text files using the "
+"Input Framework conventions.  Additionally, on clusters the manager is "
+"the only node that needs the intelligence data.  The intelligence "
+"framework has distribution mechanisms which will push data out to all of "
+"the nodes that need it."
+msgstr ""
+
+#: ../../frameworks/intel.rst:64
+msgid ""
+"Here is an example of the intelligence data format (note that there will "
+"be additional fields if you are using CIF intelligence data or if you are"
+" using the policy/frameworks/intel/do_notice script).  Note that all "
+"fields must be separated by a single tab character and fields containing "
+"only a hyphen are considered to be null values. ::"
+msgstr ""
+
+#: ../../frameworks/intel.rst:74
+msgid ""
+"For a list of all built-in `indicator_type` values, please refer to the "
+"documentation of :zeek:see:`Intel::Type`."
+msgstr ""
+
+#: ../../frameworks/intel.rst:77
+msgid ""
+"Note that if you are using data from the Collective Intelligence "
+"Framework, then you will need to add the following line to your "
+"local.zeek in order to support additional metadata fields used by CIF::"
+msgstr ""
+
+#: ../../frameworks/intel.rst:83
+msgid ""
+"There is a simple mechanism to raise a Zeek notice (of type "
+"Intel::Notice) for user-specified intelligence matches.  To use this "
+"feature, add the following line to local.zeek in order to support "
+"additional metadata fields (documented in the :zeek:see:`Intel::MetaData`"
+" record)::"
+msgstr ""
+
+#: ../../frameworks/intel.rst:90
+msgid ""
+"To load the data once the files are created, use the following example to"
+" specify which files to load (with your own file names of course)::"
+msgstr ""
+
+#: ../../frameworks/intel.rst:98
+msgid ""
+"Remember, the files only need to be present on the file system of the "
+"manager node on cluster deployments."
+msgstr ""
+
+#: ../../frameworks/intel.rst:102
+msgid "Seen Data"
+msgstr ""
+
+#: ../../frameworks/intel.rst:104
+msgid ""
+"When some bit of data is extracted (such as an email address in the "
+"\"From\" header in a message over SMTP), the Intelligence Framework needs"
+" to be informed that this data was discovered so that its presence will "
+"be checked within the loaded intelligence data.  This is accomplished "
+"through the :zeek:see:`Intel::seen` function, however typically users "
+"won't need to work with this function due to the scripts included with "
+"Zeek that will call this function."
+msgstr ""
+
+#: ../../frameworks/intel.rst:112
+msgid ""
+"To load all of the scripts included with Zeek for sending \"seen\" data "
+"to the intelligence framework, just add this line to local.zeek::"
+msgstr ""
+
+#: ../../frameworks/intel.rst:117
+msgid ""
+"Alternatively, specific scripts in that directory can be loaded. Keep in "
+"mind that as more data is sent into the intelligence framework, the CPU "
+"load consumed by Zeek will increase depending on how many times the "
+":zeek:see:`Intel::seen` function is being called which is heavily traffic"
+" dependent."
+msgstr ""
+
+#: ../../frameworks/intel.rst:125
+msgid "Intelligence Matches"
+msgstr ""
+
+#: ../../frameworks/intel.rst:127
+msgid ""
+"Against all hopes, most networks will eventually have a hit on "
+"intelligence data which could indicate a possible compromise or other "
+"unwanted activity.  The Intelligence Framework provides an event that is "
+"generated whenever a match is discovered named :zeek:see:`Intel::match`."
+msgstr ""
+
+#: ../../frameworks/intel.rst:132
+msgid ""
+"Due to design restrictions placed upon the intelligence framework, there "
+"is no assurance as to where this event will be generated.  It could be "
+"generated on the worker where the data was seen or on the manager.  When "
+"the ``Intel::match`` event is handled, only the data given as event "
+"arguments to the event can be assured since the host where the data was "
+"seen may not be where ``Intel::match`` is handled."
+msgstr ""
+
+#: ../../frameworks/intel.rst:140
+msgid ""
+"Intelligence matches are logged to the intel.log file.  For a description"
+" of each field in that file, see the documentation for the "
+":zeek:see:`Intel::Info` record."
+msgstr ""
+

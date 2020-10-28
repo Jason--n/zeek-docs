@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:4
+msgid "Package: base/frameworks/netcontrol"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:6
+msgid ""
+"The NetControl framework provides a way for Zeek to interact with "
+"networking hard- and software, e.g. for dropping and shunting IP "
+"addresses/connections, etc."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:10
+msgid ":doc:`/scripts/base/frameworks/netcontrol/__load__.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:13
+msgid ":doc:`/scripts/base/frameworks/netcontrol/types.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:15
+msgid "This file defines the types that are used by the NetControl framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:17
+msgid ""
+"The most important type defined in this file is "
+":zeek:see:`NetControl::Rule`, which is used to describe all rules that "
+"can be expressed by the NetControl framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:20
+msgid ":doc:`/scripts/base/frameworks/netcontrol/main.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:22
+msgid "Zeek's NetControl framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:24
+msgid ""
+"This plugin-based framework allows to control the traffic that Zeek "
+"monitors as well as, if having access to the forwarding path, the traffic"
+" the network forwards. By default, the framework lets everything through,"
+" to both Zeek itself as well as on the network. Scripts can then add "
+"rules to impose restrictions on entities, such as specific connections or"
+" IP addresses."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:30
+msgid ""
+"This framework has two APIs: a high-level and low-level. The high-level "
+"API provides convenience functions for a set of common operations. The "
+"low-level API provides full flexibility."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:34
+msgid ":doc:`/scripts/base/frameworks/netcontrol/plugin.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:36
+msgid "This file defines the plugin interface for NetControl."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:38
+msgid ":doc:`/scripts/base/frameworks/netcontrol/plugins/__load__.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:41
+msgid ":doc:`/scripts/base/frameworks/netcontrol/plugins/debug.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:43
+msgid ""
+"Debugging plugin for the NetControl framework, providing insight into "
+"executed operations."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:46
+msgid ":doc:`/scripts/base/frameworks/netcontrol/plugins/openflow.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:48
+msgid "OpenFlow plugin for the NetControl framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:50
+msgid ":doc:`/scripts/base/frameworks/netcontrol/plugins/packetfilter.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:52
+msgid ""
+"NetControl plugin for the process-level PacketFilter that comes with "
+"Zeek. Since the PacketFilter in Zeek is quite limited in scope and can "
+"only add/remove filters for addresses, this is quite limited in scope at "
+"the moment."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:57
+msgid ":doc:`/scripts/base/frameworks/netcontrol/plugins/broker.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:59
+msgid ""
+"Broker plugin for the NetControl framework. Sends the raw data structures"
+" used in NetControl on to Broker to allow for easy handling, e.g., of "
+"command-line scripts."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:63
+msgid ":doc:`/scripts/base/frameworks/netcontrol/plugins/acld.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:65
+msgid "Acld plugin for the netcontrol framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:67
+msgid ":doc:`/scripts/base/frameworks/netcontrol/drop.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:69
+msgid "Implementation of the drop functionality for NetControl."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:71
+msgid ":doc:`/scripts/base/frameworks/netcontrol/shunt.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:73
+msgid "Implementation of the shunt functionality for NetControl."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/index.rst:75
+msgid ":doc:`/scripts/base/frameworks/netcontrol/non-cluster.zeek`"
+msgstr ""
+

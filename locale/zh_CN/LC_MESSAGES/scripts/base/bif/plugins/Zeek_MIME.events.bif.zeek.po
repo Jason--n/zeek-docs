@@ -1,0 +1,384 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_MIME.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:34
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:15
+msgid ":zeek:id:`mime_all_data`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:15
+msgid ""
+"Generated for passing on all data decoded from a single email MIME "
+"message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:17
+msgid ":zeek:id:`mime_all_headers`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:17
+msgid ""
+"Generated for MIME headers extracted from email MIME entities, passing "
+"all headers at once."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:19
+msgid ":zeek:id:`mime_begin_entity`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:19
+msgid "Generated when starting to parse an email MIME entity."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:20
+msgid ":zeek:id:`mime_content_hash`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:20
+msgid ""
+"Generated for decoded MIME entities extracted from email messages, "
+"passing on their MD5 checksums."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:22
+msgid ":zeek:id:`mime_end_entity`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:22
+msgid "Generated when finishing parsing an email MIME entity."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:23
+msgid ":zeek:id:`mime_entity_data`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:23
+msgid "Generated for data decoded from an email MIME entity."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:24
+msgid ":zeek:id:`mime_event`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:24
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:199
+msgid "Generated for errors found when decoding email MIME entities."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:25
+msgid ":zeek:id:`mime_one_header`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:25
+msgid "Generated for individual MIME headers extracted from email MIME entities."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:27
+msgid ":zeek:id:`mime_segment_data`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:27
+msgid "Generated for chunks of decoded MIME data from email MIME entities."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:32
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:37
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:166
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:248
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, length: "
+":zeek:type:`count`, data: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:39
+msgid ""
+"Generated for passing on all data decoded from a single email MIME "
+"message. If an email message has more than one MIME entity, this event "
+"combines all their data into a single value for analysis. Note that "
+"because of the potentially significant buffering necessary, using this "
+"event can be expensive."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:45
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:72
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:100
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:122
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:150
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:176
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:201
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:229
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:260
+msgid ""
+"Zeek's MIME analyzer for emails currently supports SMTP and POP3. See "
+"`Wikipedia <http://en.wikipedia.org/wiki/MIME>`__ for more information "
+"about MIME."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:50
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:77
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:105
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:127
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:155
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:181
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:206
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:234
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:265
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst
+msgid "length"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:53
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:184
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:268
+msgid "The length of *data*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst
+msgid "data"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:56
+msgid "The raw data of all MIME entities concatenated."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:61
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:138
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:192
+msgid ""
+"While Zeek also decodes MIME entities extracted from HTTP sessions, "
+"there's no corresponding event for that currently."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:66
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hlist: "
+":zeek:type:`mime_header_list`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:68
+msgid ""
+"Generated for MIME headers extracted from email MIME entities, passing "
+"all headers at once.  MIME is a protocol-independent data format for "
+"encoding text and files, along with corresponding metadata, for "
+"transmission."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst
+msgid "hlist"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:80
+msgid ""
+"A *table* containing all headers extracted from the current entity. The "
+"table is indexed by the position of the header (1 for the first, 2 for "
+"the second, etc.)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:88
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:243
+msgid ""
+"Zeek also extracts MIME headers from HTTP sessions. For those, however, "
+"it raises :zeek:id:`http_header` instead."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:93
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:143
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:95
+msgid ""
+"Generated when starting to parse an email MIME entity. MIME is a "
+"protocol-independent data format for encoding text and files, along with "
+"corresponding metadata, for transmission. Zeek raises this event when it "
+"begins parsing a MIME entity extracted from an email protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:111
+msgid ""
+"Zeek also extracts MIME entities from HTTP sessions. For those, however, "
+"it raises :zeek:id:`http_begin_entity` instead."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:116
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, content_len: "
+":zeek:type:`count`, hash_value: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:118
+msgid ""
+"Generated for decoded MIME entities extracted from email messages, "
+"passing on their MD5 checksums. Zeek computes the MD5 over the complete "
+"decoded data of each MIME entity."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst
+msgid "content_len"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:130
+msgid "The length of the entity being hashed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst
+msgid "hash_value"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:133
+msgid "The MD5 hash."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:145
+msgid ""
+"Generated when finishing parsing an email MIME entity.  MIME is a "
+"protocol-independent data format for encoding text and files, along with "
+"corresponding metadata, for transmission. Zeek raises this event when it "
+"finished parsing a MIME entity extracted from an email protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:161
+msgid ""
+"Zeek also extracts MIME entities from HTTP sessions. For those, however, "
+"it raises :zeek:id:`http_end_entity` instead."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:168
+msgid ""
+"Generated for data decoded from an email MIME entity. This event delivers"
+" the complete content of a single MIME entity with the quoted-printable "
+"and and base64 data decoded. In contrast, there is also "
+":zeek:id:`mime_segment_data`, which passes on a sequence of data chunks "
+"as they come in. While ``mime_entity_data`` is more convenient to handle,"
+" ``mime_segment_data`` is more efficient as Zeek does not need to buffer "
+"the data. Thus, if possible, the latter should be preferred."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:187
+msgid "The raw data of the complete entity."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:197
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, event_type: "
+":zeek:type:`string`, detail: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst
+msgid "event_type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:209
+msgid ""
+"A string describing the general category of the problem found (e.g., "
+"``illegal format``)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst
+msgid "detail"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:213
+msgid "Further more detailed description of the error."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:218
+msgid ""
+"Zeek also extracts MIME headers from HTTP sessions. For those, however, "
+"it raises :zeek:id:`http_event` instead."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:223
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, h: "
+":zeek:type:`mime_header_rec`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:225
+msgid ""
+"Generated for individual MIME headers extracted from email MIME entities."
+"  MIME is a protocol-independent data format for encoding text and files,"
+" along with corresponding metadata, for transmission."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst
+msgid "h"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:237
+msgid "The parsed MIME header."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:250
+msgid ""
+"Generated for chunks of decoded MIME data from email MIME entities.  MIME"
+" is a protocol-independent data format for encoding text and files, along"
+" with corresponding metadata, for transmission. As Zeek parses the data "
+"of an entity, it raises a sequence of these events, each coming as soon "
+"as a new chunk of data is available. In contrast, there is also "
+":zeek:id:`mime_entity_data`, which passes all of an entities data at once"
+" in a single block. While the latter is more convenient to handle, "
+"``mime_segment_data`` is more efficient as Zeek does not need to buffer "
+"the data. Thus, if possible, this event should be preferred."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:271
+msgid "The raw data of one segment of the current entity."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_MIME.events.bif.zeek.rst:277
+msgid ""
+"Zeek also extracts MIME data from HTTP sessions. For those, however, it "
+"raises :zeek:id:`http_entity_data` (sic!) instead."
+msgstr ""
+

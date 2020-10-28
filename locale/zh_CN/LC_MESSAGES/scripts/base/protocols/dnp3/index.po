@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/dnp3/index.rst:4
+msgid "Package: base/protocols/dnp3"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/index.rst:6
+msgid "Support for Distributed Network Protocol (DNP3) analysis."
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/index.rst:8
+msgid ":doc:`/scripts/base/protocols/dnp3/__load__.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/index.rst:11
+msgid ":doc:`/scripts/base/protocols/dnp3/main.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/index.rst:13
+msgid "A very basic DNP3 analysis script that just logs requests and replies."
+msgstr ""
+
+#: ../../scripts/base/protocols/dnp3/index.rst:15
+msgid ":doc:`/scripts/base/protocols/dnp3/consts.zeek`"
+msgstr ""
+

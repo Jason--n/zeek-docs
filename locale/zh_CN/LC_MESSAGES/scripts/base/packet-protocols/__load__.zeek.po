@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/packet-protocols/__load__.zeek.rst:4
+msgid "base/packet-protocols/__load__.zeek"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/__load__.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/__load__.zeek.rst:7
+msgid ""
+":doc:`base/packet-protocols/ethernet </scripts/base/packet-"
+"protocols/ethernet/index>`, :doc:`base/packet-protocols/fddi "
+"</scripts/base/packet-protocols/fddi/index>`, :doc:`base/packet-"
+"protocols/gre </scripts/base/packet-protocols/gre/index>`, :doc:`base"
+"/packet-protocols/ieee802_11 </scripts/base/packet-"
+"protocols/ieee802_11/index>`, :doc:`base/packet-"
+"protocols/ieee802_11_radio </scripts/base/packet-"
+"protocols/ieee802_11_radio/index>`, :doc:`base/packet-protocols/ip "
+"</scripts/base/packet-protocols/ip/index>`, :doc:`base/packet-"
+"protocols/iptunnel </scripts/base/packet-protocols/iptunnel/index>`, "
+":doc:`base/packet-protocols/linux_sll </scripts/base/packet-"
+"protocols/linux_sll/index>`, :doc:`base/packet-protocols/mpls "
+"</scripts/base/packet-protocols/mpls/index>`, :doc:`base/packet-"
+"protocols/nflog </scripts/base/packet-protocols/nflog/index>`, :doc:`base"
+"/packet-protocols/null </scripts/base/packet-protocols/null/index>`, "
+":doc:`base/packet-protocols/ppp_serial </scripts/base/packet-"
+"protocols/ppp_serial/index>`, :doc:`base/packet-protocols/pppoe "
+"</scripts/base/packet-protocols/pppoe/index>`, :doc:`base/packet-"
+"protocols/root </scripts/base/packet-protocols/root/index>`, :doc:`base"
+"/packet-protocols/skip </scripts/base/packet-protocols/skip/index>`, "
+":doc:`base/packet-protocols/vlan </scripts/base/packet-"
+"protocols/vlan/index>`"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/__load__.zeek.rst:10
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/__load__.zeek.rst:13
+msgid "Detailed Interface"
+msgstr ""
+

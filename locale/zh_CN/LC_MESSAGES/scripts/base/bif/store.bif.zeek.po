@@ -1,0 +1,243 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:4
+msgid "base/bif/store.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:8
+msgid "Functions to interface with broker's distributed data store."
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst
+msgid "Namespaces"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:10
+msgid "Broker, GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:15
+#: ../../scripts/base/bif/store.bif.zeek.rst:44
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:17
+msgid ":zeek:id:`Broker::__append`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:18
+msgid ":zeek:id:`Broker::__clear`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:19
+msgid ":zeek:id:`Broker::__close`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:20
+msgid ":zeek:id:`Broker::__create_clone`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:21
+msgid ":zeek:id:`Broker::__create_master`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:22
+msgid ":zeek:id:`Broker::__decrement`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:23
+msgid ":zeek:id:`Broker::__erase`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:24
+msgid ":zeek:id:`Broker::__exists`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:25
+msgid ":zeek:id:`Broker::__get`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:26
+msgid ":zeek:id:`Broker::__get_index_from_value`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:27
+msgid ":zeek:id:`Broker::__increment`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:28
+msgid ":zeek:id:`Broker::__insert_into_set`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:29
+msgid ":zeek:id:`Broker::__insert_into_table`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:30
+msgid ":zeek:id:`Broker::__is_closed`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:31
+msgid ":zeek:id:`Broker::__keys`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:32
+msgid ":zeek:id:`Broker::__pop`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:33
+msgid ":zeek:id:`Broker::__push`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:34
+msgid ":zeek:id:`Broker::__put`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:35
+msgid ":zeek:id:`Broker::__put_unique`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:36
+msgid ":zeek:id:`Broker::__remove_from`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:37
+msgid ":zeek:id:`Broker::__store_name`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:42
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:47
+msgid ""
+":zeek:type:`function` (h: :zeek:type:`opaque` of Broker::Store, k: "
+":zeek:type:`any`, s: :zeek:type:`any`, e: :zeek:type:`interval`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:52
+#: ../../scripts/base/bif/store.bif.zeek.rst:57
+#: ../../scripts/base/bif/store.bif.zeek.rst:112
+msgid ""
+":zeek:type:`function` (h: :zeek:type:`opaque` of Broker::Store) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:62
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`string`, resync_interval: "
+":zeek:type:`interval`, stale_interval: :zeek:type:`interval`, "
+"mutation_buffer_interval: :zeek:type:`interval`) : :zeek:type:`opaque` of"
+" Broker::Store"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:67
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`string`, b: "
+":zeek:type:`Broker::BackendType`, options: "
+":zeek:type:`Broker::BackendOptions` :zeek:attr:`&default` = "
+"*[sqlite=[path=], rocksdb=[path=]]* :zeek:attr:`&optional`) : "
+":zeek:type:`opaque` of Broker::Store"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:72
+#: ../../scripts/base/bif/store.bif.zeek.rst:97
+msgid ""
+":zeek:type:`function` (h: :zeek:type:`opaque` of Broker::Store, k: "
+":zeek:type:`any`, a: :zeek:type:`any`, e: :zeek:type:`interval`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:77
+msgid ""
+":zeek:type:`function` (h: :zeek:type:`opaque` of Broker::Store, k: "
+":zeek:type:`any`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:82
+#: ../../scripts/base/bif/store.bif.zeek.rst:87
+msgid ""
+":zeek:type:`function` (h: :zeek:type:`opaque` of Broker::Store, k: "
+":zeek:type:`any`) : :zeek:type:`Broker::QueryResult`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:92
+msgid ""
+":zeek:type:`function` (h: :zeek:type:`opaque` of Broker::Store, k: "
+":zeek:type:`any`, i: :zeek:type:`any`) : :zeek:type:`Broker::QueryResult`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:102
+#: ../../scripts/base/bif/store.bif.zeek.rst:142
+msgid ""
+":zeek:type:`function` (h: :zeek:type:`opaque` of Broker::Store, k: "
+":zeek:type:`any`, i: :zeek:type:`any`, e: :zeek:type:`interval`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:107
+msgid ""
+":zeek:type:`function` (h: :zeek:type:`opaque` of Broker::Store, k: "
+":zeek:type:`any`, i: :zeek:type:`any`, v: :zeek:type:`any`, e: "
+":zeek:type:`interval`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:117
+msgid ""
+":zeek:type:`function` (h: :zeek:type:`opaque` of Broker::Store) : "
+":zeek:type:`Broker::QueryResult`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:122
+msgid ""
+":zeek:type:`function` (h: :zeek:type:`opaque` of Broker::Store, k: "
+":zeek:type:`any`, e: :zeek:type:`interval`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:127
+#: ../../scripts/base/bif/store.bif.zeek.rst:132
+msgid ""
+":zeek:type:`function` (h: :zeek:type:`opaque` of Broker::Store, k: "
+":zeek:type:`any`, v: :zeek:type:`any`, e: :zeek:type:`interval`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:137
+msgid ""
+":zeek:type:`function` (h: :zeek:type:`opaque` of Broker::Store, k: "
+":zeek:type:`any`, v: :zeek:type:`any`, e: :zeek:type:`interval`) : "
+":zeek:type:`Broker::QueryResult`"
+msgstr ""
+
+#: ../../scripts/base/bif/store.bif.zeek.rst:147
+msgid ""
+":zeek:type:`function` (h: :zeek:type:`opaque` of Broker::Store) : "
+":zeek:type:`string`"
+msgstr ""
+

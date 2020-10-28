@@ -1,0 +1,503 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:4
+msgid "base/protocols/smtp/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:8
+msgid "SMTP"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:9
+msgid ""
+":doc:`base/protocols/conn/removal-hooks.zeek "
+"</scripts/base/protocols/conn/removal-hooks.zeek>`, "
+":doc:`base/utils/addrs.zeek </scripts/base/utils/addrs.zeek>`, "
+":doc:`base/utils/directions-and-hosts.zeek </scripts/base/utils"
+"/directions-and-hosts.zeek>`, :doc:`base/utils/email.zeek "
+"</scripts/base/utils/email.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:14
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:65
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:16
+msgid ":zeek:id:`SMTP::mail_path_capture`: :zeek:type:`Host` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:16
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:75
+msgid "Direction to capture the full \"Received from\" path."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:20
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:79
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:22
+msgid ":zeek:type:`SMTP::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:23
+msgid ":zeek:type:`SMTP::State`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:27
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:29
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:31
+msgid ":zeek:enum:`SMTP::LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:32
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:34
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:36
+msgid "smtp: :zeek:type:`SMTP::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:38
+msgid "smtp_state: :zeek:type:`SMTP::State` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:39
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:43
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:197
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:45
+msgid ":zeek:id:`SMTP::log_smtp`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:49
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:204
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:51
+msgid ":zeek:id:`SMTP::finalize_smtp`: :zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:51
+msgid "SMTP finalization hook."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:52
+msgid ":zeek:id:`SMTP::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:56
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:217
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:58
+msgid ":zeek:id:`SMTP::describe`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:58
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:222
+msgid "Create an extremely shortened representation of a log line."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:63
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:68
+msgid ":zeek:type:`Host`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:69
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:70
+msgid "``ALL_HOSTS``"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:73
+msgid ""
+"REMOTE_HOSTS - only capture the path until an internal host is found. "
+"LOCAL_HOSTS - only capture the path until the external host is "
+"discovered. ALL_HOSTS - always capture the entire path. NO_HOSTS - never "
+"capture the path."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:82
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:178
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:85
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:85
+msgid "Time when the message was first seen."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:88
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:88
+msgid "Unique ID for the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:91
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:91
+msgid "The connection's 4-tuple of endpoint addresses/ports."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:95
+msgid "trans_depth: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:94
+msgid ""
+"A count to represent the depth of this message transaction in a single "
+"connection where multiple messages were transferred."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:98
+msgid "helo: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:98
+msgid "Contents of the Helo header."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:101
+msgid "mailfrom: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:101
+msgid "Email addresses found in the From header."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:104
+msgid ""
+"rcptto: :zeek:type:`set` [:zeek:type:`string`] :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:104
+msgid "Email addresses found in the Rcpt header."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:107
+msgid "date: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:107
+msgid "Contents of the Date header."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:110
+msgid "from: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:110
+msgid "Contents of the From header."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:113
+msgid ""
+"to: :zeek:type:`set` [:zeek:type:`string`] :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:113
+msgid "Contents of the To header."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:116
+msgid ""
+"cc: :zeek:type:`set` [:zeek:type:`string`] :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:116
+msgid "Contents of the CC header."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:119
+msgid "reply_to: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:119
+msgid "Contents of the ReplyTo header."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:122
+msgid "msg_id: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:122
+msgid "Contents of the MsgID header."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:125
+msgid "in_reply_to: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:125
+msgid "Contents of the In-Reply-To header."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:128
+msgid "subject: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:128
+msgid "Contents of the Subject header."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:131
+msgid ""
+"x_originating_ip: :zeek:type:`addr` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:131
+msgid "Contents of the X-Originating-IP header."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:134
+msgid ""
+"first_received: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:134
+msgid "Contents of the first Received header."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:137
+msgid ""
+"second_received: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:137
+msgid "Contents of the second Received header."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:140
+msgid "last_reply: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:140
+msgid "The last message that the server sent to the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:143
+msgid ""
+"path: :zeek:type:`vector` of :zeek:type:`addr` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:143
+msgid "The message transmission path, as extracted from the headers."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:146
+msgid "user_agent: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:146
+msgid "Value of the User-Agent header from the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:149
+msgid ""
+"tls: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:149
+msgid "Indicates that the connection has switched to using TLS."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:153
+msgid ""
+"process_received_from: :zeek:type:`bool` :zeek:attr:`&default` = ``T`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:152
+msgid "Indicates if the \"Received: from\" headers should still be processed."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:156
+msgid ""
+"has_client_activity: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:156
+msgid "Indicates if client activity has been seen, but not yet logged."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:161
+msgid "entity: :zeek:type:`SMTP::Entity` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:159
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:190
+msgid "(present if :doc:`/scripts/base/protocols/smtp/entities.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:161
+msgid "The current entity being seen."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:167
+msgid ""
+"fuids: :zeek:type:`vector` of :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&default` = ``[]`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:164
+msgid "(present if :doc:`/scripts/base/protocols/smtp/files.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:166
+msgid "An ordered vector of file unique IDs seen attached to the message."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:172
+msgid ""
+"is_webmail: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = "
+"``F`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:170
+msgid "(present if :doc:`/scripts/policy/protocols/smtp/software.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:172
+msgid "Boolean indicator of if the message was sent through a webmail interface."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:180
+msgid "helo: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:185
+msgid ""
+"messages_transferred: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:183
+msgid ""
+"Count the number of individual messages transmitted during this SMTP "
+"session.  Note, this is not the number of recipients, but the number of "
+"message bodies transferred."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:187
+msgid ""
+"pending_messages: :zeek:type:`set` [:zeek:type:`SMTP::Info`] "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:192
+msgid ""
+"mime_depth: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:192
+msgid "Track the number of MIME encoded files transferred during a session."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:200
+msgid ":zeek:type:`event` (rec: :zeek:type:`SMTP::Info`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:207
+msgid ":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:209
+msgid ""
+"SMTP finalization hook.  Remaining SMTP info may get logged when it's "
+"called."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:213
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/main.zeek.rst:220
+msgid ":zeek:type:`function` (rec: :zeek:type:`SMTP::Info`) : :zeek:type:`string`"
+msgstr ""
+

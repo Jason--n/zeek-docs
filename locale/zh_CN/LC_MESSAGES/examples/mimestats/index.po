@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../examples/mimestats/index.rst:6
+msgid "MIME Type Statistics"
+msgstr ""
+
+#: ../../examples/mimestats/index.rst:8
+msgid ""
+"Files are constantly transmitted over HTTP on regular networks. These "
+"files belong to a specific category (e.g., executable, text, image) "
+"identified by a `Multipurpose Internet Mail Extension (MIME) "
+"<http://en.wikipedia.org/wiki/MIME>`_. Although MIME was originally "
+"developed to identify the type of non-text attachments on email, it is "
+"also used by a web browser to identify the type of files transmitted and "
+"present them accordingly."
+msgstr ""
+
+#: ../../examples/mimestats/index.rst:16
+msgid ""
+"In this tutorial, we will demonstrate how to use the Sumstats Framework "
+"to collect statistical information based on MIME types; specifically, the"
+" total number of occurrences, size in bytes, and number of unique hosts "
+"transmitting files over HTTP per each type. For instructions on "
+"extracting and creating a local copy of these files, visit :ref:`this "
+"tutorial <http-monitor>`."
+msgstr ""
+
+#: ../../examples/mimestats/index.rst:25
+msgid "MIME Statistics with Sumstats"
+msgstr ""
+
+#: ../../examples/mimestats/index.rst:27
+msgid ""
+"When working with the :ref:`Summary Statistics Framework <sumstats-"
+"framework>`, you need to define three different pieces: (i) Observations,"
+" where the event is observed and fed into the framework. (ii) Reducers, "
+"where observations are collected and measured. (iii) Sumstats, where the "
+"main functionality is implemented."
+msgstr ""
+
+#: ../../examples/mimestats/index.rst:33
+msgid ""
+"We start by defining our observation along with a record to store all "
+"statistical values and an observation interval. We are conducting our "
+"observation on the :zeek:see:`HTTP::log_http` event and are interested in"
+" the MIME type, size of the file (\"response_body_len\"), and the "
+"originator host (\"orig_h\"). We use the MIME type as our key and create "
+"observers for the other two values."
+msgstr ""
+
+#: ../../examples/mimestats/index.rst:40 ../../examples/mimestats/index.rst:48
+#: ../../examples/mimestats/index.rst:60 ../../examples/mimestats/index.rst:72
+#: ../../examples/mimestats/index.rst:83
+msgid "mimestats.zeek"
+msgstr ""
+
+#: ../../examples/mimestats/index.rst:56
+msgid ""
+"Next, we create the reducers. The first will accumulate file sizes and "
+"the second will make sure we only store a host ID once. Below is the "
+"partial code from a :zeek:see:`zeek_init` handler."
+msgstr ""
+
+#: ../../examples/mimestats/index.rst:68
+msgid ""
+"In our final step, we create the SumStats where we check for the "
+"observation interval.  Once it expires, we populate the record (defined "
+"above) with all the relevant data and write it to a log."
+msgstr ""
+
+#: ../../examples/mimestats/index.rst:80
+msgid ""
+"After putting the three pieces together we end up with the following "
+"final code for our script."
+msgstr ""
+
+#: ../../examples/mimestats/index.rst:111
+msgid ""
+"The redefinition of :zeek:see:`Site::local_nets` is only done inside this"
+" script to make it a self-contained example.  It's typically redefined "
+"somewhere else."
+msgstr ""
+

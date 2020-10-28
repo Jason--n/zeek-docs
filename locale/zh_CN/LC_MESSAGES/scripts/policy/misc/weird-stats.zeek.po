@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:4
+msgid "policy/misc/weird-stats.zeek"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:8
+msgid "Log weird statistics."
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst
+msgid "Namespaces"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:10
+msgid "SumStats, WeirdStats"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:11
+msgid ""
+":doc:`base/frameworks/cluster </scripts/base/frameworks/cluster/index>`, "
+":doc:`base/frameworks/sumstats </scripts/base/frameworks/sumstats/index>`"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:16
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:51
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:18
+msgid ""
+":zeek:id:`WeirdStats::weird_stat_interval`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:18
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:58
+msgid "How often stats are reported."
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:22
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:61
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:24
+msgid ":zeek:type:`WeirdStats::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:28
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:30
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:32
+msgid ":zeek:enum:`WeirdStats::LOG`"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:36
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:77
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:38
+msgid ":zeek:id:`WeirdStats::log_weird_stats`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:42
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:84
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:44
+msgid ":zeek:id:`WeirdStats::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:49
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:54
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:55
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:56
+msgid "``15.0 mins``"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:64
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:67
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:67
+msgid "Timestamp for the measurement."
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:70
+msgid "name: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:70
+msgid "Name of the weird."
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:72
+msgid "num_seen: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:73
+msgid "Number of times weird was seen since the last stats interval."
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:80
+msgid ":zeek:type:`event` (rec: :zeek:type:`WeirdStats::Info`)"
+msgstr ""
+
+#: ../../scripts/policy/misc/weird-stats.zeek.rst:87
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

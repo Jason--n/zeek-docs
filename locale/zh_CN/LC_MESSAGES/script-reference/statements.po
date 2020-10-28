@@ -1,0 +1,950 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../script-reference/statements.rst:2
+msgid "Declarations and Statements"
+msgstr ""
+
+#: ../../script-reference/statements.rst:4
+msgid ""
+"The Zeek scripting language supports the following declarations_ and "
+"statements_."
+msgstr ""
+
+#: ../../script-reference/statements.rst:8
+msgid "Declarations"
+msgstr ""
+
+#: ../../script-reference/statements.rst:10
+msgid "Declarations cannot occur within a function, hook, or event handler."
+msgstr ""
+
+#: ../../script-reference/statements.rst:12
+msgid ""
+"Declarations must appear before any statements (except those statements "
+"that are in a function, hook, or event handler) in the concatenation of "
+"all loaded Zeek scripts."
+msgstr ""
+
+#: ../../script-reference/statements.rst:17
+#: ../../script-reference/statements.rst:292
+msgid "Name"
+msgstr ""
+
+#: ../../script-reference/statements.rst:17
+#: ../../script-reference/statements.rst:292
+msgid "Description"
+msgstr ""
+
+#: ../../script-reference/statements.rst:19
+msgid ":zeek:keyword:`module`"
+msgstr ""
+
+#: ../../script-reference/statements.rst:19
+msgid "Change the current module"
+msgstr ""
+
+#: ../../script-reference/statements.rst:21
+msgid ":zeek:keyword:`export`"
+msgstr ""
+
+#: ../../script-reference/statements.rst:21
+msgid "Export identifiers from the current module"
+msgstr ""
+
+#: ../../script-reference/statements.rst:24
+msgid ":zeek:keyword:`global`"
+msgstr ""
+
+#: ../../script-reference/statements.rst:24
+msgid "Declare a global variable"
+msgstr ""
+
+#: ../../script-reference/statements.rst:26
+msgid ":zeek:keyword:`const`"
+msgstr ""
+
+#: ../../script-reference/statements.rst:26
+msgid "Declare a constant"
+msgstr ""
+
+#: ../../script-reference/statements.rst:28
+msgid ":zeek:keyword:`option`"
+msgstr ""
+
+#: ../../script-reference/statements.rst:28
+msgid "Declare a configuration option"
+msgstr ""
+
+#: ../../script-reference/statements.rst:31
+msgid ":zeek:keyword:`type`"
+msgstr ""
+
+#: ../../script-reference/statements.rst:31
+msgid "Declare a user-defined type"
+msgstr ""
+
+#: ../../script-reference/statements.rst:33
+msgid ":zeek:keyword:`redef`"
+msgstr ""
+
+#: ../../script-reference/statements.rst:33
+msgid "Redefine a global value or extend a user-defined type"
+msgstr ""
+
+#: ../../script-reference/statements.rst:36
+msgid "`function/event/hook`_"
+msgstr ""
+
+#: ../../script-reference/statements.rst:36
+msgid "Declare a function, event handler, or hook"
+msgstr ""
+
+#: ../../script-reference/statements.rst:44
+msgid "module"
+msgstr ""
+
+#: ../../script-reference/statements.rst:46
+msgid ""
+"The ``module`` keyword is used to change the current module.  This "
+"affects the scope of any subsequently declared global identifiers."
+msgstr ""
+
+#: ../../script-reference/statements.rst:49
+#: ../../script-reference/statements.rst:80
+#: ../../script-reference/statements.rst:203
+#: ../../script-reference/statements.rst:263
+#: ../../script-reference/statements.rst:336
+#: ../../script-reference/statements.rst:366
+#: ../../script-reference/statements.rst:388
+#: ../../script-reference/statements.rst:444
+#: ../../script-reference/statements.rst:595
+#: ../../script-reference/statements.rst:633
+#: ../../script-reference/statements.rst:715
+#: ../../script-reference/statements.rst:811
+#: ../../script-reference/statements.rst:846
+#: ../../script-reference/statements.rst:871
+msgid "Example:"
+msgstr ""
+
+#: ../../script-reference/statements.rst:55
+msgid ""
+"If a global identifier is declared after a ``module`` declaration, then "
+"its scope ends at the end of the current Zeek script or at the next "
+"``module`` declaration, whichever comes first.  However, if a global "
+"identifier is declared after a ``module`` declaration, but inside an "
+":zeek:keyword:`export` block, then its scope ends at the end of the last "
+"loaded Zeek script, but it must be referenced using the namespace "
+"operator (``::``) in other modules."
+msgstr ""
+
+#: ../../script-reference/statements.rst:63
+msgid ""
+"There can be any number of ``module`` declarations in a Zeek script. The "
+"same ``module`` declaration can appear in any number of different Zeek "
+"scripts."
+msgstr ""
+
+#: ../../script-reference/statements.rst:71
+msgid "export"
+msgstr ""
+
+#: ../../script-reference/statements.rst:73
+msgid ""
+"An ``export`` block contains one or more declarations (no statements are "
+"allowed in an ``export`` block) that the current module is exporting.  "
+"This enables these global identifiers to be visible in other modules (but"
+" not prior to their declaration) via the namespace operator (``::``).  "
+"See the :zeek:keyword:`module` keyword for a more detailed explanation."
+msgstr ""
+
+#: ../../script-reference/statements.rst:95
+msgid ""
+"Note that the braces in an ``export`` block are always required (they do "
+"not indicate a compound statement).  Also, no semicolon is needed to "
+"terminate an ``export`` block."
+msgstr ""
+
+#: ../../script-reference/statements.rst:103
+msgid "global"
+msgstr ""
+
+#: ../../script-reference/statements.rst:105
+msgid "Variables declared with the ``global`` keyword will have global scope."
+msgstr ""
+
+#: ../../script-reference/statements.rst:107
+msgid ""
+"If a type is not specified, then an initializer is required so that the "
+"type can be inferred.  Likewise, if an initializer is not supplied, then "
+"the type must be specified.  In some cases, when the type cannot be "
+"correctly inferred, the type must be specified even when an initializer "
+"is present.  Example:"
+msgstr ""
+
+#: ../../script-reference/statements.rst:119
+msgid ""
+"Variable declarations outside of any function, hook, or event handler are"
+" required to use this keyword (unless they are declared with the "
+":zeek:keyword:`const` keyword instead)."
+msgstr ""
+
+#: ../../script-reference/statements.rst:123
+msgid ""
+"Definitions of functions, hooks, and event handlers are not allowed to "
+"use the ``global`` keyword.  However, function declarations (i.e., no "
+"function body is provided) can use the ``global`` keyword."
+msgstr ""
+
+#: ../../script-reference/statements.rst:127
+msgid ""
+"The scope of a global variable begins where the declaration is located, "
+"and extends through all remaining Zeek scripts that are loaded (however, "
+"see the :zeek:keyword:`module` keyword for an explanation of how modules "
+"change the visibility of global identifiers)."
+msgstr ""
+
+#: ../../script-reference/statements.rst:136
+msgid "const"
+msgstr ""
+
+#: ../../script-reference/statements.rst:138
+msgid "A variable declared with the ``const`` keyword will be constant."
+msgstr ""
+
+#: ../../script-reference/statements.rst:140
+msgid ""
+"Variables declared as constant are required to be initialized at the time"
+" of declaration.  Normally, the type is inferred from the initializer, "
+"but the type can be explicitly specified.  Example:"
+msgstr ""
+
+#: ../../script-reference/statements.rst:149
+msgid ""
+"The value of a constant cannot be changed.  The only exception is if the "
+"variable is a global constant and has the :zeek:attr:`&redef` attribute, "
+"but even then its value can be changed only with a :zeek:keyword:`redef`."
+msgstr ""
+
+#: ../../script-reference/statements.rst:154
+msgid ""
+"The scope of a constant is local if the declaration is in a function, "
+"hook, or event handler, and global otherwise."
+msgstr ""
+
+#: ../../script-reference/statements.rst:157
+msgid ""
+"Note that the ``const`` keyword cannot be used with either the ``local`` "
+"or ``global`` keywords (i.e., ``const`` is an alternative to either "
+"``local`` or ``global``)."
+msgstr ""
+
+#: ../../script-reference/statements.rst:165
+msgid "option"
+msgstr ""
+
+#: ../../script-reference/statements.rst:167
+msgid "A variable declared with the ``option`` keyword is a configuration option."
+msgstr ""
+
+#: ../../script-reference/statements.rst:169
+msgid ""
+"Options are required to be initialized at the time of declaration.  "
+"Normally, the type is inferred from the initializer, but the type can be "
+"explicitly specified.  Example:"
+msgstr ""
+
+#: ../../script-reference/statements.rst:178
+msgid "The initial value can be redefined with a :zeek:keyword:`redef`."
+msgstr ""
+
+#: ../../script-reference/statements.rst:180
+msgid ""
+"The value of an option cannot be changed by an assignment statement, but "
+"it can be changed by either the :zeek:id:`Config::set_value` function or "
+"by changing a config file specified in :zeek:id:`Config::config_files`."
+msgstr ""
+
+#: ../../script-reference/statements.rst:184
+msgid "The scope of an option is global."
+msgstr ""
+
+#: ../../script-reference/statements.rst:186
+msgid ""
+"Note that an ``option`` declaration cannot also use the ``local``, "
+"``global``, or ``const`` keywords."
+msgstr ""
+
+#: ../../script-reference/statements.rst:193
+msgid "type"
+msgstr ""
+
+#: ../../script-reference/statements.rst:195
+msgid ""
+"The ``type`` keyword is used to declare a user-defined type.  The name of"
+" this new type has global scope and can be used anywhere a built-in type "
+"name can occur."
+msgstr ""
+
+#: ../../script-reference/statements.rst:199
+msgid ""
+"The ``type`` keyword is most commonly used when defining a "
+":zeek:type:`record` or an :zeek:type:`enum`, but is also useful when "
+"dealing with more complex types."
+msgstr ""
+
+#: ../../script-reference/statements.rst:214
+msgid "redef"
+msgstr ""
+
+#: ../../script-reference/statements.rst:216
+msgid ""
+"There are several ways that ``redef`` can be used:  to redefine the "
+"initial value of a global variable or runtime option, to extend a record "
+"type or enum type, or to specify a new event handler body that replaces "
+"all those that were previously defined."
+msgstr ""
+
+#: ../../script-reference/statements.rst:221
+msgid ""
+"If you're using ``redef`` to redefine the initial value of a global "
+"variable (defined using either :zeek:keyword:`const` or "
+":zeek:keyword:`global`), then the variable that you want to change must "
+"have the :zeek:attr:`&redef` attribute.  You can use ``redef`` to "
+"redefine the initial value of a runtime option (defined using "
+":zeek:keyword:`option`) even if it doesn't have the :zeek:attr:`&redef` "
+"attribute."
+msgstr ""
+
+#: ../../script-reference/statements.rst:228
+msgid ""
+"If the variable you're changing is a table, set, vector, or pattern, you "
+"can use ``+=`` to add new elements, or you can use ``=`` to specify a new"
+" value (all previous contents of the object are removed).  If the "
+"variable you're changing is a set or table, then you can use the ``-=`` "
+"operator to remove the specified elements (nothing happens for specified "
+"elements that don't exist).  If the variable you are changing is not a "
+"table, set, or pattern, then you must use the ``=`` operator."
+msgstr ""
+
+#: ../../script-reference/statements.rst:236
+#: ../../script-reference/statements.rst:250
+#: ../../script-reference/statements.rst:498
+#: ../../script-reference/statements.rst:538
+#: ../../script-reference/statements.rst:568
+msgid "Examples:"
+msgstr ""
+
+#: ../../script-reference/statements.rst:243
+msgid ""
+"If you're using ``redef`` to extend a record or enum, then you must use "
+"the ``+=`` assignment operator. For an enum, you can add more enumeration"
+" constants, and for a record you can add more record fields (however, "
+"each record field in the ``redef`` must have either the "
+":zeek:attr:`&optional` or :zeek:attr:`&default` attribute)."
+msgstr ""
+
+#: ../../script-reference/statements.rst:257
+msgid ""
+"If you're using ``redef`` to specify a new event handler body that "
+"replaces all those that were previously defined (i.e., any subsequently "
+"defined event handler body will not be affected by this ``redef``), then "
+"the syntax is the same as a regular event handler definition except for "
+"the presence of the ``redef`` keyword."
+msgstr ""
+
+#: ../../script-reference/statements.rst:273
+msgid "Function Flavors"
+msgstr ""
+
+#: ../../script-reference/statements.rst:275
+msgid ""
+"For details on how to declare a :zeek:type:`function`, :zeek:type:`event`"
+" handler, or :zeek:type:`hook`, see the documentation for those types."
+msgstr ""
+
+#: ../../script-reference/statements.rst:279
+msgid "Statements"
+msgstr ""
+
+#: ../../script-reference/statements.rst:281
+msgid ""
+"Statements (except those contained within a function, hook, or event "
+"handler) can appear only after all global declarations in the "
+"concatenation of all loaded Zeek scripts."
+msgstr ""
+
+#: ../../script-reference/statements.rst:285
+msgid ""
+"Each statement in a Zeek script must be terminated with a semicolon (with"
+" a few exceptions noted below).  An individual statement can span "
+"multiple lines."
+msgstr ""
+
+#: ../../script-reference/statements.rst:289
+msgid "Here are the statements that the Zeek scripting language supports."
+msgstr ""
+
+#: ../../script-reference/statements.rst:294
+msgid ":zeek:keyword:`local`"
+msgstr ""
+
+#: ../../script-reference/statements.rst:294
+msgid "Declare a local variable"
+msgstr ""
+
+#: ../../script-reference/statements.rst:297
+msgid ":zeek:keyword:`add`, :zeek:keyword:`delete`"
+msgstr ""
+
+#: ../../script-reference/statements.rst:297
+msgid "Add or delete elements"
+msgstr ""
+
+#: ../../script-reference/statements.rst:300
+msgid ":zeek:keyword:`print`"
+msgstr ""
+
+#: ../../script-reference/statements.rst:300
+msgid "Print to stdout or a file"
+msgstr ""
+
+#: ../../script-reference/statements.rst:303
+msgid ""
+":zeek:keyword:`for`, :zeek:keyword:`while`, :zeek:keyword:`next`, "
+":zeek:keyword:`break`"
+msgstr ""
+
+#: ../../script-reference/statements.rst:303
+msgid ""
+"Loop over each element in a container object (``for``), or as long as a "
+"condition evaluates to true (``while``)."
+msgstr ""
+
+#: ../../script-reference/statements.rst:310
+msgid ":zeek:keyword:`if`"
+msgstr ""
+
+#: ../../script-reference/statements.rst:310
+msgid "Evaluate boolean expression and if true, execute a statement"
+msgstr ""
+
+#: ../../script-reference/statements.rst:314
+msgid ":zeek:keyword:`switch`, :zeek:keyword:`break`, :zeek:keyword:`fallthrough`"
+msgstr ""
+
+#: ../../script-reference/statements.rst:314
+msgid "Evaluate expression and execute statement with a matching value"
+msgstr ""
+
+#: ../../script-reference/statements.rst:318
+msgid ":zeek:keyword:`when`"
+msgstr ""
+
+#: ../../script-reference/statements.rst:318
+msgid "Asynchronous execution"
+msgstr ""
+
+#: ../../script-reference/statements.rst:320
+msgid ":zeek:keyword:`event`, :zeek:keyword:`schedule`"
+msgstr ""
+
+#: ../../script-reference/statements.rst:320
+msgid "Invoke or schedule an event handler"
+msgstr ""
+
+#: ../../script-reference/statements.rst:323
+msgid ":zeek:keyword:`return`"
+msgstr ""
+
+#: ../../script-reference/statements.rst:323
+msgid "Return from function, hook, or event handler"
+msgstr ""
+
+#: ../../script-reference/statements.rst:331
+msgid "add"
+msgstr ""
+
+#: ../../script-reference/statements.rst:333
+msgid ""
+"The ``add`` statement is used to add an element to a :zeek:type:`set`. "
+"Nothing happens if the specified element already exists in the set."
+msgstr ""
+
+#: ../../script-reference/statements.rst:347
+msgid "break"
+msgstr ""
+
+#: ../../script-reference/statements.rst:349
+msgid ""
+"The ``break`` statement is used to break out of a :zeek:keyword:`switch`,"
+" :zeek:keyword:`for`, or :zeek:keyword:`while` statement."
+msgstr ""
+
+#: ../../script-reference/statements.rst:356
+msgid "delete"
+msgstr ""
+
+#: ../../script-reference/statements.rst:358
+msgid ""
+"The ``delete`` statement is used to remove an element from a "
+":zeek:type:`set` or :zeek:type:`table`, or to remove a value from a "
+":zeek:type:`record` field that has the :zeek:attr:`&optional` attribute. "
+"When attempting to remove an element from a set or table, nothing happens"
+" if the specified index does not exist. When attempting to remove a value"
+" from an ``&optional`` record field, nothing happens if that field "
+"doesn't have a value."
+msgstr ""
+
+#: ../../script-reference/statements.rst:384
+msgid "event"
+msgstr ""
+
+#: ../../script-reference/statements.rst:386
+msgid "The ``event`` statement immediately queues invocation of an event handler."
+msgstr ""
+
+#: ../../script-reference/statements.rst:398
+msgid "fallthrough"
+msgstr ""
+
+#: ../../script-reference/statements.rst:400
+msgid ""
+"The ``fallthrough`` statement can be used within a ``case`` block to "
+"indicate that execution should continue at the next ``case`` or "
+"``default`` label."
+msgstr ""
+
+#: ../../script-reference/statements.rst:404
+msgid "For an example, see the :zeek:keyword:`switch` statement."
+msgstr ""
+
+#: ../../script-reference/statements.rst:409
+msgid "for"
+msgstr ""
+
+#: ../../script-reference/statements.rst:411
+msgid ""
+"A ``for`` loop iterates over each element in a string, set, vector, or "
+"table and executes a statement for each iteration (note that the order in"
+" which the loop iterates over the elements in a set or a table is "
+"nondeterministic).  However, no loop iterations occur if the string, set,"
+" vector, or table is empty."
+msgstr ""
+
+#: ../../script-reference/statements.rst:417
+msgid ""
+"For each iteration of the loop, a loop variable will be assigned to an "
+"element if the expression evaluates to a string or set, or an index if "
+"the expression evaluates to a vector or table.  Then the statement is "
+"executed."
+msgstr ""
+
+#: ../../script-reference/statements.rst:422
+msgid ""
+"If the expression is a table or a set with more than one index, then the "
+"loop variable must be specified as a comma-separated list of different "
+"loop variables (one for each index), enclosed in brackets."
+msgstr ""
+
+#: ../../script-reference/statements.rst:426
+msgid ""
+"If the expression is a table, keys and values can be iterated over at the"
+" same time by specifying a key and value variable. The core exposes value"
+" variables for free, so this should be preferred to accessing the values "
+"in a separate lookup inside the loop."
+msgstr ""
+
+#: ../../script-reference/statements.rst:431
+msgid ""
+"Note that the loop variable in a ``for`` statement is not allowed to be a"
+" global variable, and it does not need to be declared prior to the "
+"``for`` statement.  The type will be inferred from the elements of the "
+"expression."
+msgstr ""
+
+#: ../../script-reference/statements.rst:436
+msgid ""
+"Currently, modifying a container's membership while iterating over it may"
+" result in undefined behavior, so do not add or remove elements inside "
+"the loop."
+msgstr ""
+
+#: ../../script-reference/statements.rst:440
+msgid ""
+"A :zeek:keyword:`break` statement will immediately terminate the ``for`` "
+"loop, and a :zeek:keyword:`next` statement will skip to the next loop "
+"iteration."
+msgstr ""
+
+#: ../../script-reference/statements.rst:467
+msgid "if"
+msgstr ""
+
+#: ../../script-reference/statements.rst:469
+msgid ""
+"Evaluates a given expression, which must yield a :zeek:type:`bool` value."
+" If true, then a specified statement is executed.  If false, then the "
+"statement is not executed.  Example:"
+msgstr ""
+
+#: ../../script-reference/statements.rst:477
+msgid ""
+"However, if the expression evaluates to false and if an ``else`` is "
+"provided, then the statement following the ``else`` is executed.  "
+"Example:"
+msgstr ""
+
+#: ../../script-reference/statements.rst:491
+msgid "local"
+msgstr ""
+
+#: ../../script-reference/statements.rst:493
+msgid ""
+"A variable declared with the ``local`` keyword will be local.  If a type "
+"is not specified, then an initializer is required so that the type can be"
+" inferred.  Likewise, if an initializer is not supplied, then the type "
+"must be specified."
+msgstr ""
+
+#: ../../script-reference/statements.rst:506
+msgid ""
+"Variable declarations inside a function, hook, or event handler are "
+"required to use this keyword (the only two exceptions are variables "
+"declared with :zeek:keyword:`const`, and variables implicitly declared in"
+" a :zeek:keyword:`for` statement)."
+msgstr ""
+
+#: ../../script-reference/statements.rst:511
+msgid ""
+"The scope of a local variable starts at the location where it is declared"
+" and persists to the end of the function, hook, or event handler in which"
+" it is declared (this is true even if the local variable was declared "
+"within a `compound statement`_ or is the loop variable in a ``for`` "
+"statement)."
+msgstr ""
+
+#: ../../script-reference/statements.rst:521
+msgid "next"
+msgstr ""
+
+#: ../../script-reference/statements.rst:523
+msgid ""
+"The ``next`` statement can only appear within a :zeek:keyword:`for` or "
+":zeek:keyword:`while` loop.  It causes execution to skip to the next "
+"iteration."
+msgstr ""
+
+#: ../../script-reference/statements.rst:531
+msgid "print"
+msgstr ""
+
+#: ../../script-reference/statements.rst:533
+msgid ""
+"The ``print`` statement takes a comma-separated list of one or more "
+"expressions.  Each expression in the list is evaluated and then converted"
+" to a string.  Then each string is printed, with each string separated by"
+" a comma in the output."
+msgstr ""
+
+#: ../../script-reference/statements.rst:545
+msgid ""
+"By default, the ``print`` statement writes to the standard output "
+"(stdout).  However, if the first expression is of type :zeek:type:`file`,"
+" then ``print`` writes to that file."
+msgstr ""
+
+#: ../../script-reference/statements.rst:549
+msgid ""
+"If a string contains non-printable characters (i.e., byte values that are"
+" not in the range 32 - 126), then the ``print`` statement converts each "
+"non-printable character to an escape sequence before it is printed."
+msgstr ""
+
+#: ../../script-reference/statements.rst:553
+msgid ""
+"For more control over how the strings are formatted, see the "
+":zeek:id:`fmt` function."
+msgstr ""
+
+#: ../../script-reference/statements.rst:560
+msgid "return"
+msgstr ""
+
+#: ../../script-reference/statements.rst:562
+msgid ""
+"The ``return`` statement immediately exits the current function, hook, or"
+" event handler.  For a function, the specified expression (if any) is "
+"evaluated and returned.  A ``return`` statement in a hook or event "
+"handler cannot return a value because event handlers and hooks do not "
+"have return types."
+msgstr ""
+
+#: ../../script-reference/statements.rst:584
+msgid ""
+"There is a special form of the ``return`` statement that is only allowed "
+"in functions.  Syntactically, it looks like a :zeek:keyword:`when` "
+"statement immediately preceded by the ``return`` keyword.  This form of "
+"the ``return`` statement is used to specify a function that delays its "
+"result (such a function can only be called in the expression of a "
+":zeek:keyword:`when` statement).  The function returns at the time the "
+"``when`` statement's condition becomes true, and the function returns the"
+" value that the ``when`` statement's body returns (or if the condition "
+"does not become true within the specified timeout interval, then the "
+"function returns the value that the ``timeout`` block returns)."
+msgstr ""
+
+#: ../../script-reference/statements.rst:628
+msgid "schedule"
+msgstr ""
+
+#: ../../script-reference/statements.rst:630
+msgid ""
+"The ``schedule`` statement is used to raise a specified event with "
+"specified parameters at a later time specified as an "
+":zeek:type:`interval`."
+msgstr ""
+
+#: ../../script-reference/statements.rst:639
+msgid ""
+"Note that the braces are always required (they do not indicate a "
+"`compound statement`_)."
+msgstr ""
+
+#: ../../script-reference/statements.rst:642
+msgid ""
+"Note that ``schedule`` is actually an expression that returns a value of "
+"type ``timer``, but in practice the return value is not used."
+msgstr ""
+
+#: ../../script-reference/statements.rst:647
+msgid ""
+"Using ``schedule`` within :zeek:see:`zeek_init` does not usually have the"
+" desired behavior -- since :zeek:see:`network_time` is not yet "
+"initialized, the scheduled event may be dispatched upon processing the "
+"first network packet since that will update network-time from zero to the"
+" time associated with capturing that packet.  A typical workaround is to "
+"ignore the first time such an event is dispatched and simply re-schedule "
+"it or to instead schedule the first event from within the "
+":zeek:see:`network_time_init` event."
+msgstr ""
+
+#: ../../script-reference/statements.rst:658
+msgid "switch"
+msgstr ""
+
+#: ../../script-reference/statements.rst:660
+msgid ""
+"A ``switch`` statement evaluates a given expression and jumps to the "
+"first ``case`` label which contains a matching value (the result of the "
+"expression must be type-compatible with all of the values in all of the "
+"``case`` labels).  If there is no matching value, then execution jumps to"
+" the ``default`` label instead, and if there is no ``default`` label then"
+" execution jumps out of the ``switch`` block."
+msgstr ""
+
+#: ../../script-reference/statements.rst:667
+msgid ""
+"Here is an example (assuming that ``get_day_of_week`` is a function that "
+"returns a string):"
+msgstr ""
+
+#: ../../script-reference/statements.rst:684
+msgid ""
+"A ``switch`` block can have any number of ``case`` labels, and one "
+"optional ``default`` label."
+msgstr ""
+
+#: ../../script-reference/statements.rst:687
+msgid ""
+"A ``case`` label can have a comma-separated list of more than one value."
+"  A value in a ``case`` label can be an expression, but it must be a "
+"constant expression (i.e., the expression can consist only of constants)."
+msgstr ""
+
+#: ../../script-reference/statements.rst:692
+msgid ""
+"Each ``case`` and the ``default`` block must end with either a "
+":zeek:keyword:`break`, :zeek:keyword:`fallthrough`, or "
+":zeek:keyword:`return` statement (although ``return`` is allowed only if "
+"the ``switch`` statement is inside a function, hook, or event handler)."
+msgstr ""
+
+#: ../../script-reference/statements.rst:697
+msgid ""
+"Note that the braces in a ``switch`` statement are always required (these"
+" do not indicate the presence of a `compound statement`_), and that no "
+"semicolon is needed at the end of a ``switch`` statement."
+msgstr ""
+
+#: ../../script-reference/statements.rst:701
+msgid ""
+"There is an alternative form of the switch statement that supports "
+"switching by type rather than value.  This form of the switch statement "
+"uses type-based versions of ``case``:"
+msgstr ""
+
+#: ../../script-reference/statements.rst:705
+msgid ""
+"``case type t: ...``: Take branch if the value of the switch expression "
+"could be casted to type ``t`` (where ``t`` is the name of a Zeek script "
+"type, either built-in or user-defined)."
+msgstr ""
+
+#: ../../script-reference/statements.rst:709
+msgid ""
+"``case type t as x: ...``: Same as above, but the casted value is "
+"available through ID ``x``."
+msgstr ""
+
+#: ../../script-reference/statements.rst:712
+msgid ""
+"Multiple types can be listed per branch, separated by commas (the "
+"``type`` keyword must be repeated for each type in the list)."
+msgstr ""
+
+#: ../../script-reference/statements.rst:732
+msgid ""
+"Note that a single switch statement switches either by type or by value, "
+"but not both."
+msgstr ""
+
+#: ../../script-reference/statements.rst:735
+msgid ""
+"Also note that the type-based switch statement will trigger a runtime "
+"error if any cast in any ``case`` is an unsupported cast (see the "
+"documentation of the type casting operator ``as``)."
+msgstr ""
+
+#: ../../script-reference/statements.rst:739
+msgid ""
+"A type-casting ``case`` block is also not allowed to use a "
+":zeek:keyword:`fallthrough` statement since that could generally mean "
+"entering another type-casting block. That is, the switched-upon value "
+"could get cast to at least two different types, which is not a valid "
+"possibility."
+msgstr ""
+
+#: ../../script-reference/statements.rst:748
+msgid "when"
+msgstr ""
+
+#: ../../script-reference/statements.rst:750
+msgid ""
+"Evaluates a given expression, which must result in a value of type "
+":zeek:type:`bool`.  When the value of the expression becomes available "
+"and if the result is true, then a specified statement is executed."
+msgstr ""
+
+#: ../../script-reference/statements.rst:754
+msgid ""
+"In the following example, if the expression evaluates to true, then the "
+"``print`` statement is executed:"
+msgstr ""
+
+#: ../../script-reference/statements.rst:764
+msgid ""
+"However, if a timeout is specified, and if the expression does not "
+"evaluate to true within the specified timeout interval, then the "
+"statement following the ``timeout`` keyword is executed:"
+msgstr ""
+
+#: ../../script-reference/statements.rst:779
+msgid ""
+"Note that when a timeout is specified the braces are always required "
+"(these do not indicate a `compound statement`_)."
+msgstr ""
+
+#: ../../script-reference/statements.rst:782
+msgid ""
+"The expression in a ``when`` statement can contain a declaration of a "
+"local variable but only if the declaration is written in the form ``local"
+" *var* = *init*`` (example: ``local x = myfunction()``).  This form of a "
+"local declaration is actually an expression, the result of which is "
+"always a boolean true value."
+msgstr ""
+
+#: ../../script-reference/statements.rst:788
+msgid ""
+"The expression in a ``when`` statement can contain an asynchronous "
+"function call such as :zeek:id:`lookup_hostname` (in fact, this is the "
+"only place such a function can be called), but it can also contain an "
+"ordinary function call.  When an asynchronous function call is in the "
+"expression, then Zeek will continue processing statements in the script "
+"following the ``when`` statement, and when the result of the function "
+"call is available Zeek will finish evaluating the expression in the "
+"``when`` statement. See the :zeek:keyword:`return` statement for an "
+"explanation of how to create an asynchronous function in a Zeek script."
+msgstr ""
+
+#: ../../script-reference/statements.rst:802
+msgid "while"
+msgstr ""
+
+#: ../../script-reference/statements.rst:804
+msgid ""
+"A ``while`` loop iterates over a body statement as long as a given "
+"condition remains true."
+msgstr ""
+
+#: ../../script-reference/statements.rst:807
+msgid ""
+"A :zeek:keyword:`break` statement can be used at any time to immediately "
+"terminate the ``while`` loop, and a :zeek:keyword:`next` statement can be"
+" used to skip to the next loop iteration."
+msgstr ""
+
+#: ../../script-reference/statements.rst:835
+msgid "Compound Statement"
+msgstr ""
+
+#: ../../script-reference/statements.rst:837
+msgid ""
+"A compound statement is created by wrapping zero or more statements in "
+"braces ``{ }``.  Individual statements inside the braces need to be "
+"terminated by a semicolon, but a semicolon is not needed at the end "
+"(outside of the braces) of a compound statement."
+msgstr ""
+
+#: ../../script-reference/statements.rst:842
+msgid ""
+"A compound statement is required in order to execute more than one "
+"statement in the body of a :zeek:keyword:`for`, :zeek:keyword:`while`, "
+":zeek:keyword:`if`, or :zeek:keyword:`when` statement."
+msgstr ""
+
+#: ../../script-reference/statements.rst:856
+msgid ""
+"Note that there are other places in the Zeek scripting language that use "
+"braces, but that do not indicate the presence of a compound statement "
+"(these are noted in the documentation)."
+msgstr ""
+
+#: ../../script-reference/statements.rst:864
+msgid "Null Statement"
+msgstr ""
+
+#: ../../script-reference/statements.rst:866
+msgid ""
+"The null statement (executing it has no effect) consists of just a "
+"semicolon.  This might be useful during testing or debugging a Zeek "
+"script in places where a statement is required, but it is probably not "
+"useful otherwise."
+msgstr ""
+

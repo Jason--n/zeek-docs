@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/notice/actions/email_admin.zeek.rst:4
+msgid "base/frameworks/notice/actions/email_admin.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/email_admin.zeek.rst:7
+msgid ""
+"Adds a new notice action type which can be used to email notices to the "
+"administrators of a particular address space as set by "
+":zeek:id:`Site::local_admins` if the notice contains a source or "
+"destination address that lies within their space."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/email_admin.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/email_admin.zeek.rst:12
+msgid "Notice"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/email_admin.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/email_admin.zeek.rst:13
+msgid ""
+":doc:`base/frameworks/notice/main.zeek "
+"</scripts/base/frameworks/notice/main.zeek>`, :doc:`base/utils/site.zeek "
+"</scripts/base/utils/site.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/email_admin.zeek.rst:16
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/email_admin.zeek.rst:18
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/email_admin.zeek.rst:20
+msgid ":zeek:type:`Notice::Action`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/email_admin.zeek.rst:22
+msgid ""
+":zeek:enum:`Notice::ACTION_EMAIL_ADMIN`: Indicate that the generated "
+"email should be addressed to the appropriate email addresses as found by "
+"the :zeek:id:`Site::get_emails` function based on the relevant address or"
+" addresses indicated in the notice."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/email_admin.zeek.rst:31
+msgid "Detailed Interface"
+msgstr ""
+

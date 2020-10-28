@@ -1,0 +1,192 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:4
+msgid "base/frameworks/openflow/plugins/broker.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:7
+msgid "OpenFlow plugin for interfacing to controllers via Broker."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:9
+msgid "OpenFlow"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:10
+msgid ""
+":doc:`base/frameworks/broker </scripts/base/frameworks/broker/index>`, "
+":doc:`base/frameworks/openflow </scripts/base/frameworks/openflow/index>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:15
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:17
+msgid ""
+":zeek:type:`OpenFlow::ControllerState`: :zeek:type:`record` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:19
+msgid ":zeek:type:`OpenFlow::ControllerState`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:22
+msgid "broker_host: :zeek:type:`addr` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:22
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:74
+msgid "Controller ip."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:25
+msgid "broker_port: :zeek:type:`port` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:25
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:77
+msgid "Controller listen port."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:28
+msgid "broker_dpid: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:28
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:83
+msgid "OpenFlow switch datapath id."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:30
+msgid "broker_topic: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:31
+msgid "Topic to send events for this controller to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:32
+msgid ":zeek:type:`OpenFlow::Plugin`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:34
+msgid ":zeek:enum:`OpenFlow::BROKER`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:38
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:54
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:40
+msgid ":zeek:id:`OpenFlow::broker_flow_clear`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:41
+msgid ":zeek:id:`OpenFlow::broker_flow_mod`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:45
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:66
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:47
+msgid ":zeek:id:`OpenFlow::broker_new`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:47
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:71
+msgid "Broker controller constructor."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:52
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:57
+msgid ":zeek:type:`event` (name: :zeek:type:`string`, dpid: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:62
+msgid ""
+":zeek:type:`event` (name: :zeek:type:`string`, dpid: :zeek:type:`count`, "
+"match: :zeek:type:`OpenFlow::ofp_match`, flow_mod: "
+":zeek:type:`OpenFlow::ofp_flow_mod`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:69
+msgid ""
+":zeek:type:`function` (name: :zeek:type:`string`, host: "
+":zeek:type:`addr`, host_port: :zeek:type:`port`, topic: "
+":zeek:type:`string`, dpid: :zeek:type:`count`) : "
+":zeek:type:`OpenFlow::Controller`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst
+msgid "host"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst
+msgid "host_port"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst
+msgid "topic"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:80
+msgid "Broker topic to send messages to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst
+msgid "dpid"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/broker.zeek.rst:86
+msgid "OpenFlow::Controller record."
+msgstr ""
+

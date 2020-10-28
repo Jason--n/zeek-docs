@@ -1,0 +1,315 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_SNMP.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:37
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:15
+msgid ":zeek:id:`snmp_encrypted_pdu`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:42
+msgid "An SNMPv3 encrypted PDU message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:16
+msgid ":zeek:id:`snmp_get_bulk_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:58
+msgid "An SNMP ``GetBulkRequest-PDU`` message from :rfc:`3416`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:17
+msgid ":zeek:id:`snmp_get_next_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:17
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:77
+msgid ""
+"An SNMP ``GetNextRequest-PDU`` message from either :rfc:`1157` or "
+":rfc:`3416`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:19
+msgid ":zeek:id:`snmp_get_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:19
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:97
+msgid "An SNMP ``GetRequest-PDU`` message from either :rfc:`1157` or :rfc:`3416`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:20
+msgid ":zeek:id:`snmp_inform_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:20
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:116
+msgid "An SNMP ``InformRequest-PDU`` message from :rfc:`3416`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:21
+msgid ":zeek:id:`snmp_report`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:21
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:135
+msgid "An SNMP ``Report-PDU`` message from :rfc:`3416`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:22
+msgid ":zeek:id:`snmp_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:22
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:154
+msgid ""
+"An SNMP ``GetResponse-PDU`` message from :rfc:`1157` or a ``Response-"
+"PDU`` from :rfc:`3416`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:24
+msgid ":zeek:id:`snmp_set_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:24
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:174
+msgid "An SNMP ``SetRequest-PDU`` message from either :rfc:`1157` or :rfc:`3416`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:25
+msgid ":zeek:id:`snmp_trap`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:25
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:193
+msgid "An SNMP ``Trap-PDU`` message from :rfc:`1157`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:26
+msgid ":zeek:id:`snmp_trapV2`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:26
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:212
+msgid "An SNMP ``SNMPv2-Trap-PDU`` message from :rfc:`1157`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:27
+msgid ":zeek:id:`snmp_unknown_header_version`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:27
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:231
+msgid "A datagram with an unknown SNMP version."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:28
+msgid ":zeek:id:`snmp_unknown_pdu`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:28
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:246
+msgid "An SNMP PDU message of unknown type."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:29
+msgid ":zeek:id:`snmp_unknown_scoped_pdu`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:29
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:265
+msgid ""
+"An SNMPv3 ``ScopedPDUData`` of unknown type (neither plaintext or an "
+"encrypted PDU was in the datagram)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:35
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:40
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, header: :zeek:type:`SNMP::Header`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:45
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:61
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:81
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:100
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:119
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:138
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:158
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:177
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:196
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:215
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:234
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:249
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:269
+msgid "The connection over which the SNMP datagram is sent."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:48
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:64
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:84
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:103
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:122
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:141
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:161
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:180
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:199
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:218
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:237
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:252
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:272
+msgid "The endpoint which sent the SNMP datagram."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst
+msgid "header"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:51
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:67
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:87
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:106
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:125
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:144
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:164
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:183
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:202
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:221
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:255
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:275
+msgid ""
+"SNMP version-dependent data that precedes PDU data in the top-level SNMP "
+"message structure."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:56
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, header: :zeek:type:`SNMP::Header`, pdu: "
+":zeek:type:`SNMP::BulkPDU`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst
+msgid "pdu"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:71
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:91
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:110
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:129
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:148
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:168
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:187
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:206
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:225
+msgid "An SNMP PDU data structure."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:75
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:95
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:114
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:133
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:152
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:172
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:210
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, header: :zeek:type:`SNMP::Header`, pdu: "
+":zeek:type:`SNMP::PDU`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:191
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, header: :zeek:type:`SNMP::Header`, pdu: "
+":zeek:type:`SNMP::TrapPDU`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:229
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, version: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst
+msgid "version"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:240
+msgid "The value of the unknown SNMP version."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:244
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:263
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, header: :zeek:type:`SNMP::Header`, tag: "
+":zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst
+msgid "tag"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:259
+msgid "The tag of the unknown SNMP PDU."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SNMP.events.bif.zeek.rst:279
+msgid "The tag of the unknown SNMP PDU scope."
+msgstr ""
+

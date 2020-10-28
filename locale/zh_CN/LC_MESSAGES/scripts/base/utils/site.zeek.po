@@ -1,0 +1,317 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/utils/site.zeek.rst:4
+msgid "base/utils/site.zeek"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:7
+msgid ""
+"Definitions describing a site - which networks and DNS zones are "
+"\"local\" and \"neighbors\", and servers running particular services."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:10
+msgid "Site"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:11
+msgid ":doc:`base/utils/patterns.zeek </scripts/base/utils/patterns.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:16
+#: ../../scripts/base/utils/site.zeek.rst:58
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:18
+msgid ":zeek:id:`Site::local_admins`: :zeek:type:`table` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:18
+#: ../../scripts/base/utils/site.zeek.rst:65
+msgid ""
+"If local network administrators are known and they have responsibility "
+"for defined address space, then a mapping can be defined here between "
+"networks for which they have responsibility and a set of email addresses."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:22
+msgid ":zeek:id:`Site::local_nets`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:22
+msgid "Networks that are considered \"local\"."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:23
+msgid ":zeek:id:`Site::local_zones`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:23
+#: ../../scripts/base/utils/site.zeek.rst:85
+msgid "DNS zones that are considered \"local\"."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:24
+msgid ":zeek:id:`Site::neighbor_nets`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:24
+#: ../../scripts/base/utils/site.zeek.rst:93
+msgid "Networks that are considered \"neighbors\"."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:25
+msgid ":zeek:id:`Site::neighbor_zones`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:25
+#: ../../scripts/base/utils/site.zeek.rst:101
+msgid "DNS zones that are considered \"neighbors\"."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:26
+msgid ""
+":zeek:id:`Site::private_address_space`: :zeek:type:`set` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:26
+msgid "Address space that is considered private and unrouted."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:30
+#: ../../scripts/base/utils/site.zeek.rst:126
+msgid "State Variables"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:32
+msgid ":zeek:id:`Site::local_nets_table`: :zeek:type:`table`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:32
+msgid ""
+"This is used for retrieving the subnet when using multiple entries in "
+":zeek:id:`Site::local_nets`."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:37
+#: ../../scripts/base/utils/site.zeek.rst:139
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:39
+msgid ":zeek:id:`Site::get_emails`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:39
+msgid ""
+"Function that returns a comma-separated list of email addresses that are "
+"considered administrators for the IP address provided as an argument."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:42
+msgid ":zeek:id:`Site::is_local_addr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:42
+msgid ""
+"Function that returns true if an address corresponds to one of the local "
+"networks, false if not."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:44
+msgid ":zeek:id:`Site::is_local_name`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:44
+msgid "Function that returns true if a host name is within a local DNS zone."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:46
+msgid ":zeek:id:`Site::is_neighbor_addr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:46
+msgid ""
+"Function that returns true if an address corresponds to one of the "
+"neighbor networks, false if not."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:48
+msgid ":zeek:id:`Site::is_neighbor_name`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:48
+msgid "Function that returns true if a host name is within a neighbor DNS zone."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:50
+msgid ":zeek:id:`Site::is_private_addr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:50
+msgid ""
+"Function that returns true if an address corresponds to one of the "
+"private/unrouted networks, false if not."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:56
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:61
+msgid ""
+":zeek:type:`table` [:zeek:type:`subnet`] of :zeek:type:`set` "
+"[:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:62
+#: ../../scripts/base/utils/site.zeek.rst:73
+#: ../../scripts/base/utils/site.zeek.rst:82
+#: ../../scripts/base/utils/site.zeek.rst:90
+#: ../../scripts/base/utils/site.zeek.rst:98
+#: ../../scripts/base/utils/site.zeek.rst:106
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:63
+#: ../../scripts/base/utils/site.zeek.rst:74
+#: ../../scripts/base/utils/site.zeek.rst:83
+#: ../../scripts/base/utils/site.zeek.rst:91
+#: ../../scripts/base/utils/site.zeek.rst:99
+#: ../../scripts/base/utils/site.zeek.rst:130
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:72
+#: ../../scripts/base/utils/site.zeek.rst:89
+#: ../../scripts/base/utils/site.zeek.rst:105
+msgid ":zeek:type:`set` [:zeek:type:`subnet`]"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:76
+msgid ""
+"Networks that are considered \"local\".  Note that ZeekControl sets this "
+"automatically."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:81
+#: ../../scripts/base/utils/site.zeek.rst:97
+msgid ":zeek:type:`set` [:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:122
+msgid ""
+"Address space that is considered private and unrouted. By default it has "
+"RFC defined non-routable IPv4 address space."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:129
+msgid ":zeek:type:`table` [:zeek:type:`subnet`] of :zeek:type:`subnet`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:132
+msgid ""
+"This is used for retrieving the subnet when using multiple entries in "
+":zeek:id:`Site::local_nets`.  It's populated automatically from there. A "
+"membership query can be done with an :zeek:type:`addr` and the table will"
+" yield the subnet it was found within."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:142
+msgid ":zeek:type:`function` (a: :zeek:type:`addr`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:144
+msgid ""
+"Function that returns a comma-separated list of email addresses that are "
+"considered administrators for the IP address provided as an argument. The"
+" function inspects :zeek:id:`Site::local_admins`."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:151
+#: ../../scripts/base/utils/site.zeek.rst:167
+#: ../../scripts/base/utils/site.zeek.rst:183
+msgid ":zeek:type:`function` (a: :zeek:type:`addr`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:153
+msgid ""
+"Function that returns true if an address corresponds to one of the local "
+"networks, false if not. The function inspects "
+":zeek:id:`Site::local_nets`."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:159
+#: ../../scripts/base/utils/site.zeek.rst:175
+msgid ":zeek:type:`function` (name: :zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:161
+msgid ""
+"Function that returns true if a host name is within a local DNS zone. The"
+" function inspects :zeek:id:`Site::local_zones`."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:169
+msgid ""
+"Function that returns true if an address corresponds to one of the "
+"neighbor networks, false if not. The function inspects "
+":zeek:id:`Site::neighbor_nets`."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:177
+msgid ""
+"Function that returns true if a host name is within a neighbor DNS zone. "
+"The function inspects :zeek:id:`Site::neighbor_zones`."
+msgstr ""
+
+#: ../../scripts/base/utils/site.zeek.rst:185
+msgid ""
+"Function that returns true if an address corresponds to one of the "
+"private/unrouted networks, false if not. The function inspects "
+":zeek:id:`Site::private_address_space`."
+msgstr ""
+

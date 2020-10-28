@@ -1,0 +1,467 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:4
+msgid "base/frameworks/analyzer/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:7
+msgid "Framework for managing Zeek's protocol analyzers."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:9
+msgid ""
+"The analyzer framework allows to dynamically enable or disable analyzers,"
+" as well as to manage the well-known ports which automatically activate a"
+" particular analyzer for new connections."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:13
+msgid ""
+"Protocol analyzers are identified by unique tags of type "
+":zeek:type:`Analyzer::Tag`, such as :zeek:enum:`Analyzer::ANALYZER_HTTP`."
+" These tags are defined internally by the analyzers themselves, and "
+"documented in their analyzer-specific description along with the events "
+"that they generate."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:19
+msgid "Analyzer"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:20
+msgid ""
+":doc:`base/bif/analyzer.bif.zeek </scripts/base/bif/analyzer.bif.zeek>`, "
+":doc:`base/frameworks/packet-filter/utils.zeek </scripts/base/frameworks"
+"/packet-filter/utils.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:23
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:25
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:57
+msgid "State Variables"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:27
+msgid ":zeek:id:`Analyzer::disable_all`: :zeek:type:`bool` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:27
+msgid "If true, all available analyzers are initially disabled at startup."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:28
+msgid ""
+":zeek:id:`Analyzer::disabled_analyzers`: :zeek:type:`set` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:28
+msgid "A set of analyzers to disable by default at startup."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:32
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:86
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:34
+msgid ":zeek:id:`Analyzer::all_registered_ports`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:34
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:91
+msgid "Returns a table of all ports-to-analyzer mappings currently registered."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:35
+msgid ":zeek:id:`Analyzer::analyzer_to_bpf`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:35
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:101
+msgid ""
+"Automatically creates a BPF filter for the specified protocol based on "
+"the data supplied for the protocol through the "
+":zeek:see:`Analyzer::register_for_ports` function."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:38
+msgid ":zeek:id:`Analyzer::disable_analyzer`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:38
+msgid "Disables an analyzer."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:39
+msgid ":zeek:id:`Analyzer::enable_analyzer`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:39
+msgid "Enables an analyzer."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:40
+msgid ":zeek:id:`Analyzer::get_bpf`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:40
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:141
+msgid ""
+"Create a BPF filter which matches all of the ports defined by the various"
+" protocol analysis scripts as \"registered ports\" for the protocol."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:43
+msgid ":zeek:id:`Analyzer::get_tag`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:43
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:149
+msgid "Translates an analyzer's name to a tag enum value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:44
+msgid ":zeek:id:`Analyzer::name`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:44
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:161
+msgid "Translates an analyzer type to a string with the analyzer's name."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:45
+msgid ":zeek:id:`Analyzer::register_for_port`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:45
+msgid "Registers an individual well-known port for an analyzer."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:46
+msgid ":zeek:id:`Analyzer::register_for_ports`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:46
+msgid "Registers a set of well-known ports for an analyzer."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:47
+msgid ":zeek:id:`Analyzer::registered_ports`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:47
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:209
+msgid ""
+"Returns a set of all well-known ports currently registered for a specific"
+" analyzer."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:49
+msgid ":zeek:id:`Analyzer::schedule_analyzer`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:49
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:222
+msgid ""
+"Schedules an analyzer for a future connection originating from a given IP"
+" address and port."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:55
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:60
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:61
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:71
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:62
+msgid "``F``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:64
+msgid ""
+"If true, all available analyzers are initially disabled at startup. One "
+"can then selectively enable them with "
+":zeek:id:`Analyzer::enable_analyzer`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:70
+msgid ":zeek:type:`set` [:zeek:type:`Analyzer::Tag`]"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:82
+msgid ""
+"A set of analyzers to disable by default at startup. The default set "
+"contains legacy analyzers that are no longer supported."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:89
+msgid ""
+":zeek:type:`function` () : :zeek:type:`table` "
+"[:zeek:type:`Analyzer::Tag`] of :zeek:type:`set` [:zeek:type:`port`]"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:94
+msgid "A table mapping each analyzer to the set of ports registered for it."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:99
+msgid ""
+":zeek:type:`function` (tag: :zeek:type:`Analyzer::Tag`) : "
+":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst
+msgid "tag"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:106
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:164
+msgid "The analyzer tag."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:109
+msgid "BPF filter string."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:113
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:126
+msgid ""
+":zeek:type:`function` (tag: :zeek:type:`Analyzer::Tag`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:115
+msgid ""
+"Disables an analyzer. Once disabled, the analyzer will not be used "
+"further for analysis of future connections."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:119
+msgid "The tag of the analyzer to disable."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:122
+msgid "True if the analyzer was successfully disabled."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:128
+msgid ""
+"Enables an analyzer. Once enabled, the analyzer may be used for analysis "
+"of future connections as decided by Zeek's dynamic protocol detection."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:132
+msgid "The tag of the analyzer to enable."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:135
+msgid "True if the analyzer was successfully enabled."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:139
+msgid ":zeek:type:`function` () : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:147
+msgid ""
+":zeek:type:`function` (name: :zeek:type:`string`) : "
+":zeek:type:`Analyzer::Tag`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst
+msgid "name"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:152
+msgid "The analyzer name."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:155
+msgid "The analyzer tag corresponding to the name."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:159
+msgid ""
+":zeek:type:`function` (atype: :zeek:type:`Analyzer::Tag`) : "
+":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:167
+msgid "The analyzer name corresponding to the tag."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:171
+msgid ""
+":zeek:type:`function` (tag: :zeek:type:`Analyzer::Tag`, p: "
+":zeek:type:`port`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:173
+msgid ""
+"Registers an individual well-known port for an analyzer. If a future "
+"connection on this port is seen, the analyzer will be automatically "
+"assigned to parsing it. The function *adds* to all ports already "
+"registered, it doesn't replace them."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:179
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:197
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:213
+msgid "The tag of the analyzer."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst
+msgid "p"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:182
+msgid "The well-known port to associate with the analyzer."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:185
+msgid "True if the port was successfully registered."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:189
+msgid ""
+":zeek:type:`function` (tag: :zeek:type:`Analyzer::Tag`, ports: "
+":zeek:type:`set` [:zeek:type:`port`]) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:191
+msgid ""
+"Registers a set of well-known ports for an analyzer. If a future "
+"connection on one of these ports is seen, the analyzer will be "
+"automatically assigned to parsing it. The function *adds* to all ports "
+"already registered, it doesn't replace them."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst
+msgid "ports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:200
+msgid "The set of well-known ports to associate with the analyzer."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:203
+msgid "True if the ports were successfully registered."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:207
+msgid ""
+":zeek:type:`function` (tag: :zeek:type:`Analyzer::Tag`) : "
+":zeek:type:`set` [:zeek:type:`port`]"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:216
+msgid "The set of ports."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:220
+msgid ""
+":zeek:type:`function` (orig: :zeek:type:`addr`, resp: :zeek:type:`addr`, "
+"resp_p: :zeek:type:`port`, analyzer: :zeek:type:`Analyzer::Tag`, tout: "
+":zeek:type:`interval`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst
+msgid "orig"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:226
+msgid ""
+"The IP address originating a connection in the future. 0.0.0.0 can be "
+"used as a wildcard to match any originator address."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst
+msgid "resp"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:230
+msgid "The IP address responding to a connection from *orig*."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst
+msgid "resp_p"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:233
+msgid "The destination port at *resp*."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst
+msgid "analyzer"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:236
+msgid "The analyzer ID."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst
+msgid "tout"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:239
+msgid ""
+"A timeout interval after which the scheduling request will be discarded "
+"if the connection has not yet been seen."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/main.zeek.rst:243
+msgid "True if successful."
+msgstr ""
+

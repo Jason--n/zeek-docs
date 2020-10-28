@@ -1,0 +1,223 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:4
+msgid "base/bif/messaging.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:9
+msgid "Functions for peering and various messaging patterns."
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst
+msgid "Namespaces"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:11
+msgid "Broker, Cluster, GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:16
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:38
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:18
+msgid ":zeek:id:`Broker::__auto_publish`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:19
+msgid ":zeek:id:`Broker::__auto_unpublish`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:20
+msgid ":zeek:id:`Broker::__flush_logs`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:21
+msgid ":zeek:id:`Broker::__forward`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:22
+msgid ":zeek:id:`Broker::__publish_id`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:23
+msgid ":zeek:id:`Broker::__subscribe`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:24
+msgid ":zeek:id:`Broker::__unsubscribe`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:25
+msgid ":zeek:id:`Broker::make_event`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:25
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:78
+msgid ""
+"Create a data structure that may be used to send a remote event via "
+":zeek:see:`Broker::publish`."
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:27
+msgid ":zeek:id:`Broker::publish`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:27
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:93
+msgid "Publishes an event at a given topic."
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:28
+msgid ":zeek:id:`Cluster::publish_hrw`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:28
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:110
+msgid ""
+"Publishes an event to a node within a pool according to Rendezvous "
+"(Highest Random Weight) hashing strategy."
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:30
+msgid ":zeek:id:`Cluster::publish_rr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:30
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:132
+msgid ""
+"Publishes an event to a node within a pool according to Round-Robin "
+"distribution strategy."
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:36
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:41
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:46
+msgid ""
+":zeek:type:`function` (topic: :zeek:type:`string`, ev: :zeek:type:`any`) "
+": :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:51
+msgid ":zeek:type:`function` () : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:56
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:66
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:71
+msgid ""
+":zeek:type:`function` (topic_prefix: :zeek:type:`string`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:61
+msgid ""
+":zeek:type:`function` (topic: :zeek:type:`string`, id: "
+":zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:76
+msgid ":zeek:type:`function` (...) : :zeek:type:`Broker::Event`"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst
+msgid "args"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:82
+msgid ""
+"an event, followed by a list of argument values that may be used to call "
+"it."
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:86
+msgid "opaque communication data that may be used to send a remote event."
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:91
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:108
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:130
+msgid ":zeek:type:`function` (...) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst
+msgid "topic"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:96
+msgid "a topic associated with the event message."
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:99
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:121
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:144
+msgid ""
+"Either the event arguments as already made by "
+":zeek:see:`Broker::make_event` or the argument list to pass along to it."
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:104
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:126
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:149
+msgid "true if the message is sent."
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst
+msgid "pool"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:114
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:136
+msgid "the pool of nodes that are eligible to receive the event."
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst
+msgid "key"
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:117
+msgid ""
+"data used for input to the hashing function that will uniformly "
+"distribute keys among available nodes."
+msgstr ""
+
+#: ../../scripts/base/bif/messaging.bif.zeek.rst:139
+msgid ""
+"an arbitrary string to identify the purpose for which you're distributing"
+" the event.  e.g. consider using namespacing of your script like "
+"\"Intel::cluster_rr_key\"."
+msgstr ""
+

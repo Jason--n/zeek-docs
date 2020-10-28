@@ -1,0 +1,282 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:4
+msgid "base/protocols/ftp/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:7
+msgid ""
+"The logging this script does is primarily focused on logging FTP commands"
+" along with metadata.  For example, if files are transferred, the "
+"argument will take on the full path that the client is at along with the "
+"requested file name."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:12
+msgid "FTP"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:13
+msgid ""
+":doc:`base/frameworks/cluster </scripts/base/frameworks/cluster/index>`, "
+":doc:`base/protocols/conn/removal-hooks.zeek "
+"</scripts/base/protocols/conn/removal-hooks.zeek>`, "
+":doc:`base/protocols/ftp/info.zeek "
+"</scripts/base/protocols/ftp/info.zeek>`, :doc:`base/protocols/ftp/utils-"
+"commands.zeek </scripts/base/protocols/ftp/utils-commands.zeek>`, "
+":doc:`base/protocols/ftp/utils.zeek "
+"</scripts/base/protocols/ftp/utils.zeek>`, :doc:`base/utils/addrs.zeek "
+"</scripts/base/utils/addrs.zeek>`, :doc:`base/utils/numbers.zeek "
+"</scripts/base/utils/numbers.zeek>`, :doc:`base/utils/paths.zeek "
+"</scripts/base/utils/paths.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:16
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:18
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:71
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:20
+msgid ":zeek:id:`FTP::guest_ids`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:20
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:88
+msgid "User IDs that can be considered \"anonymous\"."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:21
+msgid ":zeek:id:`FTP::logged_commands`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:21
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:112
+msgid "List of commands that should have their command/response pairs logged."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:25
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:115
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:27
+msgid ":zeek:type:`FTP::ReplyCode`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:27
+msgid "This record is to hold a parsed FTP reply code."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:31
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:33
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:33
+msgid "The FTP protocol logging stream identifier."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:35
+msgid ":zeek:enum:`FTP::LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:36
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:38
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:40
+msgid "ftp: :zeek:type:`FTP::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:42
+msgid ""
+"ftp_data_reuse: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:43
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:47
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:130
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:49
+msgid ":zeek:id:`FTP::log_ftp`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:49
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:135
+msgid ""
+"Event that can be handled to access the :zeek:type:`FTP::Info` record as "
+"it is sent on to the logging framework."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:54
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:139
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:56
+msgid ":zeek:id:`FTP::finalize_ftp`: :zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:56
+msgid "FTP finalization hook."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:57
+msgid ":zeek:id:`FTP::finalize_ftp_data`: :zeek:type:`hook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:57
+msgid "FTP data finalization hook."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:58
+msgid ":zeek:id:`FTP::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:58
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:157
+msgid "A default logging policy hook for the stream."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:62
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:160
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:64
+msgid ":zeek:id:`FTP::parse_ftp_reply_code`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:64
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:165
+msgid "Parse FTP reply codes into the three constituent single digit values."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:69
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:74
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:92
+msgid ":zeek:type:`set` [:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:75
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:93
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:118
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:120
+msgid "x: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:122
+msgid "y: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:124
+msgid "z: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:126
+msgid ""
+"This record is to hold a parsed FTP reply code.  For example, for the 201"
+" status code, the digits would be parsed as: x->2, y->0, z->1."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:133
+msgid ":zeek:type:`event` (rec: :zeek:type:`FTP::Info`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:142
+msgid ":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:144
+msgid ""
+"FTP finalization hook.  Remaining FTP info may get logged when it's "
+"called."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:148
+msgid ":zeek:type:`hook` (c: :zeek:type:`connection`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:150
+msgid ""
+"FTP data finalization hook.  Expected FTP data channel state may get "
+"purged when called."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:155
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/main.zeek.rst:163
+msgid ""
+":zeek:type:`function` (code: :zeek:type:`count`) : "
+":zeek:type:`FTP::ReplyCode`"
+msgstr ""
+

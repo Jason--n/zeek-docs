@@ -1,0 +1,327 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:4
+msgid "base/bif/bloom-filter.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:7
+msgid "Functions to create and manipulate Bloom filters."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:9
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:14
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:31
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:16
+msgid ":zeek:id:`bloomfilter_add`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:16
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:36
+msgid "Adds an element to a Bloom filter."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:17
+msgid ":zeek:id:`bloomfilter_basic_init`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:17
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:18
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:52
+msgid "Creates a basic Bloom filter."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:18
+msgid ":zeek:id:`bloomfilter_basic_init2`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:19
+msgid ":zeek:id:`bloomfilter_clear`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:19
+msgid "Removes all elements from a Bloom filter."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:20
+msgid ":zeek:id:`bloomfilter_counting_init`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:20
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:121
+msgid "Creates a counting Bloom filter."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:21
+msgid ":zeek:id:`bloomfilter_internal_state`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:21
+msgid "Returns a string with a representation of a Bloom filter's internal state."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:23
+msgid ":zeek:id:`bloomfilter_lookup`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:23
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:167
+msgid "Retrieves the counter for a given element in a Bloom filter."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:24
+msgid ":zeek:id:`bloomfilter_merge`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:24
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:186
+msgid "Merges two Bloom filters."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:29
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:34
+msgid ""
+":zeek:type:`function` (bf: :zeek:type:`opaque` of bloomfilter, x: "
+":zeek:type:`any`) : :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst
+msgid "bf"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:39
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:111
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:158
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:170
+msgid "The Bloom filter handle."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst
+msgid "x"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:42
+msgid "The element to add."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:50
+msgid ""
+":zeek:type:`function` (fp: :zeek:type:`double`, capacity: "
+":zeek:type:`count`, name: :zeek:type:`string` :zeek:attr:`&default` = "
+"``\"\"`` :zeek:attr:`&optional`) : :zeek:type:`opaque` of bloomfilter"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst
+msgid "fp"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:55
+msgid "The desired false-positive rate."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst
+msgid "capacity"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:58
+msgid ""
+"the maximum number of elements that guarantees a false-positive rate of "
+"*fp*."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst
+msgid "name"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:62
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:90
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:138
+msgid ""
+"A name that uniquely identifies and seeds the Bloom filter. If empty, the"
+" filter will use :zeek:id:`global_hash_seed` if that's set, and otherwise"
+" use a local seed tied to the current Zeek process. Only filters with the"
+" same seed can be merged with :zeek:id:`bloomfilter_merge`."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:69
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:97
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:145
+msgid "A Bloom filter handle."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:76
+msgid ""
+":zeek:type:`function` (k: :zeek:type:`count`, cells: :zeek:type:`count`, "
+"name: :zeek:type:`string` :zeek:attr:`&default` = ``\"\"`` "
+":zeek:attr:`&optional`) : :zeek:type:`opaque` of bloomfilter"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:78
+msgid ""
+"Creates a basic Bloom filter. This function serves as a low-level "
+"alternative to :zeek:id:`bloomfilter_basic_init` where the user has full "
+"control over the number of hash functions and cells in the underlying bit"
+" vector."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst
+msgid "k"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:84
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:124
+msgid "The number of hash functions to use."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst
+msgid "cells"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:87
+msgid "The number of cells of the underlying bit vector."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:104
+msgid ""
+":zeek:type:`function` (bf: :zeek:type:`opaque` of bloomfilter) : "
+":zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:106
+msgid ""
+"Removes all elements from a Bloom filter. This function resets all bits "
+"in the underlying bitvector back to 0 but does not change the "
+"parameterization of the Bloom filter, such as the element type and the "
+"hasher seed."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:119
+msgid ""
+":zeek:type:`function` (k: :zeek:type:`count`, cells: :zeek:type:`count`, "
+"max: :zeek:type:`count`, name: :zeek:type:`string` :zeek:attr:`&default` "
+"= ``\"\"`` :zeek:attr:`&optional`) : :zeek:type:`opaque` of bloomfilter"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:127
+msgid ""
+"The number of cells of the underlying counter vector. As there's no "
+"single answer to what's the best parameterization for a counting Bloom "
+"filter, we refer to the Bloom filter literature here for choosing an "
+"appropiate value."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst
+msgid "max"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:133
+msgid ""
+"The maximum counter value associated with each element described by *w = "
+"ceil(log_2(max))* bits. Each bit in the underlying counter vector becomes"
+" a cell of size *w* bits."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:152
+msgid ""
+":zeek:type:`function` (bf: :zeek:type:`opaque` of bloomfilter) : "
+":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:154
+msgid ""
+"Returns a string with a representation of a Bloom filter's internal "
+"state. This is for debugging/testing purposes only."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:161
+msgid "a string with a representation of a Bloom filter's internal state."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:165
+msgid ""
+":zeek:type:`function` (bf: :zeek:type:`opaque` of bloomfilter, x: "
+":zeek:type:`any`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:173
+msgid "The element to count."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:176
+msgid "the counter associated with *x* in *bf*."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:184
+msgid ""
+":zeek:type:`function` (bf1: :zeek:type:`opaque` of bloomfilter, bf2: "
+":zeek:type:`opaque` of bloomfilter) : :zeek:type:`opaque` of bloomfilter"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:188
+msgid ""
+"Currently Bloom filters created by different Zeek instances cannot be "
+"merged. In the future, this will be supported as long as both filters are"
+" created with the same name."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst
+msgid "bf1"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:193
+msgid "The first Bloom filter handle."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst
+msgid "bf2"
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:196
+msgid "The second Bloom filter handle."
+msgstr ""
+
+#: ../../scripts/base/bif/bloom-filter.bif.zeek.rst:199
+msgid "The union of *bf1* and *bf2*."
+msgstr ""
+

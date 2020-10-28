@@ -1,0 +1,321 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:4
+msgid "base/protocols/ftp/info.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:7
+msgid "Defines data structures for tracking and logging FTP sessions."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:9
+msgid "FTP"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:10
+msgid ""
+":doc:`base/protocols/ftp/utils-commands.zeek </scripts/base/protocols/ftp"
+"/utils-commands.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:15
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:32
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:17
+msgid ""
+":zeek:id:`FTP::default_capture_password`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:17
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:39
+msgid ""
+"This setting changes if passwords used in FTP sessions are captured or "
+"not."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:22
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:43
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:24
+msgid ":zeek:type:`FTP::ExpectedDataChannel`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:24
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:61
+msgid "The expected endpoints of an FTP data channel."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:25
+msgid ":zeek:type:`FTP::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:30
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:35
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:36
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:37
+msgid "``F``"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:46
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:65
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:49
+msgid "passive: :zeek:type:`bool` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:49
+msgid "Whether PASV mode is toggled for control channel."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:52
+msgid "orig_h: :zeek:type:`addr` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:52
+msgid "The host that will be initiating the data connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:55
+msgid "resp_h: :zeek:type:`addr` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:55
+msgid "The host that will be accepting the data connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:59
+msgid "resp_p: :zeek:type:`port` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:58
+msgid "The port at which the acceptor is listening for the data connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:68
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:68
+msgid "Time when the command was sent."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:71
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:71
+msgid "Unique ID for the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:74
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:74
+msgid "The connection's 4-tuple of endpoint addresses/ports."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:77
+msgid ""
+"user: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&default` = "
+"``\"<unknown>\"`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:77
+msgid "User name for the current FTP session."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:80
+msgid "password: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:80
+msgid "Password for the current FTP session if captured."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:83
+msgid "command: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:83
+msgid "Command given by the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:86
+msgid "arg: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:86
+msgid "Argument for the command if one is given."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:89
+msgid "mime_type: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:89
+msgid "Sniffed mime type of file."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:92
+msgid "file_size: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:92
+msgid "Size of the file if the command indicates a file transfer."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:95
+msgid "reply_code: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:95
+msgid "Reply code from the server in response to the command."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:98
+msgid "reply_msg: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:98
+msgid "Reply message from the server in response to the command."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:101
+msgid ""
+"data_channel: :zeek:type:`FTP::ExpectedDataChannel` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:101
+msgid "Expected FTP data channel."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:107
+msgid ""
+"cwd: :zeek:type:`string` :zeek:attr:`&default` = ``\".\"`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:104
+msgid ""
+"Current working directory that this session is in.  By making the default"
+" value '.', we can indicate that unless something more concrete is "
+"discovered that the existing but unknown directory is ok to use."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:110
+msgid "cmdarg: :zeek:type:`FTP::CmdArg` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:110
+msgid "Command that is currently waiting for a response."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:114
+msgid "pending_commands: :zeek:type:`FTP::PendingCmds`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:113
+msgid ""
+"Queue for commands that have been sent but not yet responded to are "
+"tracked here."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:117
+msgid ""
+"passive: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:117
+msgid "Indicates if the session is in active or passive mode."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:120
+msgid ""
+"capture_password: :zeek:type:`bool` :zeek:attr:`&default` = "
+":zeek:see:`FTP::default_capture_password` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:120
+msgid "Determines if the password will be captured for this request."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:125
+msgid "fuid: :zeek:type:`string` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:123
+msgid "(present if :doc:`/scripts/base/protocols/ftp/files.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:125
+msgid "File unique ID."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:127
+msgid "last_auth_requested: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/info.zeek.rst:128
+msgid "(present if :doc:`/scripts/base/protocols/ftp/gridftp.zeek` is loaded)"
+msgstr ""
+

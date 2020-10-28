@@ -1,0 +1,644 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../script-reference/operators.rst:2
+msgid "Operators"
+msgstr ""
+
+#: ../../script-reference/operators.rst:4
+msgid ""
+"The Zeek scripting language supports the following operators.  Note that "
+"each data type only supports a subset of these operators.  For more "
+"details, see the documentation about the `data types <types.html>`_."
+msgstr ""
+
+#: ../../script-reference/operators.rst:9
+msgid "Relational operators"
+msgstr ""
+
+#: ../../script-reference/operators.rst:11
+msgid "The relational operators evaluate to type :zeek:type:`bool`."
+msgstr ""
+
+#: ../../script-reference/operators.rst:13
+msgid ""
+"In addition to numeric operands, the relational operators also work with "
+"operands of type :zeek:type:`interval`, :zeek:type:`time`, "
+":zeek:type:`string`, :zeek:type:`port`, :zeek:type:`addr`, and "
+":zeek:type:`set`."
+msgstr ""
+
+#: ../../script-reference/operators.rst:19
+#: ../../script-reference/operators.rst:42
+#: ../../script-reference/operators.rst:56
+#: ../../script-reference/operators.rst:101
+#: ../../script-reference/operators.rst:116
+#: ../../script-reference/operators.rst:134
+#: ../../script-reference/operators.rst:152
+#: ../../script-reference/operators.rst:170
+#: ../../script-reference/operators.rst:199
+#: ../../script-reference/operators.rst:235
+msgid "Name"
+msgstr ""
+
+#: ../../script-reference/operators.rst:19
+#: ../../script-reference/operators.rst:42
+#: ../../script-reference/operators.rst:56
+#: ../../script-reference/operators.rst:101
+#: ../../script-reference/operators.rst:116
+#: ../../script-reference/operators.rst:134
+#: ../../script-reference/operators.rst:152
+#: ../../script-reference/operators.rst:170
+#: ../../script-reference/operators.rst:199
+#: ../../script-reference/operators.rst:235
+msgid "Syntax"
+msgstr ""
+
+#: ../../script-reference/operators.rst:21
+msgid "Equality"
+msgstr ""
+
+#: ../../script-reference/operators.rst:21
+msgid "*a* == *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:23
+msgid "Inequality"
+msgstr ""
+
+#: ../../script-reference/operators.rst:23
+msgid "*a* != *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:25
+msgid "Less than"
+msgstr ""
+
+#: ../../script-reference/operators.rst:25
+msgid "*a* < *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:27
+msgid "Less than or equal"
+msgstr ""
+
+#: ../../script-reference/operators.rst:27
+msgid "*a* <= *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:29
+msgid "Greater than"
+msgstr ""
+
+#: ../../script-reference/operators.rst:29
+msgid "*a* > *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:31
+msgid "Greater than or equal"
+msgstr ""
+
+#: ../../script-reference/operators.rst:31
+msgid "*a* >= *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:36
+msgid "Logical operators"
+msgstr ""
+
+#: ../../script-reference/operators.rst:38
+msgid ""
+"The logical operators require operands of type :zeek:type:`bool`, and "
+"evaluate to type :zeek:type:`bool`."
+msgstr ""
+
+#: ../../script-reference/operators.rst:44
+msgid "Logical AND"
+msgstr ""
+
+#: ../../script-reference/operators.rst:44
+msgid "*a* && *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:46
+msgid "Logical OR"
+msgstr ""
+
+#: ../../script-reference/operators.rst:46
+msgid "*a* \\|\\| *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:48
+msgid "Logical NOT"
+msgstr ""
+
+#: ../../script-reference/operators.rst:48
+msgid "! *a*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:53
+msgid "Arithmetic operators"
+msgstr ""
+
+#: ../../script-reference/operators.rst:56
+#: ../../script-reference/operators.rst:152
+#: ../../script-reference/operators.rst:170
+#: ../../script-reference/operators.rst:199
+#: ../../script-reference/operators.rst:235
+msgid "Notes"
+msgstr ""
+
+#: ../../script-reference/operators.rst:58
+msgid "Addition"
+msgstr ""
+
+#: ../../script-reference/operators.rst:58
+msgid "*a* + *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:58
+msgid "For :zeek:type:`string` operands, this performs string concatenation."
+msgstr ""
+
+#: ../../script-reference/operators.rst:62
+msgid "Subtraction"
+msgstr ""
+
+#: ../../script-reference/operators.rst:62
+msgid "*a* - *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:64
+msgid "Multiplication"
+msgstr ""
+
+#: ../../script-reference/operators.rst:64
+msgid "*a* \\* *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:66
+msgid "Division"
+msgstr ""
+
+#: ../../script-reference/operators.rst:66
+msgid "*a* / *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:66
+msgid ""
+"For :zeek:type:`int` or :zeek:type:`count` operands, the fractional part "
+"of the result is dropped."
+msgstr ""
+
+#: ../../script-reference/operators.rst:71
+msgid "Modulo"
+msgstr ""
+
+#: ../../script-reference/operators.rst:71
+msgid "*a* % *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:71
+msgid "Operand types cannot be \"double\"."
+msgstr ""
+
+#: ../../script-reference/operators.rst:74
+msgid "Unary plus"
+msgstr ""
+
+#: ../../script-reference/operators.rst:74
+msgid "\\+ *a*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:76
+msgid "Unary minus"
+msgstr ""
+
+#: ../../script-reference/operators.rst:76
+msgid "\\- *a*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:78
+msgid "Pre-increment"
+msgstr ""
+
+#: ../../script-reference/operators.rst:78
+msgid "++ *a*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:78
+#: ../../script-reference/operators.rst:81
+msgid "Operand type cannot be \"double\"."
+msgstr ""
+
+#: ../../script-reference/operators.rst:81
+msgid "Pre-decrement"
+msgstr ""
+
+#: ../../script-reference/operators.rst:81
+msgid "``--`` *a*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:84
+msgid "Absolute value"
+msgstr ""
+
+#: ../../script-reference/operators.rst:84
+msgid "\\| *a* \\|"
+msgstr ""
+
+#: ../../script-reference/operators.rst:84
+msgid ""
+"If operand is :zeek:type:`string`, :zeek:type:`set`, :zeek:type:`table`, "
+"or :zeek:type:`vector`, this evaluates to number of elements."
+msgstr ""
+
+#: ../../script-reference/operators.rst:94
+msgid "Bitwise operators"
+msgstr ""
+
+#: ../../script-reference/operators.rst:96
+msgid ""
+"The bitwise operators work with operands of type :zeek:type:`count` or "
+"``vector of count``, but the bitwise complement operator works with "
+"``count`` only."
+msgstr ""
+
+#: ../../script-reference/operators.rst:103
+msgid "Bitwise AND"
+msgstr ""
+
+#: ../../script-reference/operators.rst:103
+msgid "*a* & *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:105
+msgid "Bitwise OR"
+msgstr ""
+
+#: ../../script-reference/operators.rst:105
+msgid "*a* | *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:107
+msgid "Bitwise XOR"
+msgstr ""
+
+#: ../../script-reference/operators.rst:107
+msgid "*a* ^ *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:109
+msgid "Bitwise complement"
+msgstr ""
+
+#: ../../script-reference/operators.rst:109
+msgid "~ *a*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:113
+msgid "Set operators"
+msgstr ""
+
+#: ../../script-reference/operators.rst:118
+msgid "Set intersection"
+msgstr ""
+
+#: ../../script-reference/operators.rst:118
+msgid "*s1* & *s2*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:120
+msgid "Set union"
+msgstr ""
+
+#: ../../script-reference/operators.rst:120
+msgid "*s1* | *s2*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:122
+msgid "Set difference"
+msgstr ""
+
+#: ../../script-reference/operators.rst:122
+msgid "*s1* - *s2*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:126
+msgid "Assignment operators"
+msgstr ""
+
+#: ../../script-reference/operators.rst:128
+msgid "The assignment operators evaluate to the result of the assignment."
+msgstr ""
+
+#: ../../script-reference/operators.rst:130
+msgid ""
+"The \"+=\" operator can also be used to append an element to the end of a"
+" vector.  For example, ``v += e`` is equivalent to ``v[|v|] = e``."
+msgstr ""
+
+#: ../../script-reference/operators.rst:136
+msgid "Assignment"
+msgstr ""
+
+#: ../../script-reference/operators.rst:136
+msgid "*a* = *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:138
+msgid "Addition assignment"
+msgstr ""
+
+#: ../../script-reference/operators.rst:138
+msgid "*a* += *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:140
+msgid "Subtraction assignment"
+msgstr ""
+
+#: ../../script-reference/operators.rst:140
+msgid "*a* -= *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:145
+msgid "Record field operators"
+msgstr ""
+
+#: ../../script-reference/operators.rst:147
+msgid ""
+"The record field operators take a :zeek:type:`record` as the first "
+"operand, and a field name as the second operand.  For both operators, the"
+" specified field name must be in the declaration of the record type."
+msgstr ""
+
+#: ../../script-reference/operators.rst:154
+msgid "Field access"
+msgstr ""
+
+#: ../../script-reference/operators.rst:154
+msgid "*a* $ *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:156
+msgid "Field value existence test"
+msgstr ""
+
+#: ../../script-reference/operators.rst:156
+msgid "*a* ?$ *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:156
+msgid ""
+"Evaluates to type :zeek:type:`bool`. True if the specified field has been"
+" assigned a value, or false if not."
+msgstr ""
+
+#: ../../script-reference/operators.rst:165
+msgid "Pattern operators"
+msgstr ""
+
+#: ../../script-reference/operators.rst:167
+msgid "In the table below, *p* is a pattern, and *s* is a string."
+msgstr ""
+
+#: ../../script-reference/operators.rst:172
+msgid "Exact matching"
+msgstr ""
+
+#: ../../script-reference/operators.rst:172
+msgid "*p* == *s*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:172
+msgid ""
+"Evaluates to a boolean, indicating if the entire string exactly matches "
+"the pattern."
+msgstr ""
+
+#: ../../script-reference/operators.rst:177
+msgid "Embedded matching"
+msgstr ""
+
+#: ../../script-reference/operators.rst:177
+msgid "*p* in *s*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:177
+msgid ""
+"Evaluates to a boolean, indicating if pattern is found somewhere in the "
+"string."
+msgstr ""
+
+#: ../../script-reference/operators.rst:181
+msgid "Conjunction"
+msgstr ""
+
+#: ../../script-reference/operators.rst:181
+msgid "*p1* & *p2*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:181
+msgid "Evaluates to a pattern that represents matching p1 followed by p2."
+msgstr ""
+
+#: ../../script-reference/operators.rst:185
+msgid "Disjunction"
+msgstr ""
+
+#: ../../script-reference/operators.rst:185
+msgid "*p1* | *p2*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:185
+msgid "Evaluates to a pattern that represents matching p1 or p2."
+msgstr ""
+
+#: ../../script-reference/operators.rst:191
+msgid "Type casting"
+msgstr ""
+
+#: ../../script-reference/operators.rst:193
+msgid ""
+"The \"as\" operator performs type casting and the \"is\" operator checks "
+"if a type cast is supported or not.  For both operators, the first "
+"operand is a value and the second operand is the name of a Zeek script "
+"type (either built-in or user-defined)."
+msgstr ""
+
+#: ../../script-reference/operators.rst:201
+msgid "Type cast"
+msgstr ""
+
+#: ../../script-reference/operators.rst:201
+msgid "*v* as *t*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:201
+msgid ""
+"Cast value \"v\" into type \"t\". Evaluates to the value casted to the "
+"specified type. If this is not a supported cast, then a runtime error is "
+"triggered."
+msgstr ""
+
+#: ../../script-reference/operators.rst:208
+msgid "Check if a cast is supported"
+msgstr ""
+
+#: ../../script-reference/operators.rst:208
+msgid "*v* is *t*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:208
+msgid "Evaluates to boolean. If true, then \"v as t\" would succeed."
+msgstr ""
+
+#: ../../script-reference/operators.rst:212
+msgid "Only the following kinds of type casts are supported currently:"
+msgstr ""
+
+#: ../../script-reference/operators.rst:214
+msgid ""
+"Broker values (i.e., :zeek:see:`Broker::Data` values returned from "
+"functions such as :zeek:id:`Broker::data`) can be casted to their "
+"corresponding Zeek script types."
+msgstr ""
+
+#: ../../script-reference/operators.rst:217
+msgid ""
+"A value of declared type \"any\" can be casted to its actual underlying "
+"type."
+msgstr ""
+
+#: ../../script-reference/operators.rst:218
+msgid "All values can be casted to their declared types (i.e., this is a no-op)."
+msgstr ""
+
+#: ../../script-reference/operators.rst:220
+msgid "The function in this example tries to cast a value to a string::"
+msgstr ""
+
+#: ../../script-reference/operators.rst:232
+msgid "Other operators"
+msgstr ""
+
+#: ../../script-reference/operators.rst:237
+msgid "Membership test"
+msgstr ""
+
+#: ../../script-reference/operators.rst:237
+msgid "*a* in *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:237
+msgid ""
+"Evaluates to type :zeek:type:`bool`. Works with :zeek:type:`string`, "
+":zeek:type:`pattern`, :zeek:type:`subnet`, :zeek:type:`set`, "
+":zeek:type:`table`, or :zeek:type:`vector` operands.  Do not confuse this"
+" use of \"in\" with that used in a :zeek:keyword:`for` statement."
+msgstr ""
+
+#: ../../script-reference/operators.rst:252
+msgid "Non-membership test"
+msgstr ""
+
+#: ../../script-reference/operators.rst:252
+msgid "*a* !in *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:252
+msgid ""
+"This is the logical NOT of the \"in\" operator. For example: \"a !in b\" "
+"is equivalent to \"!(a in b)\"."
+msgstr ""
+
+#: ../../script-reference/operators.rst:258
+msgid "Table or vector element access"
+msgstr ""
+
+#: ../../script-reference/operators.rst:258
+msgid "*a* [ *b* ]"
+msgstr ""
+
+#: ../../script-reference/operators.rst:258
+msgid ""
+"This operator can also be used with a :zeek:type:`set`, but only with the"
+" :zeek:keyword:`add` or :zeek:keyword:`delete` statement."
+msgstr ""
+
+#: ../../script-reference/operators.rst:266
+msgid "Substring extraction"
+msgstr ""
+
+#: ../../script-reference/operators.rst:266
+msgid "*a* [ *b* : *c* ]"
+msgstr ""
+
+#: ../../script-reference/operators.rst:266
+msgid "See the :zeek:type:`string` type for more details."
+msgstr ""
+
+#: ../../script-reference/operators.rst:270
+msgid "Create a deep copy"
+msgstr ""
+
+#: ../../script-reference/operators.rst:270
+msgid "copy ( *a* )"
+msgstr ""
+
+#: ../../script-reference/operators.rst:270
+msgid ""
+"This is relevant only for data types that are assigned by reference, such"
+" as :zeek:type:`vector`, :zeek:type:`set`, :zeek:type:`table`, and "
+":zeek:type:`record`."
+msgstr ""
+
+#: ../../script-reference/operators.rst:279
+msgid "Module namespace access"
+msgstr ""
+
+#: ../../script-reference/operators.rst:279
+msgid "*a* \\:\\: *b*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:279
+msgid ""
+"The first operand is the module name, and the second operand is an "
+"identifier that refers to a global variable, enumeration constant, or "
+"user-defined type that was exported from the module."
+msgstr ""
+
+#: ../../script-reference/operators.rst:289
+msgid "Conditional"
+msgstr ""
+
+#: ../../script-reference/operators.rst:289
+msgid "*a* ? *b* : *c*"
+msgstr ""
+
+#: ../../script-reference/operators.rst:289
+msgid ""
+"The first operand must evaluate to type :zeek:type:`bool`. If true, then "
+"the second expression is evaluated and is the result of the entire "
+"expression.  Otherwise, the third expression is evaluated and is the "
+"result of the entire expression. The types of the second and third "
+"operands must be compatible.  Known as the ternary operator."
+msgstr ""
+

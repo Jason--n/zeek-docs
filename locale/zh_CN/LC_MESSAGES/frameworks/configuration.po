@@ -1,0 +1,273 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../frameworks/configuration.rst:6
+msgid "Configuration Framework"
+msgstr ""
+
+#: ../../frameworks/configuration.rst:10
+msgid ""
+"Zeek includes a \"configuration framework\" that allows updating script "
+"options dynamically at runtime. This functionality consists of several "
+"components: an \"option\" declaration, the ability to specify input files"
+" to enable changing the value of options at runtime, a couple of "
+"functions, and a log file \"config.log\" which contains information about"
+" every change to option values."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:18
+msgid "Introduction"
+msgstr ""
+
+#: ../../frameworks/configuration.rst:20
+msgid ""
+"The configuration framework provides an alternative to using Zeek script "
+"constants to store various Zeek settings."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:23
+msgid ""
+"In general, traditional constants can be used when a value is not "
+"expected to change at runtime, but they cannot be used for values that "
+"need to be modified occasionally. While a \"redef\" allows a re-"
+"definition of an already defined constant in Zeek, these redefinitions "
+"can only be performed when Zeek first starts. Afterwards, constants can "
+"no longer be modified."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:30
+msgid ""
+"However, it is clearly desirable to be able to change at runtime many of "
+"the configuration options that Zeek offers. Having to restart Zeek can be"
+" time-consuming and causes Zeek to lose all connection state and "
+"knowledge that it accumulated. Zeek's configuration framework solves this"
+" problem by allowing changing configuration options at runtime."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:37
+msgid "Declaring options"
+msgstr ""
+
+#: ../../frameworks/configuration.rst:39
+msgid ""
+"The \"option\" keyword allows variables to be declared as configuration "
+"options."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:53
+msgid ""
+"The rules regarding options can be thought of as being in between global "
+"variables and constants.  Like global variables, options cannot be "
+"declared inside a function, hook, or event handler.  Like constants, "
+"options must be initialized when declared (the type can often be inferred"
+" from the initializer but may need to be specified).  The value of an "
+"option can change at runtime, but options cannot be assigned a new value "
+"using normal assignments."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:60
+msgid ""
+"The initial value of an option can be redefined with a "
+":zeek:keyword:`redef` declaration just like for global variables and "
+"constants.  The only difference being that there is no need to specify "
+"the :zeek:attr:`&redef` attribute in the declaration of an option.  For "
+"example, given the above option declarations, here are some possible "
+"redefs:"
+msgstr ""
+
+#: ../../frameworks/configuration.rst:73
+msgid "Changing options"
+msgstr ""
+
+#: ../../frameworks/configuration.rst:75
+msgid ""
+"The configuration framework facilitates reading in new option values from"
+" external files at runtime."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:78
+msgid ""
+"Configuration files contain a mapping between option names and their "
+"values. The format for these files looks like this:"
+msgstr ""
+
+#: ../../frameworks/configuration.rst:81
+msgid "[option name][tab/spaces][new value]"
+msgstr ""
+
+#: ../../frameworks/configuration.rst:83
+msgid ""
+"Configuration files can be specified by adding them to "
+":zeek:id:`Config::config_files`.  Note that in a cluster configuration, "
+"only the manager node attempts to read the specified configuration files."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:87
+msgid "For example, simply add something like this to local.zeek:"
+msgstr ""
+
+#: ../../frameworks/configuration.rst:93
+msgid ""
+"The specified configuration file will then be monitored continuously for "
+"changes, so that writing ``TestModule::enable_feature T`` into that file "
+"will automatically update the option's value accordingly (in a cluster "
+"configuration, the change will be sent from the manager to all other "
+"nodes in the cluster).  Here is an example configuration file::"
+msgstr ""
+
+#: ../../frameworks/configuration.rst:105
+msgid ""
+"Note that as seen in the above example, for options of type "
+":zeek:type:`interval`, the numeric value in the config file is "
+"interpreted as seconds and there cannot be any time units (such as sec, "
+"min, etc.)."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:110
+msgid ""
+"Internally, the configuration framework uses the Zeek input framework "
+"with a type of input reader specifically for reading config files. Users "
+"familiar with the Zeek input framework might be aware that the input "
+"framework is usually very strict about the syntax of input files. This is"
+" not true for configuration files: the files need no header lines and "
+"either tabs or spaces are accepted as separators."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:117
+msgid ""
+"If you inspect the configuration framework scripts, you will notice that "
+"the scripts simply catch events from the input framework and then a "
+"function :zeek:see:`Config::set_value` is called to set an option to the "
+"new value.  If you want to change an option yourself during runtime, you "
+"can call Config::set_value directly from a script (in a cluster "
+"configuration, this only needs to happen on the manager, as the change "
+"will be automatically sent to all other nodes in the cluster)."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:125
+msgid ""
+"Note that some data types (such as pattern, table, and record) are not "
+"supported by the config input reader.  In that case you would need to use"
+" the Config::set_value function to change the value of such an option as "
+"shown in the following example."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:143
+msgid ""
+"Regardless of whether an option change is triggered by a config file or "
+"by the Config::set_value function, the change is always logged to the log"
+" file \"config.log\"."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:149
+msgid "Change handlers"
+msgstr ""
+
+#: ../../frameworks/configuration.rst:151
+msgid ""
+"A change handler is a user-defined function that is called automatically "
+"each time an option value changes.  This registers a change handler for "
+"an option that has a data type of \"addr\" (for other data types, the "
+"return type and 2nd parameter data type must be adjusted accordingly):"
+msgstr ""
+
+#: ../../frameworks/configuration.rst:177
+msgid ""
+"Immediately before the specified option value is changed, the change "
+"handler function will be called.  The value returned by the change "
+"handler is the value finally assigned to the option. This allows, for "
+"example, checking of values to reject invalid input (the original value "
+"can be returned to reject the change)."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:183
+msgid ""
+"It is possible define multiple change handlers for a single option.  In "
+"this case, the change handlers are chained together: the value returned "
+"by the first change handler is the \"new value\" seen by the next change "
+"handler, and so on.  The built-in function "
+":zeek:see:`Option::set_change_handler` takes an optional third argument "
+"that can specify a priority for the handlers."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:189
+msgid ""
+"A change handler function can optionally have a third argument of type "
+"string.  When a config file triggers a change, then the third argument is"
+" the pathname of the config file.  When the Config::set_value function "
+"triggers a change, then the third argument of the change handler is the "
+"value passed to the optional third argument of the Config::set_value "
+"function."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:195
+msgid ""
+"Note that in some cases change handlers will be called even when the "
+"underlying option value already has the same value as an incoming change."
+" Change handlers have to be aware that this situation will occur and that"
+" they will be called repeatedly with the same value."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:199
+msgid ""
+"Usually this happens when values are set by the configuration reader. The"
+" config reader is running in a thread and does not have direct access to "
+"the internal Zeek data structures; thus it has to send changes whenever "
+"it thinks that a data structure might have changes. Specifically this "
+"means:"
+msgstr ""
+
+#: ../../frameworks/configuration.rst:204
+msgid ""
+"change handlers will always be called for all values in a config file "
+"when it is read for the first time, even if the underlying script-level "
+"option is already set to the same value."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:208
+msgid ""
+"if there is no line for an optin in the config file(s), the change "
+"handler for the option will not be invoked at all. If your code needs a "
+"change handler to run at least once to function, you will need to call it"
+" yourself."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:212
+msgid ""
+"after a config file is read for the first time, change handlers will be "
+"called whenever the ascii representation of a line in the config file "
+"changes. This is true even if this does not change the value of the Zeek "
+"script-leven datastructure."
+msgstr ""
+
+#: ../../frameworks/configuration.rst:217
+msgid ""
+"change handlers will be called whenever any zeek script calls the "
+"``Config::set_value`` function, even if the option is already set to the "
+"same value"
+msgstr ""
+
+#: ../../frameworks/configuration.rst:220
+msgid ""
+"Change handlers are also used internally by the configuration framework. "
+"If you look at the script level source code of the config framework, you "
+"can see that change handlers are used for logging the option changes to "
+"config.log."
+msgstr ""
+

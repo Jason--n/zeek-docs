@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:4
+msgid "base/frameworks/input/readers/sqlite.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:7
+msgid ""
+"Interface for the SQLite input reader. Redefinable options are available "
+"to tweak the input format of the SQLite reader."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:10
+msgid ""
+"See :doc:`/frameworks/logging-input-sqlite` for an introduction on how to"
+" use the SQLite reader."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:13
+msgid ""
+"When using the SQLite reader, you have to specify the SQL query that "
+"returns the desired data by setting ``query`` in the ``config`` table. "
+"See the introduction mentioned above for an example."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:17
+msgid "InputSQLite"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:20
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:22
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:33
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:24
+msgid ""
+":zeek:id:`InputSQLite::empty_field`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:24
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:40
+msgid "String to use for empty fields."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:25
+msgid ""
+":zeek:id:`InputSQLite::set_separator`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:25
+msgid "Separator between set elements."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:26
+msgid ""
+":zeek:id:`InputSQLite::unset_field`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:26
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:57
+msgid "String to use for an unset &optional field."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:31
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:36
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:44
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:53
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:37
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:45
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:54
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:38
+msgid "``\"(empty)\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:46
+msgid "``\",\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:48
+msgid ""
+"Separator between set elements. Please note that the separator has to be "
+"exactly one character long."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/readers/sqlite.zeek.rst:55
+msgid "``\"-\"``"
+msgstr ""
+

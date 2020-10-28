@@ -1,0 +1,236 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:4
+msgid "policy/frameworks/dpd/detect-protocols.zeek"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:7
+msgid "Finds connections with protocols on non-standard ports with DPD."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:9
+msgid "ProtocolDetector"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:10
+msgid ""
+":doc:`base/frameworks/notice </scripts/base/frameworks/notice/index>`, "
+":doc:`base/protocols/conn/removal-hooks.zeek "
+"</scripts/base/protocols/conn/removal-hooks.zeek>`, :doc:`base/utils"
+"/conn-ids.zeek </scripts/base/utils/conn-ids.zeek>`, "
+":doc:`base/utils/site.zeek </scripts/base/utils/site.zeek>`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:15
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:67
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:17
+msgid ""
+":zeek:id:`ProtocolDetector::minimum_duration`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:18
+msgid ""
+":zeek:id:`ProtocolDetector::minimum_volume`: :zeek:type:`double` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:19
+msgid ""
+":zeek:id:`ProtocolDetector::suppress_servers`: :zeek:type:`set` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:20
+msgid ""
+":zeek:id:`ProtocolDetector::valids`: :zeek:type:`table` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:24
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:97
+msgid "Constants"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:26
+msgid ":zeek:id:`ProtocolDetector::check_interval`: :zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:30
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:105
+msgid "State Variables"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:32
+msgid ""
+":zeek:id:`ProtocolDetector::servers`: :zeek:type:`table` "
+":zeek:attr:`&read_expire` = ``14.0 days``"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:36
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:114
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:38
+msgid ":zeek:type:`ProtocolDetector::dir`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:42
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:44
+msgid ":zeek:type:`Notice::Type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:46
+msgid ":zeek:enum:`ProtocolDetector::Protocol_Found`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:48
+msgid ":zeek:enum:`ProtocolDetector::Server_Found`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:52
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:129
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:54
+msgid ""
+":zeek:id:`ProtocolDetector::finalize_protocol_detection`: "
+":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:54
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:134
+msgid "Non-standard protocol port detection finalization hook."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:58
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:137
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:60
+msgid ":zeek:id:`ProtocolDetector::found_protocol`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:65
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:70
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:100
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:71
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:78
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:85
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:92
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:72
+msgid "``30.0 secs``"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:77
+msgid ":zeek:type:`double`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:79
+msgid "``4000.0``"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:84
+msgid ":zeek:type:`set` [:zeek:type:`Analyzer::Tag`]"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:86
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:93
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:110
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:91
+msgid ""
+":zeek:type:`table` [:zeek:type:`Analyzer::Tag`, :zeek:type:`addr`, "
+":zeek:type:`port`] of :zeek:type:`ProtocolDetector::dir`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:101
+msgid "``5.0 secs``"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:108
+msgid ""
+":zeek:type:`table` [:zeek:type:`addr`, :zeek:type:`port`, "
+":zeek:type:`string`] of :zeek:type:`set` [:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:109
+msgid ":zeek:attr:`&read_expire` = ``14.0 days``"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:117
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:132
+msgid ":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/dpd/detect-protocols.zeek.rst:140
+msgid ""
+":zeek:type:`function` (c: :zeek:type:`connection`, atype: "
+":zeek:type:`Analyzer::Tag`, protocol: :zeek:type:`string`) : "
+":zeek:type:`void`"
+msgstr ""
+

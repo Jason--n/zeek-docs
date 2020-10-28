@@ -1,0 +1,324 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_POP3.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:28
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:15
+msgid ":zeek:id:`pop3_data`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:15
+msgid "Generated for server-side multi-line responses on POP3 connections."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:16
+msgid ":zeek:id:`pop3_login_failure`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:62
+msgid "Generated for unsuccessful authentications on POP3 connections."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:17
+msgid ":zeek:id:`pop3_login_success`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:17
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:92
+msgid "Generated for successful authentications on POP3 connections."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:18
+msgid ":zeek:id:`pop3_reply`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:18
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:122
+msgid "Generated for server-side replies to commands on POP3 connections."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:19
+msgid ":zeek:id:`pop3_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:19
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:155
+msgid "Generated for client-side commands on POP3 connections."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:20
+msgid ":zeek:id:`pop3_starttls`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:20
+msgid "Generated when a POP3 connection goes encrypted."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:21
+msgid ":zeek:id:`pop3_unexpected`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:21
+msgid "Generated for errors encountered on POP3 sessions."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:26
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:31
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, data: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:33
+msgid ""
+"Generated for server-side multi-line responses on POP3 connections. POP3 "
+"connections use multi-line responses to send bulk data, such as the "
+"actual mails. This event is generated once for each line that's part of "
+"such a response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:38
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:64
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:94
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:124
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:157
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:190
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:212
+msgid ""
+"See `Wikipedia <http://en.wikipedia.org/wiki/POP3>`__ for more "
+"information about the POP3 protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:42
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:68
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:98
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:128
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:161
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:194
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:216
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:45
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:219
+msgid "True if the data was sent by the originator of the TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst
+msgid "data"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:48
+msgid "The data sent."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:53
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:83
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:113
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:144
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:146
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:176
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:199
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:229
+msgid "Todo"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:53
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:83
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:113
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:146
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:176
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:199
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:229
+msgid ""
+"Zeek's current default configuration does not activate the protocol "
+"analyzer that generates this event; the corresponding script has not yet "
+"been ported. To still enable this event, one needs to register a port for"
+" it or add a DPD payload signature."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:60
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:90
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, user: :zeek:type:`string`, password: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:71
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:101
+msgid "Always false."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst
+msgid "user"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:74
+msgid ""
+"The user name attempted for authentication. The event is only generated "
+"if a non-empty user name was used."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst
+msgid "password"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:78
+msgid "The password attempted for authentication."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:104
+msgid ""
+"The user name used for authentication. The event is only generated if a "
+"non-empty user name was used."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:108
+msgid "The password used for authentication."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:120
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, cmd: :zeek:type:`string`, msg: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:131
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:164
+msgid "True if the command was sent by the originator of the TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst
+msgid "cmd"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:135
+msgid ""
+"The success indicator sent by the server. This corresponds to the first "
+"token on the line sent, and should be either ``OK`` or ``ERR``."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst
+msgid "msg"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:139
+msgid "The textual description the server sent along with *cmd*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:144
+msgid "This event is receiving odd parameters, should unify."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:153
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, command: :zeek:type:`string`, arg: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst
+msgid "command"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:168
+msgid "The command sent."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst
+msgid "arg"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:171
+msgid "The argument to the command."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:183
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:185
+msgid ""
+"Generated when a POP3 connection goes encrypted. While POP3 is by default"
+" a clear-text protocol, extensions exist to switch to encryption. This "
+"event is generated if that happens and the analyzer then stops processing"
+" the connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:206
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, msg: :zeek:type:`string`, detail: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:208
+msgid ""
+"Generated for errors encountered on POP3 sessions. If the POP3 analyzer "
+"finds state transitions that do not conform to the protocol "
+"specification, or other situations it can't handle, it raises this event."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:222
+msgid "A textual description of the situation."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst
+msgid "detail"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_POP3.events.bif.zeek.rst:225
+msgid "The input that triggered the event."
+msgstr ""
+

@@ -1,0 +1,273 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_SIP.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:27
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:15
+msgid ":zeek:id:`sip_all_headers`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:32
+msgid ""
+"Generated once for all :abbr:`SIP (Session Initiation Protocol)` headers "
+"from the originator or responder."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:16
+msgid ":zeek:id:`sip_begin_entity`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:52
+msgid ""
+"Generated at the beginning of a :abbr:`SIP (Session Initiation Protocol)`"
+" message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:17
+msgid ":zeek:id:`sip_end_entity`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:17
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:71
+msgid ""
+"Generated at the end of a :abbr:`SIP (Session Initiation Protocol)` "
+"message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:18
+msgid ":zeek:id:`sip_header`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:18
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:88
+msgid "Generated for each :abbr:`SIP (Session Initiation Protocol)` header."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:19
+msgid ":zeek:id:`sip_reply`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:19
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:111
+msgid ""
+"Generated for :abbr:`SIP (Session Initiation Protocol)` replies, used in "
+"Voice over IP (VoIP)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:20
+msgid ":zeek:id:`sip_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:20
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:136
+msgid ""
+"Generated for :abbr:`SIP (Session Initiation Protocol)` requests, used in"
+" Voice over IP (VoIP)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:25
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:30
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, hlist: :zeek:type:`mime_header_list`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:34
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:56
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:73
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:90
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:115
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:140
+msgid ""
+"See `Wikipedia "
+"<http://en.wikipedia.org/wiki/Session_Initiation_Protocol>`__ for more "
+"information about the :abbr:`SIP (Session Initiation Protocol)` protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:38
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:60
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:77
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:94
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:119
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:144
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:41
+msgid "Whether the headers came from the originator."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst
+msgid "hlist"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:44
+msgid "All the headers, and their values"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:50
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:69
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:54
+msgid ""
+"This event is generated as soon as a message's initial line has been "
+"parsed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:63
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:80
+msgid "Whether the message came from the originator."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:86
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, name: :zeek:type:`string`, value: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:97
+msgid "Whether the header came from the originator."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst
+msgid "name"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:100
+msgid "Header name."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst
+msgid "value"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:103
+msgid "Header value."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:109
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, version: "
+":zeek:type:`string`, code: :zeek:type:`count`, reason: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:113
+msgid "This event is generated as soon as a reply's initial line has been parsed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst
+msgid "version"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:122
+msgid "The :abbr:`SIP (Session Initiation Protocol)` version in use."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst
+msgid "code"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:125
+msgid "The response code."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst
+msgid "reason"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:128
+msgid "Textual details for the response code."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:134
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, method: "
+":zeek:type:`string`, original_URI: :zeek:type:`string`, version: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:138
+msgid ""
+"This event is generated as soon as a request's initial line has been "
+"parsed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst
+msgid "method"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:147
+msgid ""
+"The :abbr:`SIP (Session Initiation Protocol)` method extracted from the "
+"request (e.g., ``REGISTER``, ``NOTIFY``)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst
+msgid "original_URI"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:150
+msgid "The unprocessed URI as specified in the request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SIP.events.bif.zeek.rst:153
+msgid "The version number specified in the request (e.g., ``2.0``)."
+msgstr ""
+

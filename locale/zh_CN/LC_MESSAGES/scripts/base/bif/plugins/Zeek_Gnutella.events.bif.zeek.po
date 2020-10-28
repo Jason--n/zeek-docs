@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_Gnutella.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:27
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:15
+msgid ":zeek:id:`gnutella_binary_msg`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:17
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:18
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:19
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:20
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:32
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:49
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:66
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:83
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:100
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:117
+msgid "TODO."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:16
+msgid ":zeek:id:`gnutella_establish`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:17
+msgid ":zeek:id:`gnutella_http_notify`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:18
+msgid ":zeek:id:`gnutella_not_establish`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:19
+msgid ":zeek:id:`gnutella_partial_binary_msg`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:20
+msgid ":zeek:id:`gnutella_text_msg`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:25
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:30
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, orig: :zeek:type:`bool`, "
+"msg_type: :zeek:type:`count`, ttl: :zeek:type:`count`, hops: "
+":zeek:type:`count`, msg_len: :zeek:type:`count`, payload: "
+":zeek:type:`string`, payload_len: :zeek:type:`count`, trunc: "
+":zeek:type:`bool`, complete: :zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:34
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:51
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:68
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:85
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:102
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:119
+msgid ""
+"See `Wikipedia <http://en.wikipedia.org/wiki/Gnutella>`__ for more "
+"information about the Gnutella protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:40
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:57
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:74
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:91
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:108
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:126
+msgid "Todo"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:40
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:57
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:74
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:91
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:108
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:126
+msgid ""
+"Zeek's current default configuration does not activate the protocol "
+"analyzer that generates this event; the corresponding script has not yet "
+"been ported. To still enable this event, one needs to register a port for"
+" it or add a DPD payload signature."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:47
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:64
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:81
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:98
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, orig: :zeek:type:`bool`, "
+"msg: :zeek:type:`string`, len: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek.rst:115
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, orig: :zeek:type:`bool`, "
+"headers: :zeek:type:`string`)"
+msgstr ""
+

@@ -1,0 +1,523 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:4
+msgid "policy/protocols/mqtt/main.zeek"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:7
+msgid ""
+"Implements base functionality for MQTT (v3.1.1) analysis. Generates the "
+"mqtt.log file."
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:10
+msgid "MQTT"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:11
+msgid ""
+":doc:`base/protocols/mqtt/consts.zeek "
+"</scripts/base/protocols/mqtt/consts.zeek>`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:16
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:73
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:18
+msgid ":zeek:type:`MQTT::ConnectInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:19
+msgid ":zeek:type:`MQTT::PublishInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:20
+msgid ":zeek:type:`MQTT::State`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:20
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:172
+msgid "Data structure to track pub/sub messaging state of a given connection."
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:21
+msgid ":zeek:type:`MQTT::SubUnsub`: :zeek:type:`enum` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:22
+msgid ":zeek:type:`MQTT::SubscribeInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:26
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:28
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:30
+msgid ":zeek:enum:`MQTT::CONNECT_LOG`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:32
+msgid ":zeek:enum:`MQTT::PUBLISH_LOG`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:34
+msgid ":zeek:enum:`MQTT::SUBSCRIBE_LOG`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:35
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:37
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:39
+msgid "mqtt: :zeek:type:`MQTT::ConnectInfo` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:41
+msgid "mqtt_state: :zeek:type:`MQTT::State` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:42
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:46
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:214
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:48
+msgid ":zeek:id:`MQTT::log_mqtt`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:48
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:219
+msgid ""
+"Event that can be handled to access the MQTT record as it is sent on to "
+"the logging framework."
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:53
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:223
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:55
+msgid ":zeek:id:`MQTT::log_policy_connect`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:56
+msgid ":zeek:id:`MQTT::log_policy_publish`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:57
+msgid ":zeek:id:`MQTT::log_policy_subscribe`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:61
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:240
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:63
+msgid ":zeek:id:`MQTT::publish_expire`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:63
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:245
+msgid ""
+"The expiration function for published messages that haven't been logged "
+"yet simply causes the message to be logged."
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:65
+msgid ":zeek:id:`MQTT::subscribe_expire`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:65
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:252
+msgid ""
+"The expiration function for subscription messages that haven't been "
+"logged yet simply causes the message to be logged."
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:71
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:76
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:108
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:163
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:186
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:79
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:111
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:189
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:79
+msgid "Timestamp for when the event happened"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:82
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:114
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:192
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:82
+msgid "Unique ID for the connection"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:85
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:117
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:195
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:85
+msgid "The connection's 4-tuple of endpoint addresses/ports"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:88
+msgid "proto_name: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:88
+msgid "Indicates the protocol name"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:91
+msgid ""
+"proto_version: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:91
+msgid "The version of the protocol in use"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:94
+msgid "client_id: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:94
+msgid "Unique identifier for the client"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:97
+msgid ""
+"connect_status: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:97
+msgid "Status message from the server in response to the connect request"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:100
+msgid "will_topic: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:100
+msgid "Topic to publish a \"last will and testament\" message to"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:102
+msgid "will_payload: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:103
+msgid "Payload to publish as a \"last will and testament\""
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:111
+msgid "Timestamp for when the publish message started"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:114
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:192
+msgid "UID for the connection"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:117
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:195
+msgid "ID fields for the connection"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:121
+msgid "from_client: :zeek:type:`bool` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:120
+msgid ""
+"Indicates if the message was published by the client of this connection "
+"or published to the client."
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:124
+msgid "retain: :zeek:type:`bool` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:124
+msgid "Indicates if the message was to be retained by the server"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:127
+msgid "qos: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:127
+msgid "QoS level set for the message"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:132
+msgid ""
+"status: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&default` = "
+"``\"incomplete_qos\"`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:130
+msgid ""
+"Status of the published message. This will be set to \"incomplete_qos\" "
+"if the full back and forth for the requested level of QoS was not seen. "
+"Otherwise if it's successful the field will be \"ok\"."
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:135
+msgid "topic: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:135
+msgid "Topic the message was published to"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:138
+msgid "payload: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:138
+msgid "Payload of the message"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:143
+msgid "payload_len: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:141
+msgid ""
+"The actual length of the payload in the case the *payload* field's "
+"contents were truncated according to :zeek:see:`MQTT::max_payload_size`."
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:146
+msgid ""
+"ack: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:146
+msgid "Track if the message was acked"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:149
+msgid ""
+"rec: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:149
+msgid "Indicates if the server sent the RECEIVED qos message"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:152
+msgid ""
+"rel: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:152
+msgid "Indicates if the client sent the RELEASE qos message"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:155
+msgid ""
+"comp: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:155
+msgid "Indicates if the server sent the COMPLETE qos message"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:157
+msgid ""
+"qos_level: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:158
+msgid "Internally used for comparing numeric qos level"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:166
+msgid ""
+"publish: :zeek:type:`table` [:zeek:type:`count`] of "
+":zeek:type:`MQTT::PublishInfo` :zeek:attr:`&optional` "
+":zeek:attr:`&write_expire` = ``5.0 secs`` :zeek:attr:`&expire_func` = "
+":zeek:see:`MQTT::publish_expire`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:166
+msgid "Published messages that haven't been logged yet."
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:170
+msgid ""
+"subscribe: :zeek:type:`table` [:zeek:type:`count`] of "
+":zeek:type:`MQTT::SubscribeInfo` :zeek:attr:`&optional` "
+":zeek:attr:`&write_expire` = ``5.0 secs`` :zeek:attr:`&expire_func` = "
+":zeek:see:`MQTT::subscribe_expire`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:169
+msgid ""
+"Subscription/unsubscription messages that haven't been ACK'd or logged "
+"yet."
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:176
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:181
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:189
+msgid "Timestamp for when the subscribe or unsubscribe request started"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:198
+msgid "action: :zeek:type:`MQTT::SubUnsub` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:198
+msgid "Indicates if a subscribe or unsubscribe action is taking place"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:201
+msgid "topics: :zeek:type:`string_vec` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:201
+msgid "The topics (or topic patterns) being subscribed to"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:204
+msgid ""
+"qos_levels: :zeek:type:`index_vec` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:204
+msgid "QoS levels requested for messages from subscribed topics"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:207
+msgid ""
+"granted_qos_level: :zeek:type:`count` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:207
+msgid "QoS level the server granted"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:209
+msgid ""
+"ack: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:210
+msgid "Indicates if the request was acked by the server"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:217
+msgid ":zeek:type:`event` (rec: :zeek:type:`MQTT::ConnectInfo`)"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:226
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:231
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:236
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:243
+msgid ""
+":zeek:type:`function` (tbl: :zeek:type:`table` [:zeek:type:`count`] of "
+":zeek:type:`MQTT::PublishInfo`, idx: :zeek:type:`count`) : "
+":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/mqtt/main.zeek.rst:250
+msgid ""
+":zeek:type:`function` (tbl: :zeek:type:`table` [:zeek:type:`count`] of "
+":zeek:type:`MQTT::SubscribeInfo`, idx: :zeek:type:`count`) : "
+":zeek:type:`interval`"
+msgstr ""
+

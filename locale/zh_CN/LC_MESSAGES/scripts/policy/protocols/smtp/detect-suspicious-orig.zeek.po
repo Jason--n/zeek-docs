@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:4
+msgid "policy/protocols/smtp/detect-suspicious-orig.zeek"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:8
+msgid "SMTP"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:9
+msgid ""
+":doc:`base/frameworks/notice/main.zeek "
+"</scripts/base/frameworks/notice/main.zeek>`, "
+":doc:`base/protocols/smtp/main.zeek "
+"</scripts/base/protocols/smtp/main.zeek>`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:14
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:33
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:16
+msgid ""
+":zeek:id:`SMTP::suspicious_origination_countries`: :zeek:type:`set` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:16
+msgid ""
+"Places where it's suspicious for mail to originate from represented as "
+"all-capital, two character country codes (e.g., US)."
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:18
+msgid ""
+":zeek:id:`SMTP::suspicious_origination_networks`: :zeek:type:`set` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:22
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:24
+msgid ":zeek:type:`Notice::Type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:26
+msgid ":zeek:enum:`SMTP::Suspicious_Origination`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:31
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:36
+msgid ":zeek:type:`set` [:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:37
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:47
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:38
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:48
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:40
+msgid ""
+"Places where it's suspicious for mail to originate from represented as "
+"all-capital, two character country codes (e.g., US).  It requires Zeek to"
+" be built with GeoIP support."
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/detect-suspicious-orig.zeek.rst:46
+msgid ":zeek:type:`set` [:zeek:type:`subnet`]"
+msgstr ""
+

@@ -1,0 +1,258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:4
+msgid "base/protocols/ntp/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:8
+msgid "NTP"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:13
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:49
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:15
+msgid ":zeek:type:`NTP::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:19
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:21
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:23
+msgid ":zeek:enum:`NTP::LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:24
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:26
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:28
+msgid "ntp: :zeek:type:`NTP::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:29
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:33
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:110
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:35
+msgid ":zeek:id:`NTP::log_ntp`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:35
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:115
+msgid ""
+"Event that can be handled to access the NTP record as it is sent on to "
+"the logging framework."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:40
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:119
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:42
+msgid ":zeek:id:`NTP::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:47
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:52
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:55
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:55
+msgid "Timestamp for when the event happened."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:58
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:58
+msgid "Unique ID for the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:61
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:61
+msgid "The connection's 4-tuple of endpoint addresses/ports."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:64
+msgid "version: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:64
+msgid "The NTP version number (1, 2, 3, 4)."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:67
+msgid "mode: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:67
+msgid "The NTP mode being used."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:70
+msgid "stratum: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:70
+msgid "The stratum (primary server, secondary server, etc.)."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:73
+msgid "poll: :zeek:type:`interval` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:73
+msgid "The maximum interval between successive messages."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:76
+msgid "precision: :zeek:type:`interval` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:76
+msgid "The precision of the system clock."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:79
+msgid "root_delay: :zeek:type:`interval` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:79
+msgid "Total round-trip delay to the reference clock."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:82
+msgid "root_disp: :zeek:type:`interval` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:82
+msgid "Total dispersion to the reference clock."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:91
+msgid "ref_id: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:85
+msgid ""
+"For stratum 0, 4 character string used for debugging. For stratum 1, ID "
+"assigned to the reference clock by IANA. Above stratum 1, when using "
+"IPv4, the IP address of the reference clock.  Note that the NTP protocol "
+"did not originally specify a large enough field to represent IPv6 "
+"addresses, so they use the first four bytes of the MD5 hash of the "
+"reference clock's IPv6 address (i.e. an IPv4 address here is not "
+"necessarily IPv4)."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:94
+msgid "ref_time: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:94
+msgid "Time when the system clock was last set or correct."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:97
+msgid "org_time: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:97
+msgid "Time at the client when the request departed for the NTP server."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:100
+msgid "rec_time: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:100
+msgid "Time at the server when the request arrived from the NTP client."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:103
+msgid "xmt_time: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:103
+msgid "Time at the server when the response departed for the NTP client."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:105
+msgid ""
+"num_exts: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:106
+msgid "Number of extension fields (which are not currently parsed)."
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:113
+msgid ":zeek:type:`event` (rec: :zeek:type:`NTP::Info`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ntp/main.zeek.rst:122
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:4
+msgid "base/protocols/rdp/consts.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:8
+msgid "RDP"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:13
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:31
+msgid "Constants"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:15
+msgid ""
+":zeek:id:`RDP::builds`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:16
+msgid ""
+":zeek:id:`RDP::cert_types`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:17
+msgid ""
+":zeek:id:`RDP::color_depths`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:18
+msgid ""
+":zeek:id:`RDP::encryption_levels`: :zeek:type:`table` "
+":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:19
+msgid ""
+":zeek:id:`RDP::encryption_methods`: :zeek:type:`table` "
+":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:20
+msgid ""
+":zeek:id:`RDP::failure_codes`: :zeek:type:`table` :zeek:attr:`&default` ="
+" :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:21
+msgid ""
+":zeek:id:`RDP::high_color_depths`: :zeek:type:`table` "
+":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:22
+msgid ""
+":zeek:id:`RDP::languages`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:23
+msgid ""
+":zeek:id:`RDP::results`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:24
+msgid ""
+":zeek:id:`RDP::security_protocols`: :zeek:type:`table` "
+":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:29
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:34
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:61
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:76
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:93
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:111
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:129
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:148
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:166
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:417
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:435
+msgid ":zeek:type:`table` [:zeek:type:`count`] of :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:35
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:62
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:77
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:94
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:112
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:130
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:149
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:167
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:418
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst:436
+msgid ":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/rdp/consts.zeek.rst
+msgid "Default"
+msgstr ""
+

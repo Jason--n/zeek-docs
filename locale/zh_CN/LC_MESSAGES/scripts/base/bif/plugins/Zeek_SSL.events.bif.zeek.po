@@ -1,0 +1,1223 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_SSL.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:59
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:15
+msgid ":zeek:id:`ssl_alert`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:15
+msgid "Generated for SSL/TLS alert records."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:16
+msgid ":zeek:id:`ssl_change_cipher_spec`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:16
+msgid ""
+"This event is raised when a SSL/TLS ChangeCipherSpec message is "
+"encountered before encryption begins."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:18
+msgid ":zeek:id:`ssl_client_hello`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:18
+msgid "Generated for an SSL/TLS client's initial *hello* message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:19
+msgid ":zeek:id:`ssl_dh_client_params`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:19
+msgid "Generated if a client uses a DH-anon or DHE cipher suite."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:20
+msgid ":zeek:id:`ssl_dh_server_params`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:20
+msgid "Generated if a server uses a DH-anon or DHE cipher suite."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:21
+msgid ":zeek:id:`ssl_ecdh_client_params`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:21
+msgid "Generated if a client uses an ECDH-anon or ECDHE cipher suite."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:22
+msgid ":zeek:id:`ssl_ecdh_server_params`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:22
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:222
+msgid ""
+"Generated if a server uses an ECDH-anon or ECDHE cipher suite using a "
+"named curve This event contains the named curve name and the server ECDH "
+"parameters contained in the ServerKeyExchange message as defined in "
+":rfc:`4492`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:25
+msgid ":zeek:id:`ssl_encrypted_data`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:25
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:243
+msgid ""
+"Generated for SSL/TLS messages that are sent after session encryption "
+"started."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:27
+msgid ":zeek:id:`ssl_established`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:27
+msgid "Generated at the end of an SSL/TLS handshake."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:28
+msgid ":zeek:id:`ssl_extension`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:28
+msgid "Generated for SSL/TLS extensions seen in an initial handshake."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:29
+msgid ""
+":zeek:id:`ssl_extension_application_layer_protocol_negotiation`: "
+":zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:29
+msgid "Generated for an SSL/TLS Application-Layer Protocol Negotiation extension."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:30
+msgid ":zeek:id:`ssl_extension_ec_point_formats`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:30
+msgid "Generated for an SSL/TLS Supported Point Formats extension."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:31
+msgid ":zeek:id:`ssl_extension_elliptic_curves`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:31
+msgid "Generated for an SSL/TLS Elliptic Curves extension."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:32
+msgid ":zeek:id:`ssl_extension_key_share`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:32
+msgid "Generated for a Key Share extension."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:33
+msgid ":zeek:id:`ssl_extension_pre_shared_key_client_hello`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:33
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:432
+msgid ""
+"Generated for the pre-shared key extension as it is sent in the TLS 1.3 "
+"client hello."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:34
+msgid ":zeek:id:`ssl_extension_pre_shared_key_server_hello`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:34
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:461
+msgid ""
+"Generated for the pre-shared key extension as it is sent in the TLS 1.3 "
+"server hello."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:35
+msgid ":zeek:id:`ssl_extension_psk_key_exchange_modes`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:35
+msgid "Generated for an TLS Pre-Shared Key Exchange Modes extension."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:36
+msgid ":zeek:id:`ssl_extension_server_name`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:36
+msgid "Generated for an SSL/TLS Server Name extension."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:37
+msgid ":zeek:id:`ssl_extension_signature_algorithm`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:37
+msgid "Generated for an Signature Algorithms extension."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:38
+msgid ":zeek:id:`ssl_extension_signed_certificate_timestamp`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:38
+msgid ""
+"Generated for the signed_certificate_timestamp TLS extension as defined "
+"in :rfc:`6962`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:40
+msgid ":zeek:id:`ssl_extension_supported_versions`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:40
+msgid "Generated for an TLS Supported Versions extension."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:41
+msgid ":zeek:id:`ssl_handshake_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:41
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:631
+msgid "This event is raised for each unencrypted SSL/TLS handshake message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:42
+msgid ":zeek:id:`ssl_heartbeat`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:42
+msgid ""
+"Generated for SSL/TLS heartbeat messages that are sent before session "
+"encryption starts."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:44
+msgid ":zeek:id:`ssl_plaintext_data`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:44
+msgid ""
+"Generated for SSL/TLS messages that are sent before full session "
+"encryption starts."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:46
+msgid ":zeek:id:`ssl_rsa_client_pms`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:46
+msgid "Generated if a client uses RSA key exchange."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:47
+msgid ":zeek:id:`ssl_server_hello`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:47
+msgid "Generated for an SSL/TLS server's initial *hello* message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:48
+msgid ":zeek:id:`ssl_server_signature`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:48
+msgid "Generated if a server uses a non-anonymous DHE or ECDHE cipher suite."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:49
+msgid ":zeek:id:`ssl_session_ticket_handshake`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:49
+msgid ""
+"Generated for SSL/TLS handshake messages that are a part of the "
+"stateless-server session resumption mechanism."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:51
+msgid ":zeek:id:`ssl_stapled_ocsp`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:51
+msgid ""
+"This event contains the OCSP response contained in a Certificate Status "
+"Request message, when the client requested OCSP stapling and the server "
+"supports it."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:57
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:62
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, level: :zeek:type:`count`, desc: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:64
+msgid ""
+"Generated for SSL/TLS alert records. SSL/TLS sessions start with an "
+"unencrypted handshake, and Zeek extracts as much information out of that "
+"as it can. If during that handshake, an endpoint encounters a fatal "
+"error, it sends an *alert* record, that in turn triggers this event. "
+"After an *alert*, any endpoint may close the connection immediately."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:70
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:116
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:279
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:738
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:823
+msgid ""
+"See `Wikipedia <http://en.wikipedia.org/wiki/Transport_Layer_Security>`__"
+" for more information about the SSL/TLS protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:74
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:98
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:120
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:166
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:184
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:209
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:227
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:250
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:283
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:300
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:332
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:358
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:385
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:411
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:438
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:464
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:489
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:516
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:543
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:569
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:611
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:634
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:658
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:692
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:720
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:742
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:793
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:827
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:848
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:77
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:101
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:253
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:303
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:335
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:361
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:388
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:492
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:519
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:546
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:572
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:614
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:637
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:661
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:695
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:851
+msgid "True if event is raised for originator side of the connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "level"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:80
+msgid ""
+"The severity level, as sent in the *alert*. The values are defined as "
+"part of the SSL/TLS protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "desc"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:84
+msgid ""
+"A numerical value identifying the cause of the *alert*. The values are "
+"defined as part of the SSL/TLS protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:92
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:94
+msgid ""
+"This event is raised when a SSL/TLS ChangeCipherSpec message is "
+"encountered before encryption begins. Traffic will be encrypted following"
+" this message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:109
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, version: "
+":zeek:type:`count`, record_version: :zeek:type:`count`, possible_ts: "
+":zeek:type:`time`, client_random: :zeek:type:`string`, session_id: "
+":zeek:type:`string`, ciphers: :zeek:type:`index_vec`, comp_methods: "
+":zeek:type:`index_vec`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:111
+msgid ""
+"Generated for an SSL/TLS client's initial *hello* message.  SSL/TLS "
+"sessions start with an unencrypted handshake, and Zeek extracts as much "
+"information out of that as it can. This event provides access to the "
+"initial information sent by the client."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "version"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:123
+msgid ""
+"The protocol version as extracted from the client's message.  The values "
+"are standardized as part of the SSL/TLS protocol. The "
+":zeek:id:`SSL::version_strings` table maps them to descriptive names."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "record_version"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:128
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:256
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:698
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:750
+msgid "TLS version given in the record layer of the message. Set to 0 for SSLv2."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "possible_ts"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:132
+msgid ""
+"The current time as sent by the client. Note that SSL/TLS does not "
+"require clocks to be set correctly, so treat with care."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "session_id"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:136
+msgid "The session ID sent by the client (if any)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "client_random"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:139
+msgid ""
+"The random value sent by the client. For version 2 connections, the "
+"client challenge is returned."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "ciphers"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:143
+msgid ""
+"The list of ciphers the client offered to use. The values are "
+"standardized as part of the SSL/TLS protocol. The "
+":zeek:id:`SSL::cipher_desc` table maps them to descriptive names."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "comp_methods"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:148
+msgid ""
+"The list of compression methods that the client offered to use. This "
+"value is not sent in TLSv1.3 or SSLv2."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:159
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`, Yc: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:161
+msgid ""
+"Generated if a client uses a DH-anon or DHE cipher suite. This event "
+"contains the client DH parameters contained in the ClientKeyExchange "
+"message as defined in :rfc:`5246`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "Yc"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:169
+msgid "The client's DH public key."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:177
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, p: :zeek:type:`string`, "
+"q: :zeek:type:`string`, Ys: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:179
+msgid ""
+"Generated if a server uses a DH-anon or DHE cipher suite. This event "
+"contains the server DH parameters, contained in the ServerKeyExchange "
+"message as defined in :rfc:`5246`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "p"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:187
+msgid "The DH prime modulus."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "q"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:190
+msgid "The DH generator."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "Ys"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:193
+msgid "The server's DH public key."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:202
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, point: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:204
+msgid ""
+"Generated if a client uses an ECDH-anon or ECDHE cipher suite. This event"
+" contains the client ECDH public value contained in the ClientKeyExchange"
+" message as defined in :rfc:`4492`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "point"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:212
+msgid "The client's ECDH public key."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:220
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, curve: "
+":zeek:type:`count`, point: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "curve"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:230
+msgid "The curve parameters."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:233
+msgid "The server's ECDH public key."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:241
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:682
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, record_version: :zeek:type:`count`, content_type: "
+":zeek:type:`count`, length: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:246
+msgid ""
+"Note that :zeek:id:`SSL::disable_analyzer_after_detection` has to be "
+"changed from its default to false for this event to be generated."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "content_type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:260
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:702
+msgid "message type as reported by TLS session layer. Not populated for SSLv2."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "length"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:264
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:706
+msgid "length of the entire message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:271
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:273
+msgid ""
+"Generated at the end of an SSL/TLS handshake. SSL/TLS sessions start with"
+" an unencrypted handshake, and Zeek extracts as much information out of "
+"that as it can. This event signals the time when an SSL/TLS has finished "
+"the handshake and its endpoints consider it as fully established. "
+"Typically, everything from now on will be encrypted."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:290
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, code: :zeek:type:`count`, val: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:292
+msgid ""
+"Generated for SSL/TLS extensions seen in an initial handshake.  SSL/TLS "
+"sessions start with an unencrypted handshake, and Zeek extracts as much "
+"information out of that as it can. This event provides access to any "
+"extensions either side sends as part of an extended *hello* message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:297
+msgid "Note that Zeek offers more specialized events for a few extensions."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "code"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:306
+msgid ""
+"The numerical code of the extension.  The values are standardized as part"
+" of the SSL/TLS protocol. The :zeek:id:`SSL::extensions` table maps them "
+"to descriptive names."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "val"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:311
+msgid "The raw extension value that was sent in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:322
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, protocols: :zeek:type:`string_vec`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:324
+msgid ""
+"Generated for an SSL/TLS Application-Layer Protocol Negotiation "
+"extension. This TLS extension is defined in draft-ietf-tls-"
+"applayerprotoneg and sent in the initial handshake. It contains the list "
+"of client supported application protocols by the client or the server, "
+"respectively."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:329
+msgid "At the moment it is mostly used to negotiate the use of SPDY / HTTP2."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "protocols"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:338
+msgid "List of supported application layer protocols."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:350
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, point_formats: :zeek:type:`index_vec`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:352
+msgid ""
+"Generated for an SSL/TLS Supported Point Formats extension. This TLS "
+"extension is defined in :rfc:`4492` and sent by the client and/or server "
+"in the initial handshake. It gives the list of elliptic curve point "
+"formats supported by the client."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "point_formats"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:364
+msgid "List of supported point formats."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:378
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:404
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, curves: :zeek:type:`index_vec`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:380
+msgid ""
+"Generated for an SSL/TLS Elliptic Curves extension. This TLS extension is"
+" defined in :rfc:`4492` and sent by the client in the initial handshake. "
+"It gives the list of elliptic curves supported by the client."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "curves"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:391
+msgid "List of supported elliptic curves."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:406
+msgid ""
+"Generated for a Key Share extension. This TLS extension is defined in "
+"TLS1.3-draft16 and sent by the client and the server in the initial "
+"handshake. It gives the list of named groups supported by the client and "
+"chosen by the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:414
+msgid "True if event is raised for the originator side of the connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:417
+msgid "List of supported/chosen named groups."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:430
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, identities: :zeek:type:`psk_identity_vec`, binders: "
+":zeek:type:`string_vec`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:434
+msgid ""
+"The extension lists the identities the client is willing to negotiate "
+"with the server; they can either be pre-shared or be based on previous "
+"handshakes."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:441
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:467
+msgid "True if event is raised for the originator side of the connection"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "identities"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:444
+msgid ""
+"A list of the identities the client is willing to negotiate with the "
+"server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "binders"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:447
+msgid "A series of HMAC values; for computation, see the TLS 1.3 RFC."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:459
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, selected_identity: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "selected_identity"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:470
+msgid ""
+"The identity the server chose as a 0-based index into the identities the "
+"client sent."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:483
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, modes: :zeek:type:`index_vec`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:485
+msgid ""
+"Generated for an TLS Pre-Shared Key Exchange Modes extension. This TLS "
+"extension is defined in the TLS 1.3 rfc and sent by the client in the "
+"initial handshake. It contains the list of Pre-Shared Key Exchange Modes "
+"that it supports."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "versions"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:495
+msgid "List of supported Pre-Shared Key Exchange Modes."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:507
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, names: :zeek:type:`string_vec`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:509
+msgid ""
+"Generated for an SSL/TLS Server Name extension. This SSL/TLS extension is"
+" defined in :rfc:`3546` and sent by the client in the initial handshake. "
+"It contains the name of the server it is contacting. This information can"
+" be used by the server to choose the correct certificate for the host the"
+" client wants to contact."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "names"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:522
+msgid "A list of server names (DNS hostnames)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:535
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, signature_algorithms: "
+":zeek:type:`signature_and_hashalgorithm_vec`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:537
+msgid ""
+"Generated for an Signature Algorithms extension. This TLS extension is "
+"defined in :rfc:`5246` and sent by the client in the initial handshake. "
+"It gives the list of signature and hash algorithms supported by the "
+"client."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "signature_algorithms"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:549
+msgid "List of supported signature and hash algorithm pairs."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:562
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, version: :zeek:type:`count`, logid: "
+":zeek:type:`string`, timestamp: :zeek:type:`count`, "
+"signature_and_hashalgorithm: :zeek:type:`SSL::SignatureAndHashAlgorithm`,"
+" signature: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:564
+msgid ""
+"Generated for the signed_certificate_timestamp TLS extension as defined "
+"in :rfc:`6962`. The extension is used to transmit signed proofs that are "
+"used for Certificate Transparency."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:575
+msgid ""
+"the version of the protocol to which the SCT conforms. Always should be 0"
+" (representing version 1)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "logid"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:579
+msgid "32 bit key id"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "timestamp"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:582
+msgid ""
+"the NTP Time when the entry was logged measured since the epoch, ignoring"
+" leap seconds, in milliseconds."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "signature_and_hashalgorithm"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:586
+msgid "signature and hash algorithm used for the digitally_signed struct"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "signature"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:590
+msgid "signature part of the digitally_signed struct"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:603
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, versions: :zeek:type:`index_vec`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:605
+msgid ""
+"Generated for an TLS Supported Versions extension. This TLS extension is "
+"defined in the TLS 1.3 rfc and sent by the client in the initial "
+"handshake. It contains the TLS versions that it supports. This informaion"
+" can be used by the server to choose the best TLS version o use."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:617
+msgid "List of supported TLS versions."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:629
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, msg_type: :zeek:type:`count`, length: "
+":zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "msg_type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:640
+msgid "Type of the handshake message that was seen."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:643
+msgid "Length of the handshake message that was seen."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:651
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, length: :zeek:type:`count`, heartbeat_type: "
+":zeek:type:`count`, payload_length: :zeek:type:`count`, payload: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:653
+msgid ""
+"Generated for SSL/TLS heartbeat messages that are sent before session "
+"encryption starts. Generally heartbeat messages should rarely be seen in "
+"normal TLS traffic. Heartbeats are described in :rfc:`6520`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:664
+msgid "length of the entire heartbeat message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "heartbeat_type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:667
+msgid "type of the heartbeat message. Per RFC, 1 = request, 2 = response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "payload_length"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:670
+msgid "length of the payload of the heartbeat message, according to packet field."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "payload"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:674
+msgid ""
+"payload contained in the heartbeat message. Size can differ from "
+"payload_length, if payload_length and actual packet length disagree."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:684
+msgid ""
+"Generated for SSL/TLS messages that are sent before full session "
+"encryption starts. Note that \"full encryption\" is a bit fuzzy, "
+"especially for TLSv1.3; here this event will be raised for early packets "
+"that are already using pre-encryption.  # This event is also used by Zeek"
+" internally to determine if the connection has been completely setup. "
+"This is necessary as TLS 1.3 does not have CCS anymore."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:713
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`, pms: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:715
+msgid ""
+"Generated if a client uses RSA key exchange. This event contains the "
+"client encrypted pre-master secret which is encrypted using the public "
+"key of the server's certificate as defined in :rfc:`5246`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "pms"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:723
+msgid "The encrypted pre-master secret."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:731
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, version: "
+":zeek:type:`count`, record_version: :zeek:type:`count`, possible_ts: "
+":zeek:type:`time`, server_random: :zeek:type:`string`, session_id: "
+":zeek:type:`string`, cipher: :zeek:type:`count`, comp_method: "
+":zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:733
+msgid ""
+"Generated for an SSL/TLS server's initial *hello* message. SSL/TLS "
+"sessions start with an unencrypted handshake, and Zeek extracts as much "
+"information out of that as it can. This event provides access to the "
+"initial information sent by the client."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:745
+msgid ""
+"The protocol version as extracted from the server's message. The values "
+"are standardized as part of the SSL/TLS protocol. The "
+":zeek:id:`SSL::version_strings` table maps them to descriptive names."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:754
+msgid ""
+"The current time as sent by the server. Note that SSL/TLS does not "
+"require clocks to be set correctly, so treat with care. This value is "
+"meaningless in SSLv2 and TLSv1.3."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:759
+msgid ""
+"The session ID as sent back by the server (if any). This value is not "
+"sent in TLSv1.3."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "server_random"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:763
+msgid ""
+"The random value sent by the server. For version 2 connections, the "
+"connection-id is returned. Note - the full 32 bytes are included in "
+"server_random. This means that the 4 bytes present in possible_ts are "
+"repeated; if you do not want this behavior ignore the first 4 bytes."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "cipher"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:769
+msgid ""
+"The cipher chosen by the server.  The values are standardized as part of "
+"the SSL/TLS protocol. The :zeek:id:`SSL::cipher_desc` table maps them to "
+"descriptive names."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "comp_method"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:774
+msgid ""
+"The compression method chosen by the client. The values are standardized "
+"as part of the SSL/TLS protocol. This value is not sent in TLSv1.3 or "
+"SSLv2."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:786
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, "
+"signature_and_hashalgorithm: :zeek:type:`SSL::SignatureAndHashAlgorithm`,"
+" signature: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:788
+msgid ""
+"Generated if a server uses a non-anonymous DHE or ECDHE cipher suite. "
+"This event contains the server signature over the key exchange parameters"
+" contained in the ServerKeyExchange message as defined in :rfc:`4492` and"
+" :rfc:`5246`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:796
+msgid ""
+"signature and hash algorithm used for the digitally_signed struct. This "
+"field is only present starting with TLSv1.2 and DTLSv1.2. Earlier "
+"versions used a hardcoded hash algorithm. For protocol versions below "
+"D(TLS)v1.2 this field is filled with an dummy value of 256."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:804
+msgid ""
+"Signature part of the digitally_signed struct. The private key "
+"corresponding to the certified public key in the server's certificate "
+"message is used for signing."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:814
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, ticket_lifetime_hint: "
+":zeek:type:`count`, ticket: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:816
+msgid ""
+"Generated for SSL/TLS handshake messages that are a part of the "
+"stateless-server session resumption mechanism. SSL/TLS sessions start "
+"with an unencrypted handshake, and Zeek extracts as much information out "
+"of that as it can. This event is raised when an SSL/TLS server passes a "
+"session ticket to the client that can later be used for resuming the "
+"session. The mechanism is described in :rfc:`4507`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "ticket_lifetime_hint"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:830
+msgid ""
+"A hint from the server about how long the ticket should be stored by the "
+"client."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "ticket"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:834
+msgid "The raw ticket data."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:841
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, response: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:843
+msgid ""
+"This event contains the OCSP response contained in a Certificate Status "
+"Request message, when the client requested OCSP stapling and the server "
+"supports it. See description in :rfc:`6066`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst
+msgid "response"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek.rst:854
+msgid "OCSP data."
+msgstr ""
+

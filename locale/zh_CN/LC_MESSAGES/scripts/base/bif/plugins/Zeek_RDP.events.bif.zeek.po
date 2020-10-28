@@ -1,0 +1,468 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_RDP.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:37
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:15
+msgid ":zeek:id:`rdp_begin_encryption`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:42
+msgid "Generated when an RDP session becomes encrypted."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:16
+msgid ":zeek:id:`rdp_client_cluster_data`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:54
+msgid "Generated for client cluster data packets."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:17
+msgid ":zeek:id:`rdp_client_core_data`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:17
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:66
+msgid "Generated for MCS client requests."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:18
+msgid ":zeek:id:`rdp_client_network_data`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:18
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:78
+msgid "Generated for Client Network Data (TS_UD_CS_NET) packets"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:19
+msgid ":zeek:id:`rdp_client_security_data`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:19
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:90
+msgid "Generated for client security data packets."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:20
+msgid ":zeek:id:`rdp_connect_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:20
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:103
+msgid "Generated for X.224 client requests."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:21
+msgid ":zeek:id:`rdp_gcc_server_create_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:21
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:26
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:118
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:194
+msgid "Generated for MCS server responses."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:22
+msgid ":zeek:id:`rdp_native_encrypted_data`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:22
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:130
+msgid "Generated for each packet after RDP native encryption begins"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:23
+msgid ":zeek:id:`rdp_negotiation_failure`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:23
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:146
+msgid "Generated for RDP Negotiation Failure messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:24
+msgid ":zeek:id:`rdp_negotiation_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:24
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:162
+msgid "Generated for RDP Negotiation Response messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:25
+msgid ":zeek:id:`rdp_server_certificate`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:25
+msgid "Generated for a server certificate section."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:26
+msgid ":zeek:id:`rdp_server_security`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:27
+msgid ":zeek:id:`rdpeudp_data`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:27
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:209
+msgid ""
+"Generated when for data messages exchanged after a RDPEUDP connection "
+"establishes"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:28
+msgid ":zeek:id:`rdpeudp_established`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:28
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:227
+msgid "Generated when RDPEUDP connections are established (both sides SYN)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:29
+msgid ":zeek:id:`rdpeudp_syn`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:29
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:239
+msgid "Generated for RDPEUDP SYN UDP Datagram"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:30
+msgid ":zeek:id:`rdpeudp_synack`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:30
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:248
+msgid "Generated for RDPEUDP SYNACK UDP Datagram"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:35
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:40
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:160
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, security_protocol: "
+":zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:45
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:57
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:69
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:81
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:93
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:106
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:121
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:133
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:149
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:165
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:182
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:197
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:212
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:230
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:242
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:251
+msgid "The connection record for the underlying transport-layer session/flow."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "security_protocol"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:48
+msgid "The security protocol being used for the session."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:52
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, data: "
+":zeek:type:`RDP::ClientClusterData`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "data"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:60
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:96
+msgid "The data contained in the client security data structure."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:64
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, data: "
+":zeek:type:`RDP::ClientCoreData`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:72
+msgid "The data contained in the client core data structure."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:76
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, channels: "
+":zeek:type:`RDP::ClientChannelList`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "channels"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:84
+msgid "The channels that were requested"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:88
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, data: "
+":zeek:type:`RDP::ClientSecurityData`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:100
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, cookie: "
+":zeek:type:`string`, flags: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:101
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, cookie: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "cookie"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:109
+msgid "The cookie included in the request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "flags"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:112
+msgid "The flags set by the client."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:116
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, result: "
+":zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "result"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:124
+msgid "The 8-bit integer representing the GCC Conference Create Response result."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:128
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, orig: :zeek:type:`bool`, "
+"len: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:136
+msgid "True if the packet was sent by the originator of the connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "len"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:139
+msgid "The length of the encrypted data."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:143
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, failure_code: "
+":zeek:type:`count`, flags: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:144
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, failure_code: "
+":zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "failure_code"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:152
+msgid "The failure code sent by the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:155
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:171
+msgid "The flags set by the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:159
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, security_protocol: "
+":zeek:type:`count`, flags: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:168
+msgid "The security protocol selected by the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:175
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, cert_type: "
+":zeek:type:`count`, permanently_issued: :zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:177
+msgid ""
+"Generated for a server certificate section.  If multiple X.509 "
+"certificates are included in chain, this event will still only be "
+"generated a single time."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "cert_type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:185
+msgid "Indicates the type of certificate."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "permanently_issued"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:188
+msgid "Value will be true is the certificate(s) is permanent on the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:192
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, encryption_method: "
+":zeek:type:`count`, encryption_level: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "encryption_method"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:200
+msgid ""
+"The 32-bit integer representing the encryption method used in the "
+"connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "encryption_level"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:203
+msgid ""
+"The 32-bit integer representing the encryption level used in the "
+"connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:207
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, version: :zeek:type:`count`, data: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:215
+msgid ""
+"Whether the data was sent by the originator or responder of the "
+"connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst
+msgid "version"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:218
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:233
+msgid "Whether the connection is RDPEUDP1 or RDPEUDP2"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:221
+msgid "The payload of the packet. This is probably very non-performant."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:225
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, version: "
+":zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:237
+#: ../../scripts/base/bif/plugins/Zeek_RDP.events.bif.zeek.rst:246
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`)"
+msgstr ""
+

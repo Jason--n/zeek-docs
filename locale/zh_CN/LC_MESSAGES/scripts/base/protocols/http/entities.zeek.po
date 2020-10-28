@@ -1,0 +1,279 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:4
+msgid "base/protocols/http/entities.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:7
+msgid "Analysis and logging for MIME entities found in HTTP sessions."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:9
+msgid "HTTP"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:10
+msgid ""
+":doc:`base/frameworks/files </scripts/base/frameworks/files/index>`, "
+":doc:`base/protocols/http/main.zeek "
+"</scripts/base/protocols/http/main.zeek>`, :doc:`base/utils/files.zeek "
+"</scripts/base/utils/files.zeek>`, :doc:`base/utils/strings.zeek "
+"</scripts/base/utils/strings.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:15
+#: ../../scripts/base/protocols/http/entities.zeek.rst:81
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:17
+msgid ":zeek:id:`HTTP::max_files_orig`: :zeek:type:`count` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:17
+msgid "Maximum number of originator files to log."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:18
+msgid ":zeek:id:`HTTP::max_files_resp`: :zeek:type:`count` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:18
+msgid "Maximum number of responder files to log."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:22
+#: ../../scripts/base/protocols/http/entities.zeek.rst:103
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:24
+msgid ":zeek:type:`HTTP::Entity`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:28
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:30
+msgid ":zeek:type:`HTTP::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:32
+msgid ":zeek:type:`HTTP::Info`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:35
+msgid ""
+"orig_fuids: :zeek:type:`vector` of :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:35
+#: ../../scripts/base/protocols/http/entities.zeek.rst:44
+msgid "An ordered vector of file unique IDs."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:38
+msgid ""
+"orig_filenames: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:38
+msgid "An ordered vector of filenames from the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:41
+msgid ""
+"orig_mime_types: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:41
+#: ../../scripts/base/protocols/http/entities.zeek.rst:50
+msgid "An ordered vector of mime types."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:44
+msgid ""
+"resp_fuids: :zeek:type:`vector` of :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:47
+msgid ""
+"resp_filenames: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:47
+msgid "An ordered vector of filenames from the server."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:50
+msgid ""
+"resp_mime_types: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:53
+msgid "current_entity: :zeek:type:`HTTP::Entity` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:53
+msgid "The current entity."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:57
+msgid ""
+"orig_mime_depth: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:56
+msgid "Current number of MIME entities in the HTTP request message body."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:60
+msgid ""
+"resp_mime_depth: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:60
+msgid "Current number of MIME entities in the HTTP response message body."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:62
+msgid ":zeek:type:`fa_file`: :zeek:type:`record` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:64
+msgid ":zeek:type:`fa_file`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:66
+msgid "http: :zeek:type:`HTTP::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:70
+#: ../../scripts/base/protocols/http/entities.zeek.rst:113
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:72
+msgid ":zeek:id:`HTTP::max_files_policy`: :zeek:type:`hook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:72
+msgid ""
+"Called when reaching the max number of files across a given HTTP "
+"connection according to :zeek:see:`HTTP::max_files_orig` or "
+":zeek:see:`HTTP::max_files_resp`."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:79
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:84
+#: ../../scripts/base/protocols/http/entities.zeek.rst:94
+msgid ":zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:85
+#: ../../scripts/base/protocols/http/entities.zeek.rst:95
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:86
+#: ../../scripts/base/protocols/http/entities.zeek.rst:96
+msgid "``15``"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:88
+msgid ""
+"Maximum number of originator files to log. "
+":zeek:see:`HTTP::max_files_policy` even is called once this limit is "
+"reached to determine if it's enforced."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:98
+msgid ""
+"Maximum number of responder files to log. "
+":zeek:see:`HTTP::max_files_policy` even is called once this limit is "
+"reached to determine if it's enforced."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:106
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:108
+msgid "filename: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:109
+msgid "Filename for the entity if discovered from a header."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:116
+msgid ""
+":zeek:type:`hook` (f: :zeek:type:`fa_file`, is_orig: :zeek:type:`bool`) :"
+" :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/entities.zeek.rst:118
+msgid ""
+"Called when reaching the max number of files across a given HTTP "
+"connection according to :zeek:see:`HTTP::max_files_orig` or "
+":zeek:see:`HTTP::max_files_resp`.  Break from the hook early to signal "
+"that the file limit should not be applied."
+msgstr ""
+

@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/logging/postprocessors/index.rst:4
+msgid "Package: base/frameworks/logging/postprocessors"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/postprocessors/index.rst:6
+msgid "Support for postprocessors in the logging framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/postprocessors/index.rst:8
+msgid ":doc:`/scripts/base/frameworks/logging/postprocessors/__load__.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/postprocessors/index.rst:11
+msgid ":doc:`/scripts/base/frameworks/logging/postprocessors/scp.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/postprocessors/index.rst:13
+msgid ""
+"This script defines a postprocessing function that can be applied to a "
+"logging filter in order to automatically SCP (secure copy) a log stream "
+"(or a subset of it) to a remote host at configurable rotation time "
+"intervals.  Generally, to use this functionality you must handle the "
+":zeek:id:`zeek_init` event and do the following in your handler:"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/postprocessors/index.rst:20
+msgid ""
+"Create a new :zeek:type:`Log::Filter` record that defines a name/path, "
+"rotation interval, and set the ``postprocessor`` to "
+":zeek:id:`Log::scp_postprocessor`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/postprocessors/index.rst:23
+#: ../../scripts/base/frameworks/logging/postprocessors/index.rst:40
+msgid "Add the filter to a logging stream using :zeek:id:`Log::add_filter`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/postprocessors/index.rst:24
+msgid ""
+"Add a table entry to :zeek:id:`Log::scp_destinations` for the filter's "
+"writer/path pair which defines a set of :zeek:type:`Log::SCPDestination` "
+"records."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/postprocessors/index.rst:28
+msgid ":doc:`/scripts/base/frameworks/logging/postprocessors/sftp.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/postprocessors/index.rst:30
+msgid ""
+"This script defines a postprocessing function that can be applied to a "
+"logging filter in order to automatically SFTP a log stream (or a subset "
+"of it) to a remote host at configurable rotation time intervals.  "
+"Generally, to use this functionality you must handle the "
+":zeek:id:`zeek_init` event and do the following in your handler:"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/postprocessors/index.rst:37
+msgid ""
+"Create a new :zeek:type:`Log::Filter` record that defines a name/path, "
+"rotation interval, and set the ``postprocessor`` to "
+":zeek:id:`Log::sftp_postprocessor`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/postprocessors/index.rst:41
+msgid ""
+"Add a table entry to :zeek:id:`Log::sftp_destinations` for the filter's "
+"writer/path pair which defines a set of :zeek:type:`Log::SFTPDestination`"
+" records."
+msgstr ""
+

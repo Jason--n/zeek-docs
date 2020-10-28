@@ -1,0 +1,280 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:4
+msgid "base/frameworks/netcontrol/plugins/broker.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:7
+msgid ""
+"Broker plugin for the NetControl framework. Sends the raw data structures"
+" used in NetControl on to Broker to allow for easy handling, e.g., of "
+"command-line scripts."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:11
+msgid "NetControl"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:12
+msgid ""
+":doc:`base/frameworks/broker </scripts/base/frameworks/broker/index>`, "
+":doc:`base/frameworks/netcontrol/main.zeek "
+"</scripts/base/frameworks/netcontrol/main.zeek>`, "
+":doc:`base/frameworks/netcontrol/plugin.zeek "
+"</scripts/base/frameworks/netcontrol/plugin.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:15
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:17
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:58
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:19
+msgid ":zeek:type:`NetControl::BrokerConfig`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:19
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:90
+msgid ""
+"This record specifies the configuration that is passed to "
+":zeek:see:`NetControl::create_broker`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:23
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:25
+msgid ":zeek:type:`NetControl::PluginState`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:27
+msgid ":zeek:type:`NetControl::PluginState`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:30
+msgid ""
+"broker_config: :zeek:type:`NetControl::BrokerConfig` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:30
+msgid "OpenFlow controller for NetControl Broker plugin."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:32
+msgid "broker_id: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:33
+msgid "The ID of this broker instance - for the mapping to PluginStates."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:37
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:93
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:39
+msgid ":zeek:id:`NetControl::broker_add_rule`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:40
+msgid ":zeek:id:`NetControl::broker_remove_rule`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:41
+msgid ":zeek:id:`NetControl::broker_rule_added`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:42
+msgid ":zeek:id:`NetControl::broker_rule_error`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:43
+msgid ":zeek:id:`NetControl::broker_rule_exists`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:44
+msgid ":zeek:id:`NetControl::broker_rule_removed`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:45
+msgid ":zeek:id:`NetControl::broker_rule_timeout`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:49
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:130
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:51
+msgid ":zeek:id:`NetControl::create_broker`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:51
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:135
+msgid "Instantiates the broker plugin."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:56
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:61
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:64
+msgid "topic: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:64
+msgid "The broker topic to send events to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:67
+msgid "host: :zeek:type:`addr` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:67
+msgid "Broker host to connect to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:70
+msgid "bport: :zeek:type:`port` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:70
+msgid "Broker port to connect to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:73
+msgid ""
+"monitor: :zeek:type:`bool` :zeek:attr:`&default` = ``T`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:73
+msgid "Do we accept rules for the monitor path? Default true."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:76
+msgid ""
+"forward: :zeek:type:`bool` :zeek:attr:`&default` = ``T`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:76
+msgid "Do we accept rules for the forward path? Default true."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:88
+msgid ""
+"check_pred: :zeek:type:`function` (p: "
+":zeek:type:`NetControl::PluginState`, r: :zeek:type:`NetControl::Rule`) :"
+" :zeek:type:`bool` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:87
+msgid "bool &optional"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:79
+msgid "Predicate that is called on rule insertion or removal."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst
+msgid "p"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:82
+msgid "Current plugin state."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst
+msgid "r"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:85
+msgid "The rule to be inserted or removed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:88
+msgid "T if the rule can be handled by the current backend, F otherwise."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:96
+msgid ""
+":zeek:type:`event` (id: :zeek:type:`count`, r: "
+":zeek:type:`NetControl::Rule`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:101
+msgid ""
+":zeek:type:`event` (id: :zeek:type:`count`, r: "
+":zeek:type:`NetControl::Rule`, reason: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:106
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:111
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:116
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:121
+msgid ""
+":zeek:type:`event` (id: :zeek:type:`count`, r: "
+":zeek:type:`NetControl::Rule`, msg: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:126
+msgid ""
+":zeek:type:`event` (id: :zeek:type:`count`, r: "
+":zeek:type:`NetControl::Rule`, i: :zeek:type:`NetControl::FlowInfo`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/plugins/broker.zeek.rst:133
+msgid ""
+":zeek:type:`function` (config: :zeek:type:`NetControl::BrokerConfig`, "
+"can_expire: :zeek:type:`bool`) : :zeek:type:`NetControl::PluginState`"
+msgstr ""
+

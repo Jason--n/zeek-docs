@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/utils/patterns.zeek.rst:4
+msgid "base/utils/patterns.zeek"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:7
+msgid "Functions for creating and working with patterns."
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:9
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:14
+#: ../../scripts/base/utils/patterns.zeek.rst:33
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:16
+msgid ":zeek:type:`PatternMatchResult`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:20
+#: ../../scripts/base/utils/patterns.zeek.rst:49
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:22
+msgid ":zeek:id:`match_pattern`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:22
+msgid ""
+"Matches the given pattern against the given string, returning a "
+":zeek:type:`PatternMatchResult` record."
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:24
+msgid ":zeek:id:`set_to_regex`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:24
+msgid ""
+"Given a pattern as a string with two tildes (~~) contained in it, it will"
+" return a pattern with string set's elements OR'd together where the "
+"double-tilde was given."
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:31
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:36
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:39
+msgid "matched: :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:39
+msgid "T if a match was found, F otherwise."
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:42
+msgid "str: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:42
+msgid "Portion of string that first matched."
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:44
+msgid "off: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:45
+msgid "1-based offset where match starts."
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:52
+msgid ""
+":zeek:type:`function` (s: :zeek:type:`string`, p: :zeek:type:`pattern`) :"
+" :zeek:type:`PatternMatchResult`"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:54
+msgid ""
+"Matches the given pattern against the given string, returning a "
+":zeek:type:`PatternMatchResult` record. For example: "
+"``match_pattern(\"foobar\", /o*[a-k]/)`` returns ``[matched=T, str=f, "
+"off=1]``,  because the *first* match is for zero o's followed by an "
+"[a-k], but ``match_pattern(\"foobar\", /o+[a-k]/)`` returns ``[matched=T,"
+" str=oob, off=2]``."
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst
+msgid "s"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:62
+msgid "a string to match against."
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst
+msgid "p"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:65
+msgid "a pattern to match."
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:68
+msgid "a record indicating the match status."
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:72
+msgid ""
+":zeek:type:`function` (ss: :zeek:type:`set` [:zeek:type:`string`], pat: "
+":zeek:type:`string`) : :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:74
+msgid ""
+"Given a pattern as a string with two tildes (~~) contained in it, it will"
+" return a pattern with string set's elements OR'd together where the "
+"double-tilde was given.  Examples:"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst
+msgid "ss"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:86
+msgid "a set of strings to OR together."
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst
+msgid "pat"
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:89
+msgid ""
+"the pattern containing a \"~~\"  in it.  If a literal backslash is "
+"included, it needs to be escaped with another backslash due to Zeek's "
+"string parsing reducing it to a single backslash upon rendering."
+msgstr ""
+
+#: ../../scripts/base/utils/patterns.zeek.rst:94
+msgid "the input pattern with \"~~\" replaced by OR'd elements of input set."
+msgstr ""
+

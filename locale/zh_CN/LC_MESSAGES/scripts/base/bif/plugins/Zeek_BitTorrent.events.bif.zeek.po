@@ -1,0 +1,265 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_BitTorrent.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:39
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:15
+msgid ":zeek:id:`bittorrent_peer_bitfield`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:17
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:18
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:19
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:20
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:21
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:22
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:23
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:24
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:25
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:26
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:27
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:28
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:29
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:30
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:31
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:32
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:44
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:59
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:74
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:89
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:104
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:119
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:134
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:149
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:164
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:179
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:194
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:209
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:224
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:239
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:254
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:269
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:284
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:299
+msgid "TODO."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:16
+msgid ":zeek:id:`bittorrent_peer_cancel`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:17
+msgid ":zeek:id:`bittorrent_peer_choke`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:18
+msgid ":zeek:id:`bittorrent_peer_handshake`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:19
+msgid ":zeek:id:`bittorrent_peer_have`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:20
+msgid ":zeek:id:`bittorrent_peer_interested`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:21
+msgid ":zeek:id:`bittorrent_peer_keep_alive`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:22
+msgid ":zeek:id:`bittorrent_peer_not_interested`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:23
+msgid ":zeek:id:`bittorrent_peer_piece`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:24
+msgid ":zeek:id:`bittorrent_peer_port`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:25
+msgid ":zeek:id:`bittorrent_peer_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:26
+msgid ":zeek:id:`bittorrent_peer_unchoke`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:27
+msgid ":zeek:id:`bittorrent_peer_unknown`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:28
+msgid ":zeek:id:`bittorrent_peer_weird`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:29
+msgid ":zeek:id:`bt_tracker_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:30
+msgid ":zeek:id:`bt_tracker_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:31
+msgid ":zeek:id:`bt_tracker_response_not_ok`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:32
+msgid ":zeek:id:`bt_tracker_weird`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:37
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:42
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, bitfield: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:46
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:61
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:76
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:91
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:106
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:121
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:136
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:151
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:166
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:181
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:196
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:211
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:226
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:241
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:256
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:271
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:286
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:301
+msgid ""
+"See `Wikipedia <http://en.wikipedia.org/wiki/BitTorrent_(protocol)>`__ "
+"for more information about the BitTorrent protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:57
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:192
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, index: :zeek:type:`count`, begin: :zeek:type:`count`, "
+"length: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:72
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:117
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:132
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:147
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:207
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:87
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, reserved: :zeek:type:`string`, info_hash: "
+":zeek:type:`string`, peer_id: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:102
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, piece_index: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:162
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, index: :zeek:type:`count`, begin: :zeek:type:`count`, "
+"piece_length: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:177
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, listen_port: :zeek:type:`port`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:222
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, message_id: :zeek:type:`count`, data: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:237
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:297
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, msg: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:252
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, uri: :zeek:type:`string`,"
+" headers: :zeek:type:`bt_tracker_headers`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:267
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, status: "
+":zeek:type:`count`, headers: :zeek:type:`bt_tracker_headers`, peers: "
+":zeek:type:`bittorrent_peer_set`, benc: :zeek:type:`bittorrent_benc_dir`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek.rst:282
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, status: "
+":zeek:type:`count`, headers: :zeek:type:`bt_tracker_headers`)"
+msgstr ""
+

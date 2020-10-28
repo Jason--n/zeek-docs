@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:4
+msgid "base/protocols/smtp/entities.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:7
+msgid "Analysis and logging for MIME entities found in SMTP sessions."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:9
+msgid "SMTP"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:10
+msgid ""
+":doc:`base/frameworks/files </scripts/base/frameworks/files/index>`, "
+":doc:`base/protocols/smtp/main.zeek "
+"</scripts/base/protocols/smtp/main.zeek>`, :doc:`base/utils/files.zeek "
+"</scripts/base/utils/files.zeek>`, :doc:`base/utils/strings.zeek "
+"</scripts/base/utils/strings.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:15
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:42
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:17
+msgid ":zeek:type:`SMTP::Entity`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:21
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:23
+msgid ":zeek:type:`SMTP::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:25
+msgid ":zeek:type:`SMTP::Info`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:27
+msgid "entity: :zeek:type:`SMTP::Entity` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:28
+msgid "The current entity being seen."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:29
+msgid ":zeek:type:`SMTP::State`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:31
+msgid ":zeek:type:`SMTP::State`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:34
+msgid ""
+"mime_depth: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:34
+msgid "Track the number of MIME encoded files transferred during a session."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:40
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:45
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:48
+msgid "filename: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:48
+msgid "Filename for the entity if discovered from a header."
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:52
+msgid ""
+"excerpt: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&default` = "
+"``\"\"`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:51
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/smtp/entities-excerpt.zeek` "
+"is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/smtp/entities.zeek.rst:53
+msgid "The entity body excerpt."
+msgstr ""
+

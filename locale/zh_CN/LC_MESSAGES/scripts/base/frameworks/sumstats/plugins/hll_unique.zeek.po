@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:4
+msgid "base/frameworks/sumstats/plugins/hll_unique.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:7
+msgid "Calculate the number of unique values (using the HyperLogLog algorithm)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:9
+msgid "SumStats"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:10
+msgid ":doc:`base/frameworks/sumstats </scripts/base/frameworks/sumstats/index>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:15
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:17
+msgid ":zeek:type:`SumStats::Calculation`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:19
+msgid ":zeek:enum:`SumStats::HLL_UNIQUE`: Calculate the number of unique values."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:21
+msgid ":zeek:type:`SumStats::Reducer`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:23
+msgid ":zeek:type:`SumStats::Reducer`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:26
+msgid ""
+"hll_error_margin: :zeek:type:`double` :zeek:attr:`&default` = ``0.01`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:26
+msgid "The error margin for HLL."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:28
+msgid ""
+"hll_confidence: :zeek:type:`double` :zeek:attr:`&default` = ``0.95`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:29
+msgid "The confidence for HLL."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:30
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:43
+msgid ":zeek:type:`SumStats::ResultVal`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:32
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:45
+msgid ":zeek:type:`SumStats::ResultVal`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:36
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:49
+msgid ""
+"hll_unique: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:35
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:48
+msgid ""
+"If cardinality is being tracked, the number of unique items is tracked "
+"here."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:38
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:51
+msgid "card: :zeek:type:`opaque` of cardinality :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:40
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:53
+msgid "hll_error_margin: :zeek:type:`double` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:42
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:55
+msgid "hll_confidence: :zeek:type:`double` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/hll_unique.zeek.rst:60
+msgid "Detailed Interface"
+msgstr ""
+

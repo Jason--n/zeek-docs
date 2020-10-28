@@ -1,0 +1,198 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:4
+msgid "policy/frameworks/software/vulnerable.zeek"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:7
+msgid ""
+"Provides a variable to define vulnerable versions of software and if a "
+"version of that software is as old or older than the defined version a "
+"notice will be generated."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:11
+msgid "Software"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:12
+msgid ""
+":doc:`base/frameworks/control </scripts/base/frameworks/control/index>`, "
+":doc:`base/frameworks/notice </scripts/base/frameworks/notice/index>`, "
+":doc:`base/frameworks/software </scripts/base/frameworks/software/index>`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:15
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:17
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:52
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:19
+msgid ""
+":zeek:id:`Software::vulnerable_versions_update_endpoint`: "
+":zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:19
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:59
+msgid ""
+"The DNS zone where runtime vulnerable software updates will be loaded "
+"from."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:21
+msgid ""
+":zeek:id:`Software::vulnerable_versions_update_interval`: "
+":zeek:type:`interval` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:21
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:68
+msgid "The interval at which vulnerable versions should grab updates over DNS."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:26
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:72
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:28
+msgid ""
+":zeek:id:`Software::vulnerable_versions`: :zeek:type:`table` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:28
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:79
+msgid ""
+"This is a table of software versions indexed by the name of the software "
+"and a set of version ranges that are declared to be vulnerable for that "
+"software."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:34
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:84
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:36
+msgid ":zeek:type:`Software::VulnerableVersionRange`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:40
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:42
+msgid ":zeek:type:`Notice::Type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:44
+msgid ""
+":zeek:enum:`Software::Vulnerable_Version`: Indicates that a vulnerable "
+"version of software was detected."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:50
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:55
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:56
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:65
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:76
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:57
+msgid "``\"\"``"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:64
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:66
+msgid "``1.0 hr``"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:75
+msgid ""
+":zeek:type:`table` [:zeek:type:`string`] of :zeek:type:`set` "
+"[:zeek:type:`Software::VulnerableVersionRange`]"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:77
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:87
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:92
+msgid "min: :zeek:type:`Software::Version` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:90
+msgid ""
+"The minimal version of a vulnerable version range.  This field can be "
+"undefined if all previous versions of a piece of software are vulnerable."
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:98
+msgid "max: :zeek:type:`Software::Version`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/software/vulnerable.zeek.rst:95
+msgid ""
+"The maximum vulnerable version.  This field is deliberately not optional "
+"because a maximum vulnerable version must always be defined.  This "
+"assumption may become incorrect if all future versions of some software "
+"are to be considered vulnerable. :)"
+msgstr ""
+

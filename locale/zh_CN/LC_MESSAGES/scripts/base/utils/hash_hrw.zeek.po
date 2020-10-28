@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:4
+msgid "base/utils/hash_hrw.zeek"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:7
+msgid ""
+"An implementation of highest random weight (HRW) hashing, also called "
+"rendezvous hashing. See "
+"`<https://en.wikipedia.org/wiki/Rendezvous_hashing>`_."
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:11
+msgid "HashHRW"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:16
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:36
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:18
+msgid ":zeek:type:`HashHRW::Pool`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:18
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:43
+msgid "A collection of sites to distribute keys across."
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:19
+msgid ":zeek:type:`HashHRW::Site`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:19
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:56
+msgid ""
+"A site/node is a unique location to which you want a subset of keys to be"
+" distributed."
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:21
+msgid ":zeek:type:`HashHRW::SiteTable`: :zeek:type:`table`"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:21
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:63
+msgid "A table of sites, indexed by their id."
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:25
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:66
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:27
+msgid ":zeek:id:`HashHRW::add_site`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:27
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:71
+msgid "Add a site to a pool."
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:28
+msgid ":zeek:id:`HashHRW::get_site`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:28
+msgid "Returns: the site to which the key maps."
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:29
+msgid ":zeek:id:`HashHRW::rem_site`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:29
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:87
+msgid "Remove a site from a pool."
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:34
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:39
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:47
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:41
+msgid ""
+"sites: :zeek:type:`HashHRW::SiteTable` :zeek:attr:`&default` = ``{  }`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:51
+msgid "id: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:50
+msgid ""
+"A unique identifier for the site, should not exceed what can be contained"
+" in a 32-bit integer."
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:54
+msgid "user_data: :zeek:type:`any` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:54
+msgid "Other data to associate with the site."
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:61
+msgid ":zeek:type:`table` [:zeek:type:`count`] of :zeek:type:`HashHRW::Site`"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:69
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:85
+msgid ""
+":zeek:type:`function` (pool: :zeek:type:`HashHRW::Pool`, site: "
+":zeek:type:`HashHRW::Site`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:74
+msgid "F is the site is already in the pool, else T."
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:78
+msgid ""
+":zeek:type:`function` (pool: :zeek:type:`HashHRW::Pool`, key: "
+":zeek:type:`any`) : :zeek:type:`HashHRW::Site`"
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:81
+msgid "the site to which the key maps."
+msgstr ""
+
+#: ../../scripts/base/utils/hash_hrw.zeek.rst:90
+msgid "F if the site is not in the pool, else T."
+msgstr ""
+

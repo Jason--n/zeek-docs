@@ -1,0 +1,271 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:4
+msgid "base/protocols/dce-rpc/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:8
+msgid "DCE_RPC"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:9
+msgid ""
+":doc:`base/frameworks/dpd </scripts/base/frameworks/dpd/index>`, "
+":doc:`base/protocols/conn/removal-hooks.zeek "
+"</scripts/base/protocols/conn/removal-hooks.zeek>`, :doc:`base/protocols"
+"/dce-rpc/consts.zeek </scripts/base/protocols/dce-rpc/consts.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:14
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:58
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:16
+msgid ""
+":zeek:id:`DCE_RPC::ignored_operations`: :zeek:type:`table` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:16
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:88
+msgid ""
+"These are DCE-RPC operations that are ignored, typically due to the "
+"operations being noisy and low value on most networks."
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:21
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:92
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:23
+msgid ":zeek:type:`DCE_RPC::BackingState`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:24
+msgid ":zeek:type:`DCE_RPC::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:25
+msgid ":zeek:type:`DCE_RPC::State`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:29
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:31
+msgid ":zeek:id:`DPD::ignore_violations`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:32
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:34
+msgid ":zeek:enum:`DCE_RPC::LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:35
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:37
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:39
+msgid "dce_rpc: :zeek:type:`DCE_RPC::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:41
+msgid "dce_rpc_state: :zeek:type:`DCE_RPC::State` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:43
+msgid ""
+"dce_rpc_backing: :zeek:type:`table` [:zeek:type:`count`] of "
+":zeek:type:`DCE_RPC::BackingState` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:44
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:48
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:142
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:50
+msgid ":zeek:id:`DCE_RPC::finalize_dce_rpc`: :zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:50
+msgid "DCE_RPC finalization hook."
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:51
+msgid ":zeek:id:`DCE_RPC::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:56
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:61
+msgid ""
+":zeek:type:`table` [:zeek:type:`string`] of :zeek:type:`set` "
+"[:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:62
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:95
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:104
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:132
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:97
+msgid "info: :zeek:type:`DCE_RPC::Info`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:99
+msgid "state: :zeek:type:`DCE_RPC::State`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:107
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:107
+msgid "Timestamp for when the event happened."
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:110
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:110
+msgid "Unique ID for the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:113
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:113
+msgid "The connection's 4-tuple of endpoint addresses/ports."
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:118
+msgid "rtt: :zeek:type:`interval` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:116
+msgid ""
+"Round trip time from the request to the response. If either the request "
+"or response wasn't seen, this will be null."
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:121
+msgid "named_pipe: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:121
+msgid "Remote pipe name."
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:124
+msgid "endpoint: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:124
+msgid "Endpoint name looked up from the uuid."
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:126
+msgid "operation: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:127
+msgid "Operation seen in the call."
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:134
+msgid "uuid: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:136
+msgid "named_pipe: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:138
+msgid ""
+"ctx_to_uuid: :zeek:type:`table` [:zeek:type:`count`] of "
+":zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:145
+msgid ":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:147
+msgid ""
+"DCE_RPC finalization hook.  Remaining DCE_RPC info may get logged when "
+"it's called."
+msgstr ""
+
+#: ../../scripts/base/protocols/dce-rpc/main.zeek.rst:151
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

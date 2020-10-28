@@ -1,0 +1,223 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:4
+msgid "base/frameworks/intel/input.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:7
+msgid ""
+"Input handling for the intelligence framework. This script implements the"
+" import of intelligence data from files using the input framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:10
+msgid "Intel"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:11
+msgid ""
+":doc:`base/frameworks/intel/main.zeek "
+"</scripts/base/frameworks/intel/main.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:16
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:35
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:18
+msgid ":zeek:id:`Intel::path_prefix`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:18
+msgid "An optional path prefix for intel files."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:19
+msgid ":zeek:id:`Intel::read_files`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:19
+msgid "Intelligence files that will be read off disk."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:23
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:62
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:25
+msgid ":zeek:id:`Intel::read_entry`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:25
+msgid ""
+"This event is raised each time the intel framework reads a new line from "
+"an intel file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:27
+msgid ":zeek:id:`Intel::read_error`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:27
+msgid ""
+"This event is raised each time the input framework detects an error while"
+" reading the intel file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:33
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:38
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:39
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:54
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:40
+msgid "``\"\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:42
+msgid ""
+"An optional path prefix for intel files. This prefix can, but need not "
+"be, absolute. The default is to leave any filenames unchanged. This "
+"prefix has no effect if a read_file entry is an absolute path. This "
+"prefix gets applied _before_ entering the input framework, so if the "
+"prefix is absolute, the input framework won't munge it further. If it is "
+"relative, then any path_prefix specified in the input framework will "
+"apply additionally."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:53
+msgid ":zeek:type:`set` [:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:55
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:57
+msgid ""
+"Intelligence files that will be read off disk. The files are reread every"
+" time they are updated so updates must be atomic with \"mv\" instead of "
+"writing the file in place."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:65
+msgid ""
+":zeek:type:`event` (desc: :zeek:type:`Input::EventDescription`, tpe: "
+":zeek:type:`Input::Event`, item: :zeek:type:`Intel::Item`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:67
+msgid ""
+"This event is raised each time the intel framework reads a new line from "
+"an intel file. It is used in the intel framework but can also be used in "
+"custom scripts for further checks."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst
+msgid "desc"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:72
+msgid "The :zeek:type:`Input::EventDescription` record which generated the event."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst
+msgid "tpe"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:75
+msgid "The type of input event."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst
+msgid "item"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:78
+msgid "The intel item being read (of type :zeek:type:`Intel::Item`)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:83
+msgid ""
+":zeek:type:`event` (desc: :zeek:type:`Input::EventDescription`, message: "
+":zeek:type:`string`, level: :zeek:type:`Reporter::Level`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:85
+msgid ""
+"This event is raised each time the input framework detects an error while"
+" reading the intel file. It can be used to implement further checks in "
+"custom scripts. Errors can be of different levels (information, warning, "
+"errors)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:90
+msgid "The :zeek:type:`Input::EventDescription` record which generated the error."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst
+msgid "message"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:93
+msgid "An error message."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst
+msgid "level"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/input.zeek.rst:96
+msgid "The :zeek:type:`Reporter::Level` of the error."
+msgstr ""
+

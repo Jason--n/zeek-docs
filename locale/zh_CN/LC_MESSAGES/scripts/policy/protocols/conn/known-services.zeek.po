@@ -1,0 +1,434 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:4
+msgid "policy/protocols/conn/known-services.zeek"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:7
+msgid ""
+"This script logs and tracks active services.  For this script, an active "
+"service is defined as an IP address and port of a server for which a TCP "
+"handshake (SYN+ACK) is observed, assumed to have been done in the past "
+"(started seeing packets mid-connection, but the server is actively "
+"sending data), or sent at least one UDP packet. If a protocol name is "
+"found/known for service, that will be logged, but services whose names "
+"can't be determined are also still logged."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:15
+msgid "Known"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:16
+msgid ""
+":doc:`base/frameworks/cluster </scripts/base/frameworks/cluster/index>`, "
+":doc:`base/utils/directions-and-hosts.zeek </scripts/base/utils"
+"/directions-and-hosts.zeek>`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:19
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:21
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:84
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:23
+msgid ""
+":zeek:id:`Known::service_store_timeout`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:23
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:91
+msgid ""
+"The timeout interval to use for operations against "
+":zeek:see:`Known::service_store`."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:25
+msgid ":zeek:id:`Known::service_tracking`: :zeek:type:`Host` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:25
+msgid "The hosts whose services should be tracked and logged."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:26
+msgid ""
+":zeek:id:`Known::service_udp_requires_response`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:26
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:115
+msgid "Require UDP server to respond before considering it an \"active service\"."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:30
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:118
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:32
+msgid ""
+":zeek:id:`Known::service_store_expiry`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:32
+msgid "The expiry interval of new entries in :zeek:see:`Known::service_store`."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:33
+msgid ""
+":zeek:id:`Known::service_store_name`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:33
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:134
+msgid "The Broker topic name to use for :zeek:see:`Known::service_store`."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:34
+msgid ":zeek:id:`Known::use_service_store`: :zeek:type:`bool` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:34
+msgid "Toggles between different implementations of this script."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:38
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:148
+msgid "State Variables"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:40
+msgid ":zeek:id:`Known::service_store`: :zeek:type:`Cluster::StoreInfo`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:40
+msgid "Holds the set of all known services."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:41
+msgid ""
+":zeek:id:`Known::services`: :zeek:type:`table` "
+":zeek:attr:`&create_expire` = ``1.0 day``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:41
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:179
+msgid ""
+"Tracks the set of daily-detected services for preventing the logging of "
+"duplicates, but can also be inspected by other scripts for different "
+"purposes."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:47
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:189
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:49
+msgid ":zeek:type:`Known::AddrPortServTriplet`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:50
+msgid ":zeek:type:`Known::ServicesInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:50
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:220
+msgid ""
+"The record type which contains the column fields of the known-services "
+"log."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:55
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:57
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:57
+msgid "The known-services logging stream identifier."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:59
+msgid ":zeek:enum:`Known::SERVICES_LOG`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:60
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:62
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:64
+msgid ""
+"known_services_done: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:68
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:224
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:70
+msgid ":zeek:id:`Known::log_known_services`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:70
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:229
+msgid ""
+"Event that can be handled to access the :zeek:type:`Known::ServicesInfo` "
+"record as it is sent on to the logging framework."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:75
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:233
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:77
+msgid ":zeek:id:`Known::log_policy_services`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:77
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:238
+msgid "A default logging policy hook for the stream."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:82
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:87
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:121
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:88
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:97
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:112
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:122
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:131
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:139
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:89
+msgid "``15.0 secs``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:96
+msgid ":zeek:type:`Host`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:98
+msgid "``LOCAL_HOSTS``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst
+msgid "Redefinition"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:99
+msgid "from :doc:`/scripts/policy/tuning/track-all-assets.zeek`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:101
+msgid "``=``::"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:106
+msgid ""
+"The hosts whose services should be tracked and logged. See "
+":zeek:type:`Host` for possible choices."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:111
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:138
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:113
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:140
+msgid "``T``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:123
+msgid "``1.0 day``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:125
+msgid ""
+"The expiry interval of new entries in :zeek:see:`Known::service_store`. "
+"This also changes the interval at which services get logged."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:130
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:132
+msgid "``\"zeek/known/services\"``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:142
+msgid ""
+"Toggles between different implementations of this script. When true, use "
+"a Broker data store, else use a regular Zeek set with keys uniformly "
+"distributed over proxy nodes in cluster operation."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:151
+msgid ":zeek:type:`Cluster::StoreInfo`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:169
+msgid ""
+"Holds the set of all known services.  Keys in the store are "
+":zeek:type:`Known::AddrPortServTriplet` and their associated value is "
+"always the boolean value of \"true\"."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:175
+msgid ""
+":zeek:type:`table` [:zeek:type:`addr`, :zeek:type:`port`] of "
+":zeek:type:`set` [:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:176
+msgid ":zeek:attr:`&create_expire` = ``1.0 day``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:177
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:183
+msgid ""
+"In cluster operation, this table is uniformly distributed across proxy "
+"nodes."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:186
+msgid "This table is automatically populated and shouldn't be directly modified."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:192
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:203
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:194
+msgid "host: :zeek:type:`addr`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:196
+msgid "p: :zeek:type:`port`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:198
+msgid "serv: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:206
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:206
+msgid "The time at which the service was detected."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:209
+msgid "host: :zeek:type:`addr` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:209
+msgid "The host address on which the service is running."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:212
+msgid "port_num: :zeek:type:`port` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:212
+msgid "The port number on which the service is running."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:215
+msgid "port_proto: :zeek:type:`transport_proto` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:215
+msgid "The transport-layer protocol which the service uses."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:218
+msgid "service: :zeek:type:`set` [:zeek:type:`string`] :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:218
+msgid "A set of protocols that match the service's connection payloads."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:227
+msgid ":zeek:type:`event` (rec: :zeek:type:`Known::ServicesInfo`)"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-services.zeek.rst:236
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

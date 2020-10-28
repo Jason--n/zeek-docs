@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:4
+msgid "base/bif/logging.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:8
+msgid "Internal functions and types used by the logging framework."
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst
+msgid "Namespaces"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:10
+msgid "GLOBAL, Log"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:15
+#: ../../scripts/base/bif/logging.bif.zeek.rst:32
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:17
+msgid ":zeek:id:`Log::__add_filter`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:18
+msgid ":zeek:id:`Log::__create_stream`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:19
+msgid ":zeek:id:`Log::__disable_stream`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:20
+msgid ":zeek:id:`Log::__enable_stream`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:21
+msgid ":zeek:id:`Log::__flush`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:22
+msgid ":zeek:id:`Log::__remove_filter`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:23
+msgid ":zeek:id:`Log::__remove_stream`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:24
+msgid ":zeek:id:`Log::__set_buf`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:25
+msgid ":zeek:id:`Log::__write`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:30
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:35
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`Log::ID`, filter: "
+":zeek:type:`Log::Filter`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:40
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`Log::ID`, stream: "
+":zeek:type:`Log::Stream`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:45
+#: ../../scripts/base/bif/logging.bif.zeek.rst:50
+#: ../../scripts/base/bif/logging.bif.zeek.rst:55
+#: ../../scripts/base/bif/logging.bif.zeek.rst:65
+msgid ":zeek:type:`function` (id: :zeek:type:`Log::ID`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:60
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`Log::ID`, name: "
+":zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:70
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`Log::ID`, buffered: "
+":zeek:type:`bool`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/logging.bif.zeek.rst:75
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`Log::ID`, columns: "
+":zeek:type:`any`) : :zeek:type:`bool`"
+msgstr ""
+

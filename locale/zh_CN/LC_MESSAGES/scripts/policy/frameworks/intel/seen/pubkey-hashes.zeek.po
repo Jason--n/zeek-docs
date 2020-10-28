@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/frameworks/intel/seen/pubkey-hashes.zeek.rst:4
+msgid "policy/frameworks/intel/seen/pubkey-hashes.zeek"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/pubkey-hashes.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/pubkey-hashes.zeek.rst:7
+msgid ""
+":doc:`base/frameworks/intel </scripts/base/frameworks/intel/index>`, "
+":doc:`base/protocols/ssh </scripts/base/protocols/ssh/index>`, "
+":doc:`policy/frameworks/intel/seen/where-locations.zeek "
+"</scripts/policy/frameworks/intel/seen/where-locations.zeek>`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/pubkey-hashes.zeek.rst:10
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/pubkey-hashes.zeek.rst:13
+msgid "Detailed Interface"
+msgstr ""
+

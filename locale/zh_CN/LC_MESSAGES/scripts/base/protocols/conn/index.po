@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/conn/index.rst:4
+msgid "Package: base/protocols/conn"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/index.rst:6
+msgid "Support for connection (TCP, UDP, or ICMP) analysis."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/index.rst:8
+msgid ":doc:`/scripts/base/protocols/conn/removal-hooks.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/index.rst:10
+msgid ""
+"Adds a framework for registering \"connection removal hooks\". All "
+"registered hooks for a given connection get run within the "
+":zeek:see:`connection_state_remove` event for that connection. This "
+"functionality is useful from a performance/scaling concern: if every new "
+"protocol-analysis script uses :zeek:see:`connection_state_remove` to "
+"implement its finalization/cleanup logic, then all connections take the "
+"performance hit of dispatching that event, even if they aren't related to"
+" that specific protocol."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/index.rst:19
+msgid ":doc:`/scripts/base/protocols/conn/__load__.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/index.rst:22
+msgid ":doc:`/scripts/base/protocols/conn/main.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/index.rst:24
+msgid ""
+"This script manages the tracking/logging of general information regarding"
+" TCP, UDP, and ICMP traffic.  For UDP and ICMP, \"connections\" are to be"
+" interpreted using flow semantics (sequence of packets from a source "
+"host/port to a destination host/port).  Further, ICMP \"ports\" are to be"
+" interpreted as the source port meaning the ICMP message type and the "
+"destination port being the ICMP message code."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/index.rst:31
+msgid ":doc:`/scripts/base/protocols/conn/contents.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/index.rst:33
+msgid ""
+"This script can be used to extract either the originator's data or the "
+"responders data or both.  By default nothing is extracted, and in order "
+"to actually extract data the ``c$extract_orig`` and/or the "
+"``c$extract_resp`` variable must be set to ``T``.  One way to achieve "
+"this would be to handle the :zeek:id:`connection_established` event "
+"elsewhere and set the ``extract_orig`` and ``extract_resp`` options "
+"there. However, there may be trouble with the timing due to event queue "
+"delay."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/index.rst:43
+msgid ""
+"This script does not work well in a cluster context unless it has a "
+"remotely mounted disk to write the content files to."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/index.rst:46
+msgid ":doc:`/scripts/base/protocols/conn/inactivity.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/index.rst:48
+msgid ""
+"Adjust the inactivity timeouts for interactive services which could very "
+"possibly have long delays between packets."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/index.rst:51
+msgid ":doc:`/scripts/base/protocols/conn/polling.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/index.rst:53
+msgid ""
+"Implements a generic way to poll connections looking for certain features"
+" (e.g. monitor bytes transferred).  The specific feature of a connection "
+"to look for, the polling interval, and the code to execute if the feature"
+" is found are all controlled by user-defined callback functions."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/index.rst:58
+msgid ":doc:`/scripts/base/protocols/conn/thresholds.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/index.rst:60
+msgid ""
+"Implements a generic API to throw events when a connection crosses a "
+"fixed threshold of bytes or packets."
+msgstr ""
+

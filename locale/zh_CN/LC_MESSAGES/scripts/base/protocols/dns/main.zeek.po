@@ -1,0 +1,660 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:4
+msgid "base/protocols/dns/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:7
+msgid ""
+"Base DNS analysis script which tracks and logs DNS queries along with "
+"their responses."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:10
+msgid "DNS"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:11
+msgid ""
+":doc:`base/protocols/conn/removal-hooks.zeek "
+"</scripts/base/protocols/conn/removal-hooks.zeek>`, "
+":doc:`base/protocols/dns/consts.zeek "
+"</scripts/base/protocols/dns/consts.zeek>`, :doc:`base/utils/queue.zeek "
+"</scripts/base/utils/queue.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:16
+#: ../../scripts/base/protocols/dns/main.zeek.rst:77
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:18
+msgid ":zeek:id:`DNS::max_pending_msgs`: :zeek:type:`count` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:18
+#: ../../scripts/base/protocols/dns/main.zeek.rst:84
+msgid ""
+"Give up trying to match pending DNS queries or replies for a given "
+"query/transaction ID once this number of unmatched queries or replies is "
+"reached (this shouldn't happen unless either the DNS server/resolver is "
+"broken, Zeek is not seeing all the DNS traffic, or an AXFR query response"
+" is ongoing)."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:23
+msgid ""
+":zeek:id:`DNS::max_pending_query_ids`: :zeek:type:`count` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:23
+#: ../../scripts/base/protocols/dns/main.zeek.rst:96
+msgid ""
+"Give up trying to match pending DNS queries or replies across all "
+"query/transaction IDs once there is at least one unmatched query or reply"
+" across this number of different query IDs."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:29
+#: ../../scripts/base/protocols/dns/main.zeek.rst:101
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:31
+msgid ":zeek:type:`DNS::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:31
+#: ../../scripts/base/protocols/dns/main.zeek.rst:210
+msgid "The record type which contains the column fields of the DNS log."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:32
+msgid ":zeek:type:`DNS::PendingMessages`: :zeek:type:`table`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:32
+#: ../../scripts/base/protocols/dns/main.zeek.rst:216
+msgid ""
+"Yields a queue of :zeek:see:`DNS::Info` objects for a given DNS message "
+"query/transaction ID."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:34
+msgid ":zeek:type:`DNS::State`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:34
+#: ../../scripts/base/protocols/dns/main.zeek.rst:238
+msgid ""
+"A record type which tracks the status of DNS queries for a given "
+":zeek:type:`connection`."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:39
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:41
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:41
+msgid "The DNS logging stream identifier."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:43
+msgid ":zeek:enum:`DNS::LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:44
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:46
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:48
+msgid "dns: :zeek:type:`DNS::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:50
+msgid "dns_state: :zeek:type:`DNS::State` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:51
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:55
+#: ../../scripts/base/protocols/dns/main.zeek.rst:242
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:57
+msgid ":zeek:id:`DNS::log_dns`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:57
+#: ../../scripts/base/protocols/dns/main.zeek.rst:247
+msgid ""
+"An event that can be handled to access the :zeek:type:`DNS::Info` record "
+"as it is sent to the logging framework."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:62
+#: ../../scripts/base/protocols/dns/main.zeek.rst:251
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:64
+msgid ":zeek:id:`DNS::do_reply`: :zeek:type:`hook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:64
+#: ../../scripts/base/protocols/dns/main.zeek.rst:256
+msgid ""
+"This is called by the specific dns_*_reply events with a \"reply\" which "
+"may not represent the full data available from the resource record, but "
+"it's generally considered a summarization of the responses."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:68
+msgid ":zeek:id:`DNS::finalize_dns`: :zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:68
+msgid "DNS finalization hook."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:69
+msgid ":zeek:id:`DNS::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:69
+#: ../../scripts/base/protocols/dns/main.zeek.rst:283
+msgid "A default logging policy hook for the stream."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:70
+msgid ":zeek:id:`DNS::set_session`: :zeek:type:`hook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:70
+msgid "A hook that is called whenever a session is being set."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:75
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:80
+#: ../../scripts/base/protocols/dns/main.zeek.rst:92
+msgid ":zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:81
+#: ../../scripts/base/protocols/dns/main.zeek.rst:93
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:82
+#: ../../scripts/base/protocols/dns/main.zeek.rst:94
+msgid "``50``"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:104
+#: ../../scripts/base/protocols/dns/main.zeek.rst:221
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:108
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:107
+msgid ""
+"The earliest time at which a DNS protocol message over the associated "
+"connection is observed."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:112
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:111
+msgid ""
+"A unique identifier of the connection over which DNS messages are being "
+"transferred."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:115
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:115
+msgid "The connection's 4-tuple of endpoint addresses/ports."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:118
+msgid "proto: :zeek:type:`transport_proto` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:118
+msgid "The transport layer protocol of the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:123
+msgid "trans_id: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:121
+msgid ""
+"A 16-bit identifier assigned by the program that generated the DNS query."
+"  Also used in responses to match up replies to outstanding queries."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:128
+msgid "rtt: :zeek:type:`interval` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:126
+msgid ""
+"Round trip time for the query and response. This indicates the delay "
+"between when the request was seen until the answer started."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:131
+msgid "query: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:131
+msgid "The domain name that is the subject of the DNS query."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:134
+msgid "qclass: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:134
+msgid "The QCLASS value specifying the class of the query."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:137
+msgid "qclass_name: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:137
+msgid "A descriptive name for the class of the query."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:140
+msgid "qtype: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:140
+msgid "A QTYPE value specifying the type of the query."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:143
+msgid "qtype_name: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:143
+msgid "A descriptive name for the type of the query."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:146
+msgid "rcode: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:146
+msgid "The response code value in DNS response messages."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:149
+msgid "rcode_name: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:149
+msgid "A descriptive name for the response code value."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:154
+msgid ""
+"AA: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:152
+msgid ""
+"The Authoritative Answer bit for response messages specifies that the "
+"responding name server is an authority for the domain name in the "
+"question section."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:157
+msgid ""
+"TC: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:157
+msgid "The Truncation bit specifies that the message was truncated."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:161
+msgid ""
+"RD: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:160
+msgid ""
+"The Recursion Desired bit in a request message indicates that the client "
+"wants recursive service for this query."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:165
+msgid ""
+"RA: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:164
+msgid ""
+"The Recursion Available bit in a response message indicates that the name"
+" server supports recursive queries."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:169
+msgid ""
+"Z: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:168
+msgid "A reserved field that is usually zero in queries and responses."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:172
+msgid ""
+"answers: :zeek:type:`vector` of :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:172
+msgid "The set of resource descriptions in the query answer."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:176
+msgid ""
+"TTLs: :zeek:type:`vector` of :zeek:type:`interval` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:175
+msgid ""
+"The caching intervals of the associated RRs described by the *answers* "
+"field."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:179
+msgid ""
+"rejected: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = "
+"``F`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:179
+msgid "The DNS query was rejected by the server."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:183
+msgid "total_answers: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:182
+msgid "The total number of resource records in a reply message's answer section."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:187
+msgid "total_replies: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:186
+msgid ""
+"The total number of resource records in a reply message's answer, "
+"authority, and additional sections."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:190
+msgid ""
+"saw_query: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:190
+msgid "Whether the full DNS query has been seen."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:193
+msgid ""
+"saw_reply: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:193
+msgid "Whether the full DNS reply has been seen."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:198
+msgid ""
+"auth: :zeek:type:`set` [:zeek:type:`string`] :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:196
+#: ../../scripts/base/protocols/dns/main.zeek.rst:201
+msgid "(present if :doc:`/scripts/policy/protocols/dns/auth-addl.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:198
+msgid "Authoritative responses for the query."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:203
+msgid ""
+"addl: :zeek:type:`set` [:zeek:type:`string`] :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:203
+msgid "Additional responses for the query."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:208
+msgid ""
+"original_query: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:206
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/dns/log-original-query-"
+"case.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:208
+msgid "Query with original letter casing"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:214
+msgid ":zeek:type:`table` [:zeek:type:`count`] of :zeek:type:`Queue::Queue`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:228
+msgid "pending_query: :zeek:type:`DNS::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:224
+msgid ""
+"A single query that hasn't been matched with a response yet. Note this is"
+" maintained separate from the *pending_queries* field solely for "
+"performance reasons -- it's possible that *pending_queries* contains "
+"further queries for which a response has not yet been seen, even for the "
+"same transaction ID."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:232
+msgid "pending_queries: :zeek:type:`DNS::PendingMessages` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:231
+msgid ""
+"Indexed by query id, returns Info record corresponding to queries that "
+"haven't been matched with a response yet."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:236
+msgid "pending_replies: :zeek:type:`DNS::PendingMessages` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:235
+msgid ""
+"Indexed by query id, returns Info record corresponding to replies that "
+"haven't been matched with a query yet."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:245
+msgid ":zeek:type:`event` (rec: :zeek:type:`DNS::Info`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:254
+msgid ""
+":zeek:type:`hook` (c: :zeek:type:`connection`, msg: :zeek:type:`dns_msg`,"
+" ans: :zeek:type:`dns_answer`, reply: :zeek:type:`string`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:262
+msgid "The connection record for which to fill in DNS reply data."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst
+msgid "msg"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:265
+msgid "The DNS message header information for the response."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst
+msgid "ans"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:268
+msgid "The general information of a RR response."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst
+msgid "reply"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:271
+msgid "The specific response information according to RR type/class."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:275
+msgid ":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:277
+msgid ""
+"DNS finalization hook.  Remaining DNS info may get logged when it's "
+"called."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:281
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:287
+msgid ""
+":zeek:type:`hook` (c: :zeek:type:`connection`, msg: :zeek:type:`dns_msg`,"
+" is_query: :zeek:type:`bool`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:289
+msgid ""
+"A hook that is called whenever a session is being set. This can be used "
+"if additional initialization logic needs to happen when creating a new "
+"session value."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:294
+msgid "The connection involved in the new session."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:297
+msgid "The DNS message header information."
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst
+msgid "is_query"
+msgstr ""
+
+#: ../../scripts/base/protocols/dns/main.zeek.rst:300
+msgid "Indicator for if this is being called for a query or a response."
+msgstr ""
+

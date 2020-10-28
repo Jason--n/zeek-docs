@@ -1,0 +1,311 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:4
+msgid "base/protocols/snmp/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:7
+msgid "Enables analysis and logging of SNMP datagrams."
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:9
+msgid "SNMP"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:10
+msgid ""
+":doc:`base/protocols/conn/removal-hooks.zeek "
+"</scripts/base/protocols/conn/removal-hooks.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:15
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:58
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:17
+msgid ""
+":zeek:id:`SNMP::version_map`: :zeek:type:`table` :zeek:attr:`&redef` "
+":zeek:attr:`&default` = ``\"unknown\"``"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:17
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:74
+msgid "Maps an SNMP version integer to a human readable string."
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:21
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:77
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:23
+msgid ":zeek:type:`SNMP::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:23
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:127
+msgid "Information tracked per SNMP session."
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:27
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:29
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:31
+msgid ":zeek:enum:`SNMP::LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:32
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:34
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:36
+msgid "snmp: :zeek:type:`SNMP::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:37
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:41
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:130
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:43
+msgid ":zeek:id:`SNMP::log_snmp`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:43
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:135
+msgid ""
+"Event that can be handled to access the SNMP record as it is sent on to "
+"the logging framework."
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:48
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:139
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:50
+msgid ":zeek:id:`SNMP::finalize_snmp`: :zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:50
+msgid "SNMP finalization hook."
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:51
+msgid ":zeek:id:`SNMP::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:56
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:61
+msgid ":zeek:type:`table` [:zeek:type:`count`] of :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:62
+msgid ":zeek:attr:`&redef` :zeek:attr:`&default` = ``\"unknown\"``"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:80
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:83
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:83
+msgid "Timestamp of first packet belonging to the SNMP session."
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:86
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:86
+msgid "The unique ID for the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:90
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:89
+msgid ""
+"The connection's 5-tuple of addresses/ports (ports inherently include "
+"transport protocol information)"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:94
+msgid ""
+"duration: :zeek:type:`interval` :zeek:attr:`&log` :zeek:attr:`&default` ="
+" ``0 secs`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:93
+msgid ""
+"The amount of time between the first packet beloning to the SNMP session "
+"and the latest one seen."
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:97
+msgid "version: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:97
+msgid "The version of SNMP being used."
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:102
+msgid "community: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:100
+msgid ""
+"The community string of the first SNMP packet associated with the "
+"session.  This is used as part of SNMP's (v1 and v2c) "
+"administrative/security framework.  See :rfc:`1157` or :rfc:`1901`."
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:106
+msgid ""
+"get_requests: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&default` "
+"= ``0`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:105
+msgid ""
+"The number of variable bindings in GetRequest/GetNextRequest PDUs seen "
+"for the session."
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:110
+msgid ""
+"get_bulk_requests: :zeek:type:`count` :zeek:attr:`&log` "
+":zeek:attr:`&default` = ``0`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:109
+msgid ""
+"The number of variable bindings in GetBulkRequest PDUs seen for the "
+"session."
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:114
+msgid ""
+"get_responses: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&default`"
+" = ``0`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:113
+msgid ""
+"The number of variable bindings in GetResponse/Response PDUs seen for the"
+" session."
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:118
+msgid ""
+"set_requests: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&default` "
+"= ``0`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:117
+msgid "The number of variable bindings in SetRequest PDUs seen for the session."
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:121
+msgid ""
+"display_string: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:121
+msgid "A system description of the SNMP responder endpoint."
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:125
+msgid "up_since: :zeek:type:`time` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:124
+msgid "The time at which the SNMP responder endpoint claims it's been up since."
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:133
+msgid ":zeek:type:`event` (rec: :zeek:type:`SNMP::Info`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:142
+msgid ":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:144
+msgid ""
+"SNMP finalization hook.  Remaining SNMP info may get logged when it's "
+"called."
+msgstr ""
+
+#: ../../scripts/base/protocols/snmp/main.zeek.rst:148
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

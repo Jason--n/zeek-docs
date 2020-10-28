@@ -1,0 +1,210 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:4
+msgid "base/bif/file_analysis.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:8
+msgid "Internal functions and types used by the file analysis framework."
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst
+msgid "Namespaces"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:10
+msgid "Files, GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:15
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:36
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:17
+msgid ":zeek:id:`Files::__add_analyzer`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:17
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:41
+msgid ":zeek:see:`Files::add_analyzer`."
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:18
+msgid ":zeek:id:`Files::__analyzer_name`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:18
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:47
+msgid ":zeek:see:`Files::analyzer_name`."
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:19
+msgid ":zeek:id:`Files::__disable_reassembly`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:19
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:53
+msgid ":zeek:see:`Files::disable_reassembly`."
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:20
+msgid ":zeek:id:`Files::__enable_reassembly`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:20
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:59
+msgid ":zeek:see:`Files::enable_reassembly`."
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:21
+msgid ":zeek:id:`Files::__file_exists`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:21
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:65
+msgid ":zeek:see:`Files::file_exists`."
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:22
+msgid ":zeek:id:`Files::__lookup_file`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:22
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:71
+msgid ":zeek:see:`Files::lookup_file`."
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:23
+msgid ":zeek:id:`Files::__remove_analyzer`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:23
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:77
+msgid ":zeek:see:`Files::remove_analyzer`."
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:24
+msgid ":zeek:id:`Files::__set_reassembly_buffer`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:24
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:83
+msgid ":zeek:see:`Files::set_reassembly_buffer_size`."
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:25
+msgid ":zeek:id:`Files::__set_timeout_interval`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:25
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:89
+msgid ":zeek:see:`Files::set_timeout_interval`."
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:26
+msgid ":zeek:id:`Files::__stop`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:26
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:95
+msgid ":zeek:see:`Files::stop`."
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:27
+msgid ":zeek:id:`set_file_handle`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:27
+msgid ""
+"For use within a :zeek:see:`get_file_handle` handler to set a unique "
+"identifier to associate with the current input to the file analysis "
+"framework."
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:34
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:39
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:75
+msgid ""
+":zeek:type:`function` (file_id: :zeek:type:`string`, tag: "
+":zeek:type:`Files::Tag`, args: :zeek:type:`any`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:45
+msgid ":zeek:type:`function` (tag: :zeek:type:`Files::Tag`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:51
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:57
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:93
+msgid ":zeek:type:`function` (file_id: :zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:63
+msgid ":zeek:type:`function` (fuid: :zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:69
+msgid ":zeek:type:`function` (fuid: :zeek:type:`string`) : :zeek:type:`fa_file`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:81
+msgid ""
+":zeek:type:`function` (file_id: :zeek:type:`string`, max: "
+":zeek:type:`count`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:87
+msgid ""
+":zeek:type:`function` (file_id: :zeek:type:`string`, t: "
+":zeek:type:`interval`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:99
+msgid ":zeek:type:`function` (handle: :zeek:type:`string`) : :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:101
+msgid ""
+"For use within a :zeek:see:`get_file_handle` handler to set a unique "
+"identifier to associate with the current input to the file analysis "
+"framework.  Using an empty string for the handle signifies that the input"
+" will be ignored/discarded."
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst
+msgid "handle"
+msgstr ""
+
+#: ../../scripts/base/bif/file_analysis.bif.zeek.rst:107
+msgid "A string that uniquely identifies a file."
+msgstr ""
+

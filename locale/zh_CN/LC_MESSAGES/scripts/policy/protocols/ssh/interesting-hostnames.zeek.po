@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst:4
+msgid "policy/protocols/ssh/interesting-hostnames.zeek"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst:7
+msgid ""
+"This script will generate a notice if an apparent SSH login originates or"
+" heads to a host with a reverse hostname that looks suspicious.  By "
+"default, the regular expression to match \"interesting\" hostnames "
+"includes names that are typically used for infrastructure hosts like "
+"nameservers, mail servers, web servers and ftp servers."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst:13
+msgid "SSH"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst:14
+msgid ":doc:`base/frameworks/notice </scripts/base/frameworks/notice/index>`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst:17
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst:19
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst:39
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst:21
+msgid ""
+":zeek:id:`SSH::interesting_hostnames`: :zeek:type:`pattern` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst:21
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst:51
+msgid "Strange/bad host names to see successful SSH logins from or to."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst:25
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst:27
+msgid ":zeek:type:`Notice::Type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst:29
+msgid ""
+":zeek:enum:`SSH::Interesting_Hostname_Login`: Generated if a login "
+"originates or responds with a host where the reverse hostname lookup "
+"resolves to a name matched by the :zeek:id:`SSH::interesting_hostnames` "
+"regular expression."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst:37
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst:42
+msgid ":zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst:43
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssh/interesting-hostnames.zeek.rst
+msgid "Default"
+msgstr ""
+

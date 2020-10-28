@@ -1,0 +1,362 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:4
+msgid "base/frameworks/control/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:7
+msgid ""
+"The control framework provides the foundation for providing \"commands\" "
+"that can be taken remotely at runtime to modify a running Zeek instance "
+"or collect information from the running instance."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:11
+msgid "Control"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:16
+#: ../../scripts/base/frameworks/control/main.zeek.rst:59
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:18
+msgid ":zeek:id:`Control::arg`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:18
+#: ../../scripts/base/frameworks/control/main.zeek.rst:66
+msgid "This can be used by commands that take an argument."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:19
+msgid ":zeek:id:`Control::cmd`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:19
+msgid "The command that is being done."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:20
+msgid ":zeek:id:`Control::commands`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:20
+#: ../../scripts/base/frameworks/control/main.zeek.rst:94
+msgid ""
+"The commands that can currently be given on the command line for remote "
+"control."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:22
+msgid ""
+":zeek:id:`Control::controllee_listen`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:22
+msgid "Whether the controllee should call :zeek:see:`Broker::listen`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:23
+msgid ":zeek:id:`Control::host`: :zeek:type:`addr` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:23
+#: ../../scripts/base/frameworks/control/main.zeek.rst:112
+msgid "The address of the host that will be controlled."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:24
+msgid ":zeek:id:`Control::host_port`: :zeek:type:`port` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:24
+#: ../../scripts/base/frameworks/control/main.zeek.rst:120
+msgid "The port of the host that will be controlled."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:25
+msgid ":zeek:id:`Control::zone_id`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:25
+#: ../../scripts/base/frameworks/control/main.zeek.rst:128
+msgid ""
+"If :zeek:id:`Control::host` is a non-global IPv6 address and requires a "
+"specific :rfc:`4007` ``zone_id``, it can be set here."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:30
+#: ../../scripts/base/frameworks/control/main.zeek.rst:132
+msgid "Constants"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:32
+msgid ":zeek:id:`Control::ignore_ids`: :zeek:type:`set`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:32
+#: ../../scripts/base/frameworks/control/main.zeek.rst:138
+msgid "Variable IDs that are to be ignored by the update process."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:33
+msgid ":zeek:id:`Control::topic_prefix`: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:33
+#: ../../scripts/base/frameworks/control/main.zeek.rst:145
+msgid "The topic prefix used for exchanging control messages via Broker."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:37
+#: ../../scripts/base/frameworks/control/main.zeek.rst:148
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:39
+msgid ":zeek:id:`Control::configuration_update`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:39
+msgid ""
+"This event is a wrapper and alias for the "
+":zeek:id:`Control::configuration_update_request` event."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:41
+msgid ":zeek:id:`Control::configuration_update_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:41
+#: ../../scripts/base/frameworks/control/main.zeek.rst:161
+msgid ""
+"Inform the remote Zeek instance that it's configuration may have been "
+"updated."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:43
+msgid ":zeek:id:`Control::configuration_update_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:43
+#: ../../scripts/base/frameworks/control/main.zeek.rst:168
+msgid "Message in response to a configuration update request."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:44
+msgid ":zeek:id:`Control::id_value_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:44
+#: ../../scripts/base/frameworks/control/main.zeek.rst:174
+msgid "Event for requesting the value of an ID (a variable)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:45
+msgid ":zeek:id:`Control::id_value_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:45
+#: ../../scripts/base/frameworks/control/main.zeek.rst:180
+msgid ""
+"Event for returning the value of an ID after an "
+":zeek:id:`Control::id_value_request` event."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:47
+msgid ":zeek:id:`Control::net_stats_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:47
+#: ../../scripts/base/frameworks/control/main.zeek.rst:187
+msgid "Requests the current net_stats."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:48
+msgid ":zeek:id:`Control::net_stats_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:48
+#: ../../scripts/base/frameworks/control/main.zeek.rst:193
+msgid "Returns the current net_stats."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:49
+msgid ":zeek:id:`Control::peer_status_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:49
+#: ../../scripts/base/frameworks/control/main.zeek.rst:199
+msgid "Requests the current communication status."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:50
+msgid ":zeek:id:`Control::peer_status_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:50
+#: ../../scripts/base/frameworks/control/main.zeek.rst:205
+msgid "Returns the current communication status."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:51
+msgid ":zeek:id:`Control::shutdown_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:51
+#: ../../scripts/base/frameworks/control/main.zeek.rst:211
+msgid "Requests that the Zeek instance begins shutting down."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:52
+msgid ":zeek:id:`Control::shutdown_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:52
+#: ../../scripts/base/frameworks/control/main.zeek.rst:217
+msgid "Message in response to a shutdown request."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:57
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:62
+#: ../../scripts/base/frameworks/control/main.zeek.rst:70
+#: ../../scripts/base/frameworks/control/main.zeek.rst:124
+#: ../../scripts/base/frameworks/control/main.zeek.rst:142
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:63
+#: ../../scripts/base/frameworks/control/main.zeek.rst:71
+#: ../../scripts/base/frameworks/control/main.zeek.rst:80
+#: ../../scripts/base/frameworks/control/main.zeek.rst:100
+#: ../../scripts/base/frameworks/control/main.zeek.rst:109
+#: ../../scripts/base/frameworks/control/main.zeek.rst:117
+#: ../../scripts/base/frameworks/control/main.zeek.rst:125
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:64
+#: ../../scripts/base/frameworks/control/main.zeek.rst:72
+#: ../../scripts/base/frameworks/control/main.zeek.rst:126
+msgid "``\"\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:74
+msgid "The command that is being done.  It's typically set on the command line."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:79
+#: ../../scripts/base/frameworks/control/main.zeek.rst:135
+msgid ":zeek:type:`set` [:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:99
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:101
+msgid "``T``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:103
+msgid ""
+"Whether the controllee should call :zeek:see:`Broker::listen`. In a "
+"cluster, this isn't needed since the setup process calls it."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:108
+msgid ":zeek:type:`addr`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:110
+msgid "``0.0.0.0``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:116
+msgid ":zeek:type:`port`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:118
+msgid "``0/tcp``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:136
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:143
+msgid "``\"zeek/control\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:151
+#: ../../scripts/base/frameworks/control/main.zeek.rst:159
+#: ../../scripts/base/frameworks/control/main.zeek.rst:166
+#: ../../scripts/base/frameworks/control/main.zeek.rst:185
+#: ../../scripts/base/frameworks/control/main.zeek.rst:197
+#: ../../scripts/base/frameworks/control/main.zeek.rst:209
+#: ../../scripts/base/frameworks/control/main.zeek.rst:215
+msgid ":zeek:type:`event` ()"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:153
+msgid ""
+"This event is a wrapper and alias for the "
+":zeek:id:`Control::configuration_update_request` event. This event is "
+"also a primary hooking point for the control framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:172
+msgid ":zeek:type:`event` (id: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:178
+msgid ":zeek:type:`event` (id: :zeek:type:`string`, val: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/control/main.zeek.rst:191
+#: ../../scripts/base/frameworks/control/main.zeek.rst:203
+msgid ":zeek:type:`event` (s: :zeek:type:`string`)"
+msgstr ""
+

@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:4
+msgid "policy/protocols/smb/log-cmds.zeek"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:7
+msgid ""
+"Load this script to generate an SMB command log, smb_cmd.log. This is "
+"primarily useful for debugging."
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:10
+msgid "SMB"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:11
+msgid ":doc:`base/protocols/smb </scripts/base/protocols/smb/index>`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:16
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:39
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:18
+msgid ""
+":zeek:id:`SMB::ignored_command_statuses`: :zeek:type:`set` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:18
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:53
+msgid "The server response statuses which are *not* logged."
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:22
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:24
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:26
+msgid ":zeek:enum:`SMB::CMD_LOG`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:30
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:56
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:32
+msgid ":zeek:id:`SMB::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:37
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:42
+msgid ":zeek:type:`set` [:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:43
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smb/log-cmds.zeek.rst:59
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

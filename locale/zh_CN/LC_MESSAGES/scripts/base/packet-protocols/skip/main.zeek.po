@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:4
+msgid "base/packet-protocols/skip/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:8
+msgid "PacketAnalyzer::SKIP"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:13
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:23
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:15
+msgid ""
+":zeek:id:`PacketAnalyzer::SKIP::default_analyzer`: "
+":zeek:type:`PacketAnalyzer::Tag` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:15
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:30
+msgid "Default analyzer"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:16
+msgid ""
+":zeek:id:`PacketAnalyzer::SKIP::skip_bytes`: :zeek:type:`count` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:16
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:38
+msgid "Bytes to skip."
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:21
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:26
+msgid ":zeek:type:`PacketAnalyzer::Tag`"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:27
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:35
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:28
+msgid "``PacketAnalyzer::ANALYZER_IP``"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:34
+msgid ":zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/packet-protocols/skip/main.zeek.rst:36
+msgid "``0``"
+msgstr ""
+

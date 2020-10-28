@@ -1,0 +1,363 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/misc/stats.zeek.rst:4
+msgid "policy/misc/stats.zeek"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:7
+msgid "Log memory/packet/lag statistics."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:9
+msgid "Stats"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:10
+msgid ":doc:`base/frameworks/notice </scripts/base/frameworks/notice/index>`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:15
+#: ../../scripts/policy/misc/stats.zeek.rst:50
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:17
+msgid ""
+":zeek:id:`Stats::report_interval`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:17
+#: ../../scripts/policy/misc/stats.zeek.rst:57
+msgid "How often stats are reported."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:21
+#: ../../scripts/policy/misc/stats.zeek.rst:60
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:23
+msgid ":zeek:type:`Stats::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:27
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:29
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:31
+msgid ":zeek:enum:`Stats::LOG`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:35
+#: ../../scripts/policy/misc/stats.zeek.rst:150
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:37
+msgid ":zeek:id:`Stats::log_stats`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:37
+#: ../../scripts/policy/misc/stats.zeek.rst:155
+msgid "Event to catch stats as they are written to the logging stream."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:41
+#: ../../scripts/policy/misc/stats.zeek.rst:158
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:43
+msgid ":zeek:id:`Stats::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:48
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:53
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:54
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:55
+msgid "``5.0 mins``"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:63
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:66
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:66
+msgid "Timestamp for the measurement."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:69
+msgid "peer: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:69
+msgid "Peer that generated this log.  Mostly for clusters."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:72
+msgid "mem: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:72
+msgid "Amount of memory currently in use in MB."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:75
+msgid "pkts_proc: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:75
+msgid "Number of packets processed since the last stats interval."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:79
+msgid "bytes_recv: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:78
+msgid ""
+"Number of bytes received since the last stats interval if reading live "
+"traffic."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:83
+msgid "pkts_dropped: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:82
+msgid ""
+"Number of packets dropped since the last stats interval if reading live "
+"traffic."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:87
+msgid "pkts_link: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:86
+msgid ""
+"Number of packets seen on the link since the last stats interval if "
+"reading live traffic."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:91
+msgid "pkt_lag: :zeek:type:`interval` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:90
+msgid "Lag between the wall clock and packet timestamps if reading live traffic."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:94
+msgid "events_proc: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:94
+msgid "Number of events processed since the last stats interval."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:98
+msgid "events_queued: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:97
+msgid "Number of events that have been queued since the last stats interval."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:101
+msgid "active_tcp_conns: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:101
+msgid "TCP connections currently in memory."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:104
+msgid "active_udp_conns: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:104
+msgid "UDP connections currently in memory."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:107
+msgid "active_icmp_conns: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:107
+msgid "ICMP connections currently in memory."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:110
+msgid "tcp_conns: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:110
+msgid "TCP connections seen since last stats interval."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:113
+msgid "udp_conns: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:113
+msgid "UDP connections seen since last stats interval."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:116
+msgid "icmp_conns: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:116
+msgid "ICMP connections seen since last stats interval."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:119
+msgid "timers: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:119
+msgid "Number of timers scheduled since last stats interval."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:122
+msgid "active_timers: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:122
+msgid "Current number of scheduled timers."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:125
+msgid "files: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:125
+msgid "Number of files seen since last stats interval."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:128
+msgid "active_files: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:128
+msgid "Current number of files actively being seen."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:131
+msgid "dns_requests: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:131
+msgid "Number of DNS requests seen since last stats interval."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:134
+msgid "active_dns_requests: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:134
+msgid "Current number of DNS requests awaiting a reply."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:137
+msgid "reassem_tcp_size: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:137
+msgid "Current size of TCP data in reassembly."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:140
+msgid "reassem_file_size: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:140
+msgid "Current size of File data in reassembly."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:143
+msgid "reassem_frag_size: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:143
+msgid "Current size of packet fragment data in reassembly."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:145
+msgid "reassem_unknown_size: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:146
+msgid ""
+"Current size of unknown data in reassembly (this is only PIA buffer right"
+" now)."
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:153
+msgid ":zeek:type:`event` (rec: :zeek:type:`Stats::Info`)"
+msgstr ""
+
+#: ../../scripts/policy/misc/stats.zeek.rst:161
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

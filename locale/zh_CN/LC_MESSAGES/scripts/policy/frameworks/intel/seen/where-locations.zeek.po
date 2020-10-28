@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:4
+msgid "policy/frameworks/intel/seen/where-locations.zeek"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:7
+msgid ":doc:`base/frameworks/intel </scripts/base/frameworks/intel/index>`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:10
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:12
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:14
+msgid ":zeek:type:`Intel::Where`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:16
+msgid ":zeek:enum:`Conn::IN_ORIG`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:18
+msgid ":zeek:enum:`Conn::IN_RESP`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:20
+msgid ":zeek:enum:`DNS::IN_REQUEST`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:22
+msgid ":zeek:enum:`DNS::IN_RESPONSE`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:24
+msgid ":zeek:enum:`Files::IN_HASH`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:26
+msgid ":zeek:enum:`Files::IN_NAME`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:28
+msgid ":zeek:enum:`HTTP::IN_HOST_HEADER`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:30
+msgid ":zeek:enum:`HTTP::IN_REFERRER_HEADER`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:32
+msgid ":zeek:enum:`HTTP::IN_URL`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:34
+msgid ":zeek:enum:`HTTP::IN_USER_AGENT_HEADER`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:36
+msgid ":zeek:enum:`HTTP::IN_X_FORWARDED_FOR_HEADER`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:38
+msgid ":zeek:enum:`SMB::IN_FILE_NAME`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:40
+msgid ":zeek:enum:`SMTP::IN_CC`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:42
+msgid ":zeek:enum:`SMTP::IN_FROM`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:44
+msgid ":zeek:enum:`SMTP::IN_HEADER`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:46
+msgid ":zeek:enum:`SMTP::IN_MAIL_FROM`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:48
+msgid ":zeek:enum:`SMTP::IN_MESSAGE`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:50
+msgid ":zeek:enum:`SMTP::IN_RCPT_TO`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:52
+msgid ":zeek:enum:`SMTP::IN_RECEIVED_HEADER`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:54
+msgid ":zeek:enum:`SMTP::IN_REPLY_TO`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:56
+msgid ":zeek:enum:`SMTP::IN_TO`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:58
+msgid ":zeek:enum:`SMTP::IN_X_ORIGINATING_IP_HEADER`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:60
+msgid ":zeek:enum:`SSH::IN_SERVER_HOST_KEY`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:62
+msgid ":zeek:enum:`SSL::IN_SERVER_NAME`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:64
+msgid ":zeek:enum:`X509::IN_CERT`"
+msgstr ""
+
+#: ../../scripts/policy/frameworks/intel/seen/where-locations.zeek.rst:69
+msgid "Detailed Interface"
+msgstr ""
+

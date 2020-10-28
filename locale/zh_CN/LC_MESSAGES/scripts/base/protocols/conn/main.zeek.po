@@ -1,0 +1,590 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:4
+msgid "base/protocols/conn/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:7
+msgid ""
+"This script manages the tracking/logging of general information regarding"
+" TCP, UDP, and ICMP traffic.  For UDP and ICMP, \"connections\" are to be"
+" interpreted using flow semantics (sequence of packets from a source "
+"host/port to a destination host/port).  Further, ICMP \"ports\" are to be"
+" interpreted as the source port meaning the ICMP message type and the "
+"destination port being the ICMP message code."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:14
+msgid "Conn"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:15
+msgid ":doc:`base/utils/site.zeek </scripts/base/utils/site.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:18
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:20
+#: ../../scripts/base/protocols/conn/main.zeek.rst:55
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:22
+msgid ":zeek:type:`Conn::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:22
+#: ../../scripts/base/protocols/conn/main.zeek.rst:230
+msgid "The record type which contains column fields of the connection log."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:26
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:28
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:28
+msgid "The connection logging stream identifier."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:30
+msgid ":zeek:enum:`Conn::LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:31
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:33
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:35
+msgid "conn: :zeek:type:`Conn::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:39
+#: ../../scripts/base/protocols/conn/main.zeek.rst:233
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:41
+msgid ":zeek:id:`Conn::log_conn`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:41
+#: ../../scripts/base/protocols/conn/main.zeek.rst:238
+msgid ""
+"Event that can be handled to access the :zeek:type:`Conn::Info` record as"
+" it is sent on to the logging framework."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:46
+#: ../../scripts/base/protocols/conn/main.zeek.rst:242
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:48
+msgid ":zeek:id:`Conn::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:48
+#: ../../scripts/base/protocols/conn/main.zeek.rst:247
+msgid "A default logging policy hook for the stream."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:53
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:58
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:61
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:61
+msgid "This is the time of the first packet."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:64
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:64
+msgid "A unique identifier of the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:67
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:67
+msgid "The connection's 4-tuple of endpoint addresses/ports."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:70
+msgid "proto: :zeek:type:`transport_proto` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:70
+msgid "The transport layer protocol of the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:74
+msgid "service: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:73
+msgid ""
+"An identification of an application protocol being sent over the "
+"connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:78
+msgid "duration: :zeek:type:`interval` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:77
+msgid ""
+"How long the connection lasted.  For 3-way or 4-way connection tear-"
+"downs, this will not include the final ACK."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:83
+msgid "orig_bytes: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:81
+msgid ""
+"The number of payload bytes the originator sent. For TCP this is taken "
+"from sequence numbers and might be inaccurate (e.g., due to large "
+"connections)."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:87
+msgid "resp_bytes: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:86
+msgid "The number of payload bytes the responder sent. See *orig_bytes*."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:126
+msgid "conn_state: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:90
+msgid "Possible *conn_state* values:"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:92
+msgid "S0: Connection attempt seen, no reply."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:94
+msgid "S1: Connection established, not terminated."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:96
+msgid ""
+"SF: Normal establishment and termination. Note that this is the same "
+"symbol as for state S1. You can tell the two apart because for S1 there "
+"will not be any byte counts in the summary, while for SF there will be."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:101
+msgid "REJ: Connection attempt rejected."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:103
+msgid ""
+"S2: Connection established and close attempt by originator seen (but no "
+"reply from responder)."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:106
+msgid ""
+"S3: Connection established and close attempt by responder seen (but no "
+"reply from originator)."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:109
+msgid "RSTO: Connection established, originator aborted (sent a RST)."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:111
+msgid "RSTR: Responder sent a RST."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:113
+msgid ""
+"RSTOS0: Originator sent a SYN followed by a RST, we never saw a SYN-ACK "
+"from the responder."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:116
+msgid ""
+"RSTRH: Responder sent a SYN ACK followed by a RST, we never saw a SYN "
+"from the (purported) originator."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:119
+msgid ""
+"SH: Originator sent a SYN followed by a FIN, we never saw a SYN ACK from "
+"the responder (hence the connection was \"half\" open)."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:122
+msgid ""
+"SHR: Responder sent a SYN ACK followed by a FIN, we never saw a SYN from "
+"the originator."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:125
+msgid ""
+"OTH: No SYN seen, just midstream traffic (one example of this is a "
+"\"partial connection\" that was not later closed)."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:132
+msgid "local_orig: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:129
+msgid ""
+"If the connection is originated locally, this value will be T. If it was "
+"originated remotely it will be F.  In the case that the "
+":zeek:id:`Site::local_nets` variable is undefined, this field will be "
+"left empty at all times."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:138
+msgid "local_resp: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:135
+msgid ""
+"If the connection is responded to locally, this value will be T. If it "
+"was responded to remotely it will be F.  In the case that the "
+":zeek:id:`Site::local_nets` variable is undefined, this field will be "
+"left empty at all times."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:144
+msgid ""
+"missed_bytes: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&default` "
+"= ``0`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:141
+msgid ""
+"Indicates the number of bytes missed in content gaps, which is "
+"representative of packet loss.  A value other than zero will normally "
+"cause protocol analysis to fail but some analysis may have been completed"
+" prior to the packet loss."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:178
+msgid "history: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:147
+msgid ""
+"Records the state history of connections as a string of letters.  The "
+"meaning of those letters is:"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:151
+msgid "Letter"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:151
+msgid "Meaning"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:153
+msgid "s"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:153
+msgid "a SYN w/o the ACK bit set"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:154
+msgid "h"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:154
+msgid "a SYN+ACK (\"handshake\")"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:155
+msgid "a"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:155
+msgid "a pure ACK"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:156
+msgid "d"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:156
+msgid "packet with payload (\"data\")"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:157
+msgid "f"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:157
+msgid "packet with FIN bit set"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:158
+msgid "r"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:158
+msgid "packet with RST bit set"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:159
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:159
+msgid "packet with a bad checksum (applies to UDP too)"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:160
+msgid "g"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:160
+msgid "a content gap"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:161
+msgid "t"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:161
+msgid "packet with retransmitted payload"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:162
+msgid "w"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:162
+msgid "packet with a zero window advertisement"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:163
+msgid "i"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:163
+msgid "inconsistent packet (e.g. FIN+RST bits set)"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:164
+msgid "q"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:164
+msgid "multi-flag packet (SYN+FIN or SYN+RST bits set)"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:165
+msgid "^"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:165
+msgid "connection direction was flipped by Zeek's heuristic"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:168
+msgid ""
+"If the event comes from the originator, the letter is in upper-case; if "
+"it comes from the responder, it's in lower-case.  The 'a', 'd', 'i' and "
+"'q' flags are recorded a maximum of one time in either direction "
+"regardless of how many are actually seen.  'f', 'h', 'r' and 's' can be "
+"recorded multiple times for either direction if the associated sequence "
+"number differs from the last-seen packet of the same flag type. 'c', 'g',"
+" 't' and 'w' are recorded in a logarithmic fashion: the second instance "
+"represents that the event was seen (at least) 10 times; the third "
+"instance, 100 times; etc."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:182
+msgid "orig_pkts: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:181
+msgid ""
+"Number of packets that the originator sent. Only set if "
+":zeek:id:`use_conn_size_analyzer` = T."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:187
+msgid "orig_ip_bytes: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:185
+msgid ""
+"Number of IP level bytes that the originator sent (as seen on the wire, "
+"taken from the IP total_length header field). Only set if "
+":zeek:id:`use_conn_size_analyzer` = T."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:191
+msgid "resp_pkts: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:190
+msgid ""
+"Number of packets that the responder sent. Only set if "
+":zeek:id:`use_conn_size_analyzer` = T."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:196
+msgid "resp_ip_bytes: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:194
+msgid ""
+"Number of IP level bytes that the responder sent (as seen on the wire, "
+"taken from the IP total_length header field). Only set if "
+":zeek:id:`use_conn_size_analyzer` = T."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:201
+msgid ""
+"tunnel_parents: :zeek:type:`set` [:zeek:type:`string`] :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:199
+msgid ""
+"If this connection was over a tunnel, indicate the *uid* values for any "
+"encapsulating parent connections used over the lifetime of this inner "
+"connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:206
+msgid "orig_l2_addr: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:204
+#: ../../scripts/base/protocols/conn/main.zeek.rst:209
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/conn/mac-logging.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:206
+msgid "Link-layer address of the originator, if available."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:211
+msgid "resp_l2_addr: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:211
+msgid "Link-layer address of the responder, if available."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:216
+msgid "vlan: :zeek:type:`int` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:214
+#: ../../scripts/base/protocols/conn/main.zeek.rst:219
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/conn/vlan-logging.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:216
+msgid "The outer VLAN for this connection, if applicable."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:221
+msgid "inner_vlan: :zeek:type:`int` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:221
+msgid "The inner VLAN for this connection, if applicable."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:228
+msgid ""
+"speculative_service: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:224
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/conn/speculative-"
+"service.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:226
+msgid ""
+"Protocol that was determined by a matching signature after the beginning "
+"of a connection. In this situation no analyzer can be attached and hence "
+"the data cannot be analyzed nor the protocol can be confirmed."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:236
+msgid ":zeek:type:`event` (rec: :zeek:type:`Conn::Info`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/main.zeek.rst:245
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

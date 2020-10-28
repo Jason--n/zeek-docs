@@ -1,0 +1,4748 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:4
+msgid "base/bif/zeek.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:7
+msgid ""
+"A collection of built-in functions that implement a variety of things "
+"such as general programming algorithms, string processing, math "
+"functions, introspection, type conversion, file/directory manipulation, "
+"packet filtering, interprocess communication and controlling protocol "
+"analyzer behavior."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:13
+msgid ""
+"You'll find most of Zeek's built-in functions that aren't protocol-"
+"specific in this file."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:16
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:19
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:21
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:241
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:23
+msgid ":zeek:id:`__init_secondary_bifs`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:23
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:246
+msgid "An internal function that helps initialize BIFs."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:24
+msgid ":zeek:id:`active_file`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:24
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:252
+msgid "Checks whether a given file is open."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:25
+msgid ":zeek:id:`addr_to_counts`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:25
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:266
+msgid "Converts an :zeek:type:`addr` to an :zeek:type:`index_vec`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:26
+msgid ":zeek:id:`addr_to_ptr_name`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:26
+msgid "Converts an IP address to a reverse pointer name."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:27
+msgid ":zeek:id:`addr_to_subnet`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:27
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:296
+msgid "Converts a :zeek:type:`addr` to a :zeek:type:`subnet`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:28
+msgid ":zeek:id:`all_set`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:28
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:310
+msgid ""
+"Tests whether *all* elements of a boolean vector (``vector of bool``) are"
+" true."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:30
+msgid ":zeek:id:`anonymize_addr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:30
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:329
+msgid "Anonymizes an IP address."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:31
+msgid ":zeek:id:`any_set`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:31
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:354
+msgid ""
+"Tests whether a boolean vector (``vector of bool``) has *any* true "
+"element."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:33
+msgid ":zeek:id:`backtrace`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:33
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:369
+msgid ""
+"Returns a representation of the call stack as a vector of call stack "
+"elements, each containing call location information."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:35
+msgid ":zeek:id:`bytestring_to_count`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:35
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:380
+msgid "Converts a string of bytes to a :zeek:type:`count`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:36
+msgid ":zeek:id:`bytestring_to_double`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:36
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:396
+msgid ""
+"Converts a string of bytes (in network byte order) to a "
+":zeek:type:`double`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:37
+msgid ":zeek:id:`bytestring_to_hexstr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:37
+msgid "Converts a string of bytes into its hexadecimal representation."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:38
+msgid ":zeek:id:`calc_next_rotate`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:38
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:425
+msgid ""
+"Calculates the duration until the next time a file is to be rotated, "
+"based on a given rotate interval."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:40
+msgid ":zeek:id:`cat`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:40
+msgid "Returns the concatenation of the string representation of its arguments."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:41
+msgid ":zeek:id:`cat_sep`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:41
+msgid "Concatenates all arguments, with a separator placed between each one."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:42
+msgid ":zeek:id:`check_subnet`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:42
+msgid "Checks if a specific subnet is a member of a set/table[subnet]."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:43
+msgid ":zeek:id:`clear_table`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:43
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:489
+msgid "Removes all elements from a set or table."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:44
+msgid ":zeek:id:`close`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:44
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:498
+msgid "Closes an open file and flushes any buffered content."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:45
+msgid ":zeek:id:`compress_path`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:45
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:514
+msgid ""
+"Compresses a given path by removing '..'s and the parent directory it "
+"references and also removing dual '/'s and extraneous '/./'s."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:47
+msgid ":zeek:id:`connection_exists`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:47
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:527
+msgid "Checks whether a connection is (still) active."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:48
+msgid ":zeek:id:`continue_processing`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:48
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:541
+msgid "Resumes Zeek's packet processing."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:49
+msgid ":zeek:id:`convert_for_pattern`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:49
+msgid ""
+"Escapes a string so that it becomes a valid :zeek:type:`pattern` and can "
+"be used with the :zeek:id:`string_to_pattern`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:51
+msgid ":zeek:id:`count_to_port`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:51
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:567
+msgid ""
+"Converts a :zeek:type:`count` and ``transport_proto`` to a "
+":zeek:type:`port`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:52
+msgid ":zeek:id:`count_to_v4_addr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:52
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:584
+msgid "Converts a :zeek:type:`count` to an :zeek:type:`addr`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:53
+msgid ":zeek:id:`counts_to_addr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:53
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:598
+msgid "Converts an :zeek:type:`index_vec` to an :zeek:type:`addr`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:54
+msgid ":zeek:id:`current_analyzer`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:54
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:613
+msgid "Returns the ID of the analyzer which raised the current event."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:55
+msgid ":zeek:id:`current_time`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:55
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:623
+msgid "Returns the current wall-clock time."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:56
+msgid ":zeek:id:`decode_base64`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:56
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:640
+msgid "Decodes a Base64-encoded string."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:57
+msgid ":zeek:id:`decode_base64_conn`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:57
+msgid ""
+"Decodes a Base64-encoded string that was derived from processing a "
+"connection."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:58
+msgid ":zeek:id:`disable_analyzer`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:58
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:681
+msgid ""
+"Disables the analyzer which raised the current event (if the analyzer "
+"belongs to the given connection)."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:60
+msgid ":zeek:id:`do_profiling`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:60
+msgid "Enables detailed collection of profiling statistics."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:61
+msgid ":zeek:id:`double_to_count`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:61
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:730
+msgid "Converts a :zeek:type:`double` to a :zeek:type:`count`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:62
+msgid ":zeek:id:`double_to_interval`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:62
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:744
+msgid "Converts a :zeek:type:`double` to an :zeek:type:`interval`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:63
+msgid ":zeek:id:`double_to_time`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:63
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:758
+msgid "Converts a :zeek:type:`double` value to a :zeek:type:`time`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:64
+msgid ":zeek:id:`dump_current_packet`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:64
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:772
+msgid "Writes the current packet to a file."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:65
+msgid ":zeek:id:`dump_packet`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:65
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:786
+msgid "Writes a given packet to a file."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:66
+msgid ":zeek:id:`dump_rule_stats`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:66
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:803
+msgid ""
+"Write rule matcher statistics (DFA states, transitions, memory usage, "
+"cache hits/misses) to a file."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:68
+msgid ":zeek:id:`enable_raw_output`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:68
+msgid "Prevents escaping of non-ASCII characters when writing to a file."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:69
+msgid ":zeek:id:`encode_base64`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:69
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:828
+msgid "Encodes a Base64-encoded string."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:70
+msgid ":zeek:id:`entropy_test_add`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:70
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:846
+msgid "Adds data to an incremental entropy calculation."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:71
+msgid ":zeek:id:`entropy_test_finish`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:71
+msgid "Finishes an incremental entropy calculation."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:72
+msgid ":zeek:id:`entropy_test_init`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:72
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:880
+msgid "Initializes data structures for incremental entropy calculation."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:73
+msgid ":zeek:id:`enum_to_int`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:73
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:891
+msgid "Converts an :zeek:type:`enum` to an :zeek:type:`int`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:74
+msgid ":zeek:id:`exit`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:74
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:903
+msgid "Shuts down the Zeek process immediately."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:75
+msgid ":zeek:id:`exp`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:75
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:914
+msgid "Computes the exponential function."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:76
+msgid ":zeek:id:`file_magic`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:76
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:103
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:928
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1323
+msgid ""
+"Determines the MIME type of a piece of data using Zeek's file magic "
+"signatures."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:78
+msgid ":zeek:id:`file_mode`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:78
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:943
+msgid "Converts UNIX file permissions given by a mode to an ASCII string."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:79
+msgid ":zeek:id:`file_size`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:79
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:956
+msgid "Returns the size of a given file."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:80
+msgid ":zeek:id:`filter_subnet_table`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:80
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:968
+msgid ""
+"For a set[subnet]/table[subnet], create a new table that contains all "
+"entries that contain a given subnet."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:82
+msgid ":zeek:id:`find_entropy`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:82
+msgid "Performs an entropy test on the given data."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:83
+msgid ":zeek:id:`floor`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:83
+msgid ""
+"Computes the greatest integer less than the given :zeek:type:`double` "
+"value."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:84
+msgid ":zeek:id:`flush_all`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:84
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1047
+msgid "Flushes all open files to disk."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:85
+msgid ":zeek:id:`fmt`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:85
+msgid "Produces a formatted string à la ``printf``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:86
+msgid ":zeek:id:`fnv1a32`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:86
+msgid ""
+"Returns 32-bit digest of arbitrary input values using FNV-1a hash "
+"algorithm."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:87
+msgid ":zeek:id:`generate_all_events`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:87
+msgid ""
+"By default, zeek does not generate (raise) events that have not handled "
+"by any scripts."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:89
+msgid ":zeek:id:`get_conn_transport_proto`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:89
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1130
+msgid "Extracts the transport protocol from a connection."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:90
+msgid ":zeek:id:`get_current_packet`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:90
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1145
+msgid "Returns the currently processed PCAP packet."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:91
+msgid ":zeek:id:`get_current_packet_header`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:91
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1157
+msgid "Function to get the raw headers of the currently processed packet."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:92
+msgid ":zeek:id:`get_file_name`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:92
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1169
+msgid "Gets the filename associated with a file handle."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:93
+msgid ":zeek:id:`get_port_transport_proto`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:93
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1183
+msgid "Extracts the transport protocol from a :zeek:type:`port`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:94
+msgid ":zeek:id:`getenv`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:94
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1198
+msgid "Returns a system environment variable."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:95
+msgid ":zeek:id:`gethostname`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:95
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1213
+msgid "Returns the hostname of the machine Zeek runs on."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:96
+msgid ":zeek:id:`getpid`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:96
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1222
+msgid "Returns Zeek's process ID."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:97
+msgid ":zeek:id:`global_ids`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:97
+msgid "Generates a table with information about all global identifiers."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:98
+msgid ":zeek:id:`global_sizes`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:98
+msgid "Generates a table of the size of all global variables."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:99
+msgid ":zeek:id:`haversine_distance`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:99
+msgid ""
+"Calculates distance between two geographic locations using the haversine "
+"formula."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:101
+msgid ":zeek:id:`hexstr_to_bytestring`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:101
+msgid "Converts a hex-string into its binary representation."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:102
+msgid ":zeek:id:`hrw_weight`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:102
+msgid "Calculates a weight value for use in a Rendezvous Hashing algorithm."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:103
+msgid ":zeek:id:`identify_data`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:105
+msgid ":zeek:id:`install_dst_addr_filter`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:105
+msgid ""
+"Installs a filter to drop packets destined to a given IP address with a "
+"certain probability if none of a given set of TCP flags are set."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:107
+msgid ":zeek:id:`install_dst_net_filter`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:107
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1379
+msgid ""
+"Installs a filter to drop packets destined to a given subnet with a "
+"certain probability if none of a given set of TCP flags are set."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:109
+msgid ":zeek:id:`install_src_addr_filter`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:109
+msgid ""
+"Installs a filter to drop packets from a given IP source address with a "
+"certain probability if none of a given set of TCP flags are set."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:111
+msgid ":zeek:id:`install_src_net_filter`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:111
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1447
+msgid ""
+"Installs a filter to drop packets originating from a given subnet with a "
+"certain probability if none of a given set of TCP flags are set."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:113
+msgid ":zeek:id:`int_to_count`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:113
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1480
+msgid "Converts a (positive) :zeek:type:`int` to a :zeek:type:`count`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:114
+msgid ":zeek:id:`interval_to_double`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:114
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1492
+msgid "Converts an :zeek:type:`interval` to a :zeek:type:`double`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:115
+msgid ":zeek:id:`is_icmp_port`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:115
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1506
+msgid "Checks whether a given :zeek:type:`port` has ICMP as transport protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:116
+msgid ":zeek:id:`is_local_interface`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:116
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1520
+msgid "Checks whether a given IP address belongs to a local interface."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:117
+msgid ":zeek:id:`is_remote_event`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:117
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1532
+msgid "Checks whether the last raised event came from a remote peer."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:118
+msgid ":zeek:id:`is_tcp_port`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:118
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1541
+msgid "Checks whether a given :zeek:type:`port` has TCP as transport protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:119
+msgid ":zeek:id:`is_udp_port`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:119
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1555
+msgid "Checks whether a given :zeek:type:`port` has UDP as transport protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:120
+msgid ":zeek:id:`is_v4_addr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:120
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1569
+msgid "Returns whether an address is IPv4 or not."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:121
+msgid ":zeek:id:`is_v4_subnet`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:121
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1581
+msgid "Returns whether a subnet specification is IPv4 or not."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:122
+msgid ":zeek:id:`is_v6_addr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:122
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1593
+msgid "Returns whether an address is IPv6 or not."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:123
+msgid ":zeek:id:`is_v6_subnet`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:123
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1605
+msgid "Returns whether a subnet specification is IPv6 or not."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:124
+msgid ":zeek:id:`is_valid_ip`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:124
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1617
+msgid "Checks if a string is a valid IPv4 or IPv6 address."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:125
+msgid ":zeek:id:`ln`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:125
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1629
+msgid "Computes the natural logarithm of a number."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:126
+msgid ":zeek:id:`log10`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:126
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1643
+msgid "Computes the common logarithm of a number."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:127
+msgid ":zeek:id:`lookup_ID`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:127
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1657
+msgid "Returns the value of a global identifier."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:128
+msgid ":zeek:id:`lookup_addr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:128
+msgid "Issues an asynchronous reverse DNS lookup and delays the function result."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:129
+msgid ":zeek:id:`lookup_asn`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:129
+msgid "Performs an ASN lookup of an IP address."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:130
+msgid ":zeek:id:`lookup_connection`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:130
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1701
+msgid ""
+"Returns the :zeek:type:`connection` record for a given connection "
+"identifier."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:131
+msgid ":zeek:id:`lookup_hostname`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:131
+msgid "Issues an asynchronous DNS lookup and delays the function result."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:132
+msgid ":zeek:id:`lookup_hostname_txt`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:132
+msgid "Issues an asynchronous TEXT DNS lookup and delays the function result."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:133
+msgid ":zeek:id:`lookup_location`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:133
+msgid "Performs a geo-lookup of an IP address."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:134
+msgid ":zeek:id:`mask_addr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:134
+msgid "Masks an address down to the number of given upper bits."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:135
+msgid ":zeek:id:`match_signatures`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:135
+msgid "Manually triggers the signature engine for a given connection."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:136
+msgid ":zeek:id:`matching_subnets`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:136
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1790
+msgid "Gets all subnets that contain a given subnet from a set/table[subnet]."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:137
+msgid ":zeek:id:`md5_hash`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:137
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1805
+msgid "Computes the MD5 hash value of the provided list of arguments."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:138
+msgid ":zeek:id:`md5_hash_finish`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:138
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1824
+msgid "Returns the final MD5 digest of an incremental hash computation."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:139
+msgid ":zeek:id:`md5_hash_init`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:139
+msgid "Constructs an MD5 handle to enable incremental hash computation."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:140
+msgid ":zeek:id:`md5_hash_update`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:140
+msgid "Updates the MD5 value associated with a given index."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:141
+msgid ":zeek:id:`md5_hmac`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:141
+msgid "Computes an HMAC-MD5 hash value of the provided list of arguments."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:142
+msgid ":zeek:id:`mkdir`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:142
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1900
+msgid "Creates a new directory."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:143
+msgid ":zeek:id:`mmdb_open_asn_db`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:143
+msgid "Initializes MMDB for later use of lookup_asn."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:144
+msgid ":zeek:id:`mmdb_open_location_db`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:144
+msgid "Initializes MMDB for later use of lookup_location."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:145
+msgid ":zeek:id:`network_time`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:145
+msgid "Returns the timestamp of the last packet processed."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:146
+msgid ":zeek:id:`open`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:146
+msgid "Opens a file for writing."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:147
+msgid ":zeek:id:`open_for_append`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:147
+msgid "Opens a file for writing or appending."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:148
+msgid ":zeek:id:`order`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:148
+msgid ""
+"Returns the order of the elements in a vector according to some "
+"comparison function."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:150
+msgid ":zeek:id:`packet_source`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:150
+msgid "Returns: the packet source being read by Zeek."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:151
+msgid ":zeek:id:`paraglob_equals`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:151
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2021
+msgid "Compares two paraglobs for equality."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:152
+msgid ":zeek:id:`paraglob_init`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:152
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2038
+msgid "Initializes and returns a new paraglob."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:153
+msgid ":zeek:id:`paraglob_match`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:153
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2052
+msgid "Gets all the patterns inside the handle associated with an input string."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:154
+msgid ":zeek:id:`piped_exec`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:154
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2069
+msgid ""
+"Opens a program with ``popen`` and writes a given string to the returned "
+"stream to send it to the opened process's stdin."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:156
+msgid ":zeek:id:`port_to_count`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:156
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2087
+msgid "Converts a :zeek:type:`port` to a :zeek:type:`count`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:157
+msgid ":zeek:id:`preserve_prefix`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:157
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2101
+msgid "Preserves the prefix of an IP address in anonymization."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:158
+msgid ":zeek:id:`preserve_subnet`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:158
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2117
+msgid "Preserves the prefix of a subnet in anonymization."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:159
+msgid ":zeek:id:`print_raw`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:159
+msgid ""
+"Renders a sequence of values to a string of bytes and outputs them "
+"directly to ``stdout`` with no additional escape sequences added."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:161
+msgid ":zeek:id:`ptr_name_to_addr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:161
+msgid "Converts a reverse pointer name to an address."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:162
+msgid ":zeek:id:`rand`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:162
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2158
+msgid "Generates a random number."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:163
+msgid ":zeek:id:`raw_bytes_to_v4_addr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:163
+msgid "Converts a :zeek:type:`string` of bytes into an IPv4 address."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:164
+msgid ":zeek:id:`reading_live_traffic`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:164
+msgid ""
+"Checks whether Zeek reads traffic from one or more network interfaces (as"
+" opposed to from a network trace in a file)."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:166
+msgid ":zeek:id:`reading_traces`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:166
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2207
+msgid ""
+"Checks whether Zeek reads traffic from a trace file (as opposed to from a"
+" network interface)."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:168
+msgid ":zeek:id:`record_fields`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:168
+msgid "Generates metadata about a record's fields."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:169
+msgid ":zeek:id:`record_type_to_vector`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:169
+msgid ""
+"Converts a record type name to a vector of strings, where each element is"
+" the name of a record field."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:171
+msgid ":zeek:id:`remask_addr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:171
+msgid ""
+"Takes some top bits (such as a subnet address) from one address and the "
+"other bits (intra-subnet part) from a second address and merges them to "
+"get a new address."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:174
+msgid ":zeek:id:`rename`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:174
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2272
+msgid "Renames a file from src_f to dst_f."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:175
+msgid ":zeek:id:`resize`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:175
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2291
+msgid "Resizes a vector."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:176
+msgid ":zeek:id:`rmdir`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:176
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2306
+msgid "Removes a directory."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:177
+msgid ":zeek:id:`rotate_file`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:177
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2323
+msgid "Rotates a file."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:178
+msgid ":zeek:id:`rotate_file_by_name`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:178
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2338
+msgid "Rotates a file identified by its name."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:179
+msgid ":zeek:id:`routing0_data_to_addrs`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:179
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2353
+msgid ""
+"Converts the *data* field of :zeek:type:`ip6_routing` records that have "
+"*rtype* of 0 into a vector of addresses."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:181
+msgid ":zeek:id:`same_object`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:181
+msgid "Checks whether two objects reference the same internal object."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:182
+msgid ":zeek:id:`set_buf`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:182
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2384
+msgid "Alters the buffering behavior of a file."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:183
+msgid ":zeek:id:`set_inactivity_timeout`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:183
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2403
+msgid ""
+"Sets an individual inactivity timeout for a connection and thus overrides"
+" the global inactivity timeout."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:185
+msgid ":zeek:id:`set_record_packets`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:185
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2419
+msgid ""
+"Controls whether packet contents belonging to a connection should be "
+"recorded (when ``-w`` option is provided on the command line)."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:187
+msgid ":zeek:id:`setenv`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:187
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2447
+msgid "Sets a system environment variable."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:188
+msgid ":zeek:id:`sha1_hash`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:188
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2464
+msgid "Computes the SHA1 hash value of the provided list of arguments."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:189
+msgid ":zeek:id:`sha1_hash_finish`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:189
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2483
+msgid "Returns the final SHA1 digest of an incremental hash computation."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:190
+msgid ":zeek:id:`sha1_hash_init`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:190
+msgid "Constructs an SHA1 handle to enable incremental hash computation."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:191
+msgid ":zeek:id:`sha1_hash_update`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:191
+msgid "Updates the SHA1 value associated with a given index."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:192
+msgid ":zeek:id:`sha256_hash`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:192
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2544
+msgid "Computes the SHA256 hash value of the provided list of arguments."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:193
+msgid ":zeek:id:`sha256_hash_finish`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:193
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2563
+msgid "Returns the final SHA256 digest of an incremental hash computation."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:194
+msgid ":zeek:id:`sha256_hash_init`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:194
+msgid "Constructs an SHA256 handle to enable incremental hash computation."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:195
+msgid ":zeek:id:`sha256_hash_update`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:195
+msgid "Updates the SHA256 value associated with a given index."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:196
+msgid ":zeek:id:`skip_further_processing`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:196
+msgid ""
+"Informs Zeek that it should skip any further processing of the contents "
+"of a given connection."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:198
+msgid ":zeek:id:`sort`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:198
+msgid "Sorts a vector in place."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:199
+msgid ":zeek:id:`sqrt`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:199
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2665
+msgid "Computes the square root of a :zeek:type:`double`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:200
+msgid ":zeek:id:`srand`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:200
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2679
+msgid "Sets the seed for subsequent :zeek:id:`rand` calls."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:201
+msgid ":zeek:id:`strftime`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:201
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2695
+msgid "Formats a given time value according to a format string."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:202
+msgid ":zeek:id:`string_to_pattern`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:202
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2710
+msgid "Converts a :zeek:type:`string` into a :zeek:type:`pattern`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:203
+msgid ":zeek:id:`strptime`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:203
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2729
+msgid ""
+"Parse a textual representation of a date/time value into a ``time`` type "
+"value."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:204
+msgid ":zeek:id:`subnet_to_addr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:204
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2745
+msgid ""
+"Converts a :zeek:type:`subnet` to an :zeek:type:`addr` by extracting the "
+"prefix."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:206
+msgid ":zeek:id:`subnet_width`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:206
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2760
+msgid "Returns the width of a :zeek:type:`subnet`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:207
+msgid ":zeek:id:`suspend_processing`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:207
+msgid "Stops Zeek's packet processing."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:208
+msgid ":zeek:id:`syslog`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:208
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2784
+msgid "Send a string to syslog."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:209
+msgid ":zeek:id:`system`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:209
+msgid "Invokes a command via the ``system`` function of the OS."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:210
+msgid ":zeek:id:`system_env`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:210
+msgid ""
+"Invokes a command via the ``system`` function of the OS with a prepared "
+"environment."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:212
+msgid ":zeek:id:`terminate`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:212
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2838
+msgid "Gracefully shut down Zeek by terminating outstanding processing."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:213
+msgid ":zeek:id:`time_to_double`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:213
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2850
+msgid "Converts a :zeek:type:`time` value to a :zeek:type:`double`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:214
+msgid ":zeek:id:`to_addr`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:214
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2864
+msgid "Converts a :zeek:type:`string` to an :zeek:type:`addr`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:215
+msgid ":zeek:id:`to_count`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:215
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2880
+msgid "Converts a :zeek:type:`string` to a :zeek:type:`count`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:216
+msgid ":zeek:id:`to_double`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:216
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2895
+msgid "Converts a :zeek:type:`string` to a :zeek:type:`double`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:217
+msgid ":zeek:id:`to_int`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:217
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2909
+msgid "Converts a :zeek:type:`string` to an :zeek:type:`int`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:218
+msgid ":zeek:id:`to_json`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:218
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2923
+msgid "A function to convert arbitrary Zeek data into a JSON string."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:219
+msgid ":zeek:id:`to_port`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:219
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2941
+msgid "Converts a :zeek:type:`string` to a :zeek:type:`port`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:220
+msgid ":zeek:id:`to_subnet`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:220
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2955
+msgid "Converts a :zeek:type:`string` to a :zeek:type:`subnet`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:221
+msgid ":zeek:id:`type_name`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:221
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2971
+msgid "Returns the type name of an arbitrary Zeek variable."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:222
+msgid ":zeek:id:`uninstall_dst_addr_filter`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:222
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2983
+msgid "Removes a destination address filter."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:223
+msgid ":zeek:id:`uninstall_dst_net_filter`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:223
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3006
+msgid "Removes a destination subnet filter."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:224
+msgid ":zeek:id:`uninstall_src_addr_filter`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:224
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3029
+msgid "Removes a source address filter."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:225
+msgid ":zeek:id:`uninstall_src_net_filter`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:225
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3052
+msgid "Removes a source subnet filter."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:226
+msgid ":zeek:id:`unique_id`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:226
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:227
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3075
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3089
+msgid "Creates an identifier that is unique with high probability."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:227
+msgid ":zeek:id:`unique_id_from`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:228
+msgid ":zeek:id:`unlink`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:228
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3106
+msgid "Removes a file from a directory."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:229
+msgid ":zeek:id:`uuid_to_string`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:229
+msgid "Converts a bytes representation of a UUID into its string form."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:230
+msgid ":zeek:id:`val_size`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:230
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3138
+msgid "Returns the number of bytes that a value occupies in memory."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:231
+msgid ":zeek:id:`write_file`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:231
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3150
+msgid "Writes data to an open file."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:232
+msgid ":zeek:id:`zeek_args`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:232
+msgid "Returns: list of command-line arguments (``argv``) used to run Zeek."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:233
+msgid ":zeek:id:`zeek_is_terminating`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:233
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3176
+msgid "Checks if Zeek is terminating."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:234
+msgid ":zeek:id:`zeek_version`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:234
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3187
+msgid "Returns the Zeek version string."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:239
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:244
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1045
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1117
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1530
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2191
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2205
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2836
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3174
+msgid ":zeek:type:`function` () : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:250
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:496
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:801
+msgid ":zeek:type:`function` (f: :zeek:type:`file`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "f"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:255
+msgid "The file to check."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:258
+msgid "True if *f* is an open :zeek:type:`file`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:260
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:348
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1373
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1406
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1441
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1474
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2111
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2124
+msgid "Todo"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:260
+msgid "Rename to ``is_open``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:264
+msgid ":zeek:type:`function` (a: :zeek:type:`addr`) : :zeek:type:`index_vec`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "a"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:269
+msgid "The address to convert into a vector of counts."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:272
+msgid ""
+"A vector containing the host-order address representation, four elements "
+"in size for IPv6 addresses, or one element for IPv4."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:279
+msgid ":zeek:type:`function` (a: :zeek:type:`addr`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:281
+msgid ""
+"Converts an IP address to a reverse pointer name. For example, "
+"``192.168.0.1`` to ``1.0.168.192.in-addr.arpa``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:285
+msgid "The IP address to convert to a reverse pointer name."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:288
+msgid "The reverse pointer representation of *a*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:294
+msgid ":zeek:type:`function` (a: :zeek:type:`addr`) : :zeek:type:`subnet`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:299
+msgid "The address to convert."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:302
+msgid "The address as a :zeek:type:`subnet`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:308
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:352
+msgid ":zeek:type:`function` (v: :zeek:type:`any`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "v"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:314
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:358
+msgid "The boolean vector instance."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:317
+msgid "True iff all elements in *v* are true or there are no elements."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:323
+msgid "Missing elements count as false."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:327
+msgid ""
+":zeek:type:`function` (a: :zeek:type:`addr`, cl: "
+":zeek:type:`IPAddrAnonymizationClass`) : :zeek:type:`addr`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:332
+msgid "The address to anonymize."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "cl"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:335
+msgid "The anonymization class, which can take on three different values:"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:337
+msgid "``ORIG_ADDR``: Tag *a* as an originator address."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:339
+msgid "``RESP_ADDR``: Tag *a* as an responder address."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:341
+msgid "``OTHER_ADDR``: Tag *a* as an arbitrary address."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:344
+msgid "An anonymized version of *a*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:348
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2111
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2124
+msgid "Currently dysfunctional."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:361
+msgid "True if any element in *v* is true."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:367
+msgid ":zeek:type:`function` () : :zeek:type:`Backtrace`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:373
+msgid ""
+"the call stack information, including function, file, and line location "
+"information."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:378
+msgid ""
+":zeek:type:`function` (s: :zeek:type:`string`, is_le: :zeek:type:`bool` "
+":zeek:attr:`&default` = ``F`` :zeek:attr:`&optional`) : "
+":zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "s"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:383
+msgid "A string of bytes containing the binary representation of the value."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "is_le"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:386
+msgid ""
+"If true, *s* is assumed to be in little endian format, else it's big "
+"endian."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:389
+msgid "The value contained in *s*, or 0 if the conversion failed."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:394
+msgid ":zeek:type:`function` (s: :zeek:type:`string`) : :zeek:type:`double`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:399
+msgid "A string of bytes containing the binary representation of a double value."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:402
+msgid "The double value contained in *s*, or 0 if the conversion failed."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:408
+msgid ""
+":zeek:type:`function` (bytestring: :zeek:type:`string`) : "
+":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:410
+msgid ""
+"Converts a string of bytes into its hexadecimal representation. For "
+"example, ``\"04\"`` would be converted to ``\"3034\"``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "bytestring"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:414
+msgid "The string of bytes."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:417
+msgid "The hexadecimal representation of *bytestring*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:423
+msgid ":zeek:type:`function` (i: :zeek:type:`interval`) : :zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "i"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:429
+msgid "The rotate interval to base the calculation on."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:432
+msgid "The duration until the next file rotation time."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:438
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:449
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1058
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1803
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1883
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2462
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2542
+msgid ":zeek:type:`function` (...) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:440
+msgid ""
+"Returns the concatenation of the string representation of its arguments. "
+"The arguments can be of any type. For example, ``cat(\"foo\", 3, T)`` "
+"returns ``\"foo3T\"``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:445
+msgid "A string concatentation of all arguments."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:451
+msgid ""
+"Concatenates all arguments, with a separator placed between each one. "
+"This function is similar to :zeek:id:`cat`, but places a separator "
+"between each given argument. If any of the variable arguments is an empty"
+" string it is replaced by a given default string instead."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "sep"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:457
+msgid "The separator to place between each argument."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "def"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:460
+msgid "The default string to use when an argument is the empty string."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:463
+msgid ""
+"A concatenation of all arguments with *sep* between each one and empty "
+"strings replaced with *def*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:470
+msgid ""
+":zeek:type:`function` (search: :zeek:type:`subnet`, t: :zeek:type:`any`) "
+": :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:472
+msgid ""
+"Checks if a specific subnet is a member of a set/table[subnet]. In "
+"contrast to the ``in`` operator, this performs an exact match, not a "
+"longest prefix match."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "search"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:477
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:972
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1793
+msgid "the subnet to search for."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "t"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:480
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:975
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1796
+msgid "the set[subnet] or table[subnet]."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:483
+msgid "True if the exact subnet is a member, false otherwise."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:487
+msgid ":zeek:type:`function` (v: :zeek:type:`any`) : :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:492
+msgid "The set or table"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:501
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2387
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3153
+msgid "A :zeek:type:`file` handle to an open file."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:504
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:778
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:855
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1050
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1875
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2079
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2456
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2534
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2614
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2989
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3012
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3035
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3058
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3159
+msgid "True on success."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:512
+msgid ":zeek:type:`function` (dir: :zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "dir"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:518
+msgid "a path string, either relative or absolute."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:521
+msgid "a compressed version of the input path."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:525
+msgid ":zeek:type:`function` (c: :zeek:type:`conn_id`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:530
+msgid "The connection id to check."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:533
+msgid "True if the connection identified by *c* exists."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:539
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:707
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2772
+msgid ":zeek:type:`function` () : :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:547
+msgid ":zeek:type:`function` (s: :zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:549
+msgid ""
+"Escapes a string so that it becomes a valid :zeek:type:`pattern` and can "
+"be used with the :zeek:id:`string_to_pattern`. Any character from the set"
+" ``^$-:\"\\/|*+?.(){}[]`` is prefixed with a ``\\``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:554
+msgid "The string to escape."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:557
+msgid ""
+"An escaped version of *s* that has the structure of a valid "
+":zeek:type:`pattern`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:565
+msgid ""
+":zeek:type:`function` (num: :zeek:type:`count`, proto: "
+":zeek:type:`transport_proto`) : :zeek:type:`port`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "num"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:570
+msgid "The :zeek:type:`port` number."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "proto"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:573
+msgid "The transport protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:576
+msgid "The :zeek:type:`count` *num* as :zeek:type:`port`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:582
+msgid ":zeek:type:`function` (ip: :zeek:type:`count`) : :zeek:type:`addr`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "ip"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:587
+msgid "The :zeek:type:`count` to convert."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:590
+msgid "The :zeek:type:`count` *ip* as :zeek:type:`addr`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:596
+msgid ":zeek:type:`function` (v: :zeek:type:`index_vec`) : :zeek:type:`addr`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:601
+msgid ""
+"The vector containing host-order IP address representation, one element "
+"for IPv4 addresses, four elements for IPv6 addresses."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:605
+msgid "An IP address."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:611
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1220
+msgid ":zeek:type:`function` () : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:616
+msgid "The ID of the analyzer which raised the current event, or 0 if none."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:621
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1945
+msgid ":zeek:type:`function` () : :zeek:type:`time`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:625
+msgid ""
+"In general, you should use :zeek:id:`network_time` instead unless you are"
+" using Zeek for non-networking uses (such as general scripting; not "
+"particularly recommended), because otherwise your script may behave very "
+"differently on live traffic versus played-back traffic from a save file."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:632
+msgid "The wall-clock time."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:638
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:826
+msgid ""
+":zeek:type:`function` (s: :zeek:type:`string`, a: :zeek:type:`string` "
+":zeek:attr:`&default` = ``\"\"`` :zeek:attr:`&optional`) : "
+":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:643
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:666
+msgid "The Base64-encoded string."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:646
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:669
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:834
+msgid ""
+"An optional custom alphabet. The empty string indicates the default "
+"alphabet. If given, the string must consist of 64 unique characters."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:650
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:673
+msgid "The decoded version of *s*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:656
+msgid ""
+":zeek:type:`function` (cid: :zeek:type:`conn_id`, s: :zeek:type:`string`,"
+" a: :zeek:type:`string` :zeek:attr:`&default` = ``\"\"`` "
+":zeek:attr:`&optional`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:658
+msgid ""
+"Decodes a Base64-encoded string that was derived from processing a "
+"connection. If an error is encountered decoding the string, that will be "
+"logged to ``weird.log`` with the associated connection."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "cid"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:663
+msgid "The identifier of the connection that the encoding originates from."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:679
+msgid ""
+":zeek:type:`function` (cid: :zeek:type:`conn_id`, aid: "
+":zeek:type:`count`, err_if_no_conn: :zeek:type:`bool` "
+":zeek:attr:`&default` = ``T`` :zeek:attr:`&optional`, prevent: "
+":zeek:type:`bool` :zeek:attr:`&default` = ``F`` :zeek:attr:`&optional`) :"
+" :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:685
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1133
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2423
+msgid "The connection identifier."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "aid"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:688
+msgid "The analyzer ID."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "err_if_no_conn"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:691
+msgid "Emit an error message if the connection does not exit."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "prevent"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:694
+msgid ""
+"Prevent the same analyzer type from being attached in the future. This is"
+" useful for preventing the same analyzer from being automatically "
+"reattached in the future, e.g. as a result of a DPD signature suddenly "
+"matching."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:700
+msgid ""
+"True if the connection identified by *cid* exists and has analyzer *aid* "
+"and it is scheduled for removal."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:709
+msgid ""
+"Enables detailed collection of profiling statistics. Statistics include "
+"CPU/memory usage, connections, TCP states/reassembler, DNS lookups, "
+"timers, and script-level state. The script variable "
+":zeek:id:`profiling_file` holds the name of the file."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:728
+msgid ":zeek:type:`function` (d: :zeek:type:`double`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "d"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:733
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:747
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:761
+msgid "The :zeek:type:`double` to convert."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:736
+msgid "The :zeek:type:`double` *d* as unsigned integer, or 0 if *d* < 0.0."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:742
+msgid ":zeek:type:`function` (d: :zeek:type:`double`) : :zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:750
+msgid "The :zeek:type:`double` *d* as :zeek:type:`interval`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:756
+msgid ":zeek:type:`function` (d: :zeek:type:`double`) : :zeek:type:`time`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:764
+msgid "The :zeek:type:`double` value *d* as :zeek:type:`time`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:770
+msgid ":zeek:type:`function` (file_name: :zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "file_name"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:775
+msgid "The name of the file to write the packet to."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:784
+msgid ""
+":zeek:type:`function` (pkt: :zeek:type:`pcap_packet`, file_name: "
+":zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "pkt"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:789
+msgid "The PCAP packet."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:792
+msgid "The name of the file to write *pkt* to."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:795
+msgid "True on success"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:807
+msgid "The file to write to."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:810
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1360
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1393
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1428
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1461
+msgid "True (unconditionally)."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:816
+msgid ":zeek:type:`function` (f: :zeek:type:`file`) : :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:818
+msgid ""
+"Prevents escaping of non-ASCII characters when writing to a file. This "
+"function is equivalent to :zeek:attr:`&raw_output`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:822
+msgid "The file to disable raw output for."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:831
+msgid "The string to encode."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:838
+msgid "The encoded version of *s*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:844
+msgid ""
+":zeek:type:`function` (handle: :zeek:type:`opaque` of entropy, data: "
+":zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "handle"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:849
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:868
+msgid "The opaque handle representing the entropy calculation state."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "data"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:852
+msgid "The data to add to the entropy calculation."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:861
+msgid ""
+":zeek:type:`function` (handle: :zeek:type:`opaque` of entropy) : "
+":zeek:type:`entropy_test_result`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:863
+msgid ""
+"Finishes an incremental entropy calculation. Before using this function, "
+"one needs to obtain an opaque handle with :zeek:id:`entropy_test_init` "
+"and add data to it via :zeek:id:`entropy_test_add`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:871
+msgid ""
+"The result of the entropy test. See :zeek:id:`find_entropy` for a "
+"description of the individual components."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:878
+msgid ":zeek:type:`function` () : :zeek:type:`opaque` of entropy"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:883
+msgid "An opaque handle to be used in subsequent operations."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:889
+msgid ":zeek:type:`function` (e: :zeek:type:`any`) : :zeek:type:`int`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "e"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:894
+msgid "The :zeek:type:`enum` to convert."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:897
+msgid "The :zeek:type:`int` value that corresponds to the :zeek:type:`enum`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:901
+msgid ":zeek:type:`function` (code: :zeek:type:`int`) : :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "code"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:906
+msgid "The exit code to return with."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:912
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1029
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1627
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1641
+msgid ":zeek:type:`function` (d: :zeek:type:`double`) : :zeek:type:`double`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:917
+msgid "The argument to the exponential function."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:920
+msgid "*e* to the power of *d*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:926
+msgid ""
+":zeek:type:`function` (data: :zeek:type:`string`) : "
+":zeek:type:`mime_matches`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:932
+msgid "The data for which to find matching MIME types."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:935
+msgid "All matching signatures, in order of strength."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:941
+msgid ":zeek:type:`function` (mode: :zeek:type:`count`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "mode"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:946
+msgid "The permissions (an octal number like 0644 converted to decimal)."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:949
+msgid "A string representation of *mode* in the format ``rw[xsS]rw[xsS]rw[xtT]``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:954
+msgid ":zeek:type:`function` (f: :zeek:type:`string`) : :zeek:type:`double`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:959
+msgid "The name of the file whose size to lookup."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:962
+msgid "The size of *f* in bytes."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:966
+msgid ""
+":zeek:type:`function` (search: :zeek:type:`subnet`, t: :zeek:type:`any`) "
+": :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:978
+msgid ""
+"A new table that contains all the entries that cover the subnet searched "
+"for."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:982
+msgid ""
+":zeek:type:`function` (data: :zeek:type:`string`) : "
+":zeek:type:`entropy_test_result`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:984
+msgid ""
+"Performs an entropy test on the given data. See "
+"http://www.fourmilab.ch/random."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:988
+msgid "The data to compute the entropy for."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:991
+msgid "The result of the entropy test, which contains the following fields."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:994
+msgid ""
+"``entropy``: The information density expressed as a number of bits per "
+"character."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:997
+msgid ""
+"``chi_square``: The chi-square test value expressed as an absolute number"
+" and a percentage which indicates how frequently a truly random sequence "
+"would exceed the value calculated, i.e., the degree to which the sequence"
+" tested is suspected of being non-random."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1003
+#, python-format
+msgid ""
+"If the percentage is greater than 99% or less than 1%, the sequence is "
+"almost certainly not random. If the percentage is between 99% and 95% or "
+"between 1% and 5%, the sequence is suspect. Percentages between 90\\% and"
+" 95\\% and 5\\% and 10\\% indicate the sequence is \"almost suspect.\""
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1009
+msgid ""
+"``mean``: The arithmetic mean of all the bytes. If the data are close to "
+"random, it should be around 127.5."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1012
+msgid ""
+"``monte_carlo_pi``: Each successive sequence of six bytes is used as "
+"24-bit *x* and *y* coordinates within a square. If the distance of the "
+"randomly-generated point is less than the radius of a circle inscribed "
+"within the square, the six-byte sequence is considered a \"hit.\" The "
+"percentage of hits can be used to calculate the value of pi. For very "
+"large streams the value will approach the correct value of pi if the "
+"sequence is close to random."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1021
+msgid ""
+"``serial_correlation``: This quantity measures the extent to which each "
+"byte in the file depends upon the previous byte. For random sequences "
+"this value will be close to zero."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1031
+msgid ""
+"Computes the greatest integer less than the given :zeek:type:`double` "
+"value. For example, ``floor(3.14)`` returns ``3.0``, and ``floor(-3.14)``"
+" returns ``-4.0``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1036
+msgid "The :zeek:type:`double` to manipulate."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1039
+msgid "The next lowest integer of *d* as :zeek:type:`double`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1060
+msgid ""
+"Produces a formatted string à la ``printf``. The first argument is the "
+"*format string* and specifies how subsequent arguments are converted for "
+"output. It is composed of zero or more directives: ordinary characters "
+"(not ``%``), which are copied unchanged to the output, and conversion "
+"specifications, each of which fetches zero or more subsequent arguments. "
+"Conversion specifications begin with ``%`` and the arguments must "
+"properly correspond to the specifier. After the ``%``, the following "
+"characters may appear in sequence:"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1069
+msgid "``%``: Literal ``%``"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1071
+msgid "``-``: Left-align field"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1073
+msgid "``[0-9]+``: The field width (< 128)"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1075
+msgid "``.``: Precision of floating point specifiers ``[efg]`` (< 128)"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1077
+msgid "``[DTdxsefg]``: Format specifier"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1079
+msgid "``[DT]``: ISO timestamp with microsecond precision"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1082
+msgid "``d``: Signed/Unsigned integer (using C-style ``%lld``/``%llu``"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1082
+msgid "for ``int``/``count``)"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1085
+msgid "``x``: Unsigned hexadecimal (using C-style ``%llx``);"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1085
+msgid "addresses/ports are converted to host-byte order"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1088
+msgid "``s``: String (byte values less than 32 or greater than 126"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1088
+msgid "will be escaped)"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1090
+msgid "``[efg]``: Double"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1093
+msgid ""
+"Returns the formatted string. Given no arguments, :zeek:id:`fmt` returns "
+"an empty string. Given no format string or the wrong number of additional"
+" arguments for the given format specifier, :zeek:id:`fmt` generates a "
+"run-time error."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1102
+msgid ":zeek:type:`function` (input: :zeek:type:`any`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1104
+#, python-format
+msgid ""
+"Returns 32-bit digest of arbitrary input values using FNV-1a hash "
+"algorithm. See "
+"`<https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function>`_."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "input"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1108
+msgid "The desired input value to hash."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1111
+msgid "The hashed value."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1119
+msgid ""
+"By default, zeek does not generate (raise) events that have not handled "
+"by any scripts. This means that these events will be invisible to a lot "
+"of other event handlers - and will not raise :zeek:id:`new_event`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1123
+msgid ""
+"Calling this function will cause all event handlers to be raised. This "
+"is, likely, only useful for debugging and causes reduced performance."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1128
+msgid ""
+":zeek:type:`function` (cid: :zeek:type:`conn_id`) : "
+":zeek:type:`transport_proto`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1136
+msgid "The transport protocol of the connection identified by *cid*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1143
+msgid ":zeek:type:`function` () : :zeek:type:`pcap_packet`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1148
+msgid ""
+"The currently processed packet, which is a record containing the "
+"timestamp, ``snaplen``, and packet data."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1155
+msgid ":zeek:type:`function` () : :zeek:type:`raw_pkt_hdr`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1160
+msgid ""
+"The :zeek:type:`raw_pkt_hdr` record containing the Layer 2, 3 and 4 "
+"headers of the currently processed packet."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1167
+msgid ":zeek:type:`function` (f: :zeek:type:`file`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1172
+msgid "The file handle to inquire the name for."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1175
+msgid "The filename associated with *f*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1181
+msgid ""
+":zeek:type:`function` (p: :zeek:type:`port`) : "
+":zeek:type:`transport_proto`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "p"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1186
+msgid "The port."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1189
+msgid "The transport protocol of the port *p*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1196
+msgid ":zeek:type:`function` (var: :zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "var"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1201
+msgid "The name of the variable whose value to request."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1204
+msgid ""
+"The system environment variable identified by *var*, or an empty string "
+"if it is not defined."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1211
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3185
+msgid ":zeek:type:`function` () : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1216
+msgid "The hostname of the machine Zeek runs on."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1225
+msgid "Zeek's process ID."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1229
+msgid ":zeek:type:`function` () : :zeek:type:`id_table`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1231
+msgid ""
+"Generates a table with information about all global identifiers. The "
+"table value is a record containing the type name of the identifier, "
+"whether it is exported, a constant, an enum constant, redefinable, and "
+"its value (if it has one)."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1237
+msgid "A table that maps identifier names to information about them."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1243
+msgid ":zeek:type:`function` () : :zeek:type:`var_sizes`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1245
+msgid ""
+"Generates a table of the size of all global variables. The table index is"
+" the variable name and the value is the variable size in bytes."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1249
+msgid "A table that maps variable names to their sizes."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1255
+msgid ""
+":zeek:type:`function` (lat1: :zeek:type:`double`, long1: "
+":zeek:type:`double`, lat2: :zeek:type:`double`, long2: "
+":zeek:type:`double`) : :zeek:type:`double`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1257
+msgid ""
+"Calculates distance between two geographic locations using the haversine "
+"formula.  Latitudes and longitudes must be given in degrees, where "
+"southern hemispere latitudes are negative and western hemisphere "
+"longitudes are negative."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "lat1"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1263
+msgid "Latitude (in degrees) of location 1."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "long1"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1266
+msgid "Longitude (in degrees) of location 1."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "lat2"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1269
+msgid "Latitude (in degrees) of location 2."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "long2"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1272
+msgid "Longitude (in degrees) of location 2."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1275
+msgid "Distance in miles."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1281
+msgid ":zeek:type:`function` (hexstr: :zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1283
+msgid ""
+"Converts a hex-string into its binary representation. For example, "
+"``\"3034\"`` would be converted to ``\"04\"``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1286
+msgid ""
+"The input string is assumed to contain an even number of hexadecimal "
+"digits (0-9, a-f, or A-F), otherwise behavior is undefined."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "hexstr"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1290
+msgid "The hexadecimal string representation."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1293
+msgid "The binary representation of *hexstr*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1299
+msgid ""
+":zeek:type:`function` (key_digest: :zeek:type:`count`, site_id: "
+":zeek:type:`count`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1301
+msgid ""
+"Calculates a weight value for use in a Rendezvous Hashing algorithm. See "
+"`<https://en.wikipedia.org/wiki/Rendezvous_hashing>`_. The weight "
+"function used is the one recommended in the original"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "paper"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1305
+msgid "`<http://www.eecs.umich.edu/techreports/cse/96/CSE-TR-316-96.pdf>`_."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "key_digest"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1308
+msgid "A 32-bit digest of a key.  E.g. use :zeek:see:`fnv1a32` to produce this."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "site_id"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1312
+msgid "A 32-bit site/node identifier."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1315
+msgid "The weight value for the key/site pair."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1321
+msgid ""
+":zeek:type:`function` (data: :zeek:type:`string`, return_mime: "
+":zeek:type:`bool` :zeek:attr:`&default` = ``T`` :zeek:attr:`&optional`) :"
+" :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1327
+msgid "The data to find the MIME type for."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "return_mime"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1330
+msgid "Deprecated argument; does nothing, except emit a warning when false."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1334
+msgid ""
+"The MIME type of *data*, or \"<unknown>\" if there was an error or no "
+"match.  This is the strongest signature match."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1341
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1410
+msgid ""
+":zeek:type:`function` (ip: :zeek:type:`addr`, tcp_flags: "
+":zeek:type:`count`, prob: :zeek:type:`double`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1343
+msgid ""
+"Installs a filter to drop packets destined to a given IP address with a "
+"certain probability if none of a given set of TCP flags are set. Note "
+"that for IPv6 packets with a routing type header and non-zero segments "
+"left, this filters out against the final destination of the packet "
+"according to the routing extension header."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1350
+msgid "Drop packets to this IP address."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "tcp_flags"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1353
+msgid ""
+"If none of these TCP flags are set, drop packets to *ip* with probability"
+" *prob*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "prob"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1357
+msgid "The probability [0.0, 1.0] used to drop packets to *ip*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1373
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1406
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1441
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1474
+msgid "The return value should be changed to any."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1377
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1445
+msgid ""
+":zeek:type:`function` (snet: :zeek:type:`subnet`, tcp_flags: "
+":zeek:type:`count`, prob: :zeek:type:`double`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "snet"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1383
+msgid "Drop packets to this subnet."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1386
+msgid ""
+"If none of these TCP flags are set, drop packets to *snet* with "
+"probability *prob*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1390
+msgid "The probability [0.0, 1.0] used to drop packets to *snet*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1412
+msgid ""
+"Installs a filter to drop packets from a given IP source address with a "
+"certain probability if none of a given set of TCP flags are set. Note "
+"that for IPv6 packets with a Destination options header that has the Home"
+" Address option, this filters out against that home address."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1418
+msgid "The IP address to drop."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1421
+msgid ""
+"If none of these TCP flags are set, drop packets from *ip* with "
+"probability *prob*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1425
+msgid "The probability [0.0, 1.0] used to drop packets from *ip*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1451
+msgid "The subnet to drop packets from."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1454
+msgid ""
+"If none of these TCP flags are set, drop packets from *snet* with "
+"probability *prob*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1458
+msgid "The probability [0.0, 1.0] used to drop packets from *snet*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1478
+msgid ":zeek:type:`function` (n: :zeek:type:`int`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "n"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1483
+msgid "The :zeek:type:`int` to convert."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1486
+msgid "The :zeek:type:`int` *n* as unsigned integer, or 0 if *n* < 0."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1490
+msgid ":zeek:type:`function` (i: :zeek:type:`interval`) : :zeek:type:`double`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1495
+msgid "The :zeek:type:`interval` to convert."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1498
+msgid "The :zeek:type:`interval` *i* as :zeek:type:`double`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1504
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1539
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1553
+msgid ":zeek:type:`function` (p: :zeek:type:`port`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1509
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1544
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1558
+msgid "The :zeek:type:`port` to check."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1512
+msgid "True iff *p* is an ICMP port."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1518
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2981
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3027
+msgid ":zeek:type:`function` (ip: :zeek:type:`addr`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1523
+msgid "The IP address to check."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1526
+msgid "True if *ip* belongs to a local interface."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1535
+msgid "True if the last raised event came from a remote peer."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1547
+msgid "True iff *p* is a TCP port."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1561
+msgid "True iff *p* is a UDP port."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1567
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1591
+msgid ":zeek:type:`function` (a: :zeek:type:`addr`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1572
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1596
+msgid "the address to check."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1575
+msgid "true if *a* is an IPv4 address, else false."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1579
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1603
+msgid ":zeek:type:`function` (s: :zeek:type:`subnet`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1584
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1608
+msgid "the subnet to check."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1587
+msgid "true if *s* is an IPv4 subnet, else false."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1599
+msgid "true if *a* is an IPv6 address, else false."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1611
+msgid "true if *s* is an IPv6 subnet, else false."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1615
+msgid ":zeek:type:`function` (ip: :zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1620
+msgid "the string to check for valid IP formatting."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1623
+msgid "T if the string is a valid IPv4 or IPv6 address format."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1632
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1646
+msgid "The argument to the logarithm."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1635
+msgid "The natural logarithm of *d*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1649
+msgid "The common logarithm of *d*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1655
+msgid ":zeek:type:`function` (id: :zeek:type:`string`) : :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "id"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1660
+msgid "The global identifier."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1663
+msgid ""
+"The value of *id*. If *id* does not describe a valid identifier, the "
+"string ``\"<unknown id>\"`` or ``\"<no ID value>\"`` is returned."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1668
+msgid ":zeek:type:`function` (host: :zeek:type:`addr`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1670
+msgid ""
+"Issues an asynchronous reverse DNS lookup and delays the function result."
+" This function can therefore only be called inside a ``when`` condition, "
+"e.g., ``when ( local host = lookup_addr(10.0.0.1) ) { f(host); }``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "host"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1675
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1690
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1753
+msgid "The IP address to lookup."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1678
+msgid "The DNS name of *host*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1684
+msgid ":zeek:type:`function` (a: :zeek:type:`addr`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1686
+msgid ""
+"Performs an ASN lookup of an IP address. Requires Zeek to be built with "
+"``libmaxminddb``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1693
+msgid "The number of the ASN that contains *a*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1699
+msgid ""
+":zeek:type:`function` (cid: :zeek:type:`conn_id`) : "
+":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1704
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2407
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2630
+msgid "The connection ID."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1707
+msgid ""
+"The :zeek:type:`connection` record for *cid*. If *cid* does not point to "
+"an existing connection, the function generates a run-time error and "
+"returns a dummy value."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1715
+msgid ":zeek:type:`function` (host: :zeek:type:`string`) : :zeek:type:`addr_set`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1717
+msgid ""
+"Issues an asynchronous DNS lookup and delays the function result. This "
+"function can therefore only be called inside a ``when`` condition, e.g., "
+"``when ( local h = lookup_hostname(\"www.zeek.org\") ) { f(h); }``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1722
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1738
+msgid "The hostname to lookup."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1725
+msgid "A set of DNS A and AAAA records associated with *host*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1731
+msgid ":zeek:type:`function` (host: :zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1733
+msgid ""
+"Issues an asynchronous TEXT DNS lookup and delays the function result. "
+"This function can therefore only be called inside a ``when`` condition, "
+"e.g., ``when ( local h = lookup_hostname_txt(\"www.zeek.org\") ) { f(h); "
+"}``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1741
+msgid "The DNS TXT record associated with *host*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1747
+msgid ":zeek:type:`function` (a: :zeek:type:`addr`) : :zeek:type:`geo_location`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1749
+msgid ""
+"Performs a geo-lookup of an IP address. Requires Zeek to be built with "
+"``libmaxminddb``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1756
+msgid "A record with country, region, city, latitude, and longitude."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1762
+msgid ""
+":zeek:type:`function` (a: :zeek:type:`addr`, top_bits_to_keep: "
+":zeek:type:`count`) : :zeek:type:`subnet`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1764
+msgid ""
+"Masks an address down to the number of given upper bits. For example, "
+"``mask_addr(1.2.3.4, 18)`` returns ``1.2.0.0``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1768
+msgid "The address to mask."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "top_bits_to_keep"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1771
+msgid ""
+"The number of top bits to keep in *a*; must be greater than 0 and less "
+"than 33 for IPv4, or 129 for IPv6."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1775
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2264
+msgid "The address *a* masked down to *top_bits_to_keep* bits."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1781
+msgid ""
+":zeek:type:`function` (c: :zeek:type:`connection`, pattern_type: "
+":zeek:type:`int`, s: :zeek:type:`string`, bol: :zeek:type:`bool`, eol: "
+":zeek:type:`bool`, from_orig: :zeek:type:`bool`, clear: "
+":zeek:type:`bool`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1783
+msgid ""
+"Manually triggers the signature engine for a given connection. This is an"
+" internal function."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1788
+msgid ""
+":zeek:type:`function` (search: :zeek:type:`subnet`, t: :zeek:type:`any`) "
+": :zeek:type:`subnet_vec`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1799
+msgid "All the keys of the set or table that cover the subnet searched for."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1808
+msgid "The MD5 hash value of the concatenated arguments."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1816
+msgid ""
+"This function performs a one-shot computation of its arguments. For "
+"incremental hash computation, see :zeek:id:`md5_hash_init` and friends."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1822
+msgid ""
+":zeek:type:`function` (handle: :zeek:type:`opaque` of md5) : "
+":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1827
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1854
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1869
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2486
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2513
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2528
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2566
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2593
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2608
+msgid "The opaque handle associated with this hash computation."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1830
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2489
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2569
+msgid "The hash value associated with the computation of *handle*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1838
+msgid ":zeek:type:`function` () : :zeek:type:`opaque` of md5"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1840
+msgid ""
+"Constructs an MD5 handle to enable incremental hash computation. You can "
+"feed data to the returned opaque value with :zeek:id:`md5_hash_update` "
+"and eventually need to call :zeek:id:`md5_hash_finish` to finish the "
+"computation and get the hash digest."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1845
+msgid ""
+"For example, when computing incremental MD5 values of transferred files "
+"in multiple concurrent HTTP connections, one keeps an optional handle in "
+"the HTTP session record. Then, one would call ``c$http$md5_handle = "
+"md5_hash_init()`` once before invoking "
+"``md5_hash_update(c$http$md5_handle, some_more_data)`` in the "
+":zeek:id:`http_entity_data` event handler. When all data has arrived, a "
+"call to :zeek:id:`md5_hash_finish` returns the final hash value."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1862
+msgid ""
+":zeek:type:`function` (handle: :zeek:type:`opaque` of md5, data: "
+":zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1864
+msgid ""
+"Updates the MD5 value associated with a given index. It is required to "
+"call :zeek:id:`md5_hash_init` once before calling this function."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1872
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2531
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2611
+msgid "The data to add to the hash computation."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1885
+msgid ""
+"Computes an HMAC-MD5 hash value of the provided list of arguments. The "
+"HMAC secret key is generated from available entropy when Zeek starts up, "
+"or it can be specified for repeatability using the ``-K`` command line "
+"flag."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1890
+msgid "The HMAC-MD5 hash value of the concatenated arguments."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1898
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1915
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1930
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3104
+msgid ":zeek:type:`function` (f: :zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1903
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2309
+msgid "The directory name."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1906
+msgid ""
+"True if the operation succeeds or if *f* already exists, and false if the"
+" file creation fails."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1917
+msgid ""
+"Initializes MMDB for later use of lookup_asn. Requires Zeek to be built "
+"with ``libmaxminddb``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1921
+msgid "The filename of the MaxMind ASN DB."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1924
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1939
+msgid "A boolean indicating whether the db was successfully opened."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1932
+msgid ""
+"Initializes MMDB for later use of lookup_location. Requires Zeek to be "
+"built with ``libmaxminddb``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1936
+msgid "The filename of the MaxMind City or Country DB."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1947
+msgid ""
+"Returns the timestamp of the last packet processed. This function returns"
+" the timestamp of the most recently read packet, whether read from a live"
+" network interface or from a save file."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1952
+msgid "The timestamp of the packet processed."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1958
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1975
+msgid ":zeek:type:`function` (f: :zeek:type:`string`) : :zeek:type:`file`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1960
+msgid ""
+"Opens a file for writing. If a file with the same name already exists, "
+"this function overwrites it (as opposed to :zeek:id:`open_for_append`)."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1964
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1981
+msgid "The path to the file."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1967
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1984
+msgid "A :zeek:type:`file` handle for subsequent operations."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1977
+msgid ""
+"Opens a file for writing or appending. If a file with the same name "
+"already exists, this function appends to it (as opposed to "
+":zeek:id:`open`)."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1992
+msgid ":zeek:type:`function` (...) : :zeek:type:`index_vec`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1994
+msgid ""
+"Returns the order of the elements in a vector according to some "
+"comparison function. See :zeek:id:`sort` for details about the comparison"
+" function."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:1999
+msgid "The vector whose order to compute."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2002
+msgid ""
+"A ``vector of count`` with the indices of the ordered elements. For "
+"example, the elements of *v* in order are (assuming ``o`` is the vector "
+"returned by ``order``):  v[o[0]], v[o[1]], etc."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2010
+msgid ":zeek:type:`function` () : :zeek:type:`PacketSource`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2013
+msgid "the packet source being read by Zeek."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2019
+msgid ""
+":zeek:type:`function` (p_one: :zeek:type:`opaque` of paraglob, p_two: "
+":zeek:type:`opaque` of paraglob) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "p_one"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2024
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2027
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2055
+msgid "A compiled paraglob."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "p_two"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2030
+msgid "True if both paraglobs contain the same patterns, false otherwise."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2032
+msgid "## .. zeek:see::paraglob_add paraglob_match paraglob_init"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2036
+msgid ""
+":zeek:type:`function` (v: :zeek:type:`any`) : :zeek:type:`opaque` of "
+"paraglob"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2041
+msgid "Vector of patterns to initialize the paraglob with."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2044
+msgid "A new, compiled, paraglob with the patterns in *v*"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2050
+msgid ""
+":zeek:type:`function` (handle: :zeek:type:`opaque` of paraglob, match: "
+":zeek:type:`string`) : :zeek:type:`string_vec`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "match"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2058
+msgid "string to match against the paraglob."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2061
+msgid "A vector of strings matching the input string."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2063
+msgid "## .. zeek:see::paraglob_add paraglob_equals paraglob_init"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2067
+msgid ""
+":zeek:type:`function` (program: :zeek:type:`string`, to_write: "
+":zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "program"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2073
+msgid "The program to execute."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "to_write"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2076
+msgid "Data to pipe to the opened program's process via ``stdin``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2085
+msgid ":zeek:type:`function` (p: :zeek:type:`port`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2090
+msgid "The :zeek:type:`port` to convert."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2093
+msgid "The :zeek:type:`port` *p* as :zeek:type:`count`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2099
+msgid ""
+":zeek:type:`function` (a: :zeek:type:`addr`, width: :zeek:type:`count`) :"
+" :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2104
+msgid "The address to preserve."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "width"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2107
+msgid "The number of bits from the top that should remain intact."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2115
+msgid ":zeek:type:`function` (a: :zeek:type:`subnet`) : :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2120
+msgid "The subnet to preserve."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2128
+msgid ":zeek:type:`function` (...) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2130
+msgid ""
+"Renders a sequence of values to a string of bytes and outputs them "
+"directly to ``stdout`` with no additional escape sequences added.  No "
+"additional newline is added to the end either."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2135
+msgid "Always true."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2141
+msgid ":zeek:type:`function` (s: :zeek:type:`string`) : :zeek:type:`addr`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2143
+msgid ""
+"Converts a reverse pointer name to an address. For example, ``1.0.168.192"
+".in-addr.arpa`` to ``192.168.0.1``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2147
+msgid "The string with the reverse pointer name."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2150
+msgid "The IP address corresponding to *s*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2156
+msgid ":zeek:type:`function` (max: :zeek:type:`count`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "max"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2161
+msgid "The maximum value of the random number."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2164
+msgid "a random positive integer in the interval *[0, max)*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2170
+msgid ""
+"This function is a wrapper about the function ``random`` provided by the "
+"OS."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2175
+msgid ":zeek:type:`function` (b: :zeek:type:`string`) : :zeek:type:`addr`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2177
+msgid ""
+"Converts a :zeek:type:`string` of bytes into an IPv4 address. In "
+"particular, this function interprets the first 4 bytes of the string as "
+"an IPv4 address in network order."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "b"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2182
+msgid "The raw bytes (:zeek:type:`string`) to convert."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2185
+msgid "The byte :zeek:type:`string` *b* as :zeek:type:`addr`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2193
+msgid ""
+"Checks whether Zeek reads traffic from one or more network interfaces (as"
+" opposed to from a network trace in a file). Note that this function "
+"returns true even after Zeek has stopped reading network traffic, for "
+"example due to receiving a termination signal."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2199
+msgid "True if reading traffic from a network interface."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2211
+msgid "True if reading traffic from a network trace."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2217
+msgid ""
+":zeek:type:`function` (rec: :zeek:type:`any`) : "
+":zeek:type:`record_field_table`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2219
+msgid ""
+"Generates metadata about a record's fields. The returned information "
+"includes the field name, whether it is logged, its value (if it has one),"
+" and its default value (if specified)."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "rec"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2224
+msgid "The record value or type to inspect."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2227
+msgid "A table that describes the fields of a record."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2231
+msgid ":zeek:type:`function` (rt: :zeek:type:`string`) : :zeek:type:`string_vec`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2233
+msgid ""
+"Converts a record type name to a vector of strings, where each element is"
+" the name of a record field. Nested records are flattened."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "rt"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2237
+msgid "The name of the record type."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2240
+msgid "A string vector with the field names of *rt*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2244
+msgid ""
+":zeek:type:`function` (a1: :zeek:type:`addr`, a2: :zeek:type:`addr`, "
+"top_bits_from_a1: :zeek:type:`count`) : :zeek:type:`addr`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2246
+msgid ""
+"Takes some top bits (such as a subnet address) from one address and the "
+"other bits (intra-subnet part) from a second address and merges them to "
+"get a new address. This is useful for anonymizing at subnet level while "
+"preserving serial scans."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "a1"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2252
+msgid "The address to mask with *top_bits_from_a1*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "a2"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2255
+msgid "The address to take the remaining bits from."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "top_bits_from_a1"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2258
+msgid ""
+"The number of top bits to keep in *a1*; must be greater than 0 and less "
+"than 129.  This value is always interpreted relative to the IPv6 bit "
+"width (v4-mapped addresses start at bit number 96)."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2270
+msgid ""
+":zeek:type:`function` (src_f: :zeek:type:`string`, dst_f: "
+":zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "src_f"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2275
+msgid "the name of the file to rename."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "dest_f"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2278
+msgid "the name of the file after the rename operation."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2281
+msgid "True if the rename succeeds and false otherwise."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2289
+msgid ""
+":zeek:type:`function` (aggr: :zeek:type:`any`, newsize: "
+":zeek:type:`count`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "aggr"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2294
+msgid "The vector instance."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "newsize"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2297
+msgid "The new size of *aggr*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2300
+msgid "The old size of *aggr*, or 0 if *aggr* is not a :zeek:type:`vector`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2304
+msgid ":zeek:type:`function` (d: :zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2312
+msgid ""
+"True if the operation succeeds, and false if the directory delete "
+"operation fails."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2321
+msgid ":zeek:type:`function` (f: :zeek:type:`file`) : :zeek:type:`rotate_info`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2326
+msgid "An open file handle."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2329
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2344
+msgid ""
+"Rotation statistics which include the original file name, the name after "
+"the rotation, and the time when *f* was opened/closed."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2336
+msgid ":zeek:type:`function` (f: :zeek:type:`string`) : :zeek:type:`rotate_info`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2341
+msgid "The name of the file to rotate"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2351
+msgid ":zeek:type:`function` (s: :zeek:type:`string`) : :zeek:type:`addr_vec`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2357
+msgid ""
+"The *data* field of an :zeek:type:`ip6_routing` record that has an "
+"*rtype* of 0."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2361
+msgid "The vector of addresses contained in the routing header data."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2365
+msgid ""
+":zeek:type:`function` (o1: :zeek:type:`any`, o2: :zeek:type:`any`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2367
+msgid ""
+"Checks whether two objects reference the same internal object. This "
+"function uses equality comparison of C++ raw pointer values to determine "
+"if the two objects are the same."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "o1"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2372
+msgid "The first object."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "o2"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2375
+msgid "The second object."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2378
+msgid "True if *o1* and *o2* are equal."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2382
+msgid ""
+":zeek:type:`function` (f: :zeek:type:`file`, buffered: :zeek:type:`bool`)"
+" : :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "buffered"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2390
+msgid ""
+"When true, *f* is fully buffered, i.e., bytes are saved in a buffer until"
+" the block size has been reached. When false, *f* is line buffered, i.e.,"
+" bytes are saved up until a newline occurs."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2401
+msgid ""
+":zeek:type:`function` (cid: :zeek:type:`conn_id`, t: "
+":zeek:type:`interval`) : :zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2410
+msgid "The new inactivity timeout for the connection identified by *cid*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2413
+msgid "The previous timeout interval."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2417
+msgid ""
+":zeek:type:`function` (cid: :zeek:type:`conn_id`, do_record: "
+":zeek:type:`bool`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "do_record"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2426
+msgid ""
+"True to enable packet contents, and false to disable for the connection "
+"identified by *cid*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2430
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2633
+msgid "False if *cid* does not point to an active connection, and true otherwise."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2437
+msgid ""
+"This is independent of whether Zeek processes the packets of this "
+"connection, which is controlled separately by "
+":zeek:id:`skip_further_processing`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2445
+msgid ""
+":zeek:type:`function` (var: :zeek:type:`string`, val: "
+":zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2450
+msgid "The name of the variable."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "val"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2453
+msgid "The (new) value of the variable *var*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2467
+msgid "The SHA1 hash value of the concatenated arguments."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2475
+msgid ""
+"This function performs a one-shot computation of its arguments. For "
+"incremental hash computation, see :zeek:id:`sha1_hash_init` and friends."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2481
+msgid ""
+":zeek:type:`function` (handle: :zeek:type:`opaque` of sha1) : "
+":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2497
+msgid ":zeek:type:`function` () : :zeek:type:`opaque` of sha1"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2499
+msgid ""
+"Constructs an SHA1 handle to enable incremental hash computation. You can"
+" feed data to the returned opaque value with :zeek:id:`sha1_hash_update` "
+"and finally need to call :zeek:id:`sha1_hash_finish` to finish the "
+"computation and get the hash digest."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2504
+msgid ""
+"For example, when computing incremental SHA1 values of transferred files "
+"in multiple concurrent HTTP connections, one keeps an optional handle in "
+"the HTTP session record. Then, one would call ``c$http$sha1_handle = "
+"sha1_hash_init()`` once before invoking "
+"``sha1_hash_update(c$http$sha1_handle, some_more_data)`` in the "
+":zeek:id:`http_entity_data` event handler. When all data has arrived, a "
+"call to :zeek:id:`sha1_hash_finish` returns the final hash value."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2521
+msgid ""
+":zeek:type:`function` (handle: :zeek:type:`opaque` of sha1, data: "
+":zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2523
+msgid ""
+"Updates the SHA1 value associated with a given index. It is required to "
+"call :zeek:id:`sha1_hash_init` once before calling this function."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2547
+msgid "The SHA256 hash value of the concatenated arguments."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2555
+msgid ""
+"This function performs a one-shot computation of its arguments. For "
+"incremental hash computation, see :zeek:id:`sha256_hash_init` and "
+"friends."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2561
+msgid ""
+":zeek:type:`function` (handle: :zeek:type:`opaque` of sha256) : "
+":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2577
+msgid ":zeek:type:`function` () : :zeek:type:`opaque` of sha256"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2579
+msgid ""
+"Constructs an SHA256 handle to enable incremental hash computation. You "
+"can feed data to the returned opaque value with "
+":zeek:id:`sha256_hash_update` and finally need to call "
+":zeek:id:`sha256_hash_finish` to finish the computation and get the hash "
+"digest."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2584
+msgid ""
+"For example, when computing incremental SHA256 values of transferred "
+"files in multiple concurrent HTTP connections, one keeps an optional "
+"handle in the HTTP session record. Then, one would call "
+"``c$http$sha256_handle = sha256_hash_init()`` once before invoking "
+"``sha256_hash_update(c$http$sha256_handle, some_more_data)`` in the "
+":zeek:id:`http_entity_data` event handler. When all data has arrived, a "
+"call to :zeek:id:`sha256_hash_finish` returns the final hash value."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2601
+msgid ""
+":zeek:type:`function` (handle: :zeek:type:`opaque` of sha256, data: "
+":zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2603
+msgid ""
+"Updates the SHA256 value associated with a given index. It is required to"
+" call :zeek:id:`sha256_hash_init` once before calling this function."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2622
+msgid ":zeek:type:`function` (cid: :zeek:type:`conn_id`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2624
+msgid ""
+"Informs Zeek that it should skip any further processing of the contents "
+"of a given connection. In particular, Zeek will refrain from reassembling"
+" the TCP byte stream and from generating events relating to any analyzers"
+" that have been processing the connection."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2638
+msgid ""
+"Zeek will still generate connection-oriented events such as "
+":zeek:id:`connection_finished`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2643
+msgid ":zeek:type:`function` (...) : :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2645
+msgid ""
+"Sorts a vector in place. The second argument is a comparison function "
+"that takes two arguments: if the vector type is ``vector of T``, then the"
+" comparison function must be ``function(a: T, b: T): int``, which returns"
+" a value less than zero if ``a < b`` for some type-specific notion of the"
+" less-than operator.  The comparison function is optional if the type is "
+"an integral type (int, count, etc.)."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2653
+msgid "The vector instance to sort."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2656
+msgid ""
+"The vector, sorted from minimum to maximum value. If the vector could not"
+" be sorted, then the original vector is returned instead."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2663
+msgid ":zeek:type:`function` (x: :zeek:type:`double`) : :zeek:type:`double`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "x"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2668
+msgid "The number to compute the square root of."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2671
+msgid "The square root of *x*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2677
+msgid ":zeek:type:`function` (seed: :zeek:type:`count`) : :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "seed"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2682
+msgid "The seed for the PRNG."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2688
+msgid ""
+"This function is a wrapper about the function ``srandom`` provided by the"
+" OS."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2693
+msgid ""
+":zeek:type:`function` (fmt: :zeek:type:`string`, d: :zeek:type:`time`) : "
+":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "fmt"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2698
+msgid "The format string. See ``man strftime`` for the syntax."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2701
+msgid "The time value."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2704
+msgid "The time *d* formatted according to *fmt*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2708
+msgid ""
+":zeek:type:`function` (s: :zeek:type:`string`, convert: "
+":zeek:type:`bool`) : :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2713
+msgid "The string to convert."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "convert"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2716
+msgid ""
+"If true, *s* is first passed through the function "
+":zeek:id:`convert_for_pattern` to escape special characters of patterns."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2721
+msgid "*s* as :zeek:type:`pattern`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2727
+msgid ""
+":zeek:type:`function` (fmt: :zeek:type:`string`, d: :zeek:type:`string`) "
+": :zeek:type:`time`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2732
+msgid ""
+"The format string used to parse the following *d* argument. See ``man "
+"strftime`` for the syntax."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2736
+msgid "The string representing the time."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2739
+msgid "The time value calculated from parsing *d* with *fmt*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2743
+msgid ":zeek:type:`function` (sn: :zeek:type:`subnet`) : :zeek:type:`addr`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "sn"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2749
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2958
+msgid "The subnet to convert."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2752
+msgid "The subnet as an :zeek:type:`addr`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2758
+msgid ":zeek:type:`function` (sn: :zeek:type:`subnet`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2763
+msgid "The subnet."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2766
+msgid "The width of the subnet."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2774
+msgid ""
+"Stops Zeek's packet processing. This function is used to synchronize "
+"distributed trace processing with communication enabled (*pseudo-"
+"realtime* mode)."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2782
+msgid ":zeek:type:`function` (s: :zeek:type:`string`) : :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2787
+msgid "The string to log via syslog"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2791
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2907
+msgid ":zeek:type:`function` (str: :zeek:type:`string`) : :zeek:type:`int`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2793
+#, python-format
+msgid ""
+"Invokes a command via the ``system`` function of the OS. The command runs"
+" in the background with ``stdout`` redirecting to ``stderr``. Here is a "
+"usage example: ``system(fmt(\"rm %s\", "
+"safe_shell_quote(sniffed_data)));``"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "str"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2799
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2822
+msgid "The command to execute."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2802
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2830
+msgid "The return value from the OS ``system`` function."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2808
+msgid ""
+"Note that this corresponds to the status of backgrounding the given "
+"command, not to the exit status of the command itself. A value of 127 "
+"corresponds to a failure to execute ``sh``, and -1 to an internal system "
+"failure."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2815
+msgid ""
+":zeek:type:`function` (str: :zeek:type:`string`, env: "
+":zeek:type:`table_string_of_string`) : :zeek:type:`int`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2817
+msgid ""
+"Invokes a command via the ``system`` function of the OS with a prepared "
+"environment. The function is essentially the same as :zeek:id:`system`, "
+"but changes the environment before invoking the command."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "env"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2825
+msgid ""
+"A :zeek:type:`table` with the environment variables in the form of key-"
+"value pairs. Each specified environment variable name will be "
+"automatically prepended with ``ZEEK_ARG_``."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2841
+msgid ""
+"True after successful termination and false when Zeek is still in the "
+"process of shutting down."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2848
+msgid ":zeek:type:`function` (t: :zeek:type:`time`) : :zeek:type:`double`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2853
+msgid "The :zeek:type:`time` to convert."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2856
+msgid "The :zeek:type:`time` value *t* as :zeek:type:`double`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2862
+msgid ":zeek:type:`function` (ip: :zeek:type:`string`) : :zeek:type:`addr`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2867
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2883
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2898
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2912
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2944
+msgid "The :zeek:type:`string` to convert."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2870
+msgid ""
+"The :zeek:type:`string` *ip* as :zeek:type:`addr`, or the unspecified "
+"address ``::`` if the input string does not parse correctly."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2878
+msgid ":zeek:type:`function` (str: :zeek:type:`string`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2886
+msgid ""
+"The :zeek:type:`string` *str* as unsigned integer, or 0 if *str* has an "
+"invalid format."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2893
+msgid ":zeek:type:`function` (str: :zeek:type:`string`) : :zeek:type:`double`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2901
+msgid ""
+"The :zeek:type:`string` *str* as double, or 0 if *str* has an invalid "
+"format."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2915
+msgid "The :zeek:type:`string` *str* as :zeek:type:`int`."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2921
+msgid ""
+":zeek:type:`function` (val: :zeek:type:`any`, only_loggable: "
+":zeek:type:`bool` :zeek:attr:`&default` = ``F`` :zeek:attr:`&optional`, "
+"field_escape_pattern: :zeek:type:`pattern` :zeek:attr:`&default` = "
+"``/^?(^_)$?/`` :zeek:attr:`&optional`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2926
+msgid "The value to convert to JSON.  Typically a record."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "only_loggable"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2929
+msgid ""
+"If the v value is a record this will only cause fields with the &log "
+"attribute to be included in the JSON."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2933
+msgid "a JSON formatted string."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2939
+msgid ":zeek:type:`function` (s: :zeek:type:`string`) : :zeek:type:`port`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2947
+msgid "A :zeek:type:`port` converted from *s*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2953
+msgid ":zeek:type:`function` (sn: :zeek:type:`string`) : :zeek:type:`subnet`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2961
+msgid ""
+"The *sn* string as a :zeek:type:`subnet`, or the unspecified subnet "
+"``::/0`` if the input string does not parse correctly."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2969
+msgid ":zeek:type:`function` (t: :zeek:type:`any`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2974
+msgid "An arbitrary object."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2977
+msgid "The type name of *t*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:2986
+msgid "The IP address for which a destination filter was previously installed."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3004
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3050
+msgid ":zeek:type:`function` (snet: :zeek:type:`subnet`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3009
+msgid "The subnet for which a destination filter was previously installed."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3032
+msgid "The IP address for which a source filter was previously installed."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3055
+msgid "The subnet for which a source filter was previously installed."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3073
+msgid ":zeek:type:`function` (prefix: :zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "prefix"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3078
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3095
+msgid "A custom string prepended to the result."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3081
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3098
+msgid "A string identifier that is unique."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3087
+msgid ""
+":zeek:type:`function` (pool: :zeek:type:`int`, prefix: "
+":zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "pool"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3092
+msgid "A seed for determinism."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3109
+msgid "the file to delete."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3112
+msgid ""
+"True if the operation succeeds and the file was deleted, and false if the"
+" deletion fails."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3121
+msgid ":zeek:type:`function` (uuid: :zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3123
+msgid ""
+"Converts a bytes representation of a UUID into its string form. For "
+"example, given a string of 16 bytes, it produces an output string in this"
+" format: ``550e8400-e29b-41d4-a716-446655440000``. See "
+"`<http://en.wikipedia.org/wiki/Universally_unique_identifier>`_."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst
+msgid "uuid"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3129
+msgid "The 16 bytes of the UUID."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3132
+msgid "The string representation of *uuid*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3136
+msgid ":zeek:type:`function` (v: :zeek:type:`any`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3141
+msgid "The value"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3144
+msgid "The number of bytes that *v* occupies."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3148
+msgid ""
+":zeek:type:`function` (f: :zeek:type:`file`, data: :zeek:type:`string`) :"
+" :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3156
+msgid "The data to write to *f*."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3167
+msgid ":zeek:type:`function` () : :zeek:type:`string_vec`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3170
+msgid "list of command-line arguments (``argv``) used to run Zeek."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3179
+msgid "True if Zeek is in the process of shutting down."
+msgstr ""
+
+#: ../../scripts/base/bif/zeek.bif.zeek.rst:3190
+msgid "Zeek's version, e.g., 2.0-beta-47-debug."
+msgstr ""
+

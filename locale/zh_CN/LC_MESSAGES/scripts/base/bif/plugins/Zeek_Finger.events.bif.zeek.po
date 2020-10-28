@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_Finger.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:23
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:15
+msgid ":zeek:id:`finger_reply`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:28
+msgid "Generated for Finger replies."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:16
+msgid ":zeek:id:`finger_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:50
+msgid "Generated for Finger requests."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:21
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:26
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, reply_line: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:30
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:52
+msgid ""
+"See `Wikipedia <http://en.wikipedia.org/wiki/Finger_protocol>`__ for more"
+" information about the Finger protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:34
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:56
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst
+msgid "reply_line"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:37
+msgid "The reply as returned by the server"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:41
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:69
+msgid "Todo"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:41
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:69
+msgid ""
+"Zeek's current default configuration does not activate the protocol "
+"analyzer that generates this event; the corresponding script has not yet "
+"been ported. To still enable this event, one needs to register a port for"
+" it or add a DPD payload signature."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:48
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, full: :zeek:type:`bool`, "
+"username: :zeek:type:`string`, hostname: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst
+msgid "full"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:59
+msgid "True if verbose information is requested (``/W`` switch)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst
+msgid "username"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:62
+msgid "The request's user name."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst
+msgid "hostname"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek.rst:65
+msgid "The request's host name."
+msgstr ""
+

@@ -1,0 +1,318 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:4
+msgid "base/bif/top-k.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:7
+msgid "Functions to probabilistically determine top-k elements."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:9
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:14
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:33
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:16
+msgid ":zeek:id:`topk_add`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:16
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:38
+msgid "Add a new observed object to the data structure."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:17
+msgid ":zeek:id:`topk_count`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:17
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:57
+msgid "Get an overestimated count of how often a value has been encountered."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:18
+msgid ":zeek:id:`topk_epsilon`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:18
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:79
+msgid "Get the maximal overestimation for count."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:19
+msgid ":zeek:id:`topk_get_top`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:19
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:100
+msgid "Get the first *k* elements of the top-k data structure."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:20
+msgid ":zeek:id:`topk_init`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:20
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:118
+msgid "Creates a top-k data structure which tracks *size* elements."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:21
+msgid ":zeek:id:`topk_merge`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:21
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:133
+msgid "Merge the second top-k data structure into the first."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:22
+msgid ":zeek:id:`topk_merge_prune`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:22
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:151
+msgid ""
+"Merge the second top-k data structure into the first and prunes the final"
+" data structure back to the size given on initialization."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:24
+msgid ":zeek:id:`topk_size`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:24
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:171
+msgid ""
+"Get the number of elements this data structure is supposed to track "
+"(given on init)."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:26
+msgid ":zeek:id:`topk_sum`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:26
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:190
+msgid "Get the sum of all counts of all elements in the data structure."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:31
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:36
+msgid ""
+":zeek:type:`function` (handle: :zeek:type:`opaque` of topk, value: "
+":zeek:type:`any`) : :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:40
+msgid ""
+"The first added object sets the type of data tracked by the top-k data "
+"structure. All following values have to be of the same type."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst
+msgid "handle"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:45
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:64
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:84
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:103
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:178
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:198
+msgid "the TopK handle."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst
+msgid "value"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:48
+msgid "observed value."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:55
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:77
+msgid ""
+":zeek:type:`function` (handle: :zeek:type:`opaque` of topk, value: "
+":zeek:type:`any`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:59
+msgid ""
+"The value has to be part of the currently tracked elements, otherwise 0 "
+"will be returned and an error message will be added to reporter."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:67
+msgid "Value to look up count for."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:70
+msgid "Overestimated number for how often the element has been encountered."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:81
+msgid "Same restrictions as for :zeek:id:`topk_count` apply."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:87
+msgid "Value to look up epsilon for."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:90
+msgid ""
+"Number which represents the maximal overestimation for the count of this "
+"element."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:98
+msgid ""
+":zeek:type:`function` (handle: :zeek:type:`opaque` of topk, k: "
+":zeek:type:`count`) : :zeek:type:`any_vec`"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst
+msgid "k"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:106
+msgid "number of elements to return."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:109
+msgid "vector of the first k elements."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:116
+msgid ""
+":zeek:type:`function` (size: :zeek:type:`count`) : :zeek:type:`opaque` of"
+" topk"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst
+msgid "size"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:121
+msgid "number of elements to track."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:124
+msgid "Opaque pointer to the data structure."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:131
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:149
+msgid ""
+":zeek:type:`function` (handle1: :zeek:type:`opaque` of topk, handle2: "
+":zeek:type:`opaque` of topk) : :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst
+msgid "handle1"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:136
+msgid "the first TopK handle."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst
+msgid "handle2"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:139
+msgid "the second TopK handle."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:141
+msgid ""
+"This does not remove any elements, the resulting data structure can be "
+"bigger than the maximum size given on initialization."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:154
+msgid ""
+"Use with care and only when being aware of the restrictions this entails."
+" Do not call :zeek:id:`topk_size` or :zeek:id:`topk_add` afterwards, "
+"results will probably not be what you expect."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:159
+msgid "the TopK handle in which the second TopK structure is merged."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:162
+msgid "the TopK handle in which is merged into the first TopK structure."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:169
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:188
+msgid ""
+":zeek:type:`function` (handle: :zeek:type:`opaque` of topk) : "
+":zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:174
+msgid ""
+"Note that the actual number of elements in the data structure can be "
+"lower or higher (due to non-pruned merges) than this."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:181
+msgid "size given during initialization."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:192
+msgid ""
+"This is equal to the number of all inserted objects if the data structure"
+" never has been pruned. Do not use after calling "
+":zeek:id:`topk_merge_prune` (will throw a warning message if used "
+"afterwards)."
+msgstr ""
+
+#: ../../scripts/base/bif/top-k.bif.zeek.rst:201
+msgid "sum of all counts."
+msgstr ""
+

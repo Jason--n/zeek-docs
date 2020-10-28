@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:4
+msgid "base/bif/zeekygen.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:7
+msgid "Functions for querying script, package, or variable documentation."
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:9
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:14
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:28
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:16
+msgid ":zeek:id:`get_identifier_comments`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:16
+msgid ""
+"Retrieve the Zeekygen-style comments (``##``) associated with an "
+"identifier (e.g."
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:18
+msgid ":zeek:id:`get_package_readme`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:18
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:47
+msgid "Retrieve the contents of a Zeek script package's README file."
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:19
+msgid ":zeek:id:`get_record_field_comments`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:19
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:61
+msgid ""
+"Retrieve the Zeekygen-style comments (``##``) associated with a record "
+"field."
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:20
+msgid ":zeek:id:`get_script_comments`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:20
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:76
+msgid ""
+"Retrieve the Zeekygen-style summary comments (``##!``) associated with a "
+"Zeek script."
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:26
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:31
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:45
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:59
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:74
+msgid ":zeek:type:`function` (name: :zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:33
+msgid ""
+"Retrieve the Zeekygen-style comments (``##``) associated with an "
+"identifier (e.g. a variable or type)."
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst
+msgid "name"
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:37
+msgid "a script-level identifier for which to retrieve comments."
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:40
+msgid ""
+"comments associated with *name*.  If *name* is not a known identifier, an"
+" empty string is returned."
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:50
+msgid ""
+"the name of a Zeek script package.  It must be a relative path to where "
+"it is located within a particular component of ZEEKPATH."
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:54
+msgid ""
+"contents of the package's README file.  If *name* is not a known package,"
+" an empty string is returned."
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:64
+msgid ""
+"the name of a record type and a field within it formatted like a typical "
+"record field access: \"<record_type>$<field>\"."
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:68
+msgid ""
+"comments associated with the record field.  If *name* does not point to a"
+" known record type or a known field within a record type, an empty string"
+" is returned."
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:80
+msgid ""
+"the name of a Zeek script.  It must be a relative path to where it is "
+"located within a particular component of ZEEKPATH and use the same file "
+"name extension/suffix as the actual file (e.g. \".zeek\")."
+msgstr ""
+
+#: ../../scripts/base/bif/zeekygen.bif.zeek.rst:85
+msgid ""
+"summary comments associated with script with *name*.  If *name* is not a "
+"known script, an empty string is returned."
+msgstr ""
+

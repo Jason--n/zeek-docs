@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_TCP.functions.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:26
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:15
+msgid ":zeek:id:`get_contents_file`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:31
+msgid "Returns the file handle of the contents file of a connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:16
+msgid ":zeek:id:`get_orig_seq`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:16
+msgid "Get the originator sequence number of a TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:17
+msgid ":zeek:id:`get_resp_seq`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:17
+msgid "Get the responder sequence number of a TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:18
+msgid ":zeek:id:`set_contents_file`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:18
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:86
+msgid ""
+"Associates a file handle with a connection for writing TCP byte stream "
+"contents."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:24
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:29
+msgid ""
+":zeek:type:`function` (cid: :zeek:type:`conn_id`, direction: "
+":zeek:type:`count`) : :zeek:type:`file`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst
+msgid "cid"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:34
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:57
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:74
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:90
+msgid "The connection ID."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst
+msgid "direction"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:37
+msgid ""
+"Controls what sides of the connection to record. See "
+":zeek:id:`set_contents_file` for possible values."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:41
+msgid ""
+"The :zeek:type:`file` handle for the contents file of the connection "
+"identified by *cid*. If the connection exists but there is no contents "
+"file for *direction*, then the function generates an error and returns a "
+"file handle to ``stderr``."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:50
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:67
+msgid ":zeek:type:`function` (cid: :zeek:type:`conn_id`) : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:52
+msgid ""
+"Get the originator sequence number of a TCP connection. Sequence numbers "
+"are absolute (i.e., they reflect the values seen directly in packet "
+"headers; they are not relative to the beginning of the connection)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:60
+msgid ""
+"The highest sequence number sent by a connection's originator, or 0 if "
+"*cid* does not point to an active TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:69
+msgid ""
+"Get the responder sequence number of a TCP connection. Sequence numbers "
+"are absolute (i.e., they reflect the values seen directly in packet "
+"headers; they are not relative to the beginning of the connection)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:77
+msgid ""
+"The highest sequence number sent by a connection's responder, or 0 if "
+"*cid* does not point to an active TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:84
+msgid ""
+":zeek:type:`function` (cid: :zeek:type:`conn_id`, direction: "
+":zeek:type:`count`, f: :zeek:type:`file`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:93
+msgid ""
+"Controls what sides of the connection to record. The argument can take "
+"one of the four values:"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:96
+msgid "``CONTENTS_NONE``: Stop recording the connection's content."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:97
+msgid ""
+"``CONTENTS_ORIG``: Record the data sent by the connection originator "
+"(often the client)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:99
+msgid ""
+"``CONTENTS_RESP``: Record the data sent by the connection responder "
+"(often the server)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:101
+msgid ""
+"``CONTENTS_BOTH``: Record the data sent in both directions. Results in "
+"the two directions being intermixed in the file, in the order the data "
+"was seen by Zeek."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst
+msgid "f"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:106
+msgid "The file handle of the file to write the contents to."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:109
+msgid ""
+"Returns false if *cid* does not point to an active connection, and true "
+"otherwise."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek.rst:114
+msgid ""
+"The data recorded to the file reflects the byte stream, not the contents "
+"of individual packets. Reordering and duplicates are removed. If any data"
+" is missing, the recording stops at the missing data; this can happen, "
+"e.g., due to an :zeek:id:`content_gap` event."
+msgstr ""
+

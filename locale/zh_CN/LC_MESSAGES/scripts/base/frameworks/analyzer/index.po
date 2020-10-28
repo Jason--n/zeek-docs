@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/analyzer/index.rst:4
+msgid "Package: base/frameworks/analyzer"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/index.rst:6
+msgid ""
+"The analyzer framework allows to dynamically enable or disable Zeek's "
+"protocol analyzers, as well as to manage the well-known ports which "
+"automatically activate a particular analyzer for new connections."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/index.rst:10
+msgid ":doc:`/scripts/base/frameworks/analyzer/__load__.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/index.rst:13
+msgid ":doc:`/scripts/base/frameworks/analyzer/main.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/index.rst:15
+msgid "Framework for managing Zeek's protocol analyzers."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/index.rst:17
+msgid ""
+"The analyzer framework allows to dynamically enable or disable analyzers,"
+" as well as to manage the well-known ports which automatically activate a"
+" particular analyzer for new connections."
+msgstr ""
+
+#: ../../scripts/base/frameworks/analyzer/index.rst:21
+msgid ""
+"Protocol analyzers are identified by unique tags of type "
+":zeek:type:`Analyzer::Tag`, such as :zeek:enum:`Analyzer::ANALYZER_HTTP`."
+" These tags are defined internally by the analyzers themselves, and "
+"documented in their analyzer-specific description along with the events "
+"that they generate."
+msgstr ""
+

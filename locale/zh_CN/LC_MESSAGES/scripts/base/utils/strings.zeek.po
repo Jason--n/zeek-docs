@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/utils/strings.zeek.rst:4
+msgid "base/utils/strings.zeek"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:6
+msgid ""
+"Functions to assist with small string analysis and manipulation that can "
+"be implemented as Zeek functions and don't need to be implemented as "
+"built-in functions."
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:14
+#: ../../scripts/base/utils/strings.zeek.rst:27
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:16
+msgid ":zeek:id:`cut_tail`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:16
+#: ../../scripts/base/utils/strings.zeek.rst:32
+msgid "Cut a number of characters from the end of the given string."
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:17
+msgid ":zeek:id:`is_string_binary`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:17
+#: ../../scripts/base/utils/strings.zeek.rst:47
+#, python-format
+msgid ""
+"Returns true if the given string is at least 25% composed of 8-bit "
+"characters."
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:19
+msgid ":zeek:id:`join_string_set`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:19
+#: ../../scripts/base/utils/strings.zeek.rst:54
+msgid ""
+"Join a set of strings together, with elements delimited by a constant "
+"string."
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:20
+msgid ":zeek:id:`string_escape`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:20
+#: ../../scripts/base/utils/strings.zeek.rst:70
+msgid "Given a string, returns an escaped version."
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:25
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:30
+msgid ""
+":zeek:type:`function` (s: :zeek:type:`string`, tail_len: "
+":zeek:type:`count`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst
+msgid "s"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:35
+msgid "a string to trim."
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst
+msgid "tail_len"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:38
+msgid "the number of characters to remove from the end of the string."
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:41
+msgid "the given string with *tail_len* characters removed from the end."
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:45
+msgid ":zeek:type:`function` (s: :zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:52
+msgid ""
+":zeek:type:`function` (ss: :zeek:type:`set` [:zeek:type:`string`], j: "
+":zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst
+msgid "ss"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:57
+msgid "a set of strings to join."
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst
+msgid "j"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:60
+msgid "the string used to join set elements."
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:63
+msgid ""
+"a string composed of all elements of the set, delimited by the joining "
+"string."
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:68
+msgid ""
+":zeek:type:`function` (s: :zeek:type:`string`, chars: "
+":zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:73
+msgid "a string to escape."
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst
+msgid "chars"
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:76
+msgid "a string containing all the characters that need to be escaped."
+msgstr ""
+
+#: ../../scripts/base/utils/strings.zeek.rst:79
+msgid ""
+"a string with all occurrences of any character in *chars* escaped using "
+"``\\``, and any literal ``\\`` characters likewise escaped."
+msgstr ""
+

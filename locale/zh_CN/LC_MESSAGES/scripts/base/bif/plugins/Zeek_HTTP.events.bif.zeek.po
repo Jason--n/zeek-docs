@@ -1,0 +1,540 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_HTTP.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:34
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:15
+msgid ":zeek:id:`http_all_headers`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:15
+msgid ""
+"Generated for HTTP headers, passing on all headers of an HTTP message at "
+"once."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:17
+msgid ":zeek:id:`http_begin_entity`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:17
+msgid "Generated when starting to parse an HTTP body entity."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:18
+msgid ":zeek:id:`http_connection_upgrade`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:18
+msgid "Generated when a HTTP session is upgraded to a different protocol (e.g."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:19
+msgid ":zeek:id:`http_content_type`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:19
+msgid "Generated for reporting an HTTP body's content type."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:20
+msgid ":zeek:id:`http_end_entity`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:20
+msgid "Generated when finishing parsing an HTTP body entity."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:21
+msgid ":zeek:id:`http_entity_data`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:21
+msgid "Generated when parsing an HTTP body entity, passing on the data."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:22
+msgid ":zeek:id:`http_event`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:22
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:202
+msgid "Generated for errors found when decoding HTTP requests or replies."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:23
+msgid ":zeek:id:`http_header`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:23
+msgid "Generated for HTTP headers."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:24
+msgid ":zeek:id:`http_message_done`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:24
+msgid "Generated once at the end of parsing an HTTP message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:25
+msgid ":zeek:id:`http_reply`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:25
+msgid "Generated for HTTP replies."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:26
+msgid ":zeek:id:`http_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:26
+msgid "Generated for HTTP requests."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:27
+msgid ":zeek:id:`http_stats`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:27
+msgid "Generated at the end of an HTTP session to report statistics about it."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:32
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:37
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, hlist: :zeek:type:`mime_header_list`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:39
+msgid ""
+"Generated for HTTP headers, passing on all headers of an HTTP message at "
+"once. Zeek supports persistent and pipelined HTTP sessions and raises "
+"corresponding events as it parses client/server dialogues."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:43
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:74
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:115
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:148
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:177
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:204
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:230
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:267
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:293
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:321
+msgid ""
+"See `Wikipedia "
+"<http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol>`__ for more "
+"information about the HTTP protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:47
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:78
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:97
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:119
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:152
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:181
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:208
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:234
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:271
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:297
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:325
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:352
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:50
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:237
+msgid "True if the header was sent by the originator of the TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "hlist"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:53
+msgid ""
+"A *table* containing all headers extracted from the current entity. The "
+"table is indexed by the position of the header (1 for the first, 2 for "
+"the second, etc.)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:61
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:135
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:252
+msgid "This event is also raised for headers found in nested body entities."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:66
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:140
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:68
+msgid ""
+"Generated when starting to parse an HTTP body entity. This event is "
+"generated at least once for each non-empty (client or server) HTTP body; "
+"and potentially more than once if the body contains further nested MIME "
+"entities. Zeek raises this event just before it starts parsing each "
+"entity's content."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:81
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:122
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:155
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:184
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:274
+msgid "True if the entity was sent by the originator of the TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:90
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, protocol: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:92
+msgid ""
+"Generated when a HTTP session is upgraded to a different protocol (e.g. "
+"websocket). This event is raised when a server replies with a HTTP 101 "
+"reply. No more HTTP events will be raised after this event."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "protocol"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:100
+msgid "The protocol to which the connection is switching."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:108
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, ty: :zeek:type:`string`, subty: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:110
+msgid ""
+"Generated for reporting an HTTP body's content type.  This event is "
+"generated at the end of parsing an HTTP header, passing on the MIME type "
+"as specified by the ``Content-Type`` header. If that header is missing, "
+"this event is still raised with a default value of ``text/plain``."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "ty"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:126
+msgid "The main type."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "subty"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:129
+msgid "The subtype."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:142
+msgid ""
+"Generated when finishing parsing an HTTP body entity. This event is "
+"generated at least once for each non-empty (client or server) HTTP body; "
+"and potentially more than once if the body contains further nested MIME "
+"entities. Zeek raises this event at the point when it has finished "
+"parsing an entity's content."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:164
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, length: :zeek:type:`count`, data: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:166
+msgid ""
+"Generated when parsing an HTTP body entity, passing on the data. This "
+"event can potentially be raised many times for each entity, each time "
+"passing a chunk of the data of not further defined size."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:170
+msgid ""
+"A common idiom for using this event is to first *reassemble* the data at "
+"the scripting layer by concatenating it to a successively growing string;"
+" and only perform further content analysis once the corresponding "
+":zeek:id:`http_end_entity` event has been raised. Note, however, that "
+"doing so can be quite expensive for HTTP tranders. At the very least, one"
+" should impose an upper size limit on how much data is being buffered."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "length"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:188
+msgid "The length of *data*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "data"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:191
+msgid "One chunk of raw entity data."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:200
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, event_type: "
+":zeek:type:`string`, detail: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "event_type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:211
+msgid ""
+"A string describing the general category of the problem found (e.g., "
+"``illegal format``)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "detail"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:215
+msgid "Further more detailed description of the error."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:223
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, original_name: :zeek:type:`string`, name: "
+":zeek:type:`string`, value: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:224
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, name: :zeek:type:`string`, value: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:226
+msgid ""
+"Generated for HTTP headers. Zeek supports persistent and pipelined HTTP "
+"sessions and raises corresponding events as it parses client/server "
+"dialogues."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "original_name"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:240
+msgid "The name of the header (unaltered)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "name"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:243
+msgid "The name of the header (converted to all uppercase)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "value"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:246
+msgid "The value of the header."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:257
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, stat: :zeek:type:`http_message_stat`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:259
+msgid ""
+"Generated once at the end of parsing an HTTP message. Zeek supports "
+"persistent and pipelined HTTP sessions and raises corresponding events as"
+" it parses client/server dialogues. A \"message\" is one top-level HTTP "
+"entity, such as a complete request or reply. Each message can have "
+"further nested sub-entities inside. This event is raised once all sub-"
+"entities belonging to a top-level message have been processed (and their "
+"corresponding ``http_entity_*`` events generated)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "stat"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:278
+msgid "Further meta information about the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:286
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, version: "
+":zeek:type:`string`, code: :zeek:type:`count`, reason: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:288
+msgid ""
+"Generated for HTTP replies. Zeek supports persistent and pipelined HTTP "
+"sessions and raises corresponding events as it parses client/server "
+"dialogues. This event is generated as soon as a reply's initial line has "
+"been parsed, and before any :zeek:id:`http_header` events are raised."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "version"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:300
+msgid "The version number specified in the reply (e.g., ``1.1``)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "code"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:303
+msgid "The numerical response code returned by the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "reason"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:306
+msgid "The textual description returned by the server along with *code*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:314
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, method: "
+":zeek:type:`string`, original_URI: :zeek:type:`string`, unescaped_URI: "
+":zeek:type:`string`, version: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:316
+msgid ""
+"Generated for HTTP requests. Zeek supports persistent and pipelined HTTP "
+"sessions and raises corresponding events as it parses client/server "
+"dialogues. This event is generated as soon as a request's initial line "
+"has been parsed, and before any :zeek:id:`http_header` events are raised."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "method"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:328
+msgid "The HTTP method extracted from the request (e.g., ``GET``, ``POST``)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "original_URI"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:331
+msgid "The unprocessed URI as specified in the request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "unescaped_URI"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:334
+msgid "The URI with all percent-encodings decoded."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:337
+msgid "The version number specified in the request (e.g., ``1.1``)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:345
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, stats: "
+":zeek:type:`http_stats_rec`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:347
+msgid ""
+"Generated at the end of an HTTP session to report statistics about it. "
+"This event is raised after all of an HTTP session's requests and replies "
+"have been fully processed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst
+msgid "stats"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_HTTP.events.bif.zeek.rst:355
+msgid "Statistics summarizing HTTP-level properties of the finished connection."
+msgstr ""
+

@@ -1,0 +1,286 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:4
+msgid "base/bif/stats.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:13
+#: ../../scripts/base/bif/stats.bif.zeek.rst:34
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:15
+msgid ":zeek:id:`get_broker_stats`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:15
+#: ../../scripts/base/bif/stats.bif.zeek.rst:39
+msgid "Returns statistics about Broker communication."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:16
+msgid ":zeek:id:`get_conn_stats`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:16
+#: ../../scripts/base/bif/stats.bif.zeek.rst:62
+msgid "Returns Zeek traffic statistics."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:17
+msgid ":zeek:id:`get_dns_stats`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:17
+#: ../../scripts/base/bif/stats.bif.zeek.rst:84
+msgid "Returns statistics about DNS lookup activity."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:18
+msgid ":zeek:id:`get_event_stats`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:18
+#: ../../scripts/base/bif/stats.bif.zeek.rst:106
+msgid "Returns statistics about the event engine."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:19
+msgid ":zeek:id:`get_file_analysis_stats`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:19
+#: ../../scripts/base/bif/stats.bif.zeek.rst:128
+msgid "Returns statistics about file analysis."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:20
+msgid ":zeek:id:`get_gap_stats`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:20
+#: ../../scripts/base/bif/stats.bif.zeek.rst:150
+msgid "Returns statistics about TCP gaps."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:21
+msgid ":zeek:id:`get_matcher_stats`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:21
+msgid "Returns statistics about the regular expression engine."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:22
+msgid ":zeek:id:`get_net_stats`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:22
+msgid "Returns packet capture statistics."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:23
+msgid ":zeek:id:`get_proc_stats`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:23
+#: ../../scripts/base/bif/stats.bif.zeek.rst:221
+msgid "Returns Zeek process statistics."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:24
+msgid ":zeek:id:`get_reassembler_stats`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:24
+#: ../../scripts/base/bif/stats.bif.zeek.rst:243
+msgid "Returns statistics about reassembler usage."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:25
+msgid ":zeek:id:`get_reporter_stats`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:25
+#: ../../scripts/base/bif/stats.bif.zeek.rst:265
+msgid "Returns statistics about reporter messages and weirds."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:26
+msgid ":zeek:id:`get_thread_stats`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:26
+#: ../../scripts/base/bif/stats.bif.zeek.rst:287
+msgid "Returns statistics about thread usage."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:27
+msgid ":zeek:id:`get_timer_stats`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:27
+#: ../../scripts/base/bif/stats.bif.zeek.rst:309
+msgid "Returns statistics about timer usage."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:32
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:37
+msgid ":zeek:type:`function` () : :zeek:type:`BrokerStats`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:42
+msgid "A record with Broker statistics."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:60
+msgid ":zeek:type:`function` () : :zeek:type:`ConnStats`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:65
+msgid "A record with connection and packet statistics."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:82
+msgid ":zeek:type:`function` () : :zeek:type:`DNSStats`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:87
+msgid "A record with DNS lookup statistics."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:104
+msgid ":zeek:type:`function` () : :zeek:type:`EventStats`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:109
+msgid "A record with event engine statistics."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:126
+msgid ":zeek:type:`function` () : :zeek:type:`FileAnalysisStats`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:131
+msgid "A record with file analysis statistics."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:148
+msgid ":zeek:type:`function` () : :zeek:type:`GapStats`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:153
+msgid "A record with TCP gap statistics."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:170
+msgid ":zeek:type:`function` () : :zeek:type:`MatcherStats`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:172
+msgid ""
+"Returns statistics about the regular expression engine. Statistics "
+"include the number of distinct matchers, DFA states, DFA state "
+"transitions, memory usage of DFA states, cache hits/misses, and average "
+"number of NFA states across all matchers."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:178
+msgid "A record with matcher statistics."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:195
+msgid ":zeek:type:`function` () : :zeek:type:`NetStats`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:197
+msgid ""
+"Returns packet capture statistics. Statistics include the number of "
+"packets *(i)* received by Zeek, *(ii)* dropped, and *(iii)* seen on the "
+"link (not always available)."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:202
+msgid "A record of packet statistics."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:219
+msgid ":zeek:type:`function` () : :zeek:type:`ProcStats`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:224
+msgid "A record with process statistics."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:241
+msgid ":zeek:type:`function` () : :zeek:type:`ReassemblerStats`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:246
+msgid "A record with reassembler statistics."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:263
+msgid ":zeek:type:`function` () : :zeek:type:`ReporterStats`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:268
+msgid "A record with reporter statistics."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:285
+msgid ":zeek:type:`function` () : :zeek:type:`ThreadStats`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:290
+msgid "A record with thread usage statistics."
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:307
+msgid ":zeek:type:`function` () : :zeek:type:`TimerStats`"
+msgstr ""
+
+#: ../../scripts/base/bif/stats.bif.zeek.rst:312
+msgid "A record with timer usage statistics."
+msgstr ""
+

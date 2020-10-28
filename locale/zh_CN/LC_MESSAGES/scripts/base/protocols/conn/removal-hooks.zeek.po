@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:4
+msgid "base/protocols/conn/removal-hooks.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:7
+msgid ""
+"Adds a framework for registering \"connection removal hooks\". All "
+"registered hooks for a given connection get run within the "
+":zeek:see:`connection_state_remove` event for that connection. This "
+"functionality is useful from a performance/scaling concern: if every new "
+"protocol-analysis script uses :zeek:see:`connection_state_remove` to "
+"implement its finalization/cleanup logic, then all connections take the "
+"performance hit of dispatching that event, even if they aren't related to"
+" that specific protocol."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:16
+msgid "Conn"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:19
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:21
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:51
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:23
+msgid ":zeek:type:`Conn::RemovalHook`: :zeek:type:`hook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:23
+msgid ""
+"A hook function for use with either "
+":zeek:see:`Conn::register_removal_hook` or "
+":zeek:see:`Conn::unregister_removal_hook`."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:28
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:30
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:32
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:34
+msgid ""
+"removal_hooks: :zeek:type:`set` [:zeek:type:`Conn::RemovalHook`] "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:38
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:62
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:40
+msgid ":zeek:id:`Conn::register_removal_hook`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:40
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:67
+msgid ""
+"Register a hook that will later be called during a connection's "
+":zeek:see:`connection_state_remove` event."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:42
+msgid ":zeek:id:`Conn::unregister_removal_hook`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:42
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:84
+msgid ""
+"Unregister a hook that would have been called during a connection's "
+":zeek:see:`connection_state_remove` event such that it will no longer be "
+"called."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:49
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:54
+msgid ":zeek:type:`hook` (c: :zeek:type:`connection`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:56
+msgid ""
+"A hook function for use with either "
+":zeek:see:`Conn::register_removal_hook` or "
+":zeek:see:`Conn::unregister_removal_hook`.  The :zeek:see:`connection` "
+"argument refers to the connection currently being removed within a "
+":zeek:see:`connection_state_remove` event."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:65
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:82
+msgid ""
+":zeek:type:`function` (c: :zeek:type:`connection`, hk: "
+":zeek:type:`Conn::RemovalHook`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:71
+msgid ""
+"The associated connection whose :zeek:see:`connection_state_remove` event"
+" should trigger a callback to *hk*."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst
+msgid "hk"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:75
+msgid "The hook function to use as a callback."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:78
+msgid "false if the provided hook was previously registered, else true."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:89
+msgid ""
+"The associated connection whose :zeek:see:`connection_state_remove` event"
+" could have triggered a callback to *hk*."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:93
+msgid "The hook function that would have been used as a callback."
+msgstr ""
+
+#: ../../scripts/base/protocols/conn/removal-hooks.zeek.rst:96
+msgid "true if the provided hook was previously registered, else false."
+msgstr ""
+

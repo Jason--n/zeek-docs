@@ -1,0 +1,507 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:4
+msgid "base/protocols/ssh/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:8
+msgid ""
+"Implements base functionality for SSH analysis. Generates the ssh.log "
+"file."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst
+msgid "Namespaces"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:10
+msgid "GLOBAL, SSH"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:11
+msgid ""
+":doc:`base/protocols/conn/removal-hooks.zeek "
+"</scripts/base/protocols/conn/removal-hooks.zeek>`, :doc:`base/utils"
+"/directions-and-hosts.zeek </scripts/base/utils/directions-and-"
+"hosts.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:16
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:78
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:18
+msgid ""
+":zeek:id:`SSH::compression_algorithms`: :zeek:type:`set` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:18
+msgid "The set of compression algorithms."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:19
+msgid ""
+":zeek:id:`SSH::disable_analyzer_after_detection`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:19
+msgid ""
+"If true, after detection detach the SSH analyzer from the connection to "
+"prevent continuing to process encrypted traffic."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:24
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:107
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:26
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:35
+msgid ":zeek:type:`SSH::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:26
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:175
+msgid "The record type which contains the fields of the SSH log."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:30
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:32
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:32
+msgid "The SSH protocol logging stream identifier."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:34
+msgid ":zeek:enum:`SSH::LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:37
+msgid ":zeek:type:`SSH::Info`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:39
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:162
+msgid ""
+"logged: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:41
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:164
+msgid "capabilities: :zeek:type:`SSH::Capabilities` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:43
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:167
+msgid "analyzer_id: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:44
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:167
+msgid "Analzyer ID"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:45
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:47
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:49
+msgid "ssh: :zeek:type:`SSH::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:50
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:54
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:178
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:56
+msgid ":zeek:id:`SSH::log_ssh`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:56
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:183
+msgid ""
+"Event that can be handled to access the SSH record as it is sent on to "
+"the logging framework."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:58
+msgid ":zeek:id:`ssh_auth_failed`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:58
+msgid ""
+"This event is generated when an :abbr:`SSH (Secure Shell)` connection was"
+" determined to have had a failed authentication."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:60
+msgid ":zeek:id:`ssh_auth_result`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:60
+msgid ""
+"This event is generated when a determination has been made about the "
+"final authentication result of an :abbr:`SSH (Secure Shell)` connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:63
+msgid ":zeek:id:`ssh_server_host_key`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:63
+msgid "Event that can be handled when the analyzer sees an SSH server host key."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:68
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:252
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:70
+msgid ":zeek:id:`SSH::finalize_ssh`: :zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:70
+msgid "SSH finalization hook."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:71
+msgid ":zeek:id:`SSH::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:71
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:263
+msgid "A default logging policy hook for the stream."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:76
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:81
+msgid ":zeek:type:`set` [:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:82
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:99
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:93
+msgid ""
+"The set of compression algorithms. We can't accurately determine "
+"authentication success or failure when compression is enabled."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:98
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:100
+msgid "``T``"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:102
+msgid ""
+"If true, after detection detach the SSH analyzer from the connection to "
+"prevent continuing to process encrypted traffic. Helps with performance "
+"(especially with large file transfers)."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:110
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:113
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:113
+msgid "Time when the SSH connection began."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:116
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:116
+msgid "Unique ID for the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:119
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:119
+msgid "The connection's 4-tuple of endpoint addresses/ports."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:122
+msgid "version: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:122
+msgid "SSH major version (1 or 2)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:125
+msgid "auth_success: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:125
+msgid "Authentication result (T=success, F=failure, unset=unknown)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:131
+msgid ""
+"auth_attempts: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&default`"
+" = ``0`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:128
+msgid ""
+"The number of authentication attemps we observed. There's always at least"
+" one, since some servers might support no authentication at all. It's "
+"important to note that not all of these are failures, since some servers "
+"require two-factor auth (e.g. password AND pubkey)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:136
+msgid "direction: :zeek:type:`Direction` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:134
+msgid ""
+"Direction of the connection. If the client was a local host logging into "
+"an external host, this would be OUTBOUND. INBOUND would be set for the "
+"opposite situation."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:139
+msgid "client: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:139
+msgid "The client's version string"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:142
+msgid "server: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:142
+msgid "The server's version string"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:145
+msgid "cipher_alg: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:145
+msgid "The encryption algorithm in use"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:148
+msgid "mac_alg: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:148
+msgid "The signing (MAC) algorithm in use"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:151
+msgid ""
+"compression_alg: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:151
+msgid "The compression algorithm in use"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:154
+msgid "kex_alg: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:154
+msgid "The key exchange algorithm in use"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:157
+msgid "host_key_alg: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:157
+msgid "The server host key's algorithm"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:160
+msgid "host_key: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:160
+msgid "The server's key fingerprint"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:173
+msgid ""
+"remote_location: :zeek:type:`geo_location` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:170
+msgid "(present if :doc:`/scripts/policy/protocols/ssh/geo-data.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:172
+msgid "Add geographic data related to the \"remote\" host of the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:181
+msgid ":zeek:type:`event` (rec: :zeek:type:`SSH::Info`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:188
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:190
+msgid ""
+"This event is generated when an :abbr:`SSH (Secure Shell)` connection was"
+" determined to have had a failed authentication. This determination is "
+"based on packet size analysis, and errs on the side of caution - that is,"
+" if there's any doubt about the authentication failure, this event is "
+"*not* raised."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:196
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:218
+msgid "This event is only raised once per connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:199
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:221
+msgid ""
+"The connection over which the :abbr:`SSH (Secure Shell)` connection took "
+"place."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:210
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, result: "
+":zeek:type:`bool`, auth_attempts: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:212
+msgid ""
+"This event is generated when a determination has been made about the "
+"final authentication result of an :abbr:`SSH (Secure Shell)` connection. "
+"This determination is based on packet size analysis, and errs on the side"
+" of caution - that is, if there's any doubt about the result of the "
+"authentication, this event is *not* raised."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst
+msgid "result"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:225
+msgid "True if the authentication was successful, false if not."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst
+msgid "auth_attempts"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:228
+msgid "The number of authentication attempts that were observed."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:239
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`, hash: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:241
+msgid ""
+"Event that can be handled when the analyzer sees an SSH server host key. "
+"This abstracts :zeek:id:`ssh1_server_host_key` and "
+":zeek:id:`ssh2_server_host_key`."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:255
+msgid ":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:257
+msgid ""
+"SSH finalization hook.  Remaining SSH info may get logged when it's "
+"called."
+msgstr ""
+
+#: ../../scripts/base/protocols/ssh/main.zeek.rst:261
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

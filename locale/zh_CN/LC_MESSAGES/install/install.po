@@ -1,0 +1,385 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../install/install.rst:14
+msgid "Installing"
+msgstr ""
+
+#: ../../install/install.rst:17
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../install/install.rst:19
+msgid ""
+"Before installing Zeek, you'll need to ensure that some dependencies are "
+"in place."
+msgstr ""
+
+#: ../../install/install.rst:23
+msgid "Required Dependencies"
+msgstr ""
+
+#: ../../install/install.rst:25
+msgid ""
+"Zeek requires the following libraries and tools to be installed before "
+"you begin:"
+msgstr ""
+
+#: ../../install/install.rst:28
+msgid "Libpcap                           (http://www.tcpdump.org)"
+msgstr ""
+
+#: ../../install/install.rst:29
+msgid "OpenSSL libraries                 (http://www.openssl.org)"
+msgstr ""
+
+#: ../../install/install.rst:30
+msgid "BIND8 library"
+msgstr ""
+
+#: ../../install/install.rst:31
+msgid "Libz"
+msgstr ""
+
+#: ../../install/install.rst:32
+msgid "Bash (for ZeekControl)"
+msgstr ""
+
+#: ../../install/install.rst:33
+msgid "Python 2.6 or greater (for ZeekControl)"
+msgstr ""
+
+#: ../../install/install.rst:35
+msgid ""
+"To build Zeek from source, the following additional dependencies are "
+"required:"
+msgstr ""
+
+#: ../../install/install.rst:37
+msgid "CMake 3.0 or greater              (http://www.cmake.org)"
+msgstr ""
+
+#: ../../install/install.rst:38
+msgid "Make"
+msgstr ""
+
+#: ../../install/install.rst:39
+msgid "C/C++ compiler with C++17 support (GCC 7+ or Clang 4+)"
+msgstr ""
+
+#: ../../install/install.rst:40
+msgid "SWIG                              (http://www.swig.org)"
+msgstr ""
+
+#: ../../install/install.rst:41
+msgid "Bison 2.5 or greater              (https://www.gnu.org/software/bison/)"
+msgstr ""
+
+#: ../../install/install.rst:42
+msgid "Flex (lexical analyzer generator) (https://github.com/westes/flex)"
+msgstr ""
+
+#: ../../install/install.rst:43
+msgid "Libpcap headers                   (http://www.tcpdump.org)"
+msgstr ""
+
+#: ../../install/install.rst:44
+msgid "OpenSSL headers                   (http://www.openssl.org)"
+msgstr ""
+
+#: ../../install/install.rst:45
+msgid "zlib headers                      (https://zlib.net/)"
+msgstr ""
+
+#: ../../install/install.rst:46
+msgid "Python                            (https://www.python.org/)"
+msgstr ""
+
+#: ../../install/install.rst:48
+msgid "To install the required dependencies, you can use:"
+msgstr ""
+
+#: ../../install/install.rst:50
+msgid "RPM/RedHat-based Linux:"
+msgstr ""
+
+#: ../../install/install.rst:56
+msgid ""
+"On RHEL/CentOS 6/7, you can install and activate a devtoolset_ to get "
+"access to recent GCC versions. You will also have to install and activate"
+" CMake 3. For example:"
+msgstr ""
+
+#: ../../install/install.rst:65
+msgid "DEB/Debian-based Linux:"
+msgstr ""
+
+#: ../../install/install.rst:71
+msgid ""
+"If your system uses Python 2.7, then you will also need to install the "
+"\"python-ipaddress\" package. If you are running Debian 8 (jessie), "
+"install clang-4.0 instead of GCC."
+msgstr ""
+
+#: ../../install/install.rst:75
+msgid "FreeBSD:"
+msgstr ""
+
+#: ../../install/install.rst:77
+msgid ""
+"Most required dependencies should come with a minimal FreeBSD install "
+"except for the following."
+msgstr ""
+
+#: ../../install/install.rst:84
+msgid "Mac OS X:"
+msgstr ""
+
+#: ../../install/install.rst:86
+msgid ""
+"Compiling source code on Macs requires first installing either Xcode_ or "
+"the \"Command Line Tools\" (which is a much smaller download).  To check "
+"if either is installed, run the ``xcode-select -p`` command.  If you see "
+"an error message, then neither is installed and you can then run ``xcode-"
+"select --install`` which will prompt you to either get Xcode (by clicking"
+" \"Get Xcode\") or to install the command line tools (by clicking "
+"\"Install\")."
+msgstr ""
+
+#: ../../install/install.rst:94
+msgid ""
+"OS X comes with all required dependencies except for CMake_, SWIG_, "
+"Bison, and OpenSSL (OpenSSL headers were removed in OS X 10.11, therefore"
+" OpenSSL must be installed manually for OS X versions 10.11 or newer)."
+msgstr ""
+
+#: ../../install/install.rst:99
+msgid ""
+"Distributions of these dependencies can likely be obtained from your "
+"preferred Mac OS X package management system (e.g. Homebrew_, MacPorts_, "
+"or Fink_). Specifically for Homebrew, the ``cmake``, ``swig``, "
+"``openssl``, and ``bison`` packages provide the required dependencies.  "
+"For MacPorts, the ``cmake``, ``swig``, ``swig-python``, ``openssl``, and "
+"``bison`` packages provide the required dependencies."
+msgstr ""
+
+#: ../../install/install.rst:109
+msgid "Optional Dependencies"
+msgstr ""
+
+#: ../../install/install.rst:111
+msgid ""
+"Zeek can make use of some optional libraries and tools if they are found "
+"at build time:"
+msgstr ""
+
+#: ../../install/install.rst:114
+msgid "libmaxminddb (for geolocating IP addresses)"
+msgstr ""
+
+#: ../../install/install.rst:115
+msgid "sendmail (enables Zeek and ZeekControl to send mail)"
+msgstr ""
+
+#: ../../install/install.rst:116
+msgid "curl (used by a Zeek script that implements active HTTP)"
+msgstr ""
+
+#: ../../install/install.rst:117
+msgid "gperftools (tcmalloc is used to improve memory and CPU usage)"
+msgstr ""
+
+#: ../../install/install.rst:118
+msgid "jemalloc (http://www.canonware.com/jemalloc/)"
+msgstr ""
+
+#: ../../install/install.rst:119
+msgid ""
+"PF_RING (Linux only, see :doc:`Cluster Configuration "
+"<../configuration/index>`)"
+msgstr ""
+
+#: ../../install/install.rst:120
+msgid "krb5 libraries and headers"
+msgstr ""
+
+#: ../../install/install.rst:121
+msgid "ipsumdump (for trace-summary; http://www.cs.ucla.edu/~kohler/ipsumdump)"
+msgstr ""
+
+#: ../../install/install.rst:123
+msgid ""
+"Geolocation is probably the most interesting and can be installed on most"
+" platforms by following the instructions for :ref:`installing the GeoIP "
+"library and database <geolocation>`."
+msgstr ""
+
+#: ../../install/install.rst:130
+msgid "Installing Zeek"
+msgstr ""
+
+#: ../../install/install.rst:132
+msgid ""
+"Zeek can be downloaded in either pre-built binary package or source code "
+"forms."
+msgstr ""
+
+#: ../../install/install.rst:137
+msgid "Using Pre-Built Binary Release Packages"
+msgstr ""
+
+#: ../../install/install.rst:139
+msgid ""
+"See the `downloads page`_ for currently supported/targeted platforms for "
+"binary releases and for installation instructions."
+msgstr ""
+
+#: ../../install/install.rst:142
+msgid "Linux Packages"
+msgstr ""
+
+#: ../../install/install.rst:144
+msgid ""
+"Linux based binary installations are usually performed by adding "
+"information about the Zeek packages to the respective system packaging "
+"tool. Then the usual system utilities such as ``apt``, ``dnf``, ``yum``, "
+"or ``zypper`` are used to perform the installation."
+msgstr ""
+
+#: ../../install/install.rst:149
+msgid ""
+"The primary install prefix for binary packages is either ``/opt/bro`` or "
+"``/opt/zeek`` (depending on which version you're using)."
+msgstr ""
+
+#: ../../install/install.rst:153
+msgid "Installing from Source"
+msgstr ""
+
+#: ../../install/install.rst:155
+msgid ""
+"Zeek releases are bundled into source packages for convenience and are "
+"available on the `downloads page`_."
+msgstr ""
+
+#: ../../install/install.rst:158
+msgid ""
+"Alternatively, the latest Zeek development version can be obtained "
+"through git repositories hosted at https://github.com/zeek.  See our `git"
+" development documentation "
+"<https://www.zeek.org/development/howtos/process.html>`_ for "
+"comprehensive information on Zeek's use of git revision control, but the "
+"short story for downloading the full source code experience for Zeek via "
+"git is:"
+msgstr ""
+
+#: ../../install/install.rst:169
+msgid ""
+"If you choose to clone the ``zeek`` repository non-recursively for a "
+"\"minimal Zeek experience\", be aware that compiling it depends on "
+"several of the other submodules as well."
+msgstr ""
+
+#: ../../install/install.rst:173
+msgid ""
+"The typical way to build and install from source is (for more options, "
+"run ``./configure --help``):"
+msgstr ""
+
+#: ../../install/install.rst:182
+msgid ""
+"If the ``configure`` script fails, then it is most likely because it "
+"either couldn't find a required dependency or it couldn't find a "
+"sufficiently new version of a dependency.  Assuming that you already "
+"installed all required dependencies, then you may need to use one of the "
+"``--with-*`` options that can be given to the ``configure`` script to "
+"help it locate a dependency."
+msgstr ""
+
+#: ../../install/install.rst:188
+msgid ""
+"The default installation path is ``/usr/local/zeek``, which would "
+"typically require root privileges when doing the ``make install``.  A "
+"different installation path can be chosen by specifying the ``configure``"
+" script ``--prefix`` option.  Note that ``/usr``, ``/opt/bro/``, and "
+"``/opt/zeek`` are the standard prefixes for binary Zeek packages to be "
+"installed, so those are typically not good choices unless you are "
+"creating such a package."
+msgstr ""
+
+#: ../../install/install.rst:195
+msgid ""
+"OpenBSD users, please see our `FAQ "
+"<https://www.zeek.org/documentation/faq.html>`_ if you are having "
+"problems installing Zeek."
+msgstr ""
+
+#: ../../install/install.rst:199
+msgid ""
+"Depending on the Zeek package you downloaded, there may be auxiliary "
+"tools and libraries available in the ``auxil/`` directory. Some of them "
+"will be automatically built and installed along with Zeek. There are "
+"``--disable-*`` options that can be given to the configure script to turn"
+" off unwanted auxiliary projects that would otherwise be installed "
+"automatically.  Finally, use ``make install-aux`` to install some of the "
+"other programs that are in the ``auxil/zeek-aux`` directory."
+msgstr ""
+
+#: ../../install/install.rst:207
+msgid ""
+"Finally, if you want to build the Zeek documentation (not required, "
+"because all of the documentation for the latest Zeek release is available"
+" on the Zeek web site), there are instructions in ``doc/README`` in the "
+"source distribution."
+msgstr ""
+
+#: ../../install/install.rst:213
+msgid "Cross Compiling"
+msgstr ""
+
+#: ../../install/install.rst:215
+msgid ""
+"See :doc:`cross-compiling` for an example of how to cross compile Zeek "
+"for a different target platform than the one on which you build."
+msgstr ""
+
+#: ../../install/install.rst:220
+msgid "Configure the Run-Time Environment"
+msgstr ""
+
+#: ../../install/install.rst:222
+msgid ""
+"You may want to adjust your ``PATH`` environment variable according to "
+"the platform/shell/package you're using.  For example:"
+msgstr ""
+
+#: ../../install/install.rst:225
+msgid "Bourne-Shell Syntax:"
+msgstr ""
+
+#: ../../install/install.rst:231
+msgid "C-Shell Syntax:"
+msgstr ""
+
+#: ../../install/install.rst:237
+msgid ""
+"Or substitute ``/opt/zeek/bin`` instead if you installed from a binary "
+"package."
+msgstr ""
+

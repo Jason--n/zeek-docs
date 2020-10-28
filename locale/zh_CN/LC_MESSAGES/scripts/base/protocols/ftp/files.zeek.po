@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:4
+msgid "base/protocols/ftp/files.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:8
+msgid "FTP"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:9
+msgid ""
+":doc:`base/frameworks/files </scripts/base/frameworks/files/index>`, "
+":doc:`base/protocols/ftp/info.zeek "
+"</scripts/base/protocols/ftp/info.zeek>`, "
+":doc:`base/protocols/ftp/main.zeek "
+"</scripts/base/protocols/ftp/main.zeek>`, "
+":doc:`base/protocols/ftp/utils.zeek "
+"</scripts/base/protocols/ftp/utils.zeek>`, :doc:`base/utils/conn-ids.zeek"
+" </scripts/base/utils/conn-ids.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:14
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:16
+msgid ":zeek:type:`FTP::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:18
+msgid ":zeek:type:`FTP::Info`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:20
+msgid "fuid: :zeek:type:`string` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:21
+msgid "File unique ID."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:22
+msgid ":zeek:type:`fa_file`: :zeek:type:`record` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:24
+msgid ":zeek:type:`fa_file`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:26
+msgid "ftp: :zeek:type:`FTP::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:30
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:40
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:32
+msgid ":zeek:id:`FTP::describe_file`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:32
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:45
+msgid "Describe the file being transferred."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:33
+msgid ":zeek:id:`FTP::get_file_handle`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:33
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:51
+msgid "Default file handle provider for FTP."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:38
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:43
+msgid ":zeek:type:`function` (f: :zeek:type:`fa_file`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/files.zeek.rst:49
+msgid ""
+":zeek:type:`function` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`) : :zeek:type:`string`"
+msgstr ""
+

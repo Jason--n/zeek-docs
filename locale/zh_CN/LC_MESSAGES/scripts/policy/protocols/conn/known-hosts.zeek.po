@@ -1,0 +1,356 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:4
+msgid "policy/protocols/conn/known-hosts.zeek"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:7
+msgid ""
+"This script logs hosts that Zeek determines have performed complete TCP "
+"handshakes and logs the address once per day (by default).  The log that "
+"is output provides an easy way to determine a count of the IP addresses "
+"in use on a network per day."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:12
+msgid "Known"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:13
+msgid ""
+":doc:`base/frameworks/cluster </scripts/base/frameworks/cluster/index>`, "
+":doc:`base/utils/directions-and-hosts.zeek </scripts/base/utils"
+"/directions-and-hosts.zeek>`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:16
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:18
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:72
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:20
+msgid ""
+":zeek:id:`Known::host_store_timeout`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:20
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:79
+msgid ""
+"The timeout interval to use for operations against "
+":zeek:see:`Known::host_store`."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:22
+msgid ":zeek:id:`Known::host_tracking`: :zeek:type:`Host` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:22
+msgid "The hosts whose existence should be logged and tracked."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:26
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:98
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:28
+msgid ""
+":zeek:id:`Known::host_store_expiry`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:28
+msgid "The expiry interval of new entries in :zeek:see:`Known::host_store`."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:29
+msgid ":zeek:id:`Known::host_store_name`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:29
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:114
+msgid "The Broker topic name to use for :zeek:see:`Known::host_store`."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:30
+msgid ":zeek:id:`Known::use_host_store`: :zeek:type:`bool` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:30
+msgid "Toggles between different implementations of this script."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:34
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:128
+msgid "State Variables"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:36
+msgid ":zeek:id:`Known::host_store`: :zeek:type:`Cluster::StoreInfo`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:36
+msgid "Holds the set of all known hosts."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:37
+msgid ""
+":zeek:id:`Known::hosts`: :zeek:type:`set` :zeek:attr:`&create_expire` = "
+"``1.0 day`` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:37
+msgid ""
+"The set of all known addresses to store for preventing duplicate logging "
+"of addresses."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:42
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:168
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:44
+msgid ":zeek:type:`Known::HostsInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:44
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:180
+msgid "The record type which contains the column fields of the known-hosts log."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:48
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:50
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:50
+msgid "The known-hosts logging stream identifier."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:52
+msgid ":zeek:enum:`Known::HOSTS_LOG`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:56
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:183
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:58
+msgid ":zeek:id:`Known::log_known_hosts`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:58
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:188
+msgid ""
+"An event that can be handled to access the :zeek:type:`Known::HostsInfo` "
+"record as it is sent on to the logging framework."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:63
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:192
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:65
+msgid ":zeek:id:`Known::log_policy_hosts`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:65
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:197
+msgid "A default logging policy hook for the stream."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:70
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:75
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:101
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:76
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:85
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:102
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:111
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:119
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:77
+msgid "``15.0 secs``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:84
+msgid ":zeek:type:`Host`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:86
+msgid "``LOCAL_HOSTS``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst
+msgid "Redefinition"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:87
+msgid "from :doc:`/scripts/policy/tuning/track-all-assets.zeek`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:89
+msgid "``=``::"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:94
+msgid ""
+"The hosts whose existence should be logged and tracked. See "
+":zeek:type:`Host` for possible choices."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:103
+msgid "``1.0 day``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:105
+msgid ""
+"The expiry interval of new entries in :zeek:see:`Known::host_store`. This"
+" also changes the interval at which hosts get logged."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:110
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:112
+msgid "``\"zeek/known/hosts\"``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:118
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:120
+msgid "``T``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:122
+msgid ""
+"Toggles between different implementations of this script. When true, use "
+"a Broker data store, else use a regular Zeek set with keys uniformly "
+"distributed over proxy nodes in cluster operation."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:131
+msgid ":zeek:type:`Cluster::StoreInfo`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:149
+msgid ""
+"Holds the set of all known hosts.  Keys in the store are addresses and "
+"their associated value will always be the \"true\" boolean."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:154
+msgid ":zeek:type:`set` [:zeek:type:`addr`]"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:155
+msgid ":zeek:attr:`&create_expire` = ``1.0 day`` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:156
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:158
+msgid ""
+"The set of all known addresses to store for preventing duplicate logging "
+"of addresses.  It can also be used from other scripts to inspect if an "
+"address has been seen in use. Maintain the list of known hosts for 24 "
+"hours so that the existence of each individual address is logged each "
+"day."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:164
+msgid ""
+"In cluster operation, this set is distributed uniformly across proxy "
+"nodes."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:171
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:174
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:174
+msgid "The timestamp at which the host was detected."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:178
+msgid "host: :zeek:type:`addr` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:177
+msgid ""
+"The address that was detected originating or responding to a TCP "
+"connection."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:186
+msgid ":zeek:type:`event` (rec: :zeek:type:`Known::HostsInfo`)"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/known-hosts.zeek.rst:195
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

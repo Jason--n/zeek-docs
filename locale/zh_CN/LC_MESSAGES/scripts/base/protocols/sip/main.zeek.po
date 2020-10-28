@@ -1,0 +1,444 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:4
+msgid "base/protocols/sip/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:7
+msgid ""
+"Implements base functionality for SIP analysis.  The logging model is to "
+"log request/response pairs and all relevant metadata together in a single"
+" record."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:11
+msgid "SIP"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:12
+msgid ""
+":doc:`base/protocols/conn/removal-hooks.zeek "
+"</scripts/base/protocols/conn/removal-hooks.zeek>`, "
+":doc:`base/utils/files.zeek </scripts/base/utils/files.zeek>`, "
+":doc:`base/utils/numbers.zeek </scripts/base/utils/numbers.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:15
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:17
+#: ../../scripts/base/protocols/sip/main.zeek.rst:63
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:19
+msgid ":zeek:id:`SIP::sip_methods`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:19
+msgid "A list of SIP methods."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:23
+#: ../../scripts/base/protocols/sip/main.zeek.rst:89
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:25
+msgid ":zeek:type:`SIP::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:25
+#: ../../scripts/base/protocols/sip/main.zeek.rst:171
+msgid "The record type which contains the fields of the SIP log."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:26
+msgid ":zeek:type:`SIP::State`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:30
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:32
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:34
+msgid ":zeek:enum:`SIP::LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:35
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:37
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:39
+msgid "sip: :zeek:type:`SIP::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:41
+msgid "sip_state: :zeek:type:`SIP::State` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:42
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:46
+#: ../../scripts/base/protocols/sip/main.zeek.rst:188
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:48
+msgid ":zeek:id:`SIP::log_sip`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:48
+#: ../../scripts/base/protocols/sip/main.zeek.rst:193
+msgid ""
+"Event that can be handled to access the SIP record as it is sent on to "
+"the logging framework."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:53
+#: ../../scripts/base/protocols/sip/main.zeek.rst:197
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:55
+msgid ":zeek:id:`SIP::finalize_sip`: :zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:55
+msgid "SIP finalization hook."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:56
+msgid ":zeek:id:`SIP::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:61
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:66
+msgid ":zeek:type:`set` [:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:67
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:84
+msgid ""
+"A list of SIP methods. Other methods will generate a weird. Note that the"
+" SIP analyzer will only accept methods consisting solely of letters "
+"``[A-Za-z]``."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:92
+#: ../../scripts/base/protocols/sip/main.zeek.rst:175
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:95
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:95
+msgid "Timestamp for when the request happened."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:98
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:98
+msgid "Unique ID for the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:101
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:101
+msgid "The connection's 4-tuple of endpoint addresses/ports."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:105
+msgid "trans_depth: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:104
+msgid ""
+"Represents the pipelined depth into the connection of this "
+"request/response transaction."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:108
+msgid "method: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:108
+msgid "Verb used in the SIP request (INVITE, REGISTER etc.)."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:111
+msgid "uri: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:111
+msgid "URI used in the request."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:114
+msgid "date: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:114
+msgid "Contents of the Date: header from the client"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:119
+msgid "request_from: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:117
+msgid ""
+"Contents of the request From: header Note: The tag= value that's usually "
+"appended to the sender is stripped off and not logged."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:122
+msgid "request_to: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:122
+msgid "Contents of the To: header"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:127
+msgid ""
+"response_from: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:125
+msgid ""
+"Contents of the response From: header Note: The ``tag=`` value that's "
+"usually appended to the sender is stripped off and not logged."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:130
+msgid "response_to: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:130
+msgid "Contents of the response To: header"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:133
+msgid "reply_to: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:133
+msgid "Contents of the Reply-To: header"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:136
+msgid "call_id: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:136
+msgid "Contents of the Call-ID: header from the client"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:139
+msgid "seq: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:139
+msgid "Contents of the CSeq: header from the client"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:142
+msgid "subject: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:142
+msgid "Contents of the Subject: header from the client"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:145
+msgid ""
+"request_path: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:145
+msgid "The client message transmission path, as extracted from the headers."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:148
+msgid ""
+"response_path: :zeek:type:`vector` of :zeek:type:`string` "
+":zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:148
+msgid "The server message transmission path, as extracted from the headers."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:151
+msgid "user_agent: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:151
+msgid "Contents of the User-Agent: header from the client"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:154
+msgid "status_code: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:154
+msgid "Status code returned by the server."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:157
+msgid "status_msg: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:157
+msgid "Status message returned by the server."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:160
+msgid "warning: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:160
+msgid "Contents of the Warning: header"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:163
+msgid ""
+"request_body_len: :zeek:type:`count` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:163
+msgid "Contents of the Content-Length: header from the client"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:166
+msgid ""
+"response_body_len: :zeek:type:`count` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:166
+msgid "Contents of the Content-Length: header from the server"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:169
+msgid "content_type: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:169
+msgid "Contents of the Content-Type: header from the server"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:178
+msgid "pending: :zeek:type:`table` [:zeek:type:`count`] of :zeek:type:`SIP::Info`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:178
+msgid "Pending requests."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:181
+msgid ""
+"current_request: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:181
+msgid "Current request in the pending queue."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:183
+msgid ""
+"current_response: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:184
+msgid "Current response in the pending queue."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:191
+msgid ":zeek:type:`event` (rec: :zeek:type:`SIP::Info`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:200
+msgid ":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:202
+msgid ""
+"SIP finalization hook.  Remaining SIP info may get logged when it's "
+"called."
+msgstr ""
+
+#: ../../scripts/base/protocols/sip/main.zeek.rst:206
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

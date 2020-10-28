@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../examples/ids/index.rst:8
+msgid "IDS"
+msgstr ""
+
+#: ../../examples/ids/index.rst:10
+msgid ""
+"An Intrusion Detection System (IDS) allows you to detect suspicious "
+"activities happening on your network as a result of a past or active "
+"attack. Because of its programming capabilities, Zeek can easily be "
+"configured to behave like traditional IDSs and detect common attacks with"
+" well known patterns, or you can create your own scripts to detect "
+"conditions specific to your particular case."
+msgstr ""
+
+#: ../../examples/ids/index.rst:17
+msgid ""
+"In the following sections, we present a few examples of common uses of "
+"Zeek as an IDS."
+msgstr ""
+
+#: ../../examples/ids/index.rst:22
+msgid "Detecting an FTP Brute-force Attack and Notifying"
+msgstr ""
+
+#: ../../examples/ids/index.rst:24
+msgid ""
+"For the purpose of this exercise, we define FTP brute-forcing as too many"
+" rejected usernames and passwords occurring from a single address.  We "
+"start by defining a threshold for the number of attempts, a monitoring "
+"interval (in minutes), and a new notice type."
+msgstr ""
+
+#: ../../examples/ids/index.rst:29 ../../examples/ids/index.rst:58
+#: ../../examples/ids/index.rst:75 ../../examples/ids/index.rst:104
+msgid "detect-bruteforcing.zeek"
+msgstr ""
+
+#: ../../examples/ids/index.rst:50
+msgid ""
+"Using the ftp_reply event, we check for error codes from the `500 series "
+"<http://en.wikipedia.org/wiki/List_of_FTP_server_return_codes>`_ for the "
+"\"USER\" and \"PASS\" commands, representing rejected usernames or "
+"passwords. For this, we can use the :zeek:see:`FTP::parse_ftp_reply_code`"
+" function to break down the reply code and check if the first digit is a "
+"\"5\" or not. If true, we then use the :ref:`Summary Statistics Framework"
+" <sumstats-framework>` to keep track of the number of failed attempts."
+msgstr ""
+
+#: ../../examples/ids/index.rst:71
+msgid ""
+"Next, we use the SumStats framework to raise a notice of the attack when "
+"the number of failed attempts exceeds the specified threshold during the "
+"measuring interval."
+msgstr ""
+
+#: ../../examples/ids/index.rst:102
+msgid "Below is the final code for our script."
+msgstr ""
+
+#: ../../examples/ids/index.rst:183
+msgid ""
+"As a final note, the :doc:`detect-bruteforcing.zeek "
+"</scripts/policy/protocols/ftp/detect-bruteforcing.zeek>` script above is"
+" included with Zeek out of the box.  Use this feature by loading this "
+"script during startup."
+msgstr ""
+
+#: ../../examples/ids/index.rst:190
+msgid "Other Attacks"
+msgstr ""
+
+#: ../../examples/ids/index.rst:193
+msgid "Detecting SQL Injection Attacks"
+msgstr ""
+
+#: ../../examples/ids/index.rst:196
+msgid "Checking files against known malware hashes"
+msgstr ""
+
+#: ../../examples/ids/index.rst:198
+msgid ""
+"Files transmitted on your network could either be completely harmless or "
+"contain viruses and other threats. One possible action against this "
+"threat is to compute the hashes of the files and compare them against a "
+"list of known malware hashes. Zeek simplifies this task by offering a "
+":doc:`detect-MHR.zeek </scripts/policy/frameworks/files/detect-MHR.zeek>`"
+" script that creates and compares hashes against the `Malware Hash "
+"Registry <https://www.team-cymru.org/Services/MHR/>`_ maintained by Team "
+"Cymru. Use this feature by loading this script during startup."
+msgstr ""
+

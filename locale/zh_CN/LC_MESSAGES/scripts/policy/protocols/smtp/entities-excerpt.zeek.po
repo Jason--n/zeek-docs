@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:4
+msgid "policy/protocols/smtp/entities-excerpt.zeek"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:7
+msgid ""
+"This script is for optionally adding a body excerpt to the SMTP entities "
+"log."
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:10
+msgid "SMTP"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:11
+msgid ""
+":doc:`base/protocols/smtp/entities.zeek "
+"</scripts/base/protocols/smtp/entities.zeek>`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:16
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:37
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:18
+msgid ""
+":zeek:id:`SMTP::default_entity_excerpt_len`: :zeek:type:`count` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:18
+msgid ""
+"This is the default value for how much of the entity body should be "
+"included for all MIME entities."
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:23
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:25
+msgid ":zeek:type:`SMTP::Entity`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:27
+msgid ":zeek:type:`SMTP::Entity`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:29
+msgid ""
+"excerpt: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&default` = "
+"``\"\"`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:30
+msgid "The entity body excerpt."
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:35
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:40
+msgid ":zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:41
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:42
+msgid "``0``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/smtp/entities-excerpt.zeek.rst:44
+msgid ""
+"This is the default value for how much of the entity body should be "
+"included for all MIME entities.  The lesser of this value and "
+":zeek:see:`default_file_bof_buffer_size` will be used."
+msgstr ""
+

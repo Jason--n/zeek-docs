@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/smb/files.zeek.rst:4
+msgid "base/protocols/smb/files.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/files.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/files.zeek.rst:8
+msgid "SMB"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/files.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/files.zeek.rst:9
+msgid ""
+":doc:`base/frameworks/files </scripts/base/frameworks/files/index>`, "
+":doc:`base/protocols/smb/main.zeek "
+"</scripts/base/protocols/smb/main.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/files.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/files.zeek.rst:14
+#: ../../scripts/base/protocols/smb/files.zeek.rst:24
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/files.zeek.rst:16
+msgid ":zeek:id:`SMB::describe_file`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/files.zeek.rst:16
+#: ../../scripts/base/protocols/smb/files.zeek.rst:29
+msgid "Default file describer for SMB."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/files.zeek.rst:17
+msgid ":zeek:id:`SMB::get_file_handle`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/files.zeek.rst:17
+#: ../../scripts/base/protocols/smb/files.zeek.rst:35
+msgid "Default file handle provider for SMB."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/files.zeek.rst:22
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/files.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/files.zeek.rst:27
+msgid ":zeek:type:`function` (f: :zeek:type:`fa_file`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/files.zeek.rst:33
+msgid ""
+":zeek:type:`function` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`) : :zeek:type:`string`"
+msgstr ""
+

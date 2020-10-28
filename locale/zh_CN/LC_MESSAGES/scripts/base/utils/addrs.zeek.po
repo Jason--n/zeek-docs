@@ -1,0 +1,291 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/utils/addrs.zeek.rst:4
+msgid "base/utils/addrs.zeek"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:6
+msgid "Functions for parsing and manipulating IP and MAC addresses."
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:10
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:12
+#: ../../scripts/base/utils/addrs.zeek.rst:54
+msgid "Constants"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:14
+msgid ":zeek:id:`ip_addr_regex`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:15
+msgid ":zeek:id:`ipv4_addr_regex`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:16
+msgid ":zeek:id:`ipv4_decim`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:17
+msgid ":zeek:id:`ipv6_8hex_regex`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:18
+msgid ":zeek:id:`ipv6_addr_regex`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:19
+msgid ":zeek:id:`ipv6_compressed_hex4dec_regex`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:20
+msgid ":zeek:id:`ipv6_compressed_hex_regex`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:21
+msgid ":zeek:id:`ipv6_compressed_hext4dec_lead_hextets0`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:22
+msgid ":zeek:id:`ipv6_compressed_hext4dec_lead_hextets1`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:23
+msgid ":zeek:id:`ipv6_compressed_hext4dec_lead_hextets2`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:24
+msgid ":zeek:id:`ipv6_compressed_hext4dec_lead_hextets3`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:25
+msgid ":zeek:id:`ipv6_compressed_hext4dec_lead_hextets4`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:26
+msgid ":zeek:id:`ipv6_compressed_hext4dec_lead_hextets5`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:27
+msgid ":zeek:id:`ipv6_compressed_lead_hextets0`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:28
+msgid ":zeek:id:`ipv6_compressed_lead_hextets1`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:29
+msgid ":zeek:id:`ipv6_compressed_lead_hextets2`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:30
+msgid ":zeek:id:`ipv6_compressed_lead_hextets3`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:31
+msgid ":zeek:id:`ipv6_compressed_lead_hextets4`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:32
+msgid ":zeek:id:`ipv6_compressed_lead_hextets5`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:33
+msgid ":zeek:id:`ipv6_compressed_lead_hextets6`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:34
+msgid ":zeek:id:`ipv6_compressed_lead_hextets7`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:35
+msgid ":zeek:id:`ipv6_hex4dec_regex`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:36
+msgid ":zeek:id:`ipv6_hextet`: :zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:40
+#: ../../scripts/base/utils/addrs.zeek.rst:309
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:42
+msgid ":zeek:id:`addr_to_uri`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:42
+msgid ""
+"Returns the string representation of an IP address suitable for inclusion"
+" in a URI."
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:44
+msgid ":zeek:id:`extract_ip_addresses`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:44
+#: ../../scripts/base/utils/addrs.zeek.rst:328
+msgid "Extracts all IP (v4 or v6) address strings from a given string."
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:45
+msgid ":zeek:id:`has_valid_octets`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:45
+#: ../../scripts/base/utils/addrs.zeek.rst:340
+msgid "Checks if all elements of a string array are a valid octet value."
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:46
+msgid ":zeek:id:`normalize_mac`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:46
+msgid ""
+"Given a string, extracts the hex digits and returns a MAC address in the "
+"format: 00:a0:32:d7:81:8f."
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:52
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:57
+#: ../../scripts/base/utils/addrs.zeek.rst:68
+#: ../../scripts/base/utils/addrs.zeek.rst:79
+#: ../../scripts/base/utils/addrs.zeek.rst:90
+#: ../../scripts/base/utils/addrs.zeek.rst:101
+#: ../../scripts/base/utils/addrs.zeek.rst:112
+#: ../../scripts/base/utils/addrs.zeek.rst:123
+#: ../../scripts/base/utils/addrs.zeek.rst:134
+#: ../../scripts/base/utils/addrs.zeek.rst:145
+#: ../../scripts/base/utils/addrs.zeek.rst:156
+#: ../../scripts/base/utils/addrs.zeek.rst:167
+#: ../../scripts/base/utils/addrs.zeek.rst:178
+#: ../../scripts/base/utils/addrs.zeek.rst:189
+#: ../../scripts/base/utils/addrs.zeek.rst:200
+#: ../../scripts/base/utils/addrs.zeek.rst:211
+#: ../../scripts/base/utils/addrs.zeek.rst:222
+#: ../../scripts/base/utils/addrs.zeek.rst:233
+#: ../../scripts/base/utils/addrs.zeek.rst:244
+#: ../../scripts/base/utils/addrs.zeek.rst:255
+#: ../../scripts/base/utils/addrs.zeek.rst:266
+#: ../../scripts/base/utils/addrs.zeek.rst:277
+#: ../../scripts/base/utils/addrs.zeek.rst:288
+#: ../../scripts/base/utils/addrs.zeek.rst:299
+msgid ":zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:312
+msgid ":zeek:type:`function` (a: :zeek:type:`addr`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:314
+msgid ""
+"Returns the string representation of an IP address suitable for inclusion"
+" in a URI.  For IPv4, this does no special formatting, but for IPv6, the "
+"address is included in square brackets."
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst
+msgid "a"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:319
+msgid "the address to make suitable for URI inclusion."
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:322
+msgid "the string representation of the address suitable for URI inclusion."
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:326
+msgid ""
+":zeek:type:`function` (input: :zeek:type:`string`) : "
+":zeek:type:`string_vec`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst
+msgid "input"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:331
+msgid "a string that may contain an IP address anywhere within it."
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:334
+msgid "an array containing all valid IP address strings found in *input*."
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:338
+msgid ""
+":zeek:type:`function` (octets: :zeek:type:`string_vec`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst
+msgid "octets"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:343
+msgid "an array of strings to check for valid octet values."
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:346
+msgid "T if every element is between 0 and 255, inclusive, else F."
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:350
+msgid ":zeek:type:`function` (a: :zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:352
+msgid ""
+"Given a string, extracts the hex digits and returns a MAC address in the "
+"format: 00:a0:32:d7:81:8f. If the string doesn't contain 12 or 16 hex "
+"digits, an empty string is returned."
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:357
+msgid "the string to normalize."
+msgstr ""
+
+#: ../../scripts/base/utils/addrs.zeek.rst:360
+msgid "a normalized MAC address, or an empty string in the case of an error."
+msgstr ""
+

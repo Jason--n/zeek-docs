@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:4
+msgid "policy/integration/collective-intel/main.zeek"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:8
+msgid "Intel"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:9
+msgid ":doc:`base/frameworks/intel </scripts/base/frameworks/intel/index>`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:14
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:54
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:16
+msgid ":zeek:type:`Intel::CIF`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:16
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:77
+msgid "CIF record used for consistent formatting of CIF values."
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:20
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:22
+msgid ":zeek:type:`Intel::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:24
+msgid ":zeek:type:`Intel::Info`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:26
+msgid "cif: :zeek:type:`Intel::CIF` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:27
+msgid ":zeek:type:`Intel::MetaData`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:27
+msgid ""
+"This file adds mapping between the Collective Intelligence Framework "
+"(CIF) and Zeek."
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:29
+msgid ":zeek:type:`Intel::MetaData`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:32
+msgid "cif_tags: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:32
+msgid "Maps to the 'tags' fields in CIF"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:35
+msgid "cif_confidence: :zeek:type:`double` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:35
+msgid "Maps to the 'confidence' field in CIF"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:38
+msgid "cif_source: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:38
+msgid "Maps to the 'source' field in CIF"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:41
+msgid "cif_description: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:41
+msgid "Maps to the 'description' field in CIF"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:44
+msgid "cif_firstseen: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:44
+msgid "Maps to the 'firstseen' field in CIF"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:46
+msgid "cif_lastseen: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:47
+msgid "Maps to the 'lastseen' field in CIF"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:52
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:57
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:60
+msgid "tags: :zeek:type:`string` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:60
+msgid "CIF tags observations, examples for tags are ``botnet`` or ``exploit``."
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:63
+msgid "confidence: :zeek:type:`double` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:63
+msgid "In CIF Confidence details the degree of certainty of a given observation."
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:66
+msgid "source: :zeek:type:`string` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:66
+msgid "Source given in CIF."
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:69
+msgid "description: :zeek:type:`string` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:69
+msgid "description given in CIF."
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:72
+msgid "firstseen: :zeek:type:`string` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:72
+msgid "First time the source observed the behavior."
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:75
+msgid "lastseen: :zeek:type:`string` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/integration/collective-intel/main.zeek.rst:75
+msgid "Last time the source observed the behavior."
+msgstr ""
+

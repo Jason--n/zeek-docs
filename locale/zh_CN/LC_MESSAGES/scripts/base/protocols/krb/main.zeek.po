@@ -1,0 +1,399 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:4
+msgid "base/protocols/krb/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:7
+msgid ""
+"Implements base functionality for KRB analysis. Generates the "
+"kerberos.log file."
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:10
+msgid "KRB"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:11
+msgid ""
+":doc:`base/protocols/conn/removal-hooks.zeek "
+"</scripts/base/protocols/conn/removal-hooks.zeek>`, "
+":doc:`base/protocols/krb/consts.zeek "
+"</scripts/base/protocols/krb/consts.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:16
+#: ../../scripts/base/protocols/krb/main.zeek.rst:59
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:18
+msgid ":zeek:id:`KRB::ignored_errors`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:18
+#: ../../scripts/base/protocols/krb/main.zeek.rst:74
+msgid "The server response error texts which are *not* logged."
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:22
+#: ../../scripts/base/protocols/krb/main.zeek.rst:77
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:24
+msgid ":zeek:type:`KRB::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:28
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:30
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:32
+msgid ":zeek:enum:`KRB::LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:33
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:35
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:37
+msgid "krb: :zeek:type:`KRB::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:38
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:42
+#: ../../scripts/base/protocols/krb/main.zeek.rst:170
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:44
+msgid ":zeek:id:`KRB::log_krb`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:44
+#: ../../scripts/base/protocols/krb/main.zeek.rst:175
+msgid ""
+"Event that can be handled to access the KRB record as it is sent on to "
+"the logging framework."
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:49
+#: ../../scripts/base/protocols/krb/main.zeek.rst:179
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:51
+msgid ":zeek:id:`KRB::finalize_krb`: :zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:51
+msgid "Kerberos finalization hook."
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:52
+msgid ":zeek:id:`KRB::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:57
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:62
+msgid ":zeek:type:`set` [:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:63
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:80
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:83
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:83
+msgid "Timestamp for when the event happened."
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:86
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:86
+msgid "Unique ID for the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:89
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:89
+msgid "The connection's 4-tuple of endpoint addresses/ports."
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:93
+msgid "request_type: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:92
+msgid ""
+"Request type - Authentication Service (\"AS\") or Ticket Granting Service"
+" (\"TGS\")"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:96
+msgid "client: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:96
+msgid "Client"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:99
+msgid "service: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:99
+msgid "Service"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:102
+msgid "success: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:102
+msgid "Request result"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:105
+msgid "error_code: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:105
+msgid "Error code"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:108
+msgid "error_msg: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:108
+msgid "Error message"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:111
+msgid "from: :zeek:type:`time` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:111
+msgid "Ticket valid from"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:114
+msgid "till: :zeek:type:`time` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:114
+msgid "Ticket valid till"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:117
+msgid "cipher: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:117
+msgid "Ticket encryption type"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:120
+msgid "forwardable: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:120
+msgid "Forwardable ticket requested"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:123
+msgid "renewable: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:123
+msgid "Renewable ticket requested"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:126
+msgid ""
+"logged: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:126
+msgid "We've already logged this"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:131
+msgid "client_cert: :zeek:type:`Files::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:129
+#: ../../scripts/base/protocols/krb/main.zeek.rst:134
+#: ../../scripts/base/protocols/krb/main.zeek.rst:139
+#: ../../scripts/base/protocols/krb/main.zeek.rst:144
+#: ../../scripts/base/protocols/krb/main.zeek.rst:149
+#: ../../scripts/base/protocols/krb/main.zeek.rst:154
+msgid "(present if :doc:`/scripts/base/protocols/krb/files.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:131
+msgid "Client certificate"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:136
+msgid ""
+"client_cert_subject: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:136
+msgid "Subject of client certificate, if any"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:141
+msgid ""
+"client_cert_fuid: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:141
+msgid "File unique ID of client cert, if any"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:146
+msgid "server_cert: :zeek:type:`Files::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:146
+msgid "Server certificate"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:151
+msgid ""
+"server_cert_subject: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:151
+msgid "Subject of server certificate, if any"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:156
+msgid ""
+"server_cert_fuid: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:156
+msgid "File unique ID of server cert, if any"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:161
+msgid "auth_ticket: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:159
+#: ../../scripts/base/protocols/krb/main.zeek.rst:164
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/krb/ticket-logging.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:161
+msgid "Hash of ticket used to authorize request/transaction"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:165
+msgid "new_ticket: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:166
+msgid "Hash of ticket returned by the KDC"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:173
+msgid ":zeek:type:`event` (rec: :zeek:type:`KRB::Info`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:182
+msgid ":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:184
+msgid ""
+"Kerberos finalization hook.  Remaining Kerberos info may get logged when "
+"it's called."
+msgstr ""
+
+#: ../../scripts/base/protocols/krb/main.zeek.rst:188
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

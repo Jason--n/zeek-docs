@@ -1,0 +1,915 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:4
+msgid "base/frameworks/intel/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:7
+msgid ""
+"The intelligence framework provides a way to store and query intelligence"
+" data (e.g. IP addresses, URLs and hashes). The intelligence items can be"
+" associated with metadata to allow informed decisions about matching and "
+"handling."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:12
+msgid "Intel"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:13
+msgid ":doc:`base/frameworks/notice </scripts/base/frameworks/notice/index>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:16
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:18
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:76
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:20
+msgid ""
+":zeek:id:`Intel::item_expiration`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:20
+msgid "The expiration timeout for intelligence items."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:24
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:95
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:26
+msgid ":zeek:type:`Intel::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:26
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:144
+msgid ""
+"Record used for the logging framework representing a positive hit within "
+"the intelligence framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:28
+msgid ":zeek:type:`Intel::Item`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:28
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:161
+msgid "Represents a piece of intelligence."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:29
+msgid ":zeek:type:`Intel::MetaData`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:29
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:232
+msgid "Data about an :zeek:type:`Intel::Item`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:30
+msgid ":zeek:type:`Intel::Seen`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:30
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:277
+msgid "Information about a piece of \"seen\" data."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:31
+msgid ":zeek:type:`Intel::Type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:31
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:335
+msgid "Enum type to represent various types of intelligence data."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:32
+msgid ":zeek:type:`Intel::TypeSet`: :zeek:type:`set`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:32
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:341
+msgid "Set of intelligence data types."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:33
+msgid ":zeek:type:`Intel::Where`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:33
+msgid "Enum to represent where data came from when it was discovered."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:37
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:39
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:41
+msgid ":zeek:enum:`Intel::LOG`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:45
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:487
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:47
+msgid ":zeek:id:`Intel::log_intel`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:48
+msgid ":zeek:id:`Intel::match`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:48
+msgid ""
+"Event to represent a match in the intelligence data from data that was "
+"seen."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:53
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:506
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:55
+msgid ":zeek:id:`Intel::extend_match`: :zeek:type:`hook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:55
+msgid "This hook can be used to influence the logging of intelligence hits (e.g."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:57
+msgid ":zeek:id:`Intel::filter_item`: :zeek:type:`hook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:57
+msgid ""
+"This hook can be used to filter intelligence items that are about to be "
+"inserted into the internal data store."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:59
+msgid ":zeek:id:`Intel::item_expired`: :zeek:type:`hook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:59
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:543
+msgid "This hook can be used to handle expiration of intelligence items."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:60
+msgid ":zeek:id:`Intel::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:64
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:564
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:66
+msgid ":zeek:id:`Intel::insert`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:66
+msgid "Function to insert intelligence data."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:67
+msgid ":zeek:id:`Intel::remove`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:67
+msgid "Function to remove intelligence data."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:68
+msgid ":zeek:id:`Intel::seen`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:68
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:585
+msgid ""
+"Function to declare discovery of a piece of data in order to check it "
+"against known intelligence for matches."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:74
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:79
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:80
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:81
+msgid "``-1.0 min``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst
+msgid "Redefinition"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:82
+msgid "from :doc:`/scripts/policy/frameworks/intel/do_expire.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:84
+msgid "``=``::"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:89
+msgid ""
+"The expiration timeout for intelligence items. Once an item expires, the "
+":zeek:id:`Intel::item_expired` hook is called. Reinsertion of an item "
+"resets the timeout. A negative value disables expiration of intelligence "
+"items."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:98
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:149
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:165
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:236
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:101
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:101
+msgid "Timestamp when the data was discovered."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:105
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:104
+msgid ""
+"If a connection was associated with this intelligence hit, this is the "
+"uid for the connection"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:109
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:108
+msgid ""
+"If a connection was associated with this intelligence hit, this is the "
+"conn_id for the connection."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:112
+msgid "seen: :zeek:type:`Intel::Seen` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:112
+msgid "Where the data was seen."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:115
+msgid "matched: :zeek:type:`Intel::TypeSet` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:115
+msgid "Which indicator types matched."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:118
+msgid ""
+"sources: :zeek:type:`set` [:zeek:type:`string`] :zeek:attr:`&log` "
+":zeek:attr:`&default` = ``{  }`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:118
+msgid "Sources which supplied data that resulted in this match."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:124
+msgid "fuid: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:121
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:127
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:134
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:265
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:271
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:321
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:329
+msgid "(present if :doc:`/scripts/base/frameworks/intel/files.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:123
+msgid ""
+"If a file was associated with this intelligence hit, this is the uid for "
+"the file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:131
+msgid ""
+"file_mime_type: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:129
+msgid ""
+"A mime type if the intelligence hit is related to a file. If the $f field"
+" is provided this will be automatically filled out."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:138
+msgid "file_desc: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:136
+msgid ""
+"Frequently files can be \"described\" to give a bit more context. If the "
+"$f field is provided this field will be automatically filled out."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:142
+msgid "cif: :zeek:type:`Intel::CIF` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:141
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:203
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:208
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:213
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:218
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:223
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:228
+msgid ""
+"(present if :doc:`/scripts/policy/integration/collective-intel/main.zeek`"
+" is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:152
+msgid "indicator: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:152
+msgid "The intelligence indicator."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:155
+msgid "indicator_type: :zeek:type:`Intel::Type`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:155
+msgid "The type of data that the indicator field represents."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:159
+msgid "meta: :zeek:type:`Intel::MetaData`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:158
+msgid ""
+"Metadata for the item. Typically represents more deeply descriptive data "
+"for a piece of intelligence."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:170
+msgid "source: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:168
+msgid ""
+"An arbitrary string value representing the data source. This value is "
+"used as unique key to identify a metadata record in the scope of a single"
+" intelligence item."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:173
+msgid "desc: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:173
+msgid "A freeform description for the data."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:176
+msgid "url: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:176
+msgid "A URL for more information about the data."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:183
+msgid ""
+"do_notice: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:179
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:186
+msgid ""
+"(present if :doc:`/scripts/policy/frameworks/intel/do_notice.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:181
+msgid ""
+"A boolean value to allow the data itself to represent if the indicator "
+"that this metadata is attached to is notice worthy."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:190
+msgid "if_in: :zeek:type:`Intel::Where` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:188
+msgid ""
+"Restrictions on when notices are created to only create them if the "
+"*do_notice* field is T and the notice was seen in the indicated location."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:195
+msgid ""
+"whitelist: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:193
+msgid ""
+"(present if :doc:`/scripts/policy/frameworks/intel/whitelist.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:195
+msgid "A boolean value to indicate whether the item is whitelisted."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:200
+msgid ""
+"remove: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:198
+msgid ""
+"(present if :doc:`/scripts/policy/frameworks/intel/removal.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:200
+msgid "A boolean value to indicate whether the item should be removed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:205
+msgid "cif_tags: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:205
+msgid "Maps to the 'tags' fields in CIF"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:210
+msgid "cif_confidence: :zeek:type:`double` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:210
+msgid "Maps to the 'confidence' field in CIF"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:215
+msgid "cif_source: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:215
+msgid "Maps to the 'source' field in CIF"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:220
+msgid "cif_description: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:220
+msgid "Maps to the 'description' field in CIF"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:225
+msgid "cif_firstseen: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:225
+msgid "Maps to the 'firstseen' field in CIF"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:230
+msgid "cif_lastseen: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:230
+msgid "Maps to the 'lastseen' field in CIF"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:239
+msgid "indicator: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:239
+msgid "The string if the data is about a string."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:242
+msgid ""
+"indicator_type: :zeek:type:`Intel::Type` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:242
+msgid "The type of data that the indicator represents."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:246
+msgid "host: :zeek:type:`addr` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:245
+msgid ""
+"If the indicator type was :zeek:enum:`Intel::ADDR`, then this field will "
+"be present."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:249
+msgid "where: :zeek:type:`Intel::Where` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:249
+msgid "Where the data was discovered."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:252
+msgid "node: :zeek:type:`string` :zeek:attr:`&optional` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:252
+msgid "The name of the node where the match was discovered."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:256
+msgid "conn: :zeek:type:`connection` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:255
+msgid ""
+"If the data was discovered within a connection, the connection record "
+"should go here to give context to the data."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:262
+msgid "uid: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:259
+msgid ""
+"If the data was discovered within a connection, the connection uid should"
+" go here to give context to the data. If the *conn* field is provided, "
+"this will be automatically filled out."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:268
+msgid "f: :zeek:type:`fa_file` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:267
+msgid ""
+"If the data was discovered within a file, the file record should go here "
+"to provide context to the data."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:275
+msgid "fuid: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:273
+msgid ""
+"If the data was discovered within a file, the file uid should go here to "
+"provide context to the data. If the file record *f* is provided, this "
+"will be automatically filled out."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:281
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:345
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:285
+msgid "An IP address."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:289
+msgid "A subnet in CIDR notation."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:293
+msgid "A complete URL without the prefix ``\"http://\"``."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:297
+msgid "Software name."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:301
+msgid "Email address."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:305
+msgid "DNS domain name."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:309
+msgid "A user name."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:313
+msgid "Certificate SHA-1 hash."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:317
+msgid "Public key MD5 hash. (SSH server host keys are a good example.)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:324
+msgid ""
+"File hash which is non-hash type specific.  It's up to the user to query "
+"for any relevant hash types."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:332
+msgid ""
+"File name.  Typically with protocols with definite indications of a file "
+"name."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:339
+msgid ":zeek:type:`set` [:zeek:type:`Intel::Type`]"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:349
+msgid "A catchall value to represent data of unknown provenance."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:353
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:358
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:363
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:368
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:373
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:378
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:383
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:388
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:393
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:398
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:403
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:408
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:413
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:418
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:423
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:428
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:433
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:438
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:443
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:448
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:453
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:458
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:463
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:468
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:473
+msgid ""
+"(present if :doc:`/scripts/policy/frameworks/intel/seen/where-"
+"locations.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:478
+msgid ""
+"(present if :doc:`/scripts/policy/protocols/ssh/detect-bruteforcing.zeek`"
+" is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:481
+msgid "An indicator of the login for the intel framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:483
+msgid ""
+"Enum to represent where data came from when it was discovered. The "
+"convention is to prefix the name with ``IN_``."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:490
+msgid ":zeek:type:`event` (rec: :zeek:type:`Intel::Info`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:495
+msgid ""
+":zeek:type:`event` (s: :zeek:type:`Intel::Seen`, items: :zeek:type:`set` "
+"[:zeek:type:`Intel::Item`])"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:497
+msgid ""
+"Event to represent a match in the intelligence data from data that was "
+"seen. On clusters there is no assurance as to when this event will be "
+"generated so do not assume that arbitrary global state beyond the given "
+"data will be available."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:502
+msgid ""
+"This is the primary mechanism where a user may take actions based on data"
+" provided by the intelligence framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:509
+msgid ""
+":zeek:type:`hook` (info: :zeek:type:`Intel::Info`, s: "
+":zeek:type:`Intel::Seen`, items: :zeek:type:`set` "
+"[:zeek:type:`Intel::Item`]) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:511
+msgid ""
+"This hook can be used to influence the logging of intelligence hits (e.g."
+" by adding data to the Info record). The default information is added "
+"with a priority of 5."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst
+msgid "info"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:516
+msgid "The Info record that will be logged."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst
+msgid "s"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:519
+msgid "Information about the data seen."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst
+msgid "items"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:522
+msgid "The intel items that match the seen data."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:524
+msgid ""
+"In case the hook execution is terminated using break, the match will not "
+"be logged."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:529
+msgid ":zeek:type:`hook` (item: :zeek:type:`Intel::Item`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:531
+msgid ""
+"This hook can be used to filter intelligence items that are about to be "
+"inserted into the internal data store. In case the hook execution is "
+"terminated using break, the item will not be (re)added to the internal "
+"data store."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst
+msgid "item"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:537
+msgid "The intel item that should be inserted."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:541
+msgid ""
+":zeek:type:`hook` (indicator: :zeek:type:`string`, indicator_type: "
+":zeek:type:`Intel::Type`, metas: :zeek:type:`set` "
+"[:zeek:type:`Intel::MetaData`]) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst
+msgid "indicator"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:546
+msgid "The indicator of the expired item."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst
+msgid "indicator_type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:549
+msgid "The indicator type of the expired item."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst
+msgid "metas"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:552
+msgid "The set of metadata describing the expired item."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:554
+msgid ""
+"If all hook handlers are executed, the expiration timeout will be reset. "
+"Otherwise, if one of the handlers terminates using break, the item will "
+"be removed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:560
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:567
+msgid ":zeek:type:`function` (item: :zeek:type:`Intel::Item`) : :zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:569
+msgid ""
+"Function to insert intelligence data. If the indicator is already "
+"present, the associated metadata will be added to the indicator. If the "
+"indicator already contains a metadata record from the same source, the "
+"existing metadata record will be updated."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:576
+msgid ""
+":zeek:type:`function` (item: :zeek:type:`Intel::Item`, purge_indicator: "
+":zeek:type:`bool` :zeek:attr:`&default` = ``F`` :zeek:attr:`&optional`) :"
+" :zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:578
+msgid ""
+"Function to remove intelligence data. If purge_indicator is set, the "
+"given metadata is ignored and the indicator is removed completely."
+msgstr ""
+
+#: ../../scripts/base/frameworks/intel/main.zeek.rst:583
+msgid ":zeek:type:`function` (s: :zeek:type:`Intel::Seen`) : :zeek:type:`void`"
+msgstr ""
+

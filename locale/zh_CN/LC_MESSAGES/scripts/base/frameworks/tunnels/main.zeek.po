@@ -1,0 +1,407 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:4
+msgid "base/frameworks/tunnels/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:7
+msgid ""
+"This script handles the tracking/logging of tunnels (e.g. Teredo, AYIYA, "
+"or IP-in-IP such as 6to4 where \"IP\" is either IPv4 or IPv6)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:10
+msgid ""
+"For any connection that occurs over a tunnel, information about its "
+"encapsulating tunnels is also found in the *tunnel* field of "
+":zeek:type:`connection`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:14
+msgid "Tunnel"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:15
+msgid ""
+":doc:`base/protocols/conn/removal-hooks.zeek "
+"</scripts/base/protocols/conn/removal-hooks.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:18
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:20
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:75
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:22
+msgid ""
+":zeek:id:`Tunnel::expiration_interval`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:22
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:82
+msgid ""
+"The amount of time a tunnel is not used in establishment of new "
+"connections before it is considered inactive/expired."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:27
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:86
+msgid "State Variables"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:29
+msgid ""
+":zeek:id:`Tunnel::active`: :zeek:type:`table` :zeek:attr:`&read_expire` ="
+" :zeek:see:`Tunnel::expiration_interval` :zeek:attr:`&expire_func` = "
+":zeek:see:`Tunnel::expire`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:29
+msgid "Currently active tunnels."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:33
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:98
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:35
+msgid ":zeek:type:`Tunnel::Action`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:35
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:116
+msgid "Types of interesting activity that can occur with a tunnel."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:36
+msgid ":zeek:type:`Tunnel::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:36
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:142
+msgid "The record type which contains column fields of the tunnel log."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:40
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:42
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:42
+msgid "The tunnel logging stream identifier."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:44
+msgid ":zeek:enum:`Tunnel::LOG`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:45
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:49
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:145
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:51
+msgid ":zeek:id:`Tunnel::finalize_tunnel`: :zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:51
+msgid "Tunnel finalization hook."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:52
+msgid ":zeek:id:`Tunnel::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:52
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:156
+msgid "A default logging policy hook for the stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:56
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:159
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:58
+msgid ":zeek:id:`Tunnel::close`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:58
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:164
+msgid ""
+"Removes a single tunnel from the :zeek:id:`Tunnel::active` table and logs"
+" the closing/expiration of the tunnel."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:60
+msgid ":zeek:id:`Tunnel::expire`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:60
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:177
+msgid ""
+"Logs a single tunnel \"connection\" with action "
+":zeek:see:`Tunnel::EXPIRE` and removes it from the "
+":zeek:id:`Tunnel::active` table."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:63
+msgid ":zeek:id:`Tunnel::register`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:63
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:196
+msgid ""
+"Logs a single tunnel \"connection\" with action "
+":zeek:see:`Tunnel::DISCOVER` if it's not already in the "
+":zeek:id:`Tunnel::active` table and adds it if not."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:66
+msgid ":zeek:id:`Tunnel::register_all`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:66
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:204
+msgid ""
+"Logs all tunnels in an encapsulation chain with action "
+":zeek:see:`Tunnel::DISCOVER` that aren't already in the "
+":zeek:id:`Tunnel::active` table and adds them if not."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:73
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:78
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:79
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:80
+msgid "``1.0 hr``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:89
+msgid ":zeek:type:`table` [:zeek:type:`conn_id`] of :zeek:type:`Tunnel::Info`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:90
+msgid ""
+":zeek:attr:`&read_expire` = :zeek:see:`Tunnel::expiration_interval` "
+":zeek:attr:`&expire_func` = :zeek:see:`Tunnel::expire`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:91
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:93
+msgid ""
+"Currently active tunnels.  That is, tunnels for which new, encapsulated "
+"connections have been seen in the interval indicated by "
+":zeek:see:`Tunnel::expiration_interval`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:101
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:105
+msgid "A new tunnel (encapsulating \"connection\") has been seen."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:109
+msgid "A tunnel connection has closed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:113
+msgid ""
+"No new connections over a tunnel happened in the amount of time indicated"
+" by :zeek:see:`Tunnel::expiration_interval`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:120
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:123
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:123
+msgid "Time at which some tunnel activity occurred."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:130
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:126
+msgid ""
+"The unique identifier for the tunnel, which may correspond to a "
+":zeek:type:`connection`'s *uid* field for non-IP-in-IP tunnels. This is "
+"optional because there could be numerous connections for payload proxies "
+"like SOCKS but we should treat it as a single tunnel."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:134
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:133
+msgid ""
+"The tunnel \"connection\" 4-tuple of endpoint addresses/ports. For an IP "
+"tunnel, the ports will be 0."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:137
+msgid "tunnel_type: :zeek:type:`Tunnel::Type` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:137
+msgid "The type of tunnel."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:140
+msgid "action: :zeek:type:`Tunnel::Action` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:140
+msgid "The type of activity that occurred."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:148
+msgid ":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:150
+msgid ""
+"Tunnel finalization hook.  Remaining Tunnel info may get logged when it's"
+" called."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:154
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:162
+msgid ""
+":zeek:type:`function` (tunnel: :zeek:type:`Tunnel::Info`, action: "
+":zeek:type:`Tunnel::Action`) : :zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst
+msgid "tunnel"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:168
+msgid "The tunnel which has closed or expired."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst
+msgid "action"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:171
+msgid "The specific reason for the tunnel ending."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:175
+msgid ""
+":zeek:type:`function` (t: :zeek:type:`table` [:zeek:type:`conn_id`] of "
+":zeek:type:`Tunnel::Info`, idx: :zeek:type:`conn_id`) : "
+":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst
+msgid "t"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:182
+msgid "A table of tunnels."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst
+msgid "idx"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:185
+msgid "The index of the tunnel table corresponding to the tunnel to expire."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:188
+msgid ""
+"0secs, which when this function is used as an :zeek:attr:`&expire_func`, "
+"indicates to remove the element at *idx* immediately."
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:194
+msgid ""
+":zeek:type:`function` (ec: :zeek:type:`Tunnel::EncapsulatingConn`) : "
+":zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/tunnels/main.zeek.rst:202
+msgid ""
+":zeek:type:`function` (ecv: :zeek:type:`EncapsulatingConnVector`) : "
+":zeek:type:`void`"
+msgstr ""
+

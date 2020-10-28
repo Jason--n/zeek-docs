@@ -1,0 +1,209 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:4
+msgid "base/frameworks/netcontrol/shunt.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:7
+msgid "Implementation of the shunt functionality for NetControl."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:9
+msgid "NetControl"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:10
+msgid ""
+":doc:`base/frameworks/netcontrol/main.zeek "
+"</scripts/base/frameworks/netcontrol/main.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:15
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:51
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:17
+msgid ":zeek:type:`NetControl::ShuntInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:21
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:23
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:25
+msgid ":zeek:enum:`NetControl::SHUNT`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:29
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:73
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:31
+msgid ":zeek:id:`NetControl::log_netcontrol_shunt`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:31
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:78
+msgid ""
+"Event that can be handled to access the "
+":zeek:type:`NetControl::ShuntInfo` record as it is sent on to the logging"
+" framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:36
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:82
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:38
+msgid ":zeek:id:`NetControl::log_policy_shunt`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:42
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:89
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:44
+msgid ":zeek:id:`NetControl::shunt_flow`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:44
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:94
+msgid "Stops forwarding a uni-directional flow's packets to Zeek."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:49
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:54
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:57
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:57
+msgid "Time at which the recorded activity occurred."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:60
+msgid "rule_id: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:60
+msgid "ID of the rule; unique during each Zeek run."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:63
+msgid "f: :zeek:type:`flow_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:63
+msgid "Flow ID of the shunted flow."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:66
+msgid "expire: :zeek:type:`interval` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:66
+msgid "Expiry time of the shunt."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:68
+msgid "location: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:69
+msgid "Location where the underlying action was triggered."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:76
+msgid ":zeek:type:`event` (rec: :zeek:type:`NetControl::ShuntInfo`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:85
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:92
+msgid ""
+":zeek:type:`function` (f: :zeek:type:`flow_id`, t: :zeek:type:`interval`,"
+" location: :zeek:type:`string` :zeek:attr:`&default` = ``\"\"`` "
+":zeek:attr:`&optional`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst
+msgid "f"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:97
+msgid "The flow to shunt."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst
+msgid "t"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:100
+msgid "How long to leave the shunt in place, with 0 being indefinitely."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst
+msgid "location"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:103
+msgid "An optional string describing where the shunt was triggered."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/shunt.zeek.rst:106
+msgid "The id of the inserted rule on success and zero on failure."
+msgstr ""
+

@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_FileExtract.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst:24
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst:15
+msgid ":zeek:id:`file_extraction_limit`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst:15
+msgid ""
+"This event is generated when a file extraction analyzer is about to "
+"exceed the maximum permitted file size allowed by the *extract_limit* "
+"field of :zeek:see:`Files::AnalyzerArgs`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst:22
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst:27
+msgid ""
+":zeek:type:`event` (f: :zeek:type:`fa_file`, args: "
+":zeek:type:`Files::AnalyzerArgs`, limit: :zeek:type:`count`, len: "
+":zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst:29
+msgid ""
+"This event is generated when a file extraction analyzer is about to "
+"exceed the maximum permitted file size allowed by the *extract_limit* "
+"field of :zeek:see:`Files::AnalyzerArgs`. The analyzer is automatically "
+"removed from file *f*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst
+msgid "f"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst:35
+msgid "The file."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst
+msgid "args"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst:38
+msgid ""
+"Arguments that identify a particular file extraction analyzer. This is "
+"only provided to be able to pass along to "
+":zeek:see:`FileExtract::set_limit`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst
+msgid "limit"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst:43
+msgid "The limit, in bytes, the extracted file is about to breach."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst
+msgid "len"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FileExtract.events.bif.zeek.rst:46
+msgid "The length of the file chunk about to be written."
+msgstr ""
+

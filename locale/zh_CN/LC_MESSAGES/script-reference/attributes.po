@@ -1,0 +1,555 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../script-reference/attributes.rst:2
+msgid "Attributes"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:4
+msgid "The Zeek scripting language supports the following attributes."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:7
+msgid "Name"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:7
+msgid "Description"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:9
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:9
+msgid "Redefine a global constant or extend a type."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:11
+msgid ":zeek:attr:`&priority`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:11
+msgid "Specify priority for event handler or hook."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:13
+msgid ":zeek:attr:`&log`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:13
+msgid "Mark a record field as to be written to a log."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:15
+msgid ":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:15
+msgid "Allow a record field value to be missing."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:17
+msgid ":zeek:attr:`&default`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:17
+msgid "Specify a default value."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:19
+msgid ":zeek:attr:`&add_func`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:19
+msgid "Specify a function to call for each \"redef +=\"."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:21
+msgid ":zeek:attr:`&delete_func`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:21
+msgid "Same as \"&add_func\", except for \"redef -=\"."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:23
+msgid ":zeek:attr:`&expire_func`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:23
+msgid "Specify a function to call when container element expires."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:26
+msgid ":zeek:attr:`&read_expire`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:26
+msgid "Specify a read timeout interval."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:28
+msgid ":zeek:attr:`&write_expire`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:28
+msgid "Specify a write timeout interval."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:30
+msgid ":zeek:attr:`&create_expire`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:30
+msgid "Specify a creation timeout interval."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:32
+msgid ":zeek:attr:`&on_change`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:32
+msgid "Specify a function to call on set/table changes"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:34
+msgid ":zeek:attr:`&raw_output`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:34
+msgid "Open file in raw mode (chars. are not escaped)."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:36
+msgid ":zeek:attr:`&error_handler`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:36
+msgid "Used internally for reporter framework events."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:38
+msgid ":zeek:attr:`&type_column`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:38
+msgid "Used by input framework for \"port\" type."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:40
+msgid ":zeek:attr:`&backend`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:40
+#: ../../script-reference/attributes.rst:42
+#: ../../script-reference/attributes.rst:44
+msgid "Used for table persistence/synchronization."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:42
+msgid ":zeek:attr:`&broker_store`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:44
+msgid ":zeek:attr:`&broker_allow_complex_type`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:46
+msgid ":zeek:attr:`&deprecated`"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:46
+msgid "Marks an identifier as deprecated."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:53
+msgid ""
+"A confusing pitfall can be mistaking that attributes bind to a *variable*"
+" or a *type*, where in reality they bind to a *value*.  Example:"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:66
+msgid ""
+"In the above, the re-assignment of ``my_table`` will also drop the "
+"original *value*'s :zeek:attr:`&create_expire` and no entries will ever "
+"be expired from ``my_table``.  The alternate way of re-assignment that "
+"creates a new table *value* with the expected attribute would be:"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:75
+msgid "Here is a more detailed explanation of each attribute:"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:81
+msgid "&redef"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:83
+msgid ""
+"Allows use of a :zeek:keyword:`redef` to redefine initial values of "
+"global variables (i.e., variables declared either :zeek:keyword:`global` "
+"or :zeek:keyword:`const`).  Example:"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:92
+msgid ""
+"Note that a variable declared ``global`` can also have its value changed "
+"with assignment statements (doesn't matter if it has the "
+":zeek:attr:`&redef` attribute or not)."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:100
+msgid "&priority"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:102
+msgid ""
+"Specifies the execution priority (as a signed integer) of a hook or event"
+" handler. Higher values are executed before lower ones. The default value"
+" is ``0``.  Example:"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:117
+msgid "&log"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:119
+msgid "Writes a :zeek:type:`record` field to the associated log stream."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:125
+msgid "&optional"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:127
+msgid ""
+"Allows a record field value to be missing (i.e., neither initialized nor "
+"ever assigned a value)."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:130
+msgid ""
+"In this example, the record could be instantiated with either "
+"``myrec($a=127.0.0.1)`` or ``myrec($a=127.0.0.1, $b=80/tcp)``:"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:137
+msgid ""
+"The ``?$`` operator can be used to check if a record field has a value or"
+" not (it returns a ``bool`` value of ``T`` if the field has a value, and "
+"``F`` if not)."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:145
+msgid "&default"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:147
+msgid ""
+"Specifies a default value for a record field, container element, or a "
+"function/hook/event parameter."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:150
+msgid ""
+"In this example, the record could be instantiated with either "
+"``myrec($a=5, $c=3.14)`` or ``myrec($a=5, $b=53/udp, $c=3.14)``:"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:157
+msgid ""
+"In this example, the table will return the string ``\"foo\"`` for any "
+"attempted access to a non-existing index:"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:164
+msgid ""
+"When used with function/hook/event parameters, all of the parameters with"
+" the :zeek:attr:`&default` attribute must come after all other "
+"parameters. For example, the following function could be called either as"
+" ``myfunc(5)`` or as ``myfunc(5, 53/udp)``:"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:180
+msgid "&add_func"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:182
+msgid ""
+"Can be applied to an identifier with &redef to specify a function to be "
+"called any time a ``redef <id> += ...`` declaration is parsed.  The "
+"function takes two arguments of the same type as the identifier, the "
+"first being the old value of the variable and the second being the new "
+"value given after the ``+=`` operator in the :zeek:keyword:`redef` "
+"declaration.  The return value of the function will be the actual new "
+"value of the variable after the \"redef\" declaration is parsed."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:194
+msgid "&delete_func"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:196
+msgid ""
+"Same as :zeek:attr:`&add_func`, except for :zeek:keyword:`redef` "
+"declarations that use the ``-=`` operator."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:203
+msgid "&expire_func"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:205
+msgid ""
+"Called right before a container element expires. The function's first "
+"argument is of the same type as the container it is associated with. The "
+"function then takes a variable number of arguments equal to the number of"
+" indexes in the container. For example, for a ``table[string,string] of "
+"count`` the expire function signature is:"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:215
+msgid ""
+"The return value is an :zeek:type:`interval` indicating the amount of "
+"additional time to wait before expiring the container element at the "
+"given index (which will trigger another execution of this function)."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:223
+msgid "&read_expire"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:225
+msgid ""
+"Specifies a read expiration timeout for container elements. That is, the "
+"element expires after the given amount of time since the last time it has"
+" been read. Note that a write also counts as a read."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:233
+msgid "&write_expire"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:235
+msgid ""
+"Specifies a write expiration timeout for container elements. That is, the"
+" element expires after the given amount of time since the last time it "
+"has been written."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:243
+msgid "&create_expire"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:245
+msgid ""
+"Specifies a creation expiration timeout for container elements. That is, "
+"the element expires after the given amount of time since it has been "
+"inserted into the container, regardless of any reads or writes."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:253
+msgid "&on_change"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:255
+msgid ""
+"Called right after a change has been applied to a container. The "
+"function's first argument is of the same type as the container it is "
+"associated with, followed by a :zeek:see:`TableChange` record which "
+"specifies the type of change that happened. The function then takes a "
+"variable number of arguments equal to the number of indexes in the "
+"container, followed by an argument for the value of the container (if the"
+" container has a value) For example, for a ``table[string,string] of "
+"count`` the on_change function signature is:"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:268
+msgid "For a ``set[count]`` the function signature is:"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:274
+msgid ""
+"The passed value specifies the state of a value before the change, where "
+"this makes sense. In case a element is changed, removed, or expired, the "
+"passed value will be the value before the change, removal, or expiration."
+" When an element is added, the passed value will be the value of the "
+"added element (since no old element existed)."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:279
+msgid ""
+"Note that the on_change function is only changed when the container "
+"itself is modified (due to an assignment, delete operation, or expiry). "
+"When a container contains a complex element (like a record, set, or "
+"vector), changes to these complex elements are not propagated back to the"
+" parent. For example, in this example the ``change_function`` for the "
+"table will only be called once, when ``s`` is inserted - but it will not "
+"be called when ``s`` is changed:"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:294
+msgid ""
+"Also note that the on_change function of a container will not be called "
+"when the container is already handling on_change_function. Thus, writing "
+"a on_change function like this is supported and will not lead to a "
+"infinite loop :"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:311
+msgid "&raw_output"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:313
+msgid "Opens a file in raw mode, i.e., non-ASCII characters are not escaped."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:320
+msgid "&error_handler"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:322
+msgid ""
+"Internally set on the events that are associated with the reporter "
+"framework: :zeek:id:`reporter_info`, :zeek:id:`reporter_warning`, and "
+":zeek:id:`reporter_error`.  It prevents any handlers of those events from"
+" being able to generate reporter messages that go through any of those "
+"events (i.e., it prevents an infinite event recursion).  Instead, such "
+"nested reporter messages are output to stderr."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:333
+msgid "&type_column"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:335
+msgid ""
+"Used by the input framework. It can be used on columns of type "
+":zeek:type:`port` (such a column only contains the port number) and "
+"specifies the name of an additional column in the input file which "
+"specifies the protocol of the port (tcp/udp/icmp)."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:340
+msgid ""
+"In the following example, the input file would contain four columns named"
+" \"ip\", \"srcp\", \"proto\", and \"msg\":"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:359
+msgid "&backend"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:361
+msgid "Used for persisting tables/sets and/or synchronizing them over a cluster."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:363
+msgid ""
+"This attribute binds a table to a Broker store. Changes to the table are "
+"sent to the Broker store, and changes to the Broker store are applied "
+"back to the table."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:367
+msgid ""
+"Since Broker stores are synchronized over a cluster, this sends table "
+"changes to all other nodes in the cluster. When using a persistent Broker"
+" store backend, the content of the tables/sets will be restored on "
+"startup."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:371
+msgid ""
+"This attribute expects the type of backend you want to use for the table."
+" For example, to bind a table to a memory-backed Broker store, use:"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:380
+#: ../../script-reference/attributes.rst:410
+#: ../../script-reference/attributes.rst:452
+msgid ""
+"This feature is experimental and can change in future versions without "
+"prior deprecation/backwards compatibility."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:387
+msgid "&broker_store"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:389
+msgid ""
+"This attribute is similar to :zeek:attr:`&backend` in allowing a zeek "
+"table to bind to a Broker store. It differs from :zeek:attr:`&backend` as"
+" this attribute allows you to specify the Broker store you want to bind, "
+"without creating it."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:393
+msgid ""
+"Use this if you want to bind a table to a Broker store with special "
+"options."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:395
+msgid "Example:"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:417
+msgid "&broker_allow_complex_type"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:419
+msgid ""
+"By default only tables containing atomic types can be bound to Broker "
+"stores. Specifying this attribute before :zeek:attr:`&backend` or "
+":zeek:attr:`&broker_store` disables this safety feature and allows "
+"complex types to be stored in a Broker backed table."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:426
+msgid ""
+"Storing complex types in Broker backed store comes with severe "
+"restrictions. When you modify a stored complex type after inserting it "
+"into a table, that change in a stored complex type will *not propagate* "
+"to Broker. Hence to send out the new value, so that it will be "
+"persisted/synchronized over the cluster, you will have to re-insert the "
+"complex type into the local zeek table."
+msgstr ""
+
+#: ../../script-reference/attributes.rst:431
+msgid "For example:"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:459
+msgid "&deprecated"
+msgstr ""
+
+#: ../../script-reference/attributes.rst:461
+msgid ""
+"The associated identifier is marked as deprecated and will be removed in "
+"a future version of Zeek.  Look in the :file:`NEWS` file for more "
+"instructions to migrate code that uses deprecated functionality. This "
+"attribute can be assigned an optional string literal value to print along"
+" with the deprecation warning. The preferred format of this warning "
+"message should include the version number in which the identifier will be"
+" removed:"
+msgstr ""
+

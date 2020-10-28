@@ -1,0 +1,726 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:4
+msgid "base/frameworks/input/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:7
+msgid ""
+"The input framework provides a way to read previously stored data either "
+"as an event stream or into a Zeek table."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:10
+msgid "Input"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:11
+msgid ":doc:`base/bif/input.bif.zeek </scripts/base/bif/input.bif.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:16
+#: ../../scripts/base/frameworks/input/main.zeek.rst:67
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:18
+msgid ""
+":zeek:id:`Input::default_mode`: :zeek:type:`Input::Mode` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:18
+msgid "The default reader mode used."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:19
+msgid ""
+":zeek:id:`Input::default_reader`: :zeek:type:`Input::Reader` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:19
+msgid "The default input reader used."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:23
+#: ../../scripts/base/frameworks/input/main.zeek.rst:85
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:25
+msgid ""
+":zeek:id:`Input::accept_unsupported_types`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:25
+msgid ""
+"Flag that controls if the input framework accepts records that contain "
+"types that are not supported (at the moment file and function)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:28
+msgid ":zeek:id:`Input::empty_field`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:28
+msgid "String to use for empty fields."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:29
+msgid ":zeek:id:`Input::separator`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:29
+msgid "Separator between fields."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:30
+msgid ":zeek:id:`Input::set_separator`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:30
+msgid "Separator between set elements."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:31
+msgid ":zeek:id:`Input::unset_field`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:31
+msgid "String to use for an unset &optional field."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:35
+#: ../../scripts/base/frameworks/input/main.zeek.rst:137
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:37
+msgid ":zeek:type:`Input::AnalysisDescription`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:37
+#: ../../scripts/base/frameworks/input/main.zeek.rst:166
+msgid ""
+"A file analysis input stream type used to forward input data to the file "
+"analysis framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:39
+msgid ":zeek:type:`Input::Event`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:39
+#: ../../scripts/base/frameworks/input/main.zeek.rst:185
+msgid "Type that describes what kind of change occurred."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:40
+msgid ":zeek:type:`Input::EventDescription`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:40
+#: ../../scripts/base/frameworks/input/main.zeek.rst:238
+msgid "An event input stream type used to send input data to a Zeek event."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:41
+msgid ":zeek:type:`Input::Mode`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:41
+#: ../../scripts/base/frameworks/input/main.zeek.rst:256
+msgid "Type that defines the input stream read mode."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:42
+msgid ":zeek:type:`Input::TableDescription`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:42
+#: ../../scripts/base/frameworks/input/main.zeek.rst:321
+msgid "A table input stream type used to send data to a Zeek table."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:43
+msgid ":zeek:type:`Input::Reader`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:47
+#: ../../scripts/base/frameworks/input/main.zeek.rst:341
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:49
+msgid ":zeek:id:`Input::end_of_data`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:49
+#: ../../scripts/base/frameworks/input/main.zeek.rst:346
+msgid ""
+"Event that is called when the end of a data source has been reached, "
+"including after an update."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:54
+#: ../../scripts/base/frameworks/input/main.zeek.rst:356
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:56
+msgid ":zeek:id:`Input::add_analysis`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:56
+msgid "Create a new file analysis input stream from a given source."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:57
+msgid ":zeek:id:`Input::add_event`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:57
+#: ../../scripts/base/frameworks/input/main.zeek.rst:375
+msgid "Create a new event input stream from a given source."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:58
+msgid ":zeek:id:`Input::add_table`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:58
+#: ../../scripts/base/frameworks/input/main.zeek.rst:387
+msgid "Create a new table input stream from a given source."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:59
+msgid ":zeek:id:`Input::force_update`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:59
+#: ../../scripts/base/frameworks/input/main.zeek.rst:399
+msgid "Forces the current input to be checked for changes."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:60
+msgid ":zeek:id:`Input::remove`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:60
+#: ../../scripts/base/frameworks/input/main.zeek.rst:411
+msgid "Remove an input stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:65
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:70
+msgid ":zeek:type:`Input::Mode`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:71
+#: ../../scripts/base/frameworks/input/main.zeek.rst:79
+#: ../../scripts/base/frameworks/input/main.zeek.rst:89
+#: ../../scripts/base/frameworks/input/main.zeek.rst:101
+#: ../../scripts/base/frameworks/input/main.zeek.rst:110
+#: ../../scripts/base/frameworks/input/main.zeek.rst:120
+#: ../../scripts/base/frameworks/input/main.zeek.rst:130
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:72
+msgid "``Input::MANUAL``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:74
+msgid "The default reader mode used. Defaults to `MANUAL`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:78
+msgid ":zeek:type:`Input::Reader`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:80
+msgid "``Input::READER_ASCII``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:82
+msgid "The default input reader used. Defaults to `READER_ASCII`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:88
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:90
+msgid "``F``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:92
+msgid ""
+"Flag that controls if the input framework accepts records that contain "
+"types that are not supported (at the moment file and function). If true, "
+"the input framework will warn in these cases, but continue. If false, it "
+"will abort. Defaults to false (abort)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:100
+#: ../../scripts/base/frameworks/input/main.zeek.rst:109
+#: ../../scripts/base/frameworks/input/main.zeek.rst:119
+#: ../../scripts/base/frameworks/input/main.zeek.rst:129
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:102
+msgid "``\"(empty)\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:104
+msgid ""
+"String to use for empty fields. Individual readers can use a different "
+"value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:111
+msgid "``\"\\x09\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:113
+msgid ""
+"Separator between fields. Please note that the separator has to be "
+"exactly one character long. Individual readers can use a different value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:121
+msgid "``\",\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:123
+msgid ""
+"Separator between set elements. Please note that the separator has to be "
+"exactly one character long. Individual readers can use a different value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:131
+msgid "``\"-\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:133
+msgid ""
+"String to use for an unset &optional field. Individual readers can use a "
+"different value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:140
+#: ../../scripts/base/frameworks/input/main.zeek.rst:189
+#: ../../scripts/base/frameworks/input/main.zeek.rst:260
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:144
+#: ../../scripts/base/frameworks/input/main.zeek.rst:193
+#: ../../scripts/base/frameworks/input/main.zeek.rst:264
+msgid "source: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:143
+#: ../../scripts/base/frameworks/input/main.zeek.rst:192
+msgid ""
+"String that allows the reader to find the source. For `READER_ASCII`, "
+"this is the filename."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:149
+msgid ""
+"reader: :zeek:type:`Input::Reader` :zeek:attr:`&default` = "
+"``Input::READER_BINARY`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:147
+msgid ""
+"Reader to use for this stream.  Compatible readers must be able to accept"
+" a filter of a single string type (i.e. they read a byte stream)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:152
+#: ../../scripts/base/frameworks/input/main.zeek.rst:199
+#: ../../scripts/base/frameworks/input/main.zeek.rst:270
+msgid ""
+"mode: :zeek:type:`Input::Mode` :zeek:attr:`&default` = "
+":zeek:see:`Input::default_mode` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:152
+#: ../../scripts/base/frameworks/input/main.zeek.rst:199
+#: ../../scripts/base/frameworks/input/main.zeek.rst:270
+msgid "Read mode to use for this stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:159
+#: ../../scripts/base/frameworks/input/main.zeek.rst:202
+#: ../../scripts/base/frameworks/input/main.zeek.rst:274
+msgid "name: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:155
+msgid ""
+"Descriptive name that uniquely identifies the input source. Can be used "
+"to remove a stream at a later time. This will also be used for the unique"
+" *source* field of :zeek:see:`fa_file`.  Most of the time, the best "
+"choice for this field will be the same value as the *source* field."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:164
+#: ../../scripts/base/frameworks/input/main.zeek.rst:236
+#: ../../scripts/base/frameworks/input/main.zeek.rst:319
+msgid ""
+"config: :zeek:type:`table` [:zeek:type:`string`] of :zeek:type:`string` "
+":zeek:attr:`&default` = ``{  }`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:162
+#: ../../scripts/base/frameworks/input/main.zeek.rst:234
+#: ../../scripts/base/frameworks/input/main.zeek.rst:317
+msgid ""
+"A key/value table that will be passed to the reader. Interpretation of "
+"the values is left to the reader, but usually they will be used for "
+"configuration purposes."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:171
+#: ../../scripts/base/frameworks/input/main.zeek.rst:242
+#: ../../scripts/base/frameworks/input/main.zeek.rst:325
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:175
+msgid "New data has been imported."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:179
+msgid "Existing data has been changed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:183
+msgid "Previously existing data has been removed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:196
+#: ../../scripts/base/frameworks/input/main.zeek.rst:267
+msgid ""
+"reader: :zeek:type:`Input::Reader` :zeek:attr:`&default` = "
+":zeek:see:`Input::default_reader` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:196
+#: ../../scripts/base/frameworks/input/main.zeek.rst:267
+msgid "Reader to use for this stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:202
+msgid "Descriptive name. Used to remove a stream at a later time."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:206
+msgid "fields: :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:205
+msgid "Record type describing the fields to be retrieved from the input source."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:212
+#: ../../scripts/base/frameworks/input/main.zeek.rst:289
+msgid ""
+"want_record: :zeek:type:`bool` :zeek:attr:`&default` = ``T`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:209
+msgid ""
+"If this is false, the event receives each value in *fields* as a separate"
+" argument. If this is set to true (default), the event receives all "
+"fields in a single record value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:220
+msgid "ev: :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:215
+msgid ""
+"The event that is raised each time a new line is received from the "
+"reader. The event will receive an Input::EventDescription record as the "
+"first argument, an Input::Event enum as the second argument, and the "
+"fields (as specified in *fields*) as the following arguments (this will "
+"either be a single record value containing all fields, or each field "
+"value as a separate argument)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:231
+#: ../../scripts/base/frameworks/input/main.zeek.rst:314
+msgid "error_ev: :zeek:type:`any` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:223
+msgid ""
+"Error event that is raised when an information, warning or error is "
+"raised by the input stream. If the level is error, the stream will "
+"automatically be closed. The event receives the Input::EventDescription "
+"as the first argument, the message as the second argument and the "
+"Reporter::Level as the third argument."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:229
+msgid ""
+"The event is raised like it had been declared as follows: error_ev: "
+"function(desc: EventDescription, message: string, level: Reporter::Level)"
+" &optional; The actual declaration uses the ``any`` type because of "
+"deficiencies of the Zeek type system."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:246
+msgid "Do not automatically reread the file after it has been read."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:250
+msgid "Reread the entire file each time a change is found."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:254
+msgid "Read data from end of file each time new data is appended."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:263
+msgid ""
+"String that allows the reader to find the source of the data. For "
+"`READER_ASCII`, this is the filename."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:273
+msgid ""
+"Name of the input stream.  This is used by some functions to manipulate "
+"the stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:277
+msgid "destination: :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:277
+msgid "Table which will receive the data read by the input framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:280
+msgid "idx: :zeek:type:`any`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:280
+msgid "Record that defines the values used as the index of the table."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:284
+msgid "val: :zeek:type:`any` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:283
+msgid ""
+"Record that defines the values used as the elements of the table. If this"
+" is undefined, then *destination* must be a set."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:287
+msgid ""
+"Defines if the value of the table is a record (default), or a single "
+"value. When this is set to false, then *val* can only contain one "
+"element."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:296
+msgid "ev: :zeek:type:`any` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:292
+msgid ""
+"The event that is raised each time a value is added to, changed in, or "
+"removed from the table. The event will receive an Input::TableDescription"
+" as the first argument, an Input::Event enum as the second argument, the "
+"*idx* record as the third argument and the value (record) as the fourth "
+"argument."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:303
+msgid ""
+"pred: :zeek:type:`function` (typ: :zeek:type:`Input::Event`, left: "
+":zeek:type:`any`, right: :zeek:type:`any`) : :zeek:type:`bool` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:302
+msgid "bool &optional"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:299
+msgid ""
+"Predicate function that can decide if an insertion, update or removal "
+"should really be executed. Parameters have same meaning as for the event."
+" If true is returned, the update is performed. If false is returned, it "
+"is skipped."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:306
+msgid ""
+"Error event that is raised when an information, warning or error is "
+"raised by the input stream. If the level is error, the stream will "
+"automatically be closed. The event receives the Input::TableDescription "
+"as the first argument, the message as the second argument and the "
+"Reporter::Level as the third argument."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:312
+msgid ""
+"The event is raised like if it had been declared as follows: error_ev: "
+"function(desc: TableDescription, message: string, level: Reporter::Level)"
+" &optional; The actual declaration uses the ``any`` type because of "
+"deficiencies of the Zeek type system."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:344
+msgid ""
+":zeek:type:`event` (name: :zeek:type:`string`, source: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst
+msgid "name"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:350
+msgid "Name of the input stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst
+msgid "source"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:353
+msgid "String that identifies the data source (such as the filename)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:359
+msgid ""
+":zeek:type:`function` (description: "
+":zeek:type:`Input::AnalysisDescription`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:361
+msgid ""
+"Create a new file analysis input stream from a given source.  Data read "
+"from the source is automatically forwarded to the file analysis "
+"framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst
+msgid "description"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:366
+msgid "A record describing the source."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:369
+#: ../../scripts/base/frameworks/input/main.zeek.rst:381
+#: ../../scripts/base/frameworks/input/main.zeek.rst:393
+msgid "true on success."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:373
+msgid ""
+":zeek:type:`function` (description: :zeek:type:`Input::EventDescription`)"
+" : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:378
+msgid "`EventDescription` record describing the source."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:385
+msgid ""
+":zeek:type:`function` (description: :zeek:type:`Input::TableDescription`)"
+" : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:390
+msgid "`TableDescription` record describing the source."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:397
+#: ../../scripts/base/frameworks/input/main.zeek.rst:409
+msgid ":zeek:type:`function` (id: :zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst
+msgid "id"
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:402
+msgid "string value identifying the stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:405
+#: ../../scripts/base/frameworks/input/main.zeek.rst:417
+msgid "true on success and false if the named stream was not found."
+msgstr ""
+
+#: ../../scripts/base/frameworks/input/main.zeek.rst:414
+msgid "string value identifying the stream to be removed."
+msgstr ""
+

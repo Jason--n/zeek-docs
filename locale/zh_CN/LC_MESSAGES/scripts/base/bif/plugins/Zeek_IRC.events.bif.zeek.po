@@ -1,0 +1,1238 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_IRC.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:55
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:15
+msgid ":zeek:id:`irc_channel_info`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:60
+msgid "Generated for an IRC reply of type *luserchannels*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:16
+msgid ":zeek:id:`irc_channel_topic`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:85
+msgid "Generated for an IRC reply of type *topic*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:17
+msgid ":zeek:id:`irc_dcc_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:17
+msgid "Generated for IRC messages of type *dcc*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:18
+msgid ":zeek:id:`irc_error_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:18
+msgid "Generated for IRC messages of type *error*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:19
+msgid ":zeek:id:`irc_global_users`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:19
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:188
+msgid "Generated for an IRC reply of type *globalusers*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:20
+msgid ":zeek:id:`irc_invalid_nick`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:20
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:217
+msgid "Generated when a server rejects an IRC nickname."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:21
+msgid ":zeek:id:`irc_invite_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:21
+msgid "Generated for IRC messages of type *invite*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:22
+msgid ":zeek:id:`irc_join_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:22
+msgid "Generated for IRC messages of type *join*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:23
+msgid ":zeek:id:`irc_kick_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:23
+msgid "Generated for IRC messages of type *kick*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:24
+msgid ":zeek:id:`irc_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:24
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:334
+msgid "Generated for IRC commands forwarded from the server to the client."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:25
+msgid ":zeek:id:`irc_mode_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:25
+msgid "Generated for IRC messages of type *mode*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:26
+msgid ":zeek:id:`irc_names_info`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:26
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:401
+msgid "Generated for an IRC reply of type *namereply*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:27
+msgid ":zeek:id:`irc_network_info`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:27
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:432
+msgid "Generated for an IRC reply of type *luserclient*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:28
+msgid ":zeek:id:`irc_nick_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:28
+msgid "Generated for IRC messages of type *nick*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:29
+msgid ":zeek:id:`irc_notice_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:29
+msgid "Generated for IRC messages of type *notice*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:30
+msgid ":zeek:id:`irc_oper_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:30
+msgid "Generated for IRC messages of type *oper*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:31
+msgid ":zeek:id:`irc_oper_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:31
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:553
+msgid "Generated for IRC replies of type *youreoper* and *nooperhost*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:32
+msgid ":zeek:id:`irc_part_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:32
+msgid "Generated for IRC messages of type *part*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:33
+msgid ":zeek:id:`irc_password_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:33
+msgid "Generated for IRC messages of type *password*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:34
+msgid ":zeek:id:`irc_privmsg_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:34
+msgid "Generated for IRC messages of type *privmsg*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:35
+msgid ":zeek:id:`irc_quit_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:35
+msgid "Generated for IRC messages of type *quit*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:36
+msgid ":zeek:id:`irc_reply`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:36
+msgid "Generated for all IRC replies."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:37
+msgid ":zeek:id:`irc_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:37
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:731
+msgid "Generated for all client-side IRC commands."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:38
+msgid ":zeek:id:`irc_server_info`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:38
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:766
+msgid "Generated for an IRC reply of type *luserme*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:39
+msgid ":zeek:id:`irc_squery_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:39
+msgid "Generated for IRC messages of type *squery*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:40
+msgid ":zeek:id:`irc_squit_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:40
+msgid "Generated for IRC messages of type *squit*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:41
+msgid ":zeek:id:`irc_starttls`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:41
+msgid "Generated if an IRC connection switched to TLS using STARTTLS."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:42
+msgid ":zeek:id:`irc_user_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:42
+msgid "Generated for IRC messages of type *user*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:43
+msgid ":zeek:id:`irc_who_line`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:43
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:908
+msgid "Generated for an IRC reply of type *whoreply*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:44
+msgid ":zeek:id:`irc_who_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:44
+msgid "Generated for IRC messages of type *who*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:45
+msgid ":zeek:id:`irc_whois_channel_line`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:45
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:986
+msgid "Generated for an IRC reply of type *whoischannels*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:46
+msgid ":zeek:id:`irc_whois_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:46
+msgid "Generated for IRC messages of type *whois*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:47
+msgid ":zeek:id:`irc_whois_operator_line`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:47
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1043
+msgid "Generated for an IRC reply of type *whoisoperator*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:48
+msgid ":zeek:id:`irc_whois_user_line`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:48
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1068
+msgid "Generated for an IRC reply of type *whoisuser*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:53
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:58
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, chans: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:62
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:87
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:116
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:161
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:190
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:219
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:242
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:275
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:301
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:336
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:374
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:403
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:434
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:466
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:495
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:527
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:555
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:582
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:614
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:640
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:672
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:701
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:733
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:768
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:800
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:832
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:876
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:910
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:960
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:988
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1017
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1045
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1070
+msgid ""
+"See `Wikipedia <http://en.wikipedia.org/wiki/Internet_Relay_Chat>`__ for "
+"more information about the IRC protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:66
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:91
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:120
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:165
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:194
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:223
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:246
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:279
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:305
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:340
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:378
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:407
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:438
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:470
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:499
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:531
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:559
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:586
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:618
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:644
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:676
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:705
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:737
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:772
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:804
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:836
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:867
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:880
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:914
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:964
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:992
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1021
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1049
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1074
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:69
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:94
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:123
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:168
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:197
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:226
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:249
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:282
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:308
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:381
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:410
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:441
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:473
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:502
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:534
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:562
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:589
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:621
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:647
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:679
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:708
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:775
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:807
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:839
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:883
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:917
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:967
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:995
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1024
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1052
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1077
+msgid "True if the command was sent by the originator of the TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "chans"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:73
+msgid "The number of channels as returned in the reply."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:83
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, channel: :zeek:type:`string`, topic: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "channel"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:98
+msgid "The channel name specified in the reply."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "topic"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:101
+msgid "The topic specified in the reply."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:111
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, prefix: :zeek:type:`string`, target: "
+":zeek:type:`string`, dcc_type: :zeek:type:`string`, argument: "
+":zeek:type:`string`, address: :zeek:type:`addr`, dest_port: "
+":zeek:type:`count`, size: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:113
+msgid ""
+"Generated for IRC messages of type *dcc*. This event is generated for "
+"messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "prefix"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:127
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:172
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:201
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:253
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:312
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:346
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:385
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:743
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:843
+msgid ""
+"The optional prefix coming with the command. IRC uses the prefix to "
+"indicate the true origin of a message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "target"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:131
+msgid "The target specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "dcc_type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:134
+msgid "The DCC type specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "argument"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:137
+msgid "The argument specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "address"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:140
+msgid "The address specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "dest_port"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:143
+msgid "The destination port specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "size"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:146
+msgid "The size specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:156
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, prefix: :zeek:type:`string`, message: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:158
+msgid ""
+"Generated for IRC messages of type *error*. This event is generated for "
+"messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "message"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:176
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:850
+msgid "The textual description specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:186
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, prefix: :zeek:type:`string`, msg: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "msg"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:205
+msgid "The message coming with the reply."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:215
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:237
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, prefix: :zeek:type:`string`, nickname: "
+":zeek:type:`string`, channel: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:239
+msgid ""
+"Generated for IRC messages of type *invite*. This event is generated for "
+"messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "nickname"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:257
+msgid "The nickname specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:260
+msgid "The channel specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:270
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, info_list: :zeek:type:`irc_join_list`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:272
+msgid ""
+"Generated for IRC messages of type *join*. This event is generated for "
+"messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "info_list"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:286
+msgid "The user information coming with the command."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:296
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, prefix: :zeek:type:`string`, chans: "
+":zeek:type:`string`, users: :zeek:type:`string`, comment: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:298
+msgid ""
+"Generated for IRC messages of type *kick*. This event is generated for "
+"messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:316
+msgid "The channels specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "users"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:319
+msgid "The users specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "comment"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:322
+msgid "The comment specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:332
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, prefix: :zeek:type:`string`, command: "
+":zeek:type:`string`, message: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:343
+msgid "Always false."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "command"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:350
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:747
+msgid "The command."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:353
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1028
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1031
+msgid "TODO."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:363
+msgid ""
+"This event is generated only for messages that are forwarded by the "
+"server to the client. Commands coming from client trigger the "
+":zeek:id:`irc_request` event instead."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:369
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, prefix: :zeek:type:`string`, params: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:371
+msgid ""
+"Generated for IRC messages of type *mode*. This event is generated for "
+"messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "params"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:389
+msgid "The parameters coming with the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:399
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, c_type: :zeek:type:`string`, channel: "
+":zeek:type:`string`, users: :zeek:type:`string_set`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "c_type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:414
+msgid "The channel type."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:417
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:924
+msgid "The channel."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:420
+msgid "The set of users."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:430
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:764
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, users: :zeek:type:`count`, services: "
+":zeek:type:`count`, servers: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:445
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:779
+msgid "The number of users as returned in the reply."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "services"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:448
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:782
+msgid "The number of services as returned in the reply."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "servers"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:451
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:785
+msgid "The number of servers as returned in the reply."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:461
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, who: :zeek:type:`string`, newnick: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:463
+msgid ""
+"Generated for IRC messages of type *nick*. This event is generated for "
+"messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "who"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:477
+msgid "The user changing its nickname."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "newnick"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:480
+msgid "The new nickname."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:490
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:635
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:795
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, source: :zeek:type:`string`, target: "
+":zeek:type:`string`, message: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:492
+msgid ""
+"Generated for IRC messages of type *notice*. This event is generated for "
+"messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "source"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:506
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:651
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:811
+msgid "The source of the private communication."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:509
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:654
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:814
+msgid "The target of the private communication."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:512
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:657
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:817
+msgid "The text of communication."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:522
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, user: :zeek:type:`string`, password: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:524
+msgid ""
+"Generated for IRC messages of type *oper*. This event is generated for "
+"messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "user"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:538
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:887
+msgid "The user specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "password"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:541
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:625
+msgid "The password specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:551
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, got_oper: :zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "got_oper"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:566
+msgid ""
+"True if the *oper* command was executed successfully (*youreport*) and "
+"false otherwise (*nooperhost*)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:577
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, nick: :zeek:type:`string`, chans: "
+":zeek:type:`string_set`, message: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:579
+msgid ""
+"Generated for IRC messages of type *part*. This event is generated for "
+"messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "nick"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:593
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:683
+msgid "The nickname coming with the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:596
+msgid "The set of channels affected."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:599
+msgid "The text coming with the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:609
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, password: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:611
+msgid ""
+"Generated for IRC messages of type *password*. This event is generated "
+"for messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:637
+msgid ""
+"Generated for IRC messages of type *privmsg*. This event is generated for"
+" messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:667
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, nick: :zeek:type:`string`, message: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:669
+msgid ""
+"Generated for IRC messages of type *quit*. This event is generated for "
+"messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:686
+msgid "The text included with the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:696
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, prefix: :zeek:type:`string`, code: :zeek:type:`count`,"
+" params: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:698
+msgid ""
+"Generated for all IRC replies. IRC replies are sent in response to a "
+"request and come with a reply code."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:712
+msgid ""
+"The optional prefix coming with the reply. IRC uses the prefix to "
+"indicate the true origin of a message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "code"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:716
+msgid "The reply code, as specified by the protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:719
+msgid "The reply's parameters."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:729
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, prefix: :zeek:type:`string`, command: "
+":zeek:type:`string`, arguments: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:740
+msgid "Always true."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "arguments"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:750
+msgid "The arguments for the command."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:758
+msgid ""
+"This event is generated only for messages that originate at the client-"
+"side. Commands coming in from remote trigger the :zeek:id:`irc_message` "
+"event instead."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:797
+msgid ""
+"Generated for IRC messages of type *squery*. This event is generated for "
+"messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:827
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, prefix: :zeek:type:`string`, server: "
+":zeek:type:`string`, message: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:829
+msgid ""
+"Generated for IRC messages of type *squit*. This event is generated for "
+"messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "server"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:847
+msgid "The server specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:860
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:862
+msgid ""
+"Generated if an IRC connection switched to TLS using STARTTLS. After this"
+" event no more IRC events will be raised for the connection. See the SSL "
+"analyzer for related SSL events, which will now be generated."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:871
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, user: :zeek:type:`string`, host: :zeek:type:`string`, "
+"server: :zeek:type:`string`, real_name: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:873
+msgid ""
+"Generated for IRC messages of type *user*. This event is generated for "
+"messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "host"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:890
+msgid "The host name specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:893
+msgid "The server name specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "real_name"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:896
+msgid "The real name specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:906
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, target_nick: :zeek:type:`string`, channel: "
+":zeek:type:`string`, user: :zeek:type:`string`, host: "
+":zeek:type:`string`, server: :zeek:type:`string`, nick: "
+":zeek:type:`string`, params: :zeek:type:`string`, hops: "
+":zeek:type:`count`, real_name: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "target_nick"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:921
+msgid "The target nickname."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:927
+msgid "The user."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:930
+msgid "The host."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:933
+msgid "The server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:936
+msgid "The nickname."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:939
+msgid "The parameters."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "hops"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:942
+msgid "The hop count."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:945
+msgid "The real name."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:955
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, mask: :zeek:type:`string`, oper: :zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:957
+msgid ""
+"Generated for IRC messages of type *who*. This event is generated for "
+"messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "mask"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:971
+msgid "The mask specified in the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst
+msgid "oper"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:974
+msgid "True if the operator flag was set."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:984
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, nick: :zeek:type:`string`, chans: "
+":zeek:type:`string_set`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:999
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1056
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1081
+msgid "The nickname specified in the reply."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1002
+msgid "The set of channels returned."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1012
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, server: :zeek:type:`string`, users: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1014
+msgid ""
+"Generated for IRC messages of type *whois*. This event is generated for "
+"messages coming from both the client and the server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1041
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, nick: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1066
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, nick: :zeek:type:`string`, user: :zeek:type:`string`, "
+"host: :zeek:type:`string`, real_name: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1084
+msgid "The user name specified in the reply."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1087
+msgid "The host name specified in the reply."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_IRC.events.bif.zeek.rst:1090
+msgid "The real name specified in the reply."
+msgstr ""
+

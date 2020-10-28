@@ -1,0 +1,660 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../frameworks/signatures.rst:4
+msgid "Signature Framework"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:8
+msgid ""
+"Zeek relies primarily on its extensive scripting language for defining "
+"and analyzing detection policies. In addition, however, Zeek also "
+"provides an independent *signature language* for doing low-level, Snort-"
+"style pattern matching. While signatures are *not* Zeek's preferred "
+"detection tool, they sometimes come in handy and are closer to what many "
+"people are familiar with from using other NIDS. This page gives a brief "
+"overview on Zeek's signatures and covers some of their technical "
+"subtleties."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:18
+msgid "Basics"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:20
+msgid "Let's look at an example signature first::"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:29
+msgid ""
+"This signature asks Zeek to match the regular expression ``.*root`` on "
+"all TCP connections going to port 80. When the signature triggers, Zeek "
+"will raise an event :zeek:id:`signature_match` of the form:"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:37
+msgid ""
+"Here, ``state`` contains more information on the connection that "
+"triggered the match, ``msg`` is the string specified by the signature's "
+"event statement (``Found root!``), and data is the last piece of payload "
+"which triggered the pattern match."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:42
+msgid ""
+"To turn such :zeek:id:`signature_match` events into actual alarms, you "
+"can load Zeek's :doc:`/scripts/base/frameworks/signatures/main.zeek` "
+"script. This script contains a default event handler that raises "
+":zeek:enum:`Signatures::Sensitive_Signature` :doc:`Notices <notice>` (as "
+"well as others; see the beginning of the script)."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:48
+msgid ""
+"As signatures are independent of Zeek's policy scripts, they are put into"
+" their own file(s). There are three ways to specify which files contain "
+"signatures: By using the ``-s`` flag when you invoke Zeek, or by "
+"extending the Zeek variable :zeek:id:`signature_files` using the ``+=`` "
+"operator, or by using the ``@load-sigs`` directive inside a Zeek script. "
+"If a signature file is given without a full path, it is searched for "
+"along the normal ``ZEEKPATH``.  Additionally, the ``@load-sigs`` "
+"directive can be used to load signature files in a path relative to the "
+"Zeek script in which it's placed, e.g. ``@load-sigs ./mysigs.sig`` will "
+"expect that signature file in the same directory as the Zeek script. The "
+"default extension of the file name is ``.sig``, and Zeek appends that "
+"automatically when necessary."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:62
+msgid "Signature Language for Network Traffic"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:64
+msgid ""
+"Let's look at the format of a signature more closely. Each individual "
+"signature has the format ``signature <id> { <attributes> }``. ``<id>`` is"
+" a unique label for the signature. There are two types of attributes: "
+"*conditions* and *actions*. The conditions define when the signature "
+"matches, while the actions declare what to do in the case of a match. "
+"Conditions can be further divided into four types: *header*, *content*, "
+"*dependency*, and *context*. We discuss these all in more detail in the "
+"following."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:74 ../../frameworks/signatures.rst:296
+msgid "Conditions"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:77
+msgid "Header Conditions"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:79
+msgid ""
+"Header conditions limit the applicability of the signature to a subset of"
+" traffic that contains matching packet headers.  This type of matching is"
+" performed only for the first packet of a connection."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:83
+msgid ""
+"There are pre-defined header conditions for some of the most used header "
+"fields. All of them generally have the format ``<keyword> <cmp> <value-"
+"list>``, where ``<keyword>`` names the header field; ``cmp`` is one of "
+"``==``, ``!=``, ``<``, ``<=``, ``>``, ``>=``; and ``<value-list>`` is a "
+"list of comma-separated values or value-ranges to compare against (e.g. "
+"``5,7-10`` for numbers 5 to 10, excluding 6). The following keywords are "
+"defined:"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:95
+msgid "``src-ip``/``dst-ip <cmp> <address-list>``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:92
+msgid ""
+"Source and destination address, respectively. Addresses can be given as "
+"IPv4 or IPv6 addresses or CIDR masks.  For IPv6 addresses/masks the "
+"colon-hexadecimal representation of the address must be enclosed in "
+"square brackets (e.g. ``[fe80::1]`` or ``[fe80::0]/16``)."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:98
+msgid "``src-port``/``dst-port <cmp> <int-list>``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:98
+msgid "Source and destination port, respectively."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:107
+msgid "``ip-proto <cmp> tcp|udp|icmp|icmp6|ip|ip6``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:101
+msgid ""
+"IPv4 header's Protocol field or the Next Header field of the final IPv6 "
+"header (i.e. either Next Header field in the fixed IPv6 header if no "
+"extension headers are present or that field from the last extension "
+"header in the chain).  Note that the IP-in-IP forms of tunneling are "
+"automatically decapsulated by default and signatures apply to only the "
+"inner-most packet, so specifying ``ip`` or ``ip6`` is a no-op."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:109
+msgid ""
+"For lists of multiple values, they are sequentially compared against the "
+"corresponding header field. If at least one of the comparisons evaluates "
+"to true, the whole header condition matches (exception: with ``!=``, the "
+"header condition only matches if all values differ)."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:114
+msgid ""
+"In addition to these pre-defined header keywords, a general header "
+"condition can be defined either as::"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:119
+msgid ""
+"This compares the value found at the given position of the packet header "
+"with a list of values. ``offset`` defines the position of the value "
+"within the header of the protocol defined by ``proto`` (which can be "
+"``ip``, ``ip6``, ``tcp``, ``udp``, ``icmp`` or ``icmp6``). ``size`` is "
+"either 1, 2, or 4 and specifies the value to have a size of this many "
+"bytes. If the optional ``& <integer>`` is given, the packet's value is "
+"first masked with the integer before it is compared to the value-list. "
+"``cmp`` is one of ``==``, ``!=``, ``<``, ``<=``, ``>``, ``>=``. ``value-"
+"list`` is a list of comma-separated integers or integer-ranges similar to"
+" those described above.  The integers within the list may be followed by "
+"an additional ``/ mask`` where ``mask`` is a value from 0 to 32. This "
+"corresponds to the CIDR notation for netmasks and is translated into a "
+"corresponding bitmask applied to the packet's value prior to the "
+"comparison (similar to the optional ``& integer``).  IPv6 address values "
+"are not allowed in the value-list, though you can still inspect any 1, 2,"
+" or 4 byte section of an IPv6 header using this keyword."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:136
+msgid ""
+"Putting it all together, this is an example condition that is equivalent "
+"to ``dst-ip == 1.2.3.4/16, 5.6.7.8/24``::"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:141
+msgid ""
+"Note that the analogous example for IPv6 isn't currently possible since 4"
+" bytes is the max width of a value that can be compared."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:145
+msgid "Content Conditions"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:147
+msgid ""
+"Content conditions are defined by regular expressions. We differentiate "
+"two kinds of content conditions: first, the expression may be declared "
+"with the ``payload`` statement, in which case it is matched against the "
+"raw payload of a connection (for reassembled TCP streams) or of each "
+"packet (for ICMP, UDP, and non-reassembled TCP). Second, it may be "
+"prefixed with an analyzer-specific label, in which case the expression is"
+" matched against the data as extracted by the corresponding analyzer."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:156
+msgid "A ``payload`` condition has the form::"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:160
+msgid ""
+"Currently, the following analyzer-specific content conditions are defined"
+" (note that the corresponding analyzer has to be activated by loading its"
+" policy script):"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:166
+msgid "``http-request /<regular expression>/``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:165
+msgid ""
+"The regular expression is matched against decoded URIs of HTTP requests. "
+"Obsolete alias: ``http``."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:169
+msgid "``http-request-header /<regular expression>/``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:169
+msgid "The regular expression is matched against client-side HTTP headers."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:173
+msgid "``http-request-body /<regular expression>/``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:172
+msgid ""
+"The regular expression is matched against client-side bodys of HTTP "
+"requests."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:176
+msgid "``http-reply-header /<regular expression>/``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:176
+msgid "The regular expression is matched against server-side HTTP headers."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:180
+msgid "``http-reply-body /<regular expression>/``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:179
+msgid ""
+"The regular expression is matched against server-side bodys of HTTP "
+"replys."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:184
+msgid "``ftp /<regular expression>/``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:183
+msgid ""
+"The regular expression is matched against the command line input of FTP "
+"sessions."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:187
+msgid "``finger /<regular expression>/``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:187
+msgid "The regular expression is matched against finger requests."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:189
+msgid ""
+"For example, ``http-request /.*(etc/(passwd|shadow)/`` matches any URI "
+"containing either ``etc/passwd`` or ``etc/shadow``. To filter on request "
+"types, e.g. ``GET``, use ``payload /GET /``."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:193
+msgid ""
+"Note that HTTP pipelining (that is, multiple HTTP transactions in a "
+"single TCP connection) has some side effects on signature matches. If "
+"multiple conditions are specified within a single signature, this "
+"signature matches if all conditions are met by any HTTP transaction (not "
+"necessarily always the same!) in a pipelined connection."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:200
+msgid "Dependency Conditions"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:202
+msgid "To define dependencies between signatures, there are two conditions:"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:210
+msgid "``requires-signature [!] <id>``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:206
+msgid ""
+"Defines the current signature to match only if the signature given by "
+"``id`` matches for the same connection. Using ``!`` negates the "
+"condition: The current signature only matches if ``id`` does not match "
+"for the same connection (using this defers the match decision until the "
+"connection terminates)."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:216
+msgid "``requires-reverse-signature [!] <id>``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:213
+msgid ""
+"Similar to ``requires-signature``, but ``id`` has to match for the "
+"opposite direction of the same connection, compared to the current "
+"signature. This allows to model the notion of requests and replies."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:219
+msgid "Context Conditions"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:221
+msgid ""
+"Context conditions pass the match decision on to other components of "
+"Zeek. They are only evaluated if all other conditions have already "
+"matched. The following context conditions are defined:"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:233
+msgid "``eval <policy-function>``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:226
+msgid ""
+"The given policy function is called and has to return a boolean "
+"confirming the match. If false is returned, no signature match is going "
+"to be triggered. The function has to be of type ``function cond(state: "
+"signature_state, data: string): bool``. Here, ``data`` may contain the "
+"most recent content chunk available at the time the signature was "
+"matched. If no such chunk is available, ``data`` will be the empty "
+"string. See :zeek:type:`signature_state` for its definition."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:239
+msgid "``payload-size <cmp> <integer>``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:236
+msgid ""
+"Compares the integer to the size of the payload of a packet. For "
+"reassembled TCP streams, the integer is compared to the size of the first"
+" in-order payload chunk. Note that the latter is not very well defined."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:243
+msgid "``same-ip``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:242
+msgid ""
+"Evaluates to true if the source address of the IP packets equals its "
+"destination address."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:251
+msgid "``tcp-state <state-list>``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:246
+msgid ""
+"Imposes restrictions on the current TCP state of the connection. ``state-"
+"list`` is a comma-separated list of the keywords ``established`` (the "
+"three-way handshake has already been performed), ``originator`` (the "
+"current data is send by the originator of the connection), and "
+"``responder`` (the current data is send by the responder of the "
+"connection)."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:259
+msgid "``udp-state <state-list>``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:254
+msgid ""
+"Imposes restrictions on which UDP flow direction to match.  ``state-"
+"list`` is a comma-separated list of either ``originator`` (the current "
+"data is send by the originator of the connection) or ``responder`` (the "
+"current data is send by the responder of the connection).  The "
+"``established`` state is rejected as an error in the signature since it "
+"does not have a useful meaning like it does for TCP."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:262 ../../frameworks/signatures.rst:310
+msgid "Actions"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:264
+msgid ""
+"Actions define what to do if a signature matches. Currently, there are "
+"two actions defined:"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:278
+msgid "``event <string>``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:268
+msgid ""
+"Raises a :zeek:id:`signature_match` event. The event handler has the "
+"following type:"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:275
+msgid ""
+"The given string is passed in as ``msg``, and data is the current part of"
+" the payload that has eventually lead to the signature match (this may be"
+" empty for signatures without content conditions)."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:283
+msgid "``enable <string>``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:281
+msgid ""
+"Enables the protocol analyzer ``<string>`` for the matching connection "
+"(``\"http\"``, ``\"ftp\"``, etc.). This is used by Zeek's dynamic "
+"protocol detection to activate analyzers on the fly."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:286
+msgid "Signature Language for File Content"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:288
+msgid ""
+"The signature framework can also be used to identify MIME types of files "
+"irrespective of the network protocol/connection over which the file is "
+"transferred.  A special type of signature can be written for this purpose"
+" and will be used automatically by the :doc:`Files Framework <file-"
+"analysis>` or by Zeek scripts that use the :zeek:see:`file_magic` built-"
+"in function."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:298
+msgid ""
+"File signatures use a single type of content condition in the form of a "
+"regular expression:"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:301
+msgid "``file-magic /<regular expression>/``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:303
+msgid ""
+"This is analogous to the ``payload`` content condition for the network "
+"traffic signature language described above.  The difference is that "
+"``payload`` signatures are applied to payloads of network connections, "
+"but ``file-magic`` can be applied to any arbitrary data, it does not have"
+" to be tied to a network protocol/connection."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:312
+msgid ""
+"Upon matching a chunk of data, file signatures use the following action "
+"to get information about that data's MIME type:"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:315
+msgid "``file-mime <string> [, <integer>]``"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:317
+msgid ""
+"The arguments include the MIME type string associated with the file magic"
+" regular expression and an optional \"strength\" as a signed integer. "
+"Since multiple file magic signatures may match against a given chunk of "
+"data, the strength value may be used to help choose a \"winner\".  Higher"
+" values are considered stronger."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:324
+msgid "Things to keep in mind when writing signatures"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:326
+msgid ""
+"Each signature is reported at most once for every connection, further "
+"matches of the same signature are ignored."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:329
+msgid ""
+"The content conditions perform pattern matching on elements extracted "
+"from an application protocol dialogue. For example, ``http /.*passwd/`` "
+"scans URLs requested within HTTP sessions. The thing to keep in mind here"
+" is that these conditions only perform any matching when the "
+"corresponding application analyzer is actually *active* for a connection."
+" Note that by default, analyzers are not enabled if the corresponding "
+"Zeek script has not been loaded. A good way to double-check whether an "
+"analyzer \"sees\" a connection is checking its log file for corresponding"
+" entries. If you cannot find the connection in the analyzer's log, very "
+"likely the signature engine has also not seen any application data."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:341
+msgid ""
+"As the name indicates, the ``payload`` keyword matches on packet "
+"*payload* only. You cannot use it to match on packet headers; use the "
+"header conditions for that."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:345
+msgid ""
+"For TCP connections, header conditions are only evaluated for the *first "
+"packet from each endpoint*. If a header condition does not match the "
+"initial packets, the signature will not trigger. Zeek optimizes for the "
+"most common application here, which is header conditions selecting the "
+"connections to be examined more closely with payload statements."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:352
+msgid ""
+"For UDP and ICMP flows, the payload matching is done on a per-packet "
+"basis; i.e., any content crossing packet boundaries will not be found. "
+"For TCP connections, the matching semantics depend on whether Zeek is "
+"*reassembling* the connection (i.e., putting all of a connection's "
+"packets in sequence). By default, Zeek is reassembling the first 1K of "
+"every TCP connection, which means that within this window, matches will "
+"be found without regards to packet order or boundaries (i.e., *stream-"
+"wise matching*)."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:361
+msgid ""
+"For performance reasons, by default Zeek *stops matching* on a connection"
+" after seeing 1K of payload; see the section on options below for how to "
+"change this behaviour. The default was chosen with Zeek's main user of "
+"signatures in mind: dynamic protocol detection works well even when "
+"examining just connection heads."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:367
+msgid ""
+"Regular expressions are implicitly anchored, i.e., they work as if "
+"prefixed with the ``^`` operator. For reassembled TCP connections, they "
+"are anchored at the first byte of the payload *stream*. For all other "
+"connections, they are anchored at the first payload byte of each packet. "
+"To match at arbitrary positions, you can prefix the regular expression "
+"with ``.*``, as done in the examples above."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:374
+msgid ""
+"To match on non-ASCII characters, Zeek's regular expressions support the "
+"``\\x<hex>`` operator. CRs/LFs are not treated specially by the signature"
+" engine and can be matched with ``\\r`` and ``\\n``, respectively. "
+"Generally, Zeek follows `flex's regular expression syntax "
+"<http://westes.github.io/flex/manual/Patterns.html>`_. See the DPD "
+"signatures in ``base/frameworks/dpd/dpd.sig`` for some examples of fairly"
+" complex payload patterns."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:383
+msgid ""
+"The data argument of the :zeek:id:`signature_match` handler might not "
+"carry the full text matched by the regular expression. Zeek performs the "
+"matching incrementally as packets come in; when the signature eventually "
+"fires, it can only pass on the most recent chunk of data."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:390
+msgid "Options"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:392
+msgid "The following options control details of Zeek's matching process:"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:400
+msgid "``dpd_reassemble_first_packets: bool`` (default: ``T``)"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:395
+msgid ""
+"If true, Zeek reassembles the beginning of every TCP connection (of up to"
+" ``dpd_buffer_size`` bytes, see below), to facilitate reliable matching "
+"across packet boundaries. If false, only connections are reassembled for "
+"which an application-layer analyzer gets activated (e.g., by Zeek's "
+"dynamic protocol detection)."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:405
+msgid "``dpd_match_only_beginning : bool`` (default: ``T``)"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:403
+msgid ""
+"If true, Zeek performs packet matching only within the initial payload "
+"window of ``dpd_buffer_size``. If false, it keeps matching on subsequent "
+"payload as well."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:414
+msgid "``dpd_buffer_size: count`` (default: ``1024``)"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:408
+msgid ""
+"Defines the buffer size for the two preceding options. In addition, this "
+"value determines the amount of bytes Zeek buffers for each connection in "
+"order to activate application analyzers even after parts of the payload "
+"have already passed through. This is needed by the dynamic protocol "
+"detection capability to defer the decision which analyzers to use."
+msgstr ""
+
+#: ../../frameworks/signatures.rst:417
+msgid "So, how about using Snort signatures with Zeek?"
+msgstr ""
+
+#: ../../frameworks/signatures.rst:419
+msgid ""
+"There was once a script, ``snort2bro``, that converted Snort signatures "
+"automatically into Zeek's (then called \"Bro\") signature syntax. "
+"However, in our experience this didn't turn out to be a very useful thing"
+" to do because by simply using Snort signatures, one can't benefit from "
+"the additional capabilities that Zeek provides; the approaches of the two"
+" systems are just too different. We therefore stopped maintaining the "
+"``snort2bro`` script, and there are now many newer Snort options which it"
+" doesn't support. The script is now no longer part of the Zeek "
+"distribution."
+msgstr ""
+

@@ -1,0 +1,357 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:4
+msgid "base/frameworks/logging/writers/ascii.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:7
+msgid ""
+"Interface for the ASCII log writer.  Redefinable options are available to"
+" tweak the output format of ASCII logs."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:10
+msgid ""
+"The ASCII writer currently supports one writer-specific per-filter config"
+" option: setting ``tsv`` to the string ``T`` turns the output into \"tab-"
+"separated-value\" mode where only a single header row with the column "
+"names is printed out as meta information, with no \"# fields\" prepended;"
+" no other meta data gets included in that mode.  Example filter using "
+"this::"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:21
+msgid "LogAscii"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:24
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:26
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:53
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:28
+msgid ":zeek:id:`LogAscii::empty_field`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:28
+msgid "String to use for empty fields."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:29
+msgid ""
+":zeek:id:`LogAscii::enable_leftover_log_rotation`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:29
+msgid ""
+"If true, detect log files that did not get properly rotated by a previous"
+" Zeek process (e.g."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:31
+msgid ":zeek:id:`LogAscii::enable_utf_8`: :zeek:type:`bool` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:31
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:84
+msgid ""
+"If true, valid UTF-8 sequences will pass through unescaped and be written"
+" into logs."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:33
+msgid ""
+":zeek:id:`LogAscii::gzip_file_extension`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:33
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:95
+msgid ""
+"Define the file extension used when compressing log files when they are "
+"created with the :zeek:see:`LogAscii::gzip_level` option."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:35
+msgid ":zeek:id:`LogAscii::gzip_level`: :zeek:type:`count` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:35
+msgid "Define the gzip level to compress the logs."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:36
+msgid ":zeek:id:`LogAscii::include_meta`: :zeek:type:`bool` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:36
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:119
+msgid ""
+"If true, include lines with log meta information such as column names "
+"with types, the values of ASCII logging options that are in use, and the "
+"time when the file was opened and closed (the latter at the end)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:39
+msgid ""
+":zeek:id:`LogAscii::json_timestamps`: :zeek:type:`JSON::TimestampFormat` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:39
+msgid "Format of timestamps when writing out JSON."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:40
+msgid ":zeek:id:`LogAscii::meta_prefix`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:40
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:143
+msgid "Prefix for lines with meta information."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:41
+msgid ""
+":zeek:id:`LogAscii::output_to_stdout`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:41
+msgid "If true, output everything to stdout rather than into files."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:43
+msgid ":zeek:id:`LogAscii::separator`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:43
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:164
+msgid "Separator between fields."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:44
+msgid ""
+":zeek:id:`LogAscii::set_separator`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:44
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:174
+msgid "Separator between set elements."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:45
+msgid ":zeek:id:`LogAscii::unset_field`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:45
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:184
+msgid "String to use for an unset &optional field."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:46
+msgid ":zeek:id:`LogAscii::use_json`: :zeek:type:`bool` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:46
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:200
+msgid "If true, the default will be to write logs in a JSON format."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:51
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:56
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:91
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:139
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:160
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:170
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:180
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:57
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:68
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:81
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:92
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:103
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:116
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:128
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:140
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:150
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:161
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:171
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:181
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:191
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:58
+msgid "``\"(empty)\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:60
+msgid ""
+"String to use for empty fields. This should be different from "
+"*unset_field* to make the output unambiguous."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:63
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:87
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:98
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:111
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:135
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:145
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:156
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:166
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:176
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:186
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:202
+msgid "This option is also available as a per-filter ``$config`` option."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:67
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:80
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:115
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:149
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:190
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:69
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:82
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:151
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:192
+msgid "``F``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:71
+msgid ""
+"If true, detect log files that did not get properly rotated by a previous"
+" Zeek process (e.g. due to crash) and rotate them."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:74
+msgid ""
+"This requires a positive rotation interval to be configured to have an "
+"effect.  E.g. via :zeek:see:`Log::default_rotation_interval` or the "
+"*interv* field of a :zeek:see:`Log::Filter`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:93
+msgid "``\"gz\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:102
+msgid ":zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:104
+msgid "``0``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:106
+msgid ""
+"Define the gzip level to compress the logs.  If 0, then no gzip "
+"compression is performed. Enabling compression also changes the log file "
+"name extension to include the value of "
+":zeek:see:`LogAscii::gzip_file_extension`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:117
+msgid "``T``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:123
+msgid "If writing in JSON format, this is implicitly disabled."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:127
+msgid ":zeek:type:`JSON::TimestampFormat`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:129
+msgid "``JSON::TS_EPOCH``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:131
+msgid ""
+"Format of timestamps when writing out JSON. By default, the JSON "
+"formatter will use double values for timestamps which represent the "
+"number of seconds from the UNIX epoch."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:141
+msgid "``\"#\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:153
+msgid ""
+"If true, output everything to stdout rather than into files. This is "
+"primarily for debugging purposes."
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:162
+msgid "``\"\\x09\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:172
+msgid "``\",\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:182
+msgid "``\"-\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst
+msgid "Redefinition"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:193
+msgid "from :doc:`/scripts/policy/tuning/json-logs.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/logging/writers/ascii.zeek.rst:195
+msgid "``=``::"
+msgstr ""
+

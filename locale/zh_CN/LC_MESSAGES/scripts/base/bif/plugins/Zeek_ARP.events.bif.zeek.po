@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_ARP.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:24
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:15
+msgid ":zeek:id:`arp_reply`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:29
+msgid "Generated for ARP replies."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:16
+msgid ":zeek:id:`arp_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:58
+msgid "Generated for ARP requests."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:17
+msgid ":zeek:id:`bad_arp`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:17
+msgid "Generated for ARP packets that Zeek cannot interpret."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:22
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:27
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:56
+msgid ""
+":zeek:type:`event` (mac_src: :zeek:type:`string`, mac_dst: "
+":zeek:type:`string`, SPA: :zeek:type:`addr`, SHA: :zeek:type:`string`, "
+"TPA: :zeek:type:`addr`, THA: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:31
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:60
+msgid ""
+"See `Wikipedia "
+"<http://en.wikipedia.org/wiki/Address_Resolution_Protocol>`__ for more "
+"information about the ARP protocol."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst
+msgid "mac_src"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:35
+msgid "The reply's source MAC address."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst
+msgid "mac_dst"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:38
+msgid "The reply's destination MAC address."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst
+msgid "SPA"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:41
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:70
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:92
+msgid "The sender protocol address."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst
+msgid "SHA"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:44
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:73
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:95
+msgid "The sender hardware address."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst
+msgid "TPA"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:47
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:76
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:98
+msgid "The target protocol address."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst
+msgid "THA"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:50
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:79
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:101
+msgid "The target hardware address."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:64
+msgid "The request's source MAC address."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:67
+msgid "The request's destination MAC address."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:85
+msgid ""
+":zeek:type:`event` (SPA: :zeek:type:`addr`, SHA: :zeek:type:`string`, "
+"TPA: :zeek:type:`addr`, THA: :zeek:type:`string`, explanation: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:87
+msgid ""
+"Generated for ARP packets that Zeek cannot interpret. Examples are "
+"packets with non-standard hardware address formats or hardware addresses "
+"that do not match the originator of the packet."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst
+msgid "explanation"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:104
+msgid "A short description of why the ARP packet is considered \"bad\"."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:108
+msgid "Todo"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_ARP.events.bif.zeek.rst:108
+msgid ""
+"Zeek's current default configuration does not activate the protocol "
+"analyzer that generates this event; the corresponding script has not yet "
+"been ported. To still enable this event, one needs to register a port for"
+" it or add a DPD payload signature."
+msgstr ""
+

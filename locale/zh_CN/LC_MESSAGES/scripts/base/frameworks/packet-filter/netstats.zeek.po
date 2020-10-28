@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst:4
+msgid "base/frameworks/packet-filter/netstats.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst:7
+msgid ""
+"This script reports on packet loss from the various packet sources. When "
+"Zeek is reading input from trace files, this script will not report any "
+"packet loss statistics."
+msgstr ""
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst:11
+msgid "PacketFilter"
+msgstr ""
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst:12
+msgid ":doc:`base/frameworks/notice </scripts/base/frameworks/notice/index>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst:15
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst:17
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst:35
+msgid "Constants"
+msgstr ""
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst:19
+msgid ":zeek:id:`PacketFilter::stats_collection_interval`: :zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst:19
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst:41
+msgid "This is the interval between individual statistics collection."
+msgstr ""
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst:23
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst:25
+msgid ":zeek:type:`Notice::Type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst:27
+msgid ""
+":zeek:enum:`PacketFilter::Dropped_Packets`: Indicates packets were "
+"dropped by the packet filter."
+msgstr ""
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst:33
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst:38
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/packet-filter/netstats.zeek.rst:39
+msgid "``5.0 mins``"
+msgstr ""
+

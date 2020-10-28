@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../examples/httpmonitor/index.rst:6
+msgid "Monitoring HTTP Traffic"
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:8
+msgid ""
+"Zeek can be used to log the entire HTTP traffic from your network to the "
+"http.log file.  This file can then be used for analysis and auditing "
+"purposes."
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:12
+msgid ""
+"In the sections below we briefly explain the structure of the http.log "
+"file, then we show you how to perform basic HTTP traffic monitoring and "
+"analysis tasks with Zeek. Some of these ideas and techniques can later be"
+" applied to monitor different protocols in a similar way."
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:19
+msgid "Introduction to the HTTP log"
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:21
+msgid ""
+"The http.log file contains a summary of all HTTP requests and responses "
+"sent over a Zeek-monitored network. Here are the first few columns of "
+"``http.log``::"
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:28
+msgid ""
+"Every single line in this log starts with a timestamp, a unique "
+"connection identifier (UID), and a connection 4-tuple (originator "
+"host/port and responder host/port).  The UID can be used to identify all "
+"logged activity (possibly across multiple log files) associated with a "
+"given connection 4-tuple over its lifetime."
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:34
+msgid ""
+"The remaining columns detail the activity that's occurring.  For example,"
+" the columns on the line below (shortened for brevity) show a request to "
+"the root of Zeek website::"
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:41
+msgid ""
+"Network administrators and security engineers, for instance, can use the "
+"information in this log to understand the HTTP activity on the network "
+"and troubleshoot network problems or search for anomalous activities. We "
+"must stress that there is no single right way to perform an analysis. It "
+"will depend on the expertise of the person performing the analysis and "
+"the specific details of the task."
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:48
+msgid ""
+"For more information about how to handle the HTTP protocol in Zeek, "
+"including a complete list of the fields available in http.log, go to "
+"Zeek's :doc:`HTTP script reference "
+"</scripts/base/protocols/http/main.zeek>`."
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:55
+msgid "Detecting a Proxy Server"
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:57
+msgid ""
+"A proxy server is a device on your network configured to request a "
+"service on behalf of a third system; one of the most common examples is a"
+" Web proxy server. A client without Internet access connects to the proxy"
+" and requests a web page, the proxy sends the request to the web server, "
+"which receives the response, and passes it to the original client."
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:64
+msgid ""
+"Proxies were conceived to help manage a network and provide better "
+"encapsulation. Proxies by themselves are not a security threat, but a "
+"misconfigured or unauthorized proxy can allow others, either inside or "
+"outside the network, to access any web site and even conduct malicious "
+"activities anonymously using the network's resources."
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:71
+msgid "What Proxy Server traffic looks like"
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:73
+msgid ""
+"In general, when a client starts talking with a proxy server, the traffic"
+" consists of two parts: (i) a GET request, and (ii) an HTTP/ reply::"
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:80
+msgid ""
+"This will differ from traffic between a client and a normal Web server "
+"because GET requests should not include \"http\" on the string. So we can"
+" use this to identify a proxy server."
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:84
+msgid ""
+"We can write a basic script in Zeek to handle the http_reply event and "
+"detect a reply for a ``GET http://`` request."
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:87
+msgid "http_proxy_01.zeek"
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:98
+msgid ""
+"Basically, the script is checking for a \"200 OK\" status code on a reply"
+" for a request that includes \"http:\" (case insensitive). In reality, "
+"the HTTP protocol defines several success status codes other than 200, so"
+" we will extend our basic script to also consider the additional codes."
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:103
+msgid "http_proxy_02.zeek"
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:114
+msgid ""
+"Next, we will make sure that the responding proxy is part of our local "
+"network."
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:117
+msgid "http_proxy_03.zeek"
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:130
+msgid ""
+"The redefinition of :zeek:see:`Site::local_nets` is only done inside this"
+" script to make it a self-contained example.  It's typically redefined "
+"somewhere else."
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:134
+msgid ""
+"Finally, our goal should be to generate an alert when a proxy has been "
+"detected instead of printing a message on the console output.  For that, "
+"we will tag the traffic accordingly and define a new ``Open_Proxy`` "
+"``Notice`` type to alert of all tagged communications. Once a "
+"notification has been fired, we will further suppress it for one day. "
+"Below is the complete script."
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:141
+msgid "http_proxy_04.zeek"
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:162
+msgid ""
+"Note that this script only logs the presence of the proxy to "
+"``notice.log``, but if an additional email is desired (and email "
+"functionality is enabled), then that's done simply by redefining "
+":zeek:see:`Notice::emailed_types` to add the ``Open_proxy`` notice type "
+"to it."
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:170
+msgid "Inspecting Files"
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:172
+msgid ""
+"Files are often transmitted on regular HTTP conversations between a "
+"client and a server. Most of the time these files are harmless, just "
+"images and some other multimedia content, but there are also types of "
+"files, specially executable files, that can damage your system. We can "
+"instruct Zeek to create a copy of all files of certain types that it sees"
+" using the :ref:`File Analysis Framework <file-analysis-framework>`:"
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:179
+msgid "file_extraction.zeek"
+msgstr ""
+
+#: ../../examples/httpmonitor/index.rst:195
+msgid ""
+"Here, the ``mime_to_ext`` table serves two purposes.  It defines which "
+"mime types to extract and also the file suffix of the extracted files. "
+"Extracted files are written to a new ``extract_files`` subdirectory. Also"
+" note that the first conditional in the :zeek:see:`file_new` event "
+"handler can be removed to make this behavior generic to other protocols "
+"besides HTTP."
+msgstr ""
+

@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:4
+msgid "base/protocols/radius/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:7
+msgid ""
+"Implements base functionality for RADIUS analysis. Generates the "
+"radius.log file."
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:9
+msgid "RADIUS"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:10
+msgid ""
+":doc:`base/protocols/conn/removal-hooks.zeek "
+"</scripts/base/protocols/conn/removal-hooks.zeek>`, "
+":doc:`base/protocols/radius/consts.zeek "
+"</scripts/base/protocols/radius/consts.zeek>`, "
+":doc:`base/utils/addrs.zeek </scripts/base/utils/addrs.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:15
+#: ../../scripts/base/protocols/radius/main.zeek.rst:52
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:17
+msgid ":zeek:type:`RADIUS::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:21
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:23
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:25
+msgid ":zeek:enum:`RADIUS::LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:26
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:28
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:30
+msgid "radius: :zeek:type:`RADIUS::Info` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:31
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:35
+#: ../../scripts/base/protocols/radius/main.zeek.rst:104
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:37
+msgid ":zeek:id:`RADIUS::log_radius`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:37
+#: ../../scripts/base/protocols/radius/main.zeek.rst:109
+msgid ""
+"Event that can be handled to access the RADIUS record as it is sent on to"
+" the logging framework."
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:42
+#: ../../scripts/base/protocols/radius/main.zeek.rst:113
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:44
+msgid ":zeek:id:`RADIUS::finalize_radius`: :zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:44
+msgid "RADIUS finalization hook."
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:45
+msgid ":zeek:id:`RADIUS::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:50
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:55
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:58
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:58
+msgid "Timestamp for when the event happened."
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:61
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:61
+msgid "Unique ID for the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:64
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:64
+msgid "The connection's 4-tuple of endpoint addresses/ports."
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:67
+msgid "username: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:67
+msgid "The username, if present."
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:70
+msgid "mac: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:70
+msgid "MAC address, if present."
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:76
+msgid "framed_addr: :zeek:type:`addr` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:73
+msgid ""
+"The address given to the network access server, if present.  This is only"
+" a hint from the RADIUS server and the network access server is not "
+"required to honor the address."
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:81
+msgid ""
+"tunnel_client: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:79
+msgid ""
+"Address (IPv4, IPv6, or FQDN) of the initiator end of the tunnel, if "
+"present.  This is collected from the Tunnel-Client-Endpoint attribute."
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:84
+msgid "connect_info: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:84
+msgid "Connect info, if present."
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:88
+msgid "reply_msg: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:87
+msgid ""
+"Reply message from the server challenge. This is frequently shown to the "
+"user authenticating."
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:91
+msgid "result: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:91
+msgid "Successful or failed authentication."
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:97
+msgid "ttl: :zeek:type:`interval` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:94
+msgid ""
+"The duration between the first request and either the \"Access-Accept\" "
+"message or an error. If the field is empty, it means that either the "
+"request or response was not seen."
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:99
+msgid ""
+"logged: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:100
+msgid "Whether this has already been logged and can be ignored."
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:107
+msgid ":zeek:type:`event` (rec: :zeek:type:`RADIUS::Info`)"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:116
+msgid ":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:118
+msgid ""
+"RADIUS finalization hook.  Remaining RADIUS info may get logged when it's"
+" called."
+msgstr ""
+
+#: ../../scripts/base/protocols/radius/main.zeek.rst:122
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

@@ -1,0 +1,574 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../frameworks/logging.rst:6
+msgid "Logging Framework"
+msgstr ""
+
+#: ../../frameworks/logging.rst:10
+msgid ""
+"Zeek comes with a flexible key-value based logging interface that allows "
+"fine-grained control of what gets logged and how it is logged. This "
+"document describes how logging can be customized and extended."
+msgstr ""
+
+#: ../../frameworks/logging.rst:16
+msgid "Terminology"
+msgstr ""
+
+#: ../../frameworks/logging.rst:18
+msgid "Zeek's logging interface is built around three main abstractions:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:24 ../../frameworks/logging.rst:49
+msgid "Streams"
+msgstr ""
+
+#: ../../frameworks/logging.rst:21
+msgid ""
+"A log stream corresponds to a single log. It defines the set of fields "
+"that a log consists of with their names and types. Examples are the "
+"``conn`` stream for recording connection summaries, and the ``http`` "
+"stream for recording HTTP activity."
+msgstr ""
+
+#: ../../frameworks/logging.rst:33 ../../frameworks/logging.rst:296
+msgid "Filters"
+msgstr ""
+
+#: ../../frameworks/logging.rst:27
+msgid ""
+"Each stream has a set of filters attached to it that determine what "
+"information gets written out. By default, each stream has one default "
+"filter that just logs everything directly to disk. However, additional "
+"filters can be added to record only a subset of the log records, write to"
+" different outputs, or set a custom rotation interval.  If all filters "
+"are removed from a stream, then output is disabled for that stream."
+msgstr ""
+
+#: ../../frameworks/logging.rst:40 ../../frameworks/logging.rst:605
+msgid "Writers"
+msgstr ""
+
+#: ../../frameworks/logging.rst:36
+msgid ""
+"Each filter has a writer.  A writer defines the actual output format for "
+"the information being logged. The default writer is the ASCII writer, "
+"which produces tab-separated ASCII files. Other writers are available, "
+"like for binary output or direct logging into a database."
+msgstr ""
+
+#: ../../frameworks/logging.rst:42
+msgid ""
+"There are several different ways to customize Zeek's logging: you can "
+"create a new log stream, you can extend an existing log with new fields, "
+"you can apply filters to an existing log stream, or you can customize the"
+" output format by setting log writer options.  All of these approaches "
+"are described in this document."
+msgstr ""
+
+#: ../../frameworks/logging.rst:51
+msgid ""
+"In order to log data to a new log stream, all of the following needs to "
+"be done:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:54
+msgid ""
+"A :zeek:type:`record` type must be defined which consists of all the "
+"fields that will be logged (by convention, the name of this record type "
+"is usually \"Info\")."
+msgstr ""
+
+#: ../../frameworks/logging.rst:57
+msgid ""
+"A log stream ID (an :zeek:type:`enum` with type name \"Log::ID\") must be"
+" defined that uniquely identifies the new log stream."
+msgstr ""
+
+#: ../../frameworks/logging.rst:59
+msgid ""
+"A log stream must be created using the :zeek:id:`Log::create_stream` "
+"function."
+msgstr ""
+
+#: ../../frameworks/logging.rst:60
+msgid ""
+"When the data to be logged becomes available, the :zeek:id:`Log::write` "
+"function must be called."
+msgstr ""
+
+#: ../../frameworks/logging.rst:63
+msgid ""
+"In the following example, we create a new module \"Foo\" which creates a "
+"new log stream."
+msgstr ""
+
+#: ../../frameworks/logging.rst:103
+msgid ""
+"In the definition of the \"Info\" record above, notice that each field "
+"has the :zeek:attr:`&log` attribute.  Without this attribute, a field "
+"will not appear in the log output. Also notice one field has the "
+":zeek:attr:`&optional` attribute. This indicates that the field might not"
+" be assigned any value before the log record is written.  Finally, a "
+"field with the :zeek:attr:`&default` attribute has a default value "
+"assigned to it automatically."
+msgstr ""
+
+#: ../../frameworks/logging.rst:110
+msgid ""
+"The second argument to the :zeek:id:`Log::create_stream` function defines"
+" properties of the log stream. The ``columns`` field is mandatory. The "
+"``path`` field defines the default name of the log. This name gets "
+"inherited to all filters. Log streams can specify additional fields that "
+"we'll cover below."
+msgstr ""
+
+#: ../../frameworks/logging.rst:116
+msgid ""
+"At this point, the only thing missing is a call to the "
+":zeek:id:`Log::write` function to send data to the logging framework.  "
+"The actual event handler where this should take place will depend on "
+"where your data becomes available. In this example, the "
+":zeek:id:`connection_established` event provides our data, and we also "
+"store a copy of the data being logged into the :zeek:type:`connection` "
+"record:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:136
+msgid ""
+"If you run Zeek with this script, a new log file ``foo.log`` will be "
+"created. Although we only specified four fields in the \"Info\" record "
+"above, the log output will actually contain seven fields because one of "
+"the fields (the one named \"id\") is itself a record type.  Since a "
+":zeek:type:`conn_id` record has four fields, then each of these fields is"
+" a separate column in the log output.  Note that the way that such fields"
+" are named in the log output differs slightly from the way we would refer"
+" to the same field in a Zeek script (each dollar sign is replaced with a "
+"period).  For example, to access the first field of a ``conn_id`` in a "
+"Zeek script we would use the notation ``id$orig_h``, but that field is "
+"named ``id.orig_h`` in the log output."
+msgstr ""
+
+#: ../../frameworks/logging.rst:148
+msgid ""
+"When you are developing scripts that add data to the "
+":zeek:type:`connection` record, care must be given to when and how long "
+"data is stored. Normally data saved to the connection record will remain "
+"there for the duration of the connection and from a practical perspective"
+" it's not uncommon to need to delete that data before the end of the "
+"connection."
+msgstr ""
+
+#: ../../frameworks/logging.rst:156
+msgid "Add Fields to a Log"
+msgstr ""
+
+#: ../../frameworks/logging.rst:158
+msgid ""
+"You can add additional fields to a log by extending the record type that "
+"defines its content, and setting a value for the new fields before each "
+"log record is written."
+msgstr ""
+
+#: ../../frameworks/logging.rst:162
+msgid ""
+"Let's say we want to add a boolean field ``is_private`` to "
+":zeek:type:`Conn::Info` that indicates whether the originator IP address "
+"is part of the :rfc:`1918` space:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:175
+msgid ""
+"As this example shows, when extending a log stream's \"Info\" record, "
+"each new field must always be declared either with a ``&default`` value "
+"or as ``&optional``.  Furthermore, you need to add the ``&log`` attribute"
+" or otherwise the field won't appear in the log file."
+msgstr ""
+
+#: ../../frameworks/logging.rst:180
+msgid ""
+"Now we need to set the field.  Although the details vary depending on "
+"which log is being extended, in general it is important to choose a "
+"suitable event in which to set the additional fields because we need to "
+"make sure that the fields are set before the log record is written.  "
+"Sometimes the right choice is the same event which writes the log record,"
+" but at a higher priority (in order to ensure that the event handler that"
+" sets the additional fields is executed before the event handler that "
+"writes the log record)."
+msgstr ""
+
+#: ../../frameworks/logging.rst:188
+msgid ""
+"In this example, since a connection's summary is generated at the time "
+"its state is removed from memory, we can add another handler at that time"
+" that sets our field correctly:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:200
+msgid ""
+"Now ``conn.log`` will show a new field ``is_private`` of type ``bool``.  "
+"If you look at the Zeek script which defines the connection log stream "
+":doc:`/scripts/base/protocols/conn/main.zeek`, you will see that "
+"``Log::write`` gets called in an event handler for the same event as used"
+" in this example to set the additional fields, but at a lower priority "
+"than the one used in this example (i.e., the log record gets written "
+"after we assign the ``is_private`` field)."
+msgstr ""
+
+#: ../../frameworks/logging.rst:208
+msgid ""
+"For extending logs this way, one needs a bit of knowledge about how the "
+"script that creates the log stream is organizing its state keeping. Most "
+"of the standard Zeek scripts attach their log state to the "
+":zeek:type:`connection` record where it can then be accessed, just like "
+"``c$conn`` above. For example, the HTTP analysis adds a field ``http`` of"
+" type :zeek:type:`HTTP::Info` to the :zeek:type:`connection` record."
+msgstr ""
+
+#: ../../frameworks/logging.rst:218
+msgid "Define a Logging Event"
+msgstr ""
+
+#: ../../frameworks/logging.rst:220
+msgid ""
+"Sometimes it is helpful to do additional analysis of the information "
+"being logged. For these cases, a stream can specify an event that will be"
+" generated every time a log record is written to it.  To do this, we need"
+" to modify the example module shown above to look something like this:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:251
+msgid ""
+"All of Zeek's default log streams define such an event. For example, the "
+"connection log stream raises the event :zeek:id:`Conn::log_conn`. You "
+"could use that for example for flagging when a connection to a specific "
+"destination exceeds a certain duration:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:272
+msgid ""
+"Often, these events can be an alternative to post-processing Zeek logs "
+"externally with Perl scripts. Much of what such an external script would "
+"do later offline, one may instead do directly inside of Zeek in real-"
+"time."
+msgstr ""
+
+#: ../../frameworks/logging.rst:278
+msgid "Disable a Stream"
+msgstr ""
+
+#: ../../frameworks/logging.rst:280
+msgid ""
+"One way to \"turn off\" a log is to completely disable the stream.  For "
+"example, the following example will prevent the conn.log from being "
+"written:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:290
+msgid ""
+"Note that this must run after the stream is created, so the priority of "
+"this event handler must be lower than the priority of the event handler "
+"where the stream was created."
+msgstr ""
+
+#: ../../frameworks/logging.rst:298
+msgid ""
+"A stream has one or more filters attached to it (a stream without any "
+"filters will not produce any log output).  When a stream is created, it "
+"automatically gets a default filter attached to it.  This default filter "
+"can be removed or replaced, or other filters can be added to the stream."
+"  This is accomplished by using either the :zeek:id:`Log::add_filter` or "
+":zeek:id:`Log::remove_filter` function.  This section shows how to use "
+"filters to do such tasks as rename a log file, split the output into "
+"multiple files, control which records are written, and set a custom "
+"rotation interval."
+msgstr ""
+
+#: ../../frameworks/logging.rst:308
+msgid "Rename Log File"
+msgstr ""
+
+#: ../../frameworks/logging.rst:310
+msgid ""
+"Normally, the log filename for a given log stream is determined when the "
+"stream is created, unless you explicitly specify a different one by "
+"adding a filter."
+msgstr ""
+
+#: ../../frameworks/logging.rst:314
+msgid ""
+"The easiest way to change a log filename is to simply replace the default"
+" log filter with a new filter that specifies a value for the \"path\" "
+"field.  In this example, \"conn.log\" will be changed to \"myconn.log\":"
+msgstr ""
+
+#: ../../frameworks/logging.rst:330
+msgid ""
+"Keep in mind that the \"path\" field of a log filter never contains the "
+"filename extension.  The extension will be determined later by the log "
+"writer."
+msgstr ""
+
+#: ../../frameworks/logging.rst:334
+msgid "Add a New Log File"
+msgstr ""
+
+#: ../../frameworks/logging.rst:336
+msgid ""
+"Normally, a log stream writes to only one log file.  However, you can add"
+" filters so that the stream writes to multiple files.  This is useful if "
+"you want to restrict the set of fields being logged to the new file."
+msgstr ""
+
+#: ../../frameworks/logging.rst:340
+msgid ""
+"In this example, a new filter is added to the Conn::LOG stream that "
+"writes two fields to a new log file:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:356
+msgid ""
+"Notice how the \"include\" filter attribute specifies a set that limits "
+"the fields to the ones given. The names correspond to those in the "
+":zeek:type:`Conn::Info` record (however, because the \"id\" field is "
+"itself a record, we can specify an individual field of \"id\" by the dot "
+"notation shown in the example)."
+msgstr ""
+
+#: ../../frameworks/logging.rst:362
+msgid ""
+"Using the code above, in addition to the regular ``conn.log``, you will "
+"now also get a new log file ``origs.log`` that looks like the regular "
+"``conn.log``, but will have only the fields specified in the \"include\" "
+"filter attribute."
+msgstr ""
+
+#: ../../frameworks/logging.rst:367
+msgid ""
+"If you want to skip only some fields but keep the rest, there is a "
+"corresponding ``exclude`` filter attribute that you can use instead of "
+"``include`` to list only the ones you are not interested in."
+msgstr ""
+
+#: ../../frameworks/logging.rst:371
+msgid ""
+"If you want to make this the only log file for the stream, you can remove"
+" the default filter:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:383
+msgid "Determine Log Path Dynamically"
+msgstr ""
+
+#: ../../frameworks/logging.rst:385
+msgid ""
+"Instead of using the \"path\" filter attribute, a filter can determine "
+"output paths *dynamically* based on the record being logged. That allows,"
+" e.g., to record local and remote connections into separate files. To do "
+"this, you define a function that returns the desired path, and use the "
+"\"path_func\" filter attribute:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:411
+msgid ""
+"Running this will now produce two new files, ``conn-local.log`` and "
+"``conn-remote.log``, with the corresponding entries (for this example to "
+"work, the ``Site::local_nets`` must specify your local network). One "
+"could extend this further for example to log information by subnets or "
+"even by IP address. Be careful, however, as it is easy to create many "
+"files very quickly."
+msgstr ""
+
+#: ../../frameworks/logging.rst:418
+msgid ""
+"The ``myfunc`` function has one drawback: it can be used only with the "
+":zeek:enum:`Conn::LOG` stream as the record type is hardcoded into its "
+"argument list. However, Zeek allows to do a more generic variant:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:432
+msgid ""
+"This function can be used with all log streams that have records "
+"containing an ``id: conn_id`` field."
+msgstr ""
+
+#: ../../frameworks/logging.rst:436
+msgid "Filter Log Records"
+msgstr ""
+
+#: ../../frameworks/logging.rst:438
+msgid ""
+"We have seen how to customize the logged columns, but you can also "
+"control which records Zeek writes out. This relies on Zeek's "
+":zeek:type:`hook` mechanism, as follows. Log streams and log filters "
+"feature an optional \"policy\" hook whose handlers can veto the writing "
+"of a log entry via a ``break`` statement. Anyone can attach handlers to "
+"these hooks, which look as follows:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:449
+msgid ""
+"The ``rec`` argument is an instance of the stream's ``columns`` record "
+"type, containing the log entry to be logged. ``id`` identifies the log "
+"stream, and ``filter`` is the log filter instance governing the log-write"
+" under consideration. You can pass arbitrary state through these "
+"arguments, for example by extending streams or filters via a ``redef``, "
+"or at runtime via the ``config`` table included in the filter. The "
+"framework automatically inherits any policy hook defined on a stream to "
+"its attached filters. Filters can override this hook, including no use of"
+" a hook, as desired."
+msgstr ""
+
+#: ../../frameworks/logging.rst:459
+msgid ""
+"To support hooks on your log streams, you should always define a default "
+"hook when creating new streams, as follows:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:488
+msgid ""
+"With this hook in place, it's now easy to add a filtering predicate from "
+"anywhere:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:500
+msgid ""
+"The Zeek distribution features default hooks for all of its streams. "
+"Here's a more realistic example, using HTTP:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:512
+msgid ""
+"To override a hook selectively in a new filter, set the hook when adding "
+"the filter to a stream:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:531
+msgid ""
+"To change an existing filter first retrieve it, then update it, and re-"
+"establish it:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:550
+msgid ""
+"Policy hooks can also modify the log records, but with subtle "
+"implications. The logging framework applies all of a stream's log filters"
+" sequentially to the same log record, so modifications made in a hook "
+"handler will persist not only into subsequent handlers in the same hook, "
+"but also into any in filters processed subsequently. In contrast to hook "
+"priorities, filters provide no control over their processing order."
+msgstr ""
+
+#: ../../frameworks/logging.rst:558
+msgid ""
+"Policy hooks provide a more powerful implementation of the logging "
+"predicates that the framework has always supported. Those older "
+"predicates are harder to augment and more difficult to pass state into, "
+"and are now deprecated. They will get removed in Zeek 4.1, so if you're "
+"using predicate functions, make sure to migrate them to hooks. For "
+"reference, here's an example of the old mechanism:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:580
+msgid ""
+"This will result in a new log file ``conn-http.log`` that contains only "
+"the log records from ``conn.log`` that are analyzed as HTTP traffic."
+msgstr ""
+
+#: ../../frameworks/logging.rst:584
+msgid "Rotation"
+msgstr ""
+
+#: ../../frameworks/logging.rst:586
+msgid ""
+"The log rotation interval is globally controllable for all filters by "
+"redefining the :zeek:id:`Log::default_rotation_interval` option (note "
+"that when using ZeekControl, this option is set automatically via the "
+"ZeekControl configuration)."
+msgstr ""
+
+#: ../../frameworks/logging.rst:591
+msgid ""
+"Or specifically for certain :zeek:type:`Log::Filter` instances by setting"
+" their ``interv`` field.  Here's an example of changing just the "
+":zeek:enum:`Conn::LOG` stream's default filter rotation."
+msgstr ""
+
+#: ../../frameworks/logging.rst:607
+msgid ""
+"Each filter has a writer.  If you do not specify a writer when adding a "
+"filter to a stream, then the ASCII writer is the default."
+msgstr ""
+
+#: ../../frameworks/logging.rst:610
+msgid ""
+"There are two ways to specify a non-default writer.  To change the "
+"default writer for all log filters, just redefine the "
+":zeek:id:`Log::default_writer` option.  Alternatively, you can specify "
+"the writer to use on a per-filter basis by setting a value for the "
+"filter's \"writer\" field.  Consult the documentation of the writer to "
+"use to see if there are other options that are needed."
+msgstr ""
+
+#: ../../frameworks/logging.rst:618
+msgid "ASCII Writer"
+msgstr ""
+
+#: ../../frameworks/logging.rst:620
+msgid ""
+"By default, the ASCII writer outputs log files that begin with several "
+"lines of metadata, followed by the actual log output.  The metadata "
+"describes the format of the log file, the \"path\" of the log (i.e., the "
+"log filename without file extension), and also specifies the time that "
+"the log was created and the time when Zeek finished writing to it. The "
+"ASCII writer has a number of options for customizing the format of its "
+"output, see :doc:`/scripts/base/frameworks/logging/writers/ascii.zeek`. "
+"If you change the output format options, then be careful to check whether"
+" your postprocessing scripts can still recognize your log files."
+msgstr ""
+
+#: ../../frameworks/logging.rst:630
+msgid ""
+"Some writer options are global (i.e., they affect all log filters using "
+"that log writer).  For example, to change the output format of all ASCII "
+"logs to JSON format:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:638
+msgid ""
+"Some writer options are filter-specific (i.e., they affect only the "
+"filters that explicitly specify the option).  For example, to change the "
+"output format of the ``conn.log`` only:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:654
+msgid "Other Writers"
+msgstr ""
+
+#: ../../frameworks/logging.rst:656
+msgid "Zeek supports the following additional built-in output formats:"
+msgstr ""
+
+#: ../../frameworks/logging.rst:663
+msgid ""
+"Additional writers are available as external plugins through the `Zeek "
+"Package Manager <https://packages.zeek.org>`_."
+msgstr ""
+

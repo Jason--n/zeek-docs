@@ -1,0 +1,466 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:4
+msgid "base/frameworks/notice/weird.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:7
+msgid ""
+"This script provides a default set of actions to take for \"weird "
+"activity\" events generated from Zeek's event engine.  Weird activity is "
+"defined as unusual or exceptional activity that can indicate malformed "
+"connections, traffic that doesn't conform to a particular protocol, "
+"malfunctioning or misconfigured hardware, or even an attacker attempting "
+"to avoid/confuse a sensor.  Without context, it's hard to judge whether a"
+" particular category of weird activity is interesting, but this script "
+"provides a starting point for the user."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:16
+msgid "Weird"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:17
+msgid ""
+":doc:`base/frameworks/notice/main.zeek "
+"</scripts/base/frameworks/notice/main.zeek>`, :doc:`base/utils/conn-"
+"ids.zeek </scripts/base/utils/conn-ids.zeek>`, :doc:`base/utils/site.zeek"
+" </scripts/base/utils/site.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:20
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:22
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:88
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:24
+msgid ":zeek:id:`Weird::ignore_hosts`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:24
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:95
+msgid ""
+"To completely ignore a specific weird for a host, add the host and weird "
+"name into this set."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:26
+msgid ""
+":zeek:id:`Weird::weird_do_not_ignore_repeats`: :zeek:type:`set` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:26
+msgid "Don't ignore repeats for weirds in this set."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:30
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:118
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:32
+msgid ""
+":zeek:id:`Weird::actions`: :zeek:type:`table` :zeek:attr:`&default` = "
+"``Weird::ACTION_LOG`` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:32
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:283
+msgid "A table specifying default/recommended actions per weird type."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:36
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:286
+msgid "State Variables"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:38
+msgid ""
+":zeek:id:`Weird::did_log`: :zeek:type:`set` :zeek:attr:`&create_expire` ="
+" ``1.0 day`` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:38
+msgid ""
+"A state set which tracks unique weirds solely by name to reduce duplicate"
+" logging."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:40
+msgid ""
+":zeek:id:`Weird::did_notice`: :zeek:type:`set` "
+":zeek:attr:`&create_expire` = ``1.0 day`` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:40
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:303
+msgid ""
+"A state set which tracks unique weirds solely by name to reduce duplicate"
+" notices from being raised."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:42
+msgid ""
+":zeek:id:`Weird::weird_ignore`: :zeek:type:`set` "
+":zeek:attr:`&create_expire` = ``10.0 mins`` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:42
+msgid ""
+"This table is used to track identifier and name pairs that should be "
+"temporarily ignored because the problem has already been reported."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:47
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:318
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:49
+msgid ":zeek:type:`Weird::Action`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:49
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:364
+msgid "Types of actions that may be taken when handling weird activity events."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:50
+msgid ":zeek:type:`Weird::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:50
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:404
+msgid "The record which is used for representing and logging weirds."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:54
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:56
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:56
+msgid "The weird logging stream identifier."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:58
+msgid ":zeek:enum:`Weird::LOG`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:59
+msgid ":zeek:type:`Notice::Type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:61
+msgid ""
+":zeek:enum:`Weird::Activity`: Generic unusual but notice-worthy weird "
+"activity."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:66
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:407
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:68
+msgid ":zeek:id:`Weird::log_weird`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:68
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:412
+msgid ""
+"Handlers of this event are invoked once per write to the weird logging "
+"stream before the data is actually written."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:73
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:419
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:75
+msgid ":zeek:id:`Weird::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:75
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:424
+msgid "A default logging policy hook for the stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:79
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:427
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:81
+msgid ":zeek:id:`Weird::weird`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:86
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:91
+msgid ":zeek:type:`set` [:zeek:type:`addr`, :zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:92
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:101
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:93
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:291
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:301
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:310
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:100
+msgid ":zeek:type:`set` [:zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:114
+msgid ""
+"Don't ignore repeats for weirds in this set.  For example, it's handy "
+"keeping track of clustered checksum errors."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:121
+msgid ":zeek:type:`table` [:zeek:type:`string`] of :zeek:type:`Weird::Action`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:122
+msgid ":zeek:attr:`&default` = ``Weird::ACTION_LOG`` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:289
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:299
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:308
+msgid ":zeek:type:`set` [:zeek:type:`string`, :zeek:type:`string`]"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:290
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:300
+msgid ":zeek:attr:`&create_expire` = ``1.0 day`` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:293
+msgid ""
+"A state set which tracks unique weirds solely by name to reduce duplicate"
+" logging.  This is deliberately not synchronized because it could cause "
+"overload during storms."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:309
+msgid ":zeek:attr:`&create_expire` = ``10.0 mins`` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:312
+msgid ""
+"This table is used to track identifier and name pairs that should be "
+"temporarily ignored because the problem has already been reported. This "
+"helps reduce the volume of high volume weirds by only allowing a unique "
+"weird every ``create_expire`` interval."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:321
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:325
+msgid ""
+"A dummy action indicating the user does not care what internal decision "
+"is made regarding a given type of weird."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:330
+msgid "No action is to be taken."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:334
+msgid "Log the weird event every time it occurs."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:338
+msgid "Log the weird event only once."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:342
+msgid "Log the weird event once per connection."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:346
+msgid "Log the weird event once per originator host."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:350
+msgid "Always generate a notice associated with the weird event."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:354
+msgid "Generate a notice associated with the weird event only once."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:358
+msgid "Generate a notice for the weird event once per connection."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:362
+msgid "Generate a notice for the weird event once per originator host."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:368
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:371
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:371
+msgid "The time when the weird occurred."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:375
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:374
+msgid ""
+"If a connection is associated with this weird, this will be the "
+"connection's unique ID."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:378
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:378
+msgid "conn_id for the optional connection."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:381
+msgid "conn: :zeek:type:`connection` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:381
+msgid "A shorthand way of giving the uid and id to a weird."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:384
+msgid "name: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:384
+msgid "The name of the weird that occurred."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:387
+msgid "addl: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:387
+msgid "Additional information accompanying the weird if any."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:390
+msgid ""
+"notice: :zeek:type:`bool` :zeek:attr:`&log` :zeek:attr:`&default` = ``F``"
+" :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:390
+msgid "Indicate if this weird was also turned into a notice."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:395
+msgid ""
+"peer: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional` "
+":zeek:attr:`&default` = :zeek:see:`peer_description`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:393
+msgid ""
+"The peer that originated this weird.  This is helpful in cluster "
+"deployments if a particular cluster node is having trouble to help "
+"identify which node is having trouble."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:402
+msgid "identifier: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:398
+msgid ""
+"This field is to be provided when a weird is generated for the purpose of"
+" deduplicating weirds. The identifier string should be unique for a "
+"single instance of the weird. This field is used to define when a weird "
+"is conceptually a duplicate of a previous weird."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:410
+msgid ":zeek:type:`event` (rec: :zeek:type:`Weird::Info`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst
+msgid "rec"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:416
+msgid "The weird columns about to be logged to the weird stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:422
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/weird.zeek.rst:430
+msgid ":zeek:type:`function` (w: :zeek:type:`Weird::Info`) : :zeek:type:`void`"
+msgstr ""
+

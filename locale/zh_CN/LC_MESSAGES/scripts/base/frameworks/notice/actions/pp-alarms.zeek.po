@@ -1,0 +1,208 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:4
+msgid "base/frameworks/notice/actions/pp-alarms.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:7
+msgid ""
+"Notice extension that mails out a pretty-printed version of "
+"notice_alarm.log in regular intervals, formatted for better human "
+"readability. If activated, that replaces the default summary mail having "
+"the raw log output."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:11
+msgid "Notice"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:12
+msgid ""
+":doc:`base/frameworks/cluster </scripts/base/frameworks/cluster/index>`, "
+":doc:`base/frameworks/notice/main.zeek "
+"</scripts/base/frameworks/notice/main.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:15
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:17
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:42
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:19
+msgid ""
+":zeek:id:`Notice::mail_dest_pretty_printed`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:19
+msgid "Address to send the pretty-printed reports to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:20
+msgid ""
+":zeek:id:`Notice::pretty_print_alarms`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:20
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:60
+msgid "Activate pretty-printed alarm summaries."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:24
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:63
+msgid "State Variables"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:26
+msgid ":zeek:id:`Notice::flag_nets`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:26
+msgid ""
+"If an address from one of these networks is reported, we mark the entry "
+"with an additional quote symbol (i.e., \">\")."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:28
+msgid ""
+":zeek:id:`Notice::force_email_summaries`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:28
+msgid ""
+"Force generating mail file, even if reading from traces or no mail "
+"destination is defined."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:33
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:84
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:35
+msgid ""
+":zeek:id:`Notice::pretty_print_alarm`: :zeek:type:`function` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:35
+msgid "Function that renders a single alarm."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:40
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:45
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:46
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:57
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:67
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:77
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:88
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:47
+msgid "``\"\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:49
+msgid ""
+"Address to send the pretty-printed reports to. Default if not set is "
+":zeek:id:`Notice::mail_dest`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:52
+msgid "Note that this is overridden by the ZeekControl MailAlarmsTo option."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:56
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:76
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:58
+msgid "``T``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:66
+msgid ":zeek:type:`set` [:zeek:type:`subnet`]"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:68
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:70
+msgid ""
+"If an address from one of these networks is reported, we mark the entry "
+"with an additional quote symbol (i.e., \">\"). Many MUAs then highlight "
+"such lines differently."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:78
+msgid "``F``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:80
+msgid ""
+"Force generating mail file, even if reading from traces or no mail "
+"destination is defined. This is mainly for testing."
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:87
+msgid ""
+":zeek:type:`function` (out: :zeek:type:`file`, n: "
+":zeek:type:`Notice::Info`) : :zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/notice/actions/pp-alarms.zeek.rst:90
+msgid "Function that renders a single alarm. Can be overridden."
+msgstr ""
+

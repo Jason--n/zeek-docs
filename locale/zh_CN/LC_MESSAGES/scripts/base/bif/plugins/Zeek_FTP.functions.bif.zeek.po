@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_FTP.functions.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:29
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:15
+msgid ":zeek:id:`fmt_ftp_port`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:15
+msgid "Formats an IP address and TCP port as an FTP PORT command."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:16
+msgid ":zeek:id:`parse_eftp_port`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:16
+msgid ""
+"Converts a string representation of the FTP EPRT command (see "
+":rfc:`2428`) to an :zeek:type:`ftp_port`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:18
+msgid ":zeek:id:`parse_ftp_epsv`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:18
+msgid ""
+"Converts the result of the FTP EPSV command (see :rfc:`2428`) to an "
+":zeek:type:`ftp_port`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:20
+msgid ":zeek:id:`parse_ftp_pasv`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:20
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:85
+msgid "Converts the result of the FTP PASV command to an :zeek:type:`ftp_port`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:21
+msgid ":zeek:id:`parse_ftp_port`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:21
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:99
+msgid ""
+"Converts a string representation of the FTP PORT command to an "
+":zeek:type:`ftp_port`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:27
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:32
+msgid ""
+":zeek:type:`function` (a: :zeek:type:`addr`, p: :zeek:type:`port`) : "
+":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:34
+msgid ""
+"Formats an IP address and TCP port as an FTP PORT command. For example, "
+"``10.0.0.1`` and ``1055/tcp`` yields ``\"10,0,0,1,4,31\"``."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst
+msgid "a"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:38
+msgid "The IP address."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst
+msgid "p"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:41
+msgid "The TCP port."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:44
+msgid "The FTP PORT string."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:50
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:97
+msgid ":zeek:type:`function` (s: :zeek:type:`string`) : :zeek:type:`ftp_port`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:52
+msgid ""
+"Converts a string representation of the FTP EPRT command (see "
+":rfc:`2428`) to an :zeek:type:`ftp_port`.  The format is "
+"``\"EPRT<space><d><net-prt><d><net-addr><d><tcp-port><d>\"``, where "
+"``<d>`` is a delimiter in the ASCII range 33-126 (usually ``|``)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst
+msgid "s"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:58
+msgid "The string of the FTP EPRT command, e.g., ``\"|1|10.0.0.1|1055|\"``."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:61
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:77
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:91
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:106
+msgid "The FTP PORT, e.g., ``[h=10.0.0.1, p=1055/tcp, valid=T]``."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:67
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:83
+msgid ":zeek:type:`function` (str: :zeek:type:`string`) : :zeek:type:`ftp_port`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:69
+msgid ""
+"Converts the result of the FTP EPSV command (see :rfc:`2428`) to an "
+":zeek:type:`ftp_port`.  The format is ``\"<text> (<d><d><d><tcp-"
+"port><d>)\"``, where ``<d>`` is a delimiter in the ASCII range 33-126 "
+"(usually ``|``)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst
+msgid "str"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:74
+msgid "The string containing the result of the FTP EPSV command."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:88
+msgid "The string containing the result of the FTP PASV command."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek.rst:103
+msgid "The string of the FTP PORT command, e.g., ``\"10,0,0,1,4,31\"``."
+msgstr ""
+

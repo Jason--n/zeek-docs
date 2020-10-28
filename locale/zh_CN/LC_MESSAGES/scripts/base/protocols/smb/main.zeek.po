@@ -1,0 +1,624 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:4
+msgid "base/protocols/smb/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:8
+msgid "SMB"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:9
+msgid ""
+":doc:`base/protocols/smb/const-dos-error.zeek "
+"</scripts/base/protocols/smb/const-dos-error.zeek>`, "
+":doc:`base/protocols/smb/const-nt-status.zeek "
+"</scripts/base/protocols/smb/const-nt-status.zeek>`, "
+":doc:`base/protocols/smb/consts.zeek "
+"</scripts/base/protocols/smb/consts.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:14
+#: ../../scripts/base/protocols/smb/main.zeek.rst:75
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:16
+msgid ":zeek:id:`SMB::logged_file_actions`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:16
+#: ../../scripts/base/protocols/smb/main.zeek.rst:93
+msgid "The file actions which are logged."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:20
+#: ../../scripts/base/protocols/smb/main.zeek.rst:96
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:22
+msgid ":zeek:type:`SMB::Action`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:22
+#: ../../scripts/base/protocols/smb/main.zeek.rst:131
+msgid "Abstracted actions for SMB file actions."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:23
+msgid ":zeek:type:`SMB::CmdInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:23
+#: ../../scripts/base/protocols/smb/main.zeek.rst:190
+msgid "This record is for the smb_cmd.log"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:24
+#: ../../scripts/base/protocols/smb/main.zeek.rst:40
+msgid ":zeek:type:`SMB::FileInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:24
+#: ../../scripts/base/protocols/smb/main.zeek.rst:233
+msgid "This record is for the smb_files.log"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:25
+msgid ":zeek:type:`SMB::State`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:25
+#: ../../scripts/base/protocols/smb/main.zeek.rst:268
+msgid ""
+"This record stores the SMB state of in-flight commands, the file and tree"
+" map of the connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:27
+msgid ":zeek:type:`SMB::TreeInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:27
+#: ../../scripts/base/protocols/smb/main.zeek.rst:297
+msgid "This record is for the smb_mapping.log"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:31
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:33
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:35
+msgid ":zeek:enum:`SMB::AUTH_LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:37
+msgid ":zeek:enum:`SMB::FILES_LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:39
+msgid ":zeek:enum:`SMB::MAPPING_LOG`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:42
+msgid ":zeek:type:`SMB::FileInfo`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:45
+#: ../../scripts/base/protocols/smb/main.zeek.rst:228
+msgid "fid: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:45
+#: ../../scripts/base/protocols/smb/main.zeek.rst:228
+msgid "ID referencing this file."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:47
+#: ../../scripts/base/protocols/smb/main.zeek.rst:231
+msgid "uuid: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:48
+#: ../../scripts/base/protocols/smb/main.zeek.rst:231
+msgid "UUID referencing this file if DCE/RPC."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:49
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:49
+msgid "Everything below here is used internally in the SMB scripts."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:51
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:53
+msgid "smb_state: :zeek:type:`SMB::State` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:54
+msgid ":zeek:id:`likely_server_ports`: :zeek:type:`set` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:58
+#: ../../scripts/base/protocols/smb/main.zeek.rst:300
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:60
+msgid ":zeek:id:`SMB::log_policy_files`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:61
+msgid ":zeek:id:`SMB::log_policy_mapping`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:65
+#: ../../scripts/base/protocols/smb/main.zeek.rst:312
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:67
+msgid ""
+":zeek:id:`SMB::set_current_file`: :zeek:type:`function` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:67
+#: ../../scripts/base/protocols/smb/main.zeek.rst:68
+#: ../../scripts/base/protocols/smb/main.zeek.rst:318
+#: ../../scripts/base/protocols/smb/main.zeek.rst:325
+msgid "This is an internally used function."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:68
+msgid ":zeek:id:`SMB::write_file_log`: :zeek:type:`function` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:73
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:78
+msgid ":zeek:type:`set` [:zeek:type:`SMB::Action`]"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:79
+#: ../../scripts/base/protocols/smb/main.zeek.rst:316
+#: ../../scripts/base/protocols/smb/main.zeek.rst:323
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:99
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:135
+#: ../../scripts/base/protocols/smb/main.zeek.rst:194
+#: ../../scripts/base/protocols/smb/main.zeek.rst:237
+#: ../../scripts/base/protocols/smb/main.zeek.rst:273
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:138
+#: ../../scripts/base/protocols/smb/main.zeek.rst:197
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:138
+msgid "Timestamp of the command request."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:141
+#: ../../scripts/base/protocols/smb/main.zeek.rst:200
+#: ../../scripts/base/protocols/smb/main.zeek.rst:279
+msgid "uid: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:141
+msgid "Unique ID of the connection the request was sent over."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:144
+#: ../../scripts/base/protocols/smb/main.zeek.rst:203
+#: ../../scripts/base/protocols/smb/main.zeek.rst:282
+msgid "id: :zeek:type:`conn_id` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:144
+msgid "ID of the connection the request was sent over."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:147
+msgid "command: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:147
+msgid "The command sent by the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:150
+msgid "sub_command: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:150
+msgid "The subcommand sent by the client, if present."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:153
+msgid "argument: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:153
+msgid "Command argument sent by the client, if any."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:156
+msgid "status: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:156
+msgid "Server reply to the client's command."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:159
+msgid "rtt: :zeek:type:`interval` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:159
+msgid "Round trip time from the request to the response."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:162
+msgid "version: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:162
+msgid "Version of SMB for the command."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:165
+msgid "username: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:165
+msgid "Authenticated username, if available."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:169
+msgid "tree: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:168
+msgid ""
+"If this is related to a tree, this is the tree that was used for the "
+"current command."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:172
+msgid "tree_service: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:172
+msgid "The type of tree (disk share, printer share, named pipe, etc.)."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:175
+msgid ""
+"referenced_file: :zeek:type:`SMB::FileInfo` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:175
+msgid "If the command referenced a file, store it here."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:178
+msgid "referenced_tree: :zeek:type:`SMB::TreeInfo` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:178
+msgid "If the command referenced a tree, store it here."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:183
+msgid "smb1_offered_dialects: :zeek:type:`string_vec` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:181
+msgid "(present if :doc:`/scripts/base/protocols/smb/smb1-main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:183
+#: ../../scripts/base/protocols/smb/main.zeek.rst:188
+msgid "Dialects offered by the client."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:188
+msgid "smb2_offered_dialects: :zeek:type:`index_vec` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:186
+msgid "(present if :doc:`/scripts/base/protocols/smb/smb2-main.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:197
+msgid "Time when the file was first discovered."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:200
+msgid "Unique ID of the connection the file was sent over."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:203
+msgid "ID of the connection the file was sent over."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:206
+msgid "fuid: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:206
+msgid "Unique ID of the file."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:209
+msgid "action: :zeek:type:`SMB::Action` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:209
+msgid "Action this log record represents."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:212
+#: ../../scripts/base/protocols/smb/main.zeek.rst:285
+msgid "path: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:212
+msgid "Path pulled from the tree this file was transferred to or from."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:215
+msgid "name: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:215
+msgid "Filename if one was seen."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:218
+msgid ""
+"size: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:218
+msgid "Total size of the file."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:222
+msgid "prev_name: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:221
+msgid "If the rename action was seen, this will be the file's previous name."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:225
+msgid "times: :zeek:type:`SMB::MACTimes` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:225
+msgid "Last time this file was modified."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:240
+msgid "current_cmd: :zeek:type:`SMB::CmdInfo` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:240
+msgid "A reference to the current command."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:243
+msgid "current_file: :zeek:type:`SMB::FileInfo` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:243
+msgid "A reference to the current file."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:246
+msgid "current_tree: :zeek:type:`SMB::TreeInfo` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:246
+msgid "A reference to the current tree."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:249
+msgid ""
+"pending_cmds: :zeek:type:`table` [:zeek:type:`count`] of "
+":zeek:type:`SMB::CmdInfo` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:249
+msgid "Indexed on MID to map responses to requests."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:252
+msgid ""
+"fid_map: :zeek:type:`table` [:zeek:type:`count`] of "
+":zeek:type:`SMB::FileInfo` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:252
+msgid "File map to retrieve file information based on the file ID."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:255
+msgid ""
+"tid_map: :zeek:type:`table` [:zeek:type:`count`] of "
+":zeek:type:`SMB::TreeInfo` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:255
+msgid "Tree map to retrieve tree information based on the tree ID."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:258
+msgid ""
+"uid_map: :zeek:type:`table` [:zeek:type:`count`] of :zeek:type:`string` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:258
+msgid "User map to retrieve user name based on the user ID."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:261
+msgid ""
+"pipe_map: :zeek:type:`table` [:zeek:type:`count`] of :zeek:type:`string` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:261
+msgid "Pipe map to retrieve UUID based on the file ID of a pipe."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:266
+msgid ""
+"recent_files: :zeek:type:`set` [:zeek:type:`string`] "
+":zeek:attr:`&default` = ``{  }`` :zeek:attr:`&optional` "
+":zeek:attr:`&read_expire` = ``3.0 mins``"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:264
+msgid ""
+"A set of recent files to avoid logging the same files over and over in "
+"the smb files log. This only applies to files seen in a single "
+"connection."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:276
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:276
+msgid "Time when the tree was mapped."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:279
+msgid "Unique ID of the connection the tree was mapped over."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:282
+msgid "ID of the connection the tree was mapped over."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:285
+msgid "Name of the tree path."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:288
+msgid "service: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:288
+msgid ""
+"The type of resource of the tree (disk share, printer share, named pipe, "
+"etc.)."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:291
+msgid ""
+"native_file_system: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:291
+msgid "File system of the tree."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:295
+msgid ""
+"share_type: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&default` ="
+" ``\"DISK\"`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:294
+msgid ""
+"If this is SMB2, a share type will be included.  For SMB1, the type of "
+"share will be deduced and included as well."
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:303
+#: ../../scripts/base/protocols/smb/main.zeek.rst:308
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:315
+msgid ""
+":zeek:type:`function` (smb_state: :zeek:type:`SMB::State`, file_id: "
+":zeek:type:`count`) : :zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/protocols/smb/main.zeek.rst:322
+msgid ":zeek:type:`function` (state: :zeek:type:`SMB::State`) : :zeek:type:`void`"
+msgstr ""
+

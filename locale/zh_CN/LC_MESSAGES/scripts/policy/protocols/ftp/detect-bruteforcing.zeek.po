@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:4
+msgid "policy/protocols/ftp/detect-bruteforcing.zeek"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:7
+msgid ""
+"FTP brute-forcing detector, triggering when too many rejected usernames "
+"or failed passwords have occurred from a single address."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:10
+msgid "FTP"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:11
+msgid ""
+":doc:`base/frameworks/sumstats "
+"</scripts/base/frameworks/sumstats/index>`, :doc:`base/protocols/ftp "
+"</scripts/base/protocols/ftp/index>`, :doc:`base/utils/time.zeek "
+"</scripts/base/utils/time.zeek>`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:16
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:38
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:18
+msgid ""
+":zeek:id:`FTP::bruteforce_measurement_interval`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:18
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:45
+msgid ""
+"The time period in which the threshold needs to be crossed before being "
+"reset."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:20
+msgid ""
+":zeek:id:`FTP::bruteforce_threshold`: :zeek:type:`double` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:20
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:54
+msgid ""
+"How many rejected usernames or passwords are required before being "
+"considered to be bruteforcing."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:25
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:27
+msgid ":zeek:type:`Notice::Type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:29
+msgid ""
+":zeek:enum:`FTP::Bruteforcing`: Indicates a host bruteforcing FTP logins "
+"by watching for too many rejected usernames or failed passwords."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:36
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:41
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:42
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:51
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:43
+msgid "``15.0 mins``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:50
+msgid ":zeek:type:`double`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ftp/detect-bruteforcing.zeek.rst:52
+msgid "``20.0``"
+msgstr ""
+

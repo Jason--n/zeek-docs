@@ -1,0 +1,301 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_NetBIOS.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:29
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:15
+msgid ":zeek:id:`netbios_session_accepted`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:15
+msgid "Generated for NetBIOS messages of type *positive session response*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:16
+msgid ":zeek:id:`netbios_session_keepalive`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:16
+msgid "Generated for NetBIOS messages of type *keep-alive*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:17
+msgid ":zeek:id:`netbios_session_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:17
+msgid "Generated for all NetBIOS SSN and DGM messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:18
+msgid ":zeek:id:`netbios_session_raw_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:18
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:139
+msgid ""
+"Generated for NetBIOS messages of type *session message* that are not "
+"carrying an SMB payload."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:20
+msgid ":zeek:id:`netbios_session_rejected`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:20
+msgid "Generated for NetBIOS messages of type *negative session response*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:21
+msgid ":zeek:id:`netbios_session_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:21
+msgid "Generated for NetBIOS messages of type *session request*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:22
+msgid ":zeek:id:`netbios_session_ret_arg_resp`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:22
+msgid "Generated for NetBIOS messages of type *retarget response*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:27
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:32
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:65
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:178
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:211
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:244
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`, msg: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:34
+msgid ""
+"Generated for NetBIOS messages of type *positive session response*. "
+"Zeek's NetBIOS analyzer processes the NetBIOS session service running on "
+"TCP port 139, and (despite its name!) the NetBIOS datagram service on UDP"
+" port 138."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:38
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:71
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:104
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:145
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:184
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:217
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:250
+msgid ""
+"See `Wikipedia <http://en.wikipedia.org/wiki/NetBIOS>`__ for more "
+"information about NetBIOS.  :rfc:`1002` describes the packet format for "
+"NetBIOS over TCP/IP, which Zeek parses."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:43
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:76
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:109
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:150
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:189
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:222
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:255
+msgid ""
+"The connection, which may be TCP or UDP, depending on the type of the "
+"NetBIOS session."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst
+msgid "msg"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:47
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:80
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:193
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:226
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:259
+msgid "The raw payload of the message sent, excluding the common NetBIOS header."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:54
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:87
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:126
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:164
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:200
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:233
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:266
+msgid ""
+"These days, NetBIOS is primarily used as a transport mechanism for "
+"`SMB/CIFS <http://en.wikipedia.org/wiki/Server_Message_Block>`__. Zeek's "
+"SMB analyzer parses both SMB-over-NetBIOS and SMB-over-TCP on port 445."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:58
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:91
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:130
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:168
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:171
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:204
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:237
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:270
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:272
+msgid "Todo"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:58
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:91
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:130
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:171
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:204
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:237
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:272
+msgid ""
+"Zeek's current default configuration does not activate the protocol "
+"analyzer that generates this event; the corresponding script has not yet "
+"been ported. To still enable this event, one needs to register a port for"
+" it or add a DPD payload signature."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:67
+msgid ""
+"Generated for NetBIOS messages of type *keep-alive*. Zeek's NetBIOS "
+"analyzer processes the NetBIOS session service running on TCP port 139, "
+"and (despite its name!) the NetBIOS datagram service on UDP port 138."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:98
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, msg_type: :zeek:type:`count`, data_len: "
+":zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:100
+msgid ""
+"Generated for all NetBIOS SSN and DGM messages. Zeek's NetBIOS analyzer "
+"processes the NetBIOS session service running on TCP port 139, and "
+"(despite its name!) the NetBIOS datagram service on UDP port 138."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:113
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:154
+msgid "True if the message was sent by the originator of the connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst
+msgid "msg_type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:116
+msgid "The general type of message, as defined in Section 4.3.1 of :rfc:`1002`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst
+msgid "data_len"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:120
+msgid "The length of the message's payload."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:137
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, msg: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:142
+msgid ""
+"NetBIOS analyzer processes the NetBIOS session service running on TCP "
+"port 139, and (despite its name!) the NetBIOS datagram service on UDP "
+"port 138."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:157
+msgid ""
+"The raw payload of the message sent, excluding the common NetBIOS header "
+"(i.e., the ``user_data``)."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:168
+msgid ""
+"This is an oddly named event. In fact, it's probably an odd event to have"
+" to begin with."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:180
+msgid ""
+"Generated for NetBIOS messages of type *negative session response*. "
+"Zeek's NetBIOS analyzer processes the NetBIOS session service running on "
+"TCP port 139, and (despite its name!) the NetBIOS datagram service on UDP"
+" port 138."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:213
+msgid ""
+"Generated for NetBIOS messages of type *session request*. Zeek's NetBIOS "
+"analyzer processes the NetBIOS session service running on TCP port 139, "
+"and (despite its name!) the NetBIOS datagram service on UDP port 138."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:246
+msgid ""
+"Generated for NetBIOS messages of type *retarget response*. Zeek's "
+"NetBIOS analyzer processes the NetBIOS session service running on TCP "
+"port 139, and (despite its name!) the NetBIOS datagram service on UDP "
+"port 138."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek.rst:270
+msgid "This is an oddly named event."
+msgstr ""
+

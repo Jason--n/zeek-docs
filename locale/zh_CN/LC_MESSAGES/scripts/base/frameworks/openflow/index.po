@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/openflow/index.rst:4
+msgid "Package: base/frameworks/openflow"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/index.rst:6
+msgid ""
+"The OpenFlow framework exposes the data structures and functions "
+"necessary to interface to OpenFlow capable hardware."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/index.rst:9
+msgid ":doc:`/scripts/base/frameworks/openflow/__load__.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/index.rst:12
+msgid ":doc:`/scripts/base/frameworks/openflow/consts.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/index.rst:14
+msgid "Constants used by the OpenFlow framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/index.rst:16
+msgid ":doc:`/scripts/base/frameworks/openflow/types.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/index.rst:18
+msgid "Types used by the OpenFlow framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/index.rst:20
+msgid ":doc:`/scripts/base/frameworks/openflow/main.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/index.rst:22
+msgid "Zeek's OpenFlow control framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/index.rst:24
+msgid ""
+"This plugin-based framework allows to control OpenFlow capable switches "
+"by implementing communication to an OpenFlow controller via plugins. The "
+"framework has to be instantiated via the new function in one of the "
+"plugins. This framework only offers very low-level functionality; if you "
+"want to use OpenFlow capable switches, e.g., for shunting, please look at"
+" the NetControl framework, which provides higher level functions and can "
+"use the OpenFlow framework as a backend."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/index.rst:32
+msgid ":doc:`/scripts/base/frameworks/openflow/plugins/__load__.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/index.rst:35
+msgid ":doc:`/scripts/base/frameworks/openflow/plugins/ryu.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/index.rst:37
+msgid "OpenFlow plugin for the Ryu controller."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/index.rst:39
+msgid ":doc:`/scripts/base/frameworks/openflow/plugins/log.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/index.rst:41
+msgid ""
+"OpenFlow plugin that outputs flow-modification commands to a Zeek log "
+"file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/index.rst:44
+msgid ":doc:`/scripts/base/frameworks/openflow/plugins/broker.zeek`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/index.rst:46
+msgid "OpenFlow plugin for interfacing to controllers via Broker."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/index.rst:48
+msgid ":doc:`/scripts/base/frameworks/openflow/non-cluster.zeek`"
+msgstr ""
+

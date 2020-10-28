@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst:4
+msgid "policy/protocols/conn/speculative-service.zeek"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst:7
+msgid ""
+"This script adds information about matched DPD signatures to the "
+"connection log."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst:10
+msgid "Conn"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst:11
+msgid ":doc:`base/protocols/conn </scripts/base/protocols/conn/index>`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst:16
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst:18
+msgid ":zeek:type:`Conn::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst:20
+msgid ":zeek:type:`Conn::Info`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst:23
+msgid ""
+"speculative_service: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst:23
+msgid ""
+"Protocol that was determined by a matching signature after the beginning "
+"of a connection."
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst:25
+msgid ":zeek:type:`connection`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst:27
+msgid ":zeek:type:`connection`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst:29
+msgid ""
+"speculative_service: :zeek:type:`set` [:zeek:type:`string`] "
+":zeek:attr:`&default` = ``{  }`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst:30
+msgid ":zeek:id:`dpd_late_match_stop`: :zeek:type:`bool` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst:31
+msgid ":zeek:id:`dpd_match_only_beginning`: :zeek:type:`bool` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/conn/speculative-service.zeek.rst:36
+msgid "Detailed Interface"
+msgstr ""
+

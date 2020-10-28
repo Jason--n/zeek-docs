@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_DHCP.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst:22
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst:15
+msgid ":zeek:id:`dhcp_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst:27
+msgid "Generated for all DHCP messages."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst:20
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst:25
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, msg: :zeek:type:`DHCP::Msg`, options: "
+":zeek:type:`DHCP::Options`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst:30
+msgid "The connection record describing the underlying UDP flow."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst:33
+msgid ""
+"Indicate if the message came in a packet from the originator/client of "
+"the udp flow or the responder/server."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst
+msgid "msg"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst:37
+msgid ""
+"The parsed type-independent part of the DHCP message. The message type is"
+" indicated in this record."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst
+msgid "options"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DHCP.events.bif.zeek.rst:41
+msgid "The full set of supported and parsed DHCP options."
+msgstr ""
+

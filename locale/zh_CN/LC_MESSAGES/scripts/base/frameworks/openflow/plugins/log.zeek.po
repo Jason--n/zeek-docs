@@ -1,0 +1,231 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:4
+msgid "base/frameworks/openflow/plugins/log.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:7
+msgid ""
+"OpenFlow plugin that outputs flow-modification commands to a Zeek log "
+"file."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:10
+msgid "OpenFlow"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:11
+msgid ""
+":doc:`base/frameworks/logging </scripts/base/frameworks/logging/index>`, "
+":doc:`base/frameworks/openflow </scripts/base/frameworks/openflow/index>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:16
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:64
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:18
+msgid ":zeek:type:`OpenFlow::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:18
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:81
+msgid "The record type which contains column fields of the OpenFlow log."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:22
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:24
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:26
+msgid ":zeek:enum:`OpenFlow::LOG`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:27
+msgid ""
+":zeek:type:`OpenFlow::ControllerState`: :zeek:type:`record` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:29
+msgid ":zeek:type:`OpenFlow::ControllerState`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:32
+msgid "log_dpid: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:32
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:73
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:108
+msgid "OpenFlow switch datapath id."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:34
+msgid "log_success_event: :zeek:type:`bool` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:35
+msgid "Raise or do not raise success event."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:36
+msgid ":zeek:type:`OpenFlow::Plugin`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:38
+msgid ":zeek:enum:`OpenFlow::OFLOG`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:42
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:84
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:44
+msgid ":zeek:id:`OpenFlow::log_openflow`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:44
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:89
+msgid ""
+"Event that can be handled to access the :zeek:type:`OpenFlow::Info` "
+"record as it is sent on to the logging framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:49
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:93
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:51
+msgid ":zeek:id:`OpenFlow::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:55
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:100
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:57
+msgid ":zeek:id:`OpenFlow::log_new`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:57
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:105
+msgid "Log controller constructor."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:62
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:67
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:70
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:70
+msgid "Network time."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:73
+msgid "dpid: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:76
+msgid "match: :zeek:type:`OpenFlow::ofp_match` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:76
+msgid "OpenFlow match fields."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:79
+msgid "flow_mod: :zeek:type:`OpenFlow::ofp_flow_mod` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:79
+msgid "OpenFlow modify flow entry message."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:87
+msgid ":zeek:type:`event` (rec: :zeek:type:`OpenFlow::Info`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:96
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:103
+msgid ""
+":zeek:type:`function` (dpid: :zeek:type:`count`, success_event: "
+":zeek:type:`bool` :zeek:attr:`&default` = ``T`` :zeek:attr:`&optional`) :"
+" :zeek:type:`OpenFlow::Controller`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst
+msgid "dpid"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst
+msgid "success_event"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:111
+msgid "If true, flow_mod_success is raised for each logged line."
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/openflow/plugins/log.zeek.rst:114
+msgid "OpenFlow::Controller record."
+msgstr ""
+

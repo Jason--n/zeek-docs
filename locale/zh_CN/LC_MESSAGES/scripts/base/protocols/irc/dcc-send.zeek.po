@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:4
+msgid "base/protocols/irc/dcc-send.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:7
+msgid "File extraction and introspection for DCC transfers over IRC."
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:9
+msgid ""
+"There is a major problem with this script in the cluster context because "
+"we might see A send B a message that a DCC connection is to be expected, "
+"but that connection will actually be between B and C which could be "
+"analyzed on a different worker."
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:15
+msgid "IRC"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:16
+msgid ""
+":doc:`base/frameworks/cluster </scripts/base/frameworks/cluster/index>`, "
+":doc:`base/protocols/conn/removal-hooks.zeek "
+"</scripts/base/protocols/conn/removal-hooks.zeek>`, "
+":doc:`base/protocols/irc/main.zeek "
+"</scripts/base/protocols/irc/main.zeek>`, :doc:`base/utils/files.zeek "
+"</scripts/base/utils/files.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:19
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:21
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:23
+msgid ":zeek:type:`IRC::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:25
+msgid ":zeek:type:`IRC::Info`"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:28
+msgid ""
+"dcc_file_name: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:28
+msgid "DCC filename requested."
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:31
+msgid "dcc_file_size: :zeek:type:`count` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:31
+msgid "Size of the DCC transfer as indicated by the sender."
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:33
+msgid ""
+"dcc_mime_type: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:34
+msgid "Sniffed mime type of the file."
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:38
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:47
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:40
+msgid ":zeek:id:`IRC::finalize_irc_data`: :zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:40
+msgid "IRC DCC data finalization hook."
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:45
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:50
+msgid ":zeek:type:`Conn::RemovalHook`"
+msgstr ""
+
+#: ../../scripts/base/protocols/irc/dcc-send.zeek.rst:52
+msgid ""
+"IRC DCC data finalization hook.  Remaining expected IRC DCC state may be "
+"purged when it's called."
+msgstr ""
+

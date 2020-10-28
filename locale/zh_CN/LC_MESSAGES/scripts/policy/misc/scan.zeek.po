@@ -1,0 +1,206 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/misc/scan.zeek.rst:4
+msgid "policy/misc/scan.zeek"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:7
+msgid "TCP Scan detection."
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:9
+msgid "Scan"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:10
+msgid ""
+":doc:`base/frameworks/notice </scripts/base/frameworks/notice/index>`, "
+":doc:`base/frameworks/sumstats "
+"</scripts/base/frameworks/sumstats/index>`, :doc:`base/utils/time.zeek "
+"</scripts/base/utils/time.zeek>`"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:15
+#: ../../scripts/policy/misc/scan.zeek.rst:52
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:17
+msgid ""
+":zeek:id:`Scan::addr_scan_interval`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:17
+msgid ""
+"Failed connection attempts are tracked over this time interval for the "
+"address scan detection."
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:19
+msgid ""
+":zeek:id:`Scan::addr_scan_threshold`: :zeek:type:`double` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:19
+#: ../../scripts/policy/misc/scan.zeek.rst:69
+msgid ""
+"The threshold of the unique number of hosts a scanning host has to have "
+"failed connections with on a single port."
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:21
+msgid ""
+":zeek:id:`Scan::port_scan_interval`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:21
+msgid ""
+"Failed connection attempts are tracked over this time interval for the "
+"port scan detection."
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:23
+msgid ""
+":zeek:id:`Scan::port_scan_threshold`: :zeek:type:`double` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:23
+#: ../../scripts/policy/misc/scan.zeek.rst:88
+msgid ""
+"The threshold of the number of unique ports a scanning host has to have "
+"failed connections with on a single victim host."
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:28
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:30
+msgid ":zeek:type:`Notice::Type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:32
+msgid ""
+":zeek:enum:`Scan::Address_Scan`: Address scans detect that a host appears"
+" to be scanning some number of destinations on a single port."
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:36
+msgid ""
+":zeek:enum:`Scan::Port_Scan`: Port scans detect that an attacking host "
+"appears to be scanning a single victim host on several ports."
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:42
+#: ../../scripts/policy/misc/scan.zeek.rst:92
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:44
+msgid ":zeek:id:`Scan::addr_scan_policy`: :zeek:type:`hook`"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:45
+msgid ":zeek:id:`Scan::port_scan_policy`: :zeek:type:`hook`"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:50
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:55
+#: ../../scripts/policy/misc/scan.zeek.rst:74
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:56
+#: ../../scripts/policy/misc/scan.zeek.rst:66
+#: ../../scripts/policy/misc/scan.zeek.rst:75
+#: ../../scripts/policy/misc/scan.zeek.rst:85
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:57
+#: ../../scripts/policy/misc/scan.zeek.rst:76
+msgid "``5.0 mins``"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:59
+msgid ""
+"Failed connection attempts are tracked over this time interval for the "
+"address scan detection.  A higher interval will detect slower scanners, "
+"but may also yield more false positives."
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:65
+#: ../../scripts/policy/misc/scan.zeek.rst:84
+msgid ":zeek:type:`double`"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:67
+msgid "``25.0``"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:78
+msgid ""
+"Failed connection attempts are tracked over this time interval for the "
+"port scan detection.  A higher interval will detect slower scanners, but "
+"may also yield more false positives."
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:86
+msgid "``15.0``"
+msgstr ""
+
+#: ../../scripts/policy/misc/scan.zeek.rst:95
+#: ../../scripts/policy/misc/scan.zeek.rst:100
+msgid ""
+":zeek:type:`hook` (scanner: :zeek:type:`addr`, victim: :zeek:type:`addr`,"
+" scanned_port: :zeek:type:`port`) : :zeek:type:`bool`"
+msgstr ""
+

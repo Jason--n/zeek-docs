@@ -1,0 +1,550 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:49
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:15
+msgid ":zeek:id:`smb2_file_allocation`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:15
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:54
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 requests of type *set_info* of the "
+"*allocation* subtype"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:17
+msgid ":zeek:id:`smb2_file_delete`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:17
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:77
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 requests of type *set_info* of the "
+"*delete* subtype."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:19
+msgid ":zeek:id:`smb2_file_endoffile`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:19
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:101
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 requests of type *set_info* of the "
+"*end_of_file* subtype"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:21
+msgid ":zeek:id:`smb2_file_fscontrol`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:21
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:124
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 requests of type *set_info* of the "
+"*fs_control* subtype"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:23
+msgid ":zeek:id:`smb2_file_fsobjectid`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:23
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:147
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 requests of type *set_info* of the "
+"*fs_object_id* subtype"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:25
+msgid ":zeek:id:`smb2_file_fullea`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:25
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:173
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 requests of type *set_info* of the "
+"*full_EA* subtype"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:27
+msgid ":zeek:id:`smb2_file_link`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:27
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:196
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 requests of type *set_info* of the "
+"*link* subtype"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:29
+msgid ":zeek:id:`smb2_file_mode`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:29
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:222
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 requests of type *set_info* of the "
+"*mode* subtype"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:31
+msgid ":zeek:id:`smb2_file_pipe`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:31
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:245
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 requests of type *set_info* of the "
+"*pipe* subtype"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:33
+msgid ":zeek:id:`smb2_file_position`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:33
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:271
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 requests of type *set_info* of the "
+"*position* subtype"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:35
+msgid ":zeek:id:`smb2_file_rename`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:35
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:294
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 requests of type *set_info* of the "
+"*rename* subtype."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:37
+msgid ":zeek:id:`smb2_file_sattr`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:37
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:317
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 requests of type *set_info* of the "
+"*file* subtype"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:39
+msgid ":zeek:id:`smb2_file_shortname`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:39
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:343
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 requests of type *set_info* of the "
+"*short_name* subtype"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:41
+msgid ":zeek:id:`smb2_file_validdatalength`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:41
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:366
+msgid ""
+"Generated for :abbr:`SMB (Server Message Block)`/:abbr:`CIFS (Common "
+"Internet File System)` version 2 requests of type *set_info* of the "
+"*valid_data_length* subtype"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:47
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:52
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`SMB2::Header`, file_id: :zeek:type:`SMB2::GUID`, alloc_size: "
+":zeek:type:`int`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:57
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:104
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:127
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:150
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:176
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:199
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:225
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:248
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:274
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:320
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:346
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:369
+msgid "For more infomation, see MS-SMB2:2.2.39"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:60
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:83
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:107
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:130
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:153
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:179
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:202
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:228
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:251
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:277
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:300
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:323
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:349
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:372
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "hdr"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:63
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:86
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:110
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:133
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:156
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:182
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:205
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:231
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:254
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:280
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:303
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:326
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:352
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:375
+msgid ""
+"The parsed header of the :abbr:`SMB (Server Message Block)` version 2 "
+"message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "file_id"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:66
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:89
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:113
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:136
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:159
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:185
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:208
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:234
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:257
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:283
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:329
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:355
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:378
+msgid "The SMB2 GUID for the file."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "alloc_size"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:69
+msgid "desired allocation size."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:75
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`SMB2::Header`, file_id: :zeek:type:`SMB2::GUID`, "
+"delete_pending: :zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:80
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:297
+msgid "For more information, see MS-SMB2:2.2.39"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "delete_pending"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:92
+msgid ""
+"A boolean value to indicate that a file should be deleted when it's "
+"closed if set to T."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:99
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`SMB2::Header`, file_id: :zeek:type:`SMB2::GUID`, end_of_file:"
+" :zeek:type:`int`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "end_of_file"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:116
+msgid ""
+"the absolute new end of file position as a byte offset from the start of "
+"the file"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:122
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`SMB2::Header`, file_id: :zeek:type:`SMB2::GUID`, fs_control: "
+":zeek:type:`SMB2::Fscontrol`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "fs_control"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:139
+msgid "contains fs_control info (see MS-FCC 2.5.2)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:145
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`SMB2::Header`, file_id: :zeek:type:`SMB2::GUID`, object_id: "
+":zeek:type:`SMB2::GUID`, extended_info: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "object_id"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:162
+msgid ""
+"contains a 16-bytes GUID that identifies the file system volume (see MS-"
+"FCC 2.5.6)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "extended_info"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:165
+msgid "contains extended information on the file system volume"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:171
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`SMB2::Header`, file_id: :zeek:type:`SMB2::GUID`, file_eas: "
+":zeek:type:`SMB2::FileEAs`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "FileEAs"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:188
+msgid "a vector of extended file attributes as defined in MS-FSCC:2.4.15"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:194
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`SMB2::Header`, file_id: :zeek:type:`SMB2::GUID`, "
+"root_directory: :zeek:type:`count`, file_name: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "root_directory"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:211
+msgid "contains the file handle for the directory where the link is to be created"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "file_name"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:214
+msgid "contains the name to be assigned to the newly created link"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:220
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`SMB2::Header`, file_id: :zeek:type:`SMB2::GUID`, mode: "
+":zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "mode"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:237
+msgid "specifies how the file will subsequently be accessed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:243
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`SMB2::Header`, file_id: :zeek:type:`SMB2::GUID`, read_mode: "
+":zeek:type:`count`, completion_mode: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "read_mode"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:260
+msgid "specifies if data must be read as a stream of bytes or messages"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "completion_mode"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:263
+msgid "specifies if blocking mode must be enabled or not"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:269
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`SMB2::Header`, file_id: :zeek:type:`SMB2::GUID`, "
+"current_byte_offset: :zeek:type:`int`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "current_byte_offset"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:286
+msgid ""
+"specifies the offset, in bytes, of the file pointer from the beginning of"
+" the file"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:292
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`SMB2::Header`, file_id: :zeek:type:`SMB2::GUID`, "
+"dst_filename: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:306
+msgid "A GUID to identify the file."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "dst_filename"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:309
+msgid "The filename to rename the file into."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:315
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`SMB2::Header`, file_id: :zeek:type:`SMB2::GUID`, times: "
+":zeek:type:`SMB::MACTimes`, attrs: :zeek:type:`SMB2::FileAttrs`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "times"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:332
+msgid "Timestamps associated with the file in question."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "attrs"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:335
+msgid "File attributes."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:341
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`SMB2::Header`, file_id: :zeek:type:`SMB2::GUID`, file_name: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:358
+msgid "specifies the name of the file to be changed"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:364
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, hdr: "
+":zeek:type:`SMB2::Header`, file_id: :zeek:type:`SMB2::GUID`, "
+"valid_data_length: :zeek:type:`int`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst
+msgid "valid_data_length"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek.rst:381
+msgid "specifies the new valid data length for the file"
+msgstr ""
+

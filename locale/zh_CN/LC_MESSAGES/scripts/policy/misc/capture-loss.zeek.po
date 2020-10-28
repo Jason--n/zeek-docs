@@ -1,0 +1,279 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:4
+msgid "policy/misc/capture-loss.zeek"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:7
+msgid ""
+"This script logs evidence regarding the degree to which the packet "
+"capture process suffers from measurement loss. The loss could be due to "
+"overload on the host or NIC performing the packet capture or it could "
+"even be beyond the host.  If you are capturing from a switch with a SPAN "
+"port, it's very possible that the switch itself could be overloaded and "
+"dropping packets. Reported loss is computed in terms of the number of "
+"\"gap events\" (ACKs for a sequence number that's above a gap)."
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:16
+msgid "CaptureLoss"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:17
+msgid ":doc:`base/frameworks/notice </scripts/base/frameworks/notice/index>`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:20
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:22
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:68
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:24
+msgid ""
+":zeek:id:`CaptureLoss::initial_watch_interval`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:24
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:75
+msgid ""
+"For faster feedback on cluster health, the first capture loss report is "
+"generated this many minutes after startup."
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:26
+msgid ""
+":zeek:id:`CaptureLoss::minimum_acks`: :zeek:type:`count` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:26
+msgid "The minimum number of ACKs expected for a single peer in a watch interval."
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:28
+msgid ""
+":zeek:id:`CaptureLoss::too_much_loss`: :zeek:type:`double` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:28
+msgid ""
+"The percentage of missed data that is considered \"too much\" when the "
+":zeek:enum:`CaptureLoss::Too_Much_Loss` notice should be generated."
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:31
+msgid ""
+":zeek:id:`CaptureLoss::watch_interval`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:31
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:105
+msgid ""
+"The interval at which capture loss reports are created in a running "
+"cluster (that is, after the first report)."
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:36
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:109
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:38
+msgid ":zeek:type:`CaptureLoss::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:42
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:44
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:46
+msgid ":zeek:enum:`CaptureLoss::LOG`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:47
+msgid ":zeek:type:`Notice::Type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:49
+msgid ""
+":zeek:enum:`CaptureLoss::Too_Little_Traffic`: Report if the traffic seen "
+"by a peer within a given watch interval is less than "
+":zeek:id:`CaptureLoss::minimum_acks`."
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:53
+msgid ""
+":zeek:enum:`CaptureLoss::Too_Much_Loss`: Report if the detected capture "
+"loss exceeds the percentage threshold defined in "
+":zeek:id:`CaptureLoss::too_much_loss`."
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:59
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:136
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:61
+msgid ":zeek:id:`CaptureLoss::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:66
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:71
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:101
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:72
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:81
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:91
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:102
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:73
+msgid "``1.0 min``"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:80
+msgid ":zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:82
+msgid "``1``"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:84
+msgid ""
+"The minimum number of ACKs expected for a single peer in a watch "
+"interval. If the number seen is less than this, "
+":zeek:enum:`CaptureLoss::Too_Little_Traffic` is raised."
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:90
+msgid ":zeek:type:`double`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:92
+msgid "``0.1``"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:94
+msgid ""
+"The percentage of missed data that is considered \"too much\" when the "
+":zeek:enum:`CaptureLoss::Too_Much_Loss` notice should be generated. The "
+"value is expressed as a double between 0 and 1 with 1 being 100%."
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:103
+msgid "``15.0 mins``"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:112
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:115
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:115
+msgid "Timestamp for when the measurement occurred."
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:118
+msgid "ts_delta: :zeek:type:`interval` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:118
+msgid "The time delay between this measurement and the last."
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:123
+msgid "peer: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:121
+msgid ""
+"In the event that there are multiple Zeek instances logging to the same "
+"host, this distinguishes each peer with its individual name."
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:126
+msgid "gaps: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:126
+msgid "Number of missed ACKs from the previous measurement interval."
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:129
+msgid "acks: :zeek:type:`count` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:129
+msgid "Total number of ACKs seen in the previous measurement interval."
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:131
+msgid "percent_lost: :zeek:type:`double` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:132
+msgid "Percentage of ACKs seen where the data being ACKed wasn't seen."
+msgstr ""
+
+#: ../../scripts/policy/misc/capture-loss.zeek.rst:139
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

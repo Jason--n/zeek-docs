@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:4
+msgid "base/protocols/mqtt/consts.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:7
+msgid "Constants definitions for MQTT."
+msgstr ""
+
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:9
+msgid "MQTT"
+msgstr ""
+
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:14
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:26
+msgid "Constants"
+msgstr ""
+
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:16
+msgid ""
+":zeek:id:`MQTT::msg_types`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:17
+msgid ""
+":zeek:id:`MQTT::qos_levels`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:18
+msgid ""
+":zeek:id:`MQTT::return_codes`: :zeek:type:`table` :zeek:attr:`&default` ="
+" :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:19
+msgid ""
+":zeek:id:`MQTT::versions`: :zeek:type:`table` :zeek:attr:`&default` = "
+":zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:24
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:29
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:56
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:72
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:91
+msgid ":zeek:type:`table` [:zeek:type:`count`] of :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:30
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:57
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:73
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst:92
+msgid ":zeek:attr:`&default` = :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/mqtt/consts.zeek.rst
+msgid "Default"
+msgstr ""
+

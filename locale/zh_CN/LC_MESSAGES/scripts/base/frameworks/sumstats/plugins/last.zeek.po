@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:4
+msgid "base/frameworks/sumstats/plugins/last.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:7
+msgid "Keep the last X observations."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:9
+msgid "SumStats"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:10
+msgid ""
+":doc:`base/frameworks/sumstats "
+"</scripts/base/frameworks/sumstats/index>`, :doc:`base/utils/queue.zeek "
+"</scripts/base/utils/queue.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:15
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:17
+msgid ":zeek:type:`SumStats::Calculation`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:19
+msgid ":zeek:enum:`SumStats::LAST`: Keep last X observations in a queue."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:21
+msgid ":zeek:type:`SumStats::Reducer`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:23
+msgid ":zeek:type:`SumStats::Reducer`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:25
+msgid ""
+"num_last_elements: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:26
+msgid "Number of elements to keep."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:27
+msgid ":zeek:type:`SumStats::ResultVal`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:29
+msgid ":zeek:type:`SumStats::ResultVal`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:31
+msgid "last_elements: :zeek:type:`Queue::Queue` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:32
+msgid "This is the queue where elements are maintained."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:36
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:45
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:38
+msgid ":zeek:id:`SumStats::get_last`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:38
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:50
+msgid "Get a vector of element values from a ResultVal."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:43
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/plugins/last.zeek.rst:48
+msgid ""
+":zeek:type:`function` (rv: :zeek:type:`SumStats::ResultVal`) : "
+":zeek:type:`vector` of :zeek:type:`SumStats::Observation`"
+msgstr ""
+

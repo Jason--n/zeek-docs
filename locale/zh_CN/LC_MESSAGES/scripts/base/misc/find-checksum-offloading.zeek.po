@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst:4
+msgid "base/misc/find-checksum-offloading.zeek"
+msgstr ""
+
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst:7
+msgid ""
+"Discover cases where the local interface is sniffed and outbound packets "
+"have checksum offloading.  Load this script to receive a notice if it's "
+"likely that checksum offload effects are being seen on a live interface "
+"or in a packet trace file."
+msgstr ""
+
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst:12
+msgid "ChecksumOffloading"
+msgstr ""
+
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst:13
+msgid ":doc:`base/frameworks/notice </scripts/base/frameworks/notice/index>`"
+msgstr ""
+
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst:16
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst:18
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst:28
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst:20
+msgid ""
+":zeek:id:`ChecksumOffloading::check_interval`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst:20
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst:35
+msgid ""
+"The interval which is used for checking packet statistics to see if "
+"checksum offloading is affecting analysis."
+msgstr ""
+
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst:26
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst:31
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst:32
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/misc/find-checksum-offloading.zeek.rst:33
+msgid "``10.0 secs``"
+msgstr ""
+

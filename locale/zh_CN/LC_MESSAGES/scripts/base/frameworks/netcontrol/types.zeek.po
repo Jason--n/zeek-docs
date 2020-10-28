@@ -1,0 +1,585 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:4
+msgid "base/frameworks/netcontrol/types.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:7
+msgid "This file defines the types that are used by the NetControl framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:9
+msgid ""
+"The most important type defined in this file is "
+":zeek:see:`NetControl::Rule`, which is used to describe all rules that "
+"can be expressed by the NetControl framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:12
+msgid "NetControl"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:15
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:17
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:48
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:19
+msgid ""
+":zeek:id:`NetControl::default_priority`: :zeek:type:`int` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:19
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:55
+msgid "The default priority that is used when creating rules."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:23
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:58
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:25
+msgid ""
+":zeek:id:`NetControl::whitelist_priority`: :zeek:type:`int` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:25
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:65
+msgid ""
+"The default priority that is used when using the high-level functions to "
+"push whitelist entries to the backends "
+"(:zeek:see:`NetControl::whitelist_address` and "
+":zeek:see:`NetControl::whitelist_subnet`)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:31
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:73
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:33
+msgid ":zeek:type:`NetControl::Entity`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:33
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:93
+msgid "Type defining the entity a rule is operating on."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:34
+msgid ":zeek:type:`NetControl::EntityType`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:34
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:115
+msgid "Type defining the entity that a rule applies to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:35
+msgid ":zeek:type:`NetControl::Flow`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:35
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:139
+msgid ""
+"Flow is used in :zeek:type:`NetControl::Entity` together with "
+":zeek:enum:`NetControl::FLOW` to specify a uni-directional flow that a "
+"rule applies to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:37
+msgid ":zeek:type:`NetControl::FlowInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:37
+msgid ""
+"Information of a flow that can be provided by switches when the flow "
+"times out."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:38
+msgid ":zeek:type:`NetControl::FlowMod`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:38
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:186
+msgid "Type for defining a flow modification action."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:39
+msgid ":zeek:type:`NetControl::Rule`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:39
+msgid "A rule for the framework to put in place."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:40
+msgid ":zeek:type:`NetControl::RuleType`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:40
+msgid "Type of rules that the framework supports."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:41
+msgid ":zeek:type:`NetControl::TargetType`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:41
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:289
+msgid "Type defining the target of a rule."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:46
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:51
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:61
+msgid ":zeek:type:`int`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:52
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:62
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:53
+msgid "``0``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:63
+msgid "``5``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:69
+msgid ""
+"Note that this priority is not automatically used when manually creating "
+"rules that have a :zeek:see:`NetControl::RuleType` of "
+":zeek:enum:`NetControl::WHITELIST`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:76
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:119
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:146
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:164
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:190
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:79
+msgid "ty: :zeek:type:`NetControl::EntityType`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:79
+msgid "Type of entity."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:82
+msgid "conn: :zeek:type:`conn_id` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:82
+msgid "Used with :zeek:enum:`NetControl::CONNECTION`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:85
+msgid "flow: :zeek:type:`NetControl::Flow` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:85
+msgid "Used with :zeek:enum:`NetControl::FLOW`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:88
+msgid "ip: :zeek:type:`subnet` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:88
+msgid "Used with :zeek:enum:`NetControl::ADDRESS` to specifiy a CIDR subnet."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:91
+msgid "mac: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:91
+msgid "Used with :zeek:enum:`NetControl::MAC`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:97
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:248
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:283
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:101
+msgid "Activity involving a specific IP address."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:105
+msgid "Activity involving all of a bi-directional connection's activity."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:109
+msgid ""
+"Activity involving a uni-directional flow's activity. Can contain "
+"wildcards."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:113
+msgid "Activity involving a MAC address."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:122
+msgid "src_h: :zeek:type:`subnet` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:122
+msgid "The source IP address/subnet."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:125
+msgid "src_p: :zeek:type:`port` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:125
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:170
+msgid "The source port number."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:128
+msgid "dst_h: :zeek:type:`subnet` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:128
+msgid "The destination IP address/subnet."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:131
+msgid "dst_p: :zeek:type:`port` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:131
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:176
+msgid "The destination port number."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:134
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:179
+msgid "src_m: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:134
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:179
+msgid "The source MAC address."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:137
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:182
+msgid "dst_m: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:137
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:182
+msgid "The destination MAC address."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:142
+msgid "If optional fields are not set, they are interpreted as wildcarded."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:149
+msgid "duration: :zeek:type:`interval` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:149
+msgid "Total duration of the rule."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:152
+msgid "packet_count: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:152
+msgid "Number of packets exchanged over connections matched by the rule."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:155
+msgid "byte_count: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:155
+msgid "Total bytes exchanged over connections matched by the rule."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:157
+msgid ""
+"Information of a flow that can be provided by switches when the flow "
+"times out. Currently this is heavily influenced by the data that OpenFlow"
+" returns by default. That being said - their design makes sense and this "
+"is probably the data one can expect to be available."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:167
+msgid "src_h: :zeek:type:`addr` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:167
+msgid "The source IP address."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:170
+msgid "src_p: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:173
+msgid "dst_h: :zeek:type:`addr` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:173
+msgid "The destination IP address."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:176
+msgid "dst_p: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:184
+msgid "redirect_port: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:193
+msgid "ty: :zeek:type:`NetControl::RuleType`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:193
+msgid "Type of rule."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:196
+msgid "target: :zeek:type:`NetControl::TargetType`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:196
+msgid "Where to apply rule."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:199
+msgid "entity: :zeek:type:`NetControl::Entity`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:199
+msgid "Entity to apply rule to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:202
+msgid "expire: :zeek:type:`interval` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:202
+msgid "Timeout after which to expire the rule."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:205
+msgid ""
+"priority: :zeek:type:`int` :zeek:attr:`&default` = "
+":zeek:see:`NetControl::default_priority` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:205
+msgid ""
+"Priority if multiple rules match an entity (larger value is higher "
+"priority)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:208
+msgid "location: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:208
+msgid "Optional string describing where/what installed the rule."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:211
+msgid "out_port: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:211
+msgid "Argument for :zeek:enum:`NetControl::REDIRECT` rules."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:214
+msgid "mod: :zeek:type:`NetControl::FlowMod` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:214
+msgid "Argument for :zeek:enum:`NetControl::MODIFY` rules."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:217
+msgid ""
+"id: :zeek:type:`string` :zeek:attr:`&default` = ``\"\"`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:217
+msgid "Internally determined unique ID for this rule. Will be set when added."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:220
+msgid ""
+"cid: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:220
+msgid "Internally determined unique numeric ID for this rule. Set when added."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:225
+msgid ""
+"_plugin_ids: :zeek:type:`set` [:zeek:type:`count`] :zeek:attr:`&default` "
+"= ``{  }`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:223
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:228
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:233
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:238
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/netcontrol/main.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:225
+msgid "Internally set to the plugins handling the rule."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:230
+msgid ""
+"_active_plugin_ids: :zeek:type:`set` [:zeek:type:`count`] "
+":zeek:attr:`&default` = ``{  }`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:230
+msgid "Internally set to the plugins on which the rule is currently active."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:235
+msgid ""
+"_no_expire_plugins: :zeek:type:`set` [:zeek:type:`count`] "
+":zeek:attr:`&default` = ``{  }`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:235
+msgid ""
+"Internally set to plugins where the rule should not be removed upon "
+"timeout."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:240
+msgid ""
+"_added: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:240
+msgid "Track if the rule was added successfully by all responsible plugins."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:242
+msgid ""
+"A rule for the framework to put in place. Of all rules currently in "
+"place, the first match will be taken, sorted by priority. All further "
+"rules will be ignored."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:252
+msgid "Stop forwarding all packets matching the entity."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:254
+msgid "No additional arguments."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:258
+msgid ""
+"Modify all packets matching entity. The packets will be modified "
+"according to the `mod` entry of the rule."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:265
+msgid ""
+"Redirect all packets matching entity to a different switch port, given in"
+" the `out_port` argument of the rule."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:271
+msgid ""
+"Whitelists all packets of an entity, meaning no restrictions will be "
+"applied. While whitelisting is the default if no rule matches, this type "
+"can be used to override lower-priority rules that would otherwise take "
+"effect for the entity."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:276
+msgid ""
+"Type of rules that the framework supports. Each type lists the extra "
+":zeek:type:`NetControl::Rule` fields it uses, if any."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:279
+msgid "Plugins may extend this type to define their own."
+msgstr ""
+
+#: ../../scripts/base/frameworks/netcontrol/types.zeek.rst:291
+msgid ""
+"Rules can either be applied to the forward path, affecting all network "
+"traffic, or on the monitor path, only affecting the traffic that is sent "
+"to Zeek. The second is mostly used for shunting, which allows Zeek to "
+"tell the networking hardware that it wants to no longer see traffic that "
+"it identified as benign."
+msgstr ""
+

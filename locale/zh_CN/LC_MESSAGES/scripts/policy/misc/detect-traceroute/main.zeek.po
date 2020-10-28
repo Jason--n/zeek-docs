@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:4
+msgid "policy/misc/detect-traceroute/main.zeek"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:7
+msgid ""
+"This script detects a large number of ICMP Time Exceeded messages heading"
+" toward hosts that have sent low TTL packets. It generates a notice when "
+"the number of ICMP Time Exceeded messages for a source-destination pair "
+"exceeds a threshold."
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:12
+msgid "Traceroute"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:13
+msgid ""
+":doc:`base/frameworks/signatures "
+"</scripts/base/frameworks/signatures/index>`, "
+":doc:`base/frameworks/sumstats </scripts/base/frameworks/sumstats/index>`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:16
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:18
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:65
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:20
+msgid ""
+":zeek:id:`Traceroute::icmp_time_exceeded_interval`: :zeek:type:`interval`"
+" :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:20
+msgid ""
+"Interval at which to watch for the "
+":zeek:id:`Traceroute::icmp_time_exceeded_threshold` variable to be "
+"crossed."
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:23
+msgid ""
+":zeek:id:`Traceroute::icmp_time_exceeded_threshold`: :zeek:type:`double` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:23
+msgid "Defines the threshold for ICMP Time Exceeded messages for a src-dst pair."
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:25
+msgid ""
+":zeek:id:`Traceroute::require_low_ttl_packets`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:25
+msgid ""
+"By default this script requires that any host detected running "
+"traceroutes first send low TTL packets (TTL < 10) to the traceroute "
+"destination host."
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:31
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:99
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:33
+msgid ":zeek:type:`Traceroute::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:33
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:116
+msgid "The log record for the traceroute log."
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:37
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:39
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:41
+msgid ":zeek:enum:`Traceroute::LOG`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:42
+msgid ":zeek:type:`Notice::Type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:44
+msgid ""
+":zeek:enum:`Traceroute::Detected`: Indicates that a host was seen running"
+" traceroutes."
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:46
+msgid ""
+":zeek:id:`Signatures::ignored_ids`: :zeek:type:`pattern` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:50
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:119
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:52
+msgid ":zeek:id:`Traceroute::log_traceroute`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:56
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:126
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:58
+msgid ":zeek:id:`Traceroute::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:63
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:68
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:69
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:79
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:89
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:70
+msgid "``3.0 mins``"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:72
+msgid ""
+"Interval at which to watch for the "
+":zeek:id:`Traceroute::icmp_time_exceeded_threshold` variable to be "
+"crossed.  At the end of each interval the counter is reset."
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:78
+msgid ":zeek:type:`double`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:80
+msgid "``3.0``"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:82
+msgid ""
+"Defines the threshold for ICMP Time Exceeded messages for a src-dst pair."
+"  This threshold only comes into play after a host is found to be sending"
+" low TTL packets."
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:88
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:90
+msgid "``T``"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:92
+msgid ""
+"By default this script requires that any host detected running "
+"traceroutes first send low TTL packets (TTL < 10) to the traceroute "
+"destination host.  Changing this setting to F will relax the detection a "
+"bit by solely relying on ICMP time-exceeded messages to detect "
+"traceroute."
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:102
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:105
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:105
+msgid "Timestamp"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:108
+msgid "src: :zeek:type:`addr` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:108
+msgid "Address initiating the traceroute."
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:111
+msgid "dst: :zeek:type:`addr` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:111
+msgid "Destination address of the traceroute."
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:114
+msgid "proto: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:114
+msgid "Protocol used for the traceroute."
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:122
+msgid ":zeek:type:`event` (rec: :zeek:type:`Traceroute::Info`)"
+msgstr ""
+
+#: ../../scripts/policy/misc/detect-traceroute/main.zeek.rst:129
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+

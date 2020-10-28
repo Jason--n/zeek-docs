@@ -1,0 +1,1327 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:4
+msgid "base/frameworks/broker/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:7
+msgid "The Broker-based communication API and its various options."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:9
+msgid "Broker"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:10
+msgid ""
+":doc:`base/bif/comm.bif.zeek </scripts/base/bif/comm.bif.zeek>`, "
+":doc:`base/bif/messaging.bif.zeek </scripts/base/bif/messaging.bif.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:15
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:111
+msgid "Runtime Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:17
+msgid ""
+":zeek:id:`Broker::peer_counts_as_iosource`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:17
+msgid ""
+"Whether calling :zeek:see:`Broker::peer` will register the Broker system "
+"as an I/O source that will block the process from shutting down."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:23
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:125
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:25
+msgid ""
+":zeek:id:`Broker::aggressive_interval`: :zeek:type:`count` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:25
+msgid ""
+"Frequency of work-stealing polling attempts for Broker/CAF threads in "
+"\"aggressive\" mode."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:27
+msgid ""
+":zeek:id:`Broker::aggressive_polls`: :zeek:type:`count` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:27
+msgid ""
+"Number of work-stealing polling attempts for Broker/CAF threads in "
+"\"aggressive\" mode."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:29
+msgid ""
+":zeek:id:`Broker::congestion_queue_size`: :zeek:type:`count` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:29
+msgid ""
+"The number of buffered messages at the Broker/CAF layer after which a "
+"subscriber considers themselves congested (i.e."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:31
+msgid ""
+":zeek:id:`Broker::default_connect_retry`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:31
+msgid ""
+"Default interval to retry connecting to a peer if it cannot be made to "
+"work initially, or if it ever becomes disconnected."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:33
+msgid ""
+":zeek:id:`Broker::default_listen_address`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:33
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:172
+msgid "Default address on which to listen."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:34
+msgid ""
+":zeek:id:`Broker::default_listen_retry`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:34
+msgid ""
+"Default interval to retry listening on a port if it's currently in use "
+"already."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:36
+msgid ""
+":zeek:id:`Broker::default_log_topic_prefix`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:36
+msgid "The default topic prefix where logs will be published."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:37
+msgid ":zeek:id:`Broker::default_port`: :zeek:type:`port` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:37
+msgid "Default port for Broker communication."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:38
+msgid ":zeek:id:`Broker::disable_ssl`: :zeek:type:`bool` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:38
+msgid "If true, do not use SSL for network connections."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:39
+msgid ":zeek:id:`Broker::forward_messages`: :zeek:type:`bool` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:39
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:222
+msgid "Forward all received messages to subscribing peers."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:40
+msgid ""
+":zeek:id:`Broker::log_batch_interval`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:40
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:230
+msgid ""
+"Max time to buffer log messages before sending the current set out as a "
+"batch."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:42
+msgid ":zeek:id:`Broker::log_batch_size`: :zeek:type:`count` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:42
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:239
+msgid ""
+"The max number of log entries per log stream to batch together when "
+"sending log messages to a remote logger."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:44
+msgid ":zeek:id:`Broker::max_threads`: :zeek:type:`count` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:44
+msgid "Max number of threads to use for Broker/CAF functionality."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:45
+msgid ""
+":zeek:id:`Broker::moderate_interval`: :zeek:type:`count` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:45
+msgid ""
+"Frequency of work-stealing polling attempts for Broker/CAF threads in "
+"\"moderate\" mode."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:47
+msgid ":zeek:id:`Broker::moderate_polls`: :zeek:type:`count` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:47
+msgid ""
+"Number of work-stealing polling attempts for Broker/CAF threads in "
+"\"moderate\" mode."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:49
+msgid ""
+":zeek:id:`Broker::moderate_sleep`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:49
+msgid ""
+"Interval of time for under-utilized Broker/CAF threads to sleep when in "
+"\"moderate\" mode."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:51
+msgid ""
+":zeek:id:`Broker::relaxed_interval`: :zeek:type:`count` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:51
+msgid ""
+"Frequency of work-stealing polling attempts for Broker/CAF threads in "
+"\"relaxed\" mode."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:53
+msgid ""
+":zeek:id:`Broker::relaxed_sleep`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:53
+msgid ""
+"Interval of time for under-utilized Broker/CAF threads to sleep when in "
+"\"relaxed\" mode."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:55
+msgid ""
+":zeek:id:`Broker::scheduler_policy`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:55
+msgid "The CAF scheduling policy to use."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:56
+msgid ":zeek:id:`Broker::ssl_cafile`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:56
+msgid "Path to a file containing concatenated trusted certificates in PEM format."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:58
+msgid ":zeek:id:`Broker::ssl_capath`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:58
+msgid "Path to an OpenSSL-style directory of trusted certificates."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:59
+msgid ""
+":zeek:id:`Broker::ssl_certificate`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:59
+msgid "Path to a file containing a X.509 certificate for this node in PEM format."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:61
+msgid ":zeek:id:`Broker::ssl_keyfile`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:61
+msgid "Path to the file containing the private key for this node's certificate."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:63
+msgid ":zeek:id:`Broker::ssl_passphrase`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:63
+msgid ""
+"Passphrase to decrypt the private key specified by "
+":zeek:see:`Broker::ssl_keyfile`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:68
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:363
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:70
+msgid ":zeek:type:`Broker::Data`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:70
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:370
+msgid "Opaque communication data."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:71
+msgid ":zeek:type:`Broker::DataVector`: :zeek:type:`vector`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:71
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:376
+msgid "Opaque communication data sequence."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:72
+msgid ":zeek:type:`Broker::EndpointInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:73
+msgid ":zeek:type:`Broker::ErrorCode`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:73
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:489
+msgid "Enumerates the possible error types."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:74
+msgid ":zeek:type:`Broker::Event`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:74
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:501
+msgid "Opaque event communication data."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:75
+msgid ":zeek:type:`Broker::NetworkInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:76
+msgid ":zeek:type:`Broker::PeerInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:77
+msgid ":zeek:type:`Broker::PeerInfos`: :zeek:type:`vector`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:78
+msgid ":zeek:type:`Broker::PeerStatus`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:78
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:556
+msgid "The possible states of a peer endpoint."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:79
+msgid ":zeek:type:`Broker::TableItem`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:79
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:566
+msgid ""
+"Opaque communication data used as a convenient way to wrap key-value "
+"pairs that comprise table entries."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:84
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:570
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:86
+msgid ":zeek:id:`Broker::auto_publish`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:86
+msgid ""
+"Automatically send an event to any interested peers whenever it is "
+"locally dispatched."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:88
+msgid ":zeek:id:`Broker::auto_unpublish`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:88
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:594
+msgid "Stop automatically sending an event to peers upon local dispatch."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:89
+msgid ":zeek:id:`Broker::default_log_topic`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:89
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:610
+msgid "The default implementation for :zeek:see:`Broker::log_topic`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:90
+msgid ":zeek:id:`Broker::flush_logs`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:90
+msgid "Sends all pending log messages to remote peers."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:91
+msgid ":zeek:id:`Broker::forward`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:91
+msgid ""
+"Register a topic prefix subscription for events that should only be "
+"forwarded to any subscribing peers and not raise any event handlers on "
+"the receiving/forwarding node."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:94
+msgid ":zeek:id:`Broker::listen`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:94
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:642
+msgid "Listen for remote connections."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:95
+msgid ":zeek:id:`Broker::log_topic`: :zeek:type:`function` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:95
+msgid ""
+"A function that will be called for each log entry to determine what "
+"broker topic string will be used for sending it to peers."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:97
+msgid ":zeek:id:`Broker::node_id`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:97
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:687
+msgid "Get a unique identifier for the local broker endpoint."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:98
+msgid ":zeek:id:`Broker::peer`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:98
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:696
+msgid "Initiate a remote connection."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:99
+msgid ":zeek:id:`Broker::peers`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:99
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:722
+msgid "Get a list of all peer connections."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:100
+msgid ":zeek:id:`Broker::publish_id`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:100
+msgid "Publishes the value of an identifier to a given topic."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:101
+msgid ":zeek:id:`Broker::subscribe`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:101
+msgid ""
+"Register interest in all peer event messages that use a certain topic "
+"prefix."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:103
+msgid ":zeek:id:`Broker::unpeer`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:103
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:763
+msgid "Remove a remote connection."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:104
+msgid ":zeek:id:`Broker::unsubscribe`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:104
+msgid "Unregister interest in all peer event messages that use a topic prefix."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:109
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:114
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:207
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:218
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:115
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:129
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:138
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:147
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:157
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:169
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:179
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:190
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:199
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:208
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:219
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:227
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:236
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:245
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:254
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:263
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:272
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:281
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:290
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:299
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:315
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:325
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:335
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:345
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:355
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:666
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:116
+msgid "``T``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:118
+msgid ""
+"Whether calling :zeek:see:`Broker::peer` will register the Broker system "
+"as an I/O source that will block the process from shutting down.  For "
+"example, set this to false when you are reading pcaps, but also want to "
+"initaiate a Broker peering and still shutdown after done reading the "
+"pcap."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:128
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:137
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:146
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:235
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:244
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:253
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:262
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:280
+msgid ":zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:130
+msgid "``4``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:132
+msgid ""
+"Frequency of work-stealing polling attempts for Broker/CAF threads in "
+"\"aggressive\" mode.  Only used for the \"stealing\" scheduler policy."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:139
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:264
+msgid "``5``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:141
+msgid ""
+"Number of work-stealing polling attempts for Broker/CAF threads in "
+"\"aggressive\" mode.  Only used for the \"stealing\" scheduler policy."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:148
+msgid "``200``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:150
+msgid ""
+"The number of buffered messages at the Broker/CAF layer after which a "
+"subscriber considers themselves congested (i.e. tune the congestion "
+"control mechanisms)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:156
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:178
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:226
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:271
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:289
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:158
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:180
+msgid "``30.0 secs``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:160
+msgid ""
+"Default interval to retry connecting to a peer if it cannot be made to "
+"work initially, or if it ever becomes disconnected.  Use of the "
+"ZEEK_DEFAULT_CONNECT_RETRY environment variable (set as number of "
+"seconds) will override this option and also any values given to "
+":zeek:see:`Broker::peer`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:168
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:189
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:298
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:314
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:324
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:334
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:344
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:354
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:170
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:316
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:326
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:336
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:346
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:356
+msgid "``\"\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:182
+msgid ""
+"Default interval to retry listening on a port if it's currently in use "
+"already.  Use of the ZEEK_DEFAULT_LISTEN_RETRY environment variable (set "
+"as a number of seconds) will override this option and also any values "
+"given to :zeek:see:`Broker::listen`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:191
+msgid "``\"zeek/logs/\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:193
+msgid ""
+"The default topic prefix where logs will be published.  The log's stream "
+"id is appended when writing to a particular stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:198
+msgid ":zeek:type:`port`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:200
+msgid "``9999/tcp``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:202
+msgid ""
+"Default port for Broker communication. Where not specified otherwise, "
+"this is the port to connect to and listen on."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:209
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:220
+msgid "``F``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:211
+msgid ""
+"If true, do not use SSL for network connections. By default, SSL will "
+"even be used if no certificates / CAs have been configured. In that case "
+"(which is the default) the communication will be encrypted, but not "
+"authenticated."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:228
+msgid "``1.0 sec``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:237
+msgid "``400``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:246
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:282
+msgid "``1``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:248
+msgid ""
+"Max number of threads to use for Broker/CAF functionality.  The "
+"ZEEK_BROKER_MAX_THREADS environment variable overrides this setting."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:255
+msgid "``2``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:257
+msgid ""
+"Frequency of work-stealing polling attempts for Broker/CAF threads in "
+"\"moderate\" mode.  Only used for the \"stealing\" scheduler policy."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:266
+msgid ""
+"Number of work-stealing polling attempts for Broker/CAF threads in "
+"\"moderate\" mode.  Only used for the \"stealing\" scheduler policy."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:273
+msgid "``16.0 msecs``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:275
+msgid ""
+"Interval of time for under-utilized Broker/CAF threads to sleep when in "
+"\"moderate\" mode.  Only used for the \"stealing\" scheduler policy."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:284
+msgid ""
+"Frequency of work-stealing polling attempts for Broker/CAF threads in "
+"\"relaxed\" mode.  Only used for the \"stealing\" scheduler policy."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:291
+msgid "``64.0 msecs``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:293
+msgid ""
+"Interval of time for under-utilized Broker/CAF threads to sleep when in "
+"\"relaxed\" mode.  Only used for the \"stealing\" scheduler policy."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:300
+msgid "``\"sharing\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:302
+msgid ""
+"The CAF scheduling policy to use.  Available options are \"sharing\" and "
+"\"stealing\".  The \"sharing\" policy uses a single, global work queue "
+"along with mutex and condition variable used for accessing it, which may "
+"be better for cases that don't require much concurrency or need lower "
+"power consumption.  The \"stealing\" policy uses multiple work queues "
+"protected by spinlocks, which may be better for use-cases that have more "
+"concurrency needs.  E.g. may be worth testing the \"stealing\" policy "
+"along with dedicating more threads if a lot of data store processing is "
+"required."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:318
+msgid ""
+"Path to a file containing concatenated trusted certificates in PEM "
+"format. If set, Zeek will require valid certificates for all peers."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:328
+msgid ""
+"Path to an OpenSSL-style directory of trusted certificates. If set, Zeek "
+"will require valid certificates for all peers."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:338
+msgid ""
+"Path to a file containing a X.509 certificate for this node in PEM "
+"format. If set, Zeek will require valid certificates for all peers."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:348
+msgid ""
+"Path to the file containing the private key for this node's certificate. "
+"If set, Zeek will require valid certificates for all peers."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:358
+msgid ""
+"Passphrase to decrypt the private key specified by "
+":zeek:see:`Broker::ssl_keyfile`. If set, Zeek will require valid "
+"certificates for all peers."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:366
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:380
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:493
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:505
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:516
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:560
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:368
+msgid "data: :zeek:type:`opaque` of Broker::Data :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:374
+msgid ":zeek:type:`vector` of :zeek:type:`Broker::Data`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:383
+msgid "id: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:383
+msgid "A unique identifier of the node."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:385
+msgid "network: :zeek:type:`Broker::NetworkInfo` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:386
+msgid "Network-level information."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:391
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:530
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:395
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:416
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:457
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:462
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:467
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:472
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:477
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:482
+msgid "(present if :doc:`/scripts/base/bif/comm.bif.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:400
+msgid "The unspecified default error code."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:404
+msgid "Version incompatibility."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:408
+msgid "Referenced peer does not exist."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:412
+msgid "Remote peer not listening."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:421
+msgid "A peering request timed out."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:425
+msgid "Master with given name already exists."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:429
+msgid "Master with given name does not exist."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:433
+msgid "The given data store key does not exist."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:437
+msgid "The store operation timed out."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:441
+msgid "The operation expected a different type than provided."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:445
+msgid "The data value cannot be used to carry out the desired operation."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:449
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:453
+msgid "The storage backend failed to execute the operation."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:487
+msgid "Catch-all for a CAF-level problem."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:496
+msgid "name: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:496
+msgid "The name of the event.  Not set if invalid event or arguments."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:499
+msgid "args: :zeek:type:`Broker::DataVector`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:499
+msgid "The arguments to the event."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:508
+msgid "address: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:508
+msgid "The IP address or hostname where the endpoint listens."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:510
+msgid "bound_port: :zeek:type:`port` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:511
+msgid "The port where the endpoint is bound to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:518
+msgid "peer: :zeek:type:`Broker::EndpointInfo`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:520
+msgid "status: :zeek:type:`Broker::PeerStatus`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:525
+msgid ":zeek:type:`vector` of :zeek:type:`Broker::PeerInfo`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:534
+msgid "The peering process is initiated."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:538
+msgid "Connection establishment in process."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:542
+msgid "Connection established, peering pending."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:546
+msgid "Successfully peered."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:550
+msgid "Connection to remote peer lost."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:554
+msgid "Reconnecting to peer after a lost connection."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:562
+msgid "key: :zeek:type:`Broker::Data`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:564
+msgid "val: :zeek:type:`Broker::Data`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:573
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:592
+msgid ""
+":zeek:type:`function` (topic: :zeek:type:`string`, ev: :zeek:type:`any`) "
+": :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:575
+msgid ""
+"Automatically send an event to any interested peers whenever it is "
+"locally dispatched. (For example, using \"event my_event(...);\" in a "
+"script.)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst
+msgid "topic"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:580
+msgid ""
+"a topic string associated with the event message. Peers advertise "
+"interest by registering a subscription to some prefix of this topic name."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst
+msgid "ev"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:585
+msgid "a Zeek event value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:588
+msgid "true if automatic event sending is now enabled."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:597
+msgid "a topic originally given to :zeek:see:`Broker::auto_publish`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:600
+msgid "an event originally given to :zeek:see:`Broker::auto_publish`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:603
+msgid "true if automatic events will not occur for the topic/event pair."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:608
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:665
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`Log::ID`, path: "
+":zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:614
+msgid ":zeek:type:`function` () : :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:616
+msgid ""
+"Sends all pending log messages to remote peers.  This normally doesn't "
+"need to be used except for test cases that are time-sensitive."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:621
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:745
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:784
+msgid ""
+":zeek:type:`function` (topic_prefix: :zeek:type:`string`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:623
+msgid ""
+"Register a topic prefix subscription for events that should only be "
+"forwarded to any subscribing peers and not raise any event handlers on "
+"the receiving/forwarding node.  i.e. it's the same as "
+":zeek:see:`Broker::subscribe` except matching events are not raised on "
+"the receiver, just forwarded.  Use :zeek:see:`Broker::unsubscribe` with "
+"the same argument to undo this operation."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst
+msgid "topic_prefix"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:631
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:752
+msgid ""
+"a prefix to match against remote message topics. e.g. an empty prefix "
+"matches everything and \"a\" matches \"alice\" and \"amy\" but not "
+"\"bob\"."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:636
+msgid "true if a new event forwarding/subscription is now registered."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:640
+msgid ""
+":zeek:type:`function` (a: :zeek:type:`string` :zeek:attr:`&default` = "
+":zeek:see:`Broker::default_listen_address` :zeek:attr:`&optional`, p: "
+":zeek:type:`port` :zeek:attr:`&default` = "
+":zeek:see:`Broker::default_port` :zeek:attr:`&optional`, retry: "
+":zeek:type:`interval` :zeek:attr:`&default` = "
+":zeek:see:`Broker::default_listen_retry` :zeek:attr:`&optional`) : "
+":zeek:type:`port`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst
+msgid "a"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:645
+msgid ""
+"an address string on which to accept connections, e.g. \"127.0.0.1\".  An"
+" empty string refers to INADDR_ANY."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst
+msgid "p"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:649
+msgid ""
+"the TCP port to listen on. The value 0 means that the OS should choose "
+"the next available free port."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst
+msgid "retry"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:653
+msgid ""
+"If non-zero, retries listening in regular intervals if the port cannot be"
+" acquired immediately. 0 disables retries.  If the "
+"ZEEK_DEFAULT_LISTEN_RETRY environment variable is set (as number of "
+"seconds), it overrides any value given here."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:659
+msgid "the bound port or 0/? on failure."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:668
+msgid ""
+"A function that will be called for each log entry to determine what "
+"broker topic string will be used for sending it to peers.  The default "
+"implementation will return a value based on "
+":zeek:see:`Broker::default_log_topic_prefix`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst
+msgid "id"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:674
+msgid "the ID associated with the log stream entry that will be sent."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst
+msgid "path"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:677
+msgid "the path to which the log stream entry will be output."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:680
+msgid "a string representing the broker topic to which the log will be sent."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:685
+msgid ":zeek:type:`function` () : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:690
+msgid "a unique identifier for the local broker endpoint."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:694
+msgid ""
+":zeek:type:`function` (a: :zeek:type:`string`, p: :zeek:type:`port` "
+":zeek:attr:`&default` = :zeek:see:`Broker::default_port` "
+":zeek:attr:`&optional`, retry: :zeek:type:`interval` "
+":zeek:attr:`&default` = :zeek:see:`Broker::default_connect_retry` "
+":zeek:attr:`&optional`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:699
+msgid "an address to connect to, e.g. \"localhost\" or \"127.0.0.1\"."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:702
+msgid "the TCP port on which the remote side is listening."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:705
+msgid ""
+"an interval at which to retry establishing the connection with the remote"
+" peer if it cannot be made initially, or if it ever becomes disconnected."
+"  If the ZEEK_DEFAULT_CONNECT_RETRY environment variable is set (as "
+"number of seconds), it overrides any value given here."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:712
+msgid ""
+"true if it's possible to try connecting with the peer and it's a new "
+"peer. The actual connection may not be established until a later point in"
+" time."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:720
+msgid ""
+":zeek:type:`function` () : :zeek:type:`vector` of "
+":zeek:type:`Broker::PeerInfo`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:725
+msgid "a list of all peer connections."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:729
+msgid ""
+":zeek:type:`function` (topic: :zeek:type:`string`, id: "
+":zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:731
+msgid ""
+"Publishes the value of an identifier to a given topic.  The subscribers "
+"will update their local value for that identifier on receipt."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:735
+msgid "a topic associated with the message."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:738
+msgid "the identifier to publish."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:741
+msgid "true if the message is sent."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:747
+msgid ""
+"Register interest in all peer event messages that use a certain topic "
+"prefix.  Note that subscriptions may not be altered immediately after "
+"calling (except during :zeek:see:`zeek_init`)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:757
+msgid "true if it's a new event subscription and it is now registered."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:761
+msgid ""
+":zeek:type:`function` (a: :zeek:type:`string`, p: :zeek:type:`port`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:765
+msgid ""
+"Note that this does not terminate the connection to the peer, it just "
+"means that we won't exchange any further information with it unless "
+"peering resumes later."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:770
+msgid "the address used in previous successful call to :zeek:see:`Broker::peer`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:773
+msgid "the port used in previous successful call to :zeek:see:`Broker::peer`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:776
+msgid ""
+"true if the arguments match a previously successful call to "
+":zeek:see:`Broker::peer`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst
+msgid "TODO"
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:780
+msgid "We do not have a function yet to terminate a connection."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:786
+msgid ""
+"Unregister interest in all peer event messages that use a topic prefix. "
+"Note that subscriptions may not be altered immediately after calling "
+"(except during :zeek:see:`zeek_init`)."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:791
+msgid ""
+"a prefix previously supplied to a successful call to "
+":zeek:see:`Broker::subscribe` or :zeek:see:`Broker::forward`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/broker/main.zeek.rst:795
+msgid "true if interest in the topic prefix is no longer advertised."
+msgstr ""
+

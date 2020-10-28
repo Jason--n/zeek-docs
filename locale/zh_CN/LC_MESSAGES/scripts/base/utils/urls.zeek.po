@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/utils/urls.zeek.rst:4
+msgid "base/utils/urls.zeek"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:6
+msgid "Functions for URL handling."
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:10
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:12
+#: ../../scripts/base/utils/urls.zeek.rst:36
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:14
+msgid ":zeek:id:`url_regex`: :zeek:type:`pattern` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:14
+msgid "A regular expression for matching and extracting URLs."
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:18
+#: ../../scripts/base/utils/urls.zeek.rst:54
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:20
+msgid ":zeek:type:`URI`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:20
+#: ../../scripts/base/utils/urls.zeek.rst:85
+msgid "A URI, as parsed by :zeek:id:`decompose_uri`."
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:24
+#: ../../scripts/base/utils/urls.zeek.rst:88
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:26
+msgid ":zeek:id:`decompose_uri`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:27
+msgid ":zeek:id:`find_all_urls`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:27
+#: ../../scripts/base/utils/urls.zeek.rst:98
+msgid "Extracts URLs discovered in arbitrary text."
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:28
+msgid ":zeek:id:`find_all_urls_without_scheme`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:28
+#: ../../scripts/base/utils/urls.zeek.rst:104
+msgid ""
+"Extracts URLs discovered in arbitrary text without the URL scheme "
+"included."
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:34
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:39
+msgid ":zeek:type:`pattern`"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:40
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:48
+msgid ""
+"A regular expression for matching and extracting URLs. This is the "
+"@imme_emosol regex from https://mathiasbynens.be/demo/url-regex, adapted "
+"for Zeek. It's not perfect for all of their test cases, but it's one of "
+"the shorter ones that covers most of the test cases."
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:57
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:60
+msgid "scheme: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:60
+msgid "The URL's scheme.."
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:64
+msgid "netlocation: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:63
+msgid ""
+"The location, which could be a domain name or an IP address. Left empty "
+"if not specified."
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:67
+msgid "portnum: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:67
+msgid "Port number, if included in URI."
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:70
+msgid "path: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:70
+msgid "Full including the file name. Will be '/' if there's not path given."
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:73
+msgid "file_name: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:73
+msgid "Full file name, including extension, if there is a file name."
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:76
+msgid "file_base: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:76
+msgid "The base filename, without extension, if there is a file name."
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:79
+msgid "file_ext: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:79
+msgid "The filename's extension, if there is a file name."
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:83
+msgid ""
+"params: :zeek:type:`table` [:zeek:type:`string`] of :zeek:type:`string` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:82
+msgid ""
+"A table of all query parameters, mapping their keys to values, if there's"
+" a query."
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:91
+msgid ":zeek:type:`function` (uri: :zeek:type:`string`) : :zeek:type:`URI`"
+msgstr ""
+
+#: ../../scripts/base/utils/urls.zeek.rst:96
+#: ../../scripts/base/utils/urls.zeek.rst:102
+msgid ":zeek:type:`function` (s: :zeek:type:`string`) : :zeek:type:`string_set`"
+msgstr ""
+

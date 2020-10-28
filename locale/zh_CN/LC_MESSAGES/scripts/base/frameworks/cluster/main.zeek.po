@@ -1,0 +1,1059 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:4
+msgid "base/frameworks/cluster/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:7
+msgid ""
+"A framework for establishing and controlling a cluster of Zeek instances."
+" In order to use the cluster framework, a script named ``cluster-"
+"layout.zeek`` must exist somewhere in Zeek's script search path which has"
+" a cluster definition of the :zeek:id:`Cluster::nodes` variable. The "
+"``CLUSTER_NODE`` environment variable or :zeek:id:`Cluster::node` must "
+"also be sent and the cluster framework loaded as a package like ``@load "
+"base/frameworks/cluster``."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:15
+msgid "Cluster"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:16
+msgid ""
+":doc:`base/frameworks/broker </scripts/base/frameworks/broker/index>`, "
+":doc:`base/frameworks/control </scripts/base/frameworks/control/index>`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:19
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:21
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:119
+msgid "Redefinable Options"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:23
+msgid ""
+":zeek:id:`Cluster::default_backend`: :zeek:type:`Broker::BackendType` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:23
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:126
+msgid ""
+"The type of data store backend that will be used for all data stores if "
+"no other has already been specified by the user in "
+":zeek:see:`Cluster::stores`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:25
+msgid ""
+":zeek:id:`Cluster::default_master_node`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:25
+msgid ""
+"Name of the node on which master data stores will be created if no other "
+"has already been specified by the user in :zeek:see:`Cluster::stores`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:27
+msgid ""
+":zeek:id:`Cluster::default_persistent_backend`: "
+":zeek:type:`Broker::BackendType` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:27
+msgid ""
+"The type of persistent data store backend that will be used for all data "
+"stores if no other has already been specified by the user in "
+":zeek:see:`Cluster::stores`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:30
+msgid ""
+":zeek:id:`Cluster::default_store_dir`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:30
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:157
+msgid ""
+"Setting a default dir will, for persistent backends that have not been "
+"given an explicit file path via :zeek:see:`Cluster::stores`, "
+"automatically create a path within this dir that is based on the name of "
+"the data store."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:34
+msgid ""
+":zeek:id:`Cluster::enable_round_robin_logging`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:34
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:168
+msgid "Whether to distribute log messages among available logging nodes."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:35
+msgid ":zeek:id:`Cluster::logger_topic`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:35
+msgid ""
+"The topic name used for exchanging messages that are relevant to logger "
+"nodes in a cluster."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:37
+msgid ""
+":zeek:id:`Cluster::manager_is_logger`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:37
+msgid ""
+"Indicates whether or not the manager will act as the logger and receive "
+"logs."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:39
+msgid ":zeek:id:`Cluster::manager_topic`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:39
+msgid ""
+"The topic name used for exchanging messages that are relevant to manager "
+"nodes in a cluster."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:41
+msgid ":zeek:id:`Cluster::node`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:41
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:205
+msgid ""
+"This is usually supplied on the command line for each instance of the "
+"cluster that is started up."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:43
+msgid ""
+":zeek:id:`Cluster::node_topic_prefix`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:43
+msgid ""
+"The topic prefix used for exchanging messages that are relevant to a "
+"named node in a cluster."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:45
+msgid ""
+":zeek:id:`Cluster::nodeid_topic_prefix`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:45
+msgid ""
+"The topic prefix used for exchanging messages that are relevant to a "
+"unique node in a cluster."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:47
+msgid ":zeek:id:`Cluster::nodes`: :zeek:type:`table` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:47
+msgid "The cluster layout definition."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:48
+msgid ":zeek:id:`Cluster::proxy_topic`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:48
+msgid ""
+"The topic name used for exchanging messages that are relevant to proxy "
+"nodes in a cluster."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:50
+msgid ""
+":zeek:id:`Cluster::retry_interval`: :zeek:type:`interval` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:50
+msgid "Interval for retrying failed connections between cluster nodes."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:51
+msgid ""
+":zeek:id:`Cluster::time_machine_topic`: :zeek:type:`string` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:51
+msgid ""
+"The topic name used for exchanging messages that are relevant to time "
+"machine nodes in a cluster."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:53
+msgid ":zeek:id:`Cluster::worker_topic`: :zeek:type:`string` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:53
+msgid ""
+"The topic name used for exchanging messages that are relevant to worker "
+"nodes in a cluster."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:58
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:277
+msgid "State Variables"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:60
+msgid ""
+":zeek:id:`Cluster::stores`: :zeek:type:`table` :zeek:attr:`&default` = "
+"*...* :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:60
+msgid ""
+"A table of cluster-enabled data stores that have been created, indexed by"
+" their name."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:62
+msgid ":zeek:id:`Cluster::worker_count`: :zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:62
+msgid ""
+"This gives the value for the number of workers currently connected to, "
+"and it's maintained internally by the cluster framework."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:67
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:303
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:69
+msgid ":zeek:type:`Cluster::Info`: :zeek:type:`record` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:69
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:318
+msgid "The record type which contains the column fields of the cluster log."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:70
+msgid ":zeek:type:`Cluster::Node`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:70
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:359
+msgid "Record type to indicate a node in a cluster."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:71
+msgid ":zeek:type:`Cluster::NodeType`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:71
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:398
+msgid ""
+"Types of nodes that are allowed to participate in the cluster "
+"configuration."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:73
+msgid ":zeek:type:`Cluster::StoreInfo`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:73
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:436
+msgid "Information regarding a cluster-enabled data store."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:77
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:79
+msgid ":zeek:type:`Log::ID`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:79
+msgid "The cluster logging stream identifier."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:81
+msgid ":zeek:enum:`Cluster::LOG`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:85
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:439
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:87
+msgid ":zeek:id:`Cluster::hello`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:87
+msgid ""
+"When using broker-enabled cluster framework, nodes broadcast this event "
+"to exchange their user-defined name along with a string that uniquely "
+"identifies it for the duration of its lifetime."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:90
+msgid ":zeek:id:`Cluster::node_down`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:90
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:453
+msgid ""
+"When using broker-enabled cluster framework, this event will be emitted "
+"locally whenever a connected cluster node becomes disconnected."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:92
+msgid ":zeek:id:`Cluster::node_up`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:92
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:460
+msgid ""
+"When using broker-enabled cluster framework, this event will be emitted "
+"locally whenever a cluster node connects or reconnects."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:97
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:464
+msgid "Hooks"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:99
+msgid ":zeek:id:`Cluster::log_policy`: :zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:99
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:469
+msgid "A default logging policy hook for the stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:103
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:472
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:105
+msgid ":zeek:id:`Cluster::create_store`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:105
+msgid "Sets up a cluster-enabled data store."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:106
+msgid ":zeek:id:`Cluster::is_enabled`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:106
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:495
+msgid ""
+"This function can be called at any time to determine if the cluster "
+"framework is being enabled for this run."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:108
+msgid ":zeek:id:`Cluster::local_node_type`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:108
+msgid ""
+"This function can be called at any time to determine what type of cluster"
+" node the current Zeek instance is going to be acting as."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:110
+msgid ":zeek:id:`Cluster::log`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:110
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:517
+msgid "Write a message to the cluster logging stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:111
+msgid ":zeek:id:`Cluster::node_topic`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:111
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:112
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:523
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:536
+msgid "Retrieve the topic associated with a specific node in the cluster."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:112
+msgid ":zeek:id:`Cluster::nodeid_topic`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:117
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:122
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:142
+msgid ":zeek:type:`Broker::BackendType`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:123
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:132
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:143
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:154
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:165
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:173
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:182
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:193
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:202
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:211
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:220
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:229
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:242
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:251
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:261
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:270
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:124
+msgid "``Broker::MEMORY``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:131
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:153
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:172
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:192
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:201
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:210
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:219
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:241
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:260
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:269
+msgid ":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:133
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:155
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:203
+msgid "``\"\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:135
+msgid ""
+"Name of the node on which master data stores will be created if no other "
+"has already been specified by the user in :zeek:see:`Cluster::stores`. An"
+" empty value means \"use whatever name corresponds to the manager node\"."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:144
+msgid "``Broker::SQLITE``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:146
+msgid ""
+"The type of persistent data store backend that will be used for all data "
+"stores if no other has already been specified by the user in "
+":zeek:see:`Cluster::stores`.  This will be used when script authors call "
+":zeek:see:`Cluster::create_store` with the *persistent* argument set "
+"true."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:164
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:181
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:166
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:183
+msgid "``T``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:174
+msgid "``\"zeek/cluster/logger\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:176
+msgid ""
+"The topic name used for exchanging messages that are relevant to logger "
+"nodes in a cluster.  Used with broker-enabled cluster communication."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:185
+msgid ""
+"Indicates whether or not the manager will act as the logger and receive "
+"logs.  This value should be set in the cluster-layout.zeek script (the "
+"value should be true only if no logger is specified in Cluster::nodes). "
+"Note that ZeekControl handles this automatically."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:194
+msgid "``\"zeek/cluster/manager\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:196
+msgid ""
+"The topic name used for exchanging messages that are relevant to manager "
+"nodes in a cluster.  Used with broker-enabled cluster communication."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:212
+msgid "``\"zeek/cluster/node/\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:214
+msgid ""
+"The topic prefix used for exchanging messages that are relevant to a "
+"named node in a cluster.  Used with broker-enabled cluster communication."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:221
+msgid "``\"zeek/cluster/nodeid/\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:223
+msgid ""
+"The topic prefix used for exchanging messages that are relevant to a "
+"unique node in a cluster.  Used with broker-enabled cluster "
+"communication."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:228
+msgid ":zeek:type:`table` [:zeek:type:`string`] of :zeek:type:`Cluster::Node`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:230
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:282
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:232
+msgid ""
+"The cluster layout definition.  This should be placed into a filter named"
+" cluster-layout.zeek somewhere in the ZEEKPATH.  It will be automatically"
+" loaded if the CLUSTER_NODE environment variable is set. Note that "
+"ZeekControl handles all of this automatically. The table is typically "
+"indexed by node names/labels (e.g. \"manager\" or \"worker-1\")."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:243
+msgid "``\"zeek/cluster/proxy\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:245
+msgid ""
+"The topic name used for exchanging messages that are relevant to proxy "
+"nodes in a cluster.  Used with broker-enabled cluster communication."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:250
+msgid ":zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:252
+msgid "``1.0 min``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:254
+msgid ""
+"Interval for retrying failed connections between cluster nodes. If set, "
+"the ZEEK_DEFAULT_CONNECT_RETRY (given in number of seconds) environment "
+"variable overrides this option."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:262
+msgid "``\"zeek/cluster/time_machine\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:264
+msgid ""
+"The topic name used for exchanging messages that are relevant to time "
+"machine nodes in a cluster.  Used with broker-enabled cluster "
+"communication."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:271
+msgid "``\"zeek/cluster/worker\"``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:273
+msgid ""
+"The topic name used for exchanging messages that are relevant to worker "
+"nodes in a cluster.  Used with broker-enabled cluster communication."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:280
+msgid ""
+":zeek:type:`table` [:zeek:type:`string`] of "
+":zeek:type:`Cluster::StoreInfo`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:281
+msgid ""
+":zeek:attr:`&default` = *[name=<uninitialized>, store=<uninitialized>, "
+"master_node=, master=F, backend=Broker::MEMORY, options=[sqlite=[path=], "
+"rocksdb=[path=]], clone_resync_interval=10.0 secs, "
+"clone_stale_interval=5.0 mins, clone_mutation_buffer_interval=2.0 mins]* "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:284
+msgid ""
+"A table of cluster-enabled data stores that have been created, indexed by"
+" their name.  This table will be populated automatically by "
+":zeek:see:`Cluster::create_store`, but if you need to customize the "
+"options related to a particular data store, you may redef this table.  "
+"Calls to :zeek:see:`Cluster::create_store` will first check the table for"
+" an entry of the same name and, if found, will use the predefined options"
+" there when setting up the store."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:294
+msgid ":zeek:type:`count`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:295
+msgid "``0``"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:297
+msgid ""
+"This gives the value for the number of workers currently connected to, "
+"and it's maintained internally by the cluster framework.  It's primarily "
+"intended for use by managers to find out how many workers should be "
+"responding to requests."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:306
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:322
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:403
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:309
+msgid "ts: :zeek:type:`time` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:309
+msgid "The time at which a cluster message was generated."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:312
+msgid "node: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:312
+msgid "The name of the node that is creating the log record."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:314
+msgid "message: :zeek:type:`string` :zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:315
+msgid "A message indicating information about the cluster's operation."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:316
+msgid ":zeek:attr:`&log`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:325
+msgid "node_type: :zeek:type:`Cluster::NodeType`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:325
+msgid "Identifies the type of cluster node in this node's configuration."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:328
+msgid "ip: :zeek:type:`addr`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:328
+msgid "The IP address of the cluster node."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:332
+msgid ""
+"zone_id: :zeek:type:`string` :zeek:attr:`&default` = ``\"\"`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:331
+msgid ""
+"If the *ip* field is a non-global IPv6 address, this field can specify a "
+"particular :rfc:`4007` ``zone_id``."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:336
+msgid ""
+"p: :zeek:type:`port` :zeek:attr:`&default` = ``0/unknown`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:335
+msgid ""
+"The port that this node will listen on for peer connections. A value of "
+"``0/unknown`` means the node is not pre-configured to listen."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:339
+msgid "interface: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:339
+msgid "Identifier for the interface a worker is sniffing."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:342
+msgid "manager: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:342
+msgid "Name of the manager node this node uses.  For workers and proxies."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:345
+msgid "time_machine: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:345
+msgid "Name of a time machine node with which this node connects."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:349
+msgid "id: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:348
+msgid ""
+"A unique identifier assigned to the node by the broker framework. This "
+"field is only set while a node is connected."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:357
+msgid "lb_filter: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:352
+msgid "(present if :doc:`/scripts/policy/misc/load-balancing.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:354
+msgid ""
+"A BPF filter for load balancing traffic sniffed on a single interface "
+"across a number of processes.  In normal uses, this will be assigned "
+"dynamically by the manager and installed by the workers."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:363
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:367
+msgid ""
+"A dummy node type indicating the local node is not operating within a "
+"cluster."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:372
+msgid ""
+"A node type which is allowed to view/manipulate the configuration of "
+"other nodes in the cluster."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:377
+msgid "A node type responsible for log management."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:381
+msgid "A node type responsible for policy management."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:385
+msgid ""
+"A node type for relaying worker node communication and synchronizing "
+"worker node state."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:390
+msgid "The node type doing all the actual traffic analysis."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:394
+msgid ""
+"A node acting as a traffic recorder using the `Time Machine "
+"<https://www.zeek.org/community/time-machine.html>`_ software."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:406
+msgid "name: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:406
+msgid "The name of the data store."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:409
+msgid "store: :zeek:type:`opaque` of Broker::Store :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:409
+msgid "The store handle."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:413
+msgid ""
+"master_node: :zeek:type:`string` :zeek:attr:`&default` = "
+":zeek:see:`Cluster::default_master_node` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:412
+msgid ""
+"The name of the cluster node on which the master version of the data "
+"store resides."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:416
+msgid ""
+"master: :zeek:type:`bool` :zeek:attr:`&default` = ``F`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:416
+msgid "Whether the data store is the master version or a clone."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:419
+msgid ""
+"backend: :zeek:type:`Broker::BackendType` :zeek:attr:`&default` = "
+":zeek:see:`Cluster::default_backend` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:419
+msgid "The type of backend used for storing data."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:422
+msgid ""
+"options: :zeek:type:`Broker::BackendOptions` :zeek:attr:`&default` = "
+"*[sqlite=[path=], rocksdb=[path=]]* :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:422
+msgid "Parameters used for configuring the backend."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:426
+msgid ""
+"clone_resync_interval: :zeek:type:`interval` :zeek:attr:`&default` = "
+":zeek:see:`Broker::default_clone_resync_interval` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:425
+msgid ""
+"A resync/reconnect interval to pass through to "
+":zeek:see:`Broker::create_clone`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:430
+msgid ""
+"clone_stale_interval: :zeek:type:`interval` :zeek:attr:`&default` = "
+":zeek:see:`Broker::default_clone_stale_interval` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:429
+msgid "A staleness duration to pass through to :zeek:see:`Broker::create_clone`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:434
+msgid ""
+"clone_mutation_buffer_interval: :zeek:type:`interval` "
+":zeek:attr:`&default` = "
+":zeek:see:`Broker::default_clone_mutation_buffer_interval` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:433
+msgid ""
+"A mutation buffer interval to pass through to "
+":zeek:see:`Broker::create_clone`."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:442
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:451
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:458
+msgid ":zeek:type:`event` (name: :zeek:type:`string`, id: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:444
+msgid ""
+"When using broker-enabled cluster framework, nodes broadcast this event "
+"to exchange their user-defined name along with a string that uniquely "
+"identifies it for the duration of its lifetime.  This string may change "
+"if the node dies and has to reconnect later."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:467
+msgid ":zeek:type:`Log::PolicyHook`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:475
+msgid ""
+":zeek:type:`function` (name: :zeek:type:`string`, persistent: "
+":zeek:type:`bool` :zeek:attr:`&default` = ``F`` :zeek:attr:`&optional`) :"
+" :zeek:type:`Cluster::StoreInfo`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:477
+msgid ""
+"Sets up a cluster-enabled data store.  They will also still properly "
+"function for uses that are not operating a cluster."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst
+msgid "name"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:481
+msgid "the name of the data store to create."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst
+msgid "persistent"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:484
+msgid "whether the data store must be persistent."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:487
+msgid ""
+"the store's information.  For master stores, the store will be ready to "
+"use immediately.  For clones, the store field will not be set until the "
+"node containing the master store has connected."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:493
+msgid ":zeek:type:`function` () : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:499
+msgid "True if :zeek:id:`Cluster::node` has been set."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:503
+msgid ":zeek:type:`function` () : :zeek:type:`Cluster::NodeType`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:505
+msgid ""
+"This function can be called at any time to determine what type of cluster"
+" node the current Zeek instance is going to be acting as. If "
+":zeek:id:`Cluster::is_enabled` returns false, then "
+":zeek:enum:`Cluster::NONE` is returned."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:511
+msgid "The :zeek:type:`Cluster::NodeType` the calling node acts as."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:515
+msgid ":zeek:type:`function` (msg: :zeek:type:`string`) : :zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:521
+msgid ":zeek:type:`function` (name: :zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:526
+msgid "the name of the cluster node (e.g. \"manager\")."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:529
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:543
+msgid ""
+"a topic string that may used to send a message exclusively to a given "
+"cluster node."
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:534
+msgid ":zeek:type:`function` (id: :zeek:type:`string`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst
+msgid "id"
+msgstr ""
+
+#: ../../scripts/base/frameworks/cluster/main.zeek.rst:539
+msgid ""
+"the id of the cluster node (from :zeek:see:`Broker::EndpointInfo` or "
+":zeek:see:`Broker::node_id`."
+msgstr ""
+

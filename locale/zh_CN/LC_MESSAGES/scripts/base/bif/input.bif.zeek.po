@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/input.bif.zeek.rst:4
+msgid "base/bif/input.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/input.bif.zeek.rst:8
+msgid "Internal functions and types used by the input framework."
+msgstr ""
+
+#: ../../scripts/base/bif/input.bif.zeek.rst
+msgid "Namespaces"
+msgstr ""
+
+#: ../../scripts/base/bif/input.bif.zeek.rst:10
+msgid "GLOBAL, Input"
+msgstr ""
+
+#: ../../scripts/base/bif/input.bif.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/input.bif.zeek.rst:15
+#: ../../scripts/base/bif/input.bif.zeek.rst:28
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/bif/input.bif.zeek.rst:17
+msgid ":zeek:id:`Input::__create_analysis_stream`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/input.bif.zeek.rst:18
+msgid ":zeek:id:`Input::__create_event_stream`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/input.bif.zeek.rst:19
+msgid ":zeek:id:`Input::__create_table_stream`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/input.bif.zeek.rst:20
+msgid ":zeek:id:`Input::__force_update`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/input.bif.zeek.rst:21
+msgid ":zeek:id:`Input::__remove_stream`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/bif/input.bif.zeek.rst:26
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/input.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/input.bif.zeek.rst:31
+msgid ""
+":zeek:type:`function` (description: "
+":zeek:type:`Input::AnalysisDescription`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/input.bif.zeek.rst:36
+msgid ""
+":zeek:type:`function` (description: :zeek:type:`Input::EventDescription`)"
+" : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/input.bif.zeek.rst:41
+msgid ""
+":zeek:type:`function` (description: :zeek:type:`Input::TableDescription`)"
+" : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/bif/input.bif.zeek.rst:46
+#: ../../scripts/base/bif/input.bif.zeek.rst:51
+msgid ":zeek:type:`function` (id: :zeek:type:`string`) : :zeek:type:`bool`"
+msgstr ""
+

@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:4
+msgid "base/utils/directions-and-hosts.zeek"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:7
+msgid ":doc:`base/utils/site.zeek </scripts/base/utils/site.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:10
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:12
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:30
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:14
+msgid ":zeek:type:`Direction`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:15
+msgid ":zeek:type:`Host`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:19
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:77
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:21
+msgid ":zeek:id:`addr_matches_host`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:21
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:82
+msgid "Checks whether a given host (IP address) matches a given host type."
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:22
+msgid ":zeek:id:`id_matches_direction`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:22
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:97
+msgid ""
+"Checks whether a given connection is of a given direction with respect to"
+" the locally-monitored network."
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:28
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:33
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:57
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:37
+msgid ""
+"The connection originator is not within the locally-monitored network, "
+"but the other endpoint is."
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:42
+msgid ""
+"The connection originator is within the locally-monitored network, but "
+"the other endpoint is not."
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:47
+msgid ""
+"Only one endpoint is within the locally-monitored network, meaning the "
+"connection is either outbound or inbound."
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:52
+msgid "This value doesn't match any connection."
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:61
+msgid "A host within the locally-monitored network."
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:65
+msgid "A host not within the locally-monitored network."
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:69
+msgid "Any host."
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:73
+msgid "This value doesn't match any host."
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:80
+msgid ""
+":zeek:type:`function` (ip: :zeek:type:`addr`, h: :zeek:type:`Host`) : "
+":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst
+msgid "ip"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:85
+msgid "address of a host."
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst
+msgid "h"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:88
+msgid "a host type."
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:91
+msgid "T if the given host matches the given type, else F."
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:95
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`conn_id`, d: "
+":zeek:type:`Direction`) : :zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst
+msgid "id"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:101
+msgid "a connection record containing the originator/responder hosts."
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst
+msgid "d"
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:104
+msgid "a direction with respect to the locally-monitored network."
+msgstr ""
+
+#: ../../scripts/base/utils/directions-and-hosts.zeek.rst:107
+msgid "T if the two connection endpoints match the given direction, else F."
+msgstr ""
+

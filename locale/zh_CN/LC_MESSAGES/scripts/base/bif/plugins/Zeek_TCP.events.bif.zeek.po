@@ -1,0 +1,695 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_TCP.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:53
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:15
+msgid ":zeek:id:`connection_EOF`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:15
+msgid "Generated at the end of reassembled TCP connections."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:16
+msgid ":zeek:id:`connection_SYN_packet`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:16
+msgid "Generated for a SYN packet."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:17
+msgid ":zeek:id:`connection_attempt`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:17
+msgid "Generated for an unsuccessful connection attempt."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:18
+msgid ":zeek:id:`connection_established`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:18
+msgid ""
+"Generated when seeing a SYN-ACK packet from the responder in a TCP "
+"handshake."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:20
+msgid ":zeek:id:`connection_finished`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:20
+msgid "Generated for a TCP connection that finished normally."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:21
+msgid ":zeek:id:`connection_first_ACK`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:21
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:166
+msgid ""
+"Generated for the first ACK packet seen for a TCP connection from its "
+"*originator*."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:23
+msgid ":zeek:id:`connection_half_finished`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:23
+msgid ""
+"Generated when one endpoint of a TCP connection attempted to gracefully "
+"close the connection, but the other endpoint is in the TCP_INACTIVE "
+"state."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:25
+msgid ":zeek:id:`connection_partial_close`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:25
+msgid ""
+"Generated when a previously inactive endpoint attempts to close a TCP "
+"connection via a normal FIN handshake or an abort RST sequence."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:27
+msgid ":zeek:id:`connection_pending`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:27
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:225
+msgid "Generated for each still-open TCP connection when Zeek terminates."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:28
+msgid ":zeek:id:`connection_rejected`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:28
+msgid "Generated for a rejected TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:29
+msgid ":zeek:id:`connection_reset`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:29
+msgid "Generated when an endpoint aborted a TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:30
+msgid ":zeek:id:`contents_file_write_failure`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:30
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:285
+msgid "Generated when failing to write contents of a TCP stream to a file."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:31
+msgid ":zeek:id:`new_connection_contents`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:31
+msgid "Generated when reassembly starts for a TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:32
+msgid ":zeek:id:`partial_connection`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:32
+msgid ""
+"Generated for a new active TCP connection if Zeek did not see the initial"
+" handshake."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:34
+msgid ":zeek:id:`tcp_contents`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:34
+msgid "Generated for each chunk of reassembled TCP payload."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:35
+msgid ":zeek:id:`tcp_multiple_checksum_errors`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:35
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:379
+msgid ""
+"Generated if a TCP flow crosses a checksum-error threshold, per 'C'/'c' "
+"history reporting."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:37
+msgid ":zeek:id:`tcp_multiple_gap`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:37
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:398
+msgid ""
+"Generated if a TCP flow crosses a gap threshold, per 'G'/'g' history "
+"reporting."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:39
+msgid ":zeek:id:`tcp_multiple_retransmissions`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:39
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:416
+msgid ""
+"Generated if a TCP flow crosses a retransmission threshold, per 'T'/'t' "
+"history reporting."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:41
+msgid ":zeek:id:`tcp_multiple_zero_windows`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:41
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:434
+msgid ""
+"Generated if a TCP flow crosses a zero-window threshold, per 'W'/'w' "
+"history reporting."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:43
+msgid ":zeek:id:`tcp_option`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:43
+msgid "Generated for each option found in a TCP header."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:44
+msgid ":zeek:id:`tcp_options`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:44
+msgid "Generated for each TCP header that contains TCP options."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:45
+msgid ":zeek:id:`tcp_packet`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:45
+msgid "Generated for every TCP packet."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:46
+msgid ":zeek:id:`tcp_rexmit`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:46
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:532
+msgid "Generated for each detected TCP segment retransmission."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:51
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:56
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:58
+msgid ""
+"Generated at the end of reassembled TCP connections. The TCP reassembler "
+"raised the event once for each endpoint of a connection when it finished "
+"reassembling the corresponding side of the communication."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:63
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:83
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:114
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:136
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:153
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:170
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:192
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:212
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:228
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:246
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:271
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:307
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:326
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:66
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:386
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:405
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:423
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:441
+msgid "True if the event is raised for the originator side."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:77
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, pkt: "
+":zeek:type:`SYN_packet`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:79
+msgid ""
+"Generated for a SYN packet. Zeek raises this event for every SYN packet "
+"seen by its TCP analyzer."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "pkt"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:86
+msgid "Information extracted from the SYN packet."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:97
+msgid ""
+"This event has quite low-level semantics and can potentially be expensive"
+" to generate. It should only be used if one really needs the specific "
+"information passed into the handler via the ``pkt`` argument. If not, "
+"handling one of the other ``connection_*`` events is typically the better"
+" approach."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:105
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:125
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:147
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:164
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:185
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:203
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:223
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:239
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:264
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:300
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:318
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:107
+msgid ""
+"Generated for an unsuccessful connection attempt. This event is raised "
+"when an originator unsuccessfully attempted to establish a connection. "
+"\"Unsuccessful\" is defined as at least :zeek:id:`tcp_attempt_delay` "
+"seconds having elapsed since the originator first sent a connection "
+"establishment packet to the destination without seeing a reply."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:127
+msgid ""
+"Generated when seeing a SYN-ACK packet from the responder in a TCP "
+"handshake.  An associated SYN packet was not seen from the originator "
+"side if its state is not set to :zeek:see:`TCP_ESTABLISHED`. The final "
+"ACK of the handshake in response to SYN-ACK may or may not occur later, "
+"one way to tell is to check the *history* field of "
+":zeek:type:`connection` to see if the originator sent an ACK, indicated "
+"by 'A' in the history string."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:149
+msgid ""
+"Generated for a TCP connection that finished normally. The event is "
+"raised when a regular FIN handshake from both endpoints was observed."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:181
+msgid "This event has quite low-level semantics and should be used only rarely."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:187
+msgid ""
+"Generated when one endpoint of a TCP connection attempted to gracefully "
+"close the connection, but the other endpoint is in the TCP_INACTIVE "
+"state. This can happen due to split routing, in which Zeek only sees one "
+"side of a connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:205
+msgid ""
+"Generated when a previously inactive endpoint attempts to close a TCP "
+"connection via a normal FIN handshake or an abort RST sequence. When the "
+"endpoint sent one of these packets, Zeek waits "
+":zeek:id:`tcp_partial_close_delay` prior to generating the event, to give"
+" the other endpoint a chance to close the connection normally."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:241
+msgid ""
+"Generated for a rejected TCP connection. This event is raised when an "
+"originator attempted to setup a TCP connection but the responder replied "
+"with a RST packet denying it."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:257
+msgid ""
+"If the responder does not respond at all, :zeek:id:`connection_attempt` "
+"is raised instead. If the responder initially accepts the connection but "
+"aborts it later, Zeek first generates :zeek:id:`connection_established` "
+"and then :zeek:id:`connection_reset`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:266
+msgid ""
+"Generated when an endpoint aborted a TCP connection. The event is raised "
+"when one endpoint of an established TCP connection aborted by sending a "
+"RST packet."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:283
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, msg: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:288
+msgid "The connection whose contents are being recorded."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:291
+msgid "Which side of the connection encountered a failure to write."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "msg"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:294
+msgid "A reason or description for the failure."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:302
+msgid ""
+"Generated when reassembly starts for a TCP connection. This event is "
+"raised at the moment when Zeek's TCP analyzer enables stream reassembly "
+"for a connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:320
+msgid ""
+"Generated for a new active TCP connection if Zeek did not see the initial"
+" handshake. This event is raised when Zeek has observed traffic from each"
+" endpoint, but the activity did not begin with the usual connection "
+"establishment."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:338
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, seq: :zeek:type:`count`, contents: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:340
+msgid ""
+"Generated for each chunk of reassembled TCP payload. When content "
+"delivery is enabled for a TCP connection (via "
+":zeek:id:`tcp_content_delivery_ports_orig`, "
+":zeek:id:`tcp_content_delivery_ports_resp`, "
+":zeek:id:`tcp_content_deliver_all_orig`, "
+":zeek:id:`tcp_content_deliver_all_resp`), this event is raised for each "
+"chunk of in-order payload reconstructed from the packet stream. Note that"
+" this event is potentially expensive if many connections carry "
+"significant amounts of data as then all that data needs to be passed on "
+"to the scripting layer."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:350
+msgid "The connection the payload is part of."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:353
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:460
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:483
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:505
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:538
+msgid "True if the packet was sent by the connection's originator."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "seq"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:356
+msgid "The sequence number corresponding to the first byte of the payload chunk."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "contents"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:360
+msgid "The raw payload, which will be non-empty."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:368
+msgid ""
+"The payload received by this event is the same that is also passed into "
+"application-layer protocol analyzers internally. Subsequent invocations "
+"of this event for the same connection receive non-overlapping in-order "
+"chunks of its TCP payload stream. It is however undefined what size each "
+"chunk has; while Zeek passes the data on as soon as possible, specifics "
+"depend on network-level effects such as latency, acknowledgements, "
+"reordering, etc."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:377
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:396
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:414
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:432
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, threshold: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:383
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:402
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:420
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:438
+msgid "The connection record for the TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "threshold"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:389
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:408
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:426
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:444
+msgid "the threshold that was crossed"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:450
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, opt: :zeek:type:`count`, optlen: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:452
+msgid ""
+"Generated for each option found in a TCP header. Like many of the "
+"``tcp_*`` events, this is a very low-level event and potentially "
+"expensive as it may be raised very often."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:457
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:480
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:502
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:535
+msgid "The connection the packet is part of."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "opt"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:463
+msgid "The numerical option number, as found in the TCP header."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "optlen"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:466
+msgid "The length of the options value."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:470
+msgid "To inspect the actual option values, if any, use :zeek:see:`tcp_options`."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:474
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, options: :zeek:type:`TCP::OptionList`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:476
+msgid ""
+"Generated for each TCP header that contains TCP options.  This is a very "
+"low-level event and potentially expensive as it may be raised very often."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "options"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:486
+msgid "The list of options parsed out of the TCP header."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:492
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, flags: :zeek:type:`string`, seq: :zeek:type:`count`, "
+"ack: :zeek:type:`count`, len: :zeek:type:`count`, payload: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:494
+msgid ""
+"Generated for every TCP packet. This is a very low-level and expensive "
+"event that should be avoided when at all possible. It's usually "
+"infeasible to handle when processing even medium volumes of traffic in "
+"real-time.  It's slightly better than :zeek:id:`new_packet` because it "
+"affects only TCP, but not much. That said, if you work from a trace and "
+"want to do some packet-level analysis, it may come in handy."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "flags"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:508
+msgid ""
+"A string with the packet's TCP flags. In the string, each character "
+"corresponds to one set flag, as follows: ``S`` -> SYN; ``F`` -> FIN; "
+"``R`` -> RST; ``A`` -> ACK; ``P`` -> PUSH; ``U`` -> URGENT."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:513
+msgid "The packet's relative TCP sequence number."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "ack"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:516
+msgid ""
+"If the ACK flag is set for the packet, the packet's relative ACK number, "
+"else zero."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "len"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:520
+msgid "The length of the TCP payload, as specified in the packet header."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "payload"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:523
+msgid ""
+"The raw TCP payload. Note that this may be shorter than *len* if the "
+"packet was not fully captured."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:530
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, seq: :zeek:type:`count`, len: :zeek:type:`count`, "
+"data_in_flight: :zeek:type:`count`, window: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:541
+msgid "The segment's relative TCP sequence number."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:544
+msgid "The length of the TCP segment, as specified in the packet header."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "data_in_flight"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:547
+msgid ""
+"The number of bytes corresponding to the difference between the last "
+"sequence number and last acknowledgement number we've seen for a given "
+"endpoint."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst
+msgid "window"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek.rst:552
+msgid "the TCP window size."
+msgstr ""
+

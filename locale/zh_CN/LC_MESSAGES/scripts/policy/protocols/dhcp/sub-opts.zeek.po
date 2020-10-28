@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/protocols/dhcp/sub-opts.zeek.rst:4
+msgid "policy/protocols/dhcp/sub-opts.zeek"
+msgstr ""
+
+#: ../../scripts/policy/protocols/dhcp/sub-opts.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/protocols/dhcp/sub-opts.zeek.rst:8
+msgid "DHCP"
+msgstr ""
+
+#: ../../scripts/policy/protocols/dhcp/sub-opts.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/protocols/dhcp/sub-opts.zeek.rst:9
+msgid ":doc:`base/protocols/dhcp </scripts/base/protocols/dhcp/index>`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/dhcp/sub-opts.zeek.rst:12
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/protocols/dhcp/sub-opts.zeek.rst:14
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/protocols/dhcp/sub-opts.zeek.rst:16
+msgid ":zeek:type:`DHCP::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/dhcp/sub-opts.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/policy/protocols/dhcp/sub-opts.zeek.rst:18
+msgid ":zeek:type:`DHCP::Info`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/dhcp/sub-opts.zeek.rst:22
+msgid "circuit_id: :zeek:type:`string` :zeek:attr:`&log` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/dhcp/sub-opts.zeek.rst:21
+msgid "Added by DHCP relay agents which terminate switched or permanent circuits."
+msgstr ""
+
+#: ../../scripts/policy/protocols/dhcp/sub-opts.zeek.rst:26
+msgid ""
+"agent_remote_id: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/dhcp/sub-opts.zeek.rst:25
+msgid ""
+"A globally unique identifier added by relay agents to identify the remote"
+" host end of the circuit."
+msgstr ""
+
+#: ../../scripts/policy/protocols/dhcp/sub-opts.zeek.rst:31
+msgid ""
+"subscriber_id: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/dhcp/sub-opts.zeek.rst:29
+msgid ""
+"The subscriber ID is a value independent of the physical network "
+"configuration so that a customer's DHCP configuration can be given to "
+"them correctly no matter where they are physically connected."
+msgstr ""
+
+#: ../../scripts/policy/protocols/dhcp/sub-opts.zeek.rst:37
+msgid "Detailed Interface"
+msgstr ""
+

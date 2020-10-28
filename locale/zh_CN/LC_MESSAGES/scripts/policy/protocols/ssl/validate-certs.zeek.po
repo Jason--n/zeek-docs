@@ -1,0 +1,265 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:4
+msgid "policy/protocols/ssl/validate-certs.zeek"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:7
+msgid "Perform full certificate chain validation for SSL certificates."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:9
+msgid "SSL"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:10
+msgid ""
+":doc:`base/frameworks/cluster </scripts/base/frameworks/cluster/index>`, "
+":doc:`base/frameworks/notice </scripts/base/frameworks/notice/index>`, "
+":doc:`base/protocols/ssl </scripts/base/protocols/ssl/index>`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:15
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:62
+msgid "State Variables"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:17
+msgid ""
+":zeek:id:`SSL::recently_validated_certs`: :zeek:type:`table` "
+":zeek:attr:`&read_expire` = ``5.0 mins`` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:17
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:69
+msgid ""
+"Result values for recently validated chains along with the validation "
+"status are kept in this table to avoid constant validation every time the"
+" same certificate chain is seen."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:20
+msgid ""
+":zeek:id:`SSL::ssl_cache_intermediate_ca`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:20
+msgid ""
+"Use intermediate CA certificate caching when trying to validate "
+"certificates."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:22
+msgid ""
+":zeek:id:`SSL::ssl_store_valid_chain`: :zeek:type:`bool` "
+":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:22
+msgid "Store the valid chain in c$ssl$valid_chain if validation succeeds."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:26
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:28
+msgid ":zeek:type:`Notice::Type`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:30
+msgid ""
+":zeek:enum:`SSL::Invalid_Server_Cert`: This notice indicates that the "
+"result of validating the certificate along with its full certificate "
+"chain was invalid."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:34
+msgid ":zeek:type:`SSL::Info`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:36
+msgid ":zeek:type:`SSL::Info`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:39
+msgid ""
+"validation_status: :zeek:type:`string` :zeek:attr:`&log` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:39
+msgid "Result of certificate validation for this connection."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:43
+msgid "validation_code: :zeek:type:`int` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:42
+msgid ""
+"Result of certificate validation for this connection, given as OpenSSL "
+"validation code."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:45
+msgid ""
+"valid_chain: :zeek:type:`vector` of :zeek:type:`opaque` of x509 "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:46
+msgid "Ordered chain of validated certificate, if validation succeeded."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:50
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:107
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:52
+msgid ":zeek:id:`SSL::intermediate_add`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:52
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:112
+msgid ""
+"Event from a manager to workers when encountering a new, valid "
+"intermediate."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:54
+msgid ":zeek:id:`SSL::new_intermediate`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:54
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:119
+msgid ""
+"Event from workers to the manager when a new intermediate chain is to be "
+"added."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:60
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:65
+msgid ":zeek:type:`table` [:zeek:type:`string`] of :zeek:type:`X509::Result`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst
+msgid "Attributes"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:66
+msgid ":zeek:attr:`&read_expire` = ``5.0 mins`` :zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst
+msgid "Default"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:67
+msgid "``{}``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:75
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:92
+msgid ":zeek:type:`bool`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:76
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:93
+msgid ":zeek:attr:`&redef`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:77
+msgid "``T``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:79
+msgid ""
+"Use intermediate CA certificate caching when trying to validate "
+"certificates. When this is enabled, Zeek keeps track of all valid "
+"intermediate CA certificates that it has seen in the past. When "
+"encountering a host certificate that cannot be validated because of "
+"missing intermediate CA certificate, the cached list is used to try to "
+"validate the cert. This is similar to how Firefox is doing certificate "
+"validation."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:87
+msgid ""
+"Disabling this will usually greatly increase the number of validation "
+"warnings that you encounter. Only disable if you want to find "
+"misconfigured servers."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:94
+msgid "``F``"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst
+msgid "Redefinition"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:95
+msgid "from :doc:`/scripts/policy/protocols/ssl/validate-sct.zeek`"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:97
+msgid "``=``::"
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:102
+msgid ""
+"Store the valid chain in c$ssl$valid_chain if validation succeeds. This "
+"has a potentially high memory impact, depending on the local environment "
+"and is thus disabled by default."
+msgstr ""
+
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:110
+#: ../../scripts/policy/protocols/ssl/validate-certs.zeek.rst:117
+msgid ""
+":zeek:type:`event` (key: :zeek:type:`string`, value: :zeek:type:`vector` "
+"of :zeek:type:`opaque` of x509)"
+msgstr ""
+

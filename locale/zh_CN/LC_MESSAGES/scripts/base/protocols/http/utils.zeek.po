@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:4
+msgid "base/protocols/http/utils.zeek"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:7
+msgid "Utilities specific for HTTP processing."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:9
+msgid "HTTP"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst
+msgid "Imports"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:10
+msgid ""
+":doc:`base/protocols/http/main.zeek "
+"</scripts/base/protocols/http/main.zeek>`, :doc:`base/utils/addrs.zeek "
+"</scripts/base/utils/addrs.zeek>`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:13
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:15
+#: ../../scripts/base/protocols/http/utils.zeek.rst:28
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:17
+msgid ":zeek:id:`HTTP::build_url`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:17
+#: ../../scripts/base/protocols/http/utils.zeek.rst:18
+msgid "Creates a URL from an :zeek:type:`HTTP::Info` record."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:18
+msgid ":zeek:id:`HTTP::build_url_http`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:19
+msgid ":zeek:id:`HTTP::describe`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:19
+#: ../../scripts/base/protocols/http/utils.zeek.rst:59
+msgid "Create an extremely shortened representation of a log line."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:20
+msgid ":zeek:id:`HTTP::extract_keys`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:20
+#: ../../scripts/base/protocols/http/utils.zeek.rst:65
+msgid ""
+"Given a string containing a series of key-value pairs separated by \"=\","
+" this function can be used to parse out all of the key names."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:26
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:31
+#: ../../scripts/base/protocols/http/utils.zeek.rst:44
+#: ../../scripts/base/protocols/http/utils.zeek.rst:57
+msgid ":zeek:type:`function` (rec: :zeek:type:`HTTP::Info`) : :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:33
+#: ../../scripts/base/protocols/http/utils.zeek.rst:46
+msgid ""
+"Creates a URL from an :zeek:type:`HTTP::Info` record.  This should handle"
+" edge cases such as proxied requests appropriately."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst
+msgid "rec"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:37
+#: ../../scripts/base/protocols/http/utils.zeek.rst:50
+msgid "An :zeek:type:`HTTP::Info` record."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:40
+msgid "A URL, not prefixed by ``\"http://\"``."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:53
+msgid "A URL prefixed with ``\"http://\"``."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:63
+msgid ""
+":zeek:type:`function` (data: :zeek:type:`string`, kv_splitter: "
+":zeek:type:`pattern`) : :zeek:type:`string_vec`"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst
+msgid "data"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:69
+msgid "The raw data, such as a URL or cookie value."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst
+msgid "kv_splitter"
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:72
+msgid "A regular expression representing the separator between key-value pairs."
+msgstr ""
+
+#: ../../scripts/base/protocols/http/utils.zeek.rst:76
+msgid "A vector of strings containing the keys."
+msgstr ""
+

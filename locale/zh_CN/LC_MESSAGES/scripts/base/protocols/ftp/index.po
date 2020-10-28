@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/protocols/ftp/index.rst:4
+msgid "Package: base/protocols/ftp"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/index.rst:6
+msgid "Support for File Transfer Protocol (FTP) analysis."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/index.rst:8
+msgid ":doc:`/scripts/base/protocols/ftp/__load__.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/index.rst:11
+msgid ":doc:`/scripts/base/protocols/ftp/utils-commands.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/index.rst:14
+msgid ":doc:`/scripts/base/protocols/ftp/info.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/index.rst:16
+msgid "Defines data structures for tracking and logging FTP sessions."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/index.rst:18
+msgid ":doc:`/scripts/base/protocols/ftp/main.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/index.rst:20
+msgid ""
+"The logging this script does is primarily focused on logging FTP commands"
+" along with metadata.  For example, if files are transferred, the "
+"argument will take on the full path that the client is at along with the "
+"requested file name."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/index.rst:25
+msgid ":doc:`/scripts/base/protocols/ftp/utils.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/index.rst:27
+msgid "Utilities specific for FTP processing."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/index.rst:29
+msgid ":doc:`/scripts/base/protocols/ftp/files.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/index.rst:32
+msgid ":doc:`/scripts/base/protocols/ftp/gridftp.zeek`"
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/index.rst:34
+msgid "A detection script for GridFTP data and control channels."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/index.rst:36
+msgid ""
+"GridFTP control channels are identified by FTP control channels that "
+"successfully negotiate the GSSAPI method of an AUTH request and for which"
+" the exchange involved an encoded TLS/SSL handshake, indicating the GSI "
+"mechanism for GSSAPI was used.  This analysis is all supported "
+"internally, this script simply adds the \"gridftp\" label to the "
+"*service* field of the control channel's :zeek:type:`connection` record."
+msgstr ""
+
+#: ../../scripts/base/protocols/ftp/index.rst:44
+msgid ""
+"GridFTP data channels are identified by a heuristic that relies on the "
+"fact that default settings for GridFTP clients typically mutually "
+"authenticate the data channel with TLS/SSL and negotiate a NULL bulk "
+"cipher (no encryption). Connections with those attributes are marked as "
+"GridFTP if the data transfer within the first two minutes is big enough "
+"to indicate a GripFTP data channel that would be undesirable to analyze "
+"further (e.g. stop TCP reassembly).  A side effect is that true "
+"connection sizes are not logged, but at the benefit of saving CPU cycles "
+"that would otherwise go to analyzing the large (and likely benign) "
+"connections."
+msgstr ""
+

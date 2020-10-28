@@ -1,0 +1,335 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:4
+msgid "base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:8
+msgid "GLOBAL"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:11
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:13
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:30
+msgid "Events"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:15
+msgid ":zeek:id:`dce_rpc_alter_context`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:15
+msgid ""
+"Generated for every :abbr:`DCE-RPC (Distributed Computing "
+"Environment/Remote Procedure Calls)` alter context request message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:16
+msgid ":zeek:id:`dce_rpc_alter_context_resp`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:16
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:65
+msgid ""
+"Generated for every :abbr:`DCE-RPC (Distributed Computing "
+"Environment/Remote Procedure Calls)` alter context response message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:17
+msgid ":zeek:id:`dce_rpc_bind`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:17
+msgid ""
+"Generated for every :abbr:`DCE-RPC (Distributed Computing "
+"Environment/Remote Procedure Calls)` bind request message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:18
+msgid ":zeek:id:`dce_rpc_bind_ack`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:18
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:111
+msgid ""
+"Generated for every :abbr:`DCE-RPC (Distributed Computing "
+"Environment/Remote Procedure Calls)` bind request ack message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:19
+msgid ":zeek:id:`dce_rpc_message`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:19
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:130
+msgid ""
+"Generated for every :abbr:`DCE-RPC (Distributed Computing "
+"Environment/Remote Procedure Calls)` message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:20
+msgid ":zeek:id:`dce_rpc_request`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:20
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:21
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:155
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:180
+msgid ""
+"Generated for every :abbr:`DCE-RPC (Distributed Computing "
+"Environment/Remote Procedure Calls)` request message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:21
+msgid ":zeek:id:`dce_rpc_request_stub`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:22
+msgid ":zeek:id:`dce_rpc_response`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:22
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:23
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:205
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:229
+msgid ""
+"Generated for every :abbr:`DCE-RPC (Distributed Computing "
+"Environment/Remote Procedure Calls)` response message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:23
+msgid ":zeek:id:`dce_rpc_response_stub`: :zeek:type:`event`"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:28
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:33
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:79
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, fid: :zeek:type:`count`, "
+"ctx_id: :zeek:type:`count`, uuid: :zeek:type:`string`, ver_major: "
+":zeek:type:`count`, ver_minor: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:35
+msgid ""
+"Generated for every :abbr:`DCE-RPC (Distributed Computing "
+"Environment/Remote Procedure Calls)` alter context request message. Since"
+" RPC offers the ability for a client to request connections to multiple "
+"endpoints, this event can occur multiple times for a single RPC message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst
+msgid "c"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:40
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:68
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:86
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:114
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:133
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:158
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:183
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:208
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:232
+msgid "The connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst
+msgid "fid"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:43
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:71
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:89
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:117
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:139
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:161
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:186
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:211
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:235
+msgid ""
+"File ID of the PIPE that carried the :abbr:`DCE-RPC (Distributed "
+"Computing Environment/Remote Procedure Calls)` message. Zero will be used"
+" if the :abbr:`DCE-RPC (Distributed Computing Environment/Remote "
+"Procedure Calls)` was not transported over a pipe."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst
+msgid "ctx_id"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:48
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:94
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:166
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:191
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:216
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:240
+msgid "The context identifier of the data representation."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst
+msgid "uuid"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:51
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:97
+msgid "The string interpretted uuid of the endpoint being requested."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst
+msgid "ver_major"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:54
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:100
+msgid "The major version of the endpoint being requested."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst
+msgid "ver_minor"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:57
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:103
+msgid "The minor version of the endpoint being requested."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:63
+msgid ":zeek:type:`event` (c: :zeek:type:`connection`, fid: :zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:81
+msgid ""
+"Generated for every :abbr:`DCE-RPC (Distributed Computing "
+"Environment/Remote Procedure Calls)` bind request message. Since RPC "
+"offers the ability for a client to request connections to multiple "
+"endpoints, this event can occur multiple times for a single RPC message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:109
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, fid: :zeek:type:`count`, "
+"sec_addr: :zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst
+msgid "sec_addr"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:122
+msgid "Secondary address for the ack."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:128
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, is_orig: "
+":zeek:type:`bool`, fid: :zeek:type:`count`, ptype_id: :zeek:type:`count`,"
+" ptype: :zeek:type:`DCE_RPC::PType`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst
+msgid "is_orig"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:136
+msgid "True if the message was sent by the originator of the TCP connection."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst
+msgid "ptype_id"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:144
+msgid "Numeric representation of the procedure type of the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst
+msgid "ptype"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:147
+msgid "Enum representation of the prodecure type of the message."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:153
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:203
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, fid: :zeek:type:`count`, "
+"ctx_id: :zeek:type:`count`, opnum: :zeek:type:`count`, stub_len: "
+":zeek:type:`count`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst
+msgid "opnum"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:169
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:194
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:218
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:242
+msgid "Number of the RPC operation."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst
+msgid "stub_len"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:172
+msgid "Length of the data for the request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:178
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:227
+msgid ""
+":zeek:type:`event` (c: :zeek:type:`connection`, fid: :zeek:type:`count`, "
+"ctx_id: :zeek:type:`count`, opnum: :zeek:type:`count`, stub: "
+":zeek:type:`string`)"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst
+msgid "stub"
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:197
+msgid "The data for the request."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:221
+msgid "Length of the data for the response."
+msgstr ""
+
+#: ../../scripts/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek.rst:245
+msgid "The data for the response."
+msgstr ""
+

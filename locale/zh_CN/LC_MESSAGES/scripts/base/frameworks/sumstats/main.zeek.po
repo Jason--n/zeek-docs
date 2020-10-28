@@ -1,0 +1,918 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The Zeek Project
+# This file is distributed under the same license as the Zeek package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeek source\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-28 21:33+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:4
+msgid "base/frameworks/sumstats/main.zeek"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:7
+msgid ""
+"The summary statistics framework provides a way to summarize large "
+"streams of data into simple reduced measurements."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst
+msgid "Namespace"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:11
+msgid "SumStats"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:16
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:58
+msgid "Types"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:18
+msgid ":zeek:type:`SumStats::Calculation`: :zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:18
+msgid "Type to represent the calculations that are available."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:19
+msgid ":zeek:type:`SumStats::Key`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:19
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:165
+msgid "Represents a thing which is having summarization results collected for it."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:21
+msgid ":zeek:type:`SumStats::Observation`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:21
+msgid "Represents data being added for a single observation."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:22
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:35
+msgid ":zeek:type:`SumStats::Reducer`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:22
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:237
+msgid "Represents a reducer."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:23
+msgid ":zeek:type:`SumStats::Result`: :zeek:type:`table`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:23
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:243
+msgid ""
+"Type to store a table of results for multiple reducers indexed by "
+"observation stream identifier."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:25
+msgid ":zeek:type:`SumStats::ResultTable`: :zeek:type:`table`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:25
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:250
+msgid "Type to store a table of sumstats results indexed by keys."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:26
+msgid ":zeek:type:`SumStats::ResultVal`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:26
+msgid "Result calculated for an observation stream fed into a reducer."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:27
+msgid ":zeek:type:`SumStats::SumStat`: :zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:27
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:421
+msgid ""
+"Represents a SumStat, which consists of an aggregation of reducers along "
+"with mechanisms to handle various situations like the epoch ending or "
+"thresholds being crossed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:33
+msgid "Redefinitions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst
+msgid "New Fields"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:37
+msgid ":zeek:type:`SumStats::Reducer`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:39
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:203
+msgid "ssname: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:41
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:205
+msgid ""
+"calc_funcs: :zeek:type:`vector` of :zeek:type:`SumStats::Calculation` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:45
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:431
+msgid "Functions"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:47
+msgid ":zeek:id:`SumStats::create`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:47
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:436
+msgid "Create a summary statistic."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:48
+msgid ":zeek:id:`SumStats::key2str`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:48
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:445
+msgid ""
+"Helper function to represent a :zeek:type:`SumStats::Key` value as a "
+"simple string."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:50
+msgid ":zeek:id:`SumStats::observe`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:50
+msgid "Add data into an observation stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:51
+msgid ":zeek:id:`SumStats::request_key`: :zeek:type:`function`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:51
+msgid "Dynamically request a sumstat key."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:56
+msgid "Detailed Interface"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst
+msgid "Type"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:61
+msgid ":zeek:type:`enum`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:67
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:268
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/sumstats/plugins/average.zeek`"
+" is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:70
+msgid "Calculate the average of the values."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:74
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:208
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:213
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:273
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:279
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:283
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:287
+msgid ""
+"(present if "
+":doc:`/scripts/base/frameworks/sumstats/plugins/hll_unique.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:77
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:142
+msgid "Calculate the number of unique values."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:81
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:218
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:291
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/sumstats/plugins/last.zeek` is"
+" loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:84
+msgid "Keep last X observations in a queue."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:88
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:299
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/sumstats/plugins/max.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:91
+msgid "Find the maximum value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:95
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:304
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/sumstats/plugins/min.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:98
+msgid "Find the minimum value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:102
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:223
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:309
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:314
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:319
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/sumstats/plugins/sample.zeek` "
+"is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:105
+msgid "Get uniquely distributed random samples from the observation stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:110
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:323
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:328
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:332
+msgid ""
+"(present if "
+":doc:`/scripts/base/frameworks/sumstats/plugins/variance.zeek` is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:113
+msgid "Calculate the variance of the values."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:117
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:336
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/sumstats/plugins/std-dev.zeek`"
+" is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:120
+msgid "Calculate the standard deviation of the values."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:124
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:341
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/sumstats/plugins/sum.zeek` is "
+"loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:127
+msgid ""
+"Calculate the sum of the values.  For string values, this will be the "
+"number of strings."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:132
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:228
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:346
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/sumstats/plugins/topk.zeek` is"
+" loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:135
+msgid "Keep a top-k list of values."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:139
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:233
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:352
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:358
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:362
+msgid ""
+"(present if :doc:`/scripts/base/frameworks/sumstats/plugins/unique.zeek` "
+"is loaded)"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:144
+msgid ""
+"Type to represent the calculations that are available.  The calculations "
+"are all defined as plugins."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:149
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:170
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:186
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:254
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:370
+msgid ":zeek:type:`record`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:160
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:179
+msgid "str: :zeek:type:`string` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:152
+msgid ""
+"A non-address related summarization or a sub-key for an address based "
+"summarization. An example might be successful SSH connections by client "
+"IP address where the client string would be the key value. Another "
+"example might be number of HTTP requests to a particular value in a Host "
+"header.  This is an example of a non-host based metric since multiple IP "
+"addresses could respond for the same Host header value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:163
+msgid "host: :zeek:type:`addr` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:163
+msgid "Host is the value to which this metric applies."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:173
+msgid "num: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:173
+msgid "Count value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:176
+msgid "dbl: :zeek:type:`double` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:176
+msgid "Double value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:179
+msgid "String value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:181
+msgid ""
+"Represents data being added for a single observation. Only supply a "
+"single field at a time!"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:190
+msgid "stream: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:189
+msgid "Observation stream identifier for the reducer to attach to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:193
+msgid "apply: :zeek:type:`set` [:zeek:type:`SumStats::Calculation`]"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:193
+msgid "The calculations to perform on the data points."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:197
+msgid ""
+"pred: :zeek:type:`function` (key: :zeek:type:`SumStats::Key`, obs: "
+":zeek:type:`SumStats::Observation`) : :zeek:type:`bool` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:196
+msgid "bool &optional"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:196
+msgid ""
+"A predicate so that you can decide per key if you would like to accept "
+"the data being inserted."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:201
+msgid ""
+"normalize_key: :zeek:type:`function` (key: :zeek:type:`SumStats::Key`) : "
+":zeek:type:`SumStats::Key` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:200
+msgid "SumStats::Key &optional"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:200
+msgid ""
+"A function to normalize the key.  This can be used to aggregate or "
+"normalize the entire key."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:210
+msgid ""
+"hll_error_margin: :zeek:type:`double` :zeek:attr:`&default` = ``0.01`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:210
+msgid "The error margin for HLL."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:215
+msgid ""
+"hll_confidence: :zeek:type:`double` :zeek:attr:`&default` = ``0.95`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:215
+msgid "The confidence for HLL."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:220
+msgid ""
+"num_last_elements: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:220
+msgid "Number of elements to keep."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:225
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:320
+msgid ""
+"num_samples: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:225
+msgid "The number of sample Observations to collect."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:230
+msgid ""
+"topk_size: :zeek:type:`count` :zeek:attr:`&default` = ``500`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:230
+msgid "Number of elements to keep in the top-k list."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:235
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:359
+msgid "unique_max: :zeek:type:`count` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:235
+msgid "Maximum number of unique values to store."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:241
+msgid ""
+":zeek:type:`table` [:zeek:type:`string`] of "
+":zeek:type:`SumStats::ResultVal`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:248
+msgid ""
+":zeek:type:`table` [:zeek:type:`SumStats::Key`] of "
+":zeek:type:`SumStats::Result`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:258
+msgid "begin: :zeek:type:`time`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:257
+msgid "The time when the first observation was added to this result value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:262
+msgid "end: :zeek:type:`time`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:261
+msgid "The time when the last observation was added to this result value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:265
+msgid ""
+"num: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:265
+msgid "The number of observations received."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:270
+msgid "average: :zeek:type:`double` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:270
+msgid "For numeric data, this is the average of all values."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:276
+msgid ""
+"hll_unique: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:275
+msgid ""
+"If cardinality is being tracked, the number of unique items is tracked "
+"here."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:280
+msgid "card: :zeek:type:`opaque` of cardinality :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:284
+msgid "hll_error_margin: :zeek:type:`double` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:288
+msgid "hll_confidence: :zeek:type:`double` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:296
+msgid "last_elements: :zeek:type:`Queue::Queue` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:293
+msgid ""
+"This is the queue where elements are maintained. Don't access this value "
+"directly, instead use the :zeek:see:`SumStats::get_last` function to get "
+"a vector of the current element values."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:301
+msgid "max: :zeek:type:`double` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:301
+msgid "For numeric data, this tracks the maximum value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:306
+msgid "min: :zeek:type:`double` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:306
+msgid "For numeric data, this tracks the minimum value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:311
+msgid ""
+"samples: :zeek:type:`vector` of :zeek:type:`SumStats::Observation` "
+":zeek:attr:`&default` = ``[]`` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:311
+msgid "This is the vector in which the samples are maintained."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:316
+msgid ""
+"sample_elements: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:316
+msgid "Number of total observed elements."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:325
+msgid "variance: :zeek:type:`double` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:325
+msgid "For numeric data, this is the variance."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:329
+msgid "prev_avg: :zeek:type:`double` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:333
+msgid ""
+"var_s: :zeek:type:`double` :zeek:attr:`&default` = ``0.0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:338
+msgid ""
+"std_dev: :zeek:type:`double` :zeek:attr:`&default` = ``0.0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:338
+msgid "For numeric data, this calculates the standard deviation."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:343
+msgid ""
+"sum: :zeek:type:`double` :zeek:attr:`&default` = ``0.0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:343
+msgid "For numeric data, this tracks the sum of all values."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:349
+msgid "topk: :zeek:type:`opaque` of topk :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:348
+msgid ""
+"A handle which can be passed to some built-in functions to get the top-k "
+"results."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:355
+msgid ""
+"unique: :zeek:type:`count` :zeek:attr:`&default` = ``0`` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:354
+msgid ""
+"If cardinality is being tracked, the number of unique values is tracked "
+"here."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:363
+msgid ""
+"unique_vals: :zeek:type:`set` [:zeek:type:`SumStats::Observation`] "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:365
+msgid ""
+"Result calculated for an observation stream fed into a reducer. Most of "
+"the fields are added by plugins."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:374
+msgid "name: :zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:373
+msgid "An arbitrary name for the sumstat so that it can be referred to later."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:382
+msgid "epoch: :zeek:type:`interval`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:377
+msgid ""
+"The interval at which this filter should be \"broken\" and the "
+"*epoch_result* callback called.  The results are also reset at this time "
+"so any threshold based detection needs to be set to a value that should "
+"be expected to happen within this epoch."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:385
+msgid "reducers: :zeek:type:`set` [:zeek:type:`SumStats::Reducer`]"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:385
+msgid "The reducers for the SumStat."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:392
+msgid ""
+"threshold_val: :zeek:type:`function` (key: :zeek:type:`SumStats::Key`, "
+"result: :zeek:type:`SumStats::Result`) : :zeek:type:`double` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:391
+msgid "double &optional"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:388
+msgid ""
+"A function that will be called once for each observation in order to "
+"calculate a value from the :zeek:see:`SumStats::Result` structure which "
+"will be used for thresholding. This function is required if a *threshold*"
+" value or a *threshold_series* is given."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:397
+msgid "threshold: :zeek:type:`double` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:395
+msgid ""
+"The threshold value for calling the *threshold_crossed* callback. If you "
+"need more than one threshold value, then use *threshold_series* instead."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:403
+msgid ""
+"threshold_series: :zeek:type:`vector` of :zeek:type:`double` "
+":zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:400
+msgid ""
+"A series of thresholds for calling the *threshold_crossed* callback.  "
+"These thresholds must be listed in ascending order, because a threshold "
+"is not checked until the preceding one has been crossed."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:409
+msgid ""
+"threshold_crossed: :zeek:type:`function` (key: "
+":zeek:type:`SumStats::Key`, result: :zeek:type:`SumStats::Result`) : "
+":zeek:type:`void` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:408
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:413
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:418
+msgid "void &optional"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:406
+msgid ""
+"A callback that is called when a threshold is crossed. A threshold is "
+"crossed when the value returned from *threshold_val* is greater than or "
+"equal to the threshold value, but only the first time this happens within"
+" an epoch."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:414
+msgid ""
+"epoch_result: :zeek:type:`function` (ts: :zeek:type:`time`, key: "
+":zeek:type:`SumStats::Key`, result: :zeek:type:`SumStats::Result`) : "
+":zeek:type:`void` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:412
+msgid ""
+"A callback that receives each of the results at the end of the analysis "
+"epoch.  The function will be called once for each key."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:419
+msgid ""
+"epoch_finished: :zeek:type:`function` (ts: :zeek:type:`time`) : "
+":zeek:type:`void` :zeek:attr:`&optional`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:417
+msgid ""
+"A callback that will be called when a single collection interval is "
+"completed.  The *ts* value will be the time of when the collection "
+"started."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:425
+msgid ""
+"It's best to not access any global state outside of the variables given "
+"to the callbacks because there is no assurance provided as to where the "
+"callbacks will be executed on clusters."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:434
+msgid ""
+":zeek:type:`function` (ss: :zeek:type:`SumStats::SumStat`) : "
+":zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst
+msgid "ss"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:439
+msgid "The SumStat to create."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:443
+msgid ""
+":zeek:type:`function` (key: :zeek:type:`SumStats::Key`) : "
+":zeek:type:`string`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst
+msgid "key"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:449
+msgid "The metric key that is to be converted into a string."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst
+msgid "returns"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:452
+msgid "A string representation of the metric key."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:456
+msgid ""
+":zeek:type:`function` (id: :zeek:type:`string`, orig_key: "
+":zeek:type:`SumStats::Key`, obs: :zeek:type:`SumStats::Observation`) : "
+":zeek:type:`void`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:458
+msgid ""
+"Add data into an observation stream. This should be called when a script "
+"has measured some point value."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst
+msgid "id"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:462
+msgid "The observation stream identifier that the data point represents."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:466
+msgid "The key that the value is related to."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst
+msgid "obs"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:469
+msgid "The data point to send into the stream."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:473
+msgid ""
+":zeek:type:`function` (ss_name: :zeek:type:`string`, key: "
+":zeek:type:`SumStats::Key`) : :zeek:type:`SumStats::Result`"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:475
+msgid ""
+"Dynamically request a sumstat key.  This function should be used "
+"sparingly and not as a replacement for the callbacks from the "
+":zeek:see:`SumStats::SumStat` record.  The function is only available for"
+" use within \"when\" statements as an asynchronous function."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst
+msgid "ss_name"
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:482
+msgid "SumStat name."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:485
+msgid "The SumStat key being requested."
+msgstr ""
+
+#: ../../scripts/base/frameworks/sumstats/main.zeek.rst:488
+msgid "The result for the requested sumstat key."
+msgstr ""
+
