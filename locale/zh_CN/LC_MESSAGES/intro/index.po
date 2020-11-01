@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Zeek source\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 21:33+0800\n"
-"PO-Revision-Date: 2020-11-01 07:48+0800\n"
+"PO-Revision-Date: 2020-11-01 10:25+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -144,7 +144,7 @@ msgstr ""
 
 #: ../../intro/index.rst:79
 msgid "Features"
-msgstr ""
+msgstr "特性"
 
 #: ../../intro/index.rst:81
 msgid ""
@@ -152,70 +152,72 @@ msgid ""
 "even without further customization it comes with a powerful set of "
 "features."
 msgstr ""
+"Zeek通过它的脚本语言支持一系列的分析。然而即使不做修改它也自带了一整套功"
+"能。"
 
 #: ../../intro/index.rst:85
 msgid "Deployment"
-msgstr ""
+msgstr "部署"
 
 #: ../../intro/index.rst:87
 msgid ""
 "Runs on commodity hardware on standard UNIX-style systems (including "
 "Linux, FreeBSD, and MacOS)."
-msgstr ""
+msgstr "运行在标准硬件上的类Unix系统中（包括Linux、FreeBSD和MacOS）。"
 
 #: ../../intro/index.rst:90
 msgid "Fully passive traffic analysis off a network tap or monitoring port."
-msgstr ""
+msgstr "连接网络分流器或者监控端口的完全被动式的分析。"
 
 #: ../../intro/index.rst:93
 msgid "Standard libpcap interface for capturing packets."
-msgstr ""
+msgstr "使用标准的libpcap接口用于捕获数据包。"
 
 #: ../../intro/index.rst:95
 msgid "Real-time and offline analysis."
-msgstr ""
+msgstr "实时和离线分析。"
 
 #: ../../intro/index.rst:97
 msgid "Cluster-support for large-scale deployments."
-msgstr ""
+msgstr "对于大规模部署的集群支持。"
 
 #: ../../intro/index.rst:99
 msgid ""
 "Unified management framework for operating both standalone and cluster "
 "setups."
-msgstr ""
+msgstr "对于单独和集群部署的统一管理框架。"
 
 #: ../../intro/index.rst:102
 msgid "Open-source under a BSD license."
-msgstr ""
+msgstr "使用BSD开源协议。"
 
 #: ../../intro/index.rst:104
 msgid "Analysis"
-msgstr ""
+msgstr "分析"
 
 #: ../../intro/index.rst:106
 msgid "Comprehensive logging of activity for offline analysis and forensics."
-msgstr ""
+msgstr "用于离线分析和取证的全面的活动日志。"
 
 #: ../../intro/index.rst:109
 msgid "Port-independent analysis of application-layer protocols."
-msgstr ""
+msgstr "端口无关的应用层协议分析。"
 
 #: ../../intro/index.rst:111
 msgid ""
 "Support for many application-layer protocols (including DNS, FTP, HTTP, "
 "IRC, SMTP, SSH, SSL)."
-msgstr ""
+msgstr "支持许多应用层协议（包括DNS、FTP、HTTP、IRC、SMTP、SSH、SSL）。"
 
 #: ../../intro/index.rst:114
 msgid ""
 "Analysis of file content exchanged over application-layer protocols, "
 "including MD5/SHA1 computation for fingerprinting."
-msgstr ""
+msgstr "通过应用层协议传输的文件内容分析，包括MD5/SHA1指纹计算。"
 
 #: ../../intro/index.rst:117
 msgid "Comprehensive IPv6 support."
-msgstr ""
+msgstr "全面的IPv6支持。"
 
 #: ../../intro/index.rst:119
 msgid ""
@@ -223,76 +225,79 @@ msgid ""
 "decapsulates the tunnels and then proceeds to analyze their content as if "
 "no tunnel was in place."
 msgstr ""
+"隧道检测和分析（包括Ayiya、Teredo、GTPv1）。Zeek解开隧道的封装然后继续分析"
+"它们的内容，就好像没有隧道一样。"
 
 #: ../../intro/index.rst:123
 msgid "Extensive sanity checks during protocol analysis."
-msgstr ""
+msgstr "协议分析过程中广泛的完整性检查。"
 
 #: ../../intro/index.rst:125
 msgid "Support for IDS-style pattern matching."
-msgstr ""
+msgstr "支持IDS形式的模式匹配。"
 
 #: ../../intro/index.rst:127
 msgid "Scripting Language"
-msgstr ""
+msgstr "脚本语言"
 
 #: ../../intro/index.rst:129
 msgid "Turing-complete language for expression arbitrary analysis tasks."
-msgstr ""
+msgstr "能够表达任意分析任务的图灵完全语言。"
 
 #: ../../intro/index.rst:132
 msgid "Event-based programming model."
-msgstr ""
+msgstr "基于事件的编程模型。"
 
 #: ../../intro/index.rst:134
 msgid ""
 "Domain-specific data types such as IP addresses (transparently handling "
 "both IPv4 and IPv6), port numbers, and timers."
 msgstr ""
+"特地领域的数据类型，比如IP地址（透明地处理IPv4和IPv6）、端口和计时器。"
 
 #: ../../intro/index.rst:137
 msgid "Extensive support for tracking and managing network state over time."
-msgstr ""
+msgstr "广泛支持跟踪和管理随着时间变化的网络状态。"
 
 #: ../../intro/index.rst:140
 msgid "Interfacing"
-msgstr ""
+msgstr "接口"
 
 #: ../../intro/index.rst:142
 msgid "Default output to well-structured ASCII logs."
-msgstr ""
+msgstr "默认输出到结构化的ASCII日志中。"
 
 #: ../../intro/index.rst:144
 msgid ""
 "Alternative backends for ElasticSearch and DataSeries. Further database "
 "interfaces in preparation."
-msgstr ""
+msgstr "可选的后端有ElasticSearch和DataSeries。其它的数据库接口还在计划中。"
 
 #: ../../intro/index.rst:147
 msgid ""
 "Real-time integration of external input into analyses. Live database input "
 "in preparation."
-msgstr ""
+msgstr "外部输入实时集成到分析中。数据库的实时输入还在计划中。"
 
 #: ../../intro/index.rst:150
 msgid ""
 "External C library for exchanging Zeek events with external programs. "
 "Comes with Perl, Python, and Ruby bindings."
-msgstr ""
+msgstr "和外部程序交换Zeek事件的C函数库。实现了Perl、Python和Ruby的绑定。"
 
 #: ../../intro/index.rst:153
 msgid ""
 "Ability to trigger arbitrary external processes from within the scripting "
 "language."
-msgstr ""
+msgstr "能够在脚本语言中触发任意的外部进程。"
 
 #: ../../intro/index.rst:158
 msgid "History"
-msgstr ""
+msgstr "历史"
 
 #: ../../intro/index.rst:166
 msgid "Timeline of Zeek's History (click to enlarge)."
-msgstr ""
+msgstr "Zeek的历史时间线（点击以放大）"
 
 #: ../../intro/index.rst:168
 msgid ""
@@ -312,6 +317,18 @@ msgid ""
 "adding novel functionality , while LBNL continued its support with funding "
 "from the `Department of Energy (DOE) <http://www.doe.gov>`_."
 msgstr ""
+"Zeek的历史比大多数人意识到的还要悠久（以前叫做“Bro”，不是“Zeek”）。`Vern "
+"Paxson <http://www.icir.org/vern>`_ 于20年前设计和实现了最初的版本。Vern在"
+"1995年开始编写代码，当时他还是`Lawrence Berkeley National Laboratory "
+"(LBNL) <http://www.lbl.gov>`_ 的一个研究员。伯克利实验室在1996年开始了实际"
+"的部署，然后USENIX Security Symposium杂志在1998年发表了Bro的最初的论文（后"
+"来在2003年的`期刊论文 <http://www.icir.org/vern/papers/bro-CN99.pdf>`_中进"
+"行了完善改进）。2003年，`National Science Foundation (NSF) <http://www.nsf."
+"gov>`_ 开始支持`International Computer Science Institute (ICSI) <http://"
+"www.icsi.berkeley.edu>`_ Bro的研究和开发，现在Vern正在领导ICSI下的"
+"`Networking and Security 小组 <http://www.icir.org>`_。在过去的这些年里，一"
+"个由ICSI研究者和学生组成的不断增长的团队不断为Zeek添加新的功能，而且LBNL仍"
+"然在`Department of Energy (DOE) <http://www.doe.gov>`_的资助下继续支持。"
 
 #: ../../intro/index.rst:187
 msgid ""
@@ -342,11 +359,11 @@ msgstr ""
 
 #: ../../intro/index.rst:214
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #: ../../intro/index.rst:222
 msgid "Zeek's internal architecture."
-msgstr ""
+msgstr "Zeek的内部架构。"
 
 #: ../../intro/index.rst:224
 msgid ""
