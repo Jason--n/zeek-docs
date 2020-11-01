@@ -3,23 +3,25 @@
 # This file is distributed under the same license as the Zeek package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Zeek source\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 21:33+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2020-11-01 17:47+0800\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: Loong Chen <loong.chen@foxmail.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: ../../cluster/index.rst:4
 msgid "Cluster Architecture"
-msgstr ""
+msgstr "集群架构"
 
 #: ../../cluster/index.rst:7
 msgid ""
@@ -34,25 +36,34 @@ msgid ""
 "on how to configure a Zeek cluster, see the documentation for "
 "`ZeekControl <https://github.com/zeek/zeekctl>`_."
 msgstr ""
+"Zeek不是多线程的，所以一旦达到了单核的处理瓶颈，现在唯一的方法只能是把负"
+"载分配到多个核心上，或者甚至多台物理机器上。Zeek的集群部署场景就是当前构"
+"建大型系统的方案。这些工具、脚本和Zeek一起提供了简单的结构来轻松地管理许"
+"多进程，检查数据包以及关联网络活动，但表现得就好像它们是单个的、内聚的实"
+"体一样。这一节描述了Zeek的集群架构。要想知道如何配置Zeek集群，请参见文档 "
+"`ZeekControl <https://github.com/zeek/zeekctl>`_ 。"
 
 #: ../../cluster/index.rst:18
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #: ../../cluster/index.rst:20
 msgid "The figure below illustrates the main components of a Zeek cluster."
-msgstr ""
+msgstr "下面的图像说明了Zeek集群的主要组件。"
 
 #: ../../cluster/index.rst:24
 msgid ""
 "For more specific information on the way Zeek processes are connected, "
-"how they function, and how they communicate with each other, see the "
-":ref:`Broker Framework Documentation <brokercomm-framework>`."
+"how they function, and how they communicate with each other, see the :"
+"ref:`Broker Framework Documentation <brokercomm-framework>`."
 msgstr ""
+"要想知道关于Zeek进程是如何联系起来的更详尽的信息，它们是如何运作，以及它"
+"们是如何互相通信，请参见 :ref:`Broker Framework Documentation "
+"<brokercomm-framework>` 。"
 
 #: ../../cluster/index.rst:29
 msgid "Tap"
-msgstr ""
+msgstr "分流器"
 
 #: ../../cluster/index.rst:30
 msgid ""
@@ -60,10 +71,12 @@ msgid ""
 "copy available for inspection. Examples include the monitoring port on a "
 "switch and an optical splitter on fiber networks."
 msgstr ""
+"分流器是一种划分数据包流以便后续拷贝出一份数据包来做检测的方法。例子有交"
+"换机上的监测口和光纤网络中的分光器。"
 
 #: ../../cluster/index.rst:35
 msgid "Frontend"
-msgstr ""
+msgstr "前端"
 
 #: ../../cluster/index.rst:36
 msgid ""
@@ -72,49 +85,64 @@ msgid ""
 "this job. There are numerous ways to accomplish this task, some of which "
 "are described below in `Frontend Options`_."
 msgstr ""
+"前端负责把流量划分成多份或者不同的会话，通常是一台无关的硬件设备或者主机"
+"技术。Zeek程序不会做这件事。完成这个任务有许多种方式，它们中的一些在下面 "
+"`前端选择`_ 有介绍。"
 
 #: ../../cluster/index.rst:42
 msgid "Manager"
-msgstr ""
+msgstr "管理器"
 
 #: ../../cluster/index.rst:43
 msgid ""
-"The manager is a Zeek process that has two primary jobs.  It receives log"
-" messages and notices from the rest of the nodes in the cluster using the"
-" Zeek communications protocol (note that if you use a separate logger "
+"The manager is a Zeek process that has two primary jobs.  It receives "
+"log messages and notices from the rest of the nodes in the cluster using "
+"the Zeek communications protocol (note that if you use a separate logger "
 "node, then the logger receives all logs instead of the manager).  The "
 "result is a single log instead of many discrete logs that you have to "
 "combine in some manner with post-processing. The manager also supports "
 "other functionality and analysis which requires a centralized, global "
 "view of events or data."
 msgstr ""
+"管理器是一个Zeek进程，有两个主要的工作。它通过Zeek通信协议从集群中的其它"
+"节点接收日志信息和通知（注意，如果你使用单独的记录器节点，那么记录器将会"
+"接收所有日志而不是管理器）。最终的结果将是一整个日志，而不是许多零散的日"
+"志，那样你不得不通过某些处理方式把它们合并到一起。管理器支持其它需要以一"
+"种中央、全局的视角看待事件或者数据的功能和分析。"
 
 #: ../../cluster/index.rst:53
 msgid "Logger"
-msgstr ""
+msgstr "记录器"
 
 #: ../../cluster/index.rst:54
 msgid ""
 "A logger is an optional Zeek process that receives log messages from the "
 "rest of the nodes in the cluster using the Zeek communications protocol. "
 "The purpose of having a logger receive logs instead of the manager is to "
-"reduce the load on the manager.  If no logger is needed, then the manager"
-" will receive logs instead."
+"reduce the load on the manager.  If no logger is needed, then the "
+"manager will receive logs instead."
 msgstr ""
+"记录器是一个可选的Zeek进程，它通过Zeek通信协议从集群中的其它节点接收日志"
+"信息。启用记录器而不是管理器来接收日志的目的是为了减少管理器的负载。如果"
+"记录器没有启用，那么管理器将会接收所有日志。"
 
 #: ../../cluster/index.rst:61
 msgid "Proxy"
-msgstr ""
+msgstr "代理"
 
 #: ../../cluster/index.rst:62
 msgid ""
-"A proxy is a Zeek process that may be used to offload data storage or any"
-" arbitrary workload.  A cluster may contain multiple proxy nodes. The "
+"A proxy is a Zeek process that may be used to offload data storage or "
+"any arbitrary workload.  A cluster may contain multiple proxy nodes. The "
 "default scripts that come with Zeek make minimal use of proxies, so a "
 "single one may be sufficient, but customized use of them to partition "
 "data or workloads provides greater cluster scalability potential than "
 "just doing similar tasks on a single, centralized Manager node."
 msgstr ""
+"代理是一个Zeek进程，用来卸载数据存储或者任何其它的工作负载。一个集群可以"
+"包含多个代理节点。Zeek自带的默认脚本很少使用代理，所以一个就够了，但是相"
+"比于在单个的、中心化的管理节点上完成所有类似的任务，自定义的使用它们来划"
+"分数据和负载可以提供更好的集群扩展性。"
 
 #: ../../cluster/index.rst:69
 msgid ""
@@ -122,10 +150,12 @@ msgid ""
 "or memory and users frequently run proxy processes on the same physical "
 "host as the manager."
 msgstr ""
+"作为代理的Zeek进程并不会过多地使用CPU和内存，所以用户经常在同一台物理主机"
+"上运行代理进程和管理器进程。"
 
 #: ../../cluster/index.rst:74
 msgid "Worker"
-msgstr ""
+msgstr "工作进程"
 
 #: ../../cluster/index.rst:75
 msgid ""
@@ -134,26 +164,32 @@ msgid ""
 "of an active cluster takes place on the workers and as such, the workers "
 "typically represent the bulk of the Zeek processes that are running in a "
 "cluster. The fastest memory and CPU core speed you can afford is "
-"recommended since all of the protocol parsing and most analysis will take"
-" place here. There are no particular requirements for the disks in "
+"recommended since all of the protocol parsing and most analysis will "
+"take place here. There are no particular requirements for the disks in "
 "workers since almost all logging is done remotely to the manager, and "
 "normally very little is written to disk."
 msgstr ""
+"工作进程负责嗅探网络流量，对重组后的流量做协议分析。集群的大部分工作都由"
+"工作进程执行，所以工作进程在集群中的数量占比很高。建议购买你能够承担的最"
+"快的内存和CPU，因为所有的协议解析和分析都发生在这里。对工作进程的磁盘没有"
+"特别的要求，因为几乎所有的日志输出都是在远端完成的，而且很少写本地磁盘。"
 
 #: ../../cluster/index.rst:86
 msgid "Frontend Options"
-msgstr ""
+msgstr "前端选择"
 
 #: ../../cluster/index.rst:88
 msgid ""
 "There are many options for setting up a frontend flow distributor.  In "
-"many cases it is beneficial to do multiple stages of flow distribution on"
-" the network and on the host."
+"many cases it is beneficial to do multiple stages of flow distribution "
+"on the network and on the host."
 msgstr ""
+"设置前端分流器有许多选择。在许多情况下最好是在网络和主机之间做多级的分"
+"流。"
 
 #: ../../cluster/index.rst:93
 msgid "Discrete hardware flow balancers"
-msgstr ""
+msgstr "分散的硬件分流器"
 
 #: ../../cluster/index.rst:96
 msgid "cPacket"
@@ -164,14 +200,14 @@ msgid ""
 "If you are monitoring one or more 10G physical interfaces, the "
 "recommended solution is to use either a cFlow or cVu device from cPacket "
 "because they are used successfully at a number of sites.  These devices "
-"will perform layer-2 load balancing by rewriting the destination Ethernet"
-" MAC address to cause each packet associated with a particular flow to "
-"have the same destination MAC.  The packets can then be passed directly "
-"to a monitoring host where each worker has a BPF filter to limit its "
-"visibility to only that stream of flows, or onward to a commodity switch "
-"to split the traffic out to multiple 1G interfaces for the workers.  This"
-" greatly reduces costs since workers can use relatively inexpensive 1G "
-"interfaces."
+"will perform layer-2 load balancing by rewriting the destination "
+"Ethernet MAC address to cause each packet associated with a particular "
+"flow to have the same destination MAC.  The packets can then be passed "
+"directly to a monitoring host where each worker has a BPF filter to "
+"limit its visibility to only that stream of flows, or onward to a "
+"commodity switch to split the traffic out to multiple 1G interfaces for "
+"the workers.  This greatly reduces costs since workers can use "
+"relatively inexpensive 1G interfaces."
 msgstr ""
 
 #: ../../cluster/index.rst:110
@@ -185,10 +221,13 @@ msgid ""
 "frontend costs for many users.  This document will be updated when we "
 "have more information."
 msgstr ""
+"我们现在正在探索使用基于OpenFlow的交换机直接在交换机上去做分流负载均衡，"
+"这样会为许多用户节省节省前端成本。如果我们有更多的信息，我们会更新这部分"
+"文档。"
 
 #: ../../cluster/index.rst:118
 msgid "On host flow balancing"
-msgstr ""
+msgstr "主机分流"
 
 #: ../../cluster/index.rst:121
 msgid "PF_RING"
@@ -196,15 +235,20 @@ msgstr ""
 
 #: ../../cluster/index.rst:123
 msgid ""
-"The PF_RING software for Linux has a \"clustering\" feature which will do"
-" flow-based load balancing across a number of processes that are sniffing"
-" the same interface.  This allows you to easily take advantage of "
-"multiple cores in a single physical host because Zeek's main event loop "
-"is single threaded and can't natively utilize all of the cores.  If you "
-"want to use PF_RING, see the documentation on `how to configure Zeek with"
-" PF_RING <https://docs.zeek.org/en/master/configuration/index.html#pf-"
-"ring-cluster-configuration>`_."
+"The PF_RING software for Linux has a \"clustering\" feature which will "
+"do flow-based load balancing across a number of processes that are "
+"sniffing the same interface.  This allows you to easily take advantage "
+"of multiple cores in a single physical host because Zeek's main event "
+"loop is single threaded and can't natively utilize all of the cores.  If "
+"you want to use PF_RING, see the documentation on `how to configure Zeek "
+"with PF_RING <https://docs.zeek.org/en/master/configuration/index."
+"html#pf-ring-cluster-configuration>`_."
 msgstr ""
+"Linux下的PF_RING软件有一个“集群”特性，它能够在当前嗅探同一个接口的进程之"
+"间做分流负载均衡。这样你就能够利用物理主机上的多个核心，因为Zeek的事件循"
+"环是单线程的，不能原生地利用所有的核心。如果你想使用PF_RING，请参见文档 `"
+"如何配置PF_RING <https://docs.zeek.org/en/master/configuration/index."
+"html#pf-ring-cluster-configuration>`_ 。"
 
 #: ../../cluster/index.rst:132
 msgid "Netmap"
@@ -213,8 +257,8 @@ msgstr ""
 #: ../../cluster/index.rst:134
 msgid ""
 "FreeBSD has an in-progress project named Netmap which will enable flow-"
-"based load balancing as well.  When it becomes viable for real world use,"
-" this document will be updated."
+"based load balancing as well.  When it becomes viable for real world "
+"use, this document will be updated."
 msgstr ""
 
 #: ../../cluster/index.rst:139
@@ -226,7 +270,6 @@ msgid ""
 "Click! can be used for flow based load balancing with a simple "
 "configuration. This solution is not recommended on Linux due to Zeek's "
 "PF_RING support and only as a last resort on other operating systems "
-"since it causes a lot of overhead due to context switching back and forth"
-" between kernel and userland several times per packet."
+"since it causes a lot of overhead due to context switching back and "
+"forth between kernel and userland several times per packet."
 msgstr ""
-
