@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Zeek source\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 21:33+0800\n"
-"PO-Revision-Date: 2020-11-01 21:55+0800\n"
+"PO-Revision-Date: 2020-11-02 21:30+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -71,7 +71,7 @@ msgstr "Python 2.6或更高版本（ZeekControl需要）"
 msgid ""
 "To build Zeek from source, the following additional dependencies are "
 "required:"
-msgstr "如果想从源代码编译Zeek，需要下面额外的依赖"
+msgstr "如果想从源代码编译Zeek，需要下面额外的依赖："
 
 #: ../../install/install.rst:37
 msgid "CMake 3.0 or greater              (http://www.cmake.org)"
@@ -179,6 +179,9 @@ msgid ""
 "and OpenSSL (OpenSSL headers were removed in OS X 10.11, therefore OpenSSL "
 "must be installed manually for OS X versions 10.11 or newer)."
 msgstr ""
+"OS X系统有大部分需要的依赖，除了 CMake_ ， SWIG_ ， Bison，和OpenSSL（OpenSSL"
+"头文件在OS X 10.11版本被移除了，因此在OS X版本10.11以及更新的版本上OpenSSL必"
+"须手动安装）。"
 
 #: ../../install/install.rst:99
 msgid ""
@@ -189,46 +192,50 @@ msgid ""
 "``cmake``, ``swig``, ``swig-python``, ``openssl``, and ``bison`` packages "
 "provide the required dependencies."
 msgstr ""
+"可以使用你最喜爱的Mac OS X包管理器（比如 HomeBrew_ 、 MacPorts_ 或者 Fink_ ）"
+"来获取这些依赖的发布版本。Homebrew中的 ``cmake`` ，  ``swig`` ， "
+"``openssl`` ， 和 ``bison`` 包提供了需要的依赖。 MacPorts中的 ``cmake`` , "
+"``swig`` , ``swig-python`` , ``openssl`` , 和 ``bison`` 提供了需要的依赖。"
 
 #: ../../install/install.rst:109
 msgid "Optional Dependencies"
-msgstr ""
+msgstr "可选的依赖"
 
 #: ../../install/install.rst:111
 msgid ""
 "Zeek can make use of some optional libraries and tools if they are found at "
 "build time:"
-msgstr ""
+msgstr "如果Zeek在编译时找到了可选的库和工具，那么它就会使用它们："
 
 #: ../../install/install.rst:114
 msgid "libmaxminddb (for geolocating IP addresses)"
-msgstr ""
+msgstr "libmaxminddb（定位IP的地理位置）"
 
 #: ../../install/install.rst:115
 msgid "sendmail (enables Zeek and ZeekControl to send mail)"
-msgstr ""
+msgstr "sendmail（使得Zeek和ZeekControl能够发送邮件）"
 
 #: ../../install/install.rst:116
 msgid "curl (used by a Zeek script that implements active HTTP)"
-msgstr ""
+msgstr "curl（Zeek脚本用来实现 active HTTP）"
 
 #: ../../install/install.rst:117
 msgid "gperftools (tcmalloc is used to improve memory and CPU usage)"
-msgstr ""
+msgstr "gperftools（tcmalloc被用来改善内存和CPU的使用）"
 
 #: ../../install/install.rst:118
 msgid "jemalloc (http://www.canonware.com/jemalloc/)"
-msgstr ""
+msgstr "jemalloc (http://www.canonware.com/jemalloc/)"
 
 #: ../../install/install.rst:119
 msgid ""
 "PF_RING (Linux only, see :doc:`Cluster Configuration <../configuration/"
 "index>`)"
-msgstr ""
+msgstr "PF_RING （仅限Linux， 见 :doc:`集群配置 <../configuration/index>`）"
 
 #: ../../install/install.rst:120
 msgid "krb5 libraries and headers"
-msgstr ""
+msgstr "krb5库和头文件"
 
 #: ../../install/install.rst:121
 msgid "ipsumdump (for trace-summary; http://www.cs.ucla.edu/~kohler/ipsumdump)"
@@ -240,30 +247,32 @@ msgid ""
 "platforms by following the instructions for :ref:`installing the GeoIP "
 "library and database <geolocation>`."
 msgstr ""
+"Geolocation也许是里面最有趣的，如果遵循以下教程的话 :ref:`安装GeoIP库和数据"
+"库 <geolocation>`，能够被安装在大部分平台上。"
 
 #: ../../install/install.rst:130
 msgid "Installing Zeek"
-msgstr ""
+msgstr "安装Zeek"
 
 #: ../../install/install.rst:132
 msgid ""
 "Zeek can be downloaded in either pre-built binary package or source code "
 "forms."
-msgstr ""
+msgstr "Zeek可以被以预编译二进制安装包或者源码形式下载。"
 
 #: ../../install/install.rst:137
 msgid "Using Pre-Built Binary Release Packages"
-msgstr ""
+msgstr "使用预编译二进制安装包"
 
 #: ../../install/install.rst:139
 msgid ""
 "See the `downloads page`_ for currently supported/targeted platforms for "
 "binary releases and for installation instructions."
-msgstr ""
+msgstr "当前支持平台以及安装教程见 `下载页面`_ 。"
 
 #: ../../install/install.rst:142
 msgid "Linux Packages"
-msgstr ""
+msgstr "Linux安装包"
 
 #: ../../install/install.rst:144
 msgid ""
@@ -272,22 +281,28 @@ msgid ""
 "usual system utilities such as ``apt``, ``dnf``, ``yum``, or ``zypper`` are "
 "used to perform the installation."
 msgstr ""
+"基于Linux系统的二进制文件安装通常是以向相关的系统包管理工具添加Zeek安装包的信"
+"息完成的。通常的系统工具如 ``apt``， ``dnf``， ``yum``， 或者 ``zypper``会用"
+"来执行安装过程。"
 
 #: ../../install/install.rst:149
 msgid ""
 "The primary install prefix for binary packages is either ``/opt/bro`` or ``/"
 "opt/zeek`` (depending on which version you're using)."
 msgstr ""
+"二进制安装包的主要安装路径是 ``/opt/bro`` 或者 ``/opt/zeek``（取决于你使用的"
+"版本）。"
 
 #: ../../install/install.rst:153
 msgid "Installing from Source"
-msgstr ""
+msgstr "从源码安装"
 
 #: ../../install/install.rst:155
 msgid ""
 "Zeek releases are bundled into source packages for convenience and are "
 "available on the `downloads page`_."
 msgstr ""
+"为了方便，Zeek的发布版本被打包成一个源码包，可以在 `下载页面`_ 上获取。"
 
 #: ../../install/install.rst:158
 msgid ""
@@ -298,6 +313,9 @@ msgid ""
 "but the short story for downloading the full source code experience for Zeek "
 "via git is:"
 msgstr ""
+"或者，也可以从https://github.com/zeek上的git仓库获取最新的Zeek开发版本。 见我"
+"们的 `git开发文档 <https://www.zeek.org/development/howtos/process.html>`_ 以"
+"获取Zeek使用git版本控制的详细信息，但是通过git下载Zeek完整的源码很简单："
 
 #: ../../install/install.rst:169
 msgid ""
@@ -305,12 +323,16 @@ msgid ""
 "\"minimal Zeek experience\", be aware that compiling it depends on several "
 "of the other submodules as well."
 msgstr ""
+"如果你为了“最小Zeek体验”选择非递归地克隆 ``zeek`` 仓库，注意编译它仍然会依赖"
+"几个其它的子模块。"
 
 #: ../../install/install.rst:173
 msgid ""
 "The typical way to build and install from source is (for more options, run "
 "``./configure --help``):"
 msgstr ""
+"从源码编译和安装的典型方式是（想知道更多的选项，运行 ``./configure —"
+"help`` ）："
 
 #: ../../install/install.rst:182
 msgid ""
