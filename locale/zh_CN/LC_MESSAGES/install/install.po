@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Zeek source\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 21:33+0800\n"
-"PO-Revision-Date: 2020-11-02 21:30+0800\n"
+"PO-Revision-Date: 2020-11-04 21:28+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -342,6 +342,9 @@ msgid ""
 "dependencies, then you may need to use one of the ``--with-*`` options that "
 "can be given to the ``configure`` script to help it locate a dependency."
 msgstr ""
+"如果 ``configure`` 脚本失败了，那么最有可能是因为它没有找到需要的依赖或者它没"
+"有找到依赖的足够新的版本。假设你已经安装了所有需要的依赖，然后你只需要使用 ``"
+"—with-*`` 选项来运行 ``configure`` 脚本，帮助它定位到依赖。"
 
 #: ../../install/install.rst:188
 msgid ""
@@ -352,12 +355,18 @@ msgid ""
 "the standard prefixes for binary Zeek packages to be installed, so those are "
 "typically not good choices unless you are creating such a package."
 msgstr ""
+"默认的安装路径是 ``/usr/local/zeek`` ，在这个路径下使用 ``make install`` 安装"
+"通常需要root权限。通过指定 ``configure`` 脚本的 ``—prefix`` 选项可以指定不同"
+"的安装路径。注意 ``/usr`` 、 ``/opt/bro/`` 和 ``/opt/zeek`` 是Zeek安装包安装"
+"时的标准路径，所以如果你不是正在创建安装包，那么就不要选择这些路径。"
 
 #: ../../install/install.rst:195
 msgid ""
 "OpenBSD users, please see our `FAQ <https://www.zeek.org/documentation/faq."
 "html>`_ if you are having problems installing Zeek."
 msgstr ""
+"OpenBSD用户，如果你在安装Zeek时遇到了问题，请查看我们的 `FAQ <https://www."
+"zeek.org/documentation/faq.html>`_ 。"
 
 #: ../../install/install.rst:199
 msgid ""
@@ -369,6 +378,10 @@ msgid ""
 "Finally, use ``make install-aux`` to install some of the other programs that "
 "are in the ``auxil/zeek-aux`` directory."
 msgstr ""
+"取决于你下载的Zeek安装包，``auxil/`` 目录下可能有一些辅助工具和库。它们中的一"
+"些会随着Zeek一起编译和安装。configure脚本中的 ``—disable-*`` 选项可以关闭不需"
+"要的辅助工具，否则会被自动安装。最后，使用 ``make install-aux`` 来安装 "
+"``auxil/zeek-aux`` 目录下的其它程序。"
 
 #: ../../install/install.rst:207
 msgid ""
@@ -377,37 +390,41 @@ msgid ""
 "Zeek web site), there are instructions in ``doc/README`` in the source "
 "distribution."
 msgstr ""
+"最后，如果你想构建Zeek文档（并无必要，因为最新的Zeek发行版本可以在Zeek网站上"
+"找到），源码里面的 ``doc/README`` 教程。"
 
 #: ../../install/install.rst:213
 msgid "Cross Compiling"
-msgstr ""
+msgstr "交叉编译"
 
 #: ../../install/install.rst:215
 msgid ""
 "See :doc:`cross-compiling` for an example of how to cross compile Zeek for a "
 "different target platform than the one on which you build."
 msgstr ""
+"见 :doc:`cross-compiling` ，其中有关于如何交叉编译Zeek到一个不同于当前编译平"
+"台的目标平台上的例子。"
 
 #: ../../install/install.rst:220
 msgid "Configure the Run-Time Environment"
-msgstr ""
+msgstr "配置运行时环境"
 
 #: ../../install/install.rst:222
 msgid ""
 "You may want to adjust your ``PATH`` environment variable according to the "
 "platform/shell/package you're using.  For example:"
-msgstr ""
+msgstr "根据你使用的平台/shell/包，你可以调整你的 ``PATH`` 环境变量。比如："
 
 #: ../../install/install.rst:225
 msgid "Bourne-Shell Syntax:"
-msgstr ""
+msgstr "Bourne-Shell语法："
 
 #: ../../install/install.rst:231
 msgid "C-Shell Syntax:"
-msgstr ""
+msgstr "C-Shell语法："
 
 #: ../../install/install.rst:237
 msgid ""
 "Or substitute ``/opt/zeek/bin`` instead if you installed from a binary "
 "package."
-msgstr ""
+msgstr "或者替换 ``/opt/zeek/bin`` 如果你是从二进制安装包安装的话。"
