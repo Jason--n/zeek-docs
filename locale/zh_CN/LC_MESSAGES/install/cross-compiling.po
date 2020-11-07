@@ -3,39 +3,41 @@
 # This file is distributed under the same license as the Zeek package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Zeek source\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 21:33+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2020-11-07 10:29+0800\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: Loong Chen <loong.chen@foxmail.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: ../../install/cross-compiling.rst:6
 msgid "Cross Compiling"
-msgstr ""
+msgstr "交叉编译"
 
 #: ../../install/cross-compiling.rst:9
 msgid "Prerequisites"
-msgstr ""
+msgstr "前提"
 
 #: ../../install/cross-compiling.rst:11
 msgid "You need three things on the host system:"
-msgstr ""
+msgstr "你需要三样东西在主机系统上："
 
 #: ../../install/cross-compiling.rst:13
 msgid "The Zeek source tree."
-msgstr ""
+msgstr "Zeek源码树。"
 
 #: ../../install/cross-compiling.rst:14
 msgid "A cross-compilation toolchain, such as one built via crosstool-NG_."
-msgstr ""
+msgstr "交叉编译工具链，比如通过 crosstool-NG_ 构建。"
 
 #: ../../install/cross-compiling.rst:15
 msgid ""
@@ -43,39 +45,46 @@ msgid ""
 "includes libpcap, zlib, OpenSSL, and Python development headers and "
 "libraries."
 msgstr ""
+"目标系统上编译好的Zeek依赖。通常包括libpcap、zlib、OpenSSL和Python开发头"
+"文件和库。"
 
 #: ../../install/cross-compiling.rst:20
 msgid "Configuration and Compiling"
-msgstr ""
+msgstr "配置和编译"
 
 #: ../../install/cross-compiling.rst:22
 msgid ""
-"You first need to compile a few build tools native to the host system for"
-" use during the later cross-compile build.  In the root of your Zeek "
+"You first need to compile a few build tools native to the host system "
+"for use during the later cross-compile build.  In the root of your Zeek "
 "source tree:"
 msgstr ""
+"你首先需要编译几个主机系统原生的构建工具以供后面交叉编译构建时使用。在"
+"Zeek源码树的根目录："
 
 #: ../../install/cross-compiling.rst:31
 msgid "Next configure Zeek to use your cross-compilation toolchain:"
-msgstr ""
+msgstr "接下来配置Zeek使用你的交叉工具链："
 
 #: ../../install/cross-compiling.rst:37
 msgid ""
 "Here, the toolchain file a `CMake toolchain`_ file.  It might look "
 "something the following (using a Raspberry Pi as target system)::"
 msgstr ""
+"这里工具链文件是一个 `CMake toolchain`_ 文件。它看起来有些像下面的样子"
+"（使用Raspberry Pi作为目标系统）："
 
 #: ../../install/cross-compiling.rst:70
 msgid "If that configuration succeeds you are ready to build:"
-msgstr ""
+msgstr "如果配置成功你就准备好可以开始构建了："
 
 #: ../../install/cross-compiling.rst:76
 msgid "And if that works, install on your host system:"
-msgstr ""
+msgstr "如果顺利，安装到主机系统上："
 
 #: ../../install/cross-compiling.rst:82
 msgid ""
 "From there, you can copy/move the files from the installation prefix on "
 "the host system to the target system and start running Zeek as usual."
 msgstr ""
-
+"从那里，你可以从主机系统上的安装路径下拷贝/移动文件到目标系统，然后像以往"
+"那样启动运行Zeek。"
