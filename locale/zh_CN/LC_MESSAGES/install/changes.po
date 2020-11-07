@@ -3,27 +3,29 @@
 # This file is distributed under the same license as the Zeek package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Zeek source\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 21:33+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2020-11-07 10:37+0800\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: Loong Chen <loong.chen@foxmail.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: ../../install/changes.rst:4
 msgid "Detailed Version History"
-msgstr ""
+msgstr "详细的版本历史"
 
 #: ../../install/changes.rst:6
 msgid "See the corresponding ``CHANGES`` files in respective git repositories:"
-msgstr ""
+msgstr "查看相应git仓库的 ``CHANGES`` 文件："
 
 #: ../../install/changes.rst:8
 msgid "`Zeek <https://raw.githubusercontent.com/zeek/zeek/master/CHANGES>`_"
@@ -31,8 +33,7 @@ msgstr ""
 
 #: ../../install/changes.rst:9
 msgid ""
-"`ZeekControl "
-"<https://raw.githubusercontent.com/zeek/zeekctl/master/CHANGES>`_"
+"`ZeekControl <https://raw.githubusercontent.com/zeek/zeekctl/master/CHANGES>`_"
 msgstr ""
 
 #: ../../install/changes.rst:10
@@ -41,14 +42,13 @@ msgstr ""
 
 #: ../../install/changes.rst:11
 msgid ""
-"`Capstats "
-"<https://raw.githubusercontent.com/zeek/capstats/master/CHANGES>`_"
+"`Capstats <https://raw.githubusercontent.com/zeek/capstats/master/CHANGES>`_"
 msgstr ""
 
 #: ../../install/changes.rst:12
 msgid ""
-"`Trace-Summary <https://raw.githubusercontent.com/zeek/trace-"
-"summary/master/CHANGES>`_"
+"`Trace-Summary <https://raw.githubusercontent.com/zeek/trace-summary/master/"
+"CHANGES>`_"
 msgstr ""
 
 #: ../../install/changes.rst:13
@@ -57,8 +57,7 @@ msgstr ""
 
 #: ../../install/changes.rst:14
 msgid ""
-"`zeek-aux <https://raw.githubusercontent.com/zeek/zeek-"
-"aux/master/CHANGES>`_"
+"`zeek-aux <https://raw.githubusercontent.com/zeek/zeek-aux/master/CHANGES>`_"
 msgstr ""
 
 #: ../../install/changes.rst:15
@@ -67,7 +66,6 @@ msgstr ""
 
 #: ../../install/changes.rst:16
 msgid ""
-"`pysubnettree "
-"<https://raw.githubusercontent.com/zeek/pysubnettree/master/CHANGES>`_"
+"`pysubnettree <https://raw.githubusercontent.com/zeek/pysubnettree/master/"
+"CHANGES>`_"
 msgstr ""
-
