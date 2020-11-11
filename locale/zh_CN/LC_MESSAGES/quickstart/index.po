@@ -3,31 +3,36 @@
 # This file is distributed under the same license as the Zeek package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Zeek source\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 21:33+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2020-11-11 20:59+0800\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: Loong Chen <loong.chen@foxmail.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: ../../quickstart/index.rst:8
 msgid "Quick Start Guide"
-msgstr ""
+msgstr "快速开始指南"
 
 #: ../../quickstart/index.rst:10
 msgid ""
 "Zeek works on most modern, Unix-based systems and requires no custom "
 "hardware.  It can be downloaded in either pre-built binary package or "
-"source code forms.  See :ref:`installing-zeek` for instructions on how to"
-" install Zeek."
+"source code forms.  See :ref:`installing-zeek` for instructions on how "
+"to install Zeek."
 msgstr ""
+"Zeek能够在大部分现代的、类Unix的操作系统上运行，而且不需要定制的硬件。它"
+"能够以预编译二进制安装包或者源码的形式被下载。见 :ref:`installing-zeek` "
+"查看安装Zeek的步骤。"
 
 #: ../../quickstart/index.rst:15
 msgid ""
@@ -35,21 +40,27 @@ msgid ""
 "installation root directory, which by default is ``/usr/local/zeek`` if "
 "you install from source."
 msgstr ""
+"在下面的例子中，``$PREFIX`` 被用来作为Zeek安装目录的引用，它默认是 ``/"
+"usr/local/zeek`` ，如果你是从源码安装的话。"
 
 #: ../../quickstart/index.rst:20
 msgid "Managing Zeek with ZeekControl"
-msgstr ""
+msgstr "使用ZeekControl管理Zeek"
 
 #: ../../quickstart/index.rst:22
 msgid ""
 "ZeekControl is an interactive shell for easily operating/managing Zeek "
 "installations on a single system or even across multiple systems in a "
-"traffic-monitoring cluster.  This section explains how to use ZeekControl"
-" to manage a stand-alone Zeek installation.  For a complete reference on "
-"ZeekControl, see the `ZeekControl documentation`_. For instructions on "
-"how to configure a Zeek cluster, see the :doc:`Cluster Configuration "
-"<../configuration/index>` documentation."
+"traffic-monitoring cluster.  This section explains how to use "
+"ZeekControl to manage a stand-alone Zeek installation.  For a complete "
+"reference on ZeekControl, see the `ZeekControl documentation`_. For "
+"instructions on how to configure a Zeek cluster, see the :doc:`Cluster "
+"Configuration <../configuration/index>` documentation."
 msgstr ""
+"ZeekControl是一个交互式终端，可以用来轻松操作/管理一个系统或者甚至是流量"
+"监测集群的多个系统的Zeek安装。这一节解释如何使用ZeekControl来管理单机的"
+"Zeek安装。完整的ZeekControl参考，见 `ZeekControl documentation`_ 。如何配"
+"置Zeek集群，见 :doc:`集群配置 <../configuration/index>` 文档。"
 
 #: ../../quickstart/index.rst:30
 msgid ""
@@ -57,10 +68,12 @@ msgid ""
 "setups with significant amounts of traffic. In these cases one will "
 "almost certainly want to make use of a Zeek cluster."
 msgstr ""
+"使用Zeek的单机/单进程模式并不适合配置来分析大量的流量。在这种情况下，每个"
+"人肯定都会想使用Zeek集群。"
 
 #: ../../quickstart/index.rst:36
 msgid "A Minimal Starting Configuration"
-msgstr ""
+msgstr "最小启动配置"
 
 #: ../../quickstart/index.rst:38
 msgid ""
@@ -68,16 +81,20 @@ msgid ""
 "ZeekControl installation that will manage a single Zeek instance on the "
 "``localhost``:"
 msgstr ""
+"下面是在 ``本地`` 管理单个Zeek实例的最小ZeekControl安装需要的配置改动："
 
 #: ../../quickstart/index.rst:41
 msgid "In ``$PREFIX/etc/node.cfg``, set the right interface to monitor."
-msgstr ""
+msgstr "在 ``$PREFIX/etc/node.cfg`` 文件中， 设置监测设备的正确接口。"
 
 #: ../../quickstart/index.rst:42
 msgid ""
-"In ``$PREFIX/etc/networks.cfg``, comment out the default settings and add"
-" the networks that Zeek will consider local to the monitored environment."
+"In ``$PREFIX/etc/networks.cfg``, comment out the default settings and "
+"add the networks that Zeek will consider local to the monitored "
+"environment."
 msgstr ""
+"在 ``$PREFIX/etc/networks.cfg`` 文件中，注释掉默认设置，然后添加监测环境"
+"的本地网络。"
 
 #: ../../quickstart/index.rst:44
 msgid ""
@@ -85,65 +102,82 @@ msgid ""
 "desired recipient and the ``LogRotationInterval`` to a desired log "
 "archival frequency."
 msgstr ""
+"在 ``$PREFIX/etc/zeekctl.cfg`` 文件中，修改 ``MailTo`` 邮件地址成期望的收"
+"件人以及修改 ``LogRotationInterval`` 成期望的日志归档频率。"
 
 #: ../../quickstart/index.rst:48
 msgid "Now start the ZeekControl shell like:"
-msgstr ""
+msgstr "现在像这样启动ZeekControl终端："
 
 #: ../../quickstart/index.rst:54
 msgid ""
 "Since this is the first-time use of the shell, perform an initial "
 "installation of the ZeekControl configuration:"
-msgstr ""
+msgstr "由于是第一次使用，执行ZeekControl配置的初始化安装："
 
 #: ../../quickstart/index.rst:61
 msgid "Then start up a Zeek instance:"
-msgstr ""
+msgstr "然后启动Zeek实例："
 
 #: ../../quickstart/index.rst:67
 msgid ""
 "If there are errors while trying to start the Zeek instance, you can can "
-"view the details with the ``diag`` command.  If started successfully, the"
-" Zeek instance will begin analyzing traffic according to a default policy"
-" and output the results in ``$PREFIX/logs``."
+"view the details with the ``diag`` command.  If started successfully, "
+"the Zeek instance will begin analyzing traffic according to a default "
+"policy and output the results in ``$PREFIX/logs``."
 msgstr ""
+"如果尝试启动Zeek实例时遇到了错误，你可以使用 ``diag`` 命令查看细节。如果"
+"启动成功，Zeek实例就会开始根据默认策略分析流量，然后输出结果到 ``$PREFIX/"
+"logs`` 文件夹中。"
 
 #: ../../quickstart/index.rst:72
 msgid ""
 "The user starting ZeekControl needs permission to capture network "
-"traffic. If you are not root, you may need to grant further privileges to"
-" the account you're using; see the FAQ_.  Also, if it looks like Zeek is "
-"not seeing any traffic, check out the FAQ entry on checksum offloading."
+"traffic. If you are not root, you may need to grant further privileges "
+"to the account you're using; see the FAQ_.  Also, if it looks like Zeek "
+"is not seeing any traffic, check out the FAQ entry on checksum "
+"offloading."
 msgstr ""
+"用户启动ZeekControl时需要权限才能捕获流量。如果你不是root用户，你可能需要"
+"为你的账户授予更高的权限；见 FAQ_。此外，如果看起来像是Zeek并没有捕获到流"
+"量，查看FAQ中关于校验和卸载（checksum offloading）的部分。"
 
 #: ../../quickstart/index.rst:78
 msgid ""
 "You can leave it running for now, but to stop this Zeek instance you "
 "would do:"
-msgstr ""
+msgstr "你现在可以让它一直运行下去了，但是如果想停止Zeek实例，你可以："
 
 #: ../../quickstart/index.rst:85
 msgid "Browsing Log Files"
-msgstr ""
+msgstr "浏览日志文件"
 
 #: ../../quickstart/index.rst:87
 msgid ""
 "By default, logs are written out in human-readable (ASCII) format and "
-"data is organized into columns (tab-delimited). Logs that are part of the"
-" current rotation interval are accumulated in ``$PREFIX/logs/current/`` "
-"(if Zeek is not running, the directory will be empty). For example, the "
-"``http.log`` contains the results of Zeek HTTP protocol analysis. Here "
-"are the first few columns of ``http.log``::"
+"data is organized into columns (tab-delimited). Logs that are part of "
+"the current rotation interval are accumulated in ``$PREFIX/logs/current/"
+"`` (if Zeek is not running, the directory will be empty). For example, "
+"the ``http.log`` contains the results of Zeek HTTP protocol analysis. "
+"Here are the first few columns of ``http.log``::"
 msgstr ""
+"默认情况下，日志是以可读的格式(ASCII) 写下去的，数据是以列的形式组织的"
+"（tab分隔）。处于当前回滚间隔的日志是在 ``$PREFIX/logs/current/`` （如果"
+"Zeek没有运行，这个目录就会是空的）中不断累积。举个例子， ``http.log`` 包"
+"含了Zeek HTTP协议分析的结果。下面是 ``http.log`` 的其中几列::"
 
 #: ../../quickstart/index.rst:98
 msgid ""
 "Logs that deal with analysis of a network protocol will often start like "
-"this: a timestamp, a unique connection identifier (UID), and a connection"
-" 4-tuple (originator host/port and responder host/port).  The UID can be "
-"used to identify all logged activity (possibly across multiple log files)"
-" associated with a given connection 4-tuple over its lifetime."
+"this: a timestamp, a unique connection identifier (UID), and a "
+"connection 4-tuple (originator host/port and responder host/port).  The "
+"UID can be used to identify all logged activity (possibly across "
+"multiple log files) associated with a given connection 4-tuple over its "
+"lifetime."
 msgstr ""
+"和网络协议分析相关的日志通常以下面几列开始：时间戳、唯一会话标识符"
+"（UID）、会话四元组（源IP/端口和目标IP/端口）。UID可以用来联系记录的所有"
+"和某一给定四元组的生命周期内相关的活动（可能跨越多个日志文件）。"
 
 #: ../../quickstart/index.rst:104
 msgid ""
@@ -152,14 +186,16 @@ msgid ""
 "columns (shortened for brevity) show a request to the root of Zeek "
 "website::"
 msgstr ""
+"然后特定协议日志的剩下的这些列详细记录了协议相关的活动。比如， ``http."
+"log`` 接下来的几列展示了对Zeek主网站的请求::"
 
 #: ../../quickstart/index.rst:111
 msgid "Some logs are worth explicit mention:"
-msgstr ""
+msgstr "某些日志值得特别提及："
 
 #: ../../quickstart/index.rst:118
 msgid "``conn.log``"
-msgstr ""
+msgstr "``conn.log``"
 
 #: ../../quickstart/index.rst:114
 msgid ""
@@ -182,11 +218,11 @@ msgstr ""
 
 #: ../../quickstart/index.rst:125
 msgid ""
-"By default, ``ZeekControl`` regularly takes all the logs from "
-"``$PREFIX/logs/current`` and archives/compresses them to a directory "
-"named by date, e.g. ``$PREFIX/logs/2011-10-06``.  The frequency at which "
-"this is done can be configured via the ``LogRotationInterval`` option in "
-"``$PREFIX/etc/zeekctl.cfg``."
+"By default, ``ZeekControl`` regularly takes all the logs from ``$PREFIX/"
+"logs/current`` and archives/compresses them to a directory named by "
+"date, e.g. ``$PREFIX/logs/2011-10-06``.  The frequency at which this is "
+"done can be configured via the ``LogRotationInterval`` option in ``"
+"$PREFIX/etc/zeekctl.cfg``."
 msgstr ""
 
 #: ../../quickstart/index.rst:132
@@ -198,24 +234,24 @@ msgid ""
 "The goal of most Zeek *deployments* may be to send email alarms when a "
 "network event requires human intervention/investigation, but sometimes "
 "that conflicts with Zeek's goal as a *distribution* to remain policy and "
-"site neutral -- the events on one network may be less noteworthy than the"
-" same events on another. As a result, deploying Zeek can be an iterative "
-"process of updating its policy to take different actions for events that "
-"are noticed, and using its scripting language to programmatically extend "
-"traffic analysis in a precise way."
+"site neutral -- the events on one network may be less noteworthy than "
+"the same events on another. As a result, deploying Zeek can be an "
+"iterative process of updating its policy to take different actions for "
+"events that are noticed, and using its scripting language to "
+"programmatically extend traffic analysis in a precise way."
 msgstr ""
 
 #: ../../quickstart/index.rst:143
 msgid ""
 "One of the first steps to take in customizing Zeek might be to get "
-"familiar with the notices it can generate by default and either tone down"
-" or escalate the action that's taken when specific ones occur."
+"familiar with the notices it can generate by default and either tone "
+"down or escalate the action that's taken when specific ones occur."
 msgstr ""
 
 #: ../../quickstart/index.rst:147
 msgid ""
-"Let's say that we've been looking at the ``notice.log`` for a bit and see"
-" two changes we want to make:"
+"Let's say that we've been looking at the ``notice.log`` for a bit and "
+"see two changes we want to make:"
 msgstr ""
 
 #: ../../quickstart/index.rst:150
@@ -250,16 +286,16 @@ msgstr ""
 msgid ""
 "Zeek ships with many pre-written scripts that are highly customizable to "
 "support traffic analysis for your specific environment.  By default, "
-"these will be installed into ``$PREFIX/share/zeek`` and can be identified"
-" by the use of a ``.zeek`` file name extension.  These files should "
-"**never** be edited directly as changes will be lost when upgrading to "
-"newer versions of Zeek.  The exception to this rule is the directory "
-"``$PREFIX/share/zeek/site`` where local site-specific files can be put "
-"without fear of being clobbered later. The other main script directories "
-"under ``$PREFIX/share/zeek`` are ``base`` and ``policy``.  By default, "
-"Zeek automatically loads all scripts under ``base`` (unless the ``-b`` "
-"command line option is supplied), which deal either with collecting "
-"basic/useful state about network activities or providing "
+"these will be installed into ``$PREFIX/share/zeek`` and can be "
+"identified by the use of a ``.zeek`` file name extension.  These files "
+"should **never** be edited directly as changes will be lost when "
+"upgrading to newer versions of Zeek.  The exception to this rule is the "
+"directory ``$PREFIX/share/zeek/site`` where local site-specific files "
+"can be put without fear of being clobbered later. The other main script "
+"directories under ``$PREFIX/share/zeek`` are ``base`` and ``policy``.  "
+"By default, Zeek automatically loads all scripts under ``base`` (unless "
+"the ``-b`` command line option is supplied), which deal either with "
+"collecting basic/useful state about network activities or providing "
 "frameworks/utilities that extend Zeek's functionality without any "
 "performance cost.  Scripts under the ``policy`` directory may be more "
 "situational or costly, and so users must explicitly choose if they want "
@@ -269,9 +305,9 @@ msgstr ""
 #: ../../quickstart/index.rst:184
 msgid ""
 "The main entry point for the default analysis configuration of a "
-"standalone Zeek instance managed by ZeekControl is the "
-"``$PREFIX/share/zeek/site/local.zeek`` script.  We'll be adding to that "
-"in the following sections, but first we have to figure out what to add."
+"standalone Zeek instance managed by ZeekControl is the ``$PREFIX/share/"
+"zeek/site/local.zeek`` script.  We'll be adding to that in the following "
+"sections, but first we have to figure out what to add."
 msgstr ""
 
 #: ../../quickstart/index.rst:190
@@ -280,8 +316,8 @@ msgstr ""
 
 #: ../../quickstart/index.rst:192
 msgid ""
-"Many simple customizations just require you to redefine a variable from a"
-" standard Zeek script with your own value, using Zeek's ``redef`` "
+"Many simple customizations just require you to redefine a variable from "
+"a standard Zeek script with your own value, using Zeek's ``redef`` "
 "operator."
 msgstr ""
 
@@ -289,23 +325,23 @@ msgstr ""
 msgid ""
 "The typical way a standard Zeek script advertises tweak-able options to "
 "users is by defining variables with the ``&redef`` attribute and "
-"``const`` qualifier. A redefineable constant might seem strange, but what"
-" that really means is that the variable's value may not change at run-"
-"time, but whose initial value can be modified via the ``redef`` operator "
-"at parse-time."
+"``const`` qualifier. A redefineable constant might seem strange, but "
+"what that really means is that the variable's value may not change at "
+"run-time, but whose initial value can be modified via the ``redef`` "
+"operator at parse-time."
 msgstr ""
 
 #: ../../quickstart/index.rst:202
 msgid ""
 "Let's continue on our path to modify the behavior for the two SSL "
-"notices.  Looking at :doc:`/scripts/base/frameworks/notice/main.zeek`, we"
-" see that it advertises:"
+"notices.  Looking at :doc:`/scripts/base/frameworks/notice/main.zeek`, "
+"we see that it advertises:"
 msgstr ""
 
 #: ../../quickstart/index.rst:216
 msgid ""
-"That's exactly what we want to do for the first notice.  Add to "
-"``local.zeek``:"
+"That's exactly what we want to do for the first notice.  Add to ``local."
+"zeek``:"
 msgstr ""
 
 #: ../../quickstart/index.rst:222
@@ -326,14 +362,14 @@ msgstr ""
 
 #: ../../quickstart/index.rst:250
 msgid ""
-"Now that the SSL notice is ignored, let's look at how to send an email on"
-" the other notice.  The notice framework has a similar option called "
+"Now that the SSL notice is ignored, let's look at how to send an email "
+"on the other notice.  The notice framework has a similar option called "
 "``emailed_types``, but using that would generate email for all SSL "
 "servers with expired certificates and we only want email for connections "
 "to certain ones.  There is a ``policy`` hook that is actually what is "
 "used to implement the simple functionality of ``ignored_types`` and "
-"``emailed_types``, but it's extensible such that the condition and action"
-" taken on notices can be user-defined."
+"``emailed_types``, but it's extensible such that the condition and "
+"action taken on notices can be user-defined."
 msgstr ""
 
 #: ../../quickstart/index.rst:259
@@ -381,22 +417,22 @@ msgstr ""
 
 #: ../../quickstart/index.rst:303
 msgid ""
-"We only looked at how to change options declared in the notice framework,"
-" there's many more options to look at in other script packages."
+"We only looked at how to change options declared in the notice "
+"framework, there's many more options to look at in other script packages."
 msgstr ""
 
 #: ../../quickstart/index.rst:305
 msgid ""
 "Continue reading with :ref:`Using Zeek <using-zeek>` chapter which goes "
-"into more depth on working with Zeek; then look at :ref:`writing-scripts`"
-" for learning how to start writing your own scripts."
+"into more depth on working with Zeek; then look at :ref:`writing-"
+"scripts` for learning how to start writing your own scripts."
 msgstr ""
 
 #: ../../quickstart/index.rst:309
 msgid ""
-"Look at the scripts in ``$PREFIX/share/zeek/policy`` for further ones you"
-" may want to load; you can browse their documentation at the "
-":ref:`overview of script packages <script-packages>`."
+"Look at the scripts in ``$PREFIX/share/zeek/policy`` for further ones "
+"you may want to load; you can browse their documentation at the :ref:"
+"`overview of script packages <script-packages>`."
 msgstr ""
 
 #: ../../quickstart/index.rst:312
@@ -464,10 +500,10 @@ msgstr ""
 
 #: ../../quickstart/index.rst:356
 msgid ""
-"Where ``en0`` can be replaced by the correct interface for your system as"
-" shown by e.g. ``ifconfig``. (The ``-s 0`` argument tells it to capture "
-"whole packets; in cases where it's not supported use ``-s 65535`` "
-"instead)."
+"Where ``en0`` can be replaced by the correct interface for your system "
+"as shown by e.g. ``ifconfig``. (The ``-s 0`` argument tells it to "
+"capture whole packets; in cases where it's not supported use ``-s "
+"65535`` instead)."
 msgstr ""
 
 #: ../../quickstart/index.rst:360
@@ -479,8 +515,8 @@ msgstr ""
 
 #: ../../quickstart/index.rst:369
 msgid ""
-"If you are interested in more detection, you can again load the ``local``"
-" script that we include as a suggested configuration:"
+"If you are interested in more detection, you can again load the "
+"``local`` script that we include as a suggested configuration:"
 msgstr ""
 
 #: ../../quickstart/index.rst:377
@@ -507,8 +543,8 @@ msgstr ""
 #: ../../quickstart/index.rst:402
 msgid ""
 "This will load the ``<prefix>/share/zeek/policy/frameworks/files/extract-"
-"all-files.zeek`` script which will cause Zeek to extract all of the files"
-" it discovers in the PCAP."
+"all-files.zeek`` script which will cause Zeek to extract all of the "
+"files it discovers in the PCAP."
 msgstr ""
 
 #: ../../quickstart/index.rst:406
@@ -548,8 +584,8 @@ msgstr ""
 
 #: ../../quickstart/index.rst:431
 msgid ""
-"This causes Zeek to load a script that prints a warning about lacking the"
-" ``Site::local_nets`` variable being configured. You can supply this "
+"This causes Zeek to load a script that prints a warning about lacking "
+"the ``Site::local_nets`` variable being configured. You can supply this "
 "information at the command line like this (supply your \"local\" subnets "
 "in place of the example subnets):"
 msgstr ""
@@ -568,10 +604,9 @@ msgstr ""
 msgid ""
 "For developers that wish to run Zeek directly from the ``build/`` "
 "directory (i.e., without performing ``make install``), they will have to "
-"first adjust ``ZEEKPATH`` to look for scripts and additional files inside"
-" the build directory.  Sourcing either ``build/zeek-path-dev.sh`` or "
-"``build/zeek-path-dev.csh`` as appropriate for the current shell "
-"accomplishes this and also augments your ``PATH`` so you can use the Zeek"
-" binary directly::"
+"first adjust ``ZEEKPATH`` to look for scripts and additional files "
+"inside the build directory.  Sourcing either ``build/zeek-path-dev.sh`` "
+"or ``build/zeek-path-dev.csh`` as appropriate for the current shell "
+"accomplishes this and also augments your ``PATH`` so you can use the "
+"Zeek binary directly::"
 msgstr ""
-
