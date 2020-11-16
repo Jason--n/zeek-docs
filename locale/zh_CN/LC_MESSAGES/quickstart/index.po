@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Zeek source\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 21:33+0800\n"
-"PO-Revision-Date: 2020-11-11 20:59+0800\n"
+"PO-Revision-Date: 2020-11-14 08:35+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -204,10 +204,12 @@ msgid ""
 "addresses, services and ports, payload size, and much more. This log "
 "provides a comprehensive record of the network's activity."
 msgstr ""
+"网络上出现的每一个会话都会有一条记录，包含诸如时间、持续时长、源目标IP地"
+"址、服务、端口、负载大小在内的属性。这份日志提供了网络活动的详细记录。"
 
 #: ../../quickstart/index.rst:123
 msgid "``notice.log``"
-msgstr ""
+msgstr "``notice.log``"
 
 #: ../../quickstart/index.rst:121
 msgid ""
@@ -215,6 +217,8 @@ msgid ""
 "interesting, odd, or bad. In Zeek-speak, such activity is called a "
 "\"notice\"."
 msgstr ""
+"用来辨认出Zeek认为可能是有趣、奇怪或者恶意的特定活动。在Zeek的语言中，这"
+"样的活动被称作 “notice”。"
 
 #: ../../quickstart/index.rst:125
 msgid ""
@@ -224,10 +228,14 @@ msgid ""
 "done can be configured via the ``LogRotationInterval`` option in ``"
 "$PREFIX/etc/zeekctl.cfg``."
 msgstr ""
+"默认情况下，``ZeekControl`` 会定时把 ``$PREFIX/logs/current`` 下的所有日"
+"志归档/打包到一个以时间命名的文件夹下，比如 ``$PREFIX/"
+"logs/2011-10-06`` 。这项工作的频率可以在 ``$PREFIX/etc/zeekctl.cfg`` 中通"
+"过 ``LogRotationInterval`` 选项配置。"
 
 #: ../../quickstart/index.rst:132
 msgid "Deployment Customization"
-msgstr ""
+msgstr "部署配置"
 
 #: ../../quickstart/index.rst:134
 msgid ""
@@ -240,6 +248,11 @@ msgid ""
 "events that are noticed, and using its scripting language to "
 "programmatically extend traffic analysis in a precise way."
 msgstr ""
+"大部分Zeek *部署* 的目标可能都是在网络事件需要人的介入、调查时去发送邮件"
+"警报，但是有的时候这和Zeek的目标——作为一个保持策略和地方中立的发行版本——"
+"发生冲突，因为不同网络中的相同事件可能得到不同的关注程度。结果是，部署"
+"Zeek是一个不断更新策略的迭代过程，来对不同的事件采取不同的行动，以及使用"
+"脚本语言来更加精准地扩展流量分析能力。"
 
 #: ../../quickstart/index.rst:143
 msgid ""
@@ -247,12 +260,14 @@ msgid ""
 "familiar with the notices it can generate by default and either tone "
 "down or escalate the action that's taken when specific ones occur."
 msgstr ""
+"配置Zeek的第一步可能是熟悉它生成的默认警告（notices），以及调高或者降低它"
+"发生时处理的紧急程度。"
 
 #: ../../quickstart/index.rst:147
 msgid ""
 "Let's say that we've been looking at the ``notice.log`` for a bit and "
 "see two changes we want to make:"
-msgstr ""
+msgstr "假如说我们已经熟悉了 ``notice.log``，想做出两项改动："
 
 #: ../../quickstart/index.rst:150
 msgid ""
