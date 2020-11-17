@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Zeek source\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 21:33+0800\n"
-"PO-Revision-Date: 2020-11-16 20:41+0800\n"
+"PO-Revision-Date: 2020-11-17 21:38+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -379,12 +379,14 @@ msgid ""
 "notices.  Looking at :doc:`/scripts/base/frameworks/notice/main.zeek`, "
 "we see that it advertises:"
 msgstr ""
+"让我们继续我们的修改SSL警告行为之旅。当查看 :doc:`/scripts/base/"
+"frameworks/notice/main.zeek` 文件时，我们将会看到它展示的："
 
 #: ../../quickstart/index.rst:216
 msgid ""
 "That's exactly what we want to do for the first notice.  Add to ``local."
 "zeek``:"
-msgstr ""
+msgstr "那就是我们想要对第一个警告做的事情。添加到 ``local.zeek`` ："
 
 #: ../../quickstart/index.rst:222
 msgid ""
@@ -394,6 +396,9 @@ msgid ""
 "module do not have to be scoped if referring to them while still inside "
 "the module."
 msgstr ""
+"``Notice`` 命名空间在这里是有必要的，因为这个变量是在 ``Notice`` 模块声明"
+"和导出的，但是却是在模块外面引用的。在某个模块声明和导出的变量并不需要被"
+"放到命名空间中，如果它是在模块内部被引用的话。"
 
 #: ../../quickstart/index.rst:228
 msgid ""
@@ -401,6 +406,8 @@ msgid ""
 "change is valid before installing it and then restarting the Zeek "
 "instance.  The \"deploy\" command does all of this automatically:"
 msgstr ""
+"然后进入ZeekControl终端，在安装前检查配置修改是否有效，之后重新启动Zeek实"
+"例。“deploy”命令会自动完成所有这些事情："
 
 #: ../../quickstart/index.rst:250
 msgid ""
@@ -413,14 +420,20 @@ msgid ""
 "``emailed_types``, but it's extensible such that the condition and "
 "action taken on notices can be user-defined."
 msgstr ""
+"现在SSL警告被忽略了，让我们看看当其它警告触发时怎么发送邮件。警告框架有一"
+"个类似的选项叫做 ``emailed_types``，但是使用这个选项时所有的有着过期证书"
+"的SSL服务器都会产生邮件，而我们只想要其中某些连接的邮件。有一个 "
+"``policy`` 钩子就是用来实现 ``ignored_types`` 和 ``emailed_types`` 这样的"
+"简单功能的，但是它是可扩展的，当警告发生时的条件和采取的动作都是可以由用"
+"户定义。"
 
 #: ../../quickstart/index.rst:259
 msgid "In ``local.zeek``, let's define a new ``policy`` hook handler body:"
-msgstr ""
+msgstr "在 ``local.zeek`` 中，让我们定义一个新的 ``policy`` 钩子处理程序："
 
 #: ../../quickstart/index.rst:261
 msgid "conditional-notice.zeek"
-msgstr ""
+msgstr "conditional-notice.zeek"
 
 #: ../../quickstart/index.rst:282
 msgid ""
@@ -431,6 +444,10 @@ msgid ""
 "certificate and the responding host stored inside the ``Info`` record's "
 "connection field is in the set of watched servers."
 msgstr ""
+"你现在不得不相信上面的语法，但是我们这里做的首先是声明我们的变量 "
+"`watched_servers`` 来保存一系列地址；然后添加一个钩子处理函数到策略中，当"
+"警告类型是SSL过期证书以及存储在 ``Info`` 记录中的会话字段的对应主机在我们"
+"保存的服务器列表中时，钩子处理函数会生成一封邮件。"
 
 #: ../../quickstart/index.rst:289
 msgid ""
@@ -439,12 +456,15 @@ msgid ""
 "ambiguity with the built-in address type's use of '.' in IPv4 dotted "
 "decimal representations."
 msgstr ""
+"记录字段成员访问是使用 ‘$’ 字符而不是其它语言中的 ‘.’ 字符，这是为了避免"
+"内置地址类型在IPv4点分十进制形式中使用 ‘.’  所引起的歧义。"
 
 #: ../../quickstart/index.rst:294
 msgid ""
 "Remember, to finalize that configuration change perform the ``deploy`` "
 "command inside the ZeekControl shell."
 msgstr ""
+"最后记得，在ZeekControl终端中执行 ``deploy`` 命令以完成配置的修改。"
 
 #: ../../quickstart/index.rst:298
 msgid "Next Steps"
